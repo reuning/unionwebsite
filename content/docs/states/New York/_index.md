@@ -1,7 +1,7 @@
-### Ohio
+### New York
 
 #### 10 Largest Elections
-{{< image src=OH_10.png >}}
+{{< image src=NY_10.png >}}
 
 #### Elections per Month
 

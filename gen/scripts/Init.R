@@ -135,16 +135,28 @@ create_state_page <- function(state_abb = "MN", number=10, data=dt_rc){
     
   dir.create(here("content",  "docs", "states", state))
   
-  tmp <-c(paste("### 10 Largest Elections in", state),
+  
+  tmp <-c(paste("###", state),
           "", 
-          paste0("{{< figure src=",state_abb, "_", number, ".png >}}")
+          "#### 10 Largest Elections",
+          paste0("{{< image src=",state_abb, "_", number, ".png >}}"),
+          "",
+          "#### Elections per Month",
+          "",
+          "#### 10 Most Recent Elections",
+          ""
           )
 
-  writeLines(tmp, file(here("content", "docs", "states", state, "_index.md")))
+  f <- file(here("content", "docs", "states", state, "_index.md"))
+  writeLines(tmp, f)
+  close(f)
   create_state_plot(state_abb = state_abb, 
                     number=number, 
                     data=data,file =here("content",  "docs", "states", state,
                                          paste0(state_abb, "_", number, ".png") ))
 }
 
-create_state_page(state_abb = "OH")
+
+for(state in state.abb){
+  create_state_page(state_abb = state)
+}

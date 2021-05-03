@@ -1,7 +1,7 @@
-### Ohio
+### Alabama
 
 #### 10 Largest Elections
-{{< image src=OH_10.png >}}
+{{< image src=AL_10.png >}}
 
 #### Elections per Month
 

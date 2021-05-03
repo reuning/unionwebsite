@@ -1,7 +1,7 @@
-### Ohio
+### Hawaii
 
 #### 10 Largest Elections
-{{< image src=OH_10.png >}}
+{{< image src=HI_10.png >}}
 
 #### Elections per Month
 
