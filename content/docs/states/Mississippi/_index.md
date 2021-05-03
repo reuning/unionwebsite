@@ -1,7 +1,7 @@
-### Minnesota
+### Mississippi
 
 #### 10 Largest Elections
-{{< image src=MN_10.png >}}
+{{< image src=MS_10.png >}}
 
 #### Elections per Month
 

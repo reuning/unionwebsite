@@ -1,7 +1,7 @@
-### Minnesota
+### West Virginia
 
 #### 10 Largest Elections
-{{< image src=MN_10.png >}}
+{{< image src=WV_10.png >}}
 
 #### Elections per Month
 

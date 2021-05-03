@@ -1,7 +1,7 @@
-### Minnesota
+### South Dakota
 
 #### 10 Largest Elections
-{{< image src=MN_10.png >}}
+{{< image src=SD_10.png >}}
 
 #### Elections per Month
 

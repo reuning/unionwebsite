@@ -1,7 +1,7 @@
-### Minnesota
+### New Hampshire
 
 #### 10 Largest Elections
-{{< image src=MN_10.png >}}
+{{< image src=NH_10.png >}}
 
 #### Elections per Month
 

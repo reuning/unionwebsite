@@ -1,7 +1,7 @@
-### Minnesota
+### New Mexico
 
 #### 10 Largest Elections
-{{< image src=MN_10.png >}}
+{{< image src=NM_10.png >}}
 
 #### Elections per Month
 

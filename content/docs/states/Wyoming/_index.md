@@ -1,7 +1,7 @@
-### Minnesota
+### Wyoming
 
 #### 10 Largest Elections
-{{< image src=MN_10.png >}}
+{{< image src=WY_10.png >}}
 
 #### Elections per Month
 
