@@ -1,9 +1,12 @@
 ### Nevada
 
-#### 10 Largest Elections
-{{< image src=NV_10.png >}}
+#### Election History
+{{< image src=NV_hist_vic.svg >}}
 
-#### Elections per Month
+{{< image src=NV_hist_size.svg >}}
+
+#### 10 Largest Elections
+{{< image src=NV_10.svg >}}
 
 #### 10 Most Recent Elections
 

@@ -1,9 +1,12 @@
 ### New Jersey
 
-#### 10 Largest Elections
-{{< image src=NJ_10.png >}}
+#### Election History
+{{< image src=NJ_hist_vic.svg >}}
 
-#### Elections per Month
+{{< image src=NJ_hist_size.svg >}}
+
+#### 10 Largest Elections
+{{< image src=NJ_10.svg >}}
 
 #### 10 Most Recent Elections
 

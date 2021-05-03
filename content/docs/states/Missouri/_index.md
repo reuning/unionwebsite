@@ -1,9 +1,12 @@
 ### Missouri
 
-#### 10 Largest Elections
-{{< image src=MO_10.png >}}
+#### Election History
+{{< image src=MO_hist_vic.svg >}}
 
-#### Elections per Month
+{{< image src=MO_hist_size.svg >}}
+
+#### 10 Largest Elections
+{{< image src=MO_10.svg >}}
 
 #### 10 Most Recent Elections
 

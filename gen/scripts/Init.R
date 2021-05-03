@@ -9,6 +9,7 @@ library(magrittr)
 library(stringr)
 library(huxtable)
 library(here)
+library(svglite)
 
 dict <- read.csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vTQj4UzxBycuPUVmIXM9RUnTWq0dwHICOk-phgwyfjqZAm8lsjl3D4JTLz73aa4dnOJ7gXmhehPGfu8/pub?gid=0&single=true&output=csv")
 
@@ -22,20 +23,22 @@ names(dt)[c(2,6,7,8,9,11,13,15,18,21,22)] <- c("Case_Name", "Date_Closed",
 
 ### Get most recent
 dt <- dt[order(-Tally_Date)]
-dt <- unique(dt, by='Case')
+dt$Unique <- !duplicated(dt, by='Case')
 
 ### Create New Variables
 dt[,Tally_Date:=as.Date(`Tally_Date`, format="%m/%d/%Y")]
 dt[,Date_Filed:=as.Date(`Date_Filed`, format="%m/%d/%Y")]
+dt[,Length:=Tally_Date-Date_Filed]
+dt[,Tally_Quarter := as.Date(cut(Tally_Date, breaks = "quarter"))]
 
-dt[,Length:=Date_Filed-Tally_Date]
+dt[,size:=cut(Num_Eligible_Voters, breaks = c(0, 5, 10, 25, 50, 100, 500, Inf), right = T, 
+              labels=c("<5", "6-10", "11-25", "26-50", "51-100", "101-500", "500>"), ordered_result = T)]
 
 
 
-
-dt <- dt[Status=="Closed"]
+# dt <- dt[Status=="Closed"]
 dt <- dt[`Reason_Closed` %in% c("Certific. of Representative", "Certification of Results")]
-dt <- dt[`Ballot_Type`%in% c("Single Labor Organization")]
+dt <- dt[`Ballot_Type`%in% c("Single Labor Organization", "Revised Single Labor Org")]
 dt[, Case_Type:=substr(Case, 4, 5)]
 
 dt[is.na(`Votes_Against`),`Votes_Against`:=0 ]
@@ -59,8 +62,8 @@ dt[,`Union_Cer`:=ifelse(`Reason_Closed`=="Certific. of Representative", "Yes", "
 
 # dt <- dt[Case_Type %in% c("RC", "RD")]
 
-dt_rc <- dt[Case_Type=="RC"]
-dt_rc$`Didnt_Vote` <- dt_rc$`Num_Eligible_Voters` - dt_rc$`Votes_For_Union` - dt_rc$`Votes_Against`
+# dt_rc <- dt[Case_Type=="RC"]
+dt$`Didnt_Vote` <- dt$`Num_Eligible_Voters` - dt$`Votes_For_Union` - dt$`Votes_Against`
 
 
 
@@ -71,7 +74,8 @@ create_state_plot <- function(state_abb = "MN", number=10, data=NULL,
 
   state <- state.name[state.abb == state_abb]
   
-  tmp_dt <- data[State==state_abb]
+  tmp_dt <- data[State==state_abb & Unique==TRUE & Case_Type == "RC" & Status=="Closed"]
+  
   tmp_dt$City <- tools::toTitleCase(tolower(tmp_dt$City))
   tmp_dt$`Case_Name` <-  str_to_title(tmp_dt$`Case_Name`) %>% str_trunc(width = 50)
   
@@ -105,10 +109,56 @@ create_state_plot <- function(state_abb = "MN", number=10, data=NULL,
     labs(y="", x="Votes", caption = "Includes only certification votes with a single union, data from NLRB") + 
     ggtitle(paste("Largest Private Union Elections Since 2007 in", state)) 
   
-  ggsave(file, height=10*log10(number), width=8)
+  f <- here("content", "docs", "states", state, paste0(state_abb, "_10.svg"))
+  ggsave(f, height=10*log10(number), width=8)
   
   
 }
+
+
+create_state_time_plot <- function(state_abb = "MN", data=NULL, 
+                              file=NULL){
+  
+  
+  state <- state.name[state.abb == state_abb]
+  
+  tmp_dt <- data[State==state_abb  & Case_Type == "RC" & 
+                   Ballot_Type != "Revised Single Labor Org" &
+                   !is.na(size) ]
+  
+  # tmp_dt$City <- tools::toTitleCase(tolower(tmp_dt$City))
+
+  ggplot(tmp_dt, aes(x=Tally_Quarter, 
+             fill=size)) +
+  geom_bar(position=position_stack(reverse=T), color="black", size=.2, width=80) + 
+  scale_x_date(limits=c(as.Date("2008-01-01"), lubridate::today())) +
+  theme_minimal() +
+    scale_fill_colorblind("Size of Unit", drop=F) + 
+  theme(legend.position = "bottom") + 
+  labs(y="", x="Votes", caption = "Includes only certification votes with a single union, data from NLRB") + 
+  ggtitle(paste("Number of Elections by Unit Size in", state)) 
+  
+  f <- here("content", "docs", "states", state, paste0(state_abb, "_hist_size.svg"))
+  
+  ggsave(f, height=6, width=8)
+  
+  ggplot(tmp_dt, aes(x=Tally_Quarter, 
+                     fill=Union_Cer, weight=Num_Eligible_Voters)) +
+    geom_bar(position=position_stack(reverse=T), color="black", size=.2) + 
+    scale_x_date(limits=c(as.Date("2008-01-01"), lubridate::today())) +
+    theme_minimal() +
+    scale_fill_colorblind("Unionized?") + 
+    theme(legend.position = "bottom") + 
+    labs(y="", x="Votes", caption = "Includes only certification votes with a single union, data from NLRB") + 
+    ggtitle(paste("Number Employees in a Union Election by Outcome in", state)) 
+  
+  f <- here("content", "docs", "states", state, paste0(state_abb, "_hist_vic.svg"))
+  
+  ggsave(f, height=6, width=8)
+  
+  
+}
+
 
 create_state_table <- function(state_abb = "MN", number=10, data=dt_rc){
   
@@ -129,7 +179,7 @@ create_state_table <- function(state_abb = "MN", number=10, data=dt_rc){
 }
 
 
-create_state_page <- function(state_abb = "MN", number=10, data=dt_rc){
+create_state_page <- function(state_abb = "MN"){
 
   state <- state.name[state.abb == state_abb]
     
@@ -138,10 +188,13 @@ create_state_page <- function(state_abb = "MN", number=10, data=dt_rc){
   
   tmp <-c(paste("###", state),
           "", 
-          "#### 10 Largest Elections",
-          paste0("{{< image src=",state_abb, "_", number, ".png >}}"),
+          "#### Election History",
+          paste0("{{< image src=",state_abb, "_hist_vic.svg >}}"),
           "",
-          "#### Elections per Month",
+          paste0("{{< image src=",state_abb, "_hist_size.svg >}}"),
+          "",
+          "#### 10 Largest Elections",
+          paste0("{{< image src=",state_abb, "_10.svg >}}"),
           "",
           "#### 10 Most Recent Elections",
           ""
@@ -150,13 +203,24 @@ create_state_page <- function(state_abb = "MN", number=10, data=dt_rc){
   f <- file(here("content", "docs", "states", state, "_index.md"))
   writeLines(tmp, f)
   close(f)
-  create_state_plot(state_abb = state_abb, 
-                    number=number, 
-                    data=data,file =here("content",  "docs", "states", state,
-                                         paste0(state_abb, "_", number, ".png") ))
+
 }
 
 
 for(state in state.abb){
   create_state_page(state_abb = state)
+  
+  create_state_plot(state_abb = state, 
+                    number=10, 
+                    data=dt,file =here("content",  "docs", "states", state,
+                                         paste0(state_abb, "_", number, ".svg") ))
+  create_state_time_plot(state_abb = state, 
+                    data=dt)
 }
+
+# create_state_plot(state_abb = "ND",
+#                   number=10,
+#                   data=dt)
+
+# create_state_time_plot(state_abb = "MN", 
+#                   data=dt)

@@ -1,9 +1,12 @@
 ### Montana
 
-#### 10 Largest Elections
-{{< image src=MT_10.png >}}
+#### Election History
+{{< image src=MT_hist_vic.svg >}}
 
-#### Elections per Month
+{{< image src=MT_hist_size.svg >}}
+
+#### 10 Largest Elections
+{{< image src=MT_10.svg >}}
 
 #### 10 Most Recent Elections
 

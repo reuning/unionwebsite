@@ -1,9 +1,12 @@
 ### North Dakota
 
-#### 10 Largest Elections
-{{< image src=ND_10.png >}}
+#### Election History
+{{< image src=ND_hist_vic.svg >}}
 
-#### Elections per Month
+{{< image src=ND_hist_size.svg >}}
+
+#### 10 Largest Elections
+{{< image src=ND_10.svg >}}
 
 #### 10 Most Recent Elections
 

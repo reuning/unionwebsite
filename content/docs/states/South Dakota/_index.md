@@ -1,9 +1,12 @@
 ### South Dakota
 
-#### 10 Largest Elections
-{{< image src=SD_10.png >}}
+#### Election History
+{{< image src=SD_hist_vic.svg >}}
 
-#### Elections per Month
+{{< image src=SD_hist_size.svg >}}
+
+#### 10 Largest Elections
+{{< image src=SD_10.svg >}}
 
 #### 10 Most Recent Elections
 

@@ -1,9 +1,12 @@
 ### Ohio
 
-#### 10 Largest Elections
-{{< image src=OH_10.png >}}
+#### Election History
+{{< image src=OH_hist_vic.svg >}}
 
-#### Elections per Month
+{{< image src=OH_hist_size.svg >}}
+
+#### 10 Largest Elections
+{{< image src=OH_10.svg >}}
 
 #### 10 Most Recent Elections
 

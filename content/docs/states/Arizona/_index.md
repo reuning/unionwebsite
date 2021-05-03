@@ -1,9 +1,12 @@
 ### Arizona
 
-#### 10 Largest Elections
-{{< image src=AZ_10.png >}}
+#### Election History
+{{< image src=AZ_hist_vic.svg >}}
 
-#### Elections per Month
+{{< image src=AZ_hist_size.svg >}}
+
+#### 10 Largest Elections
+{{< image src=AZ_10.svg >}}
 
 #### 10 Most Recent Elections
 

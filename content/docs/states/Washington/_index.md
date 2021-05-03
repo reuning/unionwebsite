@@ -1,9 +1,12 @@
 ### Washington
 
-#### 10 Largest Elections
-{{< image src=WA_10.png >}}
+#### Election History
+{{< image src=WA_hist_vic.svg >}}
 
-#### Elections per Month
+{{< image src=WA_hist_size.svg >}}
+
+#### 10 Largest Elections
+{{< image src=WA_10.svg >}}
 
 #### 10 Most Recent Elections
 

@@ -1,9 +1,12 @@
 ### South Carolina
 
-#### 10 Largest Elections
-{{< image src=SC_10.png >}}
+#### Election History
+{{< image src=SC_hist_vic.svg >}}
 
-#### Elections per Month
+{{< image src=SC_hist_size.svg >}}
+
+#### 10 Largest Elections
+{{< image src=SC_10.svg >}}
 
 #### 10 Most Recent Elections
 

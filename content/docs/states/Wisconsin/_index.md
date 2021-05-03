@@ -1,9 +1,12 @@
 ### Wisconsin
 
-#### 10 Largest Elections
-{{< image src=WI_10.png >}}
+#### Election History
+{{< image src=WI_hist_vic.svg >}}
 
-#### Elections per Month
+{{< image src=WI_hist_size.svg >}}
+
+#### 10 Largest Elections
+{{< image src=WI_10.svg >}}
 
 #### 10 Most Recent Elections
 

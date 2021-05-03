@@ -1,9 +1,12 @@
 ### Pennsylvania
 
-#### 10 Largest Elections
-{{< image src=PA_10.png >}}
+#### Election History
+{{< image src=PA_hist_vic.svg >}}
 
-#### Elections per Month
+{{< image src=PA_hist_size.svg >}}
+
+#### 10 Largest Elections
+{{< image src=PA_10.svg >}}
 
 #### 10 Most Recent Elections
 

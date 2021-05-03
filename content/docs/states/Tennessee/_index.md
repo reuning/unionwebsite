@@ -1,9 +1,12 @@
 ### Tennessee
 
-#### 10 Largest Elections
-{{< image src=TN_10.png >}}
+#### Election History
+{{< image src=TN_hist_vic.svg >}}
 
-#### Elections per Month
+{{< image src=TN_hist_size.svg >}}
+
+#### 10 Largest Elections
+{{< image src=TN_10.svg >}}
 
 #### 10 Most Recent Elections
 
