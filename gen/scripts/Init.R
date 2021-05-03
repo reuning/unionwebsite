@@ -109,7 +109,7 @@ create_state_plot <- function(state_abb = "MN", number=10, data=NULL,
     labs(y="", x="Votes", caption = "Includes only certification votes with a single union, data from NLRB") + 
     ggtitle(paste("Largest Private Union Elections Since 2007 in", state)) 
   
-  f <- here("content", "docs", "states", state, paste0(state_abb, "_10.svg"))
+  f <- here("content", "data", "states", state, paste0(state_abb, "_10.svg"))
   ggsave(f, height=10*log10(number), width=8)
   
   
@@ -138,7 +138,7 @@ create_state_time_plot <- function(state_abb = "MN", data=NULL,
   labs(y="", x="Votes", caption = "Includes only certification votes with a single union, data from NLRB") + 
   ggtitle(paste("Number of Elections by Unit Size in", state)) 
   
-  f <- here("content", "docs", "states", state, paste0(state_abb, "_hist_size.svg"))
+  f <- here("content", "data", "states", state, paste0(state_abb, "_hist_size.svg"))
   
   ggsave(f, height=6, width=8)
   
@@ -152,7 +152,7 @@ create_state_time_plot <- function(state_abb = "MN", data=NULL,
     labs(y="", x="Votes", caption = "Includes only certification votes with a single union, data from NLRB") + 
     ggtitle(paste("Number Employees in a Union Election by Outcome in", state)) 
   
-  f <- here("content", "docs", "states", state, paste0(state_abb, "_hist_vic.svg"))
+  f <- here("content", "data", "states", state, paste0(state_abb, "_hist_vic.svg"))
   
   ggsave(f, height=6, width=8)
   
@@ -183,7 +183,7 @@ create_state_page <- function(state_abb = "MN"){
 
   state <- state.name[state.abb == state_abb]
     
-  dir.create(here("content",  "docs", "states", state))
+  dir.create(here("content",  "data", "states", state))
   
   
   tmp <-c(paste("###", state),
@@ -200,7 +200,7 @@ create_state_page <- function(state_abb = "MN"){
           ""
           )
 
-  f <- file(here("content", "docs", "states", state, "_index.md"))
+  f <- file(here("content", "data", "states", state, "_index.md"))
   writeLines(tmp, f)
   close(f)
 
@@ -212,7 +212,7 @@ for(state in state.abb){
   
   create_state_plot(state_abb = state, 
                     number=10, 
-                    data=dt,file =here("content",  "docs", "states", state,
+                    data=dt,file =here("content",  "data", "states", state,
                                          paste0(state_abb, "_", number, ".svg") ))
   create_state_time_plot(state_abb = state, 
                     data=dt)

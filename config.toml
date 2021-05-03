@@ -1,3 +1,10 @@
 baseURL = "http://example.org/"
 languageCode = "en-us"
 title = "Union Election Data"
+
+[params]
+BookToC = true
+BookSection = "data"
+
+[markup.tableOfContents]
+  startLevel = 3
