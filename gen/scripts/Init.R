@@ -186,17 +186,17 @@ create_state_page <- function(state_abb = "MN"){
   dir.create(here("content",  "data", "states", state))
   
   
-  tmp <-c(paste("###", state),
+  tmp <-c(paste("##", state),
           "", 
-          "#### Election History",
+          "### Election History",
           paste0("{{< image src=",state_abb, "_hist_vic.svg >}}"),
           "",
           paste0("{{< image src=",state_abb, "_hist_size.svg >}}"),
           "",
-          "#### 10 Largest Elections",
+          "### 10 Largest Elections",
           paste0("{{< image src=",state_abb, "_10.svg >}}"),
           "",
-          "#### 10 Most Recent Elections",
+          "### 10 Most Recent Elections",
           ""
           )
 
@@ -210,12 +210,13 @@ create_state_page <- function(state_abb = "MN"){
 for(state in state.abb){
   create_state_page(state_abb = state)
   
-  create_state_plot(state_abb = state, 
-                    number=10, 
-                    data=dt,file =here("content",  "data", "states", state,
-                                         paste0(state_abb, "_", number, ".svg") ))
-  create_state_time_plot(state_abb = state, 
-                    data=dt)
+  # create_state_plot(state_abb = state, 
+  #                   number=10, 
+  #                   data=dt,file =here("content",  "data", "states", state,
+  #                                        paste0(state_abb, "_", number, ".svg") ))
+  # create_state_time_plot(state_abb = state, 
+  #                   data=dt)
+  
 }
 
 # create_state_plot(state_abb = "ND",

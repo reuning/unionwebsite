@@ -1,8 +1,3 @@
----
-type: docs
-title: Alabama
----
-
 ## Alabama
 
 ### Election History
@@ -14,3 +9,4 @@ title: Alabama
 {{< image src=AL_10.svg >}}
 
 ### 10 Most Recent Elections
+
