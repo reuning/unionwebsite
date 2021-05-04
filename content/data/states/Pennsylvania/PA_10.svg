@@ -45,108 +45,113 @@
 <polyline points='479.93,635.33 479.93,23.34 ' style='stroke-width: 1.07; stroke: #EBEBEB; stroke-linecap: butt;' />
 <polyline points='562.85,635.33 562.85,23.34 ' style='stroke-width: 1.07; stroke: #EBEBEB; stroke-linecap: butt;' />
 <rect x='231.17' y='32.34' width='217.80' height='54.00' style='stroke-width: 1.07; stroke-linecap: square; stroke-linejoin: miter; fill: #008B45;' />
-<rect x='231.17' y='92.34' width='134.05' height='54.00' style='stroke-width: 1.07; stroke-linecap: square; stroke-linejoin: miter; fill: #008B45;' />
-<rect x='231.17' y='152.33' width='127.97' height='54.00' style='stroke-width: 1.07; stroke-linecap: square; stroke-linejoin: miter; fill: #008B45;' />
-<rect x='231.17' y='212.33' width='142.62' height='54.00' style='stroke-width: 1.07; stroke-linecap: square; stroke-linejoin: miter; fill: #008B45;' />
-<rect x='231.17' y='272.33' width='134.88' height='54.00' style='stroke-width: 1.07; stroke-linecap: square; stroke-linejoin: miter; fill: #008B45;' />
-<rect x='231.17' y='332.33' width='53.07' height='54.00' style='stroke-width: 1.07; stroke-linecap: square; stroke-linejoin: miter; fill: #008B45;' />
-<rect x='231.17' y='392.33' width='104.75' height='54.00' style='stroke-width: 1.07; stroke-linecap: square; stroke-linejoin: miter; fill: #008B45;' />
-<rect x='231.17' y='452.33' width='88.72' height='54.00' style='stroke-width: 1.07; stroke-linecap: square; stroke-linejoin: miter; fill: #008B45;' />
-<rect x='231.17' y='512.33' width='69.65' height='54.00' style='stroke-width: 1.07; stroke-linecap: square; stroke-linejoin: miter; fill: #008B45;' />
-<rect x='231.17' y='572.33' width='32.06' height='54.00' style='stroke-width: 1.07; stroke-linecap: square; stroke-linejoin: miter; fill: #008B45;' />
+<rect x='231.17' y='92.34' width='127.97' height='54.00' style='stroke-width: 1.07; stroke-linecap: square; stroke-linejoin: miter; fill: #008B45;' />
+<rect x='231.17' y='152.33' width='142.62' height='54.00' style='stroke-width: 1.07; stroke-linecap: square; stroke-linejoin: miter; fill: #008B45;' />
+<rect x='231.17' y='212.33' width='134.88' height='54.00' style='stroke-width: 1.07; stroke-linecap: square; stroke-linejoin: miter; fill: #008B45;' />
+<rect x='231.17' y='272.33' width='53.07' height='54.00' style='stroke-width: 1.07; stroke-linecap: square; stroke-linejoin: miter; fill: #008B45;' />
+<rect x='231.17' y='332.33' width='104.75' height='54.00' style='stroke-width: 1.07; stroke-linecap: square; stroke-linejoin: miter; fill: #008B45;' />
+<rect x='231.17' y='392.33' width='88.72' height='54.00' style='stroke-width: 1.07; stroke-linecap: square; stroke-linejoin: miter; fill: #008B45;' />
+<rect x='231.17' y='452.33' width='69.65' height='54.00' style='stroke-width: 1.07; stroke-linecap: square; stroke-linejoin: miter; fill: #008B45;' />
+<rect x='231.17' y='512.33' width='76.84' height='54.00' style='stroke-width: 1.07; stroke-linecap: square; stroke-linejoin: miter; fill: #008B45;' />
+<rect x='231.17' y='572.33' width='80.43' height='54.00' style='stroke-width: 1.07; stroke-linecap: square; stroke-linejoin: miter; fill: #008B45;' />
 <rect x='448.97' y='32.34' width='20.73' height='54.00' style='stroke-width: 1.07; stroke-linecap: square; stroke-linejoin: miter; fill: #CD3700;' />
-<rect x='365.22' y='92.34' width='39.80' height='54.00' style='stroke-width: 1.07; stroke-linecap: square; stroke-linejoin: miter; fill: #CD3700;' />
-<rect x='359.14' y='152.33' width='94.80' height='54.00' style='stroke-width: 1.07; stroke-linecap: square; stroke-linejoin: miter; fill: #CD3700;' />
-<rect x='373.79' y='212.33' width='32.34' height='54.00' style='stroke-width: 1.07; stroke-linecap: square; stroke-linejoin: miter; fill: #CD3700;' />
-<rect x='366.05' y='272.33' width='26.81' height='54.00' style='stroke-width: 1.07; stroke-linecap: square; stroke-linejoin: miter; fill: #CD3700;' />
-<rect x='284.24' y='332.33' width='140.96' height='54.00' style='stroke-width: 1.07; stroke-linecap: square; stroke-linejoin: miter; fill: #CD3700;' />
-<rect x='335.92' y='392.33' width='79.60' height='54.00' style='stroke-width: 1.07; stroke-linecap: square; stroke-linejoin: miter; fill: #CD3700;' />
-<rect x='319.89' y='452.33' width='63.57' height='54.00' style='stroke-width: 1.07; stroke-linecap: square; stroke-linejoin: miter; fill: #CD3700;' />
-<rect x='300.82' y='512.33' width='91.21' height='54.00' style='stroke-width: 1.07; stroke-linecap: square; stroke-linejoin: miter; fill: #CD3700;' />
-<rect x='263.23' y='572.33' width='101.99' height='54.00' style='stroke-width: 1.07; stroke-linecap: square; stroke-linejoin: miter; fill: #CD3700;' />
+<rect x='359.14' y='92.34' width='94.80' height='54.00' style='stroke-width: 1.07; stroke-linecap: square; stroke-linejoin: miter; fill: #CD3700;' />
+<rect x='373.79' y='152.33' width='32.34' height='54.00' style='stroke-width: 1.07; stroke-linecap: square; stroke-linejoin: miter; fill: #CD3700;' />
+<rect x='366.05' y='212.33' width='26.81' height='54.00' style='stroke-width: 1.07; stroke-linecap: square; stroke-linejoin: miter; fill: #CD3700;' />
+<rect x='284.24' y='272.33' width='140.96' height='54.00' style='stroke-width: 1.07; stroke-linecap: square; stroke-linejoin: miter; fill: #CD3700;' />
+<rect x='335.92' y='332.33' width='79.60' height='54.00' style='stroke-width: 1.07; stroke-linecap: square; stroke-linejoin: miter; fill: #CD3700;' />
+<rect x='319.89' y='392.33' width='63.57' height='54.00' style='stroke-width: 1.07; stroke-linecap: square; stroke-linejoin: miter; fill: #CD3700;' />
+<rect x='300.82' y='452.33' width='91.21' height='54.00' style='stroke-width: 1.07; stroke-linecap: square; stroke-linejoin: miter; fill: #CD3700;' />
+<rect x='308.01' y='512.33' width='20.73' height='54.00' style='stroke-width: 1.07; stroke-linecap: square; stroke-linejoin: miter; fill: #CD3700;' />
+<rect x='311.60' y='572.33' width='36.21' height='54.00' style='stroke-width: 1.07; stroke-linecap: square; stroke-linejoin: miter; fill: #CD3700;' />
 <rect x='469.70' y='32.34' width='55.28' height='54.00' style='stroke-width: 1.07; stroke-linecap: square; stroke-linejoin: miter; fill: #BEBEBE;' />
-<rect x='405.02' y='92.34' width='89.83' height='54.00' style='stroke-width: 1.07; stroke-linecap: square; stroke-linejoin: miter; fill: #BEBEBE;' />
-<rect x='453.95' y='152.33' width='32.89' height='54.00' style='stroke-width: 1.07; stroke-linecap: square; stroke-linejoin: miter; fill: #BEBEBE;' />
-<rect x='406.13' y='212.33' width='58.87' height='54.00' style='stroke-width: 1.07; stroke-linecap: square; stroke-linejoin: miter; fill: #BEBEBE;' />
-<rect x='392.86' y='272.33' width='70.20' height='54.00' style='stroke-width: 1.07; stroke-linecap: square; stroke-linejoin: miter; fill: #BEBEBE;' />
-<rect x='425.20' y='332.33' width='27.09' height='54.00' style='stroke-width: 1.07; stroke-linecap: square; stroke-linejoin: miter; fill: #BEBEBE;' />
-<rect x='415.53' y='392.33' width='17.97' height='54.00' style='stroke-width: 1.07; stroke-linecap: square; stroke-linejoin: miter; fill: #BEBEBE;' />
-<rect x='383.46' y='452.33' width='39.52' height='54.00' style='stroke-width: 1.07; stroke-linecap: square; stroke-linejoin: miter; fill: #BEBEBE;' />
-<rect x='392.03' y='512.33' width='22.66' height='54.00' style='stroke-width: 1.07; stroke-linecap: square; stroke-linejoin: miter; fill: #BEBEBE;' />
-<rect x='365.22' y='572.33' width='42.01' height='54.00' style='stroke-width: 1.07; stroke-linecap: square; stroke-linejoin: miter; fill: #BEBEBE;' />
+<rect x='453.95' y='92.34' width='32.89' height='54.00' style='stroke-width: 1.07; stroke-linecap: square; stroke-linejoin: miter; fill: #BEBEBE;' />
+<rect x='406.13' y='152.33' width='58.87' height='54.00' style='stroke-width: 1.07; stroke-linecap: square; stroke-linejoin: miter; fill: #BEBEBE;' />
+<rect x='392.86' y='212.33' width='70.20' height='54.00' style='stroke-width: 1.07; stroke-linecap: square; stroke-linejoin: miter; fill: #BEBEBE;' />
+<rect x='425.20' y='272.33' width='27.09' height='54.00' style='stroke-width: 1.07; stroke-linecap: square; stroke-linejoin: miter; fill: #BEBEBE;' />
+<rect x='415.53' y='332.33' width='17.97' height='54.00' style='stroke-width: 1.07; stroke-linecap: square; stroke-linejoin: miter; fill: #BEBEBE;' />
+<rect x='383.46' y='392.33' width='39.52' height='54.00' style='stroke-width: 1.07; stroke-linecap: square; stroke-linejoin: miter; fill: #BEBEBE;' />
+<rect x='392.03' y='452.33' width='22.66' height='54.00' style='stroke-width: 1.07; stroke-linecap: square; stroke-linejoin: miter; fill: #BEBEBE;' />
+<rect x='328.74' y='512.33' width='48.65' height='54.00' style='stroke-width: 1.07; stroke-linecap: square; stroke-linejoin: miter; fill: #BEBEBE;' />
+<rect x='347.81' y='572.33' width='25.15' height='54.00' style='stroke-width: 1.07; stroke-linecap: square; stroke-linejoin: miter; fill: #BEBEBE;' />
 <text x='554.36' y='63.29' text-anchor='middle' style='font-size: 11.04px; fill: #008B45; font-family: Arial;' textLength='22.08px' lengthAdjust='spacingAndGlyphs'>92%</text>
-<text x='554.36' y='123.29' text-anchor='middle' style='font-size: 11.04px; fill: #008B45; font-family: Arial;' textLength='22.08px' lengthAdjust='spacingAndGlyphs'>78%</text>
-<text x='554.36' y='183.29' text-anchor='middle' style='font-size: 11.04px; fill: #008B45; font-family: Arial;' textLength='22.08px' lengthAdjust='spacingAndGlyphs'>58%</text>
-<text x='554.36' y='243.29' text-anchor='middle' style='font-size: 11.04px; fill: #008B45; font-family: Arial;' textLength='22.08px' lengthAdjust='spacingAndGlyphs'>82%</text>
-<text x='554.36' y='303.29' text-anchor='middle' style='font-size: 11.04px; fill: #008B45; font-family: Arial;' textLength='22.08px' lengthAdjust='spacingAndGlyphs'>84%</text>
-<text x='554.36' y='363.29' text-anchor='middle' style='font-size: 11.04px; fill: #CD3700; font-family: Arial;' textLength='22.08px' lengthAdjust='spacingAndGlyphs'>28%</text>
-<text x='554.36' y='423.29' text-anchor='middle' style='font-size: 11.04px; fill: #008B45; font-family: Arial;' textLength='22.08px' lengthAdjust='spacingAndGlyphs'>56%</text>
-<text x='554.36' y='483.29' text-anchor='middle' style='font-size: 11.04px; fill: #008B45; font-family: Arial;' textLength='22.08px' lengthAdjust='spacingAndGlyphs'>58%</text>
-<text x='554.36' y='543.29' text-anchor='middle' style='font-size: 11.04px; fill: #CD3700; font-family: Arial;' textLength='22.08px' lengthAdjust='spacingAndGlyphs'>44%</text>
-<text x='554.36' y='603.29' text-anchor='middle' style='font-size: 11.04px; fill: #CD3700; font-family: Arial;' textLength='22.08px' lengthAdjust='spacingAndGlyphs'>24%</text>
+<text x='554.36' y='123.29' text-anchor='middle' style='font-size: 11.04px; fill: #008B45; font-family: Arial;' textLength='22.08px' lengthAdjust='spacingAndGlyphs'>58%</text>
+<text x='554.36' y='183.29' text-anchor='middle' style='font-size: 11.04px; fill: #008B45; font-family: Arial;' textLength='22.08px' lengthAdjust='spacingAndGlyphs'>82%</text>
+<text x='554.36' y='243.29' text-anchor='middle' style='font-size: 11.04px; fill: #008B45; font-family: Arial;' textLength='22.08px' lengthAdjust='spacingAndGlyphs'>84%</text>
+<text x='554.36' y='303.29' text-anchor='middle' style='font-size: 11.04px; fill: #CD3700; font-family: Arial;' textLength='22.08px' lengthAdjust='spacingAndGlyphs'>28%</text>
+<text x='554.36' y='363.29' text-anchor='middle' style='font-size: 11.04px; fill: #008B45; font-family: Arial;' textLength='22.08px' lengthAdjust='spacingAndGlyphs'>56%</text>
+<text x='554.36' y='423.29' text-anchor='middle' style='font-size: 11.04px; fill: #008B45; font-family: Arial;' textLength='22.08px' lengthAdjust='spacingAndGlyphs'>58%</text>
+<text x='554.36' y='483.29' text-anchor='middle' style='font-size: 11.04px; fill: #CD3700; font-family: Arial;' textLength='22.08px' lengthAdjust='spacingAndGlyphs'>44%</text>
+<text x='554.36' y='543.29' text-anchor='middle' style='font-size: 11.04px; fill: #008B45; font-family: Arial;' textLength='22.08px' lengthAdjust='spacingAndGlyphs'>78%</text>
+<text x='554.36' y='603.29' text-anchor='middle' style='font-size: 11.04px; fill: #008B45; font-family: Arial;' textLength='22.08px' lengthAdjust='spacingAndGlyphs'>68%</text>
 <text x='554.36' y='63.29' text-anchor='middle' style='font-size: 11.04px; fill: #008B45; font-family: Arial;' textLength='22.08px' lengthAdjust='spacingAndGlyphs'>92%</text>
-<text x='554.36' y='123.29' text-anchor='middle' style='font-size: 11.04px; fill: #008B45; font-family: Arial;' textLength='22.08px' lengthAdjust='spacingAndGlyphs'>78%</text>
-<text x='554.36' y='183.29' text-anchor='middle' style='font-size: 11.04px; fill: #008B45; font-family: Arial;' textLength='22.08px' lengthAdjust='spacingAndGlyphs'>58%</text>
-<text x='554.36' y='243.29' text-anchor='middle' style='font-size: 11.04px; fill: #008B45; font-family: Arial;' textLength='22.08px' lengthAdjust='spacingAndGlyphs'>82%</text>
-<text x='554.36' y='303.29' text-anchor='middle' style='font-size: 11.04px; fill: #008B45; font-family: Arial;' textLength='22.08px' lengthAdjust='spacingAndGlyphs'>84%</text>
-<text x='554.36' y='363.29' text-anchor='middle' style='font-size: 11.04px; fill: #CD3700; font-family: Arial;' textLength='22.08px' lengthAdjust='spacingAndGlyphs'>28%</text>
-<text x='554.36' y='423.29' text-anchor='middle' style='font-size: 11.04px; fill: #008B45; font-family: Arial;' textLength='22.08px' lengthAdjust='spacingAndGlyphs'>56%</text>
-<text x='554.36' y='483.29' text-anchor='middle' style='font-size: 11.04px; fill: #008B45; font-family: Arial;' textLength='22.08px' lengthAdjust='spacingAndGlyphs'>58%</text>
-<text x='554.36' y='543.29' text-anchor='middle' style='font-size: 11.04px; fill: #CD3700; font-family: Arial;' textLength='22.08px' lengthAdjust='spacingAndGlyphs'>44%</text>
-<text x='554.36' y='603.29' text-anchor='middle' style='font-size: 11.04px; fill: #CD3700; font-family: Arial;' textLength='22.08px' lengthAdjust='spacingAndGlyphs'>24%</text>
+<text x='554.36' y='123.29' text-anchor='middle' style='font-size: 11.04px; fill: #008B45; font-family: Arial;' textLength='22.08px' lengthAdjust='spacingAndGlyphs'>58%</text>
+<text x='554.36' y='183.29' text-anchor='middle' style='font-size: 11.04px; fill: #008B45; font-family: Arial;' textLength='22.08px' lengthAdjust='spacingAndGlyphs'>82%</text>
+<text x='554.36' y='243.29' text-anchor='middle' style='font-size: 11.04px; fill: #008B45; font-family: Arial;' textLength='22.08px' lengthAdjust='spacingAndGlyphs'>84%</text>
+<text x='554.36' y='303.29' text-anchor='middle' style='font-size: 11.04px; fill: #CD3700; font-family: Arial;' textLength='22.08px' lengthAdjust='spacingAndGlyphs'>28%</text>
+<text x='554.36' y='363.29' text-anchor='middle' style='font-size: 11.04px; fill: #008B45; font-family: Arial;' textLength='22.08px' lengthAdjust='spacingAndGlyphs'>56%</text>
+<text x='554.36' y='423.29' text-anchor='middle' style='font-size: 11.04px; fill: #008B45; font-family: Arial;' textLength='22.08px' lengthAdjust='spacingAndGlyphs'>58%</text>
+<text x='554.36' y='483.29' text-anchor='middle' style='font-size: 11.04px; fill: #CD3700; font-family: Arial;' textLength='22.08px' lengthAdjust='spacingAndGlyphs'>44%</text>
+<text x='554.36' y='543.29' text-anchor='middle' style='font-size: 11.04px; fill: #008B45; font-family: Arial;' textLength='22.08px' lengthAdjust='spacingAndGlyphs'>78%</text>
+<text x='554.36' y='603.29' text-anchor='middle' style='font-size: 11.04px; fill: #008B45; font-family: Arial;' textLength='22.08px' lengthAdjust='spacingAndGlyphs'>68%</text>
 <text x='554.36' y='63.29' text-anchor='middle' style='font-size: 11.04px; fill: #008B45; font-family: Arial;' textLength='22.08px' lengthAdjust='spacingAndGlyphs'>92%</text>
-<text x='554.36' y='123.29' text-anchor='middle' style='font-size: 11.04px; fill: #008B45; font-family: Arial;' textLength='22.08px' lengthAdjust='spacingAndGlyphs'>78%</text>
-<text x='554.36' y='183.29' text-anchor='middle' style='font-size: 11.04px; fill: #008B45; font-family: Arial;' textLength='22.08px' lengthAdjust='spacingAndGlyphs'>58%</text>
-<text x='554.36' y='243.29' text-anchor='middle' style='font-size: 11.04px; fill: #008B45; font-family: Arial;' textLength='22.08px' lengthAdjust='spacingAndGlyphs'>82%</text>
-<text x='554.36' y='303.29' text-anchor='middle' style='font-size: 11.04px; fill: #008B45; font-family: Arial;' textLength='22.08px' lengthAdjust='spacingAndGlyphs'>84%</text>
-<text x='554.36' y='363.29' text-anchor='middle' style='font-size: 11.04px; fill: #CD3700; font-family: Arial;' textLength='22.08px' lengthAdjust='spacingAndGlyphs'>28%</text>
-<text x='554.36' y='423.29' text-anchor='middle' style='font-size: 11.04px; fill: #008B45; font-family: Arial;' textLength='22.08px' lengthAdjust='spacingAndGlyphs'>56%</text>
-<text x='554.36' y='483.29' text-anchor='middle' style='font-size: 11.04px; fill: #008B45; font-family: Arial;' textLength='22.08px' lengthAdjust='spacingAndGlyphs'>58%</text>
-<text x='554.36' y='543.29' text-anchor='middle' style='font-size: 11.04px; fill: #CD3700; font-family: Arial;' textLength='22.08px' lengthAdjust='spacingAndGlyphs'>44%</text>
-<text x='554.36' y='603.29' text-anchor='middle' style='font-size: 11.04px; fill: #CD3700; font-family: Arial;' textLength='22.08px' lengthAdjust='spacingAndGlyphs'>24%</text>
+<text x='554.36' y='123.29' text-anchor='middle' style='font-size: 11.04px; fill: #008B45; font-family: Arial;' textLength='22.08px' lengthAdjust='spacingAndGlyphs'>58%</text>
+<text x='554.36' y='183.29' text-anchor='middle' style='font-size: 11.04px; fill: #008B45; font-family: Arial;' textLength='22.08px' lengthAdjust='spacingAndGlyphs'>82%</text>
+<text x='554.36' y='243.29' text-anchor='middle' style='font-size: 11.04px; fill: #008B45; font-family: Arial;' textLength='22.08px' lengthAdjust='spacingAndGlyphs'>84%</text>
+<text x='554.36' y='303.29' text-anchor='middle' style='font-size: 11.04px; fill: #CD3700; font-family: Arial;' textLength='22.08px' lengthAdjust='spacingAndGlyphs'>28%</text>
+<text x='554.36' y='363.29' text-anchor='middle' style='font-size: 11.04px; fill: #008B45; font-family: Arial;' textLength='22.08px' lengthAdjust='spacingAndGlyphs'>56%</text>
+<text x='554.36' y='423.29' text-anchor='middle' style='font-size: 11.04px; fill: #008B45; font-family: Arial;' textLength='22.08px' lengthAdjust='spacingAndGlyphs'>58%</text>
+<text x='554.36' y='483.29' text-anchor='middle' style='font-size: 11.04px; fill: #CD3700; font-family: Arial;' textLength='22.08px' lengthAdjust='spacingAndGlyphs'>44%</text>
+<text x='554.36' y='543.29' text-anchor='middle' style='font-size: 11.04px; fill: #008B45; font-family: Arial;' textLength='22.08px' lengthAdjust='spacingAndGlyphs'>78%</text>
+<text x='554.36' y='603.29' text-anchor='middle' style='font-size: 11.04px; fill: #008B45; font-family: Arial;' textLength='22.08px' lengthAdjust='spacingAndGlyphs'>68%</text>
 <text x='554.36' y='33.29' text-anchor='middle' style='font-size: 11.04px; font-family: Arial;' textLength='33.71px' lengthAdjust='spacingAndGlyphs'>Margin</text>
 </g>
 <g clip-path='url(#cpMC4wMHw1NzYuMDB8MC4wMHw3MjAuMDA=)'>
-<text x='210.08' y='588.23' text-anchor='end' style='font-size: 8.80px; fill: #4D4D4D; font-family: Arial;' textLength='174.94px' lengthAdjust='spacingAndGlyphs'>ASSOCIATION OF PARCEL WORKERS OF</text>
-<text x='210.08' y='597.73' text-anchor='end' style='font-size: 8.80px; fill: #4D4D4D; font-family: Arial;' textLength='133.94px' lengthAdjust='spacingAndGlyphs'>AMERICA (APWA) at Ups Ground</text>
-<text x='210.08' y='607.24' text-anchor='end' style='font-size: 8.80px; fill: #4D4D4D; font-family: Arial;' textLength='125.68px' lengthAdjust='spacingAndGlyphs'>Freight, Inc. in Mechanisburg on</text>
-<text x='210.08' y='616.74' text-anchor='end' style='font-size: 8.80px; fill: #4D4D4D; font-family: Arial;' textLength='45.03px' lengthAdjust='spacingAndGlyphs'>2008-05-28</text>
-<text x='210.08' y='532.98' text-anchor='end' style='font-size: 8.80px; fill: #4D4D4D; font-family: Arial;' textLength='149.62px' lengthAdjust='spacingAndGlyphs'>United Food and Commercial Workers</text>
-<text x='210.08' y='542.48' text-anchor='end' style='font-size: 8.80px; fill: #4D4D4D; font-family: Arial;' textLength='142.84px' lengthAdjust='spacingAndGlyphs'>Union, Local 1776 at Vantage Foods</text>
-<text x='210.08' y='551.99' text-anchor='end' style='font-size: 8.80px; fill: #4D4D4D; font-family: Arial;' textLength='132.54px' lengthAdjust='spacingAndGlyphs'>Pa Lp in Camp Hill on 2015-03-12</text>
-<text x='210.08' y='463.48' text-anchor='end' style='font-size: 8.80px; fill: #4D4D4D; font-family: Arial;' textLength='140.35px' lengthAdjust='spacingAndGlyphs'>SEIU Healthcare Pennsylvania, The</text>
-<text x='210.08' y='472.98' text-anchor='end' style='font-size: 8.80px; fill: #4D4D4D; font-family: Arial;' textLength='111.97px' lengthAdjust='spacingAndGlyphs'>Nurse Alliance at West Penn</text>
-<text x='210.08' y='482.49' text-anchor='end' style='font-size: 8.80px; fill: #4D4D4D; font-family: Arial;' textLength='117.35px' lengthAdjust='spacingAndGlyphs'>Allegheny Health System, Inc.</text>
-<text x='210.08' y='491.99' text-anchor='end' style='font-size: 8.80px; fill: #4D4D4D; font-family: Arial;' textLength='104.61px' lengthAdjust='spacingAndGlyphs'>D/B/A W... in Pittsburgh on</text>
-<text x='210.08' y='501.49' text-anchor='end' style='font-size: 8.80px; fill: #4D4D4D; font-family: Arial;' textLength='45.03px' lengthAdjust='spacingAndGlyphs'>2020-08-14</text>
-<text x='210.08' y='408.23' text-anchor='end' style='font-size: 8.80px; fill: #4D4D4D; font-family: Arial;' textLength='172.25px' lengthAdjust='spacingAndGlyphs'>PENNSYLVANIA'S HEALTH CARE UNION,</text>
-<text x='210.08' y='417.73' text-anchor='end' style='font-size: 8.80px; fill: #4D4D4D; font-family: Arial;' textLength='133.47px' lengthAdjust='spacingAndGlyphs'>SEIU DISTRICT 1199P at Altoona</text>
-<text x='210.08' y='427.24' text-anchor='end' style='font-size: 8.80px; fill: #4D4D4D; font-family: Arial;' textLength='135.95px' lengthAdjust='spacingAndGlyphs'>Regional Health System in Altoona</text>
-<text x='210.08' y='436.74' text-anchor='end' style='font-size: 8.80px; fill: #4D4D4D; font-family: Arial;' textLength='57.26px' lengthAdjust='spacingAndGlyphs'>on 2007-05-24</text>
-<text x='210.08' y='343.48' text-anchor='end' style='font-size: 8.80px; fill: #4D4D4D; font-family: Arial;' textLength='147.56px' lengthAdjust='spacingAndGlyphs'>INTERNATIONAL ASSOCIATION OF</text>
-<text x='210.08' y='352.98' text-anchor='end' style='font-size: 8.80px; fill: #4D4D4D; font-family: Arial;' textLength='180.32px' lengthAdjust='spacingAndGlyphs'>MACHINISTS AND AEROSPACE WORKERS</text>
-<text x='210.08' y='362.49' text-anchor='end' style='font-size: 8.80px; fill: #4D4D4D; font-family: Arial;' textLength='148.08px' lengthAdjust='spacingAndGlyphs'>DISTRICT LODGE 1, AFL-CIO at Sps</text>
-<text x='210.08' y='371.99' text-anchor='end' style='font-size: 8.80px; fill: #4D4D4D; font-family: Arial;' textLength='118.80px' lengthAdjust='spacingAndGlyphs'>Technologies, Inc., Division Of</text>
-<text x='210.08' y='381.49' text-anchor='end' style='font-size: 8.80px; fill: #4D4D4D; font-family: Arial;' textLength='130.12px' lengthAdjust='spacingAndGlyphs'>Pcc in Jenkintown on 2010-03-04</text>
-<text x='210.08' y='283.48' text-anchor='end' style='font-size: 8.80px; fill: #4D4D4D; font-family: Arial;' textLength='126.18px' lengthAdjust='spacingAndGlyphs'>Service Employees International</text>
-<text x='210.08' y='292.98' text-anchor='end' style='font-size: 8.80px; fill: #4D4D4D; font-family: Arial;' textLength='93.39px' lengthAdjust='spacingAndGlyphs'>Union, SEIU Healthcare</text>
-<text x='210.08' y='302.49' text-anchor='end' style='font-size: 8.80px; fill: #4D4D4D; font-family: Arial;' textLength='136.96px' lengthAdjust='spacingAndGlyphs'>Pennsylvania at Allegheny General</text>
-<text x='210.08' y='311.99' text-anchor='end' style='font-size: 8.80px; fill: #4D4D4D; font-family: Arial;' textLength='95.36px' lengthAdjust='spacingAndGlyphs'>Hospital in Pittsburgh on</text>
-<text x='210.08' y='321.49' text-anchor='end' style='font-size: 8.80px; fill: #4D4D4D; font-family: Arial;' textLength='45.03px' lengthAdjust='spacingAndGlyphs'>2015-06-03</text>
-<text x='210.08' y='228.23' text-anchor='end' style='font-size: 8.80px; fill: #4D4D4D; font-family: Arial;' textLength='130.08px' lengthAdjust='spacingAndGlyphs'>Pennsylvania Association of Staff</text>
-<text x='210.08' y='237.74' text-anchor='end' style='font-size: 8.80px; fill: #4D4D4D; font-family: Arial;' textLength='133.99px' lengthAdjust='spacingAndGlyphs'>Nurses and Allied Professionals at</text>
-<text x='210.08' y='247.24' text-anchor='end' style='font-size: 8.80px; fill: #4D4D4D; font-family: Arial;' textLength='144.76px' lengthAdjust='spacingAndGlyphs'>Tenet Healthsystem Hahnemann, Llc</text>
-<text x='210.08' y='256.74' text-anchor='end' style='font-size: 8.80px; fill: #4D4D4D; font-family: Arial;' textLength='116.94px' lengthAdjust='spacingAndGlyphs'>in Philadelphia on 2016-01-20</text>
-<text x='210.08' y='163.48' text-anchor='end' style='font-size: 8.80px; fill: #4D4D4D; font-family: Arial;' textLength='130.08px' lengthAdjust='spacingAndGlyphs'>Pennsylvania Association of Staff</text>
-<text x='210.08' y='172.98' text-anchor='end' style='font-size: 8.80px; fill: #4D4D4D; font-family: Arial;' textLength='124.21px' lengthAdjust='spacingAndGlyphs'>Nurses and Allied Professionals</text>
-<text x='210.08' y='182.49' text-anchor='end' style='font-size: 8.80px; fill: #4D4D4D; font-family: Arial;' textLength='110.49px' lengthAdjust='spacingAndGlyphs'>(PASNAP) at Albert Einstein</text>
-<text x='210.08' y='191.99' text-anchor='end' style='font-size: 8.80px; fill: #4D4D4D; font-family: Arial;' textLength='131.08px' lengthAdjust='spacingAndGlyphs'>Medical Center in Philadelphia on</text>
-<text x='210.08' y='201.50' text-anchor='end' style='font-size: 8.80px; fill: #4D4D4D; font-family: Arial;' textLength='45.03px' lengthAdjust='spacingAndGlyphs'>2016-04-08</text>
-<text x='210.08' y='103.48' text-anchor='end' style='font-size: 8.80px; fill: #4D4D4D; font-family: Arial;' textLength='105.64px' lengthAdjust='spacingAndGlyphs'>International Association of</text>
-<text x='210.08' y='112.98' text-anchor='end' style='font-size: 8.80px; fill: #4D4D4D; font-family: Arial;' textLength='140.84px' lengthAdjust='spacingAndGlyphs'>Machinists and Aerospace Workers,</text>
-<text x='210.08' y='122.49' text-anchor='end' style='font-size: 8.80px; fill: #4D4D4D; font-family: Arial;' textLength='110.48px' lengthAdjust='spacingAndGlyphs'>AFL-CIO, District Lodge 1 at</text>
-<text x='210.08' y='131.99' text-anchor='end' style='font-size: 8.80px; fill: #4D4D4D; font-family: Arial;' textLength='119.84px' lengthAdjust='spacingAndGlyphs'>Bowhead Support Group Llc in</text>
-<text x='210.08' y='141.50' text-anchor='end' style='font-size: 8.80px; fill: #4D4D4D; font-family: Arial;' textLength='117.91px' lengthAdjust='spacingAndGlyphs'>Chambersburg on 2015-07-30</text>
+<text x='210.08' y='573.97' text-anchor='end' style='font-size: 8.80px; fill: #4D4D4D; font-family: Arial;' textLength='123.73px' lengthAdjust='spacingAndGlyphs'>Professional and Public Service</text>
+<text x='210.08' y='583.48' text-anchor='end' style='font-size: 8.80px; fill: #4D4D4D; font-family: Arial;' textLength='119.35px' lengthAdjust='spacingAndGlyphs'>Employees, Local Union 1310,</text>
+<text x='210.08' y='592.98' text-anchor='end' style='font-size: 8.80px; fill: #4D4D4D; font-family: Arial;' textLength='89.70px' lengthAdjust='spacingAndGlyphs'>affiliated with Laborers'</text>
+<text x='210.08' y='602.48' text-anchor='end' style='font-size: 8.80px; fill: #4D4D4D; font-family: Arial;' textLength='107.59px' lengthAdjust='spacingAndGlyphs'>International Union of North</text>
+<text x='210.08' y='611.99' text-anchor='end' style='font-size: 8.80px; fill: #4D4D4D; font-family: Arial;' textLength='140.82px' lengthAdjust='spacingAndGlyphs'>America (LIUNA) at Advance Stores</text>
+<text x='210.08' y='621.49' text-anchor='end' style='font-size: 8.80px; fill: #4D4D4D; font-family: Arial;' textLength='118.82px' lengthAdjust='spacingAndGlyphs'>Company, Inc. D/B/A Advance</text>
+<text x='210.08' y='631.00' text-anchor='end' style='font-size: 8.80px; fill: #4D4D4D; font-family: Arial;' textLength='133.04px' lengthAdjust='spacingAndGlyphs'>Auto... in Kutztown on 2018-09-11</text>
+<text x='210.08' y='513.97' text-anchor='end' style='font-size: 8.80px; fill: #4D4D4D; font-family: Arial;' textLength='130.56px' lengthAdjust='spacingAndGlyphs'>United Steel, Paper and Forestry,</text>
+<text x='210.08' y='523.48' text-anchor='end' style='font-size: 8.80px; fill: #4D4D4D; font-family: Arial;' textLength='124.72px' lengthAdjust='spacingAndGlyphs'>Rubber, Manufacturing, Energy,</text>
+<text x='210.08' y='532.98' text-anchor='end' style='font-size: 8.80px; fill: #4D4D4D; font-family: Arial;' textLength='99.74px' lengthAdjust='spacingAndGlyphs'>Allied &amp; Industrial Service</text>
+<text x='210.08' y='542.48' text-anchor='end' style='font-size: 8.80px; fill: #4D4D4D; font-family: Arial;' textLength='111.49px' lengthAdjust='spacingAndGlyphs'>Workers International Union,</text>
+<text x='210.08' y='551.99' text-anchor='end' style='font-size: 8.80px; fill: #4D4D4D; font-family: Arial;' textLength='135.91px' lengthAdjust='spacingAndGlyphs'>AFL-CIO/CLC at Carnegie Institute</text>
+<text x='210.08' y='561.49' text-anchor='end' style='font-size: 8.80px; fill: #4D4D4D; font-family: Arial;' textLength='140.30px' lengthAdjust='spacingAndGlyphs'>D/B/A Carnegie Museums Of Pi... in</text>
+<text x='210.08' y='571.00' text-anchor='end' style='font-size: 8.80px; fill: #4D4D4D; font-family: Arial;' textLength='99.32px' lengthAdjust='spacingAndGlyphs'>Pittsburgh on 2020-12-15</text>
+<text x='210.08' y='472.98' text-anchor='end' style='font-size: 8.80px; fill: #4D4D4D; font-family: Arial;' textLength='149.62px' lengthAdjust='spacingAndGlyphs'>United Food and Commercial Workers</text>
+<text x='210.08' y='482.49' text-anchor='end' style='font-size: 8.80px; fill: #4D4D4D; font-family: Arial;' textLength='142.84px' lengthAdjust='spacingAndGlyphs'>Union, Local 1776 at Vantage Foods</text>
+<text x='210.08' y='491.99' text-anchor='end' style='font-size: 8.80px; fill: #4D4D4D; font-family: Arial;' textLength='132.54px' lengthAdjust='spacingAndGlyphs'>Pa Lp in Camp Hill on 2015-03-12</text>
+<text x='210.08' y='403.48' text-anchor='end' style='font-size: 8.80px; fill: #4D4D4D; font-family: Arial;' textLength='140.35px' lengthAdjust='spacingAndGlyphs'>SEIU Healthcare Pennsylvania, The</text>
+<text x='210.08' y='412.98' text-anchor='end' style='font-size: 8.80px; fill: #4D4D4D; font-family: Arial;' textLength='111.97px' lengthAdjust='spacingAndGlyphs'>Nurse Alliance at West Penn</text>
+<text x='210.08' y='422.49' text-anchor='end' style='font-size: 8.80px; fill: #4D4D4D; font-family: Arial;' textLength='117.35px' lengthAdjust='spacingAndGlyphs'>Allegheny Health System, Inc.</text>
+<text x='210.08' y='431.99' text-anchor='end' style='font-size: 8.80px; fill: #4D4D4D; font-family: Arial;' textLength='104.61px' lengthAdjust='spacingAndGlyphs'>D/B/A W... in Pittsburgh on</text>
+<text x='210.08' y='441.49' text-anchor='end' style='font-size: 8.80px; fill: #4D4D4D; font-family: Arial;' textLength='45.03px' lengthAdjust='spacingAndGlyphs'>2020-08-14</text>
+<text x='210.08' y='348.23' text-anchor='end' style='font-size: 8.80px; fill: #4D4D4D; font-family: Arial;' textLength='172.25px' lengthAdjust='spacingAndGlyphs'>PENNSYLVANIA'S HEALTH CARE UNION,</text>
+<text x='210.08' y='357.73' text-anchor='end' style='font-size: 8.80px; fill: #4D4D4D; font-family: Arial;' textLength='133.47px' lengthAdjust='spacingAndGlyphs'>SEIU DISTRICT 1199P at Altoona</text>
+<text x='210.08' y='367.24' text-anchor='end' style='font-size: 8.80px; fill: #4D4D4D; font-family: Arial;' textLength='135.95px' lengthAdjust='spacingAndGlyphs'>Regional Health System in Altoona</text>
+<text x='210.08' y='376.74' text-anchor='end' style='font-size: 8.80px; fill: #4D4D4D; font-family: Arial;' textLength='57.26px' lengthAdjust='spacingAndGlyphs'>on 2007-05-24</text>
+<text x='210.08' y='283.48' text-anchor='end' style='font-size: 8.80px; fill: #4D4D4D; font-family: Arial;' textLength='147.56px' lengthAdjust='spacingAndGlyphs'>INTERNATIONAL ASSOCIATION OF</text>
+<text x='210.08' y='292.98' text-anchor='end' style='font-size: 8.80px; fill: #4D4D4D; font-family: Arial;' textLength='180.32px' lengthAdjust='spacingAndGlyphs'>MACHINISTS AND AEROSPACE WORKERS</text>
+<text x='210.08' y='302.49' text-anchor='end' style='font-size: 8.80px; fill: #4D4D4D; font-family: Arial;' textLength='148.08px' lengthAdjust='spacingAndGlyphs'>DISTRICT LODGE 1, AFL-CIO at Sps</text>
+<text x='210.08' y='311.99' text-anchor='end' style='font-size: 8.80px; fill: #4D4D4D; font-family: Arial;' textLength='118.80px' lengthAdjust='spacingAndGlyphs'>Technologies, Inc., Division Of</text>
+<text x='210.08' y='321.49' text-anchor='end' style='font-size: 8.80px; fill: #4D4D4D; font-family: Arial;' textLength='130.12px' lengthAdjust='spacingAndGlyphs'>Pcc in Jenkintown on 2010-03-04</text>
+<text x='210.08' y='223.48' text-anchor='end' style='font-size: 8.80px; fill: #4D4D4D; font-family: Arial;' textLength='126.18px' lengthAdjust='spacingAndGlyphs'>Service Employees International</text>
+<text x='210.08' y='232.98' text-anchor='end' style='font-size: 8.80px; fill: #4D4D4D; font-family: Arial;' textLength='93.39px' lengthAdjust='spacingAndGlyphs'>Union, SEIU Healthcare</text>
+<text x='210.08' y='242.49' text-anchor='end' style='font-size: 8.80px; fill: #4D4D4D; font-family: Arial;' textLength='136.96px' lengthAdjust='spacingAndGlyphs'>Pennsylvania at Allegheny General</text>
+<text x='210.08' y='251.99' text-anchor='end' style='font-size: 8.80px; fill: #4D4D4D; font-family: Arial;' textLength='95.36px' lengthAdjust='spacingAndGlyphs'>Hospital in Pittsburgh on</text>
+<text x='210.08' y='261.50' text-anchor='end' style='font-size: 8.80px; fill: #4D4D4D; font-family: Arial;' textLength='45.03px' lengthAdjust='spacingAndGlyphs'>2015-06-03</text>
+<text x='210.08' y='168.23' text-anchor='end' style='font-size: 8.80px; fill: #4D4D4D; font-family: Arial;' textLength='130.08px' lengthAdjust='spacingAndGlyphs'>Pennsylvania Association of Staff</text>
+<text x='210.08' y='177.74' text-anchor='end' style='font-size: 8.80px; fill: #4D4D4D; font-family: Arial;' textLength='133.99px' lengthAdjust='spacingAndGlyphs'>Nurses and Allied Professionals at</text>
+<text x='210.08' y='187.24' text-anchor='end' style='font-size: 8.80px; fill: #4D4D4D; font-family: Arial;' textLength='144.76px' lengthAdjust='spacingAndGlyphs'>Tenet Healthsystem Hahnemann, Llc</text>
+<text x='210.08' y='196.74' text-anchor='end' style='font-size: 8.80px; fill: #4D4D4D; font-family: Arial;' textLength='116.94px' lengthAdjust='spacingAndGlyphs'>in Philadelphia on 2016-01-20</text>
+<text x='210.08' y='103.48' text-anchor='end' style='font-size: 8.80px; fill: #4D4D4D; font-family: Arial;' textLength='130.08px' lengthAdjust='spacingAndGlyphs'>Pennsylvania Association of Staff</text>
+<text x='210.08' y='112.98' text-anchor='end' style='font-size: 8.80px; fill: #4D4D4D; font-family: Arial;' textLength='124.21px' lengthAdjust='spacingAndGlyphs'>Nurses and Allied Professionals</text>
+<text x='210.08' y='122.49' text-anchor='end' style='font-size: 8.80px; fill: #4D4D4D; font-family: Arial;' textLength='110.49px' lengthAdjust='spacingAndGlyphs'>(PASNAP) at Albert Einstein</text>
+<text x='210.08' y='131.99' text-anchor='end' style='font-size: 8.80px; fill: #4D4D4D; font-family: Arial;' textLength='131.08px' lengthAdjust='spacingAndGlyphs'>Medical Center in Philadelphia on</text>
+<text x='210.08' y='141.50' text-anchor='end' style='font-size: 8.80px; fill: #4D4D4D; font-family: Arial;' textLength='45.03px' lengthAdjust='spacingAndGlyphs'>2016-04-08</text>
 <text x='210.08' y='52.98' text-anchor='end' style='font-size: 8.80px; fill: #4D4D4D; font-family: Arial;' textLength='191.53px' lengthAdjust='spacingAndGlyphs'>UNITED FOOD AND COMMERCIAL WORKERS</text>
 <text x='210.08' y='62.49' text-anchor='end' style='font-size: 8.80px; fill: #4D4D4D; font-family: Arial;' textLength='116.85px' lengthAdjust='spacingAndGlyphs'>UNION LOCAL 1776 at Jbs in</text>
 <text x='210.08' y='71.99' text-anchor='end' style='font-size: 8.80px; fill: #4D4D4D; font-family: Arial;' textLength='100.32px' lengthAdjust='spacingAndGlyphs'>Souderton on 2010-10-05</text>

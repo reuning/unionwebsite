@@ -42,107 +42,104 @@
 <polyline points='352.45,635.33 352.45,23.34 ' style='stroke-width: 1.07; stroke: #EBEBEB; stroke-linecap: butt;' />
 <polyline points='480.70,635.33 480.70,23.34 ' style='stroke-width: 1.07; stroke: #EBEBEB; stroke-linecap: butt;' />
 <rect x='224.20' y='32.34' width='94.13' height='54.00' style='stroke-width: 1.07; stroke-linecap: square; stroke-linejoin: miter; fill: #008B45;' />
-<rect x='224.20' y='92.34' width='181.09' height='54.00' style='stroke-width: 1.07; stroke-linecap: square; stroke-linejoin: miter; fill: #008B45;' />
-<rect x='224.20' y='152.33' width='48.48' height='54.00' style='stroke-width: 1.07; stroke-linecap: square; stroke-linejoin: miter; fill: #008B45;' />
-<rect x='224.20' y='212.33' width='52.84' height='54.00' style='stroke-width: 1.07; stroke-linecap: square; stroke-linejoin: miter; fill: #008B45;' />
-<rect x='224.20' y='272.33' width='54.38' height='54.00' style='stroke-width: 1.07; stroke-linecap: square; stroke-linejoin: miter; fill: #008B45;' />
-<rect x='224.20' y='332.33' width='51.81' height='54.00' style='stroke-width: 1.07; stroke-linecap: square; stroke-linejoin: miter; fill: #008B45;' />
-<rect x='224.20' y='392.33' width='53.61' height='54.00' style='stroke-width: 1.07; stroke-linecap: square; stroke-linejoin: miter; fill: #008B45;' />
-<rect x='224.20' y='452.33' width='44.37' height='54.00' style='stroke-width: 1.07; stroke-linecap: square; stroke-linejoin: miter; fill: #008B45;' />
-<rect x='224.20' y='512.33' width='28.73' height='54.00' style='stroke-width: 1.07; stroke-linecap: square; stroke-linejoin: miter; fill: #008B45;' />
-<rect x='224.20' y='572.33' width='26.93' height='54.00' style='stroke-width: 1.07; stroke-linecap: square; stroke-linejoin: miter; fill: #008B45;' />
+<rect x='224.20' y='92.34' width='48.48' height='54.00' style='stroke-width: 1.07; stroke-linecap: square; stroke-linejoin: miter; fill: #008B45;' />
+<rect x='224.20' y='152.33' width='54.38' height='54.00' style='stroke-width: 1.07; stroke-linecap: square; stroke-linejoin: miter; fill: #008B45;' />
+<rect x='224.20' y='212.33' width='51.81' height='54.00' style='stroke-width: 1.07; stroke-linecap: square; stroke-linejoin: miter; fill: #008B45;' />
+<rect x='224.20' y='272.33' width='53.61' height='54.00' style='stroke-width: 1.07; stroke-linecap: square; stroke-linejoin: miter; fill: #008B45;' />
+<rect x='224.20' y='332.33' width='3.85' height='54.00' style='stroke-width: 1.07; stroke-linecap: square; stroke-linejoin: miter; fill: #008B45;' />
+<rect x='224.20' y='392.33' width='10.77' height='54.00' style='stroke-width: 1.07; stroke-linecap: square; stroke-linejoin: miter; fill: #008B45;' />
+<rect x='224.20' y='452.33' width='13.08' height='54.00' style='stroke-width: 1.07; stroke-linecap: square; stroke-linejoin: miter; fill: #008B45;' />
+<rect x='224.20' y='512.33' width='11.54' height='54.00' style='stroke-width: 1.07; stroke-linecap: square; stroke-linejoin: miter; fill: #008B45;' />
+<rect x='224.20' y='572.33' width='10.26' height='54.00' style='stroke-width: 1.07; stroke-linecap: square; stroke-linejoin: miter; fill: #008B45;' />
 <rect x='318.33' y='32.34' width='157.23' height='54.00' style='stroke-width: 1.07; stroke-linecap: square; stroke-linejoin: miter; fill: #CD3700;' />
-<rect x='405.29' y='92.34' width='74.90' height='54.00' style='stroke-width: 1.07; stroke-linecap: square; stroke-linejoin: miter; fill: #CD3700;' />
-<rect x='272.68' y='152.33' width='133.38' height='54.00' style='stroke-width: 1.07; stroke-linecap: square; stroke-linejoin: miter; fill: #CD3700;' />
-<rect x='277.04' y='212.33' width='68.48' height='54.00' style='stroke-width: 1.07; stroke-linecap: square; stroke-linejoin: miter; fill: #CD3700;' />
-<rect x='278.58' y='272.33' width='62.59' height='54.00' style='stroke-width: 1.07; stroke-linecap: square; stroke-linejoin: miter; fill: #CD3700;' />
-<rect x='276.01' y='332.33' width='16.93' height='54.00' style='stroke-width: 1.07; stroke-linecap: square; stroke-linejoin: miter; fill: #CD3700;' />
-<rect x='277.81' y='392.33' width='19.75' height='54.00' style='stroke-width: 1.07; stroke-linecap: square; stroke-linejoin: miter; fill: #CD3700;' />
-<rect x='268.57' y='452.33' width='24.88' height='54.00' style='stroke-width: 1.07; stroke-linecap: square; stroke-linejoin: miter; fill: #CD3700;' />
-<rect x='252.93' y='512.33' width='10.52' height='54.00' style='stroke-width: 1.07; stroke-linecap: square; stroke-linejoin: miter; fill: #CD3700;' />
-<rect x='251.13' y='572.33' width='34.63' height='54.00' style='stroke-width: 1.07; stroke-linecap: square; stroke-linejoin: miter; fill: #CD3700;' />
+<rect x='272.68' y='92.34' width='133.38' height='54.00' style='stroke-width: 1.07; stroke-linecap: square; stroke-linejoin: miter; fill: #CD3700;' />
+<rect x='278.58' y='152.33' width='62.59' height='54.00' style='stroke-width: 1.07; stroke-linecap: square; stroke-linejoin: miter; fill: #CD3700;' />
+<rect x='276.01' y='212.33' width='16.93' height='54.00' style='stroke-width: 1.07; stroke-linecap: square; stroke-linejoin: miter; fill: #CD3700;' />
+<rect x='277.81' y='272.33' width='19.75' height='54.00' style='stroke-width: 1.07; stroke-linecap: square; stroke-linejoin: miter; fill: #CD3700;' />
+<rect x='228.05' y='332.33' width='54.38' height='54.00' style='stroke-width: 1.07; stroke-linecap: square; stroke-linejoin: miter; fill: #CD3700;' />
+<rect x='234.97' y='392.33' width='39.76' height='54.00' style='stroke-width: 1.07; stroke-linecap: square; stroke-linejoin: miter; fill: #CD3700;' />
+<rect x='237.28' y='452.33' width='28.47' height='54.00' style='stroke-width: 1.07; stroke-linecap: square; stroke-linejoin: miter; fill: #CD3700;' />
+<rect x='235.74' y='512.33' width='17.19' height='54.00' style='stroke-width: 1.07; stroke-linecap: square; stroke-linejoin: miter; fill: #CD3700;' />
+<rect x='234.46' y='572.33' width='36.17' height='54.00' style='stroke-width: 1.07; stroke-linecap: square; stroke-linejoin: miter; fill: #CD3700;' />
 <rect x='475.57' y='32.34' width='48.48' height='54.00' style='stroke-width: 1.07; stroke-linecap: square; stroke-linejoin: miter; fill: #BEBEBE;' />
-<rect x='480.18' y='92.34' width='38.22' height='54.00' style='stroke-width: 1.07; stroke-linecap: square; stroke-linejoin: miter; fill: #BEBEBE;' />
-<rect x='406.06' y='152.33' width='16.93' height='54.00' style='stroke-width: 1.07; stroke-linecap: square; stroke-linejoin: miter; fill: #BEBEBE;' />
-<rect x='345.52' y='212.33' width='4.62' height='54.00' style='stroke-width: 1.07; stroke-linecap: square; stroke-linejoin: miter; fill: #BEBEBE;' />
-<rect x='341.16' y='272.33' width='4.62' height='54.00' style='stroke-width: 1.07; stroke-linecap: square; stroke-linejoin: miter; fill: #BEBEBE;' />
-<rect x='292.94' y='332.33' width='22.06' height='54.00' style='stroke-width: 1.07; stroke-linecap: square; stroke-linejoin: miter; fill: #BEBEBE;' />
-<rect x='297.56' y='392.33' width='11.54' height='54.00' style='stroke-width: 1.07; stroke-linecap: square; stroke-linejoin: miter; fill: #BEBEBE;' />
-<rect x='293.45' y='452.33' width='6.93' height='54.00' style='stroke-width: 1.07; stroke-linecap: square; stroke-linejoin: miter; fill: #BEBEBE;' />
-<rect x='263.44' y='512.33' width='25.91' height='54.00' style='stroke-width: 1.07; stroke-linecap: square; stroke-linejoin: miter; fill: #BEBEBE;' />
-<rect x='285.76' y='572.33' width='2.56' height='54.00' style='stroke-width: 1.07; stroke-linecap: square; stroke-linejoin: miter; fill: #BEBEBE;' />
+<rect x='406.06' y='92.34' width='16.93' height='54.00' style='stroke-width: 1.07; stroke-linecap: square; stroke-linejoin: miter; fill: #BEBEBE;' />
+<rect x='341.16' y='152.33' width='4.62' height='54.00' style='stroke-width: 1.07; stroke-linecap: square; stroke-linejoin: miter; fill: #BEBEBE;' />
+<rect x='292.94' y='212.33' width='22.06' height='54.00' style='stroke-width: 1.07; stroke-linecap: square; stroke-linejoin: miter; fill: #BEBEBE;' />
+<rect x='297.56' y='272.33' width='11.54' height='54.00' style='stroke-width: 1.07; stroke-linecap: square; stroke-linejoin: miter; fill: #BEBEBE;' />
+<rect x='282.43' y='332.33' width='4.36' height='54.00' style='stroke-width: 1.07; stroke-linecap: square; stroke-linejoin: miter; fill: #BEBEBE;' />
+<rect x='274.73' y='392.33' width='5.13' height='54.00' style='stroke-width: 1.07; stroke-linecap: square; stroke-linejoin: miter; fill: #BEBEBE;' />
+<rect x='265.75' y='452.33' width='6.41' height='54.00' style='stroke-width: 1.07; stroke-linecap: square; stroke-linejoin: miter; fill: #BEBEBE;' />
+<rect x='252.93' y='512.33' width='19.24' height='54.00' style='stroke-width: 1.07; stroke-linecap: square; stroke-linejoin: miter; fill: #BEBEBE;' />
+<rect x='270.63' y='572.33' width='1.28' height='54.00' style='stroke-width: 1.07; stroke-linecap: square; stroke-linejoin: miter; fill: #BEBEBE;' />
 <text x='554.03' y='63.29' text-anchor='middle' style='font-size: 11.04px; fill: #CD3700; font-family: Arial;' textLength='22.08px' lengthAdjust='spacingAndGlyphs'>38%</text>
-<text x='554.03' y='123.29' text-anchor='middle' style='font-size: 11.04px; fill: #008B45; font-family: Arial;' textLength='22.08px' lengthAdjust='spacingAndGlyphs'>70%</text>
-<text x='554.03' y='183.29' text-anchor='middle' style='font-size: 11.04px; fill: #CD3700; font-family: Arial;' textLength='22.08px' lengthAdjust='spacingAndGlyphs'>26%</text>
-<text x='554.03' y='243.29' text-anchor='middle' style='font-size: 11.04px; fill: #CD3700; font-family: Arial;' textLength='22.08px' lengthAdjust='spacingAndGlyphs'>44%</text>
-<text x='554.03' y='303.29' text-anchor='middle' style='font-size: 11.04px; fill: #CD3700; font-family: Arial;' textLength='22.08px' lengthAdjust='spacingAndGlyphs'>46%</text>
-<text x='554.03' y='363.29' text-anchor='middle' style='font-size: 11.04px; fill: #008B45; font-family: Arial;' textLength='22.08px' lengthAdjust='spacingAndGlyphs'>76%</text>
-<text x='554.03' y='423.29' text-anchor='middle' style='font-size: 11.04px; fill: #008B45; font-family: Arial;' textLength='22.08px' lengthAdjust='spacingAndGlyphs'>74%</text>
-<text x='554.03' y='483.29' text-anchor='middle' style='font-size: 11.04px; fill: #008B45; font-family: Arial;' textLength='22.08px' lengthAdjust='spacingAndGlyphs'>64%</text>
-<text x='554.03' y='543.29' text-anchor='middle' style='font-size: 11.04px; fill: #008B45; font-family: Arial;' textLength='22.08px' lengthAdjust='spacingAndGlyphs'>74%</text>
-<text x='554.03' y='603.29' text-anchor='middle' style='font-size: 11.04px; fill: #CD3700; font-family: Arial;' textLength='22.08px' lengthAdjust='spacingAndGlyphs'>44%</text>
+<text x='554.03' y='123.29' text-anchor='middle' style='font-size: 11.04px; fill: #CD3700; font-family: Arial;' textLength='22.08px' lengthAdjust='spacingAndGlyphs'>26%</text>
+<text x='554.03' y='183.29' text-anchor='middle' style='font-size: 11.04px; fill: #CD3700; font-family: Arial;' textLength='22.08px' lengthAdjust='spacingAndGlyphs'>46%</text>
+<text x='554.03' y='243.29' text-anchor='middle' style='font-size: 11.04px; fill: #008B45; font-family: Arial;' textLength='22.08px' lengthAdjust='spacingAndGlyphs'>76%</text>
+<text x='554.03' y='303.29' text-anchor='middle' style='font-size: 11.04px; fill: #008B45; font-family: Arial;' textLength='22.08px' lengthAdjust='spacingAndGlyphs'>74%</text>
+<text x='554.03' y='363.29' text-anchor='middle' style='font-size: 11.04px; fill: #CD3700; font-family: Arial;' textLength='15.94px' lengthAdjust='spacingAndGlyphs'>6%</text>
+<text x='554.03' y='423.29' text-anchor='middle' style='font-size: 11.04px; fill: #CD3700; font-family: Arial;' textLength='22.08px' lengthAdjust='spacingAndGlyphs'>22%</text>
+<text x='554.03' y='483.29' text-anchor='middle' style='font-size: 11.04px; fill: #CD3700; font-family: Arial;' textLength='22.08px' lengthAdjust='spacingAndGlyphs'>32%</text>
+<text x='554.03' y='543.29' text-anchor='middle' style='font-size: 11.04px; fill: #CD3700; font-family: Arial;' textLength='22.08px' lengthAdjust='spacingAndGlyphs'>40%</text>
+<text x='554.03' y='603.29' text-anchor='middle' style='font-size: 11.04px; fill: #CD3700; font-family: Arial;' textLength='22.08px' lengthAdjust='spacingAndGlyphs'>22%</text>
 <text x='554.03' y='63.29' text-anchor='middle' style='font-size: 11.04px; fill: #CD3700; font-family: Arial;' textLength='22.08px' lengthAdjust='spacingAndGlyphs'>38%</text>
-<text x='554.03' y='123.29' text-anchor='middle' style='font-size: 11.04px; fill: #008B45; font-family: Arial;' textLength='22.08px' lengthAdjust='spacingAndGlyphs'>70%</text>
-<text x='554.03' y='183.29' text-anchor='middle' style='font-size: 11.04px; fill: #CD3700; font-family: Arial;' textLength='22.08px' lengthAdjust='spacingAndGlyphs'>26%</text>
-<text x='554.03' y='243.29' text-anchor='middle' style='font-size: 11.04px; fill: #CD3700; font-family: Arial;' textLength='22.08px' lengthAdjust='spacingAndGlyphs'>44%</text>
-<text x='554.03' y='303.29' text-anchor='middle' style='font-size: 11.04px; fill: #CD3700; font-family: Arial;' textLength='22.08px' lengthAdjust='spacingAndGlyphs'>46%</text>
-<text x='554.03' y='363.29' text-anchor='middle' style='font-size: 11.04px; fill: #008B45; font-family: Arial;' textLength='22.08px' lengthAdjust='spacingAndGlyphs'>76%</text>
-<text x='554.03' y='423.29' text-anchor='middle' style='font-size: 11.04px; fill: #008B45; font-family: Arial;' textLength='22.08px' lengthAdjust='spacingAndGlyphs'>74%</text>
-<text x='554.03' y='483.29' text-anchor='middle' style='font-size: 11.04px; fill: #008B45; font-family: Arial;' textLength='22.08px' lengthAdjust='spacingAndGlyphs'>64%</text>
-<text x='554.03' y='543.29' text-anchor='middle' style='font-size: 11.04px; fill: #008B45; font-family: Arial;' textLength='22.08px' lengthAdjust='spacingAndGlyphs'>74%</text>
-<text x='554.03' y='603.29' text-anchor='middle' style='font-size: 11.04px; fill: #CD3700; font-family: Arial;' textLength='22.08px' lengthAdjust='spacingAndGlyphs'>44%</text>
+<text x='554.03' y='123.29' text-anchor='middle' style='font-size: 11.04px; fill: #CD3700; font-family: Arial;' textLength='22.08px' lengthAdjust='spacingAndGlyphs'>26%</text>
+<text x='554.03' y='183.29' text-anchor='middle' style='font-size: 11.04px; fill: #CD3700; font-family: Arial;' textLength='22.08px' lengthAdjust='spacingAndGlyphs'>46%</text>
+<text x='554.03' y='243.29' text-anchor='middle' style='font-size: 11.04px; fill: #008B45; font-family: Arial;' textLength='22.08px' lengthAdjust='spacingAndGlyphs'>76%</text>
+<text x='554.03' y='303.29' text-anchor='middle' style='font-size: 11.04px; fill: #008B45; font-family: Arial;' textLength='22.08px' lengthAdjust='spacingAndGlyphs'>74%</text>
+<text x='554.03' y='363.29' text-anchor='middle' style='font-size: 11.04px; fill: #CD3700; font-family: Arial;' textLength='15.94px' lengthAdjust='spacingAndGlyphs'>6%</text>
+<text x='554.03' y='423.29' text-anchor='middle' style='font-size: 11.04px; fill: #CD3700; font-family: Arial;' textLength='22.08px' lengthAdjust='spacingAndGlyphs'>22%</text>
+<text x='554.03' y='483.29' text-anchor='middle' style='font-size: 11.04px; fill: #CD3700; font-family: Arial;' textLength='22.08px' lengthAdjust='spacingAndGlyphs'>32%</text>
+<text x='554.03' y='543.29' text-anchor='middle' style='font-size: 11.04px; fill: #CD3700; font-family: Arial;' textLength='22.08px' lengthAdjust='spacingAndGlyphs'>40%</text>
+<text x='554.03' y='603.29' text-anchor='middle' style='font-size: 11.04px; fill: #CD3700; font-family: Arial;' textLength='22.08px' lengthAdjust='spacingAndGlyphs'>22%</text>
 <text x='554.03' y='63.29' text-anchor='middle' style='font-size: 11.04px; fill: #CD3700; font-family: Arial;' textLength='22.08px' lengthAdjust='spacingAndGlyphs'>38%</text>
-<text x='554.03' y='123.29' text-anchor='middle' style='font-size: 11.04px; fill: #008B45; font-family: Arial;' textLength='22.08px' lengthAdjust='spacingAndGlyphs'>70%</text>
-<text x='554.03' y='183.29' text-anchor='middle' style='font-size: 11.04px; fill: #CD3700; font-family: Arial;' textLength='22.08px' lengthAdjust='spacingAndGlyphs'>26%</text>
-<text x='554.03' y='243.29' text-anchor='middle' style='font-size: 11.04px; fill: #CD3700; font-family: Arial;' textLength='22.08px' lengthAdjust='spacingAndGlyphs'>44%</text>
-<text x='554.03' y='303.29' text-anchor='middle' style='font-size: 11.04px; fill: #CD3700; font-family: Arial;' textLength='22.08px' lengthAdjust='spacingAndGlyphs'>46%</text>
-<text x='554.03' y='363.29' text-anchor='middle' style='font-size: 11.04px; fill: #008B45; font-family: Arial;' textLength='22.08px' lengthAdjust='spacingAndGlyphs'>76%</text>
-<text x='554.03' y='423.29' text-anchor='middle' style='font-size: 11.04px; fill: #008B45; font-family: Arial;' textLength='22.08px' lengthAdjust='spacingAndGlyphs'>74%</text>
-<text x='554.03' y='483.29' text-anchor='middle' style='font-size: 11.04px; fill: #008B45; font-family: Arial;' textLength='22.08px' lengthAdjust='spacingAndGlyphs'>64%</text>
-<text x='554.03' y='543.29' text-anchor='middle' style='font-size: 11.04px; fill: #008B45; font-family: Arial;' textLength='22.08px' lengthAdjust='spacingAndGlyphs'>74%</text>
-<text x='554.03' y='603.29' text-anchor='middle' style='font-size: 11.04px; fill: #CD3700; font-family: Arial;' textLength='22.08px' lengthAdjust='spacingAndGlyphs'>44%</text>
+<text x='554.03' y='123.29' text-anchor='middle' style='font-size: 11.04px; fill: #CD3700; font-family: Arial;' textLength='22.08px' lengthAdjust='spacingAndGlyphs'>26%</text>
+<text x='554.03' y='183.29' text-anchor='middle' style='font-size: 11.04px; fill: #CD3700; font-family: Arial;' textLength='22.08px' lengthAdjust='spacingAndGlyphs'>46%</text>
+<text x='554.03' y='243.29' text-anchor='middle' style='font-size: 11.04px; fill: #008B45; font-family: Arial;' textLength='22.08px' lengthAdjust='spacingAndGlyphs'>76%</text>
+<text x='554.03' y='303.29' text-anchor='middle' style='font-size: 11.04px; fill: #008B45; font-family: Arial;' textLength='22.08px' lengthAdjust='spacingAndGlyphs'>74%</text>
+<text x='554.03' y='363.29' text-anchor='middle' style='font-size: 11.04px; fill: #CD3700; font-family: Arial;' textLength='15.94px' lengthAdjust='spacingAndGlyphs'>6%</text>
+<text x='554.03' y='423.29' text-anchor='middle' style='font-size: 11.04px; fill: #CD3700; font-family: Arial;' textLength='22.08px' lengthAdjust='spacingAndGlyphs'>22%</text>
+<text x='554.03' y='483.29' text-anchor='middle' style='font-size: 11.04px; fill: #CD3700; font-family: Arial;' textLength='22.08px' lengthAdjust='spacingAndGlyphs'>32%</text>
+<text x='554.03' y='543.29' text-anchor='middle' style='font-size: 11.04px; fill: #CD3700; font-family: Arial;' textLength='22.08px' lengthAdjust='spacingAndGlyphs'>40%</text>
+<text x='554.03' y='603.29' text-anchor='middle' style='font-size: 11.04px; fill: #CD3700; font-family: Arial;' textLength='22.08px' lengthAdjust='spacingAndGlyphs'>22%</text>
 <text x='554.03' y='33.29' text-anchor='middle' style='font-size: 11.04px; font-family: Arial;' textLength='33.71px' lengthAdjust='spacingAndGlyphs'>Margin</text>
 </g>
 <g clip-path='url(#cpMC4wMHw1NzYuMDB8MC4wMHw3MjAuMDA=)'>
-<text x='202.78' y='578.72' text-anchor='end' style='font-size: 8.80px; fill: #4D4D4D; font-family: Arial;' textLength='136.31px' lengthAdjust='spacingAndGlyphs'>INTERNATIONAL UNION UNITED</text>
-<text x='202.78' y='588.23' text-anchor='end' style='font-size: 8.80px; fill: #4D4D4D; font-family: Arial;' textLength='125.61px' lengthAdjust='spacingAndGlyphs'>AUTOMOBILE, AEROSPACE &amp;</text>
-<text x='202.78' y='597.73' text-anchor='end' style='font-size: 8.80px; fill: #4D4D4D; font-family: Arial;' textLength='184.23px' lengthAdjust='spacingAndGlyphs'>AGRICULTURAL IMPLEMENT WORKERS OF</text>
-<text x='202.78' y='607.24' text-anchor='end' style='font-size: 8.80px; fill: #4D4D4D; font-family: Arial;' textLength='148.12px' lengthAdjust='spacingAndGlyphs'>AMERICA (UAW) at Ai3 Joint Venture</text>
-<text x='202.78' y='616.74' text-anchor='end' style='font-size: 8.80px; fill: #4D4D4D; font-family: Arial;' textLength='117.80px' lengthAdjust='spacingAndGlyphs'>Of Averitt Express, Inc. And ...</text>
-<text x='202.78' y='626.24' text-anchor='end' style='font-size: 8.80px; fill: #4D4D4D; font-family: Arial;' textLength='93.95px' lengthAdjust='spacingAndGlyphs'>in Vance on 2008-10-17</text>
-<text x='202.78' y='532.98' text-anchor='end' style='font-size: 8.80px; fill: #4D4D4D; font-family: Arial;' textLength='125.17px' lengthAdjust='spacingAndGlyphs'>Retail, Wholesale &amp; Department</text>
-<text x='202.78' y='542.48' text-anchor='end' style='font-size: 8.80px; fill: #4D4D4D; font-family: Arial;' textLength='138.81px' lengthAdjust='spacingAndGlyphs'>Store Union (RWDSU) at Rcf, Llc in</text>
-<text x='202.78' y='551.99' text-anchor='end' style='font-size: 8.80px; fill: #4D4D4D; font-family: Arial;' textLength='93.94px' lengthAdjust='spacingAndGlyphs'>Florence on 2018-04-24</text>
-<text x='202.78' y='468.23' text-anchor='end' style='font-size: 8.80px; fill: #4D4D4D; font-family: Arial;' textLength='181.30px' lengthAdjust='spacingAndGlyphs'>UNITED STEELWORKERS INTERNATIONAL</text>
-<text x='202.78' y='477.73' text-anchor='end' style='font-size: 8.80px; fill: #4D4D4D; font-family: Arial;' textLength='134.93px' lengthAdjust='spacingAndGlyphs'>UNION at Smurfit-Stone Container</text>
-<text x='202.78' y='487.24' text-anchor='end' style='font-size: 8.80px; fill: #4D4D4D; font-family: Arial;' textLength='111.53px' lengthAdjust='spacingAndGlyphs'>Corporation in Stevenson on</text>
-<text x='202.78' y='496.74' text-anchor='end' style='font-size: 8.80px; fill: #4D4D4D; font-family: Arial;' textLength='45.03px' lengthAdjust='spacingAndGlyphs'>2010-10-08</text>
-<text x='202.78' y='412.98' text-anchor='end' style='font-size: 8.80px; fill: #4D4D4D; font-family: Arial;' textLength='166.72px' lengthAdjust='spacingAndGlyphs'>TEAMSTERS LOCAL 991 at New Era Cap</text>
-<text x='202.78' y='422.49' text-anchor='end' style='font-size: 8.80px; fill: #4D4D4D; font-family: Arial;' textLength='112.97px' lengthAdjust='spacingAndGlyphs'>Company, Inc. in Jackson on</text>
-<text x='202.78' y='431.99' text-anchor='end' style='font-size: 8.80px; fill: #4D4D4D; font-family: Arial;' textLength='45.03px' lengthAdjust='spacingAndGlyphs'>2008-05-16</text>
-<text x='202.78' y='352.98' text-anchor='end' style='font-size: 8.80px; fill: #4D4D4D; font-family: Arial;' textLength='147.65px' lengthAdjust='spacingAndGlyphs'>Communications Workers of America,</text>
-<text x='202.78' y='362.49' text-anchor='end' style='font-size: 8.80px; fill: #4D4D4D; font-family: Arial;' textLength='150.14px' lengthAdjust='spacingAndGlyphs'>Local 2108 at New Era Cap Company,</text>
-<text x='202.78' y='371.99' text-anchor='end' style='font-size: 8.80px; fill: #4D4D4D; font-family: Arial;' textLength='127.17px' lengthAdjust='spacingAndGlyphs'>Inc. in Demopolis on 2008-04-24</text>
-<text x='202.78' y='278.73' text-anchor='end' style='font-size: 8.80px; fill: #4D4D4D; font-family: Arial;' textLength='138.75px' lengthAdjust='spacingAndGlyphs'>INTERNATIONAL UNION, UNITED</text>
-<text x='202.78' y='288.23' text-anchor='end' style='font-size: 8.80px; fill: #4D4D4D; font-family: Arial;' textLength='125.61px' lengthAdjust='spacingAndGlyphs'>AUTOMOBILE, AEROSPACE &amp;</text>
-<text x='202.78' y='297.73' text-anchor='end' style='font-size: 8.80px; fill: #4D4D4D; font-family: Arial;' textLength='184.23px' lengthAdjust='spacingAndGlyphs'>AGRICULTURAL IMPLEMENT WORKERS OF</text>
-<text x='202.78' y='307.24' text-anchor='end' style='font-size: 8.80px; fill: #4D4D4D; font-family: Arial;' textLength='137.87px' lengthAdjust='spacingAndGlyphs'>AMERICA, UAW at Ppg Aerospace</text>
-<text x='202.78' y='316.74' text-anchor='end' style='font-size: 8.80px; fill: #4D4D4D; font-family: Arial;' textLength='100.24px' lengthAdjust='spacingAndGlyphs'>Industries in Huntsville on</text>
-<text x='202.78' y='326.25' text-anchor='end' style='font-size: 8.80px; fill: #4D4D4D; font-family: Arial;' textLength='45.03px' lengthAdjust='spacingAndGlyphs'>2008-10-06</text>
-<text x='202.78' y='228.23' text-anchor='end' style='font-size: 8.80px; fill: #4D4D4D; font-family: Arial;' textLength='147.56px' lengthAdjust='spacingAndGlyphs'>INTERNATIONAL ASSOCIATION OF</text>
-<text x='202.78' y='237.74' text-anchor='end' style='font-size: 8.80px; fill: #4D4D4D; font-family: Arial;' textLength='182.76px' lengthAdjust='spacingAndGlyphs'>MACHINISTS AND AEROSPACE WORKERS,</text>
-<text x='202.78' y='247.24' text-anchor='end' style='font-size: 8.80px; fill: #4D4D4D; font-family: Arial;' textLength='131.51px' lengthAdjust='spacingAndGlyphs'>AFL-CIO at Ppg Industries, Inc. in</text>
-<text x='202.78' y='256.74' text-anchor='end' style='font-size: 8.80px; fill: #4D4D4D; font-family: Arial;' textLength='97.83px' lengthAdjust='spacingAndGlyphs'>Huntsville on 2012-06-28</text>
-<text x='202.78' y='158.73' text-anchor='end' style='font-size: 8.80px; fill: #4D4D4D; font-family: Arial;' textLength='131.08px' lengthAdjust='spacingAndGlyphs'>International Association of Sheet</text>
-<text x='202.78' y='168.23' text-anchor='end' style='font-size: 8.80px; fill: #4D4D4D; font-family: Arial;' textLength='111.47px' lengthAdjust='spacingAndGlyphs'>Metal Air Rail Transportation</text>
-<text x='202.78' y='177.74' text-anchor='end' style='font-size: 8.80px; fill: #4D4D4D; font-family: Arial;' textLength='123.67px' lengthAdjust='spacingAndGlyphs'>Workers (SMART) at Freightcar</text>
-<text x='202.78' y='187.24' text-anchor='end' style='font-size: 8.80px; fill: #4D4D4D; font-family: Arial;' textLength='116.86px' lengthAdjust='spacingAndGlyphs'>Alabama, Llc, A Subsidiary Of</text>
-<text x='202.78' y='196.74' text-anchor='end' style='font-size: 8.80px; fill: #4D4D4D; font-family: Arial;' textLength='94.38px' lengthAdjust='spacingAndGlyphs'>Freigh... in Cherokee on</text>
-<text x='202.78' y='206.25' text-anchor='end' style='font-size: 8.80px; fill: #4D4D4D; font-family: Arial;' textLength='45.03px' lengthAdjust='spacingAndGlyphs'>2018-06-13</text>
-<text x='202.78' y='108.23' text-anchor='end' style='font-size: 8.80px; fill: #4D4D4D; font-family: Arial;' textLength='133.99px' lengthAdjust='spacingAndGlyphs'>Retail, Wholesale and Department</text>
-<text x='202.78' y='117.74' text-anchor='end' style='font-size: 8.80px; fill: #4D4D4D; font-family: Arial;' textLength='133.01px' lengthAdjust='spacingAndGlyphs'>Store Union, Mid-South Council at</text>
-<text x='202.78' y='127.24' text-anchor='end' style='font-size: 8.80px; fill: #4D4D4D; font-family: Arial;' textLength='113.64px' lengthAdjust='spacingAndGlyphs'>Pilgrim's Pride Corporation in</text>
-<text x='202.78' y='136.74' text-anchor='end' style='font-size: 8.80px; fill: #4D4D4D; font-family: Arial;' textLength='103.69px' lengthAdjust='spacingAndGlyphs'>Russellville on 2012-06-08</text>
+<text x='202.78' y='588.23' text-anchor='end' style='font-size: 8.80px; fill: #4D4D4D; font-family: Arial;' textLength='168.10px' lengthAdjust='spacingAndGlyphs'>UNITED STEELWORKERS OF AMERICA,</text>
+<text x='202.78' y='597.73' text-anchor='end' style='font-size: 8.80px; fill: #4D4D4D; font-family: Arial;' textLength='132.95px' lengthAdjust='spacingAndGlyphs'>AFL-CIO-CLC at Recticel Interiors</text>
+<text x='202.78' y='607.24' text-anchor='end' style='font-size: 8.80px; fill: #4D4D4D; font-family: Arial;' textLength='125.19px' lengthAdjust='spacingAndGlyphs'>North America in Tuscaloosa on</text>
+<text x='202.78' y='616.74' text-anchor='end' style='font-size: 8.80px; fill: #4D4D4D; font-family: Arial;' textLength='45.03px' lengthAdjust='spacingAndGlyphs'>2007-08-17</text>
+<text x='202.78' y='528.23' text-anchor='end' style='font-size: 8.80px; fill: #4D4D4D; font-family: Arial;' textLength='125.19px' lengthAdjust='spacingAndGlyphs'>Bakery, Confectionery, Tobacco</text>
+<text x='202.78' y='537.73' text-anchor='end' style='font-size: 8.80px; fill: #4D4D4D; font-family: Arial;' textLength='127.12px' lengthAdjust='spacingAndGlyphs'>Workers and Grain Millers Union</text>
+<text x='202.78' y='547.24' text-anchor='end' style='font-size: 8.80px; fill: #4D4D4D; font-family: Arial;' textLength='133.03px' lengthAdjust='spacingAndGlyphs'>Local 42 at Golden State Foods in</text>
+<text x='202.78' y='556.74' text-anchor='end' style='font-size: 8.80px; fill: #4D4D4D; font-family: Arial;' textLength='89.53px' lengthAdjust='spacingAndGlyphs'>Opelika on 2021-01-21</text>
+<text x='202.78' y='477.73' text-anchor='end' style='font-size: 8.80px; fill: #4D4D4D; font-family: Arial;' textLength='148.62px' lengthAdjust='spacingAndGlyphs'>TEAMSTER LOCAL 612 at Us Foods,</text>
+<text x='202.78' y='487.24' text-anchor='end' style='font-size: 8.80px; fill: #4D4D4D; font-family: Arial;' textLength='134.52px' lengthAdjust='spacingAndGlyphs'>Inc. in Montgomery on 2012-06-07</text>
+<text x='202.78' y='412.98' text-anchor='end' style='font-size: 8.80px; fill: #4D4D4D; font-family: Arial;' textLength='175.44px' lengthAdjust='spacingAndGlyphs'>UNITED STEELWORKERS OF AMERICA at</text>
+<text x='202.78' y='422.49' text-anchor='end' style='font-size: 8.80px; fill: #4D4D4D; font-family: Arial;' textLength='126.19px' lengthAdjust='spacingAndGlyphs'>Rexnord Industries in Auburn on</text>
+<text x='202.78' y='431.99' text-anchor='end' style='font-size: 8.80px; fill: #4D4D4D; font-family: Arial;' textLength='45.03px' lengthAdjust='spacingAndGlyphs'>2007-09-06</text>
+<text x='202.78' y='343.48' text-anchor='end' style='font-size: 8.80px; fill: #4D4D4D; font-family: Arial;' textLength='125.17px' lengthAdjust='spacingAndGlyphs'>Retail, Wholesale &amp; Department</text>
+<text x='202.78' y='352.98' text-anchor='end' style='font-size: 8.80px; fill: #4D4D4D; font-family: Arial;' textLength='133.01px' lengthAdjust='spacingAndGlyphs'>Store Union, Mid-South Council at</text>
+<text x='202.78' y='362.49' text-anchor='end' style='font-size: 8.80px; fill: #4D4D4D; font-family: Arial;' textLength='141.34px' lengthAdjust='spacingAndGlyphs'>Hwaseung Automotive Alabama, Llc</text>
+<text x='202.78' y='371.99' text-anchor='end' style='font-size: 8.80px; fill: #4D4D4D; font-family: Arial;' textLength='139.38px' lengthAdjust='spacingAndGlyphs'>And Hwaseung A... in Enterprise on</text>
+<text x='202.78' y='381.49' text-anchor='end' style='font-size: 8.80px; fill: #4D4D4D; font-family: Arial;' textLength='45.03px' lengthAdjust='spacingAndGlyphs'>2015-08-21</text>
+<text x='202.78' y='292.98' text-anchor='end' style='font-size: 8.80px; fill: #4D4D4D; font-family: Arial;' textLength='166.72px' lengthAdjust='spacingAndGlyphs'>TEAMSTERS LOCAL 991 at New Era Cap</text>
+<text x='202.78' y='302.49' text-anchor='end' style='font-size: 8.80px; fill: #4D4D4D; font-family: Arial;' textLength='112.97px' lengthAdjust='spacingAndGlyphs'>Company, Inc. in Jackson on</text>
+<text x='202.78' y='311.99' text-anchor='end' style='font-size: 8.80px; fill: #4D4D4D; font-family: Arial;' textLength='45.03px' lengthAdjust='spacingAndGlyphs'>2008-05-16</text>
+<text x='202.78' y='232.98' text-anchor='end' style='font-size: 8.80px; fill: #4D4D4D; font-family: Arial;' textLength='147.65px' lengthAdjust='spacingAndGlyphs'>Communications Workers of America,</text>
+<text x='202.78' y='242.49' text-anchor='end' style='font-size: 8.80px; fill: #4D4D4D; font-family: Arial;' textLength='150.14px' lengthAdjust='spacingAndGlyphs'>Local 2108 at New Era Cap Company,</text>
+<text x='202.78' y='251.99' text-anchor='end' style='font-size: 8.80px; fill: #4D4D4D; font-family: Arial;' textLength='127.17px' lengthAdjust='spacingAndGlyphs'>Inc. in Demopolis on 2008-04-24</text>
+<text x='202.78' y='158.73' text-anchor='end' style='font-size: 8.80px; fill: #4D4D4D; font-family: Arial;' textLength='138.75px' lengthAdjust='spacingAndGlyphs'>INTERNATIONAL UNION, UNITED</text>
+<text x='202.78' y='168.23' text-anchor='end' style='font-size: 8.80px; fill: #4D4D4D; font-family: Arial;' textLength='125.61px' lengthAdjust='spacingAndGlyphs'>AUTOMOBILE, AEROSPACE &amp;</text>
+<text x='202.78' y='177.74' text-anchor='end' style='font-size: 8.80px; fill: #4D4D4D; font-family: Arial;' textLength='184.23px' lengthAdjust='spacingAndGlyphs'>AGRICULTURAL IMPLEMENT WORKERS OF</text>
+<text x='202.78' y='187.24' text-anchor='end' style='font-size: 8.80px; fill: #4D4D4D; font-family: Arial;' textLength='137.87px' lengthAdjust='spacingAndGlyphs'>AMERICA, UAW at Ppg Aerospace</text>
+<text x='202.78' y='196.74' text-anchor='end' style='font-size: 8.80px; fill: #4D4D4D; font-family: Arial;' textLength='100.24px' lengthAdjust='spacingAndGlyphs'>Industries in Huntsville on</text>
+<text x='202.78' y='206.25' text-anchor='end' style='font-size: 8.80px; fill: #4D4D4D; font-family: Arial;' textLength='45.03px' lengthAdjust='spacingAndGlyphs'>2008-10-06</text>
+<text x='202.78' y='98.73' text-anchor='end' style='font-size: 8.80px; fill: #4D4D4D; font-family: Arial;' textLength='131.08px' lengthAdjust='spacingAndGlyphs'>International Association of Sheet</text>
+<text x='202.78' y='108.23' text-anchor='end' style='font-size: 8.80px; fill: #4D4D4D; font-family: Arial;' textLength='111.47px' lengthAdjust='spacingAndGlyphs'>Metal Air Rail Transportation</text>
+<text x='202.78' y='117.74' text-anchor='end' style='font-size: 8.80px; fill: #4D4D4D; font-family: Arial;' textLength='123.67px' lengthAdjust='spacingAndGlyphs'>Workers (SMART) at Freightcar</text>
+<text x='202.78' y='127.24' text-anchor='end' style='font-size: 8.80px; fill: #4D4D4D; font-family: Arial;' textLength='116.86px' lengthAdjust='spacingAndGlyphs'>Alabama, Llc, A Subsidiary Of</text>
+<text x='202.78' y='136.74' text-anchor='end' style='font-size: 8.80px; fill: #4D4D4D; font-family: Arial;' textLength='94.38px' lengthAdjust='spacingAndGlyphs'>Freigh... in Cherokee on</text>
+<text x='202.78' y='146.25' text-anchor='end' style='font-size: 8.80px; fill: #4D4D4D; font-family: Arial;' textLength='45.03px' lengthAdjust='spacingAndGlyphs'>2018-06-13</text>
 <text x='202.78' y='57.74' text-anchor='end' style='font-size: 8.80px; fill: #4D4D4D; font-family: Arial;' textLength='146.19px' lengthAdjust='spacingAndGlyphs'>SHEET METAL LOCAL 441 at Austal</text>
 <text x='202.78' y='67.24' text-anchor='end' style='font-size: 8.80px; fill: #4D4D4D; font-family: Arial;' textLength='113.00px' lengthAdjust='spacingAndGlyphs'>Usa in Mobile on 2011-08-05</text>
 <text x='224.20' y='646.57' text-anchor='middle' style='font-size: 8.80px; fill: #4D4D4D; font-family: Arial;' textLength='4.90px' lengthAdjust='spacingAndGlyphs'>0</text>

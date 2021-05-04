@@ -26,8 +26,8 @@ dt <- dt[order(-Tally_Date)]
 dt$Unique <- !duplicated(dt, by='Case')
 
 ### Create New Variables
-dt[,Tally_Date:=as.Date(`Tally_Date`, format="%m/%d/%Y")]
-dt[,Date_Filed:=as.Date(`Date_Filed`, format="%m/%d/%Y")]
+dt[,Tally_Date:=as.Date(`Tally_Date`, format="%m/%d/%y")]
+dt[,Date_Filed:=as.Date(`Date_Filed`, format="%m/%d/%y")]
 dt[,Length:=Tally_Date-Date_Filed]
 dt[,Tally_Quarter := as.Date(cut(Tally_Date, breaks = "quarter"))]
 
@@ -208,14 +208,14 @@ create_state_page <- function(state_abb = "MN"){
 
 
 for(state in state.abb){
-  create_state_page(state_abb = state)
+  # create_state_page(state_abb = state)
   
-  # create_state_plot(state_abb = state, 
-  #                   number=10, 
-  #                   data=dt,file =here("content",  "data", "states", state,
-  #                                        paste0(state_abb, "_", number, ".svg") ))
-  # create_state_time_plot(state_abb = state, 
-  #                   data=dt)
+  create_state_plot(state_abb = state,
+                    number=10,
+                    data=dt,file =here("content",  "data", "states", state,
+                                         paste0(state_abb, "_", number, ".svg") ))
+  create_state_time_plot(state_abb = state,
+                    data=dt)
   
 }
 
@@ -223,5 +223,5 @@ for(state in state.abb){
 #                   number=10,
 #                   data=dt)
 
-# create_state_time_plot(state_abb = "MN", 
-#                   data=dt)
+create_state_time_plot(state_abb = "MN",
+                  data=dt)
