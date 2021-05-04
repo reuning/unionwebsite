@@ -26,8 +26,8 @@ dt <- dt[order(-Tally_Date)]
 dt$Unique <- !duplicated(dt, by='Case')
 
 ### Create New Variables
-dt[,Tally_Date:=as.Date(`Tally_Date`, format="%m/%d/%y")]
-dt[,Date_Filed:=as.Date(`Date_Filed`, format="%m/%d/%y")]
+dt[,Tally_Date:=as.Date(`Tally_Date`, format="%m/%d/%Y")]
+dt[,Date_Filed:=as.Date(`Date_Filed`, format="%m/%d/%Y")]
 dt[,Length:=Tally_Date-Date_Filed]
 dt[,Tally_Quarter := as.Date(cut(Tally_Date, breaks = "quarter"))]
 
@@ -188,7 +188,7 @@ create_state_table_open <- function(state_abb = "MN", data=NULL){
   tmp_dt$Date_Filed <- as.character(tmp_dt$Date_Filed, "%b %d, %Y")
   
   # tmp_dt$Case <- paste0("<a href='https://www.nlrb.gov/case/", tmp_dt$Case, "'>", tmp_dt$Case, "</a>")
-  tab <- xtable(tmp_dt[,.(City, State, Case_Name, Labor_Union, Status, Date_Filed, 
+  tab <- xtable(tmp_dt[,.(City, State, Case_Name, Labor_Union, Case_Type, Date_Filed, 
                             Num_Eligible_Voters, Case )])
   align(tab)[8] <- "c"
   # tab[1,] <- gsub("_", " ", (tab[1,]))
@@ -226,13 +226,13 @@ create_state_page <- function(state_abb = "CA"){
   
   tmp <-c(paste("## ", state),
           "", 
-          paste("### Number Employees in a Union Election by Outcome in", state),
+          paste("### Number Employees in a Union Election by Outcome"),
           paste0("{{< image src=",state_abb, "_hist_vic.svg >}}"),
           "",
-          paste("### Number of Elections by Unit Size in", state),
+          paste("### Number of Elections by Unit Size"),
           paste0("{{< image src=",state_abb, "_hist_size.svg >}}"),
           "",
-          paste("### Largest Private Union Elections Since 2007 in", state),
+          paste("### Largest Private Union Elections"),
           paste0("{{< image src=",state_abb, "_10.svg >}}"),
           "",
           "### Open Election Related Cases",
@@ -256,7 +256,7 @@ for(state in state.abb){
                                          paste0(state_abb, "_", number, ".svg") ))
   create_state_time_plot(state_abb = state,
                     data=dt)
-  
+
   create_state_table_open(state_abb = state, data=dt)
   
 }

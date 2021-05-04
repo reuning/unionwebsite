@@ -1,12 +1,12 @@
 ##  Maryland
 
-### Number Employees in a Union Election by Outcome in Maryland
+### Number Employees in a Union Election by Outcome
 {{< image src=MD_hist_vic.svg >}}
 
-### Number of Elections by Unit Size in Maryland
+### Number of Elections by Unit Size
 {{< image src=MD_hist_size.svg >}}
 
-### Largest Private Union Elections Since 2007 in Maryland
+### Largest Private Union Elections
 {{< image src=MD_10.svg >}}
 
 ### Open Election Related Cases

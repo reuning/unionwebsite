@@ -1,12 +1,12 @@
 ##  Kentucky
 
-### Number Employees in a Union Election by Outcome in Kentucky
+### Number Employees in a Union Election by Outcome
 {{< image src=KY_hist_vic.svg >}}
 
-### Number of Elections by Unit Size in Kentucky
+### Number of Elections by Unit Size
 {{< image src=KY_hist_size.svg >}}
 
-### Largest Private Union Elections Since 2007 in Kentucky
+### Largest Private Union Elections
 {{< image src=KY_10.svg >}}
 
 ### Open Election Related Cases

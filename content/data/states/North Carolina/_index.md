@@ -1,12 +1,12 @@
 ##  North Carolina
 
-### Number Employees in a Union Election by Outcome in North Carolina
+### Number Employees in a Union Election by Outcome
 {{< image src=NC_hist_vic.svg >}}
 
-### Number of Elections by Unit Size in North Carolina
+### Number of Elections by Unit Size
 {{< image src=NC_hist_size.svg >}}
 
-### Largest Private Union Elections Since 2007 in North Carolina
+### Largest Private Union Elections
 {{< image src=NC_10.svg >}}
 
 ### Open Election Related Cases

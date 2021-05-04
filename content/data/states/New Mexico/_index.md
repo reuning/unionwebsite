@@ -1,12 +1,12 @@
 ##  New Mexico
 
-### Number Employees in a Union Election by Outcome in New Mexico
+### Number Employees in a Union Election by Outcome
 {{< image src=NM_hist_vic.svg >}}
 
-### Number of Elections by Unit Size in New Mexico
+### Number of Elections by Unit Size
 {{< image src=NM_hist_size.svg >}}
 
-### Largest Private Union Elections Since 2007 in New Mexico
+### Largest Private Union Elections
 {{< image src=NM_10.svg >}}
 
 ### Open Election Related Cases

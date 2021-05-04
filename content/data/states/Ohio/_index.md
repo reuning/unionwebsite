@@ -1,12 +1,12 @@
 ##  Ohio
 
-### Number Employees in a Union Election by Outcome in Ohio
+### Number Employees in a Union Election by Outcome
 {{< image src=OH_hist_vic.svg >}}
 
-### Number of Elections by Unit Size in Ohio
+### Number of Elections by Unit Size
 {{< image src=OH_hist_size.svg >}}
 
-### Largest Private Union Elections Since 2007 in Ohio
+### Largest Private Union Elections
 {{< image src=OH_10.svg >}}
 
 ### Open Election Related Cases
