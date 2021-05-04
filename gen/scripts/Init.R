@@ -227,13 +227,13 @@ create_state_page <- function(state_abb = "CA"){
   tmp <-c(paste("## ", state),
           "", 
           paste("### Number Employees in a Union Election by Outcome"),
-          paste0("{{< image src=",state_abb, "_hist_vic.svg >}}"),
+          paste0("{{< image src=\"",state_abb, "_hist_vic.svg\" >}}"),
           "",
           paste("### Number of Elections by Unit Size"),
-          paste0("{{< image src=",state_abb, "_hist_size.svg >}}"),
+          paste0("{{< image src=\"",state_abb, "_hist_size.svg\" >}}"),
           "",
           paste("### Largest Private Union Elections"),
-          paste0("{{< image src=",state_abb, "_10.svg >}}"),
+          paste0("{{< image src=\"",state_abb, "_10.svg\" >}}"),
           "",
           "### Open Election Related Cases",
           paste0("{{< readtable table=\"/tables/", state, "/open.html\" >}}"),
@@ -250,15 +250,15 @@ create_state_page <- function(state_abb = "CA"){
 for(state in state.abb){
   create_state_page(state_abb = state)
   
-  create_state_plot(state_abb = state,
-                    number=10,
-                    data=dt,file =here("content",  "data", "states", state,
-                                         paste0(state_abb, "_", number, ".svg") ))
-  create_state_time_plot(state_abb = state,
-                    data=dt)
-
-  create_state_table_open(state_abb = state, data=dt)
-  
+  # create_state_plot(state_abb = state,
+  #                   number=10,
+  #                   data=dt,file =here("content",  "data", "states", state,
+  #                                        paste0(state_abb, "_", number, ".svg") ))
+  # create_state_time_plot(state_abb = state,
+  #                   data=dt)
+  # 
+  # create_state_table_open(state_abb = state, data=dt)
+  # 
 }
 
 # create_state_table_open(state_abb = "CA", data=dt)
