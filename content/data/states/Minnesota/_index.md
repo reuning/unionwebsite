@@ -8,5 +8,6 @@
 ### 10 Largest Elections
 {{< image src=MN_10.svg >}}
 
-### 10 Most Recent Elections
+### Open Election Cases
 
+{{< readtable table="/tables/Minnesota/open.html" >}}

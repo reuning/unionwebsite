@@ -7,7 +7,7 @@ library(gridExtra)
 library(ggrepel)
 library(magrittr)
 library(stringr)
-library(huxtable)
+library(xtable)
 library(here)
 library(svglite)
 
@@ -37,7 +37,7 @@ dt[,size:=cut(Num_Eligible_Voters, breaks = c(0, 5, 10, 25, 50, 100, 500, Inf), 
 
 
 # dt <- dt[Status=="Closed"]
-dt <- dt[`Reason_Closed` %in% c("Certific. of Representative", "Certification of Results")]
+# dt <- dt[`Reason_Closed` %in% c("Certific. of Representative", "Certification of Results")]
 dt <- dt[`Ballot_Type`%in% c("Single Labor Organization", "Revised Single Labor Org")]
 dt[, Case_Type:=substr(Case, 4, 5)]
 
@@ -106,8 +106,7 @@ create_state_plot <- function(state_abb = "MN", number=10, data=NULL,
     annotate("text", x=x_lim, y=number + .5, label="Margin") + 
     theme(legend.position = "bottom") + 
     guides(alpha=F) + 
-    labs(y="", x="Votes", caption = "Includes only certification votes with a single union, data from NLRB") + 
-    ggtitle(paste("Largest Private Union Elections Since 2007 in", state)) 
+    labs(y="", x="Votes", caption = "Includes only certification votes with a single union, data from NLRB") 
   
   f <- here("content", "data", "states", state, paste0(state_abb, "_10.svg"))
   ggsave(f, height=10*log10(number), width=8)
@@ -135,8 +134,7 @@ create_state_time_plot <- function(state_abb = "MN", data=NULL,
   theme_minimal() +
     scale_fill_colorblind("Size of Unit", drop=F) + 
   theme(legend.position = "bottom") + 
-  labs(y="", x="Votes", caption = "Includes only certification votes with a single union, data from NLRB") + 
-  ggtitle(paste("Number of Elections by Unit Size in", state)) 
+  labs(y="", x="Votes", caption = "Includes only certification votes with a single union, data from NLRB") 
   
   f <- here("content", "data", "states", state, paste0(state_abb, "_hist_size.svg"))
   
@@ -149,9 +147,7 @@ create_state_time_plot <- function(state_abb = "MN", data=NULL,
     theme_minimal() +
     scale_fill_colorblind("Unionized?") + 
     theme(legend.position = "bottom") + 
-    labs(y="", x="Votes", caption = "Includes only certification votes with a single union, data from NLRB") + 
-    ggtitle(paste("Number Employees in a Union Election by Outcome in", state)) 
-  
+    labs(y="", x="Votes", caption = "Includes only certification votes with a single union, data from NLRB") 
   f <- here("content", "data", "states", state, paste0(state_abb, "_hist_vic.svg"))
   
   ggsave(f, height=6, width=8)
@@ -160,43 +156,73 @@ create_state_time_plot <- function(state_abb = "MN", data=NULL,
 }
 
 
-create_state_table <- function(state_abb = "MN", number=10, data=dt_rc){
+# create_state_table <- function(state_abb = "MN", number=10, data=dt_rc){
+#   
+#   state <- state.name[state.abb == state_abb]
+#   tmp_dt <- data[State==state_abb]
+#   
+#   tmp_dt <- head(setorder(tmp_dt, -`Num_Eligible_Voters`), number) 
+#   
+#   tab <- xtable::xtable(tmp_dt[,.(City, State, Case_Name, Labor_Union, Status, Date_Filed, Date_Closed, 
+#                      `Tally Type`, Union_Cer, Votes_For_Union, Votes_Against, Num_Eligible_Voters, 
+#                      `Challenged Ballots`, `Challenges are Determinative`, 
+#                      Didnt_Vote, Margin, `Voting Unit (Unit A)`, Case )])
+#   # tab[1,] <- gsub("_", " ", (tab[1,]))
+#   tab[1,9] <- "Union Certified?"
+#   # tab <- theme_striped(tab)
+#   
+#   if(!dir.exists(here("content",  "tables", state))) dir.create(here("content",  "tables", state))
+#   
+#   f <- file(here("content", "tables", state, "open.html"))
+#   print(tab, type = "html",  file= f, comment=F)
+#   close(f)
+# }
+
+create_state_table_open <- function(state_abb = "MN", data=NULL){
   
   state <- state.name[state.abb == state_abb]
   tmp_dt <- data[State==state_abb]
+  tmp_dt <- tmp_dt[Status=="Open"]
+  tmp_dt <- setorder(tmp_dt, -`Date_Filed`)
   
-  tmp_dt <- head(setorder(tmp_dt, -`Num_Eligible_Voters`), number) 
+  tab <- xtable(tmp_dt[,.(City, State, Case_Name, Labor_Union, Status, Date_Filed, 
+                            Num_Eligible_Voters, `Voting Unit (Unit A)`, Case )])
+  # tab[1,] <- gsub("_", " ", (tab[1,]))
+  # tab[1,9] <- "Union Certified?"
+  # tab <- theme_basic(tab)
   
-  tab <- huxtable(tmp_dt[,.(City, State, Case_Name, Labor_Union, Status, Date_Filed, Date_Closed, 
-                     `Tally Type`, Union_Cer, Votes_For_Union, Votes_Against, Num_Eligible_Voters, 
-                     `Challenged Ballots`, `Challenges are Determinative`, 
-                     Didnt_Vote, Margin, `Voting Unit (Unit A)`, Case )])
-  tab[1,] <- gsub("_", " ", (tab[1,]))
-  tab[1,9] <- "Union Certified?"
-  tab <- theme_striped(tab)
+  if(!dir.exists(here("content",  "tables", state))) dir.create(here("content",  "tables", state))
   
-  retun(to_html(tab))
+  f <- file(here("content", "tables", state, "open.html"))
+  print(tab, file = f, type="html", 
+        html.table.attributes="class='open-cases'",
+        comment = F,include.rownames = F, 
+        sanitize.colnames.function = function(x) gsub("_", " ", x))
+  close(f)
 }
 
+create_state_table_open(data=dt, state_abb = "CA")
 
-create_state_page <- function(state_abb = "MN"){
+create_state_page <- function(state_abb = "CA"){
 
   state <- state.name[state.abb == state_abb]
     
   dir.create(here("content",  "data", "states", state))
   
   
-  tmp <-c(paste("##", state),
+  tmp <-c(paste("## ", state),
           "", 
-          "### Election History",
+          paste("### Number Employees in a Union Election by Outcome in", state),
           paste0("{{< image src=",state_abb, "_hist_vic.svg >}}"),
           "",
+          paste("### Number of Elections by Unit Size in", state),
           paste0("{{< image src=",state_abb, "_hist_size.svg >}}"),
           "",
-          "### 10 Largest Elections",
+          paste("### Largest Private Union Elections Since 2007 in", state),
           paste0("{{< image src=",state_abb, "_10.svg >}}"),
           "",
-          "### 10 Most Recent Elections",
+          "### Open Election Related Cases",
+          paste0("{{< readtable table=\"/tables/", state, "/open.html\" >}}"),
           ""
           )
 
@@ -208,7 +234,7 @@ create_state_page <- function(state_abb = "MN"){
 
 
 for(state in state.abb){
-  # create_state_page(state_abb = state)
+  create_state_page(state_abb = state)
   
   create_state_plot(state_abb = state,
                     number=10,
@@ -217,7 +243,11 @@ for(state in state.abb){
   create_state_time_plot(state_abb = state,
                     data=dt)
   
+  create_state_table_open(state_abb = state, data=dt)
+  
 }
+
+create_state_table_open(state_abb = "CA", data=dt)
 
 # create_state_plot(state_abb = "ND",
 #                   number=10,
