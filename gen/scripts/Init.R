@@ -185,23 +185,37 @@ create_state_table_open <- function(state_abb = "MN", data=NULL){
   tmp_dt <- tmp_dt[Status=="Open"]
   tmp_dt <- setorder(tmp_dt, -`Date_Filed`)
   
+  tmp_dt$Date_Filed <- as.character(tmp_dt$Date_Filed, "%b %d, %Y")
+  
+  # tmp_dt$Case <- paste0("<a href='https://www.nlrb.gov/case/", tmp_dt$Case, "'>", tmp_dt$Case, "</a>")
   tab <- xtable(tmp_dt[,.(City, State, Case_Name, Labor_Union, Status, Date_Filed, 
-                            Num_Eligible_Voters, `Voting Unit (Unit A)`, Case )])
+                            Num_Eligible_Voters, Case )])
+  align(tab)[8] <- "c"
   # tab[1,] <- gsub("_", " ", (tab[1,]))
   # tab[1,9] <- "Union Certified?"
   # tab <- theme_basic(tab)
   
   if(!dir.exists(here("content",  "tables", state))) dir.create(here("content",  "tables", state))
   
-  f <- file(here("content", "tables", state, "open.html"))
+  f <- here("content", "tables", state, "open.html")
   print(tab, file = f, type="html", 
         html.table.attributes="class='open-cases'",
         comment = F,include.rownames = F, 
         sanitize.colnames.function = function(x) gsub("_", " ", x))
-  close(f)
+  file_contents <- readLines(f)
+  cases <- unique(tmp_dt$Case)
+  for(case in cases){
+    
+
+    file_contents <- gsub(case,
+                          paste0("<a href='https://www.nlrb.gov/case/", case, "'>", case, "</a>"),
+                          file_contents)
+    
+  }
+  write(file_contents, f)
 }
 
-create_state_table_open(data=dt, state_abb = "CA")
+# create_state_table_open(data=dt, state_abb = "CA")
 
 create_state_page <- function(state_abb = "CA"){
 
@@ -247,11 +261,11 @@ for(state in state.abb){
   
 }
 
-create_state_table_open(state_abb = "CA", data=dt)
+# create_state_table_open(state_abb = "CA", data=dt)
 
 # create_state_plot(state_abb = "ND",
 #                   number=10,
 #                   data=dt)
 
-create_state_time_plot(state_abb = "MN",
-                  data=dt)
+# create_state_time_plot(state_abb = "MN",
+#                   data=dt)

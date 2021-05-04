@@ -1,12 +1,12 @@
-## Iowa
+##  Iowa
 
-###Number Employees in a Union Election by Outcome in Iowa
+### Number Employees in a Union Election by Outcome in Iowa
 {{< image src=IA_hist_vic.svg >}}
 
-###Number of Elections by Unit Size in Iowa
+### Number of Elections by Unit Size in Iowa
 {{< image src=IA_hist_size.svg >}}
 
-###Largest Private Union Elections Since 2007 in Iowa
+### Largest Private Union Elections Since 2007 in Iowa
 {{< image src=IA_10.svg >}}
 
 ### Open Election Related Cases
