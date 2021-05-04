@@ -1,0 +1,17 @@
+/* You can add custom styles here. */
+
+// @import "plugins/numbered";
+
+img.plot {
+  max-width: 70%;
+  height: auto;
+}
+
+table.open-cases {
+  font-size: 12px;
+  border-spacing: 1px;
+}
+
+table.open-cases td {
+  padding: .1rem;
+}
