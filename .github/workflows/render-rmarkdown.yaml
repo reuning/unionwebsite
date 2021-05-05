@@ -28,7 +28,6 @@ jobs:
           R -e 'install.packages("renv")'
           R -e 'renv::restore()'
 
-      - name: Render Rmarkdown files
+      - name: Run R files
         run: |
-          RMD_PATH=($(git diff --name-only ${{ github.event.before }} ${{ github.sha }} | grep '[.]Rmd$'))
           Rscript -e gen/scripts/Init.R

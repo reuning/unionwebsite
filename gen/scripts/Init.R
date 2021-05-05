@@ -1,4 +1,3 @@
-#setwd("~/Dropbox/Projects/unionwebsite/")
 
 library(data.table)
 library(ggplot2)
