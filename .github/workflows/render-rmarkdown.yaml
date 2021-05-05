@@ -15,7 +15,6 @@ jobs:
       - name: Setup R
         uses: r-lib/actions/setup-r@v1
 
-
       - name: Cache Renv packages
         uses: actions/cache@v2
         with:
@@ -30,4 +29,4 @@ jobs:
 
       - name: Run R files
         run: |
-          Rscript -e gen/scripts/Init.R
+          Rscript gen/scripts/Init.R
