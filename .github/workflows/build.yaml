@@ -38,3 +38,21 @@ jobs:
         env:
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+
+  deploy:
+    runs-on: ubuntu-latest
+    env:
+      GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
+    steps:
+      - name: Deploy to Netlify
+        id: deploy_to_netlify
+        uses: netlify/actions/cli@master
+        with:
+          args: "deploy --build --message 'From Github' --prod"
+        env:
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+
+      - name: Log Netlify
+        run: |
+          echo "::warning::${{ steps.deploy_to_netlify.outputs.NETLIFY_OUTPUT }}"
