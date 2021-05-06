@@ -34,18 +34,6 @@ jobs:
       - name: Deploy to Netlify
         uses: netlify/actions/cli@master
         with:
-          args: deploy
-          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
-          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
-
-  deploy:
-    runs-on: ubuntu-18.04
-    env:
-      GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
-    steps:
-      - name: Deploy to Netlify
-        uses: netlify/actions/cli@master
-        with:
-          args: deploy --build true --dir ./
+          args: deploy --build --message "test" --prod
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
