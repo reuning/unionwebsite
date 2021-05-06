@@ -236,7 +236,8 @@ create_state_page <- function(state_abb = "CA"){
           "",
           "### Open Election Related Cases",
           paste0("{{< readtable table=\"/tables/", state, "/open.html\" >}}"),
-          ""
+          "",
+          "#### test"
           )
 
   f <- file(here("content", "data", "states", state, "_index.md"))
