@@ -20,7 +20,7 @@ jobs:
       - name: Cache packages
         uses: actions/cache@v1
         with:
-          path: $HOME/.local/share/renv
+          path: ~/.local/share/renv
           key: ${{ runner.os }}-renv-${{ hashFiles('**/renv.lock') }}
           restore-keys: |
             ${{ runner.os }}-renv-
