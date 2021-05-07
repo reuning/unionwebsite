@@ -3,14 +3,12 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-18.04
     env:
       GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
     steps:
       - name: Checkout repo
         uses: actions/checkout@v2
-        with:
-          fetch-depth: 0
 
       - name: Setup R
         uses: r-lib/actions/setup-r@v1
@@ -31,28 +29,20 @@ jobs:
         run: |
           Rscript gen/scripts/Init.R
 
-      - name: Deploy to Netlify
-        uses: netlify/actions/cli@master
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
         with:
-          args: "deploy --build --message 'From Github' --prod"
+          hugo-version: '0.81.0'
+
+      - name: Build
+        run: hugo --gc --minify --theme book
+
+      - name: Deploy to Netlify
+        uses: nwtgck/actions-netlify@v1.2
+        with:
+          publish-dir: './public'
+          production-deploy: true
+          netlify-config-path: './'
         env:
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
-
-  deploy:
-    runs-on: ubuntu-latest
-    env:
-      GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
-    steps:
-      - name: Deploy to Netlify
-        id: deploy_to_netlify
-        uses: netlify/actions/cli@master
-        with:
-          args: "deploy --build --message 'From Github' --prod"
-        env:
-          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
-          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
-
-      - name: Log Netlify
-        run: |
-          echo "::warning::${{ steps.deploy_to_netlify.outputs.NETLIFY_OUTPUT }}"

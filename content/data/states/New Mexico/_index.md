@@ -12,3 +12,4 @@
 ### Open Election Related Cases
 {{< readtable table="/tables/New Mexico/open.html" >}}
 
+#### test

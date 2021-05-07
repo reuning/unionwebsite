@@ -194,7 +194,7 @@ create_state_table_open <- function(state_abb = "MN", data=NULL){
   # tab[1,9] <- "Union Certified?"
   # tab <- theme_basic(tab)
 
-  if(!dir.exists(here("content",  "tables", state))) dir.create(here("content",  "tables", state))
+  dir.create(here("content",  "tables", state))
 
   f <- here("content", "tables", state, "open.html")
   print(tab, file = f, type="html",
@@ -220,7 +220,7 @@ create_state_page <- function(state_abb = "CA"){
 
   state <- state.name[state.abb == state_abb]
 
-  # dir.create(here("content",  "data", "states", state))
+  dir.create(here("content",  "data", "states", state))
 
 
   tmp <-c(paste("## ", state),
@@ -246,27 +246,20 @@ create_state_page <- function(state_abb = "CA"){
 
 }
 
+dir.create(here("content",  "data", "states"))
+dir.create(here("content", "tables"))
 
 
 for(state in state.abb){
   create_state_page(state_abb = state)
 
-  # create_state_plot(state_abb = state,
-  #                   number=10,
-  #                   data=dt,file =here("content",  "data", "states", state,
-  #                                        paste0(state_abb, "_", number, ".svg") ))
-  # create_state_time_plot(state_abb = state,
-  #                   data=dt)
-  #
-  # create_state_table_open(state_abb = state, data=dt)
+  create_state_plot(state_abb = state,
+                    number=10,
+                    data=dt,file =here("content",  "data", "states", state,
+                                         paste0(state_abb, "_", number, ".svg") ))
+  create_state_time_plot(state_abb = state,
+                    data=dt)
+
+  create_state_table_open(state_abb = state, data=dt)
   #
 }
-
-# create_state_table_open(state_abb = "CA", data=dt)
-
-# create_state_plot(state_abb = "ND",
-#                   number=10,
-#                   data=dt)
-
-# create_state_time_plot(state_abb = "MN",
-#                   data=dt)

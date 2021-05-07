@@ -12,3 +12,4 @@
 ### Open Election Related Cases
 {{< readtable table="/tables/Minnesota/open.html" >}}
 
+#### test
