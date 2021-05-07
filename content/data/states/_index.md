@@ -1,5 +1,5 @@
 ---
-title: State LeveL Data
+title: State Level Data
 bookCollapseSection: true
 type: docs
 ---
