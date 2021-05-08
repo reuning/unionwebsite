@@ -7,21 +7,6 @@ source(here("gen", "scripts", "Scripts.R"))
 dict <- read.csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vTQj4UzxBycuPUVmIXM9RUnTWq0dwHICOk-phgwyfjqZAm8lsjl3D4JTLz73aa4dnOJ7gXmhehPGfu8/pub?gid=0&single=true&output=csv")
 
 dt <- fread(here("gen", "data", "recent_election_results.csv"))
-names(dt)[21] <- "Votes Against"
-
-downloader::download("https://www.nlrb.gov/reports/graphs-data/recent-election-results/csv-export", 
-                     here("gen", "data", "temp.csv"))
-dt_new <- fread(here("gen", "data", "temp.csv"))
-names(dt_new)[21] <- "Votes Against"
-
-dt <- unique(rbind(dt, dt_new))
-rm(dt_new)
-
-col_names <-which(apply(dt, 2, function(x) any(grepl('"', x))))
-for (j in col_names) set(dt, j = j, value = gsub('"', '', dt[[j]]))
-
-
-fwrite(dt, file = here("gen", "data", "recent_election_results.csv"), row.names = F)
 
 
 
@@ -112,7 +97,6 @@ create_state_page <- function(state_abb = "CA"){
 
 }
 
-dir.create(here("content",  "data", "states"))
 dir.create(here("content", "tables"))
 
 
