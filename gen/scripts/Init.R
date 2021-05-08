@@ -17,9 +17,6 @@ names(dt)[c(2,6,7,8,9,11,13,15,18,21,22)] <- c("Case_Name", "Date_Closed",
                                   "Votes_For_Union","Votes_Against",
                                   "Total_Ballots_Counted")
 
-### Get most recent
-dt <- dt[order(-Tally_Date)]
-dt$Unique <- !duplicated(dt, by='Case')
 
 ### Create New Variables
 dt[,Tally_Date:=as.Date(`Tally_Date`, format="%m/%d/%Y")]
@@ -31,6 +28,9 @@ dt[,size:=cut(Num_Eligible_Voters, breaks = c(0, 5, 10, 25, 50, 100, 500, Inf), 
               labels=c("<5", "6-10", "11-25", "26-50", "51-100", "101-500", "500>"), ordered_result = T)]
 
 
+### Get most recent
+dt <- dt[order(-Tally_Date)]
+dt$Unique <- !duplicated(dt, by='Case')
 
 # dt <- dt[Status=="Closed"]
 # dt <- dt[`Reason_Closed` %in% c("Certific. of Representative", "Certification of Results")]
