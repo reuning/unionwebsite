@@ -35,9 +35,12 @@ jobs:
           if (!requireNamespace("renv", quietly = TRUE)) install.packages("renv")
           renv::restore()
 
-      - name: Run R files
-        run: |
-          Rscript gen/scripts/Init.R
+      - name: Get New Data
+        if: github.event_name == 'schedule'
+        run: Rscript gen/scripts/Update_Data.R
+
+      - name: Build Plots and Pages
+        run: Rscript gen/scripts/Init.R
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
