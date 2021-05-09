@@ -10,9 +10,9 @@ dt <- fread(here("gen", "data", "recent_election_results.csv"))
 
 
 
-names(dt)[c(2,6,7,8,9,11,13,15,18,21,22)] <- c("Case_Name", "Date_Closed",
+names(dt)[c(2,6,7,8,9,10, 11,13,15,18,21,22)] <- c("Case_Name", "Date_Closed",
                                   "Reason_Closed", "Date_Filed",
-                                  "Tally_Date", "Ballot_Type",
+                                  "Tally_Date", "Tally_Type", "Ballot_Type",
                                   "Num_Eligible_Voters",  "Labor_Union",
                                   "Votes_For_Union","Votes_Against",
                                   "Total_Ballots_Counted")

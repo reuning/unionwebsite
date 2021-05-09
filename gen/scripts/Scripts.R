@@ -107,10 +107,12 @@ create_state_table_open <- function(state_abb = "MN", data=NULL){
   tmp_dt <- tmp_dt[Status=="Open"]
   tmp_dt <- setorder(tmp_dt, -`Date_Filed`)
 
+  tmp_dt <- unique(tmp_dt)
   tmp_dt$Date_Filed <- as.character(tmp_dt$Date_Filed, "%b %d, %Y")
 
   # tmp_dt$Case <- paste0("<a href='https://www.nlrb.gov/case/", tmp_dt$Case, "'>", tmp_dt$Case, "</a>")
   tab <- xtable(tmp_dt[,.(City, State, Case_Name, Labor_Union, Case_Type, Date_Filed,
+                          Tally_Type, Ballot_Type, Votes_For_Union, Votes_Against,
                             Num_Eligible_Voters, Case )])
   align(tab)[8] <- "c"
   # tab[1,] <- gsub("_", " ", (tab[1,]))

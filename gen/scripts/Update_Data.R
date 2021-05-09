@@ -4,49 +4,40 @@ library(here)
 
 
 
-# dt <- fread(here("gen", "data", "recent_election_results.csv"))
-# names(dt)[21] <- "Votes Against"
+dt <- fread(here("gen", "data", "recent_election_results.csv"))
+names(dt)[21] <- "Votes Against"
 
 downloader::download("https://www.nlrb.gov/reports/graphs-data/recent-election-results/csv-export",
                      here("gen", "data", "temp.csv"))
 dt_new <- fread(here("gen", "data", "temp.csv"))
 names(dt_new)[21] <- "Votes Against"
 
-# dt_new[Status == "Closed"]
-# dt[Status == "Open"]
-# 
-# dt_tmp <- rbind(dt, dt_new[Status=="Open"])
-# dt_tmp[,`Tally Date`:=as.Date(`Tally Date`, format="%m/%d/%Y")]
-# dt_tmp[,`Date Filed`:=as.Date(`Date Filed`, format="%m/%d/%Y")]
-# 
-# 
-# dt_tmp <- unique(dt_tmp, by=c("Case", "Tally Type", "Unit ID", "Tally Type", 
-#                               "Status", "Reason Closed",
-#                               "Challenges are Determinative", "Ballot Type"))
-# dim(dt_tmp)
-# 
-# rm(dt_new)
-
-col_names <-which(apply(dt_new, 2, function(x) any(grepl('"', x))))
-for (j in col_names) set(dt_new, j = j, value = gsub('"', '', dt_new[[j]]))
 
 
-fwrite(dt_new, file = here("gen", "data", "recent_election_results.csv"), row.names = F)
+tmp1 <- dt_new[Status == "Closed"]
+tmp2 <- dt[Status == "Open"]
+
+dt_newly_closed <- tmp1[na.omit(match(tmp2$Case, tmp1$Case))]
+
+
+tmp1 <- dt_new[Status == "Closed"]
+dt_missing_closed <- tmp1[!tmp1$Case %in% dt[Status == "Closed", Case]]
+
+dt_out <- rbind(dt_new[Status == "Open"],
+                dt[Status == "Closed"], 
+                dt_newly_closed, 
+                dt_missing_closed)
+
+dt_out <- unique(dt_out, by = names(dt_out)[which(!names(dt_out) %in% c("Voting Unit (Unit A)", 
+                                 "Voting Unit (Unit B)", 
+                                 "Voting Unit (Unit C)", 
+                                 "Voting Unit (Unit D)"))] )
 
 
 
-# dim(dt_new[Case %in%(dt[Status=="Closed", Case])])
-# dim(dt[Status=="Closed"])
-# tmp1 <-dt_new[Case %in%(dt[Status=="Closed", Case])] 
-# tmp2 <- dt[Status=="Closed"]
-# tmp3 <- unique(rbind(tmp1, tmp2), 
-#                by=c("Case", "Tally Type", "Unit ID", "Tally Type", 
-#                     "Status", "Reason Closed", "Tally Date",
-#                     "No of Eligible Voters",
-#                     "Challenged Ballots",
-#                     "Votes for Labor Union1",
-#                     "Total Ballots Counted",
-#                     "Votes Against",
-#                     "Runoff Required",
-#                     "Challenges are Determinative", "Ballot Type"))
-# anyDuplicated(rbind(tmp2, tmp3))
+col_names <-which(apply(dt_out, 2, function(x) any(grepl('"', x))))
+for (j in col_names) set(dt_out, j = j, value = gsub('"', '', dt_out[[j]]))
+
+
+fwrite(dt_out, file = here("gen", "data", "recent_election_results.csv"), row.names = F)
+
