@@ -65,38 +65,6 @@ dt$`Didnt_Vote` <- dt$`Num_Eligible_Voters` - dt$`Votes_For_Union` - dt$`Votes_A
 
 
 
-
-# create_state_table_open(data=dt, state_abb = "CA")
-
-create_state_page <- function(state_abb = "CA"){
-
-  state <- state.name[state.abb == state_abb]
-
-  dir.create(here("content",  "data", "states", state))
-
-
-  tmp <-c(paste("## ", state),
-          "",
-          paste("### Number Employees in a Union Election by Outcome"),
-          paste0("{{< image src=\"",state_abb, "_hist_vic.svg\" >}}"),
-          "",
-          paste("### Number of Elections by Unit Size"),
-          paste0("{{< image src=\"",state_abb, "_hist_size.svg\" >}}"),
-          "",
-          paste("### Largest Private Union Elections"),
-          paste0("{{< image src=\"",state_abb, "_10.svg\" >}}"),
-          "",
-          "### Open Election Related Cases",
-          paste0("{{< readtable table=\"/tables/", state, "/open.html\" >}}"),
-          ""
-          )
-
-  f <- file(here("content", "data", "states", state, "_index.md"))
-  writeLines(tmp, f)
-  close(f)
-
-}
-
 dir.create(here("content", "tables"))
 
 
@@ -113,3 +81,5 @@ for(state in state.abb){
   create_state_table_open(state_abb = state, data=dt)
   #
 }
+
+# create_state_time_plot(data=dt)
