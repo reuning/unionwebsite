@@ -10,15 +10,19 @@ library(xtable)
 
 
 
-create_state_plot <- function(state_abb = "MN", number=10, data=NULL,
+create_state_plot <- function(state_abb = NULL, number=10, data=NULL,
                               state = state.name[state.abb == state_abb],
                               file_name = here("content", "data", "states", 
                                                state, paste0(state_abb, "_10.png"))){
 
+  if( is.null(state_abb )){
+    tmp_dt <- data[Unique==TRUE & Case_Type == "RC" & Status=="Closed"]
+    file_name = here("content", "data", "national",  paste0("national", "_10.png"))
+  } else {
+    tmp_dt <- data[State==state_abb & Unique==TRUE & Case_Type == "RC" & Status=="Closed"]
+    
+  }
 
-  state <- state.name[state.abb == state_abb]
-
-  tmp_dt <- data[State==state_abb & Unique==TRUE & Case_Type == "RC" & Status=="Closed"]
 
   tmp_dt$City <- tools::toTitleCase(tolower(tmp_dt$City))
   tmp_dt$`Case_Name` <-  str_to_title(tmp_dt$`Case_Name`) %>% str_trunc(width = 50)
@@ -43,10 +47,11 @@ create_state_plot <- function(state_abb = "MN", number=10, data=NULL,
                   color=Union_Cer)) +
     scale_x_continuous(limits=c(0, x_lim)) +
     scale_y_discrete(label=scales::label_wrap(35)) +
-    scale_fill_manual("", values=c("springgreen4", "orangered3", "grey")) +
+    scale_fill_manual("", values=c("#009E73", "#56B4E9", "grey"),
+                      labels=c("Votes for", "Votes Against", "Didn't Vote")) +
     guides(color=F) +
     theme_minimal() +
-    scale_color_manual(values = c("orangered3", "springgreen4")) +
+    scale_color_manual(values = c("#56B4E9", "#009E73")) +
     annotate("text", x=x_lim, y=number + .5, label="Margin") +
     theme(legend.position = "bottom") +
     guides(alpha=F) +
@@ -58,15 +63,24 @@ create_state_plot <- function(state_abb = "MN", number=10, data=NULL,
 }
 
 
-create_state_time_plot <- function(state_abb = "MN", data=NULL,
-                              file_name= here("content", "data", "states", state, paste0(state_abb))) {
+create_state_time_plot <- function(state_abb = NULL, data=NULL,
+                                   state = state.name[state.abb == state_abb],
+                                   file_name= here("content", "data", "states", state, paste0(state_abb))) {
 
 
-  state <- state.name[state.abb == state_abb]
+  if( is.null(state_abb )){
+    tmp_dt <- data[Case_Type == "RC" &
+                     Ballot_Type != "Revised Single Labor Org" &
+                     !is.na(size) ]
+    file_name = here("content", "data",  "national", "national")
+  } else {
+    tmp_dt <- data[State==state_abb  & Case_Type == "RC" &
+                     Ballot_Type != "Revised Single Labor Org" &
+                     !is.na(size) ]
+    
+    
+  }
 
-  tmp_dt <- data[State==state_abb  & Case_Type == "RC" &
-                   Ballot_Type != "Revised Single Labor Org" &
-                   !is.na(size) ]
 
 
   ggplot(tmp_dt, aes(x=Tally_Quarter,
@@ -100,11 +114,19 @@ create_state_time_plot <- function(state_abb = "MN", data=NULL,
 
 
 
-create_state_table_open <- function(state_abb = "MN", data=NULL, 
+create_state_table_open <- function(state_abb = NULL, data=NULL, 
+                                    state = state.name[state.abb == state_abb],
                                     file_name=here("content", "tables", state, "open.html")){
 
-  state <- state.name[state.abb == state_abb]
-  tmp_dt <- data[State==state_abb]
+  if( is.null(state_abb )){
+    tmp_dt <- data
+    file_name = here("content", "tables", "national", "open.html")
+  } else {
+    tmp_dt <- data[State==state_abb]
+    
+    
+  }
+
   tmp_dt <- tmp_dt[Status=="Open"]
   tmp_dt <- setorder(tmp_dt, -`Date_Filed`)
 
@@ -115,7 +137,7 @@ create_state_table_open <- function(state_abb = "MN", data=NULL,
   tab <- xtable(tmp_dt[,.(City, State, Case_Name, Labor_Union, Case_Type, Date_Filed,
                           Tally_Type, Ballot_Type, Votes_For_Union, Votes_Against,
                             Num_Eligible_Voters, Case )])
-  align(tab)[8:11] <- "c"
+  align(tab)[6:12] <- "c"
   # tab[1,] <- gsub("_", " ", (tab[1,]))
   # tab[1,9] <- "Union Certified?"
   # tab <- theme_basic(tab)
@@ -126,7 +148,7 @@ create_state_table_open <- function(state_abb = "MN", data=NULL,
         html.table.attributes="class='open-cases'",
         comment = F,include.rownames = F,
         sanitize.colnames.function = function(x) gsub("_", " ", x))
-  file_contents <- readLines(file)
+  file_contents <- readLines(file_name)
   cases <- unique(tmp_dt$Case)
   for(case in cases){
 
@@ -136,7 +158,7 @@ create_state_table_open <- function(state_abb = "MN", data=NULL,
                           file_contents)
 
   }
-  write(file_contents, file_name)
+  write(file_contents, file = file_name)
 }
 
 
@@ -165,6 +187,10 @@ create_state_page <- function(state_abb = "CA",
           )
 
   writeLines(tmp, file_name)
-  close(file_name)
 
 }
+
+# create_state_page()
+# create_state_table_open(data=dt)
+# create_state_time_plot(data=dt)
+# create_state_plot(data=dt)
