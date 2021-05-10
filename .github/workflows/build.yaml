@@ -39,6 +39,13 @@ jobs:
         if: github.event_name == 'schedule'
         run: Rscript gen/scripts/Update_Data.R
 
+      - name: Commit new data
+        if: github.event_name == 'schedule'
+        uses: EndBug/add-and-commit@v7 # You can change this to use a specific version
+        with:
+          add: 'gen/data/recent_election_results.csv'
+          message: 'Updated data'
+
       - name: Build Plots and Pages
         run: Rscript gen/scripts/Init.R
 
