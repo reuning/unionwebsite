@@ -11,7 +11,9 @@ library(xtable)
 
 
 create_state_plot <- function(state_abb = "MN", number=10, data=NULL,
-                              file=NULL){
+                              state = state.name[state.abb == state_abb],
+                              file_name = here("content", "data", "states", 
+                                               state, paste0(state_abb, "_10.png"))){
 
 
   state <- state.name[state.abb == state_abb]
@@ -50,15 +52,14 @@ create_state_plot <- function(state_abb = "MN", number=10, data=NULL,
     guides(alpha=F) +
     labs(y="", x="Votes", caption = "Includes only certification votes with a single union, data from NLRB")
 
-  f <- here("content", "data", "states", state, paste0(state_abb, "_10.png"))
-  ggsave(f, height=10*log10(number), width=8)
+  ggsave(file_name, height=10*log10(number), width=8)
 
 
 }
 
 
 create_state_time_plot <- function(state_abb = "MN", data=NULL,
-                              file=NULL){
+                              file_name= here("content", "data", "states", state, paste0(state_abb))) {
 
 
   state <- state.name[state.abb == state_abb]
@@ -67,7 +68,6 @@ create_state_time_plot <- function(state_abb = "MN", data=NULL,
                    Ballot_Type != "Revised Single Labor Org" &
                    !is.na(size) ]
 
-  # tmp_dt$City <- tools::toTitleCase(tolower(tmp_dt$City))
 
   ggplot(tmp_dt, aes(x=Tally_Quarter,
              fill=size)) +
@@ -78,7 +78,7 @@ create_state_time_plot <- function(state_abb = "MN", data=NULL,
   theme(legend.position = "bottom") +
   labs(y="", x="Votes", caption = "Includes only certification votes with a single union, data from NLRB")
 
-  f <- here("content", "data", "states", state, paste0(state_abb, "_hist_size.png"))
+  f <- paste0(file_name, "_hist_size.png")
 
   ggsave(f, height=6, width=8)
 
@@ -90,7 +90,8 @@ create_state_time_plot <- function(state_abb = "MN", data=NULL,
     scale_fill_colorblind("Unionized?") +
     theme(legend.position = "bottom") +
     labs(y="", x="Votes", caption = "Includes only certification votes with a single union, data from NLRB")
-  f <- here("content", "data", "states", state, paste0(state_abb, "_hist_vic.png"))
+  
+  f <- paste0(file_name, "_hist_vic.png")
 
   ggsave(f, height=6, width=8)
 
@@ -99,7 +100,8 @@ create_state_time_plot <- function(state_abb = "MN", data=NULL,
 
 
 
-create_state_table_open <- function(state_abb = "MN", data=NULL){
+create_state_table_open <- function(state_abb = "MN", data=NULL, 
+                                    file_name=here("content", "tables", state, "open.html")){
 
   state <- state.name[state.abb == state_abb]
   tmp_dt <- data[State==state_abb]
@@ -113,19 +115,18 @@ create_state_table_open <- function(state_abb = "MN", data=NULL){
   tab <- xtable(tmp_dt[,.(City, State, Case_Name, Labor_Union, Case_Type, Date_Filed,
                           Tally_Type, Ballot_Type, Votes_For_Union, Votes_Against,
                             Num_Eligible_Voters, Case )])
-  align(tab)[8] <- "c"
+  align(tab)[8:11] <- "c"
   # tab[1,] <- gsub("_", " ", (tab[1,]))
   # tab[1,9] <- "Union Certified?"
   # tab <- theme_basic(tab)
 
-  dir.create(here("content",  "tables", state))
+  if(!dir.exists(dirname(file_name))) dir.create(dirname(file_name))
 
-  f <- here("content", "tables", state, "open.html")
-  print(tab, file = f, type="html",
+  print(tab, file = file_name, type="html",
         html.table.attributes="class='open-cases'",
         comment = F,include.rownames = F,
         sanitize.colnames.function = function(x) gsub("_", " ", x))
-  file_contents <- readLines(f)
+  file_contents <- readLines(file)
   cases <- unique(tmp_dt$Case)
   for(case in cases){
 
@@ -135,15 +136,16 @@ create_state_table_open <- function(state_abb = "MN", data=NULL){
                           file_contents)
 
   }
-  write(file_contents, f)
+  write(file_contents, file_name)
 }
 
 
-create_state_page <- function(state_abb = "CA"){
+create_state_page <- function(state_abb = "CA", 
+                              state = state.name[state.abb == state_abb],
+                              file_name = here("content", "data", "states", state, "_index.md") ){
 
-  state <- state.name[state.abb == state_abb]
 
-  dir.create(here("content",  "data", "states", state))
+  if(!dir.exists(dirname(file_name))) dir.create( dirname(file_name))
 
 
   tmp <-c(paste("## ", state),
@@ -162,8 +164,7 @@ create_state_page <- function(state_abb = "CA"){
           ""
           )
 
-  f <- file(here("content", "data", "states", state, "_index.md"))
-  writeLines(tmp, f)
-  close(f)
+  writeLines(tmp, file_name)
+  close(file_name)
 
 }
