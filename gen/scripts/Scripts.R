@@ -5,6 +5,7 @@ library(gridExtra)
 library(magrittr)
 library(stringr)
 library(xtable)
+library(svglite)
 
 
 
@@ -13,11 +14,11 @@ library(xtable)
 create_state_plot <- function(state_abb = NULL, number=10, data=NULL,
                               state = state.name[state.abb == state_abb],
                               file_name = here("content", "data", "states", 
-                                               state, paste0(state_abb, "_10.png"))){
+                                               state, paste0(state_abb, "_10.svg"))){
 
   if( is.null(state_abb )){
     tmp_dt <- data[Unique==TRUE & Case_Type == "RC" & Status=="Closed"]
-    file_name = here("content", "data", "national",  paste0("national", "_10.png"))
+    file_name = here("content", "data", "national",  paste0("national", "_10.svg"))
   } else {
     tmp_dt <- data[State==state_abb & Unique==TRUE & Case_Type == "RC" & Status=="Closed"]
     
@@ -92,7 +93,7 @@ create_state_time_plot <- function(state_abb = NULL, data=NULL,
   theme(legend.position = "bottom") +
   labs(y="", x="Votes", caption = "Includes only certification votes with a single union, data from NLRB")
 
-  f <- paste0(file_name, "_hist_size.png")
+  f <- paste0(file_name, "_hist_size.svg")
 
   ggsave(f, height=6, width=8)
 
@@ -105,7 +106,7 @@ create_state_time_plot <- function(state_abb = NULL, data=NULL,
     theme(legend.position = "bottom") +
     labs(y="", x="Votes", caption = "Includes only certification votes with a single union, data from NLRB")
   
-  f <- paste0(file_name, "_hist_vic.png")
+  f <- paste0(file_name, "_hist_vic.svg")
 
   ggsave(f, height=6, width=8)
 
@@ -173,13 +174,13 @@ create_state_page <- function(state_abb = "CA",
   tmp <-c(paste("## ", state),
           "",
           paste("### Number Employees in a Union Election by Outcome"),
-          paste0("{{< image src=\"",state_abb, "_hist_vic.png\" >}}"),
+          paste0("{{< image src=\"",state_abb, "_hist_vic.svg\" >}}"),
           "",
           paste("### Number of Elections by Unit Size"),
-          paste0("{{< image src=\"",state_abb, "_hist_size.png\" >}}"),
+          paste0("{{< image src=\"",state_abb, "_hist_size.svg\" >}}"),
           "",
           paste("### Largest Private Union Elections"),
-          paste0("{{< image src=\"",state_abb, "_10.png\" >}}"),
+          paste0("{{< image src=\"",state_abb, "_10.svg\" >}}"),
           "",
           "### Open Election Related Cases",
           paste0("{{< readtable table=\"/tables/", state, "/open.html\" >}}"),
