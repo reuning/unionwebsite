@@ -380,6 +380,20 @@
       "Repository": "CRAN",
       "Hash": "6f76f71042411426ec8df6c54f34e6dd"
     },
+    "showtext": {
+      "Package": "showtext",
+      "Version": "0.9-2",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "e5dab22dca0b4626733ffca54b81fb6b"
+    },
+    "showtextdb": {
+      "Package": "showtextdb",
+      "Version": "3.0",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "c12e756cf947e58b0f2c2a520521a5a8"
+    },
     "stringi": {
       "Package": "stringi",
       "Version": "1.5.3",
@@ -400,6 +414,13 @@
       "Source": "Repository",
       "Repository": "CRAN",
       "Hash": "8fb6188960bf0f90996ce52f9c2106ac"
+    },
+    "sysfonts": {
+      "Package": "sysfonts",
+      "Version": "0.8.3",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "6a750650ae5e5ba11b45cb5012bd6167"
     },
     "systemfonts": {
       "Package": "systemfonts",
