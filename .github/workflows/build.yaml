@@ -17,6 +17,8 @@ jobs:
           submodules: true
           fetch-depth: 0
 
+      - name: curl
+        uses: wei/curl@master
 
       - name: Setup R
         uses: r-lib/actions/setup-r@v1
