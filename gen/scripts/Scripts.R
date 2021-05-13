@@ -5,23 +5,22 @@ library(gridExtra)
 library(magrittr)
 library(stringr)
 library(xtable)
-library(svglite)
-library(curl)
+# library(curl)
 
 sysfonts::font_add_google("Crimson Pro")
-showtext::showtext_auto()
-
-font <- font_face("Crimson Pro", 
-                  ttf="https://fonts.googleapis.com/css2?family=Crimson+Pro&display=swap")
+# showtext::showtext_auto()
+# 
+# font <- font_face("Crimson Pro", 
+#                   ttf="https://fonts.googleapis.com/css2?family=Crimson+Pro&display=swap")
 
 create_state_plot <- function(state_abb = NULL, number=10, data=NULL,
                               state = state.name[state.abb == state_abb],
                               file_name = here("content", "data", "states", 
-                                               state, paste0(state_abb, "_10.svg"))){
+                                               state, paste0(state_abb, "_10.png"))){
 
   if( is.null(state_abb )){
     tmp_dt <- data[Unique==TRUE & Case_Type == "RC" & Status=="Closed"]
-    file_name = here("content", "data", "national",  paste0("national", "_10.svg"))
+    file_name = here("content", "data", "national",  paste0("national", "_10.png"))
   } else {
     tmp_dt <- data[State==state_abb & Unique==TRUE & Case_Type == "RC" & Status=="Closed"]
     
@@ -36,7 +35,7 @@ create_state_plot <- function(state_abb = NULL, number=10, data=NULL,
   tmp_dt <- head(setorder(tmp_dt, -`Num_Eligible_Voters`), number)
 
 
-  x_lim = max(tmp_dt$`Num_Eligible_Voters`)*1.1
+  x_lim = max(tmp_dt$`Num_Eligible_Voters`)*1.2
 
   tmp_dt %>%
     melt(measure.vars=c("Votes_For_Union", "Votes_Against", "Didnt_Vote"))  %>%
@@ -46,23 +45,25 @@ create_state_plot <- function(state_abb = NULL, number=10, data=NULL,
                                   `Num_Eligible_Voters`),
                fill=variable)) +
     geom_col(position=position_stack(reverse=T), color="black") +
-    geom_text(x=x_lim,
+    geom_text(x=x_lim*.95,
               aes(label=scales::percent(Margin, accuracy =2),
                   color=Union_Cer)) +
-    scale_x_continuous(limits=c(0, x_lim)) +
+    scale_x_continuous(limits=c(0, x_lim), labels = scales::label_comma()) +
     scale_y_discrete(label=scales::label_wrap(35)) +
     scale_fill_manual("", values=c("#009E73", "#56B4E9", "grey"),
                       labels=c("Votes for", "Votes Against", "Didn't Vote")) +
     guides(color=F) +
     theme_minimal(base_family = "Crimson Pro") +
+    theme(legend.position = "bottom", legend.margin=margin(l=-100),
+          text = element_text(size=15, lineheight=.7), 
+          panel.grid=element_blank()) +
     scale_color_manual(values = c("#56B4E9", "#009E73")) +
-    annotate("text", x=x_lim, y=number + .5, label="Margin") +
-    theme(legend.position = "bottom") +
+    annotate("text", x=x_lim*.95, y=number + .5, label="Margin") +
     guides(alpha=F) +
     labs(y="", x="Votes", caption = "Includes only certification votes with a single union, data from NLRB")
 
-  ggsave(file_name, height=10*log10(number), width=8, 
-         web_fonts = font)
+  ggsave(file_name, height=10*log10(number), width=8, type = "cairo", 
+         units="in", dpi=200)
 
 
 }
@@ -93,30 +94,34 @@ create_state_time_plot <- function(state_abb = NULL, data=NULL,
              fill=size)) +
   geom_bar(position=position_stack(reverse=T), color="black", size=.2, width=80) +
   scale_x_date(limits=c(as.Date("2008-01-01"), lubridate::today())) +
+    scale_y_continuous(labels=scales::label_comma()) + 
   theme_minimal(base_family = "Crimson Pro") +
     scale_fill_colorblind("Size of Unit", drop=F) +
-  theme(legend.position = "bottom") +
-  labs(y="", x="Votes", 
+    theme(legend.position = "bottom", 
+          text = element_text(size=15, lineheight=.3)) +
+    labs(x="Quarter", y="Number of Units", 
        caption = "Includes only certification votes with a single union, data from NLRB")
 
-  f <- paste0(file_name, "_hist_size.svg")
+  f <- paste0(file_name, "_hist_size.png")
 
-  ggsave(f, height=6, width=8,
-         web_fonts = font)
+  ggsave(f, height=8, width=10, type = "cairo", 
+         units="in", dpi=200)
 
   ggplot(tmp_dt, aes(x=Tally_Quarter,
                      fill=Union_Cer, weight=Num_Eligible_Voters)) +
     geom_bar(position=position_stack(reverse=T), color="black", size=.2) +
     scale_x_date(limits=c(as.Date("2008-01-01"), lubridate::today())) +
+    scale_y_continuous(labels=scales::label_comma()) + 
     theme_minimal(base_family = "Crimson Pro") +
     scale_fill_colorblind("Unionized?") +
-    theme(legend.position = "bottom") +
-    labs(y="", x="Votes", caption = "Includes only certification votes with a single union, data from NLRB")
+    theme(legend.position = "bottom",
+          text = element_text(size=15, lineheight=.3)) +
+    labs(x="Quarter", y="Number of Voters", caption = "Includes only certification votes with a single union, data from NLRB")
   
-  f <- paste0(file_name, "_hist_vic.svg")
+  f <- paste0(file_name, "_hist_vic.png")
 
-  ggsave(f, height=6, width=8, 
-         web_fonts = font)
+  ggsave(f, height=8, width=10, type = "cairo",
+         units="in", dpi=200)
 
 
 }
@@ -183,13 +188,13 @@ create_state_page <- function(state_abb = "CA",
   tmp <-c(paste("## ", state),
           "",
           paste("### Number Employees in a Union Election by Outcome"),
-          paste0("{{< image src=\"",state_abb, "_hist_vic.svg\" >}}"),
+          paste0("{{< image src=\"",state_abb, "_hist_vic.png\" >}}"),
           "",
           paste("### Number of Elections by Unit Size"),
-          paste0("{{< image src=\"",state_abb, "_hist_size.svg\" >}}"),
+          paste0("{{< image src=\"",state_abb, "_hist_size.png\" >}}"),
           "",
           paste("### Largest Private Union Elections"),
-          paste0("{{< image src=\"",state_abb, "_10.svg\" >}}"),
+          paste0("{{< image src=\"",state_abb, "_10.png\" >}}"),
           "",
           "### Open Election Related Cases",
           paste0("{{< readtable table=\"/tables/", state, "/open.html\" >}}"),
