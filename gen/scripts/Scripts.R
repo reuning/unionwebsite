@@ -6,6 +6,7 @@ library(magrittr)
 library(stringr)
 library(xtable)
 library(svglite)
+library(curl)
 
 sysfonts::font_add_google("Crimson Pro")
 showtext::showtext_auto()

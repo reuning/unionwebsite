@@ -96,7 +96,9 @@
     "curl": {
       "Package": "curl",
       "Version": "4.3.1",
-      "Source": "Repository"
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "c5e68405893f030f139f6d6675eac675"
     },
     "data.table": {
       "Package": "data.table",
