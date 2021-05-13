@@ -1,0 +1,45 @@
+/* roboto-300italic - latin */
+@font-face {
+  font-family: 'Crimson Pro', serif;
+  font-style: italic;
+  font-weight: 300;
+  font-display: swap;
+  src: url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@1,300&display=swap');
+}
+/* roboto-regular - latin */
+@font-face {
+  font-family: 'Crimson Pro', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('https://fonts.googleapis.com/css2?family=Crimson+Pro&display=swap');
+}
+/* roboto-700 - latin */
+@font-face {
+  font-family: 'Crimson Pro', serif;
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@700&display=swap');
+}
+
+/* roboto-mono-regular - latin */
+@font-face {
+  font-family: 'Roboto Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Roboto Mono'), local('RobotoMono-Regular'),
+       url('fonts/roboto-mono-v6-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('fonts/roboto-mono-v6-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+
+
+body {
+  font-family: 'Crimson Pro', sans-serif;
+}
+
+code {
+  font-family: 'Roboto Mono', monospace;
+}

@@ -7,9 +7,11 @@ library(stringr)
 library(xtable)
 library(svglite)
 
+sysfonts::font_add_google("Crimson Pro")
+showtext::showtext_auto()
 
-
-
+font <- font_face("Crimson Pro", 
+                  ttf="https://fonts.googleapis.com/css2?family=Crimson+Pro&display=swap")
 
 create_state_plot <- function(state_abb = NULL, number=10, data=NULL,
                               state = state.name[state.abb == state_abb],
@@ -51,14 +53,15 @@ create_state_plot <- function(state_abb = NULL, number=10, data=NULL,
     scale_fill_manual("", values=c("#009E73", "#56B4E9", "grey"),
                       labels=c("Votes for", "Votes Against", "Didn't Vote")) +
     guides(color=F) +
-    theme_minimal() +
+    theme_minimal(base_family = "Crimson Pro") +
     scale_color_manual(values = c("#56B4E9", "#009E73")) +
     annotate("text", x=x_lim, y=number + .5, label="Margin") +
     theme(legend.position = "bottom") +
     guides(alpha=F) +
     labs(y="", x="Votes", caption = "Includes only certification votes with a single union, data from NLRB")
 
-  ggsave(file_name, height=10*log10(number), width=8)
+  ggsave(file_name, height=10*log10(number), width=8, 
+         web_fonts = font)
 
 
 }
@@ -66,7 +69,8 @@ create_state_plot <- function(state_abb = NULL, number=10, data=NULL,
 
 create_state_time_plot <- function(state_abb = NULL, data=NULL,
                                    state = state.name[state.abb == state_abb],
-                                   file_name= here("content", "data", "states", state, paste0(state_abb))) {
+                                   file_name= here("content", "data", "states", 
+                                                   state, paste0(state_abb))) {
 
 
   if( is.null(state_abb )){
@@ -88,27 +92,30 @@ create_state_time_plot <- function(state_abb = NULL, data=NULL,
              fill=size)) +
   geom_bar(position=position_stack(reverse=T), color="black", size=.2, width=80) +
   scale_x_date(limits=c(as.Date("2008-01-01"), lubridate::today())) +
-  theme_minimal() +
+  theme_minimal(base_family = "Crimson Pro") +
     scale_fill_colorblind("Size of Unit", drop=F) +
   theme(legend.position = "bottom") +
-  labs(y="", x="Votes", caption = "Includes only certification votes with a single union, data from NLRB")
+  labs(y="", x="Votes", 
+       caption = "Includes only certification votes with a single union, data from NLRB")
 
   f <- paste0(file_name, "_hist_size.svg")
 
-  ggsave(f, height=6, width=8)
+  ggsave(f, height=6, width=8,
+         web_fonts = font)
 
   ggplot(tmp_dt, aes(x=Tally_Quarter,
                      fill=Union_Cer, weight=Num_Eligible_Voters)) +
     geom_bar(position=position_stack(reverse=T), color="black", size=.2) +
     scale_x_date(limits=c(as.Date("2008-01-01"), lubridate::today())) +
-    theme_minimal() +
+    theme_minimal(base_family = "Crimson Pro") +
     scale_fill_colorblind("Unionized?") +
     theme(legend.position = "bottom") +
     labs(y="", x="Votes", caption = "Includes only certification votes with a single union, data from NLRB")
   
   f <- paste0(file_name, "_hist_vic.svg")
 
-  ggsave(f, height=6, width=8)
+  ggsave(f, height=6, width=8, 
+         web_fonts = font)
 
 
 }
