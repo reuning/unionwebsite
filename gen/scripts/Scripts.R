@@ -120,10 +120,10 @@ create_state_table_open <- function(state_abb = NULL, data=NULL,
                                     file_name=here("content", "tables", state, "open.html")){
 
   if( is.null(state_abb )){
-    tmp_dt <- data
+    tmp_dt <- data[Case_Type == "RC"]
     file_name = here("content", "tables", "national", "open.html")
   } else {
-    tmp_dt <- data[State==state_abb]
+    tmp_dt <- data[State==state_abb & Case_Type == "RC"]
     
     
   }
@@ -133,9 +133,10 @@ create_state_table_open <- function(state_abb = NULL, data=NULL,
 
   tmp_dt <- unique(tmp_dt)
   tmp_dt$Date_Filed <- as.character(tmp_dt$Date_Filed, "%b %d, %Y")
-
+  tmp_dt$Votes_Against <- as.character(tmp_dt$Votes_Against, "%b %d, %Y")
+  
   # tmp_dt$Case <- paste0("<a href='https://www.nlrb.gov/case/", tmp_dt$Case, "'>", tmp_dt$Case, "</a>")
-  tab <- xtable(tmp_dt[,.(City, State, Case_Name, Labor_Union, Case_Type, Date_Filed,
+  tab <- xtable(tmp_dt[,.(City, State, Case_Name, Labor_Union, Date_Filed, Tally_Date,
                           Tally_Type, Ballot_Type, Votes_For_Union, Votes_Against,
                             Num_Eligible_Voters, Case )])
   align(tab)[6:12] <- "c"
