@@ -141,7 +141,7 @@ create_state_table_open <- function(state_abb = NULL, data=NULL,
 
   tmp_dt <- unique(tmp_dt)
   tmp_dt$Date_Filed <- as.character(tmp_dt$Date_Filed, "%b %d, %Y")
-  tmp_dt$Votes_Against <- as.character(tmp_dt$Votes_Against, "%b %d, %Y")
+  tmp_dt$Tally_Date <- as.character(tmp_dt$Tally_Date, "%b %d, %Y")
   
   # tmp_dt$Case <- paste0("<a href='https://www.nlrb.gov/case/", tmp_dt$Case, "'>", tmp_dt$Case, "</a>")
   tab <- xtable(tmp_dt[,.(City, State, Case_Name, Labor_Union, Date_Filed, Tally_Date,
