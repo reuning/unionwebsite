@@ -5,7 +5,7 @@ library(gridExtra)
 library(magrittr)
 library(stringr)
 library(xtable)
-# library(curl)
+library(curl)
 
 sysfonts::font_add_google("Crimson Pro")
 # showtext::showtext_auto()
