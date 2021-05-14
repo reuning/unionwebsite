@@ -2,6 +2,7 @@
 title: National
 bookCollapseSection: false
 type: docs
+weight: 1
 ---
 
 ### Number Employees in a Union Election by Outcome

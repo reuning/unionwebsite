@@ -55,7 +55,7 @@ create_state_plot <- function(state_abb = NULL, number=10, data=NULL,
     guides(color=F) +
     theme_minimal(base_family = "Crimson Pro") +
     theme(legend.position = "bottom", legend.margin=margin(l=-100),
-          text = element_text(size=15, lineheight=.7), 
+          text = element_text(size=15, lineheight=.8), 
           panel.grid=element_blank()) +
     scale_color_manual(values = c("#56B4E9", "#009E73")) +
     annotate("text", x=x_lim*.95, y=number + .5, label="Margin") +
