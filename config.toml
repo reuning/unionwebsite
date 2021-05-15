@@ -3,7 +3,7 @@ languageCode = "en-us"
 title = "Union Election Data"
 
 [params]
-  BookToC = false
+  BookToC = true
   BookSection = "data"
 
 [markup.tableOfContents]
