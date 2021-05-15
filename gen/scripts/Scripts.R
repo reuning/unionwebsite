@@ -49,7 +49,7 @@ create_state_plot <- function(state_abb = NULL, number=10, data=NULL,
               aes(label=scales::percent(Margin, accuracy =2),
                   color=Union_Cer)) +
     scale_x_continuous(limits=c(0, x_lim), labels = scales::label_comma()) +
-    scale_y_discrete(label=scales::label_wrap(35)) +
+    scale_y_discrete(label=scales::label_wrap(50)) +
     scale_fill_manual("", values=c("#009E73", "#56B4E9", "grey"),
                       labels=c("Votes for", "Votes Against", "Didn't Vote")) +
     guides(color=F) +
@@ -62,7 +62,7 @@ create_state_plot <- function(state_abb = NULL, number=10, data=NULL,
     guides(alpha=F) +
     labs(y="", x="Votes", caption = "Includes only certification votes with a single union, data from NLRB")
 
-  ggsave(file_name, height=10*log10(number), width=8, type = "cairo", 
+  ggsave(file_name, height=10*log10(number), width=10, type = "cairo", 
          units="in", dpi=200)
 
 
