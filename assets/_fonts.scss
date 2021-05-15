@@ -1,27 +1,3 @@
-/* roboto-300italic - latin */
-@font-face {
-  font-family: 'Crimson Pro', serif;
-  font-style: italic;
-  font-weight: 300;
-  font-display: swap;
-  src: url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@1,300&display=swap');
-}
-/* roboto-regular - latin */
-@font-face {
-  font-family: 'Crimson Pro', serif;
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url('https://fonts.googleapis.com/css2?family=Crimson+Pro&display=swap');
-}
-/* roboto-700 - latin */
-@font-face {
-  font-family: 'Crimson Pro', serif;
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@700&display=swap');
-}
 
 /* roboto-mono-regular - latin */
 @font-face {
@@ -37,7 +13,7 @@
 
 
 body {
-  font-family: 'Crimson Pro', sans-serif;
+  font-family: 'Crimson Pro', serif;
 }
 
 code {
