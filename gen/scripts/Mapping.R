@@ -53,7 +53,8 @@ if (any(is.na(full_dt$seached))) {
 
 
 usa <- ne_states(returnclass = 'sf',
-                 country = "united states of america")
+                 country = c("united states of america", 
+                             "puerto rico"))
 
 full_dt[, Date := as.Date(`Date Filed`, format = "%m/%d/%Y")]
 # full_dt <- unique(full_dt, by=c("Case", "City", "State"))
@@ -118,6 +119,30 @@ alaska <- ggplot(data = usa) +
     datum = NA
   )
 
+
+puerto <- ggplot(data = usa) +
+  geom_sf(fill = "white") + 
+  theme_void(base_family = "Crimson Pro")  +
+  geom_sf(
+    data = site,
+    shape = 21,
+    color = "white",
+    size = 3,
+    aes(fill = Date)
+  ) +
+  scale_fill_date(low = "#0072B2",
+                  high = "#D55E00") +
+  guides(fill = F) +
+  coord_sf(
+    crs = st_crs(3991),
+    xlim = c(-50000, 1000000),
+    ylim = c(0, 260000),
+    expand = FALSE,
+    datum = NA
+  )
+
+# puerto
+
 hawaii  <- ggplot(data = usa) +
   geom_sf(fill = "white") +  
   theme_void(base_family = "Crimson Pro")  +
@@ -153,7 +178,15 @@ p <- mainland +
     xmax = -1250000 + (-154 - (-161)) * 120000,
     ymin = -2450000,
     ymax = -2450000 + (23 - 18) * 120000
-  )
+  ) +
+  annotation_custom(
+    grob = ggplotGrob(puerto),
+    xmin = 750000,
+    xmax = 750000 + (1000000 - (-50000)) / 2,
+    ymin = -2250000,
+    ymax = -2250000 + (260000 - 0) /2
+  ) 
+
 
 ggsave(here("content", "data",  "national", "map.png"),
        height=6, width=10, type = "cairo",
