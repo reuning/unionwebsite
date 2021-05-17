@@ -8,6 +8,9 @@ library(xtable)
 library(curl)
 
 sysfonts::font_add_google("Crimson Pro")
+state.name <- c(state.name, "Puerto Rico", "Guam", "US Virgin Islands")
+state.abb <- c(state.abb, "PR", "GU", "VI")
+
 # showtext::showtext_auto()
 # 
 # font <- font_face("Crimson Pro", 

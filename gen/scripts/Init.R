@@ -86,3 +86,9 @@ for(state in state.abb){
 }
 
 # create_state_time_plot(data=dt)
+# create_state_page(state_abb = "GU")
+# create_state_plot(state_abb = "GU",
+#                   number=10,
+#                   data=dt)
+# create_state_time_plot(state_abb = "GU",
+#                        data=dt)
