@@ -2,6 +2,70 @@ name: Build and deploy
 
 on:
   push:
+
+jobs:
+  build:
+    runs-on: ubuntu-18.04
+    env:
+      GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v2
+        with:
+          submodules: true
+          fetch-depth: 0
+
+      - name: Install libcurl
+        run: |
+          sudo apt-get install libcurl4-openssl-dev
+
+      - name: Setup R
+        uses: r-lib/actions/setup-r@v1
+
+      - name: Cache packages
+        uses: actions/cache@v2
+        with:
+          path: ~/.local/share/renv
+          key: ${{ runner.os }}-renv-${{ hashFiles('**/renv.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-renv-
+
+      - name: Restore packages
+        shell: Rscript {0}
+        run: |
+          if (!requireNamespace("renv", quietly = TRUE)) install.packages("renv")
+          renv::restore()
+
+      - name: Build Plots and Pages
+        run: |
+          Rscript gen/scripts/Init.R
+          Rscript gen/scripts/Mapping.R
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: '0.81.0'
+
+      - name: Build
+        run: hugo --gc --minify --theme book
+
+      - name: Deploy to Netlify
+        uses: nwtgck/actions-netlify@v1.2
+        with:
+          publish-dir: './public'
+          production-deploy: true
+          netlify-config-path: './'
+        env:
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+
+
+
+
+
+name: Update data
+
+on:
   schedule:
   - cron: "0 0 * * *"
 
@@ -39,28 +103,34 @@ jobs:
           renv::restore()
 
       - name: Get New Data
-        if: github.event_name == 'schedule'
         run: Rscript gen/scripts/Update_Data.R
 
       - name: Commit new data
-        if: github.event_name == 'schedule'
+        id: commit
         uses: EndBug/add-and-commit@v7 # You can change this to use a specific version
         with:
           add: 'gen/data/recent_election_results.csv'
           message: 'Updated data'
 
       - name: Build Plots and Pages
-        run: Rscript gen/scripts/Init.R
+        if: ${{steps.commit.outputs == "true" }}
+        run: |
+          Rscript gen/scripts/Init.R
+          Rscript gen/scripts/Mapping.R
+
 
       - name: Setup Hugo
+        if: ${{steps.commit.outputs == "true" }}
         uses: peaceiris/actions-hugo@v2
         with:
           hugo-version: '0.81.0'
 
       - name: Build
+        if: ${{steps.commit.outputs == "true" }}
         run: hugo --gc --minify --theme book
 
       - name: Deploy to Netlify
+        if: ${{steps.commit.outputs == "true" }}
         uses: nwtgck/actions-netlify@v1.2
         with:
           publish-dir: './public'
