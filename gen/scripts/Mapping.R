@@ -155,6 +155,6 @@ p <- mainland +
     ymax = -2450000 + (23 - 18) * 120000
   )
 
-ggsave(here("content", "data",  "national", "national", "map.png"),
-       height=8, width=10, type = "cairo",
+ggsave(here("content", "data",  "national", "map.png"),
+       height=6, width=10, type = "cairo",
        units="in", dpi=200)
