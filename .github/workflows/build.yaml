@@ -42,6 +42,7 @@ jobs:
       - name: Build Plots and Pages
         run: |
           Rscript gen/scripts/Init.R
+          Rscript gen/scripts/Mapping.R
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
