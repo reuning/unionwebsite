@@ -6,6 +6,8 @@ jobs:
     runs-on: ubuntu-18.04
     env:
       GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
+      GEOCODIO_API_KEY: ${{secrets.GEOCODIO_API_KEY}}
+
     steps:
       - name: Checkout repo
         uses: actions/checkout@v2
