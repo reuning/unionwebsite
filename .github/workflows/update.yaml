@@ -2,6 +2,7 @@ name: Update data
 on:
   schedule:
   - cron: "0 0 * * *"
+  workflow_dispatch:
 jobs:
   update:
     runs-on: ubuntu-18.04
