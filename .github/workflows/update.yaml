@@ -1,11 +1,9 @@
 name: Update data
-
 on:
   schedule:
   - cron: "0 0 * * *"
-
 jobs:
-  build:
+  update:
     runs-on: ubuntu-18.04
     env:
       GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
