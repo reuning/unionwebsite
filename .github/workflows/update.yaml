@@ -51,24 +51,24 @@ jobs:
           message: 'Updated data'
 
       - name: Build Plots and Pages
-        if: ${{steps.commit.outputs == "true" }}
+        if: ${{ steps.commit.outputs == 'true' }}
         run: |
           Rscript gen/scripts/Init.R
           Rscript gen/scripts/Mapping.R
 
 
       - name: Setup Hugo
-        if: ${{steps.commit.outputs == "true" }}
+        if: ${{ steps.commit.outputs == 'true' }}
         uses: peaceiris/actions-hugo@v2
         with:
           hugo-version: '0.81.0'
 
       - name: Build
-        if: ${{steps.commit.outputs == "true" }}
+        if: ${{ steps.commit.outputs == 'true' }}
         run: hugo --gc --minify --theme book
 
       - name: Deploy to Netlify
-        if: ${{steps.commit.outputs == "true" }}
+        if: ${{ steps.commit.outputs == 'true' }}
         uses: nwtgck/actions-netlify@v1.2
         with:
           publish-dir: './public'
