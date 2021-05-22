@@ -6,7 +6,7 @@
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.support.ui import Select
-from webdriver_manager.chrome import ChromeDriverManager
+#from webdriver_manager.chrome import ChromeDriverManager
 from os.path import abspath
 
 
@@ -20,7 +20,7 @@ options.add_experimental_option("prefs", {
 })
 options.headless = True
 
-browser = webdriver.Chrome(ChromeDriverManager().install(), options=options)
+browser = webdriver.Chrome(options=options)
 browser.set_page_load_timeout(-1)
 browser.implicitly_wait(30)
 
