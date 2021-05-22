@@ -1,5 +1,6 @@
 library(data.table)
 library(here)
+library(rvest)
 
 dt <- fread(here("gen", "data", "recent_election_results.csv"))
 names(dt)[21] <- "Votes Against"
@@ -36,4 +37,39 @@ col_names <-which(apply(dt_out, 2, function(x) any(grepl('"', x))))
 for (j in col_names) set(dt_out, j = j, value = gsub('"', '', dt_out[[j]]))
 
 
+# dt_out
+
+file <- dir(here("gen", "data"))
+file <- grep("cases", file, value=T)
+
+open_dt <- fread(here("gen", "data", file))
+open_dt <- open_dt[grepl("RC|RD|RM|UC|UD",`Case Number`)]
+
+open_dt <- open_dt[!open_dt$`Case Number` %in% dt_out$`Case`]
+open_dt <- open_dt[, c("Case Name", "Case Number", "City", "Date Filed", 
+            "State", "Unit Sought", "Voters" )]
+
+for(ii in 1:nrow(open_dt)){
+  url <- paste0("https://www.nlrb.gov/case/", open_dt$`Case Number`[ii])
+  
+  page <- read_html(url)
+  tab <- page %>% html_node("table.Participants") %>% html_table()
+  union <- grep("Involved PartyUnion|PetitionerUnion", tab$Participant, value=T)
+  if(length(union)==0) next 
+  union <- gsub("Involved PartyUnion|PetitionerUnion", "", union)
+  union <- stringr::str_trim(union)
+  if(length(union)>1){
+    union <- union[which.max(nchar(union))]
+  }
+  
+  open_dt$Union[ii] <- union
+  Sys.sleep((runif(1, 0, .1)))
+}
+
+names(open_dt)[c(2,6,7,8)] <- c("Case", "Voting Unit (Unit A)", 
+                                "No of Eligible Voters", "Labor Union1")
+
+open_dt$Status <- "Open"
+
+dt_out <- rbind(dt_out, open_dt, fill=T)
 fwrite(dt_out, file = here("gen", "data", "recent_election_results.csv"), row.names = F)

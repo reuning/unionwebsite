@@ -6,10 +6,10 @@
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.support.ui import Select
+from os.path import abspath
 
 
-
-download_folder = r'/Users/kevinreuning/dropbox/projects/unionwebsite/gen/data'
+download_folder = abspath("../data")
 options = Options()
 options.add_experimental_option("prefs", {
   "download.default_directory": download_folder,
