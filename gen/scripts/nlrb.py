@@ -11,6 +11,7 @@ from os.path import abspath
 
 
 download_folder = abspath("../data")
+print(download_folder)
 options = Options()
 options.add_experimental_option("prefs", {
   "download.default_directory": download_folder,
@@ -25,6 +26,7 @@ browser.set_page_load_timeout(-1)
 browser.implicitly_wait(30)
 
 
-
+print("Opening Page")
 browser.get(r'https://www.nlrb.gov/search/case?f[0]=case_type:R&s[0]=Open')
 browser.find_element_by_id("download-button").click()
+print("File Downloaded")

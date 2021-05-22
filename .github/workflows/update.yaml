@@ -44,9 +44,7 @@ jobs:
 
       - name: Install and run Python
         run: |
-          python -m pip install -U pip
           pip install -r gen/scripts/requirements.txt
-          export PATH=$PATH:/usr/local/share/chrome_driver
           python gen/scripts/nlrb.py
 
       - name: Setup R
@@ -76,6 +74,7 @@ jobs:
         uses: EndBug/add-and-commit@v7 # You can change this to use a specific version
         with:
           add: 'gen/data/recent_election_results.csv'
+          add: 'gen/data/open_petitions.csv'
           message: 'Updated data'
 
       - name: Build Plots and Pages
