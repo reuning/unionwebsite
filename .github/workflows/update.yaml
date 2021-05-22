@@ -41,7 +41,6 @@ jobs:
           wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
           sudo apt-get install -y ./google-chrome-stable_current_amd64.deb
 
-
       - name: Install and run Python
         run: |
           pip install -r gen/scripts/requirements.txt
@@ -73,8 +72,7 @@ jobs:
         id: commit
         uses: EndBug/add-and-commit@v7 # You can change this to use a specific version
         with:
-          add: 'gen/data/recent_election_results.csv'
-          add: 'gen/data/open_petitions.csv'
+          add: "['gen/data/recent_election_results.csv', 'gen/data/open_petitions.csv']"
           message: 'Updated data'
 
       - name: Build Plots and Pages
