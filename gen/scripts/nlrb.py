@@ -10,6 +10,7 @@ from selenium.webdriver.support.ui import Select
 from os.path import abspath
 
 
+
 download_folder = abspath("/home/runner/work/unionwebsite/unionwebsite/gen/data")
 print(download_folder)
 options = Options()
@@ -19,7 +20,9 @@ options.add_experimental_option("prefs", {
   "download.directory_upgrade": True,
   "safebrowsing.enabled": True
 })
-options.headless = True
+options.add_argument("--headless")
+options.add_argument("--no-sandbox")
+options.add_argument("--disable-dev-shm-usage")
 
 browser = webdriver.Chrome(options=options)
 browser.set_page_load_timeout(-1)
