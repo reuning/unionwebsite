@@ -30,13 +30,17 @@ if (any(is.na(full_dt$seached))) {
   done_dt <- full_dt[!is.na(seached)]
   
   to_code_dt <- tidygeocoder::geocode(
-    as.data.frame(to_code_dt[,City:`Voting Unit (Unit D)`]),
+    as.data.frame(to_code_dt[,1:Election_Data]),
     city = "City",
     state = "State",
     full_results = T,
     # return_type = "geographies",
     method = "geocodio"
   )
+  
+  try(to_code_dt$address_components.street <- NULL)
+  try(to_code_dt$address_components.formatted_street <- NULL)
+  try(to_code_dt$address_components.suffix <- NULL)
   
   to_code_dt$seached <- 1
   
