@@ -10,7 +10,7 @@ from selenium.webdriver.support.ui import Select
 from os.path import abspath
 
 
-download_folder = abspath("../gen/data")
+download_folder = abspath("/gen/data")
 print(download_folder)
 options = Options()
 options.add_experimental_option("prefs", {
