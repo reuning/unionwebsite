@@ -65,8 +65,8 @@ for(ii in 1:nrow(open_dt)){
   
   if(!is.na(open_dt$`Labor Union1`[ii])) next
   
-  url <- paste0("https://www.nlrb.gov/case/", open_dt$`Case Number`[ii])
-  
+  url <- paste0("https://www.nlrb.gov/case/", open_dt$`Case`[ii])
+  cat(url, "\n")
   page <- read_html(url)
   tab <- page %>% html_node("table.Participants") %>% html_table()
   union <- grep("Involved PartyUnion|PetitionerUnion", tab$Participant, value=T)
