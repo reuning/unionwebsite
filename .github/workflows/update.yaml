@@ -19,8 +19,28 @@ jobs:
 
       - name: Install dependencies
         run: |
-          sudo apt update
-          sudo apt install -y libgeos-dev libudunits2-dev libgdal-dev libcurl4-openssl-dev
+          sudo apt-get update
+          sudo apt-get install -y libgeos-dev libudunits2-dev libgdal-dev libcurl4-openssl-dev
+
+      - name: Set up python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.7
+
+      - name: Cache Python
+        uses: actions/cache@v2
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-
+
+      - name: Install and run Python
+        run: |
+          python -m pip install -U pip
+          pip install -r gen/scripts/requirements.txt
+          export PATH=$PATH:/usr/local/share/chrome_driver
+          python gen/scripts/nlrb.py
 
       - name: Setup R
         uses: r-lib/actions/setup-r@v1

@@ -45,11 +45,26 @@ file <- grep("cases", file, value=T)
 open_dt <- fread(here("gen", "data", file))
 open_dt <- open_dt[grepl("RC|RD|RM|UC|UD",`Case Number`)]
 
-open_dt <- open_dt[!open_dt$`Case Number` %in% dt_out$`Case`]
+open_dt$Voters[is.na(open_dt$Voters)] <- 
+  open_dt$`Employees on charge/petition`[is.na(open_dt$Voters)]
+
 open_dt <- open_dt[, c("Case Name", "Case Number", "City", "Date Filed", 
-            "State", "Unit Sought", "Voters" )]
+                       "State", "Unit Sought", "Voters" )]
+names(open_dt)[c(2,6,7)] <- c("Case", "Voting Unit (Unit A)", 
+                                "No of Eligible Voters")
+
+old_open <- fread(here("gen", "data", "open_petitions.csv"))
+
+
+open_dt <- merge(open_dt, old_open[,c("Case", "Labor Union1") ], all.x=T)
+
+open_dt <- open_dt[!open_dt$`Case` %in% dt_out$`Case`]
+
 
 for(ii in 1:nrow(open_dt)){
+  
+  if(!is.na(open_dt$`Labor Union1`[ii])) next
+  
   url <- paste0("https://www.nlrb.gov/case/", open_dt$`Case Number`[ii])
   
   page <- read_html(url)
@@ -62,14 +77,18 @@ for(ii in 1:nrow(open_dt)){
     union <- union[which.max(nchar(union))]
   }
   
-  open_dt$Union[ii] <- union
+  open_dt$`Labor Union1`[ii] <- union
   Sys.sleep((runif(1, 0, .1)))
 }
 
-names(open_dt)[c(2,6,7,8)] <- c("Case", "Voting Unit (Unit A)", 
-                                "No of Eligible Voters", "Labor Union1")
 
 open_dt$Status <- "Open"
+write.csv(open_dt, file=here("gen", "data", "open_petitions.csv"), row.names = F)
+### Delete Temporary File
+file.remove(here("gen", "data", file))
+
+open_dt$Election_Data <- "No"
+dt_out$Election_Data <- "Yes"
 
 dt_out <- rbind(dt_out, open_dt, fill=T)
 fwrite(dt_out, file = here("gen", "data", "recent_election_results.csv"), row.names = F)
