@@ -255,7 +255,14 @@ create_state_page <- function(state_abb = "CA",
   if(!dir.exists(dirname(file_name))) dir.create( dirname(file_name))
 
 
-  tmp <-c(paste("## ", state),
+  tmp <-c("---",
+          paste("title:", state, "union elections"),
+          paste0("images: [", 
+                 "'data/state/", state, "/", state_abb, "_hist_vic.png', ",
+                 "'data/state/", state, "/", state_abb, "_hist_size.png', ",
+                 "'data/state/", state, "/", state_abb, "_10.png']"),
+          "---",
+          paste("## ", state),
           "",
           paste("### Number Employees in a Union Election by Outcome"),
           paste0("{{< image src=\"",state_abb, "_hist_vic.png\" >}}"),
