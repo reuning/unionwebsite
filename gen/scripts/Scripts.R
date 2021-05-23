@@ -49,10 +49,10 @@ prep_data <- function(data=dt){
   data <- data[`Ballot_Type`%in% c("Single Labor Organization", "Revised Single Labor Org", "")]
   data[, Case_Type:=substr(Case, 4, 5)]
   
-  data[is.na(`Votes_Against`),`Votes_Against`:=0 ]
-  data[is.na(`Votes_For_Union`),`Votes_For_Union`:=0 ]
-  data[is.na(`Total_Ballots_Counted`),`Total_Ballots_Counted`:=0 ]
-  data[is.na(`Num_Eligible_Voters`),`Num_Eligible_Voters`:=0 ]
+  data[is.na(`Votes_Against`) & Election_Data=="Yes",`Votes_Against`:=0 ]
+  data[is.na(`Votes_For_Union`) & Election_Data=="Yes",`Votes_For_Union`:=0 ]
+  data[is.na(`Total_Ballots_Counted`) & Election_Data=="Yes",`Total_Ballots_Counted`:=0 ]
+  data[is.na(`Num_Eligible_Voters`) & Election_Data=="Yes",`Num_Eligible_Voters`:=0 ]
   
   for(ii in 1:nrow(dict)){
     
@@ -215,11 +215,13 @@ create_state_table_open <- function(state_abb = NULL, data=NULL,
   tmp_dt <- unique(tmp_dt)
   tmp_dt$Date_Filed <- as.character(tmp_dt$Date_Filed, "%b %d, %Y")
   tmp_dt$Tally_Date <- as.character(tmp_dt$Tally_Date, "%b %d, %Y")
+  tmp_dt[,Ballot_Type:=ifelse(Ballot_Type == "Revised Single Labor Org", "Revised", "Initial")]
   
   # tmp_dt$Case <- paste0("<a href='https://www.nlrb.gov/case/", tmp_dt$Case, "'>", tmp_dt$Case, "</a>")
-  tab <- xtable(tmp_dt[,.(City, State, Case_Name, Labor_Union, Date_Filed, Tally_Date,
+  tab <- xtable(tmp_dt[,.(City, State, Case_Name, Labor_Union, Date_Filed,  Tally_Date,
                           Tally_Type, Ballot_Type, Votes_For_Union, Votes_Against,
                             Num_Eligible_Voters, Case )])
+  
   align(tab)[6:12] <- "c"
   # tab[1,] <- gsub("_", " ", (tab[1,]))
   # tab[1,9] <- "Union Certified?"
