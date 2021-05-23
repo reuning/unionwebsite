@@ -27,7 +27,7 @@ prep_data <- function(data=dt){
               "Votes_For_Union" = "Votes for Labor Union1",
               "Votes_Against" = "Votes Against",
               "Total_Ballots_Counted" = "Total Ballots Counted")
-  names(data)[match(rename, names(full_dt))] <- names(rename)
+  names(data)[match(rename, names(data))] <- names(rename)
   
   
   ### Create New Variables
