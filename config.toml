@@ -1,10 +1,16 @@
 baseURL = "https://unionelections.org/"
 languageCode = "en-us"
 title = "Union Election Data"
+description = "Data on union elections in the United States"
+images = ["/data/national/map.png"]
+
 
 [params]
   BookToC = true
   BookSection = "data"
 
+
 [markup.tableOfContents]
   startLevel = 3
+
+enableRobotsTXT = true
