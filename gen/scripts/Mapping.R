@@ -62,6 +62,7 @@ usa <- ne_states(returnclass = 'sf',
 full_dt <- prep_data(full_dt)
 # full_dt <- full_dt[grepl("RC", Case)]
 # full_dt[, Date := as.Date(`Date Filed`, format = "%m/%d/%Y")]
+full_dt <- full_dt[Case_Type == "RC"]
 full_dt <- unique(full_dt, by=c("Case", "City", "State"))
 full_dt[is.na(size), size:="Unknown"]
 

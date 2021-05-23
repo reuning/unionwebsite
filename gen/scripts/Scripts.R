@@ -79,7 +79,7 @@ prep_data <- function(data=dt){
 
 # showtext::showtext_auto()
 # 
-# font <- font_face("Crimson Pro", 
+# font <- svglite::font_face("Crimson Pro",
 #                   ttf="https://fonts.googleapis.com/css2?family=Crimson+Pro&display=swap")
 
 create_state_plot <- function(state_abb = NULL, number=10, data=NULL,
