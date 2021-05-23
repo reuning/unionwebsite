@@ -11,6 +11,72 @@ sysfonts::font_add_google("Crimson Pro")
 state.name <- c(state.name, "Puerto Rico", "Guam", "US Virgin Islands")
 state.abb <- c(state.abb, "PR", "GU", "VI")
 
+prep_data <- function(data=dt){
+  dict <- read.csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vTQj4UzxBycuPUVmIXM9RUnTWq0dwHICOk-phgwyfjqZAm8lsjl3D4JTLz73aa4dnOJ7gXmhehPGfu8/pub?gid=0&single=true&output=csv")
+  
+  
+  rename <- c("Case_Name" = "Case Name", 
+              "Date_Closed" = "Date Closed",
+              "Reason_Closed" = "Reason Closed",
+              "Date_Filed" = "Date Filed",
+              "Tally_Date" = "Tally Date", 
+              "Tally_Type" = "Tally Type",
+              "Ballot_Type" = "Ballot Type",
+              "Num_Eligible_Voters" = "No of Eligible Voters",
+              "Labor_Union" = "Labor Union1",
+              "Votes_For_Union" = "Votes for Labor Union1",
+              "Votes_Against" = "Votes Against",
+              "Total_Ballots_Counted" = "Total Ballots Counted")
+  names(data)[match(rename, names(full_dt))] <- names(rename)
+  
+  
+  ### Create New Variables
+  data[,Tally_Date:=as.Date(`Tally_Date`, format="%m/%d/%Y")]
+  data[,Date_Filed:=as.Date(`Date_Filed`, format="%m/%d/%Y")]
+  data[,Length:=Tally_Date-Date_Filed]
+  data[,Tally_Quarter := as.Date(cut(Tally_Date, breaks = "quarter"))]
+  
+  data[,size:=cut(Num_Eligible_Voters, breaks = c(0, 5, 10, 25, 50, 100, 500, Inf), right = T,
+                labels=c("<5", "6-10", "11-25", "26-50", "51-100", "101-500", "500>"), ordered_result = T)]
+  
+  
+  ### Get most recent
+  data <- data[order(-Tally_Date)]
+  data$Unique <- !duplicated(data, by='Case')
+  
+  # data <- data[Status=="Closed"]
+  # data <- data[`Reason_Closed` %in% c("Certific. of Representative", "Certification of Results")]
+  data <- data[`Ballot_Type`%in% c("Single Labor Organization", "Revised Single Labor Org", "")]
+  data[, Case_Type:=substr(Case, 4, 5)]
+  
+  data[is.na(`Votes_Against`),`Votes_Against`:=0 ]
+  data[is.na(`Votes_For_Union`),`Votes_For_Union`:=0 ]
+  data[is.na(`Total_Ballots_Counted`),`Total_Ballots_Counted`:=0 ]
+  data[is.na(`Num_Eligible_Voters`),`Num_Eligible_Voters`:=0 ]
+  
+  for(ii in 1:nrow(dict)){
+    
+    srch <- dict$Name[ii]
+    repl <- ifelse(dict$Render.National.Union.As[ii]== "",
+                   dict$Render.IU.As[ii], dict$Render.National.Union.As[ii])
+    data[,Plot_Labor_Union:=gsub(srch, repl, Labor_Union, ignore.case = T)]
+    
+  }
+  
+  
+  data[,`Margin`:=(`Votes_For_Union`)/(`Votes_For_Union`+`Votes_Against`)]
+  data[`Total_Ballots_Counted`==0,`Margin`:=NA]
+  data[,`Union_Cer`:=ifelse(`Reason_Closed`=="Certific. of Representative", "Yes", "No")]
+  
+  # data <- data[Case_Type %in% c("RC", "RD")]
+  
+  # data_rc <- data[Case_Type=="RC"]
+  data$`Didnt_Vote` <- data$`Num_Eligible_Voters` - data$`Votes_For_Union` - data$`Votes_Against`
+  
+  
+  return(data)
+}
+
 # showtext::showtext_auto()
 # 
 # font <- font_face("Crimson Pro", 
@@ -140,7 +206,6 @@ create_state_table_open <- function(state_abb = NULL, data=NULL,
     file_name = here("content", "tables", "national", "open.html")
   } else {
     tmp_dt <- data[State==state_abb & Case_Type == "RC"]
-    
     
   }
 

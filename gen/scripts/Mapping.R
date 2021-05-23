@@ -1,13 +1,13 @@
 library(tidygeocoder)
-library(data.table)
 library(here)
-library(ggplot2)
 library(sf)
 library(rnaturalearth)
 library(rnaturalearthdata)
 library(rnaturalearthhires)
 library(rgeos)
-sysfonts::font_add_google("Crimson Pro")
+
+source(here("gen", "scripts", "Scripts.R"))
+
 ## Based on https://r-spatial.org/r/2018/10/25/ggplot2-sf-3.html
 
 dt <- fread(here("gen", "data", "recent_election_results.csv"))
@@ -59,9 +59,11 @@ if (any(is.na(full_dt$seached))) {
 usa <- ne_states(returnclass = 'sf',
                  country = c("united states of america", 
                              "puerto rico"))
-
-full_dt[, Date := as.Date(`Date Filed`, format = "%m/%d/%Y")]
-# full_dt <- unique(full_dt, by=c("Case", "City", "State"))
+full_dt <- prep_data(full_dt)
+# full_dt <- full_dt[grepl("RC", Case)]
+# full_dt[, Date := as.Date(`Date Filed`, format = "%m/%d/%Y")]
+full_dt <- unique(full_dt, by=c("Case", "City", "State"))
+full_dt[is.na(size), size:="Unknown"]
 
 site <- st_jitter(st_as_sf(
   unique(full_dt[!is.na(lat)], by = "Case"),
@@ -76,13 +78,18 @@ mainland <- ggplot(data = usa) +
   theme_void(base_family = "Crimson Pro")  +
   geom_sf(
     data = site,
-    shape = 21,
-    color = "white",
+    # shape = 21,
+    color = "gray",
     size = 3,
-    aes(fill = Date)
+    aes(fill = size, shape=Election_Data)
   ) +
-  scale_fill_date(name = "Filing\nDate", low = "#0072B2",
-                  high = "#D55E00") +
+  scale_shape_manual("Already Voted?", values=c("Yes"=21, "No"=24)) + 
+  scale_fill_colorblind("Unit Size",
+    guide=guide_legend(override.aes = list(shape = 21)), 
+    drop=F) + 
+  # scale_fill_date(name = "Filing\nDate", 
+  #                 low = "#0072B2",
+  #                 high = "#D55E00") +
   labs(caption = "Location is approximate based on cities. Each is jittered so overlapping cases are obvious.") +
   # ggrepel::geom_text_repel(
   #   data = site,
@@ -107,14 +114,19 @@ alaska <- ggplot(data = usa) +
   theme_void(base_family = "Crimson Pro")  +
   geom_sf(
     data = site,
-    shape = 21,
-    color = "white",
+    # shape = 21,
+    color = "gray",
     size = 3,
-    aes(fill = Date)
+    aes(fill = size, shape=Election_Data)
   ) +
-  scale_fill_date(low = "#0072B2",
-                  high = "#D55E00") +
-  guides(fill = F) +
+  scale_shape_manual("Already Voted?", values=c("Yes"=21, "No"=24)) + 
+  scale_fill_colorblind("Unit Size",
+                        guide=guide_legend(override.aes = list(shape = 21)), 
+                        drop=F) + 
+  # scale_fill_date(name = "Filing\nDate", 
+  #                 low = "#0072B2",
+  #                 high = "#D55E00") +
+  guides(fill = F, shape=F) +
   coord_sf(
     crs = st_crs(3467),
     xlim = c(-2400000, 1600000),
@@ -129,14 +141,19 @@ puerto <- ggplot(data = usa) +
   theme_void(base_family = "Crimson Pro")  +
   geom_sf(
     data = site,
-    shape = 21,
-    color = "white",
+    # shape = 21,
+    color = "gray",
     size = 3,
-    aes(fill = Date)
+    aes(fill = size, shape=Election_Data)
   ) +
-  scale_fill_date(low = "#0072B2",
-                  high = "#D55E00") +
-  guides(fill = F) +
+  scale_shape_manual("Already Voted?", values=c("Yes"=21, "No"=24)) + 
+  scale_fill_colorblind("Unit Size",
+                        guide=guide_legend(override.aes = list(shape = 21)), 
+                        drop=F) + 
+  # scale_fill_date(name = "Filing\nDate", 
+  #                 low = "#0072B2",
+  #                 high = "#D55E00") +
+  guides(fill = F, shape=F) +
   coord_sf(
     crs = st_crs(3991),
     xlim = c(-50000, 1000000),
@@ -152,14 +169,19 @@ hawaii  <- ggplot(data = usa) +
   theme_void(base_family = "Crimson Pro")  +
   geom_sf(
     data = site,
-    shape = 21,
-    color = "white",
+    # shape = 21,
+    color = "gray",
     size = 3,
-    aes(fill = Date)
+    aes(fill = size, shape=Election_Data)
   ) +
-  scale_fill_date(low = "#0072B2",
-                  high = "#D55E00") +
-  guides(fill = F) +
+  scale_shape_manual("Already Voted?", values=c("Yes"=21, "No"=24)) + 
+  scale_fill_colorblind("Unit Size",
+                        guide=guide_legend(override.aes = list(shape = 21)), 
+                        drop=F) + 
+  # scale_fill_date(name = "Filing\nDate", 
+  #                 low = "#0072B2",
+  #                 high = "#D55E00") +
+  guides(fill = F, shape=F) +
   coord_sf(
     crs = st_crs(4135),
     xlim = c(-161,-154),
