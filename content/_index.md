@@ -1,6 +1,7 @@
 ---
-title: National Data
+title: Union Election Data
 type: docs
+images: ["/data/national/map.png"]
 ---
 
 This website provides information about elections governed by the National Labor Relations Board (NLRB) since 2008. The data captures most private sector union elections in the United States; union elections governed by the Federal Labor Relations Agency (FLRA), the National Mediation Board (NMB), and state labor boards are not included.

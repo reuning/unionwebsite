@@ -1,6 +1,6 @@
 ---
 title: National
-images: ["national_hist_vic.png"]
+images: ["/data/national/national_hist_vic.png"]
 description: "Union elections for all of the US"
 bookCollapseSection: false
 type: docs
