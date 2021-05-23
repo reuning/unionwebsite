@@ -91,6 +91,7 @@ mainland <- ggplot(data = usa) +
   # scale_fill_date(name = "Filing\nDate", 
   #                 low = "#0072B2",
   #                 high = "#D55E00") +
+  ggtitle("Open Election Cases") + 
   labs(caption = "Location is approximate based on cities. Each is jittered so overlapping cases are obvious.") +
   # ggrepel::geom_text_repel(
   #   data = site,

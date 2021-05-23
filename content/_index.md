@@ -9,5 +9,4 @@ For each state, I include a plot showing the trends in elections since 2008. The
 
 {{< figure
     src="/data/national/map.png"
-    caption="Open Election Cases"
     width="90%">}}
