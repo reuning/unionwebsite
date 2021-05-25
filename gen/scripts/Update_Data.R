@@ -67,7 +67,11 @@ for(ii in 1:nrow(open_dt)){
   url <- paste0("https://www.nlrb.gov/case/", open_dt$`Case`[ii])
   cat(url, "\n")
   page <- read_html(url)
-  tab <- page %>% html_node("table.Participants") %>% html_table()
+  if(is.na(page %>% html_node("table.Participants"))) {
+    cat("No Table Found \n")
+    next 
+  }
+  tab <-try(page %>% html_node("table.Participants") %>% html_table())
   union <- grep("Involved PartyUnion|PetitionerUnion", tab$Participant, value=T)
   if(length(union)==0) next
   union <- gsub("Involved PartyUnion|PetitionerUnion", "", union)
