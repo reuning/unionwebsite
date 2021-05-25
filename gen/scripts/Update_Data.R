@@ -40,9 +40,8 @@ for (j in col_names) set(dt_out, j = j, value = gsub('"', '', dt_out[[j]]))
 
 # dt_out
 
-file <- dir(here("gen", "data", "new_open_data.csv"))
 
-open_dt <- fread(here("gen", "data", file))
+open_dt <- fread(here("gen", "data", "new_open_data.csv"))
 open_dt <- open_dt[grepl("RC|RD|RM|UC|UD",`Case Number`)]
 
 open_dt$Voters[is.na(open_dt$Voters)] <-
