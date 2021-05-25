@@ -40,18 +40,17 @@ for (j in col_names) set(dt_out, j = j, value = gsub('"', '', dt_out[[j]]))
 
 # dt_out
 
-file <- dir(here("gen", "data"))
-file <- grep("cases", file, value=T)
+file <- dir(here("gen", "data", "new_open_data.csv"))
 
 open_dt <- fread(here("gen", "data", file))
 open_dt <- open_dt[grepl("RC|RD|RM|UC|UD",`Case Number`)]
 
-open_dt$Voters[is.na(open_dt$Voters)] <- 
+open_dt$Voters[is.na(open_dt$Voters)] <-
   open_dt$`Employees on charge/petition`[is.na(open_dt$Voters)]
 
-open_dt <- open_dt[, c("Case Name", "Case Number", "City", "Date Filed", 
+open_dt <- open_dt[, c("Case Name", "Case Number", "City", "Date Filed",
                        "State", "Unit Sought", "Voters" )]
-names(open_dt)[c(2,6,7)] <- c("Case", "Voting Unit (Unit A)", 
+names(open_dt)[c(2,6,7)] <- c("Case", "Voting Unit (Unit A)",
                                 "No of Eligible Voters")
 
 old_open <- fread(here("gen", "data", "open_petitions.csv"))
@@ -63,21 +62,21 @@ open_dt <- open_dt[!open_dt$`Case` %in% dt_out$`Case`]
 
 
 for(ii in 1:nrow(open_dt)){
-  
+
   if(!is.na(open_dt$`Labor Union1`[ii])) next
-  
+
   url <- paste0("https://www.nlrb.gov/case/", open_dt$`Case`[ii])
   cat(url, "\n")
   page <- read_html(url)
   tab <- page %>% html_node("table.Participants") %>% html_table()
   union <- grep("Involved PartyUnion|PetitionerUnion", tab$Participant, value=T)
-  if(length(union)==0) next 
+  if(length(union)==0) next
   union <- gsub("Involved PartyUnion|PetitionerUnion", "", union)
   union <- stringr::str_trim(union)
   if(length(union)>1){
     union <- union[which.max(nchar(union))]
   }
-  
+
   open_dt$`Labor Union1`[ii] <- union
   Sys.sleep((runif(1, 0, .1)))
 }
@@ -86,7 +85,6 @@ for(ii in 1:nrow(open_dt)){
 open_dt$Status <- "Open"
 write.csv(open_dt, file=here("gen", "data", "open_petitions.csv"), row.names = F)
 ### Delete Temporary File
-file.remove(here("gen", "data", file))
 
 open_dt$Election_Data <- "No"
 dt_out$Election_Data <- "Yes"
