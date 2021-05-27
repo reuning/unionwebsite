@@ -1,10 +1,6 @@
 "Case","Case Name","City","Date Filed","State","Voting Unit (Unit A)","No of Eligible Voters","Labor Union1","Status"
 "01-RC-251507","Live Nation Worldwide, Inc.","Boston","11/12/2019","MA","Included:  Ushers employed at the Employer's facility located at 290 Northern Ave., Boston, MA.
 Excluded: All other employees, office clerical employees, guards, and supervisors as defined in the Act",96,"The International Alliance of Theatrical Stage Employees, Moving Picture Technicians, Artists and Allied Crafts, Local B-4","Open"
-"01-RC-274079","The Waltham Committee, Inc.  d/b/a WCI- Work,  Community, Independence","Waltham","03/12/2021","MA","Employees included: All full-time, regular part time and relief workers in the Deaf Residential Supports Division, Employment/Day Supports Division, and Acquired Brain Injury (ABI) group home - including Assistant Support Coordinators, Support Specialists, Employment Specialists, Habilitation Specialists, and Art Initiative Coordinators at the following addresses: 45 Rumford Avenue (Waltham), 60 Livingstone Lane (Waltham), 19 Central Street (Waltham), 21 Central Street (Waltham), 43 Bruce Road (Waltham), 8 Hatherly Road (Waltham), 28 Heard Street (Waltham}, 30 Heard Street (Waltham), 9A Jaqueline Road (Waltham) , 15 Huntington Street  (Waltham), 111 Virginia Road (Waltham), and 71 Summer Street (Maynard).
-
-Employees excluded: All other employees including guards, division heads, directors as defined in the act.
-",87,"International Brotherhood of Teamsters Joint Council 10 New England Teamsters Local 25","Open"
 "01-RC-275171","Brock & Company, Inc.","Farmington","04/05/2021","CT","Included: All full and regular part time food service workers 
 Excluded: All office clerical and supervisors as defined in the Act
 ",18,"United Food and Commercial Workers Union, Local 371","Open"
@@ -63,7 +59,7 @@ all Path Lab/Lab Corp employees.
 
 ",17,"United Food and Commercial Workers Union, Local 342, AFL-CIO","Open"
 "01-RC-277346","Midwest Air Traffic Control Services, Inc.","Groton","05/19/2021","CT","Included: All full-time and regular part-time air traffic control specialists employed at the Groton-New London Airport Air Traffic Control Tower (GON). Excluded: All other employees, managers, guards, and supervisors as defined by the Act.",4,"National Air Traffic Controllers Association, AFL-CIO (NATCA)","Open"
-"01-RC-277617","A. Fresco Inc.","Reading","05/25/2021","MA","Included:  All full-time and regular part-time licensed Journeyman and Apprentice Plumbers and Gasfitters. Excluded:  All other employees, office clerical employees, guards, professional employees and supervisors as defined in the Act.",10,NA,"Open"
+"01-RC-277617","A. Fresco Inc.","Reading","05/25/2021","MA","Included:  All full-time and regular part-time licensed Journeyman and Apprentice Plumbers and Gasfitters. Excluded:  All other employees, office clerical employees, guards, professional employees and supervisors as defined in the Act.",10,"PLUMBERS & GASFITTERS UA LOCAL 12","Open"
 "01-RD-275435","Management & Training Corporation","Chicopee","04/12/2021","MA","Included:  IUE-CWA Local 81206 (MTC Employees only)
 Excluded:  All others as defined in the Act.",25,"International Union of Electrical Workers - Communication Workers of America (IUE-CWA)","Open"
 "01-RD-275595","UTGR, Inc. d/b/a Twin River Casino Hotel","Lincoln","04/14/2021","RI","Included: Hourly table games dealers Excluded: All others as defined in the Act.",410,"LIUNA, LOCAL UNION 711","Open"
@@ -169,7 +165,7 @@ Excluded:  All security-supervisors and clerical as defined by the Act.",92,"WAS
 "03-RC-267061","Lockport Rehab and Health Care Center","Lockport","10/05/2020","NY","Included:  All full-time, part-time and per diem Service and Maintenance Employees.
 
 Excluded:  All other employees, guards, and supervisors.",67,"1199SEIU United Healthcare Workers East","Open"
-"03-RC-275709","Easter Seals New York, Inc.","Monticello","04/16/2021","NY","Included: Certified Occupational Therapy Assistant (COTA), Child Care Assistant (teacher assistant),Clerical/Secretarial, General Education Teacher, Lead Special Education Teacher, Licensed Practical Nurse, School Nurse, School Counselor, Facilities Manager, Custodian, Occupational Therapist, Occupational Therapist Supervisor, Office Manager, Special Education Teacher, Speech Language Pathologist employed at the Employer’s Project Excel, Monticello, NY facility Excluded: guards, supervisors, and management employees, as defined by the NLRA",48,"Civil Service Employees Association, Inc., Local 1000, AFSCME, AFL-CIO","Open"
+"03-RC-275709","Easter Seals New York, Inc.","Monticello","04/16/2021","NY","",48,"Civil Service Employees Association, Inc., Local 1000, AFSCME, AFL-CIO","Open"
 "03-RC-275717","G4S Regulated Security Solutions, a division of G4S Secure Solutions (USA) Inc.","Ontario","04/16/2021","NY","Included: All armed and unarmed security officers performing guard duties as defined in Section 9(b)(3) of the Act, as amended, for the Employer at Ginna Nuclear Station Excluded: All office clerical employees, professional employees, all supervisors ,as defined in the Act",72,"National Union of Nuclear Security Officers NUNSO, LEOS-PBA","Open"
 "03-RC-275762","Glove House, Inc.","Elmira","04/19/2021","NY","",29,"International Brotherhood of Teamsters, Local 118","Open"
 "03-RC-276648","Eastern Paramedics, Inc. d/b/a American Medical Response","Syracuse","05/05/2021","NY","All Paramedics, EMTs, EMT/CCs, EMT/Dispatchers, Dispatcher/EMTs, Dispatchers.  Excluded:  Office employees, guards, supervisory and management employees.",94,"United Professional & Service Employees Union Local 1222","Open"
@@ -201,16 +197,12 @@ Excluded: All registered nurses, physicians, service and maintenance, skilled ma
 
 Excluded: All other technical employees, registered nurses, physicians, service and maintenance, skilled maintenance, guards, business clerical, confidential employees, and supervisors as defined by the Act.
 ",30,"Delaware County Memorial Hospital Professionals Union/Pennsylvania Association of Staff  Nurses and Allied Professionals","Open"
-"04-RC-276034","Waste Management of Fairless, LLC","Morrisville","04/22/2021","PA","Included:  All full-time and regular part-time equipment operators and mechanics employed by the Employer at its 1000 New Ford Mill Road, Morrisville, PA facility. 
-
-Excluded:  All other employees, office personnel, weighmasters, clerks, electricians, laborers, guards, and supervisors as defined in the Act.",47,"International Union of Operating Engineers Local No. 542","Open"
 "04-RC-276058","LK Auto Sales, Inc., d/b/a Toyota of Vineland","Vineland","04/22/2021","NJ","Included:  All full time and regular part-time new and used car and truck salesmen
 
 Excluded:  All other employees, including, but not limited to, office, clerical, guards and supervisors as defined in the Act
 
 ",9,"United Service Workers Union, Local 455, International Union of Journeymen and Allied Trades (IUJAT)","Open"
 "04-RC-276113","Friends Behavioral Health System","Philadelphia","04/23/2021","PA","Included: All full-time and regular part-time Mental Health Technicians.  Excluded: All other employees",140,"District 1199C, NUHHCE, AFL-CIO","Open"
-"04-RC-276264","Higher Limits Development, Inc..","Huntingdon Valley","04/28/2021","PA","Included: All full time electricians, Electrician Helpers/Apprentices employed by Higher Limits.  Excluded: Guards, Delivery Drivers, Clerical, Supervisors, and all others excluded under the Act.",7,"International Brotherhood of Electrical Workers, Local #98, AFL-CIO","Open"
 "04-RC-276399","Waste Management of PA, Inc. d/b/a  Delaware Valley North Container","Bristol","04/30/2021","PA","Included: All welders and all welder/drivers.  Excluded: Officer personnel, clerks, dispatchers, guards, supervisors, painters.",6,"International Union of Operating Engineers Local No. 542","Open"
 "04-RC-276410","Waste Management of PA, Inc., d/b/a Delaware Valley North","Bristol","04/30/2021","PA","Included:  all drivers and all mechanics from the home base of 1224 Hayes Boulevard, Bristol, PA
 
@@ -277,6 +269,10 @@ Excluded: All office clerical employees, professional employees and supervisors 
 Service Tech, Installer, Processor and Material Handler employees at Bowie, MD SSO
 Excluded:
 Other employees and supervisors as defined by the Act.",27,"Local 2, Office and Professional Employees International Union, AFL-CIO","Open"
+"05-RC-277661","Institute for Policy Studies","Washington","05/26/2021","DC","Included:  All full-time and regular part-time employees, including fellows.  
+
+Excluded:  Supervisors, managerial employees, confidential employees as defined in Act.
+",17,NA,"Open"
 "05-RD-256888","Mountaire Farms Inc.","Selbyville","02/25/2020","DE","Included: 1st Processing, 2nd Processing and Tray Pack;  Excluded:  Transportation, Live Haul Drivers, Shipping, Coolers, Maintenance, HR, Box room, QA, Paws, Giblets",800,"United Food and Commercial Workers Union Local 27 a/w United Food and Commercial Workers International Union, AFL-CIO","Open"
 "05-RM-275681","Keolis Transit Services, LLC","Leesburg","04/15/2021","VA","Included: Driver/Operators, Dispatchers, Road Supervisors, Maintenance Foreman, Mechanic, Utility Workers, and Parts Clerks.
 
@@ -289,6 +285,7 @@ Description of Proposed Unit:
 Included:  All full-time and regular part-time employees including Counsels*, Paralegals, the Receptionist and Facilities Supervisor, the Communications Associate, the Prisoners' Rights Advocacy Director, the Grants Associate, the Workers' Rights Advocate, the Parent Empowerment Coordinator, the Education Project Director, and the Leadership Support and Development Associate (*Two counsel are in dispute with regard to their supervisory status. Counsel Dennis Corkery and Senior Counsel Daniel Katz would be excluded from the proposed unit.)
 Excluded:  The Executive Director, Legal Director, Deputy Legal Directors, Chief Operating Officer, Director of Development and Communications, Chief Financial Officer, attorney fellows, confidential employees, managerial employees, guards, and supervisors (including Counsels in supervisor positions*) as defined by the Act (*Counsel Dennis Corkery and Senior Counsel Daniel Katz would be excluded from the proposed unit based on their supervisory status.
 ",19,"National Organization of Legal Services Workers, UAW Local 2320","Open"
+"05-UD-277647","Excalibur Associates","Gaithersburg","05/25/2021","MD","Included:  Excalibur Associates Dispatch and Guard Force.  Excluded:  Supervision",36,"Security, Police and Fire Professionals of America (SPFPA)","Open"
 "06-RC-275902","Coca-Cola Consolidated, Inc.","Beckley","04/20/2021","WV","Included: All reg. FT & PT Delivery/Merchandisers, Warehouse, BAMS, Full service & Vending
 Excluded: Supervisors, Officer Clerical & Professional employees, Guards-as defined by the law",50,"Chauffeurs, Teamsters & Helpers Local Union No. 175","Open"
 "06-RD-273153","GBC Advanced Materials, LLC","Latrobe","02/22/2021","PA","Included: All production and maintenance employees, including plant clerical employees, of the Company at Latrobe, PA plant.
@@ -379,9 +376,6 @@ KY.
 EXCLUDED: all other employees, including production employees, facilities maintenance
 employees, weld machine operators, office clerical employees, engineers, and all professional
 employees, guards, and supervisors as defined in the Act.",21,"United Association of Journeymen and Apprentices of the Plumbing and Pipe Fitting Industry of the U.S. and Canada, Plumbers & Pipefitters Local 633","Open"
-"10-RC-274145","The Chemours Company","New Johnsonville","03/15/2021","TN","Included: All full-time and regular part-time production and maintenance employees at the Employer's facility in Johnsonville, TN
-
-Excluded: All temporary employees, office clerical and professional employees, managers, guards, and supervisors as defined in the Act",350,"United Steel, Paper and Forestry, Rubber, Manufacturing, Energy, Allied & Industrial Service Workers International Union, AFL-CIO/CLC","Open"
 "10-RC-274613","US Foods, Inc.","Salem","03/24/2021","VA","Included: All Drivers working from and managed from the Salem VA facility Excluded: Clerical, professional and confidential employees and supervisors as defined by the Act",110,"International Brotherhood of Teamsters Local 171","Open"
 "10-RC-274633","SSB Manufacturing Company","Charlotte","03/25/2021","NC","Included: Truck Drivers Excluded: Supervisors, managers ,maintenance, warehouse , clerical /office and all non- drivers",13,"INTERNATIONAL BROTHERHOOD OF TEAMSTERS, LOCAL 71","Open"
 "10-RC-275718","Diversified Protection Corporation","Columbia","04/16/2021","SC","Included: 
@@ -421,6 +415,10 @@ EXCLUDED:  All other employees, guards and supervisors as defined by the Act.",1
 "12-RC-277325","Intermodal Mexico USA LLC (IMEX)","Jacksonville","05/18/2021","FL","Included: Clerks, Crane Operators, Drivers, Mechanics, and Tie Downs
 
 Excluded: All other employees of the Employer",45,"International Brotherhood of Teamsters Local Union No. 769","Open"
+"12-RC-277678","Industrial Sprinkler Corp.","Barceloneta","05/25/2021","PR","Included: All the full time and regular part time employees engged in the fabrication and installations of sprinkler systems employed by the employer at its facilities.
+
+Excluded: All other employees, office clerical employees, professional employees, confidential employees, guards and supervisors as defined by the Act.
+",36,NA,"Open"
 "12-RD-274767","Salud Integral en la Montaña, Inc","Naranjito","03/26/2021","PR","INCLUDED:  All graduate nurses employed in the facilities of Barranquitas, Comerio, Corozal, Naranjito and Orocovis.
 EXCLUDED:  All other employees, guards and supervisors as defined in the Act.",107,"Union General de Trabajadores, SEIU 1199","Open"
 "12-RD-275354","Salud Integral en la Montaña","Naranjito","04/09/2021","PR","Included:  All licensed practical nurses, assistant therapists, and medical record technicians, 
@@ -564,7 +562,7 @@ Excluded:  All non-professional employees, managers, supervisors, and guards as 
 "15-RC-275949","Huntington Ingalls Shipbuilding","Pascagoula","04/21/2021","MS","Included:  All full-time and regularly scheduled employees classified as firefighters including firefighter 4 (lead worker), firefighter 3, firefighter 2 (all firefighters are qualified as emergency medical technicians and paramedics) at the employers facility located at 1000 Jerry St. Pe Hwy, Pascagoula, MS
 
 Excluded:  Fire Chief, fire inspectors, fire prevention auditors, safety employees, maintenance employees, apprentices (production and maintenance dept), all material men, material support employees (material expediters and material supply clerks), tool room employees and plant and office clerical employees, (drawing clerks, key machine operators, mail carriers,office clerks, reproduction clerks, senior office clerks and senior reproduction clerks),  office janitors, technical employees (mt-pt inspectors, optical detailers, radiographic employees, in plant production dept, including security officers, all pattern makers (and apprentices), all time keepers, apprentices, technical aids, junior designers, designers, senior designers and supervisors, as defined in the act.",14,"International Association of Firefighters, Local 100-97","Open"
-"15-RC-276907","UPS Healthcare","Memphis","05/11/2021","TN","Included:  All full time and regular part time warehouse, receivers, packers and fork lift operator
+"15-RC-276907","UPS Supply Chain Solutions, Inc.","Memphis","05/11/2021","TN","Included:  All full time and regular part time warehouse, receivers, packers and fork lift operator
 
 Excluded:  All managers and office employees, and all guards and supervisors as defined by the ACT.",30,"International Brotherhood of Teamsters Local 667","Open"
 "15-RC-276920","Alsco Inc","Pensacola","05/11/2021","FL","Included: Route Sales Drivers, Tractor Trailer and Helpers Excluded: Managers, Supervisors and Guards as defined by the Act",12,"International Brotherhood of Teamsters Local Union 991","Open"
@@ -657,7 +655,7 @@ Excluded: Owners, Managers, Salesmen, Office personnel, Guards, Warehouse employ
 Hourly employees
 
 Excluded: Salary employees",400,"UAW LOCAL 3057","Open"
-"16-RD-277034","FRITO LAY","EAGLE PASS","05/13/2021","TX","Included: All full-time and regular part-time route sales employees and merchandisers at the Employer's Eagle Pass and Del Rio, TX locations.
+"16-RD-277034","FRITO-LAY LLC","EAGLE PASS","05/13/2021","TX","Included: All full-time and regular part-time route sales employees and merchandisers at the Employer's Eagle Pass and Del Rio, TX locations.
 
 Excluded: All other employees including managers, guards, and supervisors as define by the Act.",16,"INTERNATIONAL BROTHERHOOD OF TEAMSTERS, LOCAL 657","Open"
 "16-UC-270864","Penske Truck Leasing Co, L.P.","Dallas","12/30/2020","TX","6a.
@@ -736,7 +734,7 @@ same as 5a above",240,"SEIU HealthCare Wisconsin","Open"
 Excluded:  Guards and supervisors as defined in the Act.
 ",4,"International Alliance of Theatrical Stage Employees, Moving Picture Technicians, Artists and Allied Crafts of the US, Local 15","Open"
 "19-RC-273458","Voodoo Doughnut, LLC","Portland","03/01/2021","OR","Included: all full time and part time doughnuteer workers. Excluded: all shift managers & managerial staff.",18,"Doughnut Workers United","Open"
-"19-RC-274350","Central City Concern","Portland","03/18/2021","OR","Included: All full time and regular part time non-supervisory employees, including RNs, QMHPs, and LCSWs, employed at the Blackburn Center. Excluded: All other managerial, supervisory, professional, and represented employees of Central City Concern.",81,"AFSCME Council 75 and Local 88","Open"
+"19-RC-274350","Central City Concern","Portland","03/18/2021","OR","",81,"AFSCME Council 75 and Local 88","Open"
 "19-RC-274583","Lifeworks NW","Portland","03/23/2021","OR"," Included: All full-time and regular part-time employees at the Hawthorn Walk-In Center. Excluded: Managers, confidential employees, guards and supervisors as defined by the Act.",53,"AFSCME Council 75","Open"
 "19-RC-274885","ALS USA Inc.","Fairbanks","03/30/2021","AK","Included:  All full-time and part-time employees employed by the Employer and working at or out of its Fairbanks, Alaska facility.  
 
@@ -806,6 +804,9 @@ All non-supervisory employees.
 Excluded: 
 
 Owners and managers.",28,"United Food and Commercial Workers Local 21","Open"
+"19-RC-277637","Pacific Northwest Regional Council of Carpenters","Kent","05/25/2021","WA","Included:  Representatives, Leads, Market Recovery Rep., Regional Manager, Contract Reps.
+
+Excluded:  All other employees, probationary employees, supervisors, and confidential employees.",24,"UFCW Local 367","Open"
 "19-RD-204660","United Food and Commercial Workers Union, Local Union No. 21, AFL-CIO, CLC","Seattle","08/18/2017","WA","Included:  All union representatives, lead union representatives, grievance representatives, organizers, community organizers, political organizers, and researchers.
 
 Excluded:  All office/clerical employees, confidential employees, guards, department heads, supervisors, student interns under the supervision of a Local 21 staff person and full time negotiators.",38,"Federation of Agents and International Representatives","Open"
@@ -919,7 +920,7 @@ All full time and regular warehouse employees, forklift operators and drivers
 
 Excluded:
 All other employees, guards and supervisors",7,"LOCAL 560, INTERNATIONAL BROTHERHOOD OF TEAMSTERS","Open"
-"22-RC-276628","Refresco","Wharton","05/05/2021","NJ","Included: All full time and regular part time hourly production and maintenance employees,
+"22-RC-276628","REFRESCO BEVERAGES US INC.","Wharton","05/05/2021","NJ","Included: All full time and regular part time hourly production and maintenance employees,
 employed by the employer at its facility at 92 N. Main Street, Wharton, New Jersey 07885.
 Excluded: All clerical employees, managers, guards, and supervisors as defined by the Act",250,"United Electrical, Radio & Machine Workers of America","Open"
 "22-RC-276709","IMPACT ENVIRONMENTAL SITEWORKS","Lyndhurst","05/06/2021","NJ","Included: all full time and part-time operators, and junior operators working at Employer's Newark and Cinnaminson jobsites Excluded: all other employees, including all office clerical employees, managerial employees, guards and supervisors defined by the Act",9,"INTERNATIONAL UNION OF OPERATING ENGINEERS LOCAL 825","Open"
@@ -934,6 +935,9 @@ Excluded: All office clerical employees, dockworkers, maintenance employees, lea
 temporary employees, confidential employees, managerial employees, professional employees,
 guards and supervisors as defined in the Act, and all other employees.",27,"Teamsters Local 701","Open"
 "22-RD-276257","Broadway Party Rentals","East Rutherford","04/28/2021","NJ","Included: Drivers, Warehousemen, Kitchen Excluded: Office clericals, managers, guards and supervisors as defined in the Act",24,"United Food and Commercial Workers Union Local 2013","Open"
+"22-RD-277666","ACB","Montclair","05/26/2021","NJ","Included:  Montclair School District 22 Valley Road, Montclair, NJ 07042
+
+Excluded: All other Employees",10,NA,"Open"
 "22-RM-270677","D.O. Productions, LLC","Lodi","12/23/2020","NJ","Maintenance Coordinator, First Class Mechanic – Lead, First Class Mechanic, Mechanic, Shutdown Helper 2, Shutdown Helper 1, Working Foreman (Sanitation, Processing, Packaging), Sheeter Operator, Cheese Operator, Pepperoni Operator, Dough Mixer, Sauce Maker, Machine Operator, Machine Operator Lead, Sanitor/Porter, QC Technician, QC Tech Start Up, Warehouse Worker, Warehouse Worker Lead, General Production/Machine Operator Relief, Langan Feeder, General Production Worker.
 
 Excluded:  All other Employees.
@@ -1153,7 +1157,7 @@ EXCLUDED:  All other employees including professional employees, managerial empl
 "28-RC-276317","United Natural Foods West, Inc.","Las Vegas","04/28/2021","NV","INCLUDED:  All drivers employed by the Employer at its Las Vegas facility
 
 EXCLUDED:  All other employees, clerical, confidential, professional, managerial/sups, guards",5,"International Brotherhood of Teamsters Local 63","Open"
-"28-RC-276868","NV Energy","Las Vegas","05/06/2021","NV","INCLUDED:  All full-time and regular part-time armed and unarmed security officers performing guard duties as defined in Section 9(b)(3) of the National Labor Relations Act, employed by NV Energy at 6226 West Sahara Avenue, Las Vegas, NV 89146
+"28-RC-276868","NV Power CO. dba NV Energy","Las Vegas","05/06/2021","NV","INCLUDED:  All full-time and regular part-time armed and unarmed security officers performing guard duties as defined in Section 9(b)(3) of the National Labor Relations Act, employed by NV Energy at 6226 West Sahara Avenue, Las Vegas, NV 89146
 
 EXCLUDED:  All office clerical employees, professional employees and supervisors as defined by the Act.",6,"International Union, Security, Police and Fire Professionals of America (SPFPA)","Open"
 "28-RC-277517","Caliburn/CHS Trail House Branch","El Paso","05/20/2021","TX","Included: All hourly full-time Teachers and Teacher Aids employees 
@@ -1245,6 +1249,9 @@ All Managers D rivers and Driver Assistants.",6,"INTERNATIONAL BROTHERHOOD OF TE
 All non-supervisory full-time and part-time staff.
 
 Employees Excluded: All seasonal workers, supervisory employees, guards and all other employees excluded by the Act.",130,"United Staff of Building Blocks, NYSUT, AFT, NEA","Open"
+"29-RC-277644","Brooklyn Museum","Brooklyn","05/25/2021","NY","Included: All full-time and regular part time professional and non-professional employees of the Employer not currently represented by DC 37.
+
+Excluded: All employees currently represented by DC 37 and all confidential employees, managers, and supervisors as defined by the Act.",130,"Technical, Office and Professional Union, Local 2110 UAW, AFL-CIO","Open"
 "29-UC-264769","Brooklyn Friends School","Brooklyn","08/18/2020","NY","Included: All full-time and regular part-time employees of the Brooklyn Friends School. Excluded: Managers, confidential employees and guards and supervisors as defined by the Act.",200,"Local 2110, UAW, AFL-CIO","Open"
 "29-UC-270081","United Apollo Petroleum Transportation Corp.","Brooklyn","12/11/2020","NY","Included: All Drivers
 Excluded: All other employees",22,"International Brotherhood of Teamsters, Local 553","Open"
@@ -1256,9 +1263,6 @@ Excluded: All other employees including guards, office clerical, managers and su
 scout drivers, maintenance department employees, mechanics, diesel technicians, preventive technicians, welders, painters, and general laborers. 
 
 Excluded: All office, clerical, and administrative employees, and all guards, managers, and supervisors as defined in the Act.",186,"Teamsters Local Union No. 186","Open"
-"31-RC-275683","Technica, LLC","Barstow","04/15/2021","CA","INCLUDED:  All HAZMAT Radiation Techs employed by the Employer operating out of the Marine Corps Logistics Base in Barstow, CA.
-
-EXCLUDED:  All other employees, office clerical and confidential employees, guards and Supervisors as defined by the Act, as amended.",2,"TEAMSTERS, CHAUFFEURS, WAREHOUSEMEN, INDUSTRIAL AND ALLIED WORKERS OF AMERICA, LOCAL 166","Open"
 "31-RC-275764","Scott Bros. Dairy, Inc.","Chino","04/16/2021","CA","Included: All employees in the following classifications: Plant/Clean in place; Plant/Batcher; Plant foreman shifts; plant/pasteurizer; plant/stacker packers; plant/operator; plant machine operator; plant sanitation crew; plant part-time; drivers; plant flavor; plant worker; plant forklift operator; plant filler operator and plant stager.
 
 Excluded: All other employees including office clerical employees, professional employees, managerial employees, guards, and supervisors as defined in the Act, as amended.",57,"Teamsters Local 63","Open"
@@ -1275,6 +1279,9 @@ EXCLUDED:  General Manager, Kitchen Manager, Owner.",32,"DONUT FRIEND UNITED","O
 "31-RC-276608","Harbor Distributing, L.L.C. d/b/a High Desert Distributing","Lancaster","05/04/2021","CA","Included: All warehouse employees
 
 Excluded: All other employees",17,"INTERNATIONAL BROTHERHOOD OF TEAMSTERS, LOCAL 896","Open"
+"31-RC-277685","Community Hospital of San Bernardino","San Bernardino","05/26/2021","CA","INCLUDED:  All Community Liaison LVNs and all Community Liaison RNs.
+
+EXCLUDED:  All other classifications, including but not limited to guards, managers, confidential employees and supervisors as defined by the Act.",6,NA,"Open"
 "31-RD-223309","Arakelian Enterprises, Inc. d/b/a/ Athens Services","Pacoima","07/06/2018","CA","Included: All mechanics, drivers. helpers, helpers and shopworkers at 12303 Montague St., Pacoima, CA 91331. 
 Excluded: All other employees, office clerical employees, confidential employees, guards and supervisors as defined in the Act.",267,"PACKAGE AND GENERAL UTILITY DRIVERS, LOCAL 396, INTERNATIONAL BROTHERHOOD OF TEAMSTERS","Open"
 "31-RD-277602","Directv LLC d/b/a AT&T Directv Sports Operations","Culver City","05/24/2021","CA","INCLUDED:  All full time and regular part-time Specialist Video OPS employed by the Employer in Culver City, CA.
