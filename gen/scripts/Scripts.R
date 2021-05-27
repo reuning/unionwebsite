@@ -13,13 +13,13 @@ state.abb <- c(state.abb, "PR", "GU", "VI")
 
 prep_data <- function(data=dt){
   dict <- read.csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vTQj4UzxBycuPUVmIXM9RUnTWq0dwHICOk-phgwyfjqZAm8lsjl3D4JTLz73aa4dnOJ7gXmhehPGfu8/pub?gid=0&single=true&output=csv")
-  
-  
-  rename <- c("Case_Name" = "Case Name", 
+
+
+  rename <- c("Case_Name" = "Case Name",
               "Date_Closed" = "Date Closed",
               "Reason_Closed" = "Reason Closed",
               "Date_Filed" = "Date Filed",
-              "Tally_Date" = "Tally Date", 
+              "Tally_Date" = "Tally Date",
               "Tally_Type" = "Tally Type",
               "Ballot_Type" = "Ballot Type",
               "Num_Eligible_Voters" = "No of Eligible Voters",
@@ -27,64 +27,71 @@ prep_data <- function(data=dt){
               "Votes_For_Union" = "Votes for Labor Union1",
               "Votes_Against" = "Votes Against",
               "Total_Ballots_Counted" = "Total Ballots Counted")
+  cat("Renaming Data\n")
   names(data)[match(rename, names(data))] <- names(rename)
-  
-  
+
+
   ### Create New Variables
+  cat("Creating New Variables\n")
   data[,Tally_Date:=as.Date(`Tally_Date`, format="%m/%d/%Y")]
   data[,Date_Filed:=as.Date(`Date_Filed`, format="%m/%d/%Y")]
   data[,Length:=Tally_Date-Date_Filed]
   data[,Tally_Quarter := as.Date(cut(Tally_Date, breaks = "quarter"))]
-  
+
   data[,size:=cut(Num_Eligible_Voters, breaks = c(0, 5, 10, 25, 50, 100, 500, Inf), right = T,
                 labels=c("<5", "6-10", "11-25", "26-50", "51-100", "101-500", "500>"), ordered_result = T)]
-  
-  
+
+
   ### Get most recent
+  cat("Identifying duplicates\n")
   data <- data[order(-Tally_Date)]
   data$Unique <- !duplicated(data, by='Case')
-  
+
   # data <- data[Status=="Closed"]
   # data <- data[`Reason_Closed` %in% c("Certific. of Representative", "Certification of Results")]
+  cat("Dropping elections with multiple\n")
   data <- data[`Ballot_Type`%in% c("Single Labor Organization", "Revised Single Labor Org", "")]
   data[, Case_Type:=substr(Case, 4, 5)]
-  
+
+  cat("Filling in NAs with 0s\n")
+
   data[is.na(`Votes_Against`) & Election_Data=="Yes",`Votes_Against`:=0 ]
   data[is.na(`Votes_For_Union`) & Election_Data=="Yes",`Votes_For_Union`:=0 ]
   data[is.na(`Total_Ballots_Counted`) & Election_Data=="Yes",`Total_Ballots_Counted`:=0 ]
   data[is.na(`Num_Eligible_Voters`) & Election_Data=="Yes",`Num_Eligible_Voters`:=0 ]
-  
+
+  cat("Fixing Union Names")
   for(ii in 1:nrow(dict)){
-    
+
     srch <- dict$Name[ii]
     repl <- ifelse(dict$Render.National.Union.As[ii]== "",
                    dict$Render.IU.As[ii], dict$Render.National.Union.As[ii])
     data[,Plot_Labor_Union:=gsub(srch, repl, Labor_Union, ignore.case = T)]
-    
+
   }
-  
-  
+
+
   data[,`Margin`:=(`Votes_For_Union`)/(`Votes_For_Union`+`Votes_Against`)]
   data[`Total_Ballots_Counted`==0,`Margin`:=NA]
   data[,`Union_Cer`:=ifelse(`Reason_Closed`=="Certific. of Representative", "Yes", "No")]
-  
+
   # data <- data[Case_Type %in% c("RC", "RD")]
-  
+
   # data_rc <- data[Case_Type=="RC"]
   data$`Didnt_Vote` <- data$`Num_Eligible_Voters` - data$`Votes_For_Union` - data$`Votes_Against`
-  
-  
+
+
   return(data)
 }
 
 # showtext::showtext_auto()
-# 
+#
 # font <- svglite::font_face("Crimson Pro",
 #                   ttf="https://fonts.googleapis.com/css2?family=Crimson+Pro&display=swap")
 
 create_state_plot <- function(state_abb = NULL, number=10, data=NULL,
                               state = state.name[state.abb == state_abb],
-                              file_name = here("content", "data", "states", 
+                              file_name = here("content", "data", "states",
                                                state, paste0(state_abb, "_10.png"))){
 
   if( is.null(state_abb )){
@@ -92,7 +99,7 @@ create_state_plot <- function(state_abb = NULL, number=10, data=NULL,
     file_name = here("content", "data", "national",  paste0("national", "_10.png"))
   } else {
     tmp_dt <- data[State==state_abb & Unique==TRUE & Case_Type == "RC" & Status=="Closed"]
-    
+
   }
 
 
@@ -124,14 +131,14 @@ create_state_plot <- function(state_abb = NULL, number=10, data=NULL,
     guides(color=F) +
     theme_minimal(base_family = "Crimson Pro") +
     theme(legend.position = "bottom", legend.margin=margin(l=-100),
-          text = element_text(size=15, lineheight=.8), 
+          text = element_text(size=15, lineheight=.8),
           panel.grid=element_blank()) +
     scale_color_manual(values = c("#56B4E9", "#009E73")) +
     annotate("text", x=x_lim*.95, y=number + .5, label="Margin") +
     guides(alpha=F) +
     labs(y="", x="Votes", caption = "Includes only certification votes with a single union, data from NLRB")
 
-  ggsave(file_name, height=10*log10(number), width=10, type = "cairo", 
+  ggsave(file_name, height=10*log10(number), width=10, type = "cairo",
          units="in", dpi=200)
 
 
@@ -140,7 +147,7 @@ create_state_plot <- function(state_abb = NULL, number=10, data=NULL,
 
 create_state_time_plot <- function(state_abb = NULL, data=NULL,
                                    state = state.name[state.abb == state_abb],
-                                   file_name= here("content", "data", "states", 
+                                   file_name= here("content", "data", "states",
                                                    state, paste0(state_abb))) {
 
 
@@ -153,8 +160,8 @@ create_state_time_plot <- function(state_abb = NULL, data=NULL,
     tmp_dt <- data[State==state_abb  & Case_Type == "RC" &
                      Ballot_Type != "Revised Single Labor Org" &
                      !is.na(size) ]
-    
-    
+
+
   }
 
 
@@ -163,30 +170,30 @@ create_state_time_plot <- function(state_abb = NULL, data=NULL,
              fill=size)) +
   geom_bar(position=position_stack(reverse=T), color="black", size=.2, width=80) +
   scale_x_date(limits=c(as.Date("2008-01-01"), lubridate::today())) +
-    scale_y_continuous(labels=scales::label_comma()) + 
+    scale_y_continuous(labels=scales::label_comma()) +
   theme_minimal(base_family = "Crimson Pro") +
     scale_fill_colorblind("Size of Unit", drop=F) +
-    theme(legend.position = "bottom", 
+    theme(legend.position = "bottom",
           text = element_text(size=15, lineheight=.3)) +
-    labs(x="Quarter", y="Number of Units", 
+    labs(x="Quarter", y="Number of Units",
        caption = "Includes only certification votes with a single union, data from NLRB")
 
   f <- paste0(file_name, "_hist_size.png")
 
-  ggsave(f, height=8, width=10, type = "cairo", 
+  ggsave(f, height=8, width=10, type = "cairo",
          units="in", dpi=200)
 
   ggplot(tmp_dt, aes(x=Tally_Quarter,
                      fill=Union_Cer, weight=Num_Eligible_Voters)) +
     geom_bar(position=position_stack(reverse=T), color="black", size=.2) +
     scale_x_date(limits=c(as.Date("2008-01-01"), lubridate::today())) +
-    scale_y_continuous(labels=scales::label_comma()) + 
+    scale_y_continuous(labels=scales::label_comma()) +
     theme_minimal(base_family = "Crimson Pro") +
     scale_fill_colorblind("Unionized?") +
     theme(legend.position = "bottom",
           text = element_text(size=15, lineheight=.3)) +
     labs(x="Quarter", y="Number of Voters", caption = "Includes only certification votes with a single union, data from NLRB")
-  
+
   f <- paste0(file_name, "_hist_vic.png")
 
   ggsave(f, height=8, width=10, type = "cairo",
@@ -197,7 +204,7 @@ create_state_time_plot <- function(state_abb = NULL, data=NULL,
 
 
 
-create_state_table_open <- function(state_abb = NULL, data=NULL, 
+create_state_table_open <- function(state_abb = NULL, data=NULL,
                                     state = state.name[state.abb == state_abb],
                                     file_name=here("content", "tables", state, "open.html")){
 
@@ -206,7 +213,7 @@ create_state_table_open <- function(state_abb = NULL, data=NULL,
     file_name = here("content", "tables", "national", "open.html")
   } else {
     tmp_dt <- data[State==state_abb & Case_Type == "RC"]
-    
+
   }
 
   tmp_dt <- tmp_dt[Status=="Open"]
@@ -216,12 +223,12 @@ create_state_table_open <- function(state_abb = NULL, data=NULL,
   tmp_dt$Date_Filed <- as.character(tmp_dt$Date_Filed, "%b %d, %Y")
   tmp_dt$Tally_Date <- as.character(tmp_dt$Tally_Date, "%b %d, %Y")
   tmp_dt[,Ballot_Type:=ifelse(Ballot_Type == "Revised Single Labor Org", "Revised", "Initial")]
-  
+
   # tmp_dt$Case <- paste0("<a href='https://www.nlrb.gov/case/", tmp_dt$Case, "'>", tmp_dt$Case, "</a>")
   tab <- xtable(tmp_dt[,.(City, State, Case_Name, Labor_Union, Date_Filed,  Tally_Date,
                           Tally_Type, Ballot_Type, Votes_For_Union, Votes_Against,
                             Num_Eligible_Voters, Case )])
-  
+
   align(tab)[6:12] <- "c"
   # tab[1,] <- gsub("_", " ", (tab[1,]))
   # tab[1,9] <- "Union Certified?"
@@ -247,7 +254,7 @@ create_state_table_open <- function(state_abb = NULL, data=NULL,
 }
 
 
-create_state_page <- function(state_abb = "CA", 
+create_state_page <- function(state_abb = "CA",
                               state = state.name[state.abb == state_abb],
                               file_name = here("content", "data", "states", state, "_index.md") ){
 
@@ -258,7 +265,7 @@ create_state_page <- function(state_abb = "CA",
   tmp <-c("---",
           paste("title:", state),
           paste("description: Data on ", state, " union elections."),
-          paste0("images: [", 
+          paste0("images: [",
                  "'data/states/", state, "/", state_abb, "_hist_vic.png', ",
                  "'data/states/", state, "/", state_abb, "_hist_size.png', ",
                  "'data/states/", state, "/", state_abb, "_10.png']"),
