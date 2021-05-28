@@ -53,9 +53,6 @@ while check < 5:
         print("Attempt " + str(check + 1))
         get_data(chrome_options = options)
         check = 6
-<<<<<<< HEAD
+        
     except:
-=======
-    else:
->>>>>>> b4865c16411b823466faa0b9580a9caa3b685bf2
         check += 1
