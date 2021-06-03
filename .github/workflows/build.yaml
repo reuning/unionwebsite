@@ -47,7 +47,7 @@ jobs:
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
-          hugo-version: '0.81.0'
+          hugo-version: '0.83.1'
 
       - name: Build
         run: hugo --gc --minify --theme book
@@ -58,6 +58,7 @@ jobs:
           publish-dir: './public'
           production-deploy: true
           netlify-config-path: './'
+          deploy-message: "New Build"
         env:
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}

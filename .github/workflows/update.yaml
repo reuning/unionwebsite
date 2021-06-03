@@ -31,7 +31,7 @@ jobs:
         uses: actions/cache@v2
         with:
           path: ~/.cache/pip
-          key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
+          key: ${{ runner.os }}-pip-${{ hashFiles('gen/scripts/requirements.txt') }}
           restore-keys: |
             ${{ runner.os }}-pip-
 
@@ -86,7 +86,7 @@ jobs:
         if: ${{ steps.commit.outputs.committed == 'true' }}
         uses: peaceiris/actions-hugo@v2
         with:
-          hugo-version: '0.81.0'
+          hugo-version: '0.83.1'
 
       - name: Build
         if: ${{ steps.commit.outputs.committed == 'true' }}
@@ -99,6 +99,7 @@ jobs:
           publish-dir: './public'
           production-deploy: true
           netlify-config-path: './'
+          deploy-message: "Updated Data"
         env:
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
