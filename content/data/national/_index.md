@@ -5,6 +5,10 @@ description: "Union elections for all of the US"
 bookCollapseSection: false
 type: docs
 weight: 1
+keywords:
+  - "Union Elections"
+  - "United States Union Elections"
+  - "United States Unions"
 ---
 
 ### Number Employees in a Union Election by Outcome

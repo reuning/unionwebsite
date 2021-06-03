@@ -10,3 +10,60 @@
 
   gtag('config', 'G-0KB2SGQR50');
 </script>
+
+
+{{ if .IsHome -}}
+<script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "WebSite",
+    "name": "{{ .Site.Title }}",
+    "url": "{{ .Site.BaseURL }}",
+    "description": "{{ .Site.Params.description }}"
+}
+</script>
+{{ else }}
+{{ $author :=  or (.Params.author) (.Site.Author.name) }}
+{{ $org_name :=  .Site.Title }}
+<script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "Report",
+    "articleSection": "{{ .Section }}",
+    "name": "{{ .Title | safeJS }}",
+    "headline": "{{ .Title | safeJS }}",
+    "alter nativeHeadline": "{{ .Params.lead }}",
+    "description": "{{ if .Description }}{{ .Description | safeJS }}{{ else }}{{if .IsPage}}{{ .Summary  }}{{ end }}{{ end }}",
+    "inLanguage": {{ .Site.LanguageCode | default "en-us" }},
+    "isFamilyFriendly": "true",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "{{ .Permalink }}"
+    },
+    "author" : {
+        "@type": "Person",
+        "name": "{{ $author }}"
+    },
+    "creator" : {
+        "@type": "Person",
+        "name": "{{ $author }}"
+    },
+    "accountablePerson" : {
+        "@type": "Person",
+        "name": "{{ $author }}"
+    },
+    "dateCreated": "{{ now.Format "Jan 02, 2006 15:04 MST" | safeHTML }}",
+    "datePublished": "{{ now.Format "Jan 02, 2006 15:04 MST" | safeHTML }}",
+    "dateModified": "{{ now.Format "Jan 02, 2006 15:04 MST" | safeHTML }}",
+    "publisher":{
+        "@type":"Organization",
+        "name": {{ $org_name }},
+        "url": {{ .Site.BaseURL }},
+    },
+    "image": {{ if .Params.images }}[{{ range $i, $e := .Params.images }}{{ if $i }}, {{ end }}{{ $e | absURL }}{{ end }}]{{ else}}{{.Site.Params.logo | absURL }}{{ end }},
+    "url" : "{{ .Permalink }}",
+    "wordCount" : "{{ .WordCount }}",
+    "keywords" : [ {{ range $index, $keyword := .Params.keywords }}{{ if $index }}, {{ end }}"{{ $keyword }}" {{ end }}]
+}
+</script>
+{{ end }}

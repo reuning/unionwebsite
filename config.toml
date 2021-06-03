@@ -1,14 +1,16 @@
 baseURL = "https://unionelections.org/"
 languageCode = "en-us"
 title = "Union Election Data"
-description = "Data on union elections in the United States"
 images = ["/data/national/map.png"]
 
 enableRobotsTXT = true
 disableKinds = ['taxonomy', 'taxonomyTerm']
 
+[Author]
+  name = "Kevin Reuning"
 
 [params]
+  description = "Data on union elections in the United States"
   BookToC = true
   BookSection = "data"
   BookComments = false
