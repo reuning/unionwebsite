@@ -4,13 +4,15 @@ title = "Union Election Data"
 description = "Data on union elections in the United States"
 images = ["/data/national/map.png"]
 
+enableRobotsTXT = true
+disableKinds = ['taxonomy', 'taxonomyTerm']
+
 
 [params]
   BookToC = true
   BookSection = "data"
+  BookComments = false
 
 
 [markup.tableOfContents]
   startLevel = 3
-
-enableRobotsTXT = true
