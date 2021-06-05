@@ -11,6 +11,8 @@ sysfonts::font_add_google("Crimson Pro")
 state.name <- c(state.name, "Puerto Rico", "Guam", "US Virgin Islands")
 state.abb <- c(state.abb, "PR", "GU", "VI")
 
+clean_num <- function(x) scales::number(x, big.mark=",")
+
 prep_data <- function(data=dt){
   dict <- read.csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vTQj4UzxBycuPUVmIXM9RUnTWq0dwHICOk-phgwyfjqZAm8lsjl3D4JTLz73aa4dnOJ7gXmhehPGfu8/pub?gid=0&single=true&output=csv")
 
@@ -255,13 +257,37 @@ create_state_table_open <- function(state_abb = NULL, data=NULL,
 
 
 create_state_page <- function(state_abb = "CA",
+                              data=NULL,
                               state = state.name[state.abb == state_abb],
                               file_name = here("content", "data", "states", state, "_index.md") ){
 
 
   if(!dir.exists(dirname(file_name))) dir.create( dirname(file_name))
 
+  if( is.null(state_abb )){
+    tmp_dt <- data[Case_Type == "RC"]
+    file_name = here("content", "tables", "national", "open.html")
+  } else {
+    tmp_dt <- data[State==state_abb & Case_Type == "RC"]
+    
+  }
+  
 
+  tmp_dt[,Ballot_Type:=ifelse(Ballot_Type == "Revised Single Labor Org", "Revised", "Initial")]
+  
+  filed_last_year <- sum((tmp_dt$Unique == TRUE) & tmp_dt$Date_Filed > (Sys.Date() - 365))
+  voted_last_year <- sum((tmp_dt$Unique == TRUE) & tmp_dt$Tally_Date > (Sys.Date() - 365), na.rm=T)
+  if(is.na(voted_last_year)) voted_last_year <- 0
+  cert_last_year <- sum((tmp_dt$Unique == TRUE) & tmp_dt$Tally_Date > (Sys.Date() - 365) & 
+                           tmp_dt$Union_Cer == "Yes")
+  
+  
+  tmp_dt <- tmp_dt[Status=="Open"]
+  tmp_dt <- setorder(tmp_dt, -`Date_Filed`)
+  tmp_dt <- unique(tmp_dt)
+  open_cases <- nrow(tmp_dt)
+  open_cases_waiting <- sum(tmp_dt$Election_Data == "No")
+  
   tmp <-c("---",
           paste("title:", state),
           paste("description: Data on ", state, " union elections."),
@@ -272,6 +298,11 @@ create_state_page <- function(state_abb = "CA",
           paste0('keywords:\n  -"', state, ' union elections" \n  -"', state, ' unions" \n  -"Union elections"'),
           "---",
           paste("## ", state),
+          "",
+          sprintf("In the last year there have been %s union elections filed in %s and %s union elections held. In %s of those elections a new unit was certified. There are currently %s open representation cases and %s of are still waiting to vote", 
+                  clean_num(filed_last_year), state, 
+                  clean_num(voted_last_year), clean_num(cert_last_year), 
+                  clean_num(open_cases), clean_num(open_cases_waiting)),
           "",
           paste("### Number Employees in a Union Election by Outcome"),
           paste0("{{< image src=\"",state_abb, "_hist_vic.png\" >}}"),

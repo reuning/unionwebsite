@@ -18,7 +18,7 @@ create_state_table_open(data=dt)
 
 ## State Plots
 for(state in state.abb){
-  create_state_page(state_abb = state)
+  create_state_page(state_abb = state,  data=dt)
 
   create_state_plot(state_abb = state,
                     number=10,
