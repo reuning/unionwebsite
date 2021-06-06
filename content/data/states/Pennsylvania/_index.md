@@ -1,9 +1,9 @@
 ---
 title: Pennsylvania
 pagetitle: Pennsylvania Union Elections
-description: Data on recent union elections in  Pennsylvania .
+description: Data on recent union elections in Pennsylvania.
 images: ['data/states/Pennsylvania/PA_hist_vic.png', 'data/states/Pennsylvania/PA_hist_size.png', 'data/states/Pennsylvania/PA_10.png']
-keywords:["Pennsylvania union elections", "Pennsylvania unions","Union elections"]
+keywords: ["Pennsylvania union elections", "Pennsylvania unions","Union elections"]
 ---
 ##  Pennsylvania
 

@@ -1,9 +1,9 @@
 ---
 title: Virginia
 pagetitle: Virginia Union Elections
-description: Data on recent union elections in  Virginia .
+description: Data on recent union elections in Virginia.
 images: ['data/states/Virginia/VA_hist_vic.png', 'data/states/Virginia/VA_hist_size.png', 'data/states/Virginia/VA_10.png']
-keywords:["Virginia union elections", "Virginia unions","Union elections"]
+keywords: ["Virginia union elections", "Virginia unions","Union elections"]
 ---
 ##  Virginia
 

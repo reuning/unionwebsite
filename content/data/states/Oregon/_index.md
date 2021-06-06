@@ -1,9 +1,9 @@
 ---
 title: Oregon
 pagetitle: Oregon Union Elections
-description: Data on recent union elections in  Oregon .
+description: Data on recent union elections in Oregon.
 images: ['data/states/Oregon/OR_hist_vic.png', 'data/states/Oregon/OR_hist_size.png', 'data/states/Oregon/OR_10.png']
-keywords:["Oregon union elections", "Oregon unions","Union elections"]
+keywords: ["Oregon union elections", "Oregon unions","Union elections"]
 ---
 ##  Oregon
 

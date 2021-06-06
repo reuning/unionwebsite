@@ -1,9 +1,9 @@
 ---
 title: New Mexico
 pagetitle: New Mexico Union Elections
-description: Data on recent union elections in  New Mexico .
+description: Data on recent union elections in New Mexico.
 images: ['data/states/New Mexico/NM_hist_vic.png', 'data/states/New Mexico/NM_hist_size.png', 'data/states/New Mexico/NM_10.png']
-keywords:["New Mexico union elections", "New Mexico unions","Union elections"]
+keywords: ["New Mexico union elections", "New Mexico unions","Union elections"]
 ---
 ##  New Mexico
 

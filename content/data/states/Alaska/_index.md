@@ -1,9 +1,9 @@
 ---
 title: Alaska
 pagetitle: Alaska Union Elections
-description: Data on recent union elections in  Alaska .
+description: Data on recent union elections in Alaska.
 images: ['data/states/Alaska/AK_hist_vic.png', 'data/states/Alaska/AK_hist_size.png', 'data/states/Alaska/AK_10.png']
-keywords:["Alaska union elections", "Alaska unions","Union elections"]
+keywords: ["Alaska union elections", "Alaska unions","Union elections"]
 ---
 ##  Alaska
 

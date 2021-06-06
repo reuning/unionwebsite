@@ -1,9 +1,9 @@
 ---
 title: New York
 pagetitle: New York Union Elections
-description: Data on recent union elections in  New York .
+description: Data on recent union elections in New York.
 images: ['data/states/New York/NY_hist_vic.png', 'data/states/New York/NY_hist_size.png', 'data/states/New York/NY_10.png']
-keywords:["New York union elections", "New York unions","Union elections"]
+keywords: ["New York union elections", "New York unions","Union elections"]
 ---
 ##  New York
 

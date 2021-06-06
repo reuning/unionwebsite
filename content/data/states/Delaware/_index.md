@@ -1,9 +1,9 @@
 ---
 title: Delaware
 pagetitle: Delaware Union Elections
-description: Data on recent union elections in  Delaware .
+description: Data on recent union elections in Delaware.
 images: ['data/states/Delaware/DE_hist_vic.png', 'data/states/Delaware/DE_hist_size.png', 'data/states/Delaware/DE_10.png']
-keywords:["Delaware union elections", "Delaware unions","Union elections"]
+keywords: ["Delaware union elections", "Delaware unions","Union elections"]
 ---
 ##  Delaware
 

@@ -1,9 +1,9 @@
 ---
 title: Mississippi
 pagetitle: Mississippi Union Elections
-description: Data on recent union elections in  Mississippi .
+description: Data on recent union elections in Mississippi.
 images: ['data/states/Mississippi/MS_hist_vic.png', 'data/states/Mississippi/MS_hist_size.png', 'data/states/Mississippi/MS_10.png']
-keywords:["Mississippi union elections", "Mississippi unions","Union elections"]
+keywords: ["Mississippi union elections", "Mississippi unions","Union elections"]
 ---
 ##  Mississippi
 

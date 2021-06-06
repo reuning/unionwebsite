@@ -1,9 +1,9 @@
 ---
 title: Florida
 pagetitle: Florida Union Elections
-description: Data on recent union elections in  Florida .
+description: Data on recent union elections in Florida.
 images: ['data/states/Florida/FL_hist_vic.png', 'data/states/Florida/FL_hist_size.png', 'data/states/Florida/FL_10.png']
-keywords:["Florida union elections", "Florida unions","Union elections"]
+keywords: ["Florida union elections", "Florida unions","Union elections"]
 ---
 ##  Florida
 

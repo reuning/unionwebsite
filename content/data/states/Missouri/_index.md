@@ -1,9 +1,9 @@
 ---
 title: Missouri
 pagetitle: Missouri Union Elections
-description: Data on recent union elections in  Missouri .
+description: Data on recent union elections in Missouri.
 images: ['data/states/Missouri/MO_hist_vic.png', 'data/states/Missouri/MO_hist_size.png', 'data/states/Missouri/MO_10.png']
-keywords:["Missouri union elections", "Missouri unions","Union elections"]
+keywords: ["Missouri union elections", "Missouri unions","Union elections"]
 ---
 ##  Missouri
 

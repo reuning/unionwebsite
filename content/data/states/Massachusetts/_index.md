@@ -1,9 +1,9 @@
 ---
 title: Massachusetts
 pagetitle: Massachusetts Union Elections
-description: Data on recent union elections in  Massachusetts .
+description: Data on recent union elections in Massachusetts.
 images: ['data/states/Massachusetts/MA_hist_vic.png', 'data/states/Massachusetts/MA_hist_size.png', 'data/states/Massachusetts/MA_10.png']
-keywords:["Massachusetts union elections", "Massachusetts unions","Union elections"]
+keywords: ["Massachusetts union elections", "Massachusetts unions","Union elections"]
 ---
 ##  Massachusetts
 

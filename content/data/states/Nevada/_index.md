@@ -1,9 +1,9 @@
 ---
 title: Nevada
 pagetitle: Nevada Union Elections
-description: Data on recent union elections in  Nevada .
+description: Data on recent union elections in Nevada.
 images: ['data/states/Nevada/NV_hist_vic.png', 'data/states/Nevada/NV_hist_size.png', 'data/states/Nevada/NV_10.png']
-keywords:["Nevada union elections", "Nevada unions","Union elections"]
+keywords: ["Nevada union elections", "Nevada unions","Union elections"]
 ---
 ##  Nevada
 

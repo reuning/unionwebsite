@@ -1,9 +1,9 @@
 ---
 title: Puerto Rico
 pagetitle: Puerto Rico Union Elections
-description: Data on recent union elections in  Puerto Rico .
+description: Data on recent union elections in Puerto Rico.
 images: ['data/states/Puerto Rico/PR_hist_vic.png', 'data/states/Puerto Rico/PR_hist_size.png', 'data/states/Puerto Rico/PR_10.png']
-keywords:["Puerto Rico union elections", "Puerto Rico unions","Union elections"]
+keywords: ["Puerto Rico union elections", "Puerto Rico unions","Union elections"]
 ---
 ##  Puerto Rico
 

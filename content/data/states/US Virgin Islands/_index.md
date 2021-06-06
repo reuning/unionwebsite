@@ -1,9 +1,9 @@
 ---
 title: US Virgin Islands
 pagetitle: US Virgin Islands Union Elections
-description: Data on recent union elections in  US Virgin Islands .
+description: Data on recent union elections in US Virgin Islands.
 images: ['data/states/US Virgin Islands/VI_hist_vic.png', 'data/states/US Virgin Islands/VI_hist_size.png', 'data/states/US Virgin Islands/VI_10.png']
-keywords:["US Virgin Islands union elections", "US Virgin Islands unions","Union elections"]
+keywords: ["US Virgin Islands union elections", "US Virgin Islands unions","Union elections"]
 ---
 ##  US Virgin Islands
 

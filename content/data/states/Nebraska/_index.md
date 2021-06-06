@@ -1,9 +1,9 @@
 ---
 title: Nebraska
 pagetitle: Nebraska Union Elections
-description: Data on recent union elections in  Nebraska .
+description: Data on recent union elections in Nebraska.
 images: ['data/states/Nebraska/NE_hist_vic.png', 'data/states/Nebraska/NE_hist_size.png', 'data/states/Nebraska/NE_10.png']
-keywords:["Nebraska union elections", "Nebraska unions","Union elections"]
+keywords: ["Nebraska union elections", "Nebraska unions","Union elections"]
 ---
 ##  Nebraska
 

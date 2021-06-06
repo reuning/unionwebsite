@@ -1,9 +1,9 @@
 ---
 title: Ohio
 pagetitle: Ohio Union Elections
-description: Data on recent union elections in  Ohio .
+description: Data on recent union elections in Ohio.
 images: ['data/states/Ohio/OH_hist_vic.png', 'data/states/Ohio/OH_hist_size.png', 'data/states/Ohio/OH_10.png']
-keywords:["Ohio union elections", "Ohio unions","Union elections"]
+keywords: ["Ohio union elections", "Ohio unions","Union elections"]
 ---
 ##  Ohio
 

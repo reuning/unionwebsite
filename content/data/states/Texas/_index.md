@@ -1,9 +1,9 @@
 ---
 title: Texas
 pagetitle: Texas Union Elections
-description: Data on recent union elections in  Texas .
+description: Data on recent union elections in Texas.
 images: ['data/states/Texas/TX_hist_vic.png', 'data/states/Texas/TX_hist_size.png', 'data/states/Texas/TX_10.png']
-keywords:["Texas union elections", "Texas unions","Union elections"]
+keywords: ["Texas union elections", "Texas unions","Union elections"]
 ---
 ##  Texas
 
