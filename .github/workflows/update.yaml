@@ -81,17 +81,11 @@ jobs:
           Rscript gen/scripts/Init.R
           Rscript gen/scripts/Mapping.R
 
-      - name: Commit to plots
-        if: ${{ steps.commit.outputs.committed == 'true' }}
-        uses: EndBug/add-and-commit@v7
-        with:
-          add: "."
-          message: 'Updated Plots'
-
-      - name: Merge to production
-        if: ${{ steps.commit.outputs.committed == 'true' }}
-        uses: devmasx/merge-branch@v1.3.1
-        with:
-          type: now
-          target_branch: production
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Finish and comit
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add .
+          git commit -m "Updated Plots"
+          git push
+          git push origin/production
