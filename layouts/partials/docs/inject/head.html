@@ -24,14 +24,15 @@
 </script>
 {{ else }}
 {{ $author :=  or (.Params.author) (.Site.Author.name) }}
+{{ $page_title := or (.Params.pagetitle) (.Title) }}
 {{ $org_name :=  .Site.Title }}
 <script type="application/ld+json">
 {
     "@context": "http://schema.org",
     "@type": "Article",
     "articleSection": "{{ .Section }}",
-    "name": "{{ .Title | safeJS }}",
-    "headline": "{{ .Title | safeJS }}",
+    "name": "{{ $page_title | safeJS }}",
+    "headline": "{{ $page_title | safeJS }}",
     "alter nativeHeadline": "{{ .Params.lead }}",
     "description": "{{ if .Description }}{{ .Description | safeJS }}{{ else }}{{if .IsPage}}{{ .Summary  }}{{ end }}{{ end }}",
     "inLanguage": {{ .Site.LanguageCode | default "en-us" }},
