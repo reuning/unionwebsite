@@ -16,8 +16,6 @@ jobs:
         with:
           submodules: true
           fetch-depth: 0
-          with:
-            ref: production
 
       - name: Install dependencies
         run: |
@@ -91,6 +89,7 @@ jobs:
           message: 'Updated Plots'
 
       - name: Merge to production
+        if: ${{ steps.commit.outputs.committed == 'true' }}
         uses: devmasx/merge-branch@v1.3.1
         with:
           type: now
