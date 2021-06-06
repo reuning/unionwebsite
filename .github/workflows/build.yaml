@@ -47,15 +47,14 @@ jobs:
 
       - name: Push to current
         id: commit
-        uses: EndBug/add-and-commit@v7 # You can change this to use a specific version
+        uses: EndBug/add-and-commit@v7
         with:
           add: .
           message: 'Committed updated files'
 
-      - name: Push to production
-        if: ${{ steps.commit.outputs.committed == 'true' }}
-        uses: EndBug/add-and-commit@v7 # You can change this to use a specific version
+      - name: Merge to production
+        uses: devmasx/merge-branch@v1.3.1
         with:
-          add: .
-          branch: "production"
-          message: 'Pushed new production'
+          type: now
+          target_branch: production
+          github_token: ${{ secrets.GITHUB_TOKEN }}
