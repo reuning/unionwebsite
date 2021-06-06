@@ -16,8 +16,6 @@ jobs:
         with:
           submodules: true
           fetch-depth: 0
-          with:
-            ref: production
 
       - name: Install dependencies
         run: |
@@ -83,11 +81,17 @@ jobs:
           Rscript gen/scripts/Init.R
           Rscript gen/scripts/Mapping.R
 
-
-      - name: Push to production
+      - name: Commit to plots
         if: ${{ steps.commit.outputs.committed == 'true' }}
-        uses: EndBug/add-and-commit@v7 # You can change this to use a specific version
+        uses: EndBug/add-and-commit@v7
         with:
-          add: .
-          branch: "production"
-          message: 'Pushed new production'
+          add: "."
+          message: 'Updated Plots'
+
+      - name: Merge to production
+        if: ${{ steps.commit.outputs.committed == 'true' }}
+        uses: devmasx/merge-branch@v1.3.1
+        with:
+          type: now
+          target_branch: production
+          github_token: ${{ secrets.GITHUB_TOKEN }}
