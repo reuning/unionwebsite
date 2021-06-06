@@ -11,7 +11,7 @@ jobs:
 
     steps:
       - name: Checkout repo
-        uses: actions/checkout@v2
+        uses: actions/checkout@v1
         with:
           submodules: true
           fetch-depth: 0
@@ -47,10 +47,19 @@ jobs:
 
       - name: Push to current
         id: commit
-        uses: EndBug/add-and-commit@v7 # You can change this to use a specific version
+        uses: EndBug/add-and-commit@v7
         with:
           add: .
           message: 'Committed updated files'
+
+      - name: Checkout production
+        if: ${{ steps.commit.outputs.committed == 'true' }}
+        uses: actions/checkout@v1
+        with:
+          submodules: true
+          fetch-depth: 0
+          ref: 'production'
+          clean: false
 
       - name: Push to production
         if: ${{ steps.commit.outputs.committed == 'true' }}
