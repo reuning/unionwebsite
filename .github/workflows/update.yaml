@@ -17,7 +17,7 @@ jobs:
           submodules: true
           fetch-depth: 0
           with:
-            ref: production 
+            ref: production
 
       - name: Install dependencies
         run: |
@@ -84,24 +84,10 @@ jobs:
           Rscript gen/scripts/Mapping.R
 
 
-      - name: Setup Hugo
+      - name: Push to production
         if: ${{ steps.commit.outputs.committed == 'true' }}
-        uses: peaceiris/actions-hugo@v2
+        uses: EndBug/add-and-commit@v7 # You can change this to use a specific version
         with:
-          hugo-version: '0.83.1'
-
-      - name: Build
-        if: ${{ steps.commit.outputs.committed == 'true' }}
-        run: hugo --gc --minify --theme book
-
-      - name: Deploy to Netlify
-        if: ${{ steps.commit.outputs.committed == 'true' }}
-        uses: nwtgck/actions-netlify@v1.2
-        with:
-          publish-dir: './public'
-          production-deploy: true
-          netlify-config-path: './'
-          deploy-message: "Updated Data"
-        env:
-          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
-          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          add: .
+          branch: "production"
+          message: 'Pushed new production'
