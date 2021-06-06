@@ -1,7 +1,7 @@
 ---
 title: Minnesota
 pagetitle: Minnesota Union Elections
-description: Data on recent union elections in  Minnesota .
+description: Data on recent union elections in Minnesota.
 images: ['data/states/Minnesota/MN_hist_vic.png', 'data/states/Minnesota/MN_hist_size.png', 'data/states/Minnesota/MN_10.png']
 keywords: ["Minnesota union elections", "Minnesota unions","Union elections"]
 ---

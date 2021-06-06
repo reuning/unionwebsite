@@ -1,7 +1,7 @@
 ---
 title: Kansas
 pagetitle: Kansas Union Elections
-description: Data on recent union elections in  Kansas .
+description: Data on recent union elections in Kansas.
 images: ['data/states/Kansas/KS_hist_vic.png', 'data/states/Kansas/KS_hist_size.png', 'data/states/Kansas/KS_10.png']
 keywords: ["Kansas union elections", "Kansas unions","Union elections"]
 ---

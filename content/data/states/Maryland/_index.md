@@ -1,7 +1,7 @@
 ---
 title: Maryland
 pagetitle: Maryland Union Elections
-description: Data on recent union elections in  Maryland .
+description: Data on recent union elections in Maryland.
 images: ['data/states/Maryland/MD_hist_vic.png', 'data/states/Maryland/MD_hist_size.png', 'data/states/Maryland/MD_10.png']
 keywords: ["Maryland union elections", "Maryland unions","Union elections"]
 ---

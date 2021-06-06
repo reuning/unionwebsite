@@ -1,7 +1,7 @@
 ---
 title: Maine
 pagetitle: Maine Union Elections
-description: Data on recent union elections in  Maine .
+description: Data on recent union elections in Maine.
 images: ['data/states/Maine/ME_hist_vic.png', 'data/states/Maine/ME_hist_size.png', 'data/states/Maine/ME_10.png']
 keywords: ["Maine union elections", "Maine unions","Union elections"]
 ---

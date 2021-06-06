@@ -1,7 +1,7 @@
 ---
 title: South Carolina
 pagetitle: South Carolina Union Elections
-description: Data on recent union elections in  South Carolina .
+description: Data on recent union elections in South Carolina.
 images: ['data/states/South Carolina/SC_hist_vic.png', 'data/states/South Carolina/SC_hist_size.png', 'data/states/South Carolina/SC_10.png']
 keywords: ["South Carolina union elections", "South Carolina unions","Union elections"]
 ---

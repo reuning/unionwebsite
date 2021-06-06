@@ -1,7 +1,7 @@
 ---
 title: Vermont
 pagetitle: Vermont Union Elections
-description: Data on recent union elections in  Vermont .
+description: Data on recent union elections in Vermont.
 images: ['data/states/Vermont/VT_hist_vic.png', 'data/states/Vermont/VT_hist_size.png', 'data/states/Vermont/VT_10.png']
 keywords: ["Vermont union elections", "Vermont unions","Union elections"]
 ---

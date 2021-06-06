@@ -1,7 +1,7 @@
 ---
 title: North Dakota
 pagetitle: North Dakota Union Elections
-description: Data on recent union elections in  North Dakota .
+description: Data on recent union elections in North Dakota.
 images: ['data/states/North Dakota/ND_hist_vic.png', 'data/states/North Dakota/ND_hist_size.png', 'data/states/North Dakota/ND_10.png']
 keywords: ["North Dakota union elections", "North Dakota unions","Union elections"]
 ---

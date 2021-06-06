@@ -1,7 +1,7 @@
 ---
 title: Arkansas
 pagetitle: Arkansas Union Elections
-description: Data on recent union elections in  Arkansas .
+description: Data on recent union elections in Arkansas.
 images: ['data/states/Arkansas/AR_hist_vic.png', 'data/states/Arkansas/AR_hist_size.png', 'data/states/Arkansas/AR_10.png']
 keywords: ["Arkansas union elections", "Arkansas unions","Union elections"]
 ---

@@ -1,7 +1,7 @@
 ---
 title: Indiana
 pagetitle: Indiana Union Elections
-description: Data on recent union elections in  Indiana .
+description: Data on recent union elections in Indiana.
 images: ['data/states/Indiana/IN_hist_vic.png', 'data/states/Indiana/IN_hist_size.png', 'data/states/Indiana/IN_10.png']
 keywords: ["Indiana union elections", "Indiana unions","Union elections"]
 ---

@@ -1,7 +1,7 @@
 ---
 title: New Hampshire
 pagetitle: New Hampshire Union Elections
-description: Data on recent union elections in  New Hampshire .
+description: Data on recent union elections in New Hampshire.
 images: ['data/states/New Hampshire/NH_hist_vic.png', 'data/states/New Hampshire/NH_hist_size.png', 'data/states/New Hampshire/NH_10.png']
 keywords: ["New Hampshire union elections", "New Hampshire unions","Union elections"]
 ---

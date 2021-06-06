@@ -1,7 +1,7 @@
 ---
 title: Alabama
 pagetitle: Alabama Union Elections
-description: Data on recent union elections in  Alabama .
+description: Data on recent union elections in Alabama.
 images: ['data/states/Alabama/AL_hist_vic.png', 'data/states/Alabama/AL_hist_size.png', 'data/states/Alabama/AL_10.png']
 keywords: ["Alabama union elections", "Alabama unions","Union elections"]
 ---

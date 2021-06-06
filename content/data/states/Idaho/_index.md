@@ -1,7 +1,7 @@
 ---
 title: Idaho
 pagetitle: Idaho Union Elections
-description: Data on recent union elections in  Idaho .
+description: Data on recent union elections in Idaho.
 images: ['data/states/Idaho/ID_hist_vic.png', 'data/states/Idaho/ID_hist_size.png', 'data/states/Idaho/ID_10.png']
 keywords: ["Idaho union elections", "Idaho unions","Union elections"]
 ---

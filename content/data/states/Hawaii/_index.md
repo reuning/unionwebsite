@@ -1,7 +1,7 @@
 ---
 title: Hawaii
 pagetitle: Hawaii Union Elections
-description: Data on recent union elections in  Hawaii .
+description: Data on recent union elections in Hawaii.
 images: ['data/states/Hawaii/HI_hist_vic.png', 'data/states/Hawaii/HI_hist_size.png', 'data/states/Hawaii/HI_10.png']
 keywords: ["Hawaii union elections", "Hawaii unions","Union elections"]
 ---

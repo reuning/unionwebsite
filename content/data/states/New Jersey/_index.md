@@ -1,7 +1,7 @@
 ---
 title: New Jersey
 pagetitle: New Jersey Union Elections
-description: Data on recent union elections in  New Jersey .
+description: Data on recent union elections in New Jersey.
 images: ['data/states/New Jersey/NJ_hist_vic.png', 'data/states/New Jersey/NJ_hist_size.png', 'data/states/New Jersey/NJ_10.png']
 keywords: ["New Jersey union elections", "New Jersey unions","Union elections"]
 ---

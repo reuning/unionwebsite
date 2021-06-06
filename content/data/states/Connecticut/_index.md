@@ -1,7 +1,7 @@
 ---
 title: Connecticut
 pagetitle: Connecticut Union Elections
-description: Data on recent union elections in  Connecticut .
+description: Data on recent union elections in Connecticut.
 images: ['data/states/Connecticut/CT_hist_vic.png', 'data/states/Connecticut/CT_hist_size.png', 'data/states/Connecticut/CT_10.png']
 keywords: ["Connecticut union elections", "Connecticut unions","Union elections"]
 ---
