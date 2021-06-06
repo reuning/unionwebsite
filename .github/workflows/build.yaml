@@ -11,7 +11,7 @@ jobs:
 
     steps:
       - name: Checkout repo
-        uses: actions/checkout@v1
+        uses: actions/checkout@v2
         with:
           submodules: true
           fetch-depth: 0
@@ -54,7 +54,7 @@ jobs:
 
       - name: Checkout production
         if: ${{ steps.commit.outputs.committed == 'true' }}
-        uses: actions/checkout@v1
+        uses: actions/checkout@v2
         with:
           submodules: true
           fetch-depth: 0
