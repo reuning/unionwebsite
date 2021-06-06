@@ -50,17 +50,3 @@ jobs:
           git commit -m "Updated Plots"
           git push
           git push origin/production
-
-      - name: Push to current
-        id: commit
-        uses: EndBug/add-and-commit@v7
-        with:
-          add: .
-          message: 'Committed updated files'
-
-      - name: Merge to production
-        uses: devmasx/merge-branch@v1.3.1
-        with:
-          type: now
-          target_branch: production
-          github_token: ${{ secrets.GITHUB_TOKEN }}
