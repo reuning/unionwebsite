@@ -1,7 +1,7 @@
 name: Update data
 on:
   schedule:
-  - cron: "0 0 * * *"
+    - cron: "0 0 * * *"
   workflow_dispatch:
 jobs:
   update:
@@ -16,6 +16,8 @@ jobs:
         with:
           submodules: true
           fetch-depth: 0
+          with:
+            ref: production 
 
       - name: Install dependencies
         run: |

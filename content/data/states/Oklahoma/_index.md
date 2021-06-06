@@ -1,0 +1,23 @@
+---
+title: Oklahoma
+pagetitle: Oklahoma Union Elections
+description: Data on recent union elections in  Oklahoma .
+images: ['data/states/Oklahoma/OK_hist_vic.png', 'data/states/Oklahoma/OK_hist_size.png', 'data/states/Oklahoma/OK_10.png']
+keywords:["Oklahoma union elections", "Oklahoma unions","Union elections"]
+---
+##  Oklahoma
+
+In the last year there have been 3 union elections filed in Oklahoma and 2 union elections held. In 1 of those elections a new unit was certified. There are currently 1 open representation cases and 1 of are still waiting to vote
+
+### Number Employees in a Union Election by Outcome
+{{< image src="OK_hist_vic.png" >}}
+
+### Number of Elections by Unit Size
+{{< image src="OK_hist_size.png" >}}
+
+### Largest Private Union Elections
+{{< image src="OK_10.png" >}}
+
+### Open Election Related Cases
+{{< readtable table="/tables/Oklahoma/open.html" >}}
+

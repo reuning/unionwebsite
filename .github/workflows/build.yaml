@@ -1,6 +1,7 @@
 name: Build and deploy
 on:
   push:
+    branches: main 
 jobs:
   build:
     runs-on: ubuntu-18.04
@@ -44,21 +45,10 @@ jobs:
           Rscript gen/scripts/Init.R
           Rscript gen/scripts/Mapping.R
 
-      - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v2
+      - name: Push to production
+        id: commit
+        uses: EndBug/add-and-commit@v7 # You can change this to use a specific version
         with:
-          hugo-version: '0.83.1'
-
-      - name: Build
-        run: hugo --gc --minify --theme book
-
-      - name: Deploy to Netlify
-        uses: nwtgck/actions-netlify@v1.2
-        with:
-          publish-dir: './public'
-          production-deploy: true
-          netlify-config-path: './'
-          deploy-message: "New Build"
-        env:
-          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
-          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          add: .
+          branch: "production"
+          message: 'Pushed new production'
