@@ -3,7 +3,7 @@ title: California
 pagetitle: California Union Elections
 description: Data on recent union elections in  California .
 images: ['data/states/California/CA_hist_vic.png', 'data/states/California/CA_hist_size.png', 'data/states/California/CA_10.png']
-keywords:["California union elections", "California unions","Union elections"]
+keywords: ["California union elections", "California unions","Union elections"]
 ---
 ##  California
 

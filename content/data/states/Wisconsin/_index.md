@@ -3,7 +3,7 @@ title: Wisconsin
 pagetitle: Wisconsin Union Elections
 description: Data on recent union elections in  Wisconsin .
 images: ['data/states/Wisconsin/WI_hist_vic.png', 'data/states/Wisconsin/WI_hist_size.png', 'data/states/Wisconsin/WI_10.png']
-keywords:["Wisconsin union elections", "Wisconsin unions","Union elections"]
+keywords: ["Wisconsin union elections", "Wisconsin unions","Union elections"]
 ---
 ##  Wisconsin
 

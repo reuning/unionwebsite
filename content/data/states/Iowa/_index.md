@@ -3,7 +3,7 @@ title: Iowa
 pagetitle: Iowa Union Elections
 description: Data on recent union elections in  Iowa .
 images: ['data/states/Iowa/IA_hist_vic.png', 'data/states/Iowa/IA_hist_size.png', 'data/states/Iowa/IA_10.png']
-keywords:["Iowa union elections", "Iowa unions","Union elections"]
+keywords: ["Iowa union elections", "Iowa unions","Union elections"]
 ---
 ##  Iowa
 

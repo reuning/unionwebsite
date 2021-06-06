@@ -3,7 +3,7 @@ title: Kentucky
 pagetitle: Kentucky Union Elections
 description: Data on recent union elections in  Kentucky .
 images: ['data/states/Kentucky/KY_hist_vic.png', 'data/states/Kentucky/KY_hist_size.png', 'data/states/Kentucky/KY_10.png']
-keywords:["Kentucky union elections", "Kentucky unions","Union elections"]
+keywords: ["Kentucky union elections", "Kentucky unions","Union elections"]
 ---
 ##  Kentucky
 

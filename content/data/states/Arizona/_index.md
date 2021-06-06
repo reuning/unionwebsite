@@ -3,7 +3,7 @@ title: Arizona
 pagetitle: Arizona Union Elections
 description: Data on recent union elections in  Arizona .
 images: ['data/states/Arizona/AZ_hist_vic.png', 'data/states/Arizona/AZ_hist_size.png', 'data/states/Arizona/AZ_10.png']
-keywords:["Arizona union elections", "Arizona unions","Union elections"]
+keywords: ["Arizona union elections", "Arizona unions","Union elections"]
 ---
 ##  Arizona
 

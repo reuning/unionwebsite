@@ -3,7 +3,7 @@ title: North Carolina
 pagetitle: North Carolina Union Elections
 description: Data on recent union elections in  North Carolina .
 images: ['data/states/North Carolina/NC_hist_vic.png', 'data/states/North Carolina/NC_hist_size.png', 'data/states/North Carolina/NC_10.png']
-keywords:["North Carolina union elections", "North Carolina unions","Union elections"]
+keywords: ["North Carolina union elections", "North Carolina unions","Union elections"]
 ---
 ##  North Carolina
 

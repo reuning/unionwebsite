@@ -3,7 +3,7 @@ title: Illinois
 pagetitle: Illinois Union Elections
 description: Data on recent union elections in  Illinois .
 images: ['data/states/Illinois/IL_hist_vic.png', 'data/states/Illinois/IL_hist_size.png', 'data/states/Illinois/IL_10.png']
-keywords:["Illinois union elections", "Illinois unions","Union elections"]
+keywords: ["Illinois union elections", "Illinois unions","Union elections"]
 ---
 ##  Illinois
 

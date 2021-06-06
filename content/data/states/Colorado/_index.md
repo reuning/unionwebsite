@@ -3,7 +3,7 @@ title: Colorado
 pagetitle: Colorado Union Elections
 description: Data on recent union elections in  Colorado .
 images: ['data/states/Colorado/CO_hist_vic.png', 'data/states/Colorado/CO_hist_size.png', 'data/states/Colorado/CO_10.png']
-keywords:["Colorado union elections", "Colorado unions","Union elections"]
+keywords: ["Colorado union elections", "Colorado unions","Union elections"]
 ---
 ##  Colorado
 

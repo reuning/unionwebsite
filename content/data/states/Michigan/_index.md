@@ -3,7 +3,7 @@ title: Michigan
 pagetitle: Michigan Union Elections
 description: Data on recent union elections in  Michigan .
 images: ['data/states/Michigan/MI_hist_vic.png', 'data/states/Michigan/MI_hist_size.png', 'data/states/Michigan/MI_10.png']
-keywords:["Michigan union elections", "Michigan unions","Union elections"]
+keywords: ["Michigan union elections", "Michigan unions","Union elections"]
 ---
 ##  Michigan
 

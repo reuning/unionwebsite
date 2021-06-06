@@ -3,7 +3,7 @@ title: Oklahoma
 pagetitle: Oklahoma Union Elections
 description: Data on recent union elections in  Oklahoma .
 images: ['data/states/Oklahoma/OK_hist_vic.png', 'data/states/Oklahoma/OK_hist_size.png', 'data/states/Oklahoma/OK_10.png']
-keywords:["Oklahoma union elections", "Oklahoma unions","Union elections"]
+keywords: ["Oklahoma union elections", "Oklahoma unions","Union elections"]
 ---
 ##  Oklahoma
 

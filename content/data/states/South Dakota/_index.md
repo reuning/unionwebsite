@@ -3,7 +3,7 @@ title: South Dakota
 pagetitle: South Dakota Union Elections
 description: Data on recent union elections in  South Dakota .
 images: ['data/states/South Dakota/SD_hist_vic.png', 'data/states/South Dakota/SD_hist_size.png', 'data/states/South Dakota/SD_10.png']
-keywords:["South Dakota union elections", "South Dakota unions","Union elections"]
+keywords: ["South Dakota union elections", "South Dakota unions","Union elections"]
 ---
 ##  South Dakota
 

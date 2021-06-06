@@ -3,7 +3,7 @@ title: Georgia
 pagetitle: Georgia Union Elections
 description: Data on recent union elections in  Georgia .
 images: ['data/states/Georgia/GA_hist_vic.png', 'data/states/Georgia/GA_hist_size.png', 'data/states/Georgia/GA_10.png']
-keywords:["Georgia union elections", "Georgia unions","Union elections"]
+keywords: ["Georgia union elections", "Georgia unions","Union elections"]
 ---
 ##  Georgia
 

@@ -3,7 +3,7 @@ title: Utah
 pagetitle: Utah Union Elections
 description: Data on recent union elections in  Utah .
 images: ['data/states/Utah/UT_hist_vic.png', 'data/states/Utah/UT_hist_size.png', 'data/states/Utah/UT_10.png']
-keywords:["Utah union elections", "Utah unions","Union elections"]
+keywords: ["Utah union elections", "Utah unions","Union elections"]
 ---
 ##  Utah
 

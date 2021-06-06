@@ -3,7 +3,7 @@ title: Tennessee
 pagetitle: Tennessee Union Elections
 description: Data on recent union elections in  Tennessee .
 images: ['data/states/Tennessee/TN_hist_vic.png', 'data/states/Tennessee/TN_hist_size.png', 'data/states/Tennessee/TN_10.png']
-keywords:["Tennessee union elections", "Tennessee unions","Union elections"]
+keywords: ["Tennessee union elections", "Tennessee unions","Union elections"]
 ---
 ##  Tennessee
 

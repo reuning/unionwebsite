@@ -20,3 +20,4 @@ In the last year there have been 4 union elections filed in Alabama and 4 union 
 
 ### Open Election Related Cases
 {{< readtable table="/tables/Alabama/open.html" >}}
+

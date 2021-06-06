@@ -3,7 +3,7 @@ title: Washington
 pagetitle: Washington Union Elections
 description: Data on recent union elections in  Washington .
 images: ['data/states/Washington/WA_hist_vic.png', 'data/states/Washington/WA_hist_size.png', 'data/states/Washington/WA_10.png']
-keywords:["Washington union elections", "Washington unions","Union elections"]
+keywords: ["Washington union elections", "Washington unions","Union elections"]
 ---
 ##  Washington
 

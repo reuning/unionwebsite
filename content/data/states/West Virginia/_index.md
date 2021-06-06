@@ -3,7 +3,7 @@ title: West Virginia
 pagetitle: West Virginia Union Elections
 description: Data on recent union elections in  West Virginia .
 images: ['data/states/West Virginia/WV_hist_vic.png', 'data/states/West Virginia/WV_hist_size.png', 'data/states/West Virginia/WV_10.png']
-keywords:["West Virginia union elections", "West Virginia unions","Union elections"]
+keywords: ["West Virginia union elections", "West Virginia unions","Union elections"]
 ---
 ##  West Virginia
 
