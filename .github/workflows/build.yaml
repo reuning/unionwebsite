@@ -1,7 +1,7 @@
 name: Build and deploy
 on:
   push:
-    branches: main 
+    branches: main
 jobs:
   build:
     runs-on: ubuntu-18.04
@@ -45,8 +45,15 @@ jobs:
           Rscript gen/scripts/Init.R
           Rscript gen/scripts/Mapping.R
 
-      - name: Push to production
+      - name: Push to current
         id: commit
+        uses: EndBug/add-and-commit@v7 # You can change this to use a specific version
+        with:
+          add: .
+          message: 'Committed updated files'
+
+      - name: Push to production
+        if: ${{ steps.commit.outputs.committed == 'true' }}
         uses: EndBug/add-and-commit@v7 # You can change this to use a specific version
         with:
           add: .
