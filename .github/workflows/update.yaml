@@ -89,4 +89,6 @@ jobs:
           git add .
           git commit -m "Updated Plots"
           git push
-          git push origin/production
+          git checkout production
+          git merge main
+          git push
