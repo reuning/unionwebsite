@@ -36,6 +36,10 @@ prep_data <- function(data=dt){
   ### Create New Variables
   cat("Creating New Variables\n")
   data[,Num_Eligible_Voters:=as.numeric(Num_Eligible_Voters)]
+  data[,Votes_Against:=as.numeric(Votes_Against)]
+  data[,Votes_For_Union:=as.numeric(Votes_For_Union)]
+  data[,Total_Ballots_Counted:=as.numeric(Total_Ballots_Counted)]
+  
   data[,Tally_Date:=as.Date(`Tally_Date`, format="%m/%d/%Y")]
   data[,Date_Filed:=as.Date(`Date_Filed`, format="%m/%d/%Y")]
   data[,Length:=Tally_Date-Date_Filed]
@@ -76,6 +80,7 @@ prep_data <- function(data=dt){
 
   data[,`Margin`:=(`Votes_For_Union`)/(`Votes_For_Union`+`Votes_Against`)]
   data[`Total_Ballots_Counted`==0,`Margin`:=NA]
+  
   data[,`Union_Cer`:=ifelse(`Reason_Closed`=="Certific. of Representative", "Yes", "No")]
 
   # data <- data[Case_Type %in% c("RC", "RD")]
@@ -301,7 +306,7 @@ create_state_page <- function(state_abb = "CA",
           "---",
           paste("## ", state),
           "",
-          sprintf("In the last year there have been %s union elections filed in %s and %s union elections held. In %s of those elections a new unit was certified. There are currently %s open representation cases and %s of are still waiting to vote", 
+          sprintf("Excluding public employees, in the last year there have been %s union elections filed in %s and %s union elections held. In %s of those elections a new unit was certified. There are currently %s open representation cases and %s of are still waiting to vote.", 
                   clean_num(filed_last_year), state, 
                   clean_num(voted_last_year), clean_num(cert_last_year), 
                   clean_num(open_cases), clean_num(open_cases_waiting)),
