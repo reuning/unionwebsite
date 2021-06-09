@@ -35,6 +35,7 @@ prep_data <- function(data=dt){
 
   ### Create New Variables
   cat("Creating New Variables\n")
+  data[,Num_Eligible_Voters:=as.numeric(Num_Eligible_Voters)]
   data[,Tally_Date:=as.Date(`Tally_Date`, format="%m/%d/%Y")]
   data[,Date_Filed:=as.Date(`Date_Filed`, format="%m/%d/%Y")]
   data[,Length:=Tally_Date-Date_Filed]
