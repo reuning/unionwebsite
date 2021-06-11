@@ -7,7 +7,7 @@ keywords: ["Puerto Rico union elections", "Puerto Rico unions","Union elections"
 ---
 ##  Puerto Rico
 
-Excluding public employees, in the last year there have been 11 union elections filed in Puerto Rico and 1 union elections held. In 0 of those elections a new unit was certified. There are currently 11 open representation cases and 10 of are still waiting to vote.
+Excluding public employees, in the last year there have been 12 union elections filed in Puerto Rico and 1 union elections held. In 0 of those elections a new unit was certified. There are currently 12 open representation cases and 11 of are still waiting to vote.
 
 ### Number Employees in a Union Election by Outcome
 {{< image src="PR_hist_vic.png" >}}
