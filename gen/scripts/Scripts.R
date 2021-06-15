@@ -144,7 +144,7 @@ create_state_plot <- function(state_abb = NULL, number=10, data=NULL,
     scale_color_manual(values = c("#56B4E9", "#009E73")) +
     annotate("text", x=x_lim*.95, y=number + .5, label="Margin") +
     guides(alpha=F) +
-    labs(y="", x="Votes", caption = "Includes only certification votes with a single union, data from NLRB")
+    labs(y="", x="Votes", caption = "Includes only certification votes with a single union, data from NLRB. https://unionelections.org")
 
   ggsave(file_name, height=10*log10(number), width=10, type = "cairo",
          units="in", dpi=200)
@@ -184,7 +184,7 @@ create_state_time_plot <- function(state_abb = NULL, data=NULL,
     theme(legend.position = "bottom",
           text = element_text(size=15, lineheight=.3)) +
     labs(x="Quarter", y="Number of Units",
-       caption = "Includes only certification votes with a single union, data from NLRB")
+       caption = "Includes only certification votes with a single union, data from NLRB. https://unionelections.org")
 
   f <- paste0(file_name, "_hist_size.png")
 
@@ -200,7 +200,7 @@ create_state_time_plot <- function(state_abb = NULL, data=NULL,
     scale_fill_colorblind("Unionized?") +
     theme(legend.position = "bottom",
           text = element_text(size=15, lineheight=.3)) +
-    labs(x="Quarter", y="Number of Voters", caption = "Includes only certification votes with a single union, data from NLRB")
+    labs(x="Quarter", y="Number of Voters", caption = "Includes only certification votes with a single union, data from NLRB. https://unionelections.org")
 
   f <- paste0(file_name, "_hist_vic.png")
 
