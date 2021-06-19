@@ -7,7 +7,7 @@ keywords: ["Connecticut union elections", "Connecticut unions","Union elections"
 ---
 ##  Connecticut
 
-Excluding public employees, in the last year there have been 20 union elections filed in Connecticut and 18 union elections held. In NA of those elections a new unit was certified. There are currently 4 open representation cases and 4 of are still waiting to vote.
+Excluding public employees, in the last year there have been 20 union elections filed in Connecticut and 17 union elections held. In NA of those elections a new unit was certified. There are currently 4 open representation cases and 4 of are still waiting to vote.
 
 ### Number Employees in a Union Election by Outcome
 {{< image src="CT_hist_vic.png" >}}
