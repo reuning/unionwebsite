@@ -142,14 +142,26 @@ Excluded:  All employees except social workers and employees defined in Art 3, S
 "03-RD-277780","Auburn Senior Services, Inc. d/b/a The Commons on St. Anthony","Auburn","05/28/2021","NY","Included: Full time and regular part time registered nurses employed by the employer Excluded: unit managers, house supervisors, other professional employees, clerical employees, confidential employees, guards and supervisors
 ",5,"Teamsters Local Union 1149","Open"
 "04-RC-257607","Broad 600 LLC","Philadelphia","03/06/2020","PA","Included: All full time and part time sound technicians/audio technicians.  Excluded: All other employees, guards and supervisors as defined by the Act.",3,"International Alliance of Theatrical Stage Employees, Local 8","Open"
-"04-RC-266637","Air Liquide Advanced Technologies U.S. LLC","New Castle","09/04/2020","DE","",75,"INTERNATIONAL ASSOCIATION OF MACHINISTS AND AEROSPACE WORKERS, DISTRICT LODGE 1, AFL-CIO","Open"
+"04-RC-266637","Air Liquide Advanced Technologies U.S. LLC","New Castle","09/04/2020","DE","Included:  Manufacturing, Maintenance Shop, Quality Control, Shipping and Receiving
+
+Excluded:  All others
+",75,"INTERNATIONAL ASSOCIATION OF MACHINISTS AND AEROSPACE WORKERS, DISTRICT LODGE 1, AFL-CIO","Open"
 "04-RC-269155","Allied Universal Security Services","Conshohocken","11/18/2020","PA","Included: All full-time and regular part-time security officer bike patrol employed by the Employer in its Center City District in Philadelphia, Pennsylvania. Excluded: All other employees and supervisors as defined within the Act.",20,"Philadelphia Security Officers Union","Open"
 "04-RC-271327","Airway LLC","Philadelphia","01/13/2021","PA","Included: All full-time and regular part-time employees employed by the Employer at the Philadelphia International Airport performing airport related services.
 
 Excluded: All other employees not described above, employees represented by another union, food service employees, engineers, retail employees, office employees, confidential employees, managers, security guards and supervisors as defined in the Act.",25,"United Construction Trades & Industrial Employees (U.C.T.I.E.) Local 621","Open"
 "04-RC-272006","21st Century Cyber Charter School","West Chester","01/29/2021","PA","Included: All full-time and regular part-time professional instructional employees, including lead teachers, teachers, counselors, registered nurses, long term substitute teachers, and content developers employed by the Employer at its West Chester, Downingtown and Murrysville, Pennsylvania facilities; Excluded: All office clerical employees and guards, managerial employees and supervisors as defined in the Act, and all other employees",93,"21ST CENTURY CYBER EDUCATION ASSOCIATION, PSEA/NEA","Open"
 "04-RC-275174","Pride Industries, Inc. and Solution One Industries, Inc., as joint employers","Fort Dix","04/06/2021","NJ","Included: See attachment. Excluded: All other employees, supervisors and guards as defined in the Act.",100,"United Service Workers Union, Local 339,  IUJAT","Open"
-"04-RC-275394","Prospect CCMC, LLC, d/b/a Taylor Hospital","Ridley Park","04/09/2021","PA","",75,"Taylor Professionals Union/Pennsylvania Association of Staff Nurses and Allied Professionals","Open"
+"04-RC-275394","Prospect CCMC, LLC, d/b/a Taylor Hospital","Ridley Park","04/09/2021","PA","Unit A: All full-time, part-time and per diem Medical Technologists (MTs), Senior Medical
+Technologists, Registered Dietitians, Physical Therapists, Occupational Therapists, and Social
+Workers.
+
+Unit B: All full-time, part-time, and per diem Medical Laboratory Technicians, Medical
+Technicians, Physical Therapy Assistants, Radiology Techs, MRI Techs, Ultrasound Techs, CT
+Techs, Echo Techs, EKG Techs, Interventional Radiology Techs, and Vascular Techs.
+
+Excluded: All registered nurses, physicians, service and maintenance, skilled maintenance, guards, business clerical, confidential employees, and supervisors as defined by the Act.
+",75,"Taylor Professionals Union/Pennsylvania Association of Staff Nurses and Allied Professionals","Open"
 "04-RC-275405","Prospect CCMC, LLC, d/b/a Delaware County Memorial Hospital","Drexel Hill","04/09/2021","PA","Included: All full-time, part-time, and per diem Registered Dietitians, Physical Therapists, Occupational Therapists, Speech Therapists, and Social Workers.
 
 Excluded: All other technical employees, registered nurses, physicians, service and maintenance, skilled maintenance, guards, business clerical, confidential employees, and supervisors as defined by the Act.
@@ -903,7 +915,10 @@ All supervisors, managers, confidential employees and guards under the Act",29,"
 "31-RC-275764","Scott Bros. Dairy, Inc.","Chino","04/16/2021","CA","Included: All employees in the following classifications: Plant/Clean in place; Plant/Batcher; Plant foreman shifts; plant/pasteurizer; plant/stacker packers; plant/operator; plant machine operator; plant sanitation crew; plant part-time; drivers; plant flavor; plant worker; plant forklift operator; plant filler operator and plant stager.
 
 Excluded: All other employees including office clerical employees, professional employees, managerial employees, guards, and supervisors as defined in the Act, as amended.",57,"Teamsters Local 63","Open"
-"31-RC-275852","Vibra Hospital of San Bernardino, LLC","San Bernardino","04/20/2021","CA","",130,"Service Employees International Union, United Healthcare Workers-West","Open"
+"31-RC-275852","Vibra Hospital of San Bernardino, LLC","San Bernardino","04/20/2021","CA","Included: All professional employees, all technical employees, and all other non-professional
+employees working at the Vibra Ballard facility and the Apple Valley facility.
+
+Excluded: All other classifications, including but not limited to guards, managers, confidential employees and supervisors as defined by the Act.",130,"Service Employees International Union, United Healthcare Workers-West","Open"
 "31-RC-276462","Donut Friend, Inc.","Los Angeles","04/30/2021","CA","INCLUDED:  Donut Friend, Senior Donut Friend, Shift Lead/Supervisor, Baker, Assistant Baker, Fryer, Kitchen Supervisor, Dishwasher.
 
 EXCLUDED:  General Manager, Kitchen Manager, Owner.",32,"DONUT FRIEND UNITED","Open"
