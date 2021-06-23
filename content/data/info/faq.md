@@ -5,7 +5,7 @@ title: FAQ
 ### About the data
 
 - Where is this data coming from?
-  - The National Labor Relations Board provides [data on election petitions](https://www.nlrb.gov/reports/graphs-data/recent-election-results). They provide a record for each opened election related case. Which means that if a case is closed and then re-opened a new record is created. This means that a single union campaign can be in the NLRB data multiple times.
+  - As of now, two places. First, once an election happens the NLRB provides [data on the election results](https://www.nlrb.gov/reports/graphs-data/recent-election-results). Prior to that, they provide [data on all petitions, including petitions for elections](https://www.nlrb.gov/search/case). One complication here is that petitions can be associated with multiple elections and multiple counts of the same elections. I try to provide only data on the most recent election. 
 - Why is *thing* missing from the data?
   - The NLRB data is spotty at times and so there is occasionally missing information.
 - What sorts of elections are included in the data?
@@ -26,4 +26,4 @@ title: FAQ
 - Why did you make this website?
   - I wanted there to be better information out there about what is happening in the labor movement.
 - I found an issue...
-  - You can [email me](mailto:kevin.reuning@gmail.com). The code is all up on [github as well](https://github.com/reuning/unionwebsite). 
+  - You can [email me](mailto:kevin.reuning@gmail.com). The code is all up on [github as well](https://github.com/reuning/unionwebsite).
