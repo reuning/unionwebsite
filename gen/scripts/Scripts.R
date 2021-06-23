@@ -74,7 +74,9 @@ prep_data <- function(data=dt){
     repl <- ifelse(dict$Render.National.Union.As[ii]== "",
                    dict$Render.IU.As[ii], dict$Render.National.Union.As[ii])
     data[,Plot_Labor_Union:=gsub(srch, repl, Labor_Union, ignore.case = T)]
-
+    data[,Plot_Labor_Union:=gsub(paste0("[[:space:]*]\\(",repl,"\\)"), "", Plot_Labor_Union, ignore.case = T)] ### clean up 
+    data[,Plot_Labor_Union:=gsub(paste0(", ", repl), "", Plot_Labor_Union, ignore.case = T)]
+    
   }
 
 
@@ -231,7 +233,7 @@ create_state_table_open <- function(state_abb = NULL, data=NULL,
   tmp_dt$Date_Filed <- as.character(tmp_dt$Date_Filed, "%b %d, %Y")
   tmp_dt$Tally_Date <- as.character(tmp_dt$Tally_Date, "%b %d, %Y")
   tmp_dt[,Ballot_Type:=ifelse(Ballot_Type == "Revised Single Labor Org", "Revised", "Initial")]
-
+  tmp_dt[,Labor_Union:=Plot_Labor_Union ]
   # tmp_dt$Case <- paste0("<a href='https://www.nlrb.gov/case/", tmp_dt$Case, "'>", tmp_dt$Case, "</a>")
   tab <- xtable(tmp_dt[,.(City, State, Case_Name, Labor_Union, Date_Filed,  Tally_Date,
                           Tally_Type, Ballot_Type, Votes_For_Union, Votes_Against,
