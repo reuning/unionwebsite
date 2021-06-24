@@ -9,7 +9,6 @@ dt <- fread(here("gen", "data", "recent_election_results.csv"))
 
 dt <- prep_data(dt)
 
-
 dir.create(here("content", "tables"))
 ### National Plots
 create_state_plot(data=dt)

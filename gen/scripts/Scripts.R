@@ -39,7 +39,7 @@ prep_data <- function(data=dt){
   data[,Votes_Against:=as.numeric(Votes_Against)]
   data[,Votes_For_Union:=as.numeric(Votes_For_Union)]
   data[,Total_Ballots_Counted:=as.numeric(Total_Ballots_Counted)]
-  
+
   data[,Tally_Date:=as.Date(`Tally_Date`, format="%m/%d/%Y")]
   data[,Date_Filed:=as.Date(`Date_Filed`, format="%m/%d/%Y")]
   data[,Length:=Tally_Date-Date_Filed]
@@ -68,21 +68,22 @@ prep_data <- function(data=dt){
   data[is.na(`Num_Eligible_Voters`) & Election_Data=="Yes",`Num_Eligible_Voters`:=0 ]
 
   cat("Fixing Union Names")
+  data[,Plot_Labor_Union:=Labor_Union]
   for(ii in 1:nrow(dict)){
-
     srch <- dict$Name[ii]
     repl <- ifelse(dict$Render.National.Union.As[ii]== "",
                    dict$Render.IU.As[ii], dict$Render.National.Union.As[ii])
-    data[,Plot_Labor_Union:=gsub(srch, repl, Labor_Union, ignore.case = T)]
-    data[,Plot_Labor_Union:=gsub(paste0("[[:space:]*]\\(",repl,"\\)"), "", Plot_Labor_Union, ignore.case = T)] ### clean up 
+
+    data[,Plot_Labor_Union:=gsub(srch, repl, Plot_Labor_Union, ignore.case = T)]
+    data[,Plot_Labor_Union:=gsub(paste0("[[:space:]*]\\(",repl,"\\)"), "", Plot_Labor_Union, ignore.case = T)] ### clean up
     data[,Plot_Labor_Union:=gsub(paste0(", ", repl), "", Plot_Labor_Union, ignore.case = T)]
-    
+
   }
 
 
   data[,`Margin`:=(`Votes_For_Union`)/(`Votes_For_Union`+`Votes_Against`)]
   data[`Total_Ballots_Counted`==0,`Margin`:=NA]
-  
+
   data[,`Union_Cer`:=ifelse(`Reason_Closed`=="Certific. of Representative", "Yes", "No")]
 
   # data <- data[Case_Type %in% c("RC", "RD")]
@@ -277,25 +278,25 @@ create_state_page <- function(state_abb = "CA",
     file_name = here("content", "tables", "national", "open.html")
   } else {
     tmp_dt <- data[State==state_abb & Case_Type == "RC"]
-    
+
   }
-  
+
 
   tmp_dt[,Ballot_Type:=ifelse(Ballot_Type == "Revised Single Labor Org", "Revised", "Initial")]
-  
+
   filed_last_year <- sum((tmp_dt$Unique == TRUE) & tmp_dt$Date_Filed > (Sys.Date() - 365))
   voted_last_year <- sum((tmp_dt$Unique == TRUE) & tmp_dt$Tally_Date > (Sys.Date() - 365), na.rm=T)
   if(is.na(voted_last_year)) voted_last_year <- 0
-  cert_last_year <- sum((tmp_dt$Unique == TRUE) & tmp_dt$Tally_Date > (Sys.Date() - 365) & 
+  cert_last_year <- sum((tmp_dt$Unique == TRUE) & tmp_dt$Tally_Date > (Sys.Date() - 365) &
                            tmp_dt$Union_Cer == "Yes")
-  
-  
+
+
   tmp_dt <- tmp_dt[Status=="Open"]
   tmp_dt <- setorder(tmp_dt, -`Date_Filed`)
   tmp_dt <- unique(tmp_dt)
   open_cases <- nrow(tmp_dt)
   open_cases_waiting <- sum(tmp_dt$Election_Data == "No")
-  
+
   tmp <-c("---",
           paste("title:", state),
           paste("pagetitle:", state, "Union Elections"),
@@ -308,9 +309,9 @@ create_state_page <- function(state_abb = "CA",
           "---",
           paste("## ", state),
           "",
-          sprintf("Excluding public employees, in the last year there have been %s union elections filed in %s and %s union elections held. In %s of those elections a new unit was certified. There are currently %s open representation cases and %s of are still waiting to vote.", 
-                  clean_num(filed_last_year), state, 
-                  clean_num(voted_last_year), clean_num(cert_last_year), 
+          sprintf("Excluding public employees, in the last year there have been %s union elections filed in %s and %s union elections held. In %s of those elections a new unit was certified. There are currently %s open representation cases and %s of are still waiting to vote.",
+                  clean_num(filed_last_year), state,
+                  clean_num(voted_last_year), clean_num(cert_last_year),
                   clean_num(open_cases), clean_num(open_cases_waiting)),
           "",
           paste("### Number Employees in a Union Election by Outcome"),
