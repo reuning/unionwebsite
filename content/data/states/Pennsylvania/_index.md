@@ -7,7 +7,7 @@ keywords: ["Pennsylvania union elections", "Pennsylvania unions","Union election
 ---
 ##  Pennsylvania
 
-Excluding public employees, in the last year there have been 57 union elections filed in Pennsylvania and 59 union elections held. In 40 of those elections a new unit was certified. There are currently 16 open representation cases and 10 of are still waiting to vote.
+Excluding public employees, in the last year there have been 58 union elections filed in Pennsylvania and 59 union elections held. In 40 of those elections a new unit was certified. There are currently 17 open representation cases and 11 of are still waiting to vote.
 
 ### Number Employees in a Union Election by Outcome
 {{< image src="PA_hist_vic.png" >}}
