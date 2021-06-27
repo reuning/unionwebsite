@@ -68,7 +68,7 @@ prep_data <- function(data=dt){
   data[is.na(`Num_Eligible_Voters`) & Election_Data=="Yes",`Num_Eligible_Voters`:=0 ]
 
   cat("Fixing Union Names")
-  data[,Plot_Labor_Union:=Labor_Union]
+  data[,Plot_Labor_Union:=gsub("&", "and", Labor_Union)]
   for(ii in 1:nrow(dict)){
     srch <- dict$Name[ii]
     repl <- ifelse(dict$Render.National.Union.As[ii]== "",
