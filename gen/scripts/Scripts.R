@@ -67,18 +67,19 @@ prep_data <- function(data=dt){
   data[is.na(`Total_Ballots_Counted`) & Election_Data=="Yes",`Total_Ballots_Counted`:=0 ]
   data[is.na(`Num_Eligible_Voters`) & Election_Data=="Yes",`Num_Eligible_Voters`:=0 ]
 
-  cat("Fixing Union Names")
-  data[,Plot_Labor_Union:=gsub("&", "and", Labor_Union)]
-  for(ii in 1:nrow(dict)){
-    srch <- dict$Name[ii]
-    repl <- ifelse(dict$Render.National.Union.As[ii]== "",
-                   dict$Render.IU.As[ii], dict$Render.National.Union.As[ii])
-
-    data[,Plot_Labor_Union:=gsub(srch, repl, Plot_Labor_Union, ignore.case = T)]
-    data[,Plot_Labor_Union:=gsub(paste0("[[:space:]*]\\(",repl,"\\)"), "", Plot_Labor_Union, ignore.case = T)] ### clean up
-    data[,Plot_Labor_Union:=gsub(paste0(", ", repl), "", Plot_Labor_Union, ignore.case = T)]
-
-  }
+  #cat("Fixing Union Names")
+  data[,Plot_Labor_Union:=Labor_Union]
+  # data[,Plot_Labor_Union:=gsub("&", "and", Labor_Union)]
+  # for(ii in 1:nrow(dict)){
+  #   srch <- dict$Name[ii]
+  #   repl <- ifelse(dict$Render.National.Union.As[ii]== "",
+  #                  dict$Render.IU.As[ii], dict$Render.National.Union.As[ii])
+  #
+  #   data[,Plot_Labor_Union:=gsub(srch, repl, Plot_Labor_Union, ignore.case = T)]
+  #   data[,Plot_Labor_Union:=gsub(paste0("[[:space:]*]\\(",repl,"\\)"), "", Plot_Labor_Union, ignore.case = T)] ### clean up
+  #   data[,Plot_Labor_Union:=gsub(paste0(", ", repl), "", Plot_Labor_Union, ignore.case = T)]
+  #
+  # }
 
 
   data[,`Margin`:=(`Votes_For_Union`)/(`Votes_For_Union`+`Votes_Against`)]
@@ -241,6 +242,7 @@ create_state_table_open <- function(state_abb = NULL, data=NULL,
                             Num_Eligible_Voters, Case )])
 
   align(tab)[6:12] <- "c"
+  digits(tab) <- 0
   # tab[1,] <- gsub("_", " ", (tab[1,]))
   # tab[1,9] <- "Union Certified?"
   # tab <- theme_basic(tab)
