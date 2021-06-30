@@ -5,8 +5,8 @@ library(rvest)
 dt <- fread(here("gen", "data", "recent_election_results.csv"))
 names(dt)[21] <- "Votes Against"
 
-downloader::download("https://www.nlrb.gov/reports/graphs-data/recent-election-results/csv-export",
-                     here("gen", "data", "temp.csv"))
+#downloader::download("csv-export",
+#                     here("gen", "data", "temp.csv"))
 dt_new <- fread(here("gen", "data", "temp.csv"))
 dt_new$Election_Data <- "Yes"
 names(dt_new)[21] <- "Votes Against"
@@ -69,7 +69,7 @@ for(ii in 1:nrow(open_dt)){
   page <- read_html(url)
   if(is.na(page %>% html_node("table.Participants"))) {
     cat("No Table Found \n")
-    next 
+    next
   }
   tab <-try(page %>% html_node("table.Participants") %>% html_table())
   union <- grep("Involved PartyUnion|PetitionerUnion", tab$Participant, value=T)
