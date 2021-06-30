@@ -9,6 +9,7 @@ dt <- fread(here("gen", "data", "recent_election_results.csv"))
 
 dt <- prep_data(dt)
 
+dt[National %in% names(which(table(dt$National) < 25)), National:="Uncoded"]
 
 dt[National=="", National:="Uncoded"]
 dt[National_Count>1, National:="Multiple"]
@@ -31,7 +32,7 @@ create_time_plot(data=dt,
 create_table_open(data=dt, 
                   file_name=here("content", 
                                  "tables/national/", 
-                                 paste0("United States", "_open.html")))
+                                 paste0("United_States", "_open.html")))
 
 ## State Plots
 for(state in state.abb){
