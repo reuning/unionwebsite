@@ -67,7 +67,7 @@ while check < 5:
         print("Attempt " + str(check + 1))
         get_data(chrome_options = options,
                 url=r"https://www.nlrb.gov/reports/graphs-data/recent-election-results/",
-                download_text= "Recent Election Results (All Dates)"
+                download_text= "Recent Election Results (All Dates)",
                 file_out="temp.csv")
         check = 6
 
