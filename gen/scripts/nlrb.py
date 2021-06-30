@@ -35,7 +35,7 @@ def get_data(chrome_options,
     browser.implicitly_wait(120)
 
 
-    print("Opening Page for {url}")
+    print(f"Opening Page for {url}")
     browser.get(url)
     browser.find_element_by_id("download-button").click()
 
@@ -60,6 +60,7 @@ while check < 5:
 
     except:
         check += 1
+
 
 check = 0
 while check < 5:
