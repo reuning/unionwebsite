@@ -35,7 +35,7 @@ def get_data(chrome_options,
     browser.implicitly_wait(120)
 
 
-    print("Opening Page for %s" url)
+    print("Opening Page for {url}")
     browser.get(url)
     browser.find_element_by_id("download-button").click()
 
