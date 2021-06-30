@@ -2,7 +2,7 @@
 title: Washington
 pagetitle: Washington Union Elections
 description: Data on recent union elections in Washington.
-images: ['data/states/Washington/WA_hist_vic.png', 'data/states/Washington/WA_hist_size.png', 'data/states/Washington/WA_10.png']
+images: ['data/states/Washington/Washington_hist_vic.png', 'data/states/Washington/Washington_hist_size.png', 'data/states/Washington/Washington_10.png']
 keywords: ["Washington union elections", "Washington unions","Union elections"]
 ---
 ##  Washington
@@ -10,14 +10,14 @@ keywords: ["Washington union elections", "Washington unions","Union elections"]
 Excluding public employees, in the last year there have been 33 union elections filed in Washington and 45 union elections held. In 27 of those elections a new unit was certified. There are currently 3 open representation cases and 0 of are still waiting to vote.
 
 ### Number Employees in a Union Election by Outcome
-{{< image src="WA_hist_vic.png" >}}
+{{< image src="Washington_hist_vic.png" >}}
 
 ### Number of Elections by Unit Size
-{{< image src="WA_hist_size.png" >}}
+{{< image src="Washington_hist_size.png" >}}
 
 ### Largest Private Union Elections
-{{< image src="WA_10.png" >}}
+{{< image src="Washington_10.png" >}}
 
 ### Open Election Related Cases
-{{< readtable table="/tables/Washington/open.html" >}}
+{{< readtable table="/tables/states/Washington_open.html" >}}
 

@@ -2,7 +2,7 @@
 title: Missouri
 pagetitle: Missouri Union Elections
 description: Data on recent union elections in Missouri.
-images: ['data/states/Missouri/MO_hist_vic.png', 'data/states/Missouri/MO_hist_size.png', 'data/states/Missouri/MO_10.png']
+images: ['data/states/Missouri/Missouri_hist_vic.png', 'data/states/Missouri/Missouri_hist_size.png', 'data/states/Missouri/Missouri_10.png']
 keywords: ["Missouri union elections", "Missouri unions","Union elections"]
 ---
 ##  Missouri
@@ -10,14 +10,14 @@ keywords: ["Missouri union elections", "Missouri unions","Union elections"]
 Excluding public employees, in the last year there have been 10 union elections filed in Missouri and 16 union elections held. In 9 of those elections a new unit was certified. There are currently 2 open representation cases and 0 of are still waiting to vote.
 
 ### Number Employees in a Union Election by Outcome
-{{< image src="MO_hist_vic.png" >}}
+{{< image src="Missouri_hist_vic.png" >}}
 
 ### Number of Elections by Unit Size
-{{< image src="MO_hist_size.png" >}}
+{{< image src="Missouri_hist_size.png" >}}
 
 ### Largest Private Union Elections
-{{< image src="MO_10.png" >}}
+{{< image src="Missouri_10.png" >}}
 
 ### Open Election Related Cases
-{{< readtable table="/tables/Missouri/open.html" >}}
+{{< readtable table="/tables/states/Missouri_open.html" >}}
 

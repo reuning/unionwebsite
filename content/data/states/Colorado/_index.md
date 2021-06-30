@@ -2,7 +2,7 @@
 title: Colorado
 pagetitle: Colorado Union Elections
 description: Data on recent union elections in Colorado.
-images: ['data/states/Colorado/CO_hist_vic.png', 'data/states/Colorado/CO_hist_size.png', 'data/states/Colorado/CO_10.png']
+images: ['data/states/Colorado/Colorado_hist_vic.png', 'data/states/Colorado/Colorado_hist_size.png', 'data/states/Colorado/Colorado_10.png']
 keywords: ["Colorado union elections", "Colorado unions","Union elections"]
 ---
 ##  Colorado
@@ -10,14 +10,14 @@ keywords: ["Colorado union elections", "Colorado unions","Union elections"]
 Excluding public employees, in the last year there have been 12 union elections filed in Colorado and 13 union elections held. In 5 of those elections a new unit was certified. There are currently 1 open representation cases and 0 of are still waiting to vote.
 
 ### Number Employees in a Union Election by Outcome
-{{< image src="CO_hist_vic.png" >}}
+{{< image src="Colorado_hist_vic.png" >}}
 
 ### Number of Elections by Unit Size
-{{< image src="CO_hist_size.png" >}}
+{{< image src="Colorado_hist_size.png" >}}
 
 ### Largest Private Union Elections
-{{< image src="CO_10.png" >}}
+{{< image src="Colorado_10.png" >}}
 
 ### Open Election Related Cases
-{{< readtable table="/tables/Colorado/open.html" >}}
+{{< readtable table="/tables/states/Colorado_open.html" >}}
 

@@ -2,7 +2,7 @@
 title: Florida
 pagetitle: Florida Union Elections
 description: Data on recent union elections in Florida.
-images: ['data/states/Florida/FL_hist_vic.png', 'data/states/Florida/FL_hist_size.png', 'data/states/Florida/FL_10.png']
+images: ['data/states/Florida/Florida_hist_vic.png', 'data/states/Florida/Florida_hist_size.png', 'data/states/Florida/Florida_10.png']
 keywords: ["Florida union elections", "Florida unions","Union elections"]
 ---
 ##  Florida
@@ -10,14 +10,14 @@ keywords: ["Florida union elections", "Florida unions","Union elections"]
 Excluding public employees, in the last year there have been 16 union elections filed in Florida and 19 union elections held. In 11 of those elections a new unit was certified. There are currently 3 open representation cases and 1 of are still waiting to vote.
 
 ### Number Employees in a Union Election by Outcome
-{{< image src="FL_hist_vic.png" >}}
+{{< image src="Florida_hist_vic.png" >}}
 
 ### Number of Elections by Unit Size
-{{< image src="FL_hist_size.png" >}}
+{{< image src="Florida_hist_size.png" >}}
 
 ### Largest Private Union Elections
-{{< image src="FL_10.png" >}}
+{{< image src="Florida_10.png" >}}
 
 ### Open Election Related Cases
-{{< readtable table="/tables/Florida/open.html" >}}
+{{< readtable table="/tables/states/Florida_open.html" >}}
 

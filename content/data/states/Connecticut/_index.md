@@ -2,7 +2,7 @@
 title: Connecticut
 pagetitle: Connecticut Union Elections
 description: Data on recent union elections in Connecticut.
-images: ['data/states/Connecticut/CT_hist_vic.png', 'data/states/Connecticut/CT_hist_size.png', 'data/states/Connecticut/CT_10.png']
+images: ['data/states/Connecticut/Connecticut_hist_vic.png', 'data/states/Connecticut/Connecticut_hist_size.png', 'data/states/Connecticut/Connecticut_10.png']
 keywords: ["Connecticut union elections", "Connecticut unions","Union elections"]
 ---
 ##  Connecticut
@@ -10,14 +10,14 @@ keywords: ["Connecticut union elections", "Connecticut unions","Union elections"
 Excluding public employees, in the last year there have been 17 union elections filed in Connecticut and 18 union elections held. In NA of those elections a new unit was certified. There are currently 1 open representation cases and 0 of are still waiting to vote.
 
 ### Number Employees in a Union Election by Outcome
-{{< image src="CT_hist_vic.png" >}}
+{{< image src="Connecticut_hist_vic.png" >}}
 
 ### Number of Elections by Unit Size
-{{< image src="CT_hist_size.png" >}}
+{{< image src="Connecticut_hist_size.png" >}}
 
 ### Largest Private Union Elections
-{{< image src="CT_10.png" >}}
+{{< image src="Connecticut_10.png" >}}
 
 ### Open Election Related Cases
-{{< readtable table="/tables/Connecticut/open.html" >}}
+{{< readtable table="/tables/states/Connecticut_open.html" >}}
 
