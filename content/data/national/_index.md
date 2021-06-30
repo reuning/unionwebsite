@@ -1,24 +1,23 @@
 ---
-title: National
-images: ["/data/national/national_hist_vic.png","/data/national/national_hist_size.png", "/data/national/national_10.png" ]
-description: "Union elections for all of the US"
-bookCollapseSection: false
-type: docs
-weight: 1
-keywords:
-  - "Union Elections"
-  - "United States Union Elections"
-  - "United States Unions"
+title: United States
+pagetitle: United States Union Elections
+description: Data on recent union elections in the United States.
+images: ['data/national/United_States_hist_vic.png', 'data/national/United_States_hist_size.png', 'data/national/United_States_10.png']
+keywords: ["United States union elections", "United States unions","Union elections"]
 ---
+##  United States
+
+Excluding public employees, in the last year there have been 926 union elections filed in the United States and 901 union elections held. In NA of those elections a new unit was certified. There are currently 339 open representation cases and 223 of are still waiting to vote.
 
 ### Number Employees in a Union Election by Outcome
-{{< image src="national_hist_vic.png" >}}
+{{< image src="United_States_hist_vic.png" >}}
 
 ### Number of Elections by Unit Size
-{{< image src="national_hist_size.png" >}}
+{{< image src="United_States_hist_size.png" >}}
 
 ### Largest Private Union Elections
-{{< image src="national_10.png" >}}
+{{< image src="United_States_10.png" >}}
 
 ### Open Election Related Cases
-{{< readtable table="/tables/national/open.html" >}}
+{{< readtable table="/tables/national/United_States_open.html" >}}
+

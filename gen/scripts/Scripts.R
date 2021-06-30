@@ -74,9 +74,10 @@ prep_data <- function(data=dt){
   data[,tmp_Labor_Union:=gsub("&", "and", Labor_Union)]
   for(ii in 1:nrow(dict)){
     srch <- dict$Name[ii]
-    repl <- ifelse(dict$National[ii]== "",
-                   dict$International[ii], dict$National[ii])
+    # repl <- ifelse(dict$National[ii]== "",
+    #                dict$International[ii], dict$National[ii])
 
+    repl <- dict$International[ii]
     tmp <- 1*grepl(srch, data$tmp_Labor_Union, ignore.case = T)
     
     data[tmp == 1 & National_Count==0, National := repl ]
@@ -86,8 +87,8 @@ prep_data <- function(data=dt){
     
   }
   
-  nationals <- unique(ifelse(dict$National=="", dict$International, dict$National))
-
+  nationals <- unique(dict$International)
+  nationals <- nationals[nationals!=""]
   for(ii in 1:length(nationals)){
     srch <- nationals[ii]
     
@@ -97,10 +98,11 @@ prep_data <- function(data=dt){
     data[tmp == 1 & National_Count==0, National_Count := 1 ]
     
     data[tmp == 1 & National != srch, National_Count := National_Count + 1 ]
-    
+    # print(ii)
+    # print(sum(data$National_Count))
   }
   
-  data$Labor_Union[(data$National_Count==0)]
+  # data$Labor_Union[(data$National_Count==0)]
   
   data$tmp_Labor_Union <- NULL
 
@@ -174,24 +176,17 @@ create_plot <- function(number=10, data=NULL,
 }
 
 
-create_state_time_plot <- function(state_abb = NULL, data=NULL,
-                                   state = state.name[state.abb == state_abb],
-                                   file_name= here("content", "data", "states",
-                                                   state, paste0(state_abb))) {
+create_time_plot <- function(data=NULL,
+                             file_name=NULL ) {
 
 
-  if( is.null(state_abb )){
-    tmp_dt <- data[Case_Type == "RC" &
-                     Ballot_Type != "Revised Single Labor Org" &
-                     !is.na(size) ]
-    file_name = here("content", "data",  "national", "national")
-  } else {
-    tmp_dt <- data[State==state_abb  & Case_Type == "RC" &
-                     Ballot_Type != "Revised Single Labor Org" &
-                     !is.na(size) ]
+  if(is.null(file_name)) stop("Need file name")
+
+  tmp_dt <- data[Case_Type == "RC" &
+                   Ballot_Type != "Revised Single Labor Org" &
+                   !is.na(size) ]
 
 
-  }
 
 
 
@@ -233,19 +228,12 @@ create_state_time_plot <- function(state_abb = NULL, data=NULL,
 
 
 
-create_state_table_open <- function(state_abb = NULL, data=NULL,
-                                    state = state.name[state.abb == state_abb],
-                                    file_name=here("content", "tables", state, "open.html")){
-
-  if( is.null(state_abb )){
-    tmp_dt <- data[Case_Type == "RC"]
-    file_name = here("content", "tables", "national", "open.html")
-  } else {
-    tmp_dt <- data[State==state_abb & Case_Type == "RC"]
-
-  }
-
-  tmp_dt <- tmp_dt[Status=="Open"]
+create_table_open <- function(state_abb = NULL, data=NULL,
+                                    file_name=NULL){
+  
+  if(is.null(file_name)) stop("Need file name")
+  
+  tmp_dt <- data[Case_Type == "RC" & Status=="Open"]
   tmp_dt <- setorder(tmp_dt, -`Date_Filed`)
 
   tmp_dt <- unique(tmp_dt)
@@ -287,7 +275,7 @@ create_state_table_open <- function(state_abb = NULL, data=NULL,
 create_page <- function(title = "California",
                               data=NULL,
                               file_name = NULL, 
-                              type="state"){
+                              type="states"){
 
   path <- gsub(" ", "_", title)
   if(!dir.exists(dirname(file_name))) dir.create( dirname(file_name))
@@ -318,18 +306,33 @@ create_page <- function(title = "California",
                             clean_num(filed_last_year),
                             clean_num(voted_last_year), clean_num(cert_last_year),
                             clean_num(open_cases), clean_num(open_cases_waiting))
+    open_table <-paste0("{{< readtable table=\"/tables/national/", path, "_open.html\" >}}")
+    images <-paste0("images: [",
+                    "'data/national/", path, "_hist_vic.png', ",
+                    "'data/national/", path, "_hist_size.png', ",
+                    "'data/national/", path, "_10.png']")
   } else if(type=="union") {
     description <- paste0("description: Data on recent union elections involving the ", title, ".")
     recent_stats <- sprintf("Excluding public employees, in the last year there have been %s union elections filed by the %s and %s union elections held. In %s of those elections a new unit was certified. There are currently %s open representation cases and %s of are still waiting to vote.",
                             clean_num(filed_last_year), title,
                             clean_num(voted_last_year), clean_num(cert_last_year),
                             clean_num(open_cases), clean_num(open_cases_waiting))
-  } else if(type=="state") {
+    open_table <-paste0("{{< readtable table=\"/tables/union/", path, "_open.html\" >}}")
+    images <-paste0("images: [",
+                    "'data/union/", path, "/", path, "_hist_vic.png', ",
+                    "'data/union/", path, "/", path, "_hist_size.png', ",
+                    "'data/union/", path, "/", path, "_10.png']")
+  } else if(type=="states") {
     description <-paste0("description: Data on recent union elections in ", title, ".")
     recent_stats <- sprintf("Excluding public employees, in the last year there have been %s union elections filed in %s and %s union elections held. In %s of those elections a new unit was certified. There are currently %s open representation cases and %s of are still waiting to vote.",
                             clean_num(filed_last_year), title,
                             clean_num(voted_last_year), clean_num(cert_last_year),
                             clean_num(open_cases), clean_num(open_cases_waiting))
+    open_table <-paste0("{{< readtable table=\"/tables/states/", path, "_open.html\" >}}")
+    images <-paste0("images: [",
+                    "'data/states/", path, "/", path, "_hist_vic.png', ",
+                    "'data/states/", path, "/", path, "_hist_size.png', ",
+                    "'data/states/", path, "/", path, "_10.png']")
   } else {
     stop("Type unknown")
   }
@@ -338,10 +341,7 @@ create_page <- function(title = "California",
           paste("title:", title),
           paste("pagetitle:", title, "Union Elections"),
           description,
-          paste0("images: [",
-                 "'data/states/", path, "/", path, "_hist_vic.png', ",
-                 "'data/states/", path, "/", path, "_hist_size.png', ",
-                 "'data/states/", path, "/", path, "_10.png']"),
+          images,
           paste0('keywords: ["', title, ' union elections", "', title, ' unions","Union elections"]'),
           "---",
           paste("## ", title),
@@ -358,7 +358,7 @@ create_page <- function(title = "California",
           paste0("{{< image src=\"",path, "_10.png\" >}}"),
           "",
           "### Open Election Related Cases",
-          paste0("{{< readtable table=\"/tables/", path, "/open.html\" >}}"),
+          open_table,
           ""
           )
 
