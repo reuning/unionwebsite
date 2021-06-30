@@ -69,17 +69,40 @@ prep_data <- function(data=dt){
 
   #cat("Fixing Union Names")
   data[,Plot_Labor_Union:=Labor_Union]
-  # data[,Plot_Labor_Union:=gsub("&", "and", Labor_Union)]
-  # for(ii in 1:nrow(dict)){
-  #   srch <- dict$Name[ii]
-  #   repl <- ifelse(dict$Render.National.Union.As[ii]== "",
-  #                  dict$Render.IU.As[ii], dict$Render.National.Union.As[ii])
-  #
-  #   data[,Plot_Labor_Union:=gsub(srch, repl, Plot_Labor_Union, ignore.case = T)]
-  #   data[,Plot_Labor_Union:=gsub(paste0("[[:space:]*]\\(",repl,"\\)"), "", Plot_Labor_Union, ignore.case = T)] ### clean up
-  #   data[,Plot_Labor_Union:=gsub(paste0(", ", repl), "", Plot_Labor_Union, ignore.case = T)]
-  #
-  # }
+  data[,National:=character(nrow(data))]
+  data[,National_Count:=0]
+  data[,tmp_Labor_Union:=gsub("&", "and", Labor_Union)]
+  for(ii in 1:nrow(dict)){
+    srch <- dict$Name[ii]
+    repl <- ifelse(dict$National[ii]== "",
+                   dict$International[ii], dict$National[ii])
+
+    tmp <- 1*grepl(srch, data$tmp_Labor_Union, ignore.case = T)
+    
+    data[tmp == 1 & National_Count==0, National := repl ]
+    data[tmp == 1 & National_Count==0, National_Count := 1 ]
+    
+    data[tmp == 1 & National != repl, National_Count := National_Count + 1 ]
+    
+  }
+  
+  nationals <- unique(ifelse(dict$National=="", dict$International, dict$National))
+
+  for(ii in 1:length(nationals)){
+    srch <- nationals[ii]
+    
+    tmp <- 1*grepl(paste0("(\\W|\\b|\\d)",srch, "(\\W|\\b|\\d)"), data$tmp_Labor_Union, ignore.case = T)
+    
+    data[tmp == 1 & National_Count==0, National := srch ]
+    data[tmp == 1 & National_Count==0, National_Count := 1 ]
+    
+    data[tmp == 1 & National != srch, National_Count := National_Count + 1 ]
+    
+  }
+  
+  data$Labor_Union[(data$National_Count==0)]
+  
+  data$tmp_Labor_Union <- NULL
 
 
   data[,`Margin`:=(`Votes_For_Union`)/(`Votes_For_Union`+`Votes_Against`)]
@@ -101,18 +124,12 @@ prep_data <- function(data=dt){
 # font <- svglite::font_face("Crimson Pro",
 #                   ttf="https://fonts.googleapis.com/css2?family=Crimson+Pro&display=swap")
 
-create_state_plot <- function(state_abb = NULL, number=10, data=NULL,
-                              state = state.name[state.abb == state_abb],
-                              file_name = here("content", "data", "states",
-                                               state, paste0(state_abb, "_10.png"))){
+create_plot <- function(number=10, data=NULL,
+                        file_name = NULL){
 
-  if( is.null(state_abb )){
-    tmp_dt <- data[Unique==TRUE & Case_Type == "RC" & Status=="Closed"]
-    file_name = here("content", "data", "national",  paste0("national", "_10.png"))
-  } else {
-    tmp_dt <- data[State==state_abb & Unique==TRUE & Case_Type == "RC" & Status=="Closed"]
+  if(is.null(file_name)) stop("Need file name")
+  tmp_dt <- data[Unique==TRUE & Case_Type == "RC" & Status=="Closed"]
 
-  }
 
 
   tmp_dt$City <- tools::toTitleCase(tolower(tmp_dt$City))
@@ -267,21 +284,16 @@ create_state_table_open <- function(state_abb = NULL, data=NULL,
 }
 
 
-create_state_page <- function(state_abb = "CA",
+create_page <- function(title = "California",
                               data=NULL,
-                              state = state.name[state.abb == state_abb],
-                              file_name = here("content", "data", "states", state, "_index.md") ){
+                              file_name = NULL, 
+                              type="state"){
 
-
+  path <- gsub(" ", "_", title)
   if(!dir.exists(dirname(file_name))) dir.create( dirname(file_name))
 
-  if( is.null(state_abb )){
-    tmp_dt <- data[Case_Type == "RC"]
-    file_name = here("content", "tables", "national", "open.html")
-  } else {
-    tmp_dt <- data[State==state_abb & Case_Type == "RC"]
+  tmp_dt <- data[Case_Type == "RC"]
 
-  }
 
 
   tmp_dt[,Ballot_Type:=ifelse(Ballot_Type == "Revised Single Labor Org", "Revised", "Initial")]
@@ -299,34 +311,54 @@ create_state_page <- function(state_abb = "CA",
   open_cases <- nrow(tmp_dt)
   open_cases_waiting <- sum(tmp_dt$Election_Data == "No")
 
+  
+  if(type=="national"){
+    description <- paste0("description: Data on recent union elections in the United States.")
+    recent_stats <- sprintf("Excluding public employees, in the last year there have been %s union elections filed in the United States and %s union elections held. In %s of those elections a new unit was certified. There are currently %s open representation cases and %s of are still waiting to vote.",
+                            clean_num(filed_last_year),
+                            clean_num(voted_last_year), clean_num(cert_last_year),
+                            clean_num(open_cases), clean_num(open_cases_waiting))
+  } else if(type=="union") {
+    description <- paste0("description: Data on recent union elections involving the ", title, ".")
+    recent_stats <- sprintf("Excluding public employees, in the last year there have been %s union elections filed by the %s and %s union elections held. In %s of those elections a new unit was certified. There are currently %s open representation cases and %s of are still waiting to vote.",
+                            clean_num(filed_last_year), title,
+                            clean_num(voted_last_year), clean_num(cert_last_year),
+                            clean_num(open_cases), clean_num(open_cases_waiting))
+  } else if(type=="state") {
+    description <-paste0("description: Data on recent union elections in ", title, ".")
+    recent_stats <- sprintf("Excluding public employees, in the last year there have been %s union elections filed in %s and %s union elections held. In %s of those elections a new unit was certified. There are currently %s open representation cases and %s of are still waiting to vote.",
+                            clean_num(filed_last_year), title,
+                            clean_num(voted_last_year), clean_num(cert_last_year),
+                            clean_num(open_cases), clean_num(open_cases_waiting))
+  } else {
+    stop("Type unknown")
+  }
+  
   tmp <-c("---",
-          paste("title:", state),
-          paste("pagetitle:", state, "Union Elections"),
-          paste0("description: Data on recent union elections in ", state, "."),
+          paste("title:", title),
+          paste("pagetitle:", title, "Union Elections"),
+          description,
           paste0("images: [",
-                 "'data/states/", state, "/", state_abb, "_hist_vic.png', ",
-                 "'data/states/", state, "/", state_abb, "_hist_size.png', ",
-                 "'data/states/", state, "/", state_abb, "_10.png']"),
-          paste0('keywords: ["', state, ' union elections", "', state, ' unions","Union elections"]'),
+                 "'data/states/", path, "/", path, "_hist_vic.png', ",
+                 "'data/states/", path, "/", path, "_hist_size.png', ",
+                 "'data/states/", path, "/", path, "_10.png']"),
+          paste0('keywords: ["', title, ' union elections", "', title, ' unions","Union elections"]'),
           "---",
-          paste("## ", state),
+          paste("## ", title),
           "",
-          sprintf("Excluding public employees, in the last year there have been %s union elections filed in %s and %s union elections held. In %s of those elections a new unit was certified. There are currently %s open representation cases and %s of are still waiting to vote.",
-                  clean_num(filed_last_year), state,
-                  clean_num(voted_last_year), clean_num(cert_last_year),
-                  clean_num(open_cases), clean_num(open_cases_waiting)),
+          recent_stats,
           "",
           paste("### Number Employees in a Union Election by Outcome"),
-          paste0("{{< image src=\"",state_abb, "_hist_vic.png\" >}}"),
+          paste0("{{< image src=\"",path, "_hist_vic.png\" >}}"),
           "",
           paste("### Number of Elections by Unit Size"),
-          paste0("{{< image src=\"",state_abb, "_hist_size.png\" >}}"),
+          paste0("{{< image src=\"",path, "_hist_size.png\" >}}"),
           "",
           paste("### Largest Private Union Elections"),
-          paste0("{{< image src=\"",state_abb, "_10.png\" >}}"),
+          paste0("{{< image src=\"",path, "_10.png\" >}}"),
           "",
           "### Open Election Related Cases",
-          paste0("{{< readtable table=\"/tables/", state, "/open.html\" >}}"),
+          paste0("{{< readtable table=\"/tables/", path, "/open.html\" >}}"),
           ""
           )
 
