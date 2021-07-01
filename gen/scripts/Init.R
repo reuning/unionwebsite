@@ -9,7 +9,7 @@ dt <- fread(here("gen", "data", "recent_election_results.csv"))
 
 dt <- prep_data(dt)
 
-dt[National %in% names(which(table(dt$National) < 25)), National:="Uncoded"]
+dt[National %in% names(which(table(dt$National) < 25)), National:="Other"]
 
 dt[National=="", National:="Uncoded"]
 dt[National_Count>1, National:="Multiple"]
