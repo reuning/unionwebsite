@@ -9,6 +9,7 @@ from selenium.webdriver.support.ui import Select
 #from webdriver_manager.chrome import ChromeDriverManager
 from os.path import abspath
 import requests
+import os
 
 
 
@@ -37,11 +38,20 @@ def get_data(chrome_options,
 
     print(f"Opening Page for {url}")
     browser.get(url)
-    browser.find_element_by_id("download-button").click()
 
-    link = browser.find_element_by_link_text(download_text)
+    try:
+        browser.find_element_by_id("download-button").click()
+    except:
+        print("Download button not found")
 
-    file_url = link.get_attribute("href")
+    try:
+        link = browser.find_element_by_link_text(download_text)
+
+        file_url = link.get_attribute("href")
+    except:
+        print("Download file never prepped")
+
+        
     file = requests.get(file_url)
     print("File Downloaded")
 
