@@ -4,6 +4,7 @@ pagetitle: UMWA Union Elections
 description: Data on recent union elections involving the UMWA.
 images: ['data/union/UMWA/UMWA_hist_vic.png', 'data/union/UMWA/UMWA_hist_size.png', 'data/union/UMWA/UMWA_10.png']
 keywords: ["UMWA union elections", "UMWA unions","Union elections"]
+weight: 1
 ---
 ##  UMWA
 
@@ -20,4 +21,3 @@ Excluding public employees, in the last year there have been 0 union elections f
 
 ### Open Election Related Cases
 {{< readtable table="/tables/union/UMWA_open.html" >}}
-

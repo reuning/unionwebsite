@@ -4,6 +4,7 @@ pagetitle: United States Union Elections
 description: Data on recent union elections in the United States.
 images: ['data/national/United_States_hist_vic.png', 'data/national/United_States_hist_size.png', 'data/national/United_States_10.png']
 keywords: ["United States union elections", "United States unions","Union elections"]
+weight: 1
 ---
 ##  United States
 
@@ -20,4 +21,3 @@ Excluding public employees, in the last year there have been 727 union elections
 
 ### Open Election Related Cases
 {{< readtable table="/tables/national/United_States_open.html" >}}
-

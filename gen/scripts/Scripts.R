@@ -275,7 +275,8 @@ create_table_open <- function(state_abb = NULL, data=NULL,
 create_page <- function(title = "California",
                               data=NULL,
                               file_name = NULL, 
-                              type="states"){
+                              type="states", 
+                        weight=1){
 
   path <- gsub(" ", "_", title)
   if(!dir.exists(dirname(file_name))) dir.create( dirname(file_name))
@@ -343,6 +344,7 @@ create_page <- function(title = "California",
           description,
           images,
           paste0('keywords: ["', title, ' union elections", "', title, ' unions","Union elections"]'),
+          paste0("weight: ", weight),
           "---",
           paste("## ", title),
           "",
