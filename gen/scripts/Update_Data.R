@@ -81,7 +81,7 @@ for(ii in 1:nrow(open_dt)){
   }
 
   open_dt$`Labor Union1`[ii] <- union
-  Sys.sleep((runif(1, 0, .1)))
+  Sys.sleep((runif(1, .1, .3)))
 }
 
 
