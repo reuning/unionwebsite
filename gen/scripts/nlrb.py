@@ -10,7 +10,7 @@ from selenium.webdriver.support.ui import Select
 from os.path import abspath
 import requests
 import os
-
+import traceback
 
 
 download_folder = abspath("gen/data")
@@ -43,6 +43,7 @@ def get_data(chrome_options,
         browser.find_element_by_id("download-button").click()
     except:
         print("Download button not found")
+        raise
 
     try:
         link = browser.find_element_by_link_text(download_text)
@@ -50,8 +51,9 @@ def get_data(chrome_options,
         file_url = link.get_attribute("href")
     except:
         print("Download file never prepped")
+        raise
 
-        
+
     file = requests.get(file_url)
     print("File Downloaded")
 
@@ -77,10 +79,11 @@ while check < 5:
     try:
         print("Attempt " + str(check + 1))
         get_data(chrome_options = options,
-                url=r"https://www.nlrb.gov/reports/graphs-data/recent-election-results/",
+                url=r"https://www.nlrb.gov/reports/graphs-data/recent-election-results",
                 download_text= "Recent Election Results (All Dates)",
                 file_out="temp.csv")
         check = 6
 
-    except:
+    except Exception:
+        print(traceback.format_exc())
         check += 1
