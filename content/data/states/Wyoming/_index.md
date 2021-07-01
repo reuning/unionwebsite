@@ -4,6 +4,7 @@ pagetitle: Wyoming Union Elections
 description: Data on recent union elections in Wyoming.
 images: ['data/states/Wyoming/Wyoming_hist_vic.png', 'data/states/Wyoming/Wyoming_hist_size.png', 'data/states/Wyoming/Wyoming_10.png']
 keywords: ["Wyoming union elections", "Wyoming unions","Union elections"]
+weight: 1
 ---
 ##  Wyoming
 

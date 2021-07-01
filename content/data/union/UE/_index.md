@@ -4,6 +4,7 @@ pagetitle: UE Union Elections
 description: Data on recent union elections involving the UE.
 images: ['data/union/UE/UE_hist_vic.png', 'data/union/UE/UE_hist_size.png', 'data/union/UE/UE_10.png']
 keywords: ["UE union elections", "UE unions","Union elections"]
+weight: 1
 ---
 ##  UE
 

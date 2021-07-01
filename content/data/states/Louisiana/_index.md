@@ -4,6 +4,7 @@ pagetitle: Louisiana Union Elections
 description: Data on recent union elections in Louisiana.
 images: ['data/states/Louisiana/Louisiana_hist_vic.png', 'data/states/Louisiana/Louisiana_hist_size.png', 'data/states/Louisiana/Louisiana_10.png']
 keywords: ["Louisiana union elections", "Louisiana unions","Union elections"]
+weight: 1
 ---
 ##  Louisiana
 

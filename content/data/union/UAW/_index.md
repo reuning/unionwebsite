@@ -4,10 +4,11 @@ pagetitle: UAW Union Elections
 description: Data on recent union elections involving the UAW.
 images: ['data/union/UAW/UAW_hist_vic.png', 'data/union/UAW/UAW_hist_size.png', 'data/union/UAW/UAW_10.png']
 keywords: ["UAW union elections", "UAW unions","Union elections"]
+weight: 1
 ---
 ##  UAW
 
-Excluding public employees, in the last year there have been 14 union elections filed by the UAW and 13 union elections held. In NA of those elections a new unit was certified. There are currently 3 open representation cases and 3 of are still waiting to vote.
+Excluding public employees, in the last year there have been 22 union elections filed by the UAW and 14 union elections held. In NA of those elections a new unit was certified. There are currently 10 open representation cases and 10 of are still waiting to vote.
 
 ### Number Employees in a Union Election by Outcome
 {{< image src="UAW_hist_vic.png" >}}

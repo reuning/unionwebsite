@@ -4,10 +4,11 @@ pagetitle: Michigan Union Elections
 description: Data on recent union elections in Michigan.
 images: ['data/states/Michigan/Michigan_hist_vic.png', 'data/states/Michigan/Michigan_hist_size.png', 'data/states/Michigan/Michigan_10.png']
 keywords: ["Michigan union elections", "Michigan unions","Union elections"]
+weight: 1
 ---
 ##  Michigan
 
-Excluding public employees, in the last year there have been 24 union elections filed in Michigan and 29 union elections held. In NA of those elections a new unit was certified. There are currently 4 open representation cases and 3 of are still waiting to vote.
+Excluding public employees, in the last year there have been 29 union elections filed in Michigan and 28 union elections held. In NA of those elections a new unit was certified. There are currently 9 open representation cases and 9 of are still waiting to vote.
 
 ### Number Employees in a Union Election by Outcome
 {{< image src="Michigan_hist_vic.png" >}}

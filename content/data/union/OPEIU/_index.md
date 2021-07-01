@@ -4,10 +4,11 @@ pagetitle: OPEIU Union Elections
 description: Data on recent union elections involving the OPEIU.
 images: ['data/union/OPEIU/OPEIU_hist_vic.png', 'data/union/OPEIU/OPEIU_hist_size.png', 'data/union/OPEIU/OPEIU_10.png']
 keywords: ["OPEIU union elections", "OPEIU unions","Union elections"]
+weight: 1
 ---
 ##  OPEIU
 
-Excluding public employees, in the last year there have been 7 union elections filed by the OPEIU and 9 union elections held. In 9 of those elections a new unit was certified. There are currently 0 open representation cases and 0 of are still waiting to vote.
+Excluding public employees, in the last year there have been 12 union elections filed by the OPEIU and 9 union elections held. In 9 of those elections a new unit was certified. There are currently 5 open representation cases and 5 of are still waiting to vote.
 
 ### Number Employees in a Union Election by Outcome
 {{< image src="OPEIU_hist_vic.png" >}}

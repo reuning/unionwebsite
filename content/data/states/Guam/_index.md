@@ -4,6 +4,7 @@ pagetitle: Guam Union Elections
 description: Data on recent union elections in Guam.
 images: ['data/states/Guam/Guam_hist_vic.png', 'data/states/Guam/Guam_hist_size.png', 'data/states/Guam/Guam_10.png']
 keywords: ["Guam union elections", "Guam unions","Union elections"]
+weight: 1
 ---
 ##  Guam
 

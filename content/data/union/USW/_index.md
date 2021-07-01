@@ -4,10 +4,11 @@ pagetitle: USW Union Elections
 description: Data on recent union elections involving the USW.
 images: ['data/union/USW/USW_hist_vic.png', 'data/union/USW/USW_hist_size.png', 'data/union/USW/USW_10.png']
 keywords: ["USW union elections", "USW unions","Union elections"]
+weight: 1
 ---
 ##  USW
 
-Excluding public employees, in the last year there have been 8 union elections filed by the USW and 12 union elections held. In 7 of those elections a new unit was certified. There are currently 0 open representation cases and 0 of are still waiting to vote.
+Excluding public employees, in the last year there have been 10 union elections filed by the USW and 12 union elections held. In 7 of those elections a new unit was certified. There are currently 3 open representation cases and 3 of are still waiting to vote.
 
 ### Number Employees in a Union Election by Outcome
 {{< image src="USW_hist_vic.png" >}}

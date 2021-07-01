@@ -4,6 +4,7 @@ pagetitle: IAFF Union Elections
 description: Data on recent union elections involving the IAFF.
 images: ['data/union/IAFF/IAFF_hist_vic.png', 'data/union/IAFF/IAFF_hist_size.png', 'data/union/IAFF/IAFF_10.png']
 keywords: ["IAFF union elections", "IAFF unions","Union elections"]
+weight: 1
 ---
 ##  IAFF
 

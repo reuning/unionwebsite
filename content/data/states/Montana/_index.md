@@ -4,6 +4,7 @@ pagetitle: Montana Union Elections
 description: Data on recent union elections in Montana.
 images: ['data/states/Montana/Montana_hist_vic.png', 'data/states/Montana/Montana_hist_size.png', 'data/states/Montana/Montana_10.png']
 keywords: ["Montana union elections", "Montana unions","Union elections"]
+weight: 1
 ---
 ##  Montana
 

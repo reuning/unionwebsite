@@ -4,6 +4,7 @@ pagetitle: Rhode Island Union Elections
 description: Data on recent union elections in Rhode Island.
 images: ['data/states/Rhode_Island/Rhode_Island_hist_vic.png', 'data/states/Rhode_Island/Rhode_Island_hist_size.png', 'data/states/Rhode_Island/Rhode_Island_10.png']
 keywords: ["Rhode Island union elections", "Rhode Island unions","Union elections"]
+weight: 1
 ---
 ##  Rhode Island
 

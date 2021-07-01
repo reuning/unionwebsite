@@ -4,6 +4,7 @@ pagetitle: UNITE HERE Union Elections
 description: Data on recent union elections involving the UNITE HERE.
 images: ['data/union/UNITE_HERE/UNITE_HERE_hist_vic.png', 'data/union/UNITE_HERE/UNITE_HERE_hist_size.png', 'data/union/UNITE_HERE/UNITE_HERE_10.png']
 keywords: ["UNITE HERE union elections", "UNITE HERE unions","Union elections"]
+weight: 1
 ---
 ##  UNITE HERE
 

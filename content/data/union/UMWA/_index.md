@@ -21,3 +21,4 @@ Excluding public employees, in the last year there have been 0 union elections f
 
 ### Open Election Related Cases
 {{< readtable table="/tables/union/UMWA_open.html" >}}
+
