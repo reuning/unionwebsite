@@ -69,13 +69,13 @@ for(state in state.abb){
 for(union in nationals){
   tmp_data = dt[dt$National == union]
   union_file <- gsub(" ", "_", union)
-  
+  weight <- ifelse(union %in% c("Other", "Uncoded","Multiple"), 2, 1)
   create_page(title = union, 
               data=tmp_data, 
               file_name = here("content", "data", "union", 
                                union_file, 
                                "_index.md"), 
-              type = "union")
+              type = "union", weight=weight)
   
   create_plot(data=tmp_data, 
               file_name = here("content", "data", "union", 
