@@ -66,7 +66,7 @@ for(ii in 1:nrow(open_dt)){
 
   url <- paste0("https://www.nlrb.gov/case/", open_dt$`Case`[ii])
   cat(url, "\n")
-  page <- read_html(url)
+  page <- read_html(curl::curl(url))
   if(is.na(page %>% html_node("table.Participants"))) {
     cat("No Table Found \n")
     next
