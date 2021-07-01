@@ -2,6 +2,20 @@ library(data.table)
 library(here)
 library(rvest)
 
+retry_page <- function(url){
+  check <- 0
+  while(check < 5){
+    page <- try(read_html(curl::curl(url)))
+    if(class(page)[1]=="try-error"){
+      check <- check + 1
+      sleep(10)
+    } else {
+      return(page)
+    }
+  }
+  stop("Cannot Download page after 5 tries")
+}
+
 dt <- fread(here("gen", "data", "recent_election_results.csv"))
 names(dt)[21] <- "Votes Against"
 
@@ -66,7 +80,7 @@ for(ii in 1:nrow(open_dt)){
 
   url <- paste0("https://www.nlrb.gov/case/", open_dt$`Case`[ii])
   cat(url, "\n")
-  page <- read_html(curl::curl(url))
+  page <- retry_page(url)
   if(is.na(page %>% html_node("table.Participants"))) {
     cat("No Table Found \n")
     next
