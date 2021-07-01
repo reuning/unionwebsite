@@ -8,7 +8,7 @@ retry_page <- function(url){
     page <- try(read_html(curl::curl(url)))
     if(class(page)[1]=="try-error"){
       check <- check + 1
-      sleep(10)
+      Sys.sleep(10)
     } else {
       return(page)
     }
