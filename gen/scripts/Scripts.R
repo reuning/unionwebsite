@@ -79,31 +79,31 @@ prep_data <- function(data=dt){
 
     repl <- dict$International[ii]
     tmp <- 1*grepl(srch, data$tmp_Labor_Union, ignore.case = T)
-    
+
     data[tmp == 1 & National_Count==0, National := repl ]
     data[tmp == 1 & National_Count==0, National_Count := 1 ]
-    
+
     data[tmp == 1 & National != repl, National_Count := National_Count + 1 ]
-    
+
   }
-  
+
   nationals <- unique(dict$International)
   nationals <- nationals[nationals!=""]
   for(ii in 1:length(nationals)){
     srch <- nationals[ii]
-    
+
     tmp <- 1*grepl(paste0("(\\W|\\b|\\d)",srch, "(\\W|\\b|\\d)"), data$tmp_Labor_Union, ignore.case = T)
-    
+
     data[tmp == 1 & National_Count==0, National := srch ]
     data[tmp == 1 & National_Count==0, National_Count := 1 ]
-    
+
     data[tmp == 1 & National != srch, National_Count := National_Count + 1 ]
     # print(ii)
     # print(sum(data$National_Count))
   }
-  
+
   # data$Labor_Union[(data$National_Count==0)]
-  
+
   data$tmp_Labor_Union <- NULL
 
 
@@ -230,9 +230,9 @@ create_time_plot <- function(data=NULL,
 
 create_table_open <- function(state_abb = NULL, data=NULL,
                                     file_name=NULL){
-  
+
   if(is.null(file_name)) stop("Need file name")
-  
+
   tmp_dt <- data[Case_Type == "RC" & Status=="Open"]
   tmp_dt <- setorder(tmp_dt, -`Date_Filed`)
 
@@ -274,8 +274,8 @@ create_table_open <- function(state_abb = NULL, data=NULL,
 
 create_page <- function(title = "California",
                               data=NULL,
-                              file_name = NULL, 
-                              type="states", 
+                              file_name = NULL,
+                              type="states",
                         weight=1){
 
   path <- gsub(" ", "_", title)
@@ -291,7 +291,7 @@ create_page <- function(title = "California",
   voted_last_year <- sum((tmp_dt$Unique == TRUE) & tmp_dt$Tally_Date > (Sys.Date() - 365), na.rm=T)
   if(is.na(voted_last_year)) voted_last_year <- 0
   cert_last_year <- sum((tmp_dt$Unique == TRUE) & tmp_dt$Tally_Date > (Sys.Date() - 365) &
-                           tmp_dt$Union_Cer == "Yes")
+                           tmp_dt$Union_Cer == "Yes", na.rm=T)
 
 
   tmp_dt <- tmp_dt[Status=="Open"]
@@ -300,7 +300,7 @@ create_page <- function(title = "California",
   open_cases <- nrow(tmp_dt)
   open_cases_waiting <- sum(tmp_dt$Election_Data == "No")
 
-  
+
   if(type=="national"){
     description <- paste0("description: Data on recent union elections in the United States.")
     recent_stats <- sprintf("Excluding public employees, in the last year there have been %s union elections filed in the United States and %s union elections held. In %s of those elections a new unit was certified. There are currently %s open representation cases and %s of are still waiting to vote.",
@@ -337,7 +337,7 @@ create_page <- function(title = "California",
   } else {
     stop("Type unknown")
   }
-  
+
   tmp <-c("---",
           paste("title:", title),
           paste("pagetitle:", title, "Union Elections"),
