@@ -4,7 +4,7 @@ pagetitle: Other Union Elections
 description: Data on recent union elections involving the Other.
 images: ['data/union/Other/Other_hist_vic.png', 'data/union/Other/Other_hist_size.png', 'data/union/Other/Other_10.png']
 keywords: ["Other union elections", "Other unions","Union elections"]
-weight: 1
+weight: 2
 ---
 ##  Other
 

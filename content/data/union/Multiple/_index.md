@@ -4,7 +4,7 @@ pagetitle: Multiple Union Elections
 description: Data on recent union elections involving the Multiple.
 images: ['data/union/Multiple/Multiple_hist_vic.png', 'data/union/Multiple/Multiple_hist_size.png', 'data/union/Multiple/Multiple_10.png']
 keywords: ["Multiple union elections", "Multiple unions","Union elections"]
-weight: 1
+weight: 2
 ---
 ##  Multiple
 
