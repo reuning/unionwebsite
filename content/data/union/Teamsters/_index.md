@@ -8,7 +8,7 @@ weight: 1
 ---
 ##  Teamsters
 
-Excluding public employees, in the last year there have been 196 union elections filed by the Teamsters and 197 union elections held. In 116 of those elections a new unit was certified. There are currently 61 open representation cases and 45 of are still waiting to vote.
+Excluding public employees, in the last year there have been 193 union elections filed by the Teamsters and 194 union elections held. In 115 of those elections a new unit was certified. There are currently 61 open representation cases and 48 of are still waiting to vote.
 
 ### Number Employees in a Union Election by Outcome
 {{< image src="Teamsters_hist_vic.png" >}}
