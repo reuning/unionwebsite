@@ -68,12 +68,15 @@ prep_data <- function(data=dt){
   data[is.na(`Num_Eligible_Voters`) & Election_Data=="Yes",`Num_Eligible_Voters`:=0 ]
 
   #cat("Fixing Union Names")
+  data[,Labor_Union:=gsub("[[:space:]]", " ", Labor_Union)] ## cleaning in case
   data[,Plot_Labor_Union:=Labor_Union]
   data[,National:=character(nrow(data))]
   data[,National_Count:=0]
   data[,tmp_Labor_Union:=gsub("&", "and", Labor_Union)]
+  
+  
   for(ii in 1:nrow(dict)){
-    srch <- dict$Name[ii]
+    srch <- gsub("[[:space:]]", " ", dict$Name[ii]) ## annoyingly cleaning
     # repl <- ifelse(dict$National[ii]== "",
     #                dict$International[ii], dict$National[ii])
 
