@@ -74,15 +74,22 @@ prep_data <- function(data=dt){
   data[,National_Count:=0]
   data[,tmp_Labor_Union:=gsub("&", "and", Labor_Union)]
   
+  doubles <- dict$National[dict$National!=""]
+  names(doubles) <- dict$International[dict$National!=""]
   
   for(ii in 1:nrow(dict)){
     srch <- gsub("[[:space:]]", " ", dict$Name[ii]) ## annoyingly cleaning
-    # repl <- ifelse(dict$National[ii]== "",
-    #                dict$International[ii], dict$National[ii])
+    repl <- ifelse(dict$National[ii]== "",
+                   dict$International[ii], dict$National[ii])
 
-    repl <- dict$International[ii]
+    # repl <- dict$International[ii]
     tmp <- 1*grepl(srch, data$tmp_Labor_Union, ignore.case = T)
-
+    if(repl %in% names(doubles)) { 
+      tmp[(1*grepl(paste0(dict[match(doubles[repl], dict$National), "Name"],collapse = "|"), 
+                   data$tmp_Labor_Union, 
+                   ignore.case = T)) == tmp] <- 0 
+    }
+    
     data[tmp == 1 & National_Count==0, National := repl ]
     data[tmp == 1 & National_Count==0, National_Count := 1 ]
 
@@ -90,13 +97,23 @@ prep_data <- function(data=dt){
 
   }
 
-  nationals <- unique(dict$International)
+  nationals <- unique(c(dict$International, dict$National))
+  
   nationals <- nationals[nationals!=""]
   for(ii in 1:length(nationals)){
     srch <- nationals[ii]
 
-    tmp <- 1*grepl(paste0("(\\W|\\b|\\d)",srch, "(\\W|\\b|\\d)"), data$tmp_Labor_Union, ignore.case = T)
+    tmp <- 1*grepl(paste0("(\\W|\\b|\\d)",srch, "(\\W|\\b|\\d)"), 
+                   data$tmp_Labor_Union, ignore.case = T)
 
+    if(srch %in% names(doubles)) { 
+      tmp[(1*grepl(paste0(c(doubles[srch], 
+                            dict[match(doubles[repl], dict$National), "Name"])
+                          ,collapse = "|"), 
+                   data$tmp_Labor_Union, 
+                   ignore.case = T)) == tmp] <- 0 
+    }
+    
     data[tmp == 1 & National_Count==0, National := srch ]
     data[tmp == 1 & National_Count==0, National_Count := 1 ]
 
