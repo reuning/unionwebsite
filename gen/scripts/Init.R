@@ -9,6 +9,7 @@ dt <- fread(here("gen", "data", "recent_election_results.csv"))
 
 dt <- prep_data(dt)
 
+# View(dt[National_Count > 1])
 # View(table(dt[National_Count == 0, Labor_Union]))
 
 dt[National %in% names(which(table(dt$National) < 25)), National:="Other"]

@@ -85,7 +85,10 @@ prep_data <- function(data=dt){
     # repl <- dict$International[ii]
     tmp <- 1*grepl(srch, data$tmp_Labor_Union, ignore.case = T)
     if(repl %in% names(doubles)) { 
-      tmp[(1*grepl(paste0(dict[match(doubles[repl], dict$National), "Name"],collapse = "|"), 
+      double_sel <- repl == names(doubles)
+      tmp[(1*grepl(paste0(c(dict[dict$National %in% doubles[double_sel], "Name"],
+                          dict[dict$National %in% doubles[double_sel], "National"]),
+                          collapse = "|"), 
                    data$tmp_Labor_Union, 
                    ignore.case = T)) == tmp] <- 0 
     }
@@ -107,9 +110,11 @@ prep_data <- function(data=dt){
                    data$tmp_Labor_Union, ignore.case = T)
 
     if(srch %in% names(doubles)) { 
-      tmp[(1*grepl(paste0(c(doubles[srch], 
-                            dict[match(doubles[repl], dict$National), "Name"])
-                          ,collapse = "|"), 
+      double_sel <- srch == names(doubles)
+      
+      tmp[(1*grepl(paste0(c(dict[dict$National %in% doubles[double_sel], "Name"],
+                            dict[dict$National %in% doubles[double_sel], "National"]),
+                          collapse = "|"), 
                    data$tmp_Labor_Union, 
                    ignore.case = T)) == tmp] <- 0 
     }
