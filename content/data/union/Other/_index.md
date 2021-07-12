@@ -8,7 +8,7 @@ weight: 2
 ---
 ##  Other
 
-Excluding public employees, in the last year there have been 19 union elections filed by the Other and 20 union elections held. In 15 of those elections a new unit was certified. There are currently 7 open representation cases and 5 of are still waiting to vote.
+Excluding public employees, in the last year there have been 20 union elections filed by the Other and 21 union elections held. In 16 of those elections a new unit was certified. There are currently 7 open representation cases and 5 of are still waiting to vote.
 
 ### Number Employees in a Union Election by Outcome
 {{< image src="Other_hist_vic.png" >}}
