@@ -4,11 +4,11 @@ library(rvest)
 
 retry_page <- function(url){
   check <- 0
-  while(check < 5){
-    page <- try(read_html(curl::curl(url)))
+  while(check < 20){
+    page <- try(read_html(curl::curl(url, handle = )))
     if(class(page)[1]=="try-error"){
       check <- check + 1
-      Sys.sleep(10)
+      Sys.sleep(runif(1))
     } else {
       return(page)
     }

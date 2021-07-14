@@ -23,7 +23,7 @@ cols <- c(as.vector(which(apply(open_dt, 2,
 coded_dt <-
   fread(here("gen", "data", "elections_with_location.csv"))
 
-full_dt <- merge(open_dt, unique(coded_dt[, c(3, 4, 32:43)]), all.x = T)
+full_dt <- merge(open_dt, unique(coded_dt[, c(3, 4, 33:44)]), all.x = T)
 
 if (any(is.na(full_dt$seached))) {
   to_code_dt <- full_dt[is.na(seached)]
