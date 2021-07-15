@@ -64,26 +64,29 @@ def get_data(chrome_options,
     return True
 
 check = 0
-while check < 5:
+while check < 10:
     try:
         print("Attempt " + str(check + 1))
         get_data(chrome_options = options)
-        check = 6
+        check = 11
 
-    except:
+    except Exception:
+        print(traceback.format_exc())
         check += 1
+        os.sleep(5)
 
 
 check = 0
-while check < 5:
+while check < 10:
     try:
         print("Attempt " + str(check + 1))
         get_data(chrome_options = options,
                 url=r"https://www.nlrb.gov/reports/graphs-data/recent-election-results",
                 download_text= "Recent Election Results (All Dates)",
                 file_out="temp.csv")
-        check = 6
+        check = 11
 
     except Exception:
         print(traceback.format_exc())
         check += 1
+        os.sleep(5)
