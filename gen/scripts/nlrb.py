@@ -9,7 +9,7 @@ from selenium.webdriver.support.ui import Select
 #from webdriver_manager.chrome import ChromeDriverManager
 from os.path import abspath
 import requests
-import os
+import time
 import traceback
 
 
@@ -73,7 +73,7 @@ while check < 10:
     except Exception:
         print(traceback.format_exc())
         check += 1
-        os.sleep(5)
+        time.sleep(5)
 
 
 check = 0
@@ -89,4 +89,4 @@ while check < 10:
     except Exception:
         print(traceback.format_exc())
         check += 1
-        os.sleep(5)
+        time.sleep(5)
