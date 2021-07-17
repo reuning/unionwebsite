@@ -33,7 +33,7 @@ def get_data(chrome_options,
 
     browser = webdriver.Chrome(options=chrome_options)
     browser.set_page_load_timeout(-1)
-    browser.implicitly_wait(120)
+    browser.implicitly_wait(240)
 
 
     print(f"Opening Page for {url}")
