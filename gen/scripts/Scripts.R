@@ -14,7 +14,8 @@ state.abb <- c(state.abb, "PR", "GU", "VI")
 clean_num <- function(x) scales::number(x, big.mark=",")
 
 prep_data <- function(data=dt){
-  dict <- read.csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vTQj4UzxBycuPUVmIXM9RUnTWq0dwHICOk-phgwyfjqZAm8lsjl3D4JTLz73aa4dnOJ7gXmhehPGfu8/pub?gid=0&single=true&output=csv")
+  dict <- read.csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vTQj4UzxBycuPUVmIXM9RUnTWq0dwHICOk-phgwyfjqZAm8lsjl3D4JTLz73aa4dnOJ7gXmhehPGfu8/pub?gid=0&single=true&output=csv", 
+                   encoding="UTF-8")
 
 
   rename <- c("Case_Name" = "Case Name",
@@ -78,7 +79,7 @@ prep_data <- function(data=dt){
   names(doubles) <- dict$International[dict$National!=""]
   
   for(ii in 1:nrow(dict)){
-    srch <- gsub("[[:space:]]", " ", dict$Name[ii]) ## annoyingly cleaning
+    srch <- gsub("[[:space:]]|\u00A0", " ", dict$Name[ii]) ## annoyingly cleaning
     repl <- ifelse(dict$National[ii]== "",
                    dict$International[ii], dict$National[ii])
 

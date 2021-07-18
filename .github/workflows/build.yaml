@@ -44,12 +44,12 @@ jobs:
       - name: Build Plots and Pages
         run: |
           Rscript gen/scripts/Init.R
-          Rscript gen/scripts/Mapping.R
-          git config user.name github-actions
-          git config user.email github-actions@github.com
-          git add .
-          git commit -m "Updated Plots"
-          git push
-          git checkout production
-          git merge main
-          git push
+#          Rscript gen/scripts/Mapping.R
+#          git config user.name github-actions
+#          git config user.email github-actions@github.com
+#          git add .
+#          git commit -m "Updated Plots"
+#          git push
+#          git checkout production
+#          git merge main
+#          git push

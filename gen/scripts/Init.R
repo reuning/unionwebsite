@@ -19,9 +19,6 @@ dt[National_Count>1, National:="Multiple"]
 
 nationals <- unique(dt$National)
 
-print("Checking\n\n")
-print(dt[Case_Name=="Albany Medical Center"])
-print("\n")
 
 dir.create(here("content", "tables"))
 ### National Plots
