@@ -57,6 +57,7 @@ def get_data(chrome_options,
 
         try:
             file = requests.get(file_url)
+            ii = 5
         except:
             ii += 1
             print("Downloaded Failed")
@@ -64,7 +65,6 @@ def get_data(chrome_options,
         if ii == 4:
             raise
 
-        ii = 5
 
     with open(download_folder + "/" +  file_out,'wb') as f:
       f.write(file.content)
