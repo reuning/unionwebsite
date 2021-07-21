@@ -45,17 +45,26 @@ def get_data(chrome_options,
         print("Download button not found")
         raise
 
-    try:
-        link = browser.find_element_by_link_text(download_text)
 
-        file_url = link.get_attribute("href")
-    except:
-        print("Download file never prepped")
-        raise
+    ii = 0
+    while ii < 5
+        try:
+            link = browser.find_element_by_link_text(download_text)
+            file_url = link.get_attribute("href")
+        except:
+            ii += 1
+            print("Download file never prepped")
 
+        try:
+            file = requests.get(file_url)
+        except:
+            ii += 1
+            print("Downloaded Failed")
 
-    file = requests.get(file_url)
-    print("File Downloaded")
+        if ii == 4:
+            raise
+
+        ii = 5
 
     with open(download_folder + "/" +  file_out,'wb') as f:
       f.write(file.content)
@@ -64,7 +73,7 @@ def get_data(chrome_options,
     return True
 
 check = 0
-while check < 10:
+while check < 5:
     try:
         print("Attempt " + str(check + 1))
         get_data(chrome_options = options)
@@ -77,7 +86,7 @@ while check < 10:
 
 
 check = 0
-while check < 10:
+while check < 5:
     try:
         print("Attempt " + str(check + 1))
         get_data(chrome_options = options,
