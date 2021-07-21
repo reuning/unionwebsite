@@ -7,11 +7,11 @@ retry_page <- function(url){
   while(check < 20){
     con <- curl::curl(url)
     page <- try(read_html(con))
-    close(con)
     if(class(page)[1]=="try-error"){
       check <- check + 1
       Sys.sleep(runif(1))
     } else {
+      close(con)
       return(page)
     }
   }
