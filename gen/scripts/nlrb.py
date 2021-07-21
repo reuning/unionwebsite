@@ -2,7 +2,8 @@
 # -*- coding: utf-8 -*-
 
 
-
+from retry import retry
+from timeout_decorator import timeout, TimeoutError
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.support.ui import Select
@@ -33,11 +34,21 @@ def get_data(chrome_options,
 
     browser = webdriver.Chrome(options=chrome_options)
     browser.set_page_load_timeout(-1)
-    browser.implicitly_wait(240)
+    browser.implicitly_wait(30)
 
 
     print(f"Opening Page for {url}")
-    browser.get(url)
+    ii = 0
+    while ii < 5:
+        try:
+            browser.get(url)
+            ii = 5
+        except:
+            ii += 1
+            pass
+        if ii == 4:
+            raise ValueError("Failed to open url after multiple tries")
+
 
     try:
         browser.find_element_by_id("download-button").click()
@@ -45,6 +56,7 @@ def get_data(chrome_options,
         print("Download button not found")
         raise
 
+    browser.implicitly_wait(240)
 
     ii = 0
     while ii < 5:
@@ -52,7 +64,6 @@ def get_data(chrome_options,
             link = browser.find_element_by_link_text(download_text)
             file_url = link.get_attribute("href")
         except:
-            ii += 1
             print("Download file never prepped")
 
         try:
@@ -63,7 +74,7 @@ def get_data(chrome_options,
             print("Downloaded Failed")
 
         if ii == 4:
-            raise
+            raise ValueError("Failed download after multiple tries")
 
 
     with open(download_folder + "/" +  file_out,'wb') as f:
