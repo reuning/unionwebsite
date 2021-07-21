@@ -46,8 +46,8 @@ def get_data(chrome_options,
         raise
 
 
-    ii = 0:
-    while ii < 5
+    ii = 0
+    while ii < 5:
         try:
             link = browser.find_element_by_link_text(download_text)
             file_url = link.get_attribute("href")
