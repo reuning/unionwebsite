@@ -11,7 +11,6 @@ retry_page <- function(url){
       check <- check + 1
       Sys.sleep(runif(1))
     } else {
-      close(con)
       return(page)
     }
   }
