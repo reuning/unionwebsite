@@ -2,8 +2,8 @@ name: Build and deploy
 on:
   push:
     tags:
-      - 0.*
-      - 1.*
+      - v0.*
+      - v1.*
 jobs:
   build:
     if: github.event.base_ref == 'refs/heads/main'
