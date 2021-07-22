@@ -5,7 +5,8 @@ library(rvest)
 retry_page <- function(url){
   check <- 0
   while(check < 20){
-    page <- try(read_html(curl::curl(url, handle = )))
+    con <- curl::curl(url)
+    page <- try(read_html(con))
     if(class(page)[1]=="try-error"){
       check <- check + 1
       Sys.sleep(runif(1))

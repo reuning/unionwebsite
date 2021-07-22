@@ -98,6 +98,7 @@ for(union in nationals){
   #
 }
 
+create_front_page_table(data=dt)
 
 # create_state_time_plot(data=dt)
 # create_state_page(state_abb = "GU")

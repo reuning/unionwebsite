@@ -398,3 +398,49 @@ create_page <- function(title = "California",
 # create_state_table_open(data=dt)
 # create_state_time_plot(data=dt)
 # create_state_plot(data=dt)
+
+
+
+
+create_front_page_table <- function(data=NULL,
+                        type="union",
+                        weight=1){
+  
+
+  
+  tmp_dt <- data[Case_Type == "RC"]
+  tmp_dt <- setorder(tmp_dt, -`Date_Filed`)
+  
+  tmp_dt <- unique(tmp_dt)
+  
+  stat_tab <-  tmp_dt[  Date_Filed >(Sys.Date() - 365), .N, by= .(National,Status)]
+  stat_tab <- dcast(stat_tab, National ~ Status, fill = 0)
+  
+  vic_tab <-  tmp_dt[  Date_Filed >(Sys.Date() - 365) & Status == "Closed",
+                        .N, by= .(National,Union_Cer)]
+  vic_tab <- dcast(vic_tab, National ~ Union_Cer, fill = 0)
+  vic_tab[,Percentage:=scales::percent(Yes/(Yes+No))]
+  vic_tab$No <- NULL
+  
+  full_tab <- merge(vic_tab, stat_tab, all=T)
+  full_tab[is.na(Percentage), Percentage:= "-"]
+  full_tab[is.na(full_tab)] <- 0
+  
+  # tmp_dt$Case <- paste0("<a href='https://www.nlrb.gov/case/", tmp_dt$Case, "'>", tmp_dt$Case, "</a>")
+  tab <- knitr::kable(
+    full_tab[,.(National, Open, Closed, Yes, Percentage)], 
+    format="html",
+    col.names=c("National", "Open Elections", "Closed Elections",
+                "Union Certified", "Percent Certified"), 
+    align="lcccc",
+    digits=0, 
+    table.attr="class='display'"
+  )
+
+  
+  writeLines(tab, con = "content/tables/union/all_ytd.html")
+  
+
+  
+  
+}

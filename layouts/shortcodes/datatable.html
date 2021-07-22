@@ -1,0 +1,4 @@
+<div id="manual-table">
+{{$file := .Get "table"}}
+{{ $file  | readFile | safeHTML }}
+</div>
