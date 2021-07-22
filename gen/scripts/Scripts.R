@@ -422,17 +422,24 @@ create_front_page_table <- function(data=NULL,
   vic_tab[,Percentage:=scales::percent(Yes/(Yes+No))]
   vic_tab$No <- NULL
   
+  emp_tab <-  tmp_dt[  Date_Filed >(Sys.Date() - 365) & Status == "Closed" 
+                       & Union_Cer == "Yes",
+                       .(median(Num_Eligible_Voters, na.rm=T),
+                       sum(Num_Eligible_Voters, na.rm=T)), by= .(National)]
+  names(emp_tab)[2:3] <- c("Median", "Total")
   full_tab <- merge(vic_tab, stat_tab, all=T)
   full_tab[is.na(Percentage), Percentage:= "-"]
+  full_tab <- merge(full_tab, emp_tab)
   full_tab[is.na(full_tab)] <- 0
   
   # tmp_dt$Case <- paste0("<a href='https://www.nlrb.gov/case/", tmp_dt$Case, "'>", tmp_dt$Case, "</a>")
   tab <- knitr::kable(
-    full_tab[,.(National, Open, Closed, Yes, Percentage)], 
+    full_tab[,.(National, Open, Closed, Yes, Percentage, Median, Total)], 
     format="html",
     col.names=c("National", "Open Elections", "Closed Elections",
-                "Union Certified", "Percent Certified"), 
-    align="lcccc",
+                "Union Certified", "Percent Certified", 
+                "Median Successful BU", "Total Workers Unionized"), 
+    align="lcccccc",
     digits=0, 
     table.attr="class='display'"
   )

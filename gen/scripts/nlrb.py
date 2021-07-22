@@ -44,12 +44,15 @@ def chunks(l, n):
     for i in range(0, n):
         yield i, l[i::n]
 
-def get_split_data(chrome_options, download_text, file_out, splits = 4):
+def get_split_data(chrome_options, download_text, file_out, splits = 5):
     url_start = r"https://www.nlrb.gov/reports/graphs-data/recent-election-results"
     skip = [11, 17, 23, 24, 26,30]
     districts = [i for i in range(1, 33) if i not in skip]
 
     for ii, district_chunk in chunks(districts, splits):
+        if os.path.isfile(download_folder + "/tmp" + str(ii) + ".csv"):
+            continue
+
         pars = {"r[" + str(i)+ "]" : str(i) for i in district_chunk}
         url = url_start + "?" + urllib.parse.urlencode(pars)
         get_data(chrome_options = chrome_options,
@@ -122,7 +125,7 @@ while check < 5:
 
 
 check = 0
-while check < 5:
+while check < 7:
     try:
         print("Attempt " + str(check + 1))
         get_split_data(chrome_options = options,
