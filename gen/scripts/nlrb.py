@@ -50,6 +50,9 @@ def get_split_data(chrome_options, download_text, file_out, splits = 8):
     districts = [i for i in range(1, 33) if i not in skip]
 
     for ii, district_chunk in chunks(districts, splits):
+        if os.path.isfile(download_folder + "/tmp" + str(ii) + ".csv"):
+            continue
+            
         pars = {"r[" + str(i)+ "]" : str(i) for i in district_chunk}
         url = url_start + "?" + urllib.parse.urlencode(pars)
         get_data(chrome_options = chrome_options,
