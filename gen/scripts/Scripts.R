@@ -404,7 +404,9 @@ create_page <- function(title = "California",
 
 create_front_page_table <- function(data=NULL,
                         type="union",
-                        weight=1){
+                        weight=1, 
+                        column_name = "Date_Filed", 
+                        file_name = "all_ytd.html"){
   
 
   
@@ -413,16 +415,16 @@ create_front_page_table <- function(data=NULL,
   
   tmp_dt <- unique(tmp_dt)
   
-  stat_tab <-  tmp_dt[  Date_Filed >(Sys.Date() - 365), .N, by= .(National,Status)]
+  stat_tab <-  tmp_dt[  get(column_name) >(Sys.Date() - 365), .N, by= .(National,Status)]
   stat_tab <- dcast(stat_tab, National ~ Status, fill = 0)
   
-  vic_tab <-  tmp_dt[  Date_Filed >(Sys.Date() - 365) & Status == "Closed",
+  vic_tab <-  tmp_dt[  get(column_name) >(Sys.Date() - 365) & Status == "Closed",
                         .N, by= .(National,Union_Cer)]
   vic_tab <- dcast(vic_tab, National ~ Union_Cer, fill = 0)
   vic_tab[,Percentage:=scales::percent(Yes/(Yes+No))]
   vic_tab$No <- NULL
   
-  emp_tab <-  tmp_dt[  Date_Filed >(Sys.Date() - 365) & Status == "Closed" 
+  emp_tab <-  tmp_dt[  get(column_name) >(Sys.Date() - 365) & Status == "Closed" 
                        & Union_Cer == "Yes",
                        .(median(Num_Eligible_Voters, na.rm=T),
                        sum(Num_Eligible_Voters, na.rm=T)), by= .(National)]
@@ -445,7 +447,7 @@ create_front_page_table <- function(data=NULL,
   )
 
   
-  writeLines(tab, con = "content/tables/union/all_ytd.html")
+  writeLines(tab, con = paste0("content/tables/union/", file_name))
   
 
   

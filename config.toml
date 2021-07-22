@@ -17,4 +17,4 @@ disableKinds = ['taxonomy', 'taxonomyTerm']
 
 
 [markup.tableOfContents]
-  startLevel = 3
+  startLevel = 2
