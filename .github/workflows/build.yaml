@@ -6,7 +6,6 @@ on:
       - v1.*
 jobs:
   build:
-    if: github.event.base_ref == 'refs/heads/main'
     runs-on: ubuntu-18.04
     env:
       GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
