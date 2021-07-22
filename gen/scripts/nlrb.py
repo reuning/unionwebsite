@@ -84,7 +84,7 @@ def get_data(chrome_options,
         print("Download button not found")
         raise
 
-    browser.implicitly_wait(240)
+    browser.implicitly_wait(120)
 
     ii = 0
     while ii < 5:
@@ -125,7 +125,7 @@ while check < 5:
 
 
 check = 0
-while check < 7:
+while check < 10:
     try:
         print("Attempt " + str(check + 1))
         get_split_data(chrome_options = options,

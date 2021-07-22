@@ -1,9 +1,6 @@
 name: Build and deploy
 on:
-  push:
-    tags:
-      - v0.*
-      - v1.*
+  workflow_dispatch:
 jobs:
   build:
     runs-on: ubuntu-18.04
