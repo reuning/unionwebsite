@@ -44,7 +44,7 @@ def chunks(l, n):
     for i in range(0, n):
         yield i, l[i::n]
 
-def get_split_data(chrome_options, download_text, file_out, splits = 4):
+def get_split_data(chrome_options, download_text, file_out, splits = 8):
     url_start = r"https://www.nlrb.gov/reports/graphs-data/recent-election-results"
     skip = [11, 17, 23, 24, 26,30]
     districts = [i for i in range(1, 33) if i not in skip]
