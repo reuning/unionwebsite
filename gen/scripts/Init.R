@@ -101,7 +101,7 @@ for(union in nationals){
 create_front_page_table(data=dt, file_name="filed_ytd.html", column_name = "Date_Filed")
 create_front_page_table(data=dt, file_name = "tally_ytd.html", column_name = "Tally_Date")
 
-data[,Date_Closed:=as.Date(`Date_Closed`, format="%m/%d/%Y")]
+dt$Date_Closed <- as.Date(dt$Date_Closed, format="%m/%d/%Y")
 create_front_page_table(data=dt, file_name = "closed_ytd.html", column_name = "Date_Closed")
 
 
