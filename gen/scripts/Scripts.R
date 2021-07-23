@@ -4,8 +4,9 @@ library(ggthemes)
 library(gridExtra)
 library(magrittr)
 library(stringr)
-library(xtable)
 library(curl)
+library(knitr)
+options(knitr.kable.NA = "")
 
 sysfonts::font_add_google("Crimson Pro")
 state.name <- c(state.name, "Puerto Rico", "Guam", "US Virgin Islands")
@@ -268,33 +269,35 @@ create_table_open <- function(state_abb = NULL, data=NULL,
   tmp_dt[,Ballot_Type:=ifelse(Ballot_Type == "Revised Single Labor Org", "Revised", "Initial")]
   tmp_dt[,Labor_Union:=Plot_Labor_Union ]
   # tmp_dt$Case <- paste0("<a href='https://www.nlrb.gov/case/", tmp_dt$Case, "'>", tmp_dt$Case, "</a>")
-  tab <- xtable(tmp_dt[,.(City, State, Case_Name, Labor_Union, Date_Filed,  Tally_Date,
-                          Tally_Type, Ballot_Type, Votes_For_Union, Votes_Against,
-                            Num_Eligible_Voters, Case )])
-
-  align(tab)[6:12] <- "c"
-  digits(tab) <- 0
-  # tab[1,] <- gsub("_", " ", (tab[1,]))
-  # tab[1,9] <- "Union Certified?"
-  # tab <- theme_basic(tab)
-
+  
+  tab <- tmp_dt[,.(City, State, Case_Name, Labor_Union, Date_Filed,  Tally_Date,
+                   Tally_Type, Ballot_Type, Votes_For_Union, Votes_Against,
+                   Num_Eligible_Voters, Case )]
+  tab <- kable(
+    tab, 
+    format="html",
+    col.names=gsub("_", " ", names(tab)), 
+    align="llllcccccccc",
+    digits=0, 
+    table.attr="class='display summary-stats'"
+  )
+  
+  
   if(!dir.exists(dirname(file_name))) dir.create(dirname(file_name))
 
-  print(tab, file = file_name, type="html",
-        html.table.attributes="class='open-cases'",
-        comment = F,include.rownames = F,
-        sanitize.colnames.function = function(x) gsub("_", " ", x))
-  file_contents <- readLines(file_name)
+  
+  writeLines(tab, con = file_name)
+  
   cases <- unique(tmp_dt$Case)
   for(case in cases){
 
 
-    file_contents <- gsub(case,
-                          paste0("<a href='https://www.nlrb.gov/case/", case, "'>", case, "</a>"),
-                          file_contents)
+    tab <- gsub(case,
+                paste0("<a href='https://www.nlrb.gov/case/", case, "'>", case, "</a>"),
+                tab)
 
   }
-  write(file_contents, file = file_name)
+  write(tab, file = file_name)
 }
 
 
@@ -435,7 +438,7 @@ create_front_page_table <- function(data=NULL,
   full_tab[is.na(full_tab)] <- 0
   
   # tmp_dt$Case <- paste0("<a href='https://www.nlrb.gov/case/", tmp_dt$Case, "'>", tmp_dt$Case, "</a>")
-  tab <- knitr::kable(
+  tab <- kable(
     full_tab[,.(National, Open, Closed, Yes, Percentage, Median, Total)], 
     format="html",
     col.names=c("National", "Open Elections", "Closed Elections",
@@ -443,7 +446,7 @@ create_front_page_table <- function(data=NULL,
                 "Median Successful BU", "Total Workers Unionized"), 
     align="lcccccc",
     digits=0, 
-    table.attr="class='display'"
+    table.attr="class='display summary-stats'"
   )
 
   
