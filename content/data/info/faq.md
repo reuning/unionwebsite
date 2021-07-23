@@ -5,11 +5,13 @@ title: FAQ
 ### About the data
 
 - Where is this data coming from?
-  - As of now, two places. First, once an election happens the NLRB provides [data on the election results](https://www.nlrb.gov/reports/graphs-data/recent-election-results). Prior to that, they provide [data on all petitions, including petitions for elections](https://www.nlrb.gov/search/case). One complication here is that petitions can be associated with multiple elections and multiple counts of the same elections. I try to provide only data on the most recent election. 
+  - As of now, two places. First, once an election happens the NLRB provides [data on the election results](https://www.nlrb.gov/reports/graphs-data/recent-election-results). Prior to that, they provide [data on all petitions, including petitions for elections](https://www.nlrb.gov/search/case). One complication here is that petitions can be associated with multiple elections and multiple counts of the same elections. I try to provide only data on the most recent election.
 - Why is *thing* missing from the data?
   - The NLRB data is spotty at times and so there is occasionally missing information.
 - What sorts of elections are included in the data?
   - The NLRB only governs elections at private organizations and so excludes public employee elections. In addition, the National Mediation Board governs elections for railroads and airlines so these are also excluded. For simplicity, this website focuses solely on elections to form new unions (and also excludes the rare case where multiple competing unions are involved).
+- Why are there so many uncoded union elections?
+  - Categorizing the elections is frustrating for a few different reasons. 1) The NLRB data is inconsistent with how it names locals (UAW vs United Auto Workers vs United Automobile Workers vs..) and it has a fair number of typos. So I've developed an excel sheet to try to capture as many of these different versions as possible and put them into a group. 2) Union locals are not neatly nested within a single state union thats in a national union, etc. This means that the categorization is a bit art. For example, NewsGuild is separated out from CWA as they do a lot of their own organizing. 
 
 ### About union elections
 
