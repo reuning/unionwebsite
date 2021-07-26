@@ -72,7 +72,7 @@ def get_data(chrome_options,
 
     browser = webdriver.Chrome(options=chrome_options)
     browser.set_page_load_timeout(-1)
-    browser.implicitly_wait(30)
+    browser.implicitly_wait(15)
 
 
     print(f"Opening Page for {url}")
@@ -84,7 +84,7 @@ def get_data(chrome_options,
         print("Download button not found")
         raise
 
-    browser.implicitly_wait(120)
+    browser.implicitly_wait(30)
 
     ii = 0
     while ii < 5:
@@ -92,7 +92,11 @@ def get_data(chrome_options,
             link = browser.find_element_by_link_text(download_text)
             file_url = link.get_attribute("href")
         except:
+            ii = 4
             print("Download file never prepped")
+
+        if ii == 4:
+            raise ValueError("Failed download after multiple tries")
 
         try:
             file = requests.get(file_url)
@@ -103,6 +107,9 @@ def get_data(chrome_options,
 
         if ii == 4:
             raise ValueError("Failed download after multiple tries")
+
+
+
 
 
     with open(download_folder + "/" +  file_out,'wb') as f:
@@ -125,13 +132,13 @@ while check < 5:
 
 
 check = 0
-while check < 10:
+while check < 15:
     try:
         print("Attempt " + str(check + 1))
         get_split_data(chrome_options = options,
                 download_text= "Recent Election Results (All Dates)",
                 file_out="temp.csv")
-        check = 11
+        check = 14
 
     except Exception:
         print(traceback.format_exc())
