@@ -95,6 +95,9 @@ def get_data(chrome_options,
             ii = 4
             print("Download file never prepped")
 
+        if ii == 4:
+            raise ValueError("Failed download after multiple tries")
+
         try:
             file = requests.get(file_url)
             ii = 5
@@ -104,6 +107,9 @@ def get_data(chrome_options,
 
         if ii == 4:
             raise ValueError("Failed download after multiple tries")
+
+
+
 
 
     with open(download_folder + "/" +  file_out,'wb') as f:
