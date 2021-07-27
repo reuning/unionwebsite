@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/df4ca112-b4f3-4113-8938-c638d531bc6f/deploy-status)](https://app.netlify.com/sites/amazing-mayer-87367c/deploys)
+
 # unionwebsite
 
 Github for [unionelections.org](https://unionelections.org).
