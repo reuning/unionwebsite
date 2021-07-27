@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 from selenium import webdriver
-from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.firefox.options import Options
 from selenium.webdriver.support.ui import Select
 #from webdriver_manager.chrome import ChromeDriverManager
 from os.path import abspath
@@ -16,15 +16,17 @@ import pandas as pd
 download_folder = abspath("gen/data")
 print(download_folder)
 options = Options()
-options.add_experimental_option("prefs", {
+#options.add_experimental_option("prefs", {
 #   "download.default_directory": download_folder,
-   "download.prompt_for_download": True,
+#   "download.prompt_for_download": True,
 #   "download.directory_upgrade": True,
 #   "safebrowsing.enabled": True
-})
-options.add_argument("--headless")
-options.add_argument("--no-sandbox")
-options.add_argument("--disable-dev-shm-usage")
+#})
+#options.add_argument("--headless")
+#options.add_argument("--no-sandbox")
+#options.add_argument("--disable-dev-shm-usage")
+
+options.headless = True
 
 def open_url(browser, url, tries = 6):
     ii = 0
@@ -70,7 +72,7 @@ def get_data(chrome_options,
             download_text = "Cases (All Dates)",
             file_out="new_open_data.csv"):
 
-    browser = webdriver.Chrome(options=chrome_options)
+    browser = webdriver.Firefox(options=chrome_options)
     browser.set_page_load_timeout(-1)
     browser.implicitly_wait(15)
 
