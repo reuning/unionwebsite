@@ -3,7 +3,7 @@ import datetime
 import scrapelib
 import lxml.html
 import tqdm
-
+from os.path import abspath
 
 DOWNLOAD_FOLDER = abspath("gen/data")
 BASE_URL = 'https://www.nlrb.gov'
