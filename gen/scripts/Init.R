@@ -7,6 +7,9 @@ source(here("gen", "scripts", "Scripts.R"))
 
 dt <- fread(here("gen", "data", "recent_election_results.csv"))
 
+
+dt[dt$Case=="19-RC-195508",`Labor Union1`] <- "SEIU Healthcare 1199NW"
+
 dt <- prep_data(dt)
 
 # View(dt[National_Count > 1])
