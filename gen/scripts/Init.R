@@ -7,14 +7,14 @@ source(here("gen", "scripts", "Scripts.R"))
 
 dt <- fread(here("gen", "data", "recent_election_results.csv"))
 
-dt[Case=="19-RC-195508",`Labor Union1`:= "SEIU Healthcare 1199NW"]
+# dt[Case=="19-RC-195508",`Labor Union1`:= "SEIU Healthcare 1199NW"]
 
 dt <- prep_data(dt)
 
 # View(dt[National_Count > 1])
 # View(table(dt[National_Count == 0, Labor_Union]))
 
-dt[National %in% names(which(table(dt$National) < 25)), National:="Other"]
+dt[National %in% names(which(table(dt$National) < 20)), National:="Other"]
 
 dt[National=="", National:="Uncoded"]
 dt[National_Count>1, National:="Multiple"]
@@ -99,6 +99,17 @@ for(union in nationals){
                                    paste0(union_file, "_open.html")))
   #
 }
+
+
+
+### Create National union table
+dt <- fread(here("gen", "data", "recent_election_results.csv"))
+
+
+dt <- prep_data(dt)
+
+dt[National=="", National:="Uncoded"]
+dt[National_Count>1, National:="Multiple"]
 
 create_front_page_table(data=dt, file_name="filed_ytd.html", column_name = "Date_Filed")
 create_front_page_table(data=dt, file_name = "tally_ytd.html", column_name = "Tally_Date")
