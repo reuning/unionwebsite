@@ -406,7 +406,7 @@ create_page <- function(title = "California",
 
 
 create_front_page_table <- function(data=NULL,
-                        type="union",
+                                    var="National",
                         weight=1, 
                         column_name = "Date_Filed", 
                         file_name = "all_ytd.html"){
@@ -418,20 +418,20 @@ create_front_page_table <- function(data=NULL,
   
   tmp_dt <- unique(tmp_dt)
   
-  stat_tab <-  tmp_dt[  get(column_name) >(Sys.Date() - 365), .N, by= .(National,Status)]
-  stat_tab <- dcast(stat_tab, National ~ Status, fill = 0)
+  stat_tab <-  tmp_dt[  get(column_name) >(Sys.Date() - 365), .N, by= mget(c(var,"Status"))]
+  stat_tab <- dcast(stat_tab, get(var) ~ Status, fill = 0)
   
   vic_tab <-  tmp_dt[  get(column_name) >(Sys.Date() - 365) & Status == "Closed",
-                        .N, by= .(National,Union_Cer)]
-  vic_tab <- dcast(vic_tab, National ~ Union_Cer, fill = 0)
+                        .N, by= mget(c(var,"Union_Cer"))]
+  vic_tab <- dcast(vic_tab, get(var) ~ Union_Cer, fill = 0)
   vic_tab[,Percentage:=scales::percent(Yes/(Yes+No))]
   vic_tab$No <- NULL
   
   emp_tab <-  tmp_dt[  get(column_name) >(Sys.Date() - 365) & Status == "Closed" 
                        & Union_Cer == "Yes",
                        .(median(Num_Eligible_Voters, na.rm=T),
-                       sum(Num_Eligible_Voters, na.rm=T)), by= .(National)]
-  names(emp_tab)[2:3] <- c("Median", "Total")
+                       sum(Num_Eligible_Voters, na.rm=T)), by= get(var)]
+  names(emp_tab)[1:3] <- c("var","Median", "Total")
   full_tab <- merge(vic_tab, stat_tab, all=T)
   full_tab[is.na(Percentage), Percentage:= "-"]
   full_tab <- merge(full_tab, emp_tab)
@@ -439,9 +439,9 @@ create_front_page_table <- function(data=NULL,
   
   # tmp_dt$Case <- paste0("<a href='https://www.nlrb.gov/case/", tmp_dt$Case, "'>", tmp_dt$Case, "</a>")
   tab <- kable(
-    full_tab[,.(National, Open, Closed, Yes, Percentage, Median, Total)], 
+    full_tab[,.(var, Open, Closed, Yes, Percentage, Median, Total)], 
     format="html",
-    col.names=c("National", "Open Elections", "Closed Elections",
+    col.names=c(var, "Open Elections", "Closed Elections",
                 "Union Certified", "Percent Certified", 
                 "Median Successful BU", "Total Workers Unionized"), 
     align="lcccccc",
@@ -449,8 +449,14 @@ create_front_page_table <- function(data=NULL,
     table.attr="class='display summary-stats'"
   )
 
-  
-  writeLines(tab, con = paste0("content/tables/union/", file_name))
+  if(var == "National"){
+    file <- paste0("content/tables/union/", file_name)
+  } else if(var == "State"){
+    file <- paste0("content/tables/states/", file_name)
+  } else {
+    stop("'var' not recognized")
+  }
+  writeLines(tab, con = file)
   
 
   

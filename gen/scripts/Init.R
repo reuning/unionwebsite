@@ -117,6 +117,9 @@ create_front_page_table(data=dt, file_name = "tally_ytd.html", column_name = "Ta
 dt$Date_Closed <- as.Date(dt$Date_Closed, format="%m/%d/%Y")
 create_front_page_table(data=dt, file_name = "closed_ytd.html", column_name = "Date_Closed")
 
+create_front_page_table(data=dt, file_name="filed_ytd.html", column_name = "Date_Filed", var="State")
+create_front_page_table(data=dt, file_name = "tally_ytd.html", column_name = "Tally_Date",  var="State")
+create_front_page_table(data=dt, file_name = "closed_ytd.html", column_name = "Date_Closed",  var="State")
 
 # create_state_time_plot(data=dt)
 # create_state_page(state_abb = "GU")
