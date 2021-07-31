@@ -428,7 +428,7 @@ create_front_page_table <- function(data=NULL,
   vic_tab <-  tmp_dt[  get(column_name) >(Sys.Date() - 365) & Status == "Closed",
                         .N, by= mget(c(var,"Union_Cer"))]
   vic_tab <- dcast(vic_tab, get(var) ~ Union_Cer, fill = 0)
-  vic_tab[,Percentage:=scales::percent(Yes/(Yes+No))]
+  vic_tab[,Percentage:=scales::percent(Yes/(Yes+No), accuracy = 0.01)]
   vic_tab$No <- NULL
   
   emp_tab <-  tmp_dt[  get(column_name) >(Sys.Date() - 365) & Status == "Closed" 
