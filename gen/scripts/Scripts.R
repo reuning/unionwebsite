@@ -409,7 +409,8 @@ create_front_page_table <- function(data=NULL,
                                     var="National",
                         weight=1, 
                         column_name = "Date_Filed", 
-                        file_name = "all_ytd.html"){
+                        file_name = "all_ytd.html", 
+                        all_groups = NULL){
   
 
   
@@ -420,6 +421,9 @@ create_front_page_table <- function(data=NULL,
   
   stat_tab <-  tmp_dt[  get(column_name) >(Sys.Date() - 365), .N, by= mget(c(var,"Status"))]
   stat_tab <- dcast(stat_tab, get(var) ~ Status, fill = 0)
+  stat_tab <- rbind(stat_tab, data.table("var"=all_groups[!all_groups %in% stat_tab$var], 
+             "Closed"=0, 
+             "Open"=0))
   
   vic_tab <-  tmp_dt[  get(column_name) >(Sys.Date() - 365) & Status == "Closed",
                         .N, by= mget(c(var,"Union_Cer"))]
@@ -434,7 +438,7 @@ create_front_page_table <- function(data=NULL,
   names(emp_tab)[1:3] <- c("var","Median", "Total")
   full_tab <- merge(vic_tab, stat_tab, all=T)
   full_tab[is.na(Percentage), Percentage:= "-"]
-  full_tab <- merge(full_tab, emp_tab)
+  full_tab <- merge(full_tab, emp_tab, all=T)
   full_tab[is.na(full_tab)] <- 0
   
   # tmp_dt$Case <- paste0("<a href='https://www.nlrb.gov/case/", tmp_dt$Case, "'>", tmp_dt$Case, "</a>")

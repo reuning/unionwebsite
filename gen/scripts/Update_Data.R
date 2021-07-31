@@ -9,7 +9,7 @@ retry_page <- function(url){
     page <- try(read_html(con))
     if(class(page)[1]=="try-error"){
       check <- check + 1
-      Sys.sleep(runif(1))
+      Sys.sleep(runif(.5))
     } else {
       return(page)
     }
