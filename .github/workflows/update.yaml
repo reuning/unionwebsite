@@ -36,12 +36,6 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-pip-
 
-      - name: Install chrome
-        if: ${{ env.ACT }}
-        run: |
-          wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-          sudo apt-get install -y ./google-chrome-stable_current_amd64.deb
-
       - name: Install and run Python
         run: |
           pip install -r gen/scripts/requirements.txt
