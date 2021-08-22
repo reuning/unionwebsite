@@ -10,7 +10,7 @@ BASE_URL = 'https://www.nlrb.gov'
 
 def get_data(file_name, search_url,
                 params = None ):
-    s = scrapelib.Scraper(retry_attempts=100)
+    s = scrapelib.Scraper(retry_attempts=20)
 
     if params is None:
         response = s.get(BASE_URL + search_url)
