@@ -423,7 +423,7 @@ create_front_page_table <- function(data=NULL,
   stat_tab <- dcast(stat_tab, get(var) ~ Status, fill = 0)
   stat_tab <- rbind(stat_tab, data.table("var"=all_groups[!all_groups %in% stat_tab$var], 
              "Closed"=0, 
-             "Open"=0))
+             "Open"=0), fill=T)
   
   vic_tab <-  tmp_dt[  get(column_name) >(Sys.Date() - 365) & Status == "Closed",
                         .N, by= mget(c(var,"Union_Cer"))]
