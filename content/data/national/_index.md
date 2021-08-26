@@ -8,7 +8,7 @@ weight: 1
 ---
 ##  United States
 
-Excluding public employees, in the last year there have been 923 union elections filed in the United States and 840 union elections held. In 570 of those elections a new unit was certified. There are currently 308 open representation cases and 308 of are still waiting to vote.
+Excluding public employees, in the last year there have been 928 union elections filed in the United States and 836 union elections held. In 568 of those elections a new unit was certified. There are currently 314 open representation cases and 314 of are still waiting to vote.
 
 ### Number Employees in a Union Election by Outcome
 {{< image src="United_States_hist_vic.png" >}}
