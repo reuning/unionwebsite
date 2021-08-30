@@ -23,7 +23,15 @@ cols <- c(as.vector(which(apply(open_dt, 2,
 coded_dt <-
   fread(here("gen", "data", "elections_with_location.csv"))
 
-full_dt <- merge(open_dt, unique(coded_dt[, c(3, 4, 33:44)]), all.x = T)
+full_dt <- merge(open_dt, unique(coded_dt[, .(Case, `Case Name`, lat, 
+                                              long, formatted_address, 
+                                              accuracy, accuracy_type, 
+                                              source, address_components.city, 
+                                              address_components.county, 
+                                              address_components.state, 
+                                              address_components.zip, 
+                                              address_components.country,
+                                              seached)]), all.x = T)
 
 if (any(is.na(full_dt$seached))) {
   to_code_dt <- full_dt[is.na(seached)]
@@ -41,6 +49,7 @@ if (any(is.na(full_dt$seached))) {
   try(to_code_dt$address_components.street <- NULL)
   try(to_code_dt$address_components.formatted_street <- NULL)
   try(to_code_dt$address_components.suffix <- NULL)
+  try(to_code_dt$address_components.predirectional <- NULL)
   
   to_code_dt$seached <- 1
   
