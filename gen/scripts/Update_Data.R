@@ -18,13 +18,12 @@ retry_page <- function(url){
 }
 
 dt <- fread(here("gen", "data", "recent_election_results.csv"))
-names(dt)[21] <- "Votes Against"
 
 #downloader::download("csv-export",
 #                     here("gen", "data", "temp.csv"))
 dt_new <- fread(here("gen", "data", "temp.csv"))
+names(dt_new)[which(names(dt_new)=="Case Number")] <- "Case"
 dt_new$Election_Data <- "Yes"
-names(dt_new)[21] <- "Votes Against"
 
 
 
