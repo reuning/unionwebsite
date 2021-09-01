@@ -1,7 +1,7 @@
 library(DBI)
 library(data.table)
 setwd(here::here())
-con <- dbConnect(RSQLite::SQLite(),"nlrb.sqlite") # https://labordata.github.io/nlrb-cats/nlrb.sqlite.zip
+con <- dbConnect(RSQLite::SQLite(),"nlrb.sqlite")
 dbListTables(con)
 
 tmp <- as.data.table(dbGetQuery(con, 
@@ -55,7 +55,7 @@ tmp2 <- tmp2[,.(region, r_case_number, case_name, status, date_filed,
         majority_for)]
 
 names(tmp2)
-names(tmp2) <- c("Region", "Case Number", "Case Name" "Status",
+names(tmp2) <- c("Region", "Case Number", "Case Name" ,"Status",
                    "Date Filed", "Date Closed", "Reason Closed",
                    "City", "State", "Unit ID", "Ballot Type",
                    "Tally Type", "Tally Date", "No of Eligible Voters", 
@@ -173,25 +173,5 @@ tmp2[is.na(`Voting Unit (Unit B)`), `Voting Unit (Unit B)`:=""]
 tmp2[is.na(`Voting Unit (Unit C)`), `Voting Unit (Unit C)`:=""]
 tmp2[is.na(`Voting Unit (Unit D)`), `Voting Unit (Unit D)`:=""]
 
-write.csv(tmp2, file = here::here("gen", "data", "old_nlrb.csv"), row.names = F)
+write.csv(tmp2, file = here::here("gen","data", "old_nlrb.csv"), row.names = F)
 
-
-table(dbGetQuery(con, "SELECT closing_stage from closed_case"))
-
-(dbGetQuery(con, "SELECT * FROM nlrb_case WHERE r_case_number=='01-RC-21522'"))
-
-
-
-
-tmp <- dbGetQuery(con, paste("SELECT a.r ",
-                    "FROM closed_case a",
-                    "LEFT OUTER JOIN closed_case b",
-                    "ON a.r_case_number = b.r_case_number AND a.action_sequence < b.action_sequence",
-                    "WHERE b.r_case_number IS NULL"))
-
-tmp <- dbGetQuery(con, paste("SELECT *",
-      "FROM closed_case WHERE (r_case_number,action_sequence) IN",
-        "( SELECT r_case_number, MAX(action_sequence)",
-        "FROM closed_case",
-        "GROUP BY r_case_number",
-      ")"))
