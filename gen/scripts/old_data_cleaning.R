@@ -1,7 +1,7 @@
 library(DBI)
 library(data.table)
 setwd(here::here())
-con <- dbConnect(RSQLite::SQLite(),"nlrb.sqlite")
+con <- dbConnect(RSQLite::SQLite(),"nlrb.sqlite") ## From https://github.com/labordata/nlrb-cats
 dbListTables(con)
 
 tmp <- as.data.table(dbGetQuery(con, 
