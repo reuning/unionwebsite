@@ -220,7 +220,7 @@ create_time_plot <- function(data=NULL,
   ggplot(tmp_dt, aes(x=Tally_Quarter,
              fill=size)) +
   geom_bar(position=position_stack(reverse=T), color="black", size=.2, width=80) +
-  scale_x_date(limits=c(as.Date("2008-01-01"), lubridate::ceiling_date(lubridate::today(), unit = "month"))) +
+  scale_x_date(limits=c(as.Date("1999-01-01"), lubridate::ceiling_date(lubridate::today(), unit = "month"))) +
     scale_y_continuous(labels=scales::label_comma()) +
   theme_minimal(base_family = "Crimson Pro") +
     scale_fill_colorblind("Size of Unit", drop=F) +
@@ -237,7 +237,7 @@ create_time_plot <- function(data=NULL,
   ggplot(tmp_dt, aes(x=Tally_Quarter,
                      fill=Union_Cer, weight=Num_Eligible_Voters)) +
     geom_bar(position=position_stack(reverse=T), color="black", size=.2, width=80) +
-    scale_x_date(limits=c(as.Date("2008-01-01"), lubridate::ceiling_date(lubridate::today(), unit = "month"))) +
+    scale_x_date(limits=c(as.Date("1999-01-01"), lubridate::ceiling_date(lubridate::today(), unit = "month"))) +
     scale_y_continuous(labels=scales::label_comma()) +
     theme_minimal(base_family = "Crimson Pro") +
     scale_fill_colorblind("Unionized?") +
