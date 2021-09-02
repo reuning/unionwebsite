@@ -4,18 +4,17 @@ import scrapelib
 import lxml.html
 import tqdm
 from os.path import abspath
+from time import sleep
 
 DOWNLOAD_FOLDER = abspath("gen/data")
 BASE_URL = 'https://www.nlrb.gov'
+HEADER = {'user-agent':'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_2) AppleWebKit/601.3.9 (KHTML, like Gecko) Version/9.0.2 Safari/601.3.9'}
 
-def get_data(file_name, search_url,
-                params = None ):
-    s = scrapelib.Scraper(retry_attempts=20)
-
+def start_data(search_url, scraper, params=None):
     if params is None:
-        response = s.get(BASE_URL + search_url)
+        response = scraper.get(BASE_URL + search_url, headers=HEADER)
     else:
-        response = s.get(BASE_URL + search_url, params=params)
+        response = scraper.get(BASE_URL + search_url, params=params, headers=HEADER)
 
     page = lxml.html.fromstring(response.text)
     page.make_links_absolute(search_url)
@@ -26,10 +25,30 @@ def get_data(file_name, search_url,
                'typeOfReport': download_link.get('data-typeofreport'),
                'token': str(datetime.datetime.now())}
 
-    response = s.post('https://www.nlrb.gov/nlrb-downloads/start-download',
+    response = scraper.post('https://www.nlrb.gov/nlrb-downloads/start-download',
                          data=payload)
 
     result = response.json()['data']
+    return result
+
+def get_data(file_name, search_url,
+                params = None ):
+    s = scrapelib.Scraper(retry_attempts=20)
+
+    attempts = 0
+    while True:
+        try:
+            result = start_data(search_url=search_url, scraper=s, params=params)
+            break
+        except:
+            attempts += 1
+            sleep(5)
+            if attempts > 10:
+                print("Unable to download")
+                raise
+
+
+
     previous = 0
 
     with tqdm.tqdm(total=result['total'], desc='NLRB.gov preparing download') as pbar:
