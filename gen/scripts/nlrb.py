@@ -44,7 +44,7 @@ def get_data(file_name, search_url,
         except:
             attempts += 1
             sleep(5)
-            if attempts > 10:
+            if attempts > 20:
                 print("Unable to download")
                 raise
 
