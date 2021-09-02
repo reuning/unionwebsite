@@ -37,6 +37,7 @@ def get_data(file_name, search_url,
 
     attempts = 0
     while True:
+        print("Attempt " + str(attempts + 1))
         try:
             result = start_data(search_url=search_url, scraper=s, params=params)
             break
