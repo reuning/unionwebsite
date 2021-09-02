@@ -72,7 +72,7 @@ def get_data(file_name, search_url,
 
 get_data(search_url = '/reports/graphs-data/recent-election-results',
         file_name= "temp.csv")
-
+sleep(5)
 get_data(search_url = '/search/case',
         params={"f[0]":"case_type:R",
                 "s[0]":"Open"},
