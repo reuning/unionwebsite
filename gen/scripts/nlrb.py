@@ -12,7 +12,7 @@ from selenium.webdriver.support.ui import Select
 
 OPTIONS = Options()
 
-#OPTIONS.add_argument("--headless")
+OPTIONS.add_argument("--headless")
 OPTIONS.add_argument("--no-sandbox")
 OPTIONS.add_argument("--disable-dev-shm-usage")
 
@@ -79,7 +79,7 @@ def get_data(file_name, search_url,
     attempts = 0
     while True:
         file_out = s.get(BASE_URL + result['filename'])
-        if file_out.content[0:6] == b'Region':
+        if file_out.content[0:6] == b'Region' or file_out.content[0:5] == b'"Case':
             break
         else:
             if attempts > 30:
