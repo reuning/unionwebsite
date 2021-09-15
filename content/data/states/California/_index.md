@@ -8,7 +8,7 @@ weight: 1
 ---
 ##  California
 
-Excluding public employees, in the last year there have been 143 union elections filed in California and 136 union elections held. In 88 of those elections a new unit was certified. There are currently 50 open representation cases and 36 of are still waiting to vote.
+Excluding public employees, in the last year there have been 144 union elections filed in California and 136 union elections held. In 88 of those elections a new unit was certified. There are currently 51 open representation cases and 37 of are still waiting to vote.
 
 ### Number Employees in a Union Election by Outcome
 {{< image src="California_hist_vic.png" >}}
