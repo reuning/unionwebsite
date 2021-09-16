@@ -4,7 +4,7 @@ title = "Union Election Data"
 images = ["/data/national/map.png"]
 
 enableRobotsTXT = true
-disableKinds = ['taxonomy', 'taxonomyTerm', "sitemap"]
+disableKinds = ['taxonomy', 'taxonomyTerm']
 
 [Author]
   name = "Kevin Reuning"
