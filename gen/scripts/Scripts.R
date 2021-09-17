@@ -46,6 +46,8 @@ prep_data <- function(data=dt){
 
   data[,Tally_Date:=anydate(`Tally_Date`)]
   data[,Date_Filed:=anydate(`Date_Filed`)]
+  data[,Date_Closed:=anydate(`Date_Closed`)]
+  
   data[,Length:=Tally_Date-Date_Filed]
   data[,Tally_Quarter := anydate(cut(Tally_Date, breaks = "quarter"))]
 
