@@ -7,7 +7,7 @@ library(stringr)
 library(curl)
 library(knitr)
 library(anytime)
-addFormats(c("%m/%d/%Y", "%m/%e/%y"))
+addFormats(c("%m/%e/%y", "%m/%d/%Y"))
 options(knitr.kable.NA = "")
 
 sysfonts::font_add_google("Crimson Pro")
@@ -47,6 +47,11 @@ prep_data <- function(data=dt){
   data[,Tally_Date:=anydate(`Tally_Date`)]
   data[,Date_Filed:=anydate(`Date_Filed`)]
   data[,Date_Closed:=anydate(`Date_Closed`)]
+  
+  data[Tally_Date> as.Date("2080-01-01"), Tally_Date:=Tally_Date- lubridate::dyears(100)]
+  data[Date_Filed> as.Date("2080-01-01"), Date_Filed:=Date_Filed- lubridate::dyears(100)]
+  data[Date_Closed> as.Date("2080-01-01"), Date_Closed:=Date_Closed- lubridate::dyears(100)]
+  
   
   data[,Length:=Tally_Date-Date_Filed]
   data[,Tally_Quarter := anydate(cut(Tally_Date, breaks = "quarter"))]
