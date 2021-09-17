@@ -6,6 +6,8 @@ library(magrittr)
 library(stringr)
 library(curl)
 library(knitr)
+library(anytime)
+addFormats(c("%m/%d/%Y", "%m/%e/%y"))
 options(knitr.kable.NA = "")
 
 sysfonts::font_add_google("Crimson Pro")
@@ -42,10 +44,12 @@ prep_data <- function(data=dt){
   data[,Votes_For_Union:=as.numeric(Votes_For_Union)]
   data[,Total_Ballots_Counted:=as.numeric(Total_Ballots_Counted)]
 
-  data[,Tally_Date:=as.Date(`Tally_Date`, format="%m/%d/%Y")]
-  data[,Date_Filed:=as.Date(`Date_Filed`, format="%m/%d/%Y")]
+  data[,Tally_Date:=anydate(`Tally_Date`)]
+  data[,Date_Filed:=anydate(`Date_Filed`)]
+  data[,Date_Closed:=anydate(`Date_Closed`)]
+  
   data[,Length:=Tally_Date-Date_Filed]
-  data[,Tally_Quarter := as.Date(cut(Tally_Date, breaks = "quarter"))]
+  data[,Tally_Quarter := anydate(cut(Tally_Date, breaks = "quarter"))]
 
   data[,size:=cut(Num_Eligible_Voters, breaks = c(0, 5, 10, 25, 50, 100, 500, Inf), right = T,
                 labels=c("<5", "6-10", "11-25", "26-50", "51-100", "101-500", "500>"), ordered_result = T)]

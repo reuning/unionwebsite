@@ -8,7 +8,7 @@ weight: 1
 ---
 ##  NEA
 
-Excluding public employees, in the last year there have been 1 union elections filed by the NEA and 1 union elections held. In 1 of those elections a new unit was certified. There are currently 0 open representation cases and 0 of are still waiting to vote.
+Excluding public employees, in the last year there have been 8 union elections filed by the NEA and 6 union elections held. In 1 of those elections a new unit was certified. There are currently 0 open representation cases and 0 of are still waiting to vote.
 
 ### Number Employees in a Union Election by Outcome
 {{< image src="NEA_hist_vic.png" >}}
