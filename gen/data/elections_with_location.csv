@@ -33,7 +33,6 @@ Excluded: All others employees, guards, supervisors and managers as defined in t
 
 Excl: All other employees.","","","","No","International Union of Operating Engineers Local 30, AFL-CIO",41.854975,-71.858826,"Dayville, CT 06241",1,"place","TIGER/Line® dataset from the US Census Bureau","Dayville","Windham County","CT","6241","US",1
 "01-RD-282414","AmeriGas Propane, Inc.","","Open","09/02/2021","","","Swanzey","NH","","","","",6,NA,NA,"",NA,"",NA,NA,NA,"",NA,"","","Included: delivery reps / service reps Excluded: manager / office assistant","","","","No","United Steel Workers Local #12012-11",42.841079,-72.330145,"Swanzey, NH 03446",1,"place","TIGER/Line® dataset from the US Census Bureau","Swanzey","Cheshire County","NH","3446","US",1
-"01-UD-281893","Durham School Services","","Open","08/25/2021","","","Cumberland","RI","","","","",95,NA,NA,"",NA,"",NA,NA,NA,"",NA,"","","Included:  full-time and part-time bus drivers, monitors, and aides at Cumberland. Excluded: office clerical employees, mechanics, dispatchers, supervisors.","","","","No","UNITED FOOD AND COMMERCIAL WORKERS INTERNATIONAL UNION LOCAL 328",41.949498,-71.43269,"Cumberland, RI 02864",1,"place","TIGER/Line® dataset from the US Census Bureau","Cumberland","Providence County","RI","2864","US",1
 "02-RC-109420","Commercial Building Maintenance Corp.","","Open","07/18/2013","","","SYOSSET","NY","","","","",11,NA,NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","","No","INTERNATIONAL BROTHERHOOD OF TRADE UNIONS LOCAL 713",40.754757,-73.601772,"Syosset, NY 11773",1,"place","TIGER/Line® dataset from the US Census Bureau","Syosset","Nassau County","NY","11773","US",1
 "02-RC-276030","Insider Inc.","Region 02, New York, New York","Open","04/22/2021","07/26/2021","Certific. of Representative","New York","NY","A","Single Labor Organization","Initial","06/28/2021",307,3,241,"",NA,"",NA,14,255,"",NA,"","The NewsGuild of New York, Local 31003 TNG/CWA","INCLUDED: All full-time and regular part-time editorial employees performing work for the Employer, wherever located in the United States*, including, Assistant, Associate Designer, Associate Distribution Producer, Associate Editor, Associate Producer, Chief Correspondent, Columnist, Copy Editor, Correspondent, Designer, Graphic Designer, Junior Motion Designer, Junior Reporter, Junior Videographer and Editor, Lead Motion Designer, Lead Producer, Lead Videographer and Editor, Motion Designer, Photographer, Producer, Reporter, Researcher, Senior Copy Editor, Senior Correspondent, Senior Distribution Producer, Senior Motion Designer, Senior Producer, Senior Reporter, Senior Videographer and Editor, Technical Publications Writer, and Videographer.
  
@@ -163,6 +162,9 @@ Excluded:  Managers, supervisors, veterinarians, and guards.","","","","No","Int
 "03-RC-282115","Starbucks Corporation","","Open","08/30/2021","","","Buffalo","NY","","","","",21,NA,NA,"",NA,"",NA,NA,NA,"",NA,"","","All full-time and regular part-time Baristas, Shift Supervisors, Asst. Store Managers.  Excluded:  Store Managers; office clericals, guards, and supervisors as defined by the Act.","","","","No","Workers United Upstate",42.89606,-78.886424,"Buffalo, NY 14201",1,"place","TIGER/Line® dataset from the US Census Bureau","Buffalo","Erie County","NY","14201","US",1
 "03-RC-282127","Starbucks Corporation","","Open","08/30/2021","","","Hamburg","NY","","","","",30,NA,NA,"",NA,"",NA,NA,NA,"",NA,"","","All full-time and regular part-time Baristas, Shift Supervisors, Asst. Store Managers.  Excluded:  Store Managers, office clericals, guards, and supervisors as defined by the Act.","","","","No","Workers United Upstate",42.729083,-78.837596,"Hamburg, NY 14075",1,"place","TIGER/Line® dataset from the US Census Bureau","Hamburg","Erie County","NY","14075","US",1
 "03-RC-282139","Starbucks Corporation","","Open","08/30/2021","","","Hamburg (Town)","NY","","","","",30,NA,NA,"",NA,"",NA,NA,NA,"",NA,"","","All full-time and regular part-time Baristas, Shift Supervisors, Asst. Store Managers.  Excluded:  Store Managers, office clericals, guards, and supervisors as defined by the Act.","","","","No","Workers United Upstate",42.729083,-78.837596,"Hamburg, NY 14075",1,"place","TIGER/Line® dataset from the US Census Bureau","Hamburg","Erie County","NY","14075","US",1
+"03-RC-283079","Lutheran Care","","Open","09/17/2021","","","Clinton","NY","","","","",25,NA,NA,"",NA,"",NA,NA,NA,"",NA,"","","All Licensed Practical Nurses.
+
+Excluded:  Guards, supervisors and confidential employees as defined in the Act.","","","","No","United Food & Commercial Workers Local 1",43.036697,-75.382414,"Clinton, NY 13323",1,"place","TIGER/Line® dataset from the US Census Bureau","Clinton","Oneida County","NY","13323","US",1
 "03-RD-271639","Gimme Coffee, Inc.","","Open","01/22/2021","","","Ithaca","NY","","","","",13,NA,NA,"",NA,"",NA,NA,NA,"",NA,"","","Included: All full-time, part-time, and variable hour employees with the job title “Barista” including Lead Baristas, employed by Gimme! Coffee at its facilities in Ithaca and Trumansburg Excluded: Store managers, confidential employees, professional employees, and supervisors as defined in the National Labor Relations Act, and all other non-barista employees.","","","","No","Workers United Local 2833",42.402794,-76.483999,"Ithaca, NY 14850",1,"place","TIGER/Line® dataset from the US Census Bureau","Ithaca","Tompkins County","NY","14850","US",1
 "03-RD-276476","Wendt Corporation","","Open","05/03/2021","","","Cheektowaga","NY","","","","",8,NA,NA,"",NA,"",NA,NA,NA,"",NA,"","","All full-time and regular part-time janitors, welders, machine operators, maintenance mechanics, fitters, assemblers, painters, machinists, leadmen and shipping and receiving clerks, excluding office clerical employees, guards, professional employees, and supervisors as defined in the Act.","","","","No","Shopmen's Local Union No. 576",42.908947,-78.750031,"Cheektowaga, NY 14225",0.8,"place","TIGER/Line® dataset from the US Census Bureau","Cheektowaga","Erie County","NY","14225","US",1
 "03-RD-282885","Buffalo City Cemetery","","Open","09/14/2021","","","Buffalo","NY","","","","",13,NA,NA,"",NA,"",NA,NA,NA,"",NA,"","","Truck Drivers Local Union No. 449 affiliated with the International Brotherhood of Teamsters, Chauffeurs, Warehousemen and Helpers of America.","","","","No","International Brotherhood of Teamsters Local Union 449",42.89606,-78.886424,"Buffalo, NY 14201",1,"place","TIGER/Line® dataset from the US Census Bureau","Buffalo","Erie County","NY","14201","US",1
@@ -317,6 +319,9 @@ Paralegal Team Leads
  
 Excluded: Supervisors, Managerial Employees, Attorneys, Security Guards, and Confidential Employees as defined in the Act.","","","","No","United Electrical, Radio, and Machine Workers of America",40.47441,-79.950968,"Pittsburgh, PA 15201",1,"place","TIGER/Line® dataset from the US Census Bureau","Pittsburgh","Allegheny County","PA","15201","US",1
 "06-RC-281559","Compass Natural Gas Partners LP","","Open","08/18/2021","","","Montoursville","PA","","","","",8,NA,NA,"",NA,"",NA,NA,NA,"",NA,"","","Included: All Regular Full-Time and Part-Time CDL Truck Drivers Excluded: Terminal Attendants and any/all others not covered by this act","","","","No","Teamsters Local Union No. 764",41.307308,-76.881055,"Montoursville, PA 17754",1,"place","TIGER/Line® dataset from the US Census Bureau","Montoursville","Lycoming County","PA","17754","US",1
+"06-RC-283075","Asplundh Tree Expert LLC","","Open","09/17/2021","","","Willow Grove","PA","","","","",36,NA,NA,"",NA,"",NA,NA,NA,"",NA,"","","Included:  Tree Trimming, Routine Maintenance brush cutting & brush spraying employees performed for Penelec Power Co. in Pennsylvania.
+
+Excluded:  Managers, Supervisors and Guards as defined in the Act.","","","","No","International Brotherhood of Electrical Workers Local 1919",40.157452,-75.124753,"Willow Grove, PA 19090",1,"place","TIGER/Line® dataset from the US Census Bureau","Willow Grove","Montgomery County","PA","19090","US",1
 "06-RD-279255","ST Engineering Hackney, Inc.","","Open","06/29/2021","","","Montgomery","PA","","","","",109,NA,NA,"",NA,"",NA,NA,NA,"",NA,"","","Included: All full-time and regular part-time production, maintenance, shipping and receiving and Quality Control employees
 Excluded: All temporary employees, office clerical employees and guards, professional employees and supervisors as defined by the Act.","","","","No","United Steel, Paper and Forestry, Rubber, Manufacturing, Energy, Allied Industrial and Service Workers International Union, AFL-CIO/CLC",41.17036,-76.87691,"Montgomery, PA 17752",1,"place","TIGER/Line® dataset from the US Census Bureau","Montgomery","Lycoming County","PA","17752","US",1
 "06-RD-279339","Duritza's Enterprises, Inc. d/b/a Rostraver Shop' N Save","","Open","07/01/2021","","","Belle Vernon","PA","","","","",60,NA,NA,"",NA,"",NA,NA,NA,"",NA,"","","Included: Deli, Produce, Front End, Stockers, Meat, Dairy, Frozen, Floral Departments
@@ -350,6 +355,10 @@ Excluded:  All other employees; office, clerical, guards and supervisors as defi
 Traverse City and its satellite facilities including Manistee, Michigan 
 
 Excluded: All other employees","","","","No","Northwest Michigan CRNA and Associates",44.693963,-85.676342,"Traverse City, MI 49684",1,"place","TIGER/Line® dataset from the US Census Bureau","Traverse City","Grand Traverse County","MI","49684","US",1
+"07-RC-282081","Karmanos Cancer Center","","Open","08/27/2021","","","Wyandotte","MI","","","","",24,NA,NA,"",NA,"",NA,NA,NA,"",NA,"","","Included:  Pharmacy Technician II - All full & part time.
+
+Excluded:  All other classifications.
+","","","","No","Local 283, International Brotherhood of Teamsters (IBT)",42.21421,-83.14992,"Wyandotte, MI 48192",1,"place","TIGER/Line® dataset from the US Census Bureau","Wyandotte","Wayne County","MI","48192","US",1
 "07-RC-282100","Prairie Farms Dairy, Inc.","","Open","08/27/2021","","","Detroit","MI","","","","",30,NA,NA,"",NA,"",NA,NA,NA,"",NA,"","","Included:  Any and all full and part time CDL drivers.
 
 Excluded:  Any and all security guards, supervisors, management, dispatchers switchers, as defined in the Act.
@@ -360,12 +369,13 @@ across the State of Michigan.
 Excluded:  All office clerical employees, managers, professional employees, non-guards, and supervisors as defined in the Act.","","","","No","Federal Contract Guards of America",42.347021,-83.060184,"Detroit, MI 48201",1,"place","TIGER/Line® dataset from the US Census Bureau","Detroit","Wayne County","MI","48201","US",1
 "07-RC-282318","Sunbelt Rentals, Inc.","","Open","09/01/2021","","","Caledonia","MI","","","","",6,NA,NA,"",NA,"",NA,NA,NA,"",NA,"","","Included: All full-time and part-time employees employed by the Employer as mechanics, drivers, or yard associates at its 5135 68th Street, Caledonia, Michigan facility.
 Excluded:  Clerical employees, salesmen, counter personnel, guards and supervisors as defined in the Act.","","","","No","Sunbelt Rentals, Inc.",42.81868,-85.524437,"Caledonia, MI 49316",1,"place","TIGER/Line® dataset from the US Census Bureau","Caledonia","Kent County","MI","49316","US",1
+"07-RC-283067","American Plumbing Contractors, Inc.","","Open","09/17/2021","","","Lansing","MI","","","","",46,NA,NA,"",NA,"",NA,NA,NA,"",NA,"","","Included: All Full-Time and Regular Part-Time Journeymen and Apprentice Plumbers and Service Plumbers employed by the Employer at and out of its facility located at 16795 Old US 27,
+Lansing, Michigan
+
+Excluded: All Office Clerical Employees, Guards and Supervisors as defined by the Act, and all other Employees.","","","","No","Local 333, United Association of Journeymen and Apprentices of the Plumbing and Pipefitting Industry of the U.S. and Canada, AFL-CIO",42.599184,-84.371973,"Lansing, MI 48901",1,"place","TIGER/Line® dataset from the US Census Bureau","Lansing","Ingham County","MI","48901","US",1
 "07-RD-264330","Rieth-Riley Construction Co., Inc.","","Open","08/07/2020","","","Grand Rapids, Kalamazoo, Petoskey, Lansing","MI","","","","",161,NA,NA,"",NA,"",NA,NA,NA,"",NA,"","","Included:  All full and regular part-time asphalt plant employees, paving and grading employees in Michigan
 
 Excluded:  Guards and Supervisors","","","","No","Local 324, International Union of Operating Engineers (IUOE)",42.599184,-84.371973,"Lansing, MI 48901",0.33,"place","TIGER/Line® dataset from the US Census Bureau","Lansing","Ingham County","MI","48901","US",1
-"07-RD-280684","OMNI Community Credit Union","","Open","07/30/2021","","","Battle Creek","MI","","","","",41,NA,NA,"",NA,"",NA,NA,NA,"",NA,"","","Included: Union Positions
-
-Excluded: Non Union Positions","","","","No","Local 42, Office and Professional Employees International  Union, (OPEIU),AFL-CIO",42.303041,-85.13044,"Battle Creek, MI 49014",1,"place","TIGER/Line® dataset from the US Census Bureau","Battle Creek","Calhoun County","MI","49014","US",1
 "07-RD-282049","Maple-Drake Real Estate, LLC d/b/a Notting Hill of West Bloomfield","","Open","08/26/2021","","","West Bloomfield","MI","","","","",49,NA,NA,"",NA,"",NA,NA,NA,"",NA,"","","Included: CNA, Kitchen, Laundry department, activities.  Excluded:  All other Employee's.","","","","No","SEIU Healthcare Michigan",42.542715,-83.379535,"West Bloomfield, MI 48322",1,"place","TIGER/Line® dataset from the US Census Bureau","West Bloomfield","Oakland County","MI","48322","US",1
 "07-RM-282801","Visiting Nurse Association Home Health Care","","Open","09/10/2021","","","Port Huron","MI","","","","",1,NA,NA,"",NA,"",NA,NA,NA,"",NA,"","","Included: All Registered Nurses
 
@@ -384,6 +394,9 @@ planning or job planning on the property of Appalachian Power Co./Kentucky Power
 subsidiaries in the Commonwealth of Kentucky, including all Work Planners/Permission persons.  
 Excluding: Project leads, managers, office clerical employees, professional employees, guards
 and supervisors as defined by the Act, and all other employees.","","","","No","International Brotherhood of Electrical Workers AFL-CIO (IBEW), Local Union 369",37.292881,-83.19055,"Hazard, KY 41701",1,"place","TIGER/Line® dataset from the US Census Bureau","Hazard","Perry County","KY","41701","US",1
+"09-RC-283041","FIELDCORE","","Open","09/16/2021","","","West Chester","OH","","","","",43,NA,NA,"",NA,"",NA,NA,NA,"",NA,"","","Included:  All tool center employees, all hoist, tooling & inspection, shipping, and coordinators 2s.
+
+Excluded:  All others.","","","","No","INTERNATIONAL ASSOCIATION OF MACHINISTS AND AEROSPACE WORKERS, AFL-CIO (IAM) DISTRICT LODGE 34",39.336058,-84.40536,"West Chester, OH 45069",1,"place","TIGER/Line® dataset from the US Census Bureau","West Chester","Butler County","OH","45069","US",1
 "09-RD-200329","LEGGETT & PLATT, INC.","","Open","06/09/2017","","","Winchester","KY","","","","",50,NA,NA,"",NA,"",NA,NA,NA,"",NA,"","","Included:  Production & Maintenance employees at the New St. and Ecton Rd., Winchester, KY facility including inspectors and shipping and receiving employees.
 
 Excluded:  Over the road drivers, office clerical emplooyees, quality auditors, inventory control employees, parts attendants, guards, professional employees, and supervisors.","","","","No","International Association of Machinists and Aerospace Workers, AFL-CIO (IAM), Local 619",37.964922,-84.160724,"Winchester, KY 40391",1,"place","TIGER/Line® dataset from the US Census Bureau","Winchester","Clark County","KY","40391","US",1
@@ -423,6 +436,9 @@ Excluded: Excluding all other employees, guards and supervisors","","","","No","
 
 Excluded: All other employees, confidential employees, and guards and supervisors as defined by the act.","","","","No","IBEW Local 175",36.522633,-87.334932,"Clarksville, TN 37040",1,"place","TIGER/Line® dataset from the US Census Bureau","Clarksville","Montgomery County","TN","37040","US",1
 "10-RC-282736","Matheson Tri Gas","","Open","09/10/2021","","","Waverly","TN","","","","",100,NA,NA,"",NA,"",NA,NA,NA,"",NA,"","","Included: permanent hourly in operations shipping receiving maintenance cylinder prep & lab Excluded: clerical, managers, security","","","","No","International Union of Operating Engineers Local 369",36.032353,-87.82746,"Waverly, TN 37185",1,"place","TIGER/Line® dataset from the US Census Bureau","Waverly","Humphreys County","TN","37185","US",1
+"10-RC-283066","Liberty Tire Recycling","","Open","09/17/2021","","","Atlanta","GA","","","","",16,NA,NA,"",NA,"",NA,NA,NA,"",NA,"","","Included: Drivers and drivers' helpers
+
+Excluded: All other employees","","","","No","International Brotherhood of Teamsters Local 728",33.844371,-84.47405,"Atlanta, GA 30301",1,"place","TIGER/Line® dataset from the US Census Bureau","Atlanta","Fulton County","GA","30301","US",1
 "12-RC-255997","Arr-Maz Products, Limited Partnership","Region 12, Tampa, Florida","Open","02/10/2020","","","Mulberry","FL","A","Single Labor Organization","Initial","03/13/2020",42,NA,20,"",NA,"",NA,18,38,"",2,"Y","","INCLUDED:  All full-time and regular part-time production operators, sulfonation operators, railside operators, small blends and warehouse operators, maintenance technicians, electrical and instrumentation technicians, custodians, and parts clerks employees by the Employer at its mulberry,Florida facility.
 EXCLUDED:  All other employees, professional laboratory technicians, quality assurance laboratory technicians, engineers, office clerical employees, managers, guards, and supervisors as defined in the Act.","","","","Yes","",27.8953,-81.97342,"Mulberry, FL 33860",1,"place","TIGER/Line® dataset from the US Census Bureau","Mulberry","Polk County","FL","33860","US",1
 "12-RC-260930","Oracle Elevator Holdco, Inc.","Region 12, Tampa, Florida","Open","05/28/2020","","","Miami","FL","A","Single Labor Organization","Initial","11/18/2020",27,NA,6,"",NA,"",NA,21,27,"",NA,"","","All full-time and regular part-time technicians, mechanics, apprentices, helpers, and warehouse employees employed by the Employer at Miami International Airport, Miami, Florida, excluding administrative and office clerical employees, professional employees, managerial employees, confidential employees, customer service associates, business development managers, sales employees, account managers, guards and supervisors as defined in the Act. 
@@ -454,6 +470,10 @@ the Act.
 
 Excluded: All supervisor, managerial, security guard and all other excluded employees under the act.","","","","No","Union General de Trabajadores, Service Employees International Union",18.465299,-66.116666,"San Juan, PR 00901",1,"place","TIGER/Line® dataset from the US Census Bureau","San Juan","San Juan Municipio","PR","901","US",1
 "12-RC-282972","Nieves & Nieves Engineers and Contractors Inc.","","Open","09/15/2021","","","Lares","PR","","","","",30,NA,NA,"",NA,"",NA,NA,NA,"",NA,"","","Included: all the full time and regular part time employees including but not limited to heavy equipment operators, workers, masons, bricklayers, etc. employed by the Employer at its facilities excluded: all other employees, office clerical employees, professional employees, confidential employees, guards and supervisors as defined by the Act.","","","","No","LIUNA District Council of Puerto Rico, Laborer's International Union of North America",18.295952,-66.881925,"Lares, PR 00669",1,"place","TIGER/Line® dataset from the US Census Bureau","Lares","Lares Municipio","PR","669","US",1
+"12-RC-283049","Intermodal Mexico USA, LLC","","Open","09/16/2021","","","Jacksonville","FL","","","","",42,NA,NA,"",NA,"",NA,NA,NA,"",NA,"","","Included: Full-Time / Part-Time Drivers, Operators, Groundsmen & Leads
+
+Excluded: All Supervisors, Office Staff, Clerks and Mechanics
+","","","","No","International Brotherhood of Teamsters, Local 512",30.389438,-81.680806,"Jacksonville, FL 32201",1,"place","TIGER/Line® dataset from the US Census Bureau","Jacksonville","Duval County","FL","32201","US",1
 "12-RD-279313","Indian River Memorial Hospital, Inc. d/b/a Cleveland Clinic Indian River Hospital","","Open","06/30/2021","","","Vero Beach","FL","","","","",468,NA,NA,"",NA,"",NA,NA,NA,"",NA,"","","Included:  Nurses
 Excluded: all other employees","","","","No","Teamsters Local Union No. 769",27.638005,-80.40294,"Vero Beach, FL 32960",1,"place","TIGER/Line® dataset from the US Census Bureau","Vero Beach","Indian River County","FL","32960","US",1
 "12-RD-280349","Petro Taino Transport Corp.","","Open","07/23/2021","","","Penuelas","PR","","","","",19,NA,NA,"",NA,"",NA,NA,NA,"",NA,"","","Included: All full time and Regular Part time Truck Drivers, Mechanics, Assistant & Maintenance. 
@@ -489,7 +509,6 @@ and Dispensing Inventory Specialists (DIS).
 Excluded: All salaried managers, temporary employees, other contracted employees, office clerical employees,
 confidential employees, and professional employees, guards and supervisors as defined in the Act.","","","","No","Teamsters Local 777",42.11278,-87.979542,"Arlington Heights, IL 60004",1,"place","TIGER/Line® dataset from the US Census Bureau","Arlington Heights","Cook County","IL","60004","US",1
 "13-RC-281871","Warren Barr North Shore LLC","","Open","08/25/2021","","","Highland Park","IL","","","","",55,NA,NA,"",NA,"",NA,NA,NA,"",NA,"","","Included: All full-time and regular part-time Certified Nursing Assistants, Activity Aides, and Restorative/Rehab Aides Excluded: Licensed Practical and Registered Nurses, confidential employees, causal employees, guards, managers, and supervisors as defined by the NLRA","","","","No","SEIU Healthcare Illinois & Indiana",42.187424,-87.811865,"Highland Park, IL 60035",1,"place","TIGER/Line® dataset from the US Census Bureau","Highland Park","Lake County","IL","60035","US",1
-"13-RC-281939","Streamwood Skilled Nursing Facility, LLC","","Open","08/25/2021","","","Streamwood","IL","","","","",70,NA,NA,"",NA,"",NA,NA,NA,"",NA,"","","Included: All full-time and regular part-time Certified Nursing Assistants, Housekeeping Employees, Laundry Employees, Activity Aides, and Restorative/Rehab Aides Excluded: Licensed Practical and Registered Nurses, confidential employees, causal employees, guards, managers, and supervisors as defined by the NLRA","","","","No","SEIU Healthcare Illinois & Indiana",42.019093,-88.178475,"Streamwood, IL 60107",1,"place","TIGER/Line® dataset from the US Census Bureau","Streamwood","Cook County","IL","60107","US",1
 "13-RC-282070","PharmaCann Inc. d/b/a Verilife Cannabis Dispensary","","Open","08/27/2021","","","Chicago","IL","","","","",27,NA,NA,"",NA,"",NA,NA,NA,"",NA,"","","Included:
 All full-time and regular part-time Cannabis Sales Consultants (CSC), Asset Protection Associates (APA)
 and Dispensing Inventory Specialists (DIS).
@@ -504,6 +523,11 @@ Excluded
 
 All office employees, clerical employees, professional employees, guards, and supervisors as
 defined in the National Labor Relations Act.","","","","No","United Steel, Paper and Forestry, Rubber, Manufacturing, Energy, Allied Industrial and Service Workers International Union, AFL-CIO/CLC",42.124176,-87.933819,"Wheeling, IL 60090",1,"place","TIGER/Line® dataset from the US Census Bureau","Wheeling","Cook County","IL","60090","US",1
+"13-RC-282593","Medxcel Facilities Management, LLC","","Open","09/08/2021","","","Evanston","IL","","","","",12,NA,NA,"",NA,"",NA,NA,NA,"",NA,"","","Included: All full-Trne and regular part-time Maintenace mechanics, facilities technicians, plumbers, electricians, carpenters, boiler room technicians, working in the skilled maintenance department for Medxcel at
+AMITA Health Saint Francis Hospital Evanston located at 355 Ridge Ave, Evanston, IL 60202
+
+Excluded:
+Office Clerical, professional employees, managers, guards and supervisors as defined by the Act.","","","","No","International Union of Operating Engineers Local 399",42.049148,-87.702155,"Evanston, IL 60201",1,"place","TIGER/Line® dataset from the US Census Bureau","Evanston","Cook County","IL","60201","US",1
 "13-RC-282662","Curaleaf","","Open","09/09/2021","","","Worth","IL","","","","",30,NA,NA,"",NA,"",NA,NA,NA,"",NA,"","","Included:
 All full-time and part-time Patient Dispensary Agents.
 
@@ -621,6 +645,9 @@ Excluded: Guards, Supervisors & Air Traffic Manager","","","","No","PROFESSIONAL
 Excluded:  All other professional employees, service and maintenance employees, technical employees, business office clerical employees, registered nurses, physicians, supervisors and guards.","","","","No","SEIU Healthcare Minnesota",44.984577,-93.269097,"Minneapolis, MN 55401",1,"place","TIGER/Line® dataset from the US Census Bureau","Minneapolis","Hennepin County","MN","55401","US",1
 "18-RD-280454","W.S. DARLEY & CO.","","Open","07/26/2021","","","Chippewa Falls","WI","","","","",79,NA,NA,"",NA,"",NA,NA,NA,"",NA,"","","Included: all union shop employees @ chippewa falls wi production facilities Excluded: all non union shop employees @ chippewa falls wi production facilities","","","","No","TEAMSTERS LOCAL 662",44.958689,-91.319492,"Chippewa Falls, WI 54729",1,"place","TIGER/Line® dataset from the US Census Bureau","Chippewa Falls","Chippewa County","WI","54729","US",1
 "18-RD-280610","Bishop Noa Home for Senior Citizens","","Open","07/29/2021","","","Escanaba","MI","","","","",30,NA,NA,"",NA,"",NA,NA,NA,"",NA,"","","All full-time and regular part-time certified nursing assistants employed by the Employer; excluding All activity aides, maintenance employees, housekeeping employees, registered nurses (RN), licensed practical nurses (LPN), personal care attendants (PCA), non-certified aides, dietary employees, ward clerks, certified senior advisors (CSA), and guards and supervisors as defined by the Act, as amended.","","","","No","United Steel Workers Local 2-21",45.74525,-87.06458,"Escanaba, MI 49829",1,"place","TIGER/Line® dataset from the US Census Bureau","Escanaba","Delta County","MI","49829","US",1
+"18-RD-283059","Gundersen Moundview Hospital and Clinics","","Open","09/17/2021","","","Adams","WI","","","","",11,NA,NA,"",NA,"",NA,NA,NA,"",NA,"","","Included:  Service and Support
+
+Excluded:  RN and Techs","","","","No","Service Employees International Union Healthcare Wisconsin",43.892066,-89.827509,"Adams, WI 53910",1,"place","TIGER/Line® dataset from the US Census Bureau","Adams","Adams County","WI","53910","US",1
 "19-RC-276359","Zap Enterprises LLC dba Greenworks Cannabis, dba Greenworks N.W.","Region 19, Seattle, Washington","Open","04/28/2021","","","Seattle","WA","A","Single Labor Organization","Initial","06/30/2021",19,NA,4,"",NA,"",NA,7,11,"",2,"","","All full-time and regular part-time budtenders, shift leads, ID checkers, purchasers, inventory employees, inventory managers, and social media employees employed by the Employer at its Seattle, Washington facility; excluding all managers, and guards and supervisors as defined in the Act 
 ","","","","Yes","",47.432251,-121.803388,"Seattle, WA 98060",1,"place","TIGER/Line® dataset from the US Census Bureau","Seattle","King County","WA","98060","US",1
 "19-RC-276616","Cornish College of the Arts","","Open","05/04/2021","","","Seattle","WA","","","","",52,NA,NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","","No","Office and Professional Employees International Union, Local #8",47.432251,-121.803388,"Seattle, WA 98060",1,"place","TIGER/Line® dataset from the US Census Bureau","Seattle","King County","WA","98060","US",1
@@ -731,6 +758,20 @@ Drivers and Warehousemen
 
 Excluded:
 All other employees and Supervisors as defined by the Act.","","","","No","International Longshore and Warehouse Union Local 100",21.316548,-157.845053,"Honolulu, HI 96813",1,"place","TIGER/Line® dataset from the US Census Bureau","Honolulu","Honolulu County","HI","96813","US",1
+"20-RC-283071","Republic Services dba San Francisco Bay Railway, LLC","","Open","09/16/2021","","","San Francisco","CA","","","","",9,NA,NA,"",NA,"",NA,NA,NA,"",NA,"","","Included: heavy equipment operators, conductors, laborers, welders, mechanics
+Excluded: supervisors, managers, sales and accounting","","","","No","Operating Engineers Local Union No. 3",37.776646,-122.417481,"San Francisco, CA 94101",1,"place","TIGER/Line® dataset from the US Census Bureau","San Francisco","San Francisco County","CA","94101","US",1
+"20-RC-283094","California Independent System Operator","","Open","09/17/2021","","","Folsom","CA","","","","",63,NA,NA,"",NA,"",NA,NA,NA,"",NA,"","","Included:
+All full time and regular part time transmission dispatchers and lead transmission
+dispatchers, generation dispatchers and lead generation dispatchers, transmission security
+and lead transmission security, market operators and lead market operators, and
+reliability coordinators and lead reliability coordinators which are assigned to work at the
+employer's properties at250 Outcropping Way in Folsom, CA, and 500 Business Park
+Drive in Lincoln, CA.
+
+Excluded:
+All employees not employed by the Employer; supervisors, confidential employees, and
+management employees as defined by the Act; security guards and officers; all other
+employees.","","","","No","International Brotherhood of Electrical Workers, Local Union 1245",38.666597,-121.141636,"Folsom, CA 95630",1,"place","TIGER/Line® dataset from the US Census Bureau","Folsom","Sacramento County","CA","95630","US",1
 "20-RD-281392","Pacific Waste Systems, LLC","","Open","08/16/2021","","","Barrigada","GU","","","","",23,NA,NA,"",NA,"",NA,NA,NA,"",NA,"","","Included: All hourly personnel located on Guam.
 
 Excluded: Managers, professional employees, safety officer and supervisors.","","","","No","IBEW Local 1260",13.504997,144.830157,"Barrigada, GU 96913",1,"place","TIGER/Line® dataset from the US Census Bureau","Barrigada","Guam","GU","96913","US",1
@@ -1072,6 +1113,9 @@ EXCLUDED: All temporary employees, professional employees, office clerical
 employees, confidential employees, and guards and supervisors as defined in the Act.","","","","Yes","",40.954446,-85.393868,"Roanoke, IN 46783",1,"place","TIGER/Line® dataset from the US Census Bureau","Roanoke","Huntington County","IN","46783","US",1
 "25-RC-279310","Hall Aluminum Products, Inc.","Region 25, Indianapolis, Indiana","Open","06/30/2021","","","Fort Wayne","IN","A","Single Labor Organization","Initial","08/24/2021",63,2,17,"",NA,"",NA,25,42,"",6,"","","INCLUDED: All full-time and regular part-time glaziers, architectural metal workers, and architectural glass workers employed by the Employer at its Fort Wayne, Indiana facility,  
 EXCLUDED: All janitorial employees, office clerical employees, professional employees, managers, temporary employees, and guards and supervisors as defined in the Act.","","","","Yes","",41.093763,-85.070713,"Fort Wayne, IN 46801",1,"place","TIGER/Line® dataset from the US Census Bureau","Fort Wayne","Allen County","IN","46801","US",1
+"25-RC-280548","Tri-State Asphalt, LLC","","Open","07/28/2021","","","Morris","IL","","","","",20,NA,NA,"",NA,"",NA,NA,NA,"",NA,"","","Included: Full time and regular part time drivers at the Morris, Illinois, asphalt plant.
+
+Excluded: all other employees, supervisors, and managers.","","","","No","Teamsters Local Union No. 179",41.337433,-88.430183,"Morris, IL 60450",1,"place","TIGER/Line® dataset from the US Census Bureau","Morris","Grundy County","IL","60450","US",1
 "25-RC-281148","Thyssenkrupp Crankshaft Company, LLC","","Open","08/11/2021","","","Danville","IL","","","","",140,NA,NA,"",NA,"",NA,NA,NA,"",NA,"","","Included: All full-time and regular part-time production and maintenance employees who are employed at the Employer's 1200 International Place, Danville, Illinois facility.
 
 Excluded: Office clerical employees, professional employees, guards and supervisors as defined by the act.","","","","No","International Association of Machinists and Aerospace Workers, AFL-CIO",40.136234,-87.636466,"Danville, IL 61832",1,"place","TIGER/Line® dataset from the US Census Bureau","Danville","Vermilion County","IL","61832","US",1
@@ -1354,52 +1398,6 @@ Excluded:  nursing, mgmt.
 "02-RC-281723","Professional Referee Organization, Inc. (""""""""PRO"""""""")","","Open","08/20/2021","","","Manhattan","NY","","","","",88,NA,NA,"",NA,"",NA,NA,NA,"",NA,"","","Included: Soccer Officials designated by the employer. PRO, as Tiers A, B, and C Officials. 
 
 Excluded: Soccer Officials designated y the employer, PRO, as Tier D","","","","No","Professional Soccer Referees Association (PSRA)",40.750422,-73.996328,"New York, NY 10001",1,"place","TIGER/Line® dataset from the US Census Bureau","New York","New York County","NY","10001","US",1
-"03-RC-283079","Lutheran Care","","Open","09/17/2021","","","Clinton","NY","","","","",25,NA,NA,"",NA,"",NA,NA,NA,"",NA,"","","All Licensed Practical Nurses.
-
-Excluded:  Guards, supervisors and confidential employees as defined in the Act.","","","","No","",43.036697,-75.382414,"Clinton, NY 13323",1,"place","TIGER/Line® dataset from the US Census Bureau","Clinton","Oneida County","NY","13323","US",1
-"06-RC-283075","Asplundh Tree Expert LLC","","Open","09/17/2021","","","Willow Grove","PA","","","","",36,NA,NA,"",NA,"",NA,NA,NA,"",NA,"","","Included:  Tree Trimming, Routine Maintenance brush cutting & brush spraying employees performed for Penelec Power Co. in Pennsylvania.
-
-Excluded:  Managers, Supervisors and Guards as defined in the Act.","","","","No","",40.157452,-75.124753,"Willow Grove, PA 19090",1,"place","TIGER/Line® dataset from the US Census Bureau","Willow Grove","Montgomery County","PA","19090","US",1
-"07-RC-282081","Karmanos Cancer Center","","Open","08/27/2021","","","Wyandotte","MI","","","","",24,NA,NA,"",NA,"",NA,NA,NA,"",NA,"","","Included:  Pharmacy Technician II - All full & part time.
-
-Excluded:  All other classifications.
-","","","","No","Local 283, International Brotherhood of Teamsters (IBT)",42.21421,-83.14992,"Wyandotte, MI 48192",1,"place","TIGER/Line® dataset from the US Census Bureau","Wyandotte","Wayne County","MI","48192","US",1
-"07-RC-283067","American Plumbing Contractors, Inc.","","Open","09/17/2021","","","Lansing","MI","","","","",46,NA,NA,"",NA,"",NA,NA,NA,"",NA,"","","Included: All Full-Time and Regular Part-Time Journeymen and Apprentice Plumbers and Service Plumbers employed by the Employer at and out of its facility located at 16795 Old US 27,
-Lansing, Michigan
-
-Excluded: All Office Clerical Employees, Guards and Supervisors as defined by the Act, and all other Employees.","","","","No","",42.599184,-84.371973,"Lansing, MI 48901",1,"place","TIGER/Line® dataset from the US Census Bureau","Lansing","Ingham County","MI","48901","US",1
-"09-RC-283041","FIELDCORE","","Open","09/16/2021","","","West Chester","OH","","","","",43,NA,NA,"",NA,"",NA,NA,NA,"",NA,"","","Included:  All tool center employees, all hoist, tooling & inspection, shipping, and coordinators 2s.
-
-Excluded:  All others.","","","","No","INTERNATIONAL ASSOCIATION OF MACHINISTS AND AEROSPACE WORKERS, AFL-CIO (IAM) DISTRICT LODGE 34",39.336058,-84.40536,"West Chester, OH 45069",1,"place","TIGER/Line® dataset from the US Census Bureau","West Chester","Butler County","OH","45069","US",1
-"10-RC-283066","Liberty Tire Recycling","","Open","09/17/2021","","","Atlanta","GA","","","","",16,NA,NA,"",NA,"",NA,NA,NA,"",NA,"","","Included: Drivers and drivers' helpers
-
-Excluded: All other employees","","","","No","",33.844371,-84.47405,"Atlanta, GA 30301",1,"place","TIGER/Line® dataset from the US Census Bureau","Atlanta","Fulton County","GA","30301","US",1
-"12-RC-283049","Intermodal Mexico USA, LLC","","Open","09/16/2021","","","Jacksonville","FL","","","","",42,NA,NA,"",NA,"",NA,NA,NA,"",NA,"","","Included: Full-Time / Part-Time Drivers, Operators, Groundsmen & Leads
-
-Excluded: All Supervisors, Office Staff, Clerks and Mechanics
-","","","","No","International Brotherhood of Teamsters, Local 512",30.389438,-81.680806,"Jacksonville, FL 32201",1,"place","TIGER/Line® dataset from the US Census Bureau","Jacksonville","Duval County","FL","32201","US",1
-"13-RC-282593","Medxcel Facilities Management, LLC","","Open","09/08/2021","","","Evanston","IL","","","","",12,NA,NA,"",NA,"",NA,NA,NA,"",NA,"","","Included: All full-Trne and regular part-time Maintenace mechanics, facilities technicians, plumbers, electricians, carpenters, boiler room technicians, working in the skilled maintenance department for Medxcel at
-AMITA Health Saint Francis Hospital Evanston located at 355 Ridge Ave, Evanston, IL 60202
-
-Excluded:
-Office Clerical, professional employees, managers, guards and supervisors as defined by the Act.","","","","No","International Union of Operating Engineers Local 399",42.049148,-87.702155,"Evanston, IL 60201",1,"place","TIGER/Line® dataset from the US Census Bureau","Evanston","Cook County","IL","60201","US",1
-"18-RD-283059","Gundersen Moundview Hospital and Clinics","","Open","09/17/2021","","","Adams","WI","","","","",11,NA,NA,"",NA,"",NA,NA,NA,"",NA,"","","Included:  Service and Support
-
-Excluded:  RN and Techs","","","","No","",43.892066,-89.827509,"Adams, WI 53910",1,"place","TIGER/Line® dataset from the US Census Bureau","Adams","Adams County","WI","53910","US",1
-"20-RC-283071","Republic Services dba San Francisco Bay Railway, LLC","","Open","09/16/2021","","","San Francisco","CA","","","","",9,NA,NA,"",NA,"",NA,NA,NA,"",NA,"","","Included: heavy equipment operators, conductors, laborers, welders, mechanics
-Excluded: supervisors, managers, sales and accounting","","","","No","Operating Engineers Local Union No. 3",37.776646,-122.417481,"San Francisco, CA 94101",1,"place","TIGER/Line® dataset from the US Census Bureau","San Francisco","San Francisco County","CA","94101","US",1
-"20-RC-283094","California Independent System Operator","","Open","09/17/2021","","","Folsom","CA","","","","",63,NA,NA,"",NA,"",NA,NA,NA,"",NA,"","","Included:
-All full time and regular part time transmission dispatchers and lead transmission
-dispatchers, generation dispatchers and lead generation dispatchers, transmission security
-and lead transmission security, market operators and lead market operators, and
-reliability coordinators and lead reliability coordinators which are assigned to work at the
-employer's properties at250 Outcropping Way in Folsom, CA, and 500 Business Park
-Drive in Lincoln, CA.
-
-Excluded:
-All employees not employed by the Employer; supervisors, confidential employees, and
-management employees as defined by the Act; security guards and officers; all other
-employees.","","","","No","",38.666597,-121.141636,"Folsom, CA 95630",1,"place","TIGER/Line® dataset from the US Census Bureau","Folsom","Sacramento County","CA","95630","US",1
-"25-RC-280548","Tri-State Asphalt, LLC","","Open","07/28/2021","","","Morris","IL","","","","",20,NA,NA,"",NA,"",NA,NA,NA,"",NA,"","","Included: Full time and regular part time drivers at the Morris, Illinois, asphalt plant.
-
-Excluded: all other employees, supervisors, and managers.","","","","No","Teamsters Local Union No. 179",41.337433,-88.430183,"Morris, IL 60450",1,"place","TIGER/Line® dataset from the US Census Bureau","Morris","Grundy County","IL","60450","US",1
+"31-RD-283103","XPO Logistics Freight, Inc.","","Open","09/17/2021","","","Bakersfield","CA","","","","",22,NA,NA,"",NA,"",NA,NA,NA,"",NA,"","","Included: All driver Sales Representatives employed by the Employer at its facility located at Bakersfield, CA.
+Excluded: All other employees, including dock workers, managerial, security guards, and supervisors.
+","","","","No","International Brotherhood of Teamsters, Local 87",35.384337,-119.020562,"Bakersfield, CA 93301",1,"place","TIGER/Line® dataset from the US Census Bureau","Bakersfield","Kern County","CA","93301","US",1
