@@ -673,7 +673,15 @@ Excluded:  Supervisors, managers, clerical and guards as defined by the Act.",""
 Excluded:  RN and Techs","","","","No","Service Employees International Union Healthcare Wisconsin",43.892066,-89.827509,"Adams, WI 53910",1,"place","TIGER/Line® dataset from the US Census Bureau","Adams","Adams County","WI","53910","US",1
 "19-RC-276359","Zap Enterprises LLC dba Greenworks Cannabis, dba Greenworks N.W.","Region 19, Seattle, Washington","Open","04/28/2021","","","Seattle","WA","A","Single Labor Organization","Initial","06/30/2021",19,NA,4,"",NA,"",NA,7,11,"",2,"","","All full-time and regular part-time budtenders, shift leads, ID checkers, purchasers, inventory employees, inventory managers, and social media employees employed by the Employer at its Seattle, Washington facility; excluding all managers, and guards and supervisors as defined in the Act 
 ","","","","Yes","",47.432251,-121.803388,"Seattle, WA 98060",1,"place","TIGER/Line® dataset from the US Census Bureau","Seattle","King County","WA","98060","US",1
-"19-RC-276616","Cornish College of the Arts","","Open","05/04/2021","","","Seattle","WA","","","","",52,NA,NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","","No","Office and Professional Employees International Union, Local #8",47.432251,-121.803388,"Seattle, WA 98060",1,"place","TIGER/Line® dataset from the US Census Bureau","Seattle","King County","WA","98060","US",1
+"19-RC-276616","Cornish College of the Arts","","Open","05/04/2021","","","Seattle","WA","","","","",52,NA,NA,"",NA,"",NA,NA,NA,"",NA,"","","Included:  
+
+All Full-Time and Regular Part-Time employees employed by the employer in classifications set forth in Attachment A who are residual to the existing units represented by IATSE, AMF and CFT.
+
+Employees Excluded: 
+
+All other employees of the employer including all managerial, temporary, confidential employees and statutory supervisors as described under the Act.  
+
+","","","","No","Office and Professional Employees International Union, Local #8",47.432251,-121.803388,"Seattle, WA 98060",1,"place","TIGER/Line® dataset from the US Census Bureau","Seattle","King County","WA","98060","US",1
 "19-RC-277637","Pacific Northwest Regional Council of Carpenters","","Open","05/25/2021","","","Kent","WA","","","","",24,NA,NA,"",NA,"",NA,NA,NA,"",NA,"","","Included:  Representatives, Leads, Market Recovery Rep., Regional Manager, Contract Reps.
 
 Excluded:  All other employees, probationary employees, supervisors, and confidential employees.","","","","No","United Food and Commercial Workers Union Local 367",47.405479,-122.195772,"Kent, WA 98031",1,"place","TIGER/Line® dataset from the US Census Bureau","Kent","King County","WA","98031","US",1
@@ -804,6 +812,9 @@ All employees not employed by the Employer; supervisors, confidential employees,
 management employees as defined by the Act; security guards and officers; all other
 employees.","","","","No","International Brotherhood of Electrical Workers, Local Union 1245",38.666597,-121.141636,"Folsom, CA 95630",1,"place","TIGER/Line® dataset from the US Census Bureau","Folsom","Sacramento County","CA","95630","US",1
 "20-RC-283465","Zoological Society of San Diego","","Open","09/24/2021","","","Volcano","HI","","","","",9,NA,NA,"",NA,"",NA,NA,NA,"",NA,"","","Included: Research associates and research assistants employed by the San Diego Zoological Society at the Keahou Bird Conservation Center and the Maui Bird Conservation Center. Excluded: All other Employees, guards, and Supervisors as defined in the Act, as amended.","","","","No","Teamsters Local 481 & Teamsters Local 996",19.440523,-155.250569,"Volcano, HI 96785",1,"place","TIGER/Line® dataset from the US Census Bureau","Volcano","Hawaii County","HI","96785","US",1
+"20-RC-283473","Island Energy Services","","Open","09/20/2021","","","Kapolei","HI","","","","",3,NA,NA,"",NA,"",NA,NA,NA,"",NA,"","","Included: Pipeline Mechanics
+
+Excluded: Managers & Supervisors","","","","No","International Brotherhood of Electrical Workers, Local 1260",21.341784,-158.091383,"Kapolei, HI 96707",1,"place","TIGER/Line® dataset from the US Census Bureau","Kapolei","Honolulu County","HI","96707","US",1
 "20-RD-281392","Pacific Waste Systems, LLC","","Open","08/16/2021","","","Barrigada","GU","","","","",23,NA,NA,"",NA,"",NA,NA,NA,"",NA,"","","Included: All hourly personnel located on Guam.
 
 Excluded: Managers, professional employees, safety officer and supervisors.","","","","No","IBEW Local 1260",13.504997,144.830157,"Barrigada, GU 96913",1,"place","TIGER/Line® dataset from the US Census Bureau","Barrigada","Guam","GU","96913","US",1
@@ -1303,6 +1314,7 @@ Excluded:  nursing, mgmt.
 "02-RC-281723","Professional Referee Organization, Inc. (""""""""PRO"""""""")","","Open","08/20/2021","","","Manhattan","NY","","","","",88,NA,NA,"",NA,"",NA,NA,NA,"",NA,"","","Included: Soccer Officials designated by the employer. PRO, as Tiers A, B, and C Officials. 
 
 Excluded: Soccer Officials designated y the employer, PRO, as Tier D","","","","No","Professional Soccer Referees Association (PSRA)",40.750422,-73.996328,"New York, NY 10001",1,"place","TIGER/Line® dataset from the US Census Bureau","New York","New York County","NY","10001","US",1
-"20-RC-283473","Island Energy Services","","Open","09/20/2021","","","Kapolei","HI","","","","",3,NA,NA,"",NA,"",NA,NA,NA,"",NA,"","","Included: Pipeline Mechanics
+"31-RC-281017","Tarzana Medical Center, LLC","","Open","08/06/2021","","","Tarzana","CA","","","","",4,NA,NA,"",NA,"",NA,NA,NA,"",NA,"","","INCLUDED:  Lactation Consultants (Note: Petitioner seeks an Armour-Globe election to include employees into professional employees unit certified in Case No. 31-RC-5706)
 
-Excluded: Managers & Supervisors","","","","No","International Brotherhood of Electrical Workers, Local 1260",21.341784,-158.091383,"Kapolei, HI 96707",1,"place","TIGER/Line® dataset from the US Census Bureau","Kapolei","Honolulu County","HI","96707","US",1
+EXCLUDED:  No changes to existing unit exclusions.
+","","","","No","SEIU Local 121RN, CTW, CLC",34.155097,-118.547553,"Tarzana, CA 91356",1,"place","TIGER/Line® dataset from the US Census Bureau","Tarzana","Los Angeles County","CA","91356","US",1
