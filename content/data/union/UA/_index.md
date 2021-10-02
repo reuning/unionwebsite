@@ -8,7 +8,7 @@ weight: 1
 ---
 ##  UA
 
-Excluding public employees, in the last year there have been 10 union elections filed by the UA and 9 union elections held. In 3 of those elections a new unit was certified. There are currently 3 open representation cases and 3 of are still waiting to vote.
+Excluding public employees, in the last year there have been 11 union elections filed by the UA and 9 union elections held. In 3 of those elections a new unit was certified. There are currently 4 open representation cases and 4 of are still waiting to vote.
 
 ### Number Employees in a Union Election by Outcome
 {{< image src="UA_hist_vic.png" >}}
