@@ -204,6 +204,7 @@ Excluded:  Office clericals, professionals, management & confidential employees 
 "05-RC-283960","BTI Security","Washington","10/05/2021","DC","Included:  All Full & Part Time Guards at the facility.
 
 Excluded:  Office clericals, professional employees, managers & supervisors as defined by the Act.",25,"Protective Service Officers United (PSOs United)","Open"
+"05-RC-284207","Annapolis Bus Company","Annapolis","10/08/2021","MD","Included: All bus operators and bus operator aides (eMMA Vendor ID SUP146268)) Excluded: Supervisors and office/clerical employees",60,"United Food and Commercial Workers Union MCGEO Local 1994","Open"
 "05-RD-256888","Mountaire Farms Inc.","Selbyville","02/25/2020","DE","Included: 1st Processing, 2nd Processing and Tray Pack;  Excluded:  Transportation, Live Haul Drivers, Shipping, Coolers, Maintenance, HR, Box room, QA, Paws, Giblets",800,"United Food and Commercial Workers Union Local 27 a/w United Food and Commercial Workers International Union, AFL-CIO","Open"
 "05-RD-282230","Ardent Mills, LLC.","York","08/30/2021","PA","Included:  All production and maintenance employees employed by the employer at its York, PA facility.
 Excluded:  Employees including office clerical employees, lab employees, salesmen, buyers, guards and supervisors.",15,NA,"Open"
@@ -247,8 +248,6 @@ Excluded: Office Clerical, Supervisors, and Professional Employees as defined in
 "06-RC-283820","Chase Corporation","Pittsburgh","10/01/2021","PA","Included:  All Quality Control Lab Technicians
 
 Excluded:  All Others",2,"International Association of Machinist & Aerospace Workers, District Lodge 98, AFL-CIO","Open"
-"06-RD-279339","Duritza's Enterprises, Inc. d/b/a Rostraver Shop' N Save","Belle Vernon","07/01/2021","PA","Included: Deli, Produce, Front End, Stockers, Meat, Dairy, Frozen, Floral Departments
-Excluded:",60,"United Steel, Paper and Forestry, Rubber, Manufacturing, Energy, Allied Industrial and Service Workers International Union, Local 3403, AFL-CIO, CLC","Open"
 "06-RD-281331","Monongahela Power Company","Haywood","08/13/2021","WV","Included: All full time and regular part time employees, including Op Tech/M, Op Tech/O, Op/C Techs, Store Room
 
 Excluded: All office clerical employees, foreman, guards, professional employees and supervisors",166,"Utility Workers Union of America Local #304","Open"
@@ -365,6 +364,10 @@ Full and regular part-time heavy equipment and vac truck operators, techs and la
 
 Excluded:
 Supervisors, guards and clericals as defined by the Act.",17,"International Union of Operating Engineers, Local 150, AFL-CIO","Open"
+"13-RC-281758","PharmaCann Inc. d/b/a Verilife Cannabis Dispensary","Arlington Heights","08/23/2021","IL","Included: All full-time and regular part-time Cannabis Sales Consultants (CSC), Asset Protection Associates (APA)
+and Dispensing Inventory Specialists (DIS).
+Excluded: All salaried managers, temporary employees, other contracted employees, office clerical employees,
+confidential employees, and professional employees, guards and supervisors as defined in the Act.",19,"Teamsters Local 777","Open"
 "13-RC-282070","PharmaCann Inc. d/b/a Verilife Cannabis Dispensary","Chicago","08/27/2021","IL","Included:
 All full-time and regular part-time Cannabis Sales Consultants (CSC), Asset Protection Associates (APA)
 and Dispensing Inventory Specialists (DIS).
@@ -439,12 +442,15 @@ Excluded: Bus boys, food runners, and managers",12,"UNITE HERE Local 1","Open"
 Excluded: All managers and supervisors as defined by the act and front desk employees",18,"UNITE HERE Local 74","Open"
 "14-RC-284000","Asplundh Tree Expert Company","Neosho","10/05/2021","MO","Included: All regular and part-time employees working in the classifications of Foreperson, Trimmer, Trainee, and Groundperson Excluded: Supervisors",12,"International Brotherhood of Electrical Workers Local 53","Open"
 "14-RC-284094","Asplundh Tree Expert Company","Nevada","10/06/2021","MO","Included: All regular and part-time employees working in the classifications of Foreperson, Trimmer, Trainee, and Groundperson Excluded: Supervisors",9,"International Brotherhood of Electrical Workers Local 53","Open"
+"14-RC-284203","Centerra","Independence","10/08/2021","MO","Included: All full & part-time guards at the facility.
+Excluded: Office clericals, professional employees, managers & supervisors as defined by NLRA",15,"International Union, Security, Police and Fire  Professionals of America (SPFPA)","Open"
 "15-RC-008841","Outokumpu Stainless USA f/k/a ThyssenKrup Stainless USA, LLC","Calvert","05/17/2010","AL","Included:  All full-time and part-rime production and maintenance employees.
 
 Excluded:  All supervisors, managers and guards as defined in the Act, as amended.",80,"USW","Open"
 "15-RC-280545","CenTrio Energy South LLC","New Orleans","07/28/2021","LA","Included: All full-time and regular part-time operators/stationary engineers and maintenance employees employed by the Employer out of its location at 1661 Gravier St., New Orleans, LA 70112
 
 Excluded: All other employees, managers, office clericals, guards and supervisors as defined in the Act.",11,"UA Plumbers and Steamfitters Local Union 60","Open"
+"15-RC-281801","Viskase Companies, Inc.","Parkin","08/23/2021","AR","All full and regular part time production maintenance employees and lab workers.",162,"International Association of Machinists and Aerospace Workers, AFL-CIO (IAM)","Open"
 "15-RC-282622","Fras-le North America","Prattville","09/08/2021","AL","Included:  All Positions including production, maintenance, sanitation, and quality control
 
 Excluded:  All Management and office personnel",26,"Retail Wholesale and Department Store Union, mid-South Council","Open"
@@ -555,8 +561,8 @@ Growers, Trimmers, Processors, and Fulfillment Associates
 Excluded:
 
 Sales Associates, Marketing, Inventory Extraction, Drivers, and all Supervisors.",29,"United Food and Commercial Workers Union, Local No. 21","Open"
-"19-RC-283238","Safeway, Inc.","Cottage Grove","09/21/2021","OR","Included: All pharmacy clerk and tech employees in armored globe election into grocery contract. Excluded: All pharmacists and supervisors as defined by the act.",4,"United Food and Commercial Workers, Local 555","Open"
 "19-RC-283239","Safeway, Inc.","Portland","09/21/2021","OR","Included: All pharmacy clerk and tech employees in armored globe election into grocery contract. Excluded: All pharmacists and supervisors as defined by the act.",5,"United Food and Commercial Workers, Local 555","Open"
+"19-RC-283240","Albertson's LLC","Klamath Falls","09/21/2021","OR","Included: All pharmacy clerk and tech employees in armored globe election into grocery contract. Excluded: All pharmacists and supervisors as defined by the act.",5,"United Food and Commercial Workers, Local 555","Open"
 "19-RC-283240","Albertson's LLC","Klamath Falls","09/21/2021","OR","Included: All pharmacy clerk and tech employees in armored globe election into grocery contract. Excluded: All pharmacists and supervisors as defined by the act.",5,"United Food and Commercial Workers, Local 555","Open"
 "19-RC-283436","Recology Oregon Compost, Inc., d/b/a Recology Organics Aumsville","Salem","09/24/2021","OR","Included: All full time leads, weighmasters, equipment operators and general laborers at the Recology Organics Aumsville - Salem, Oregon facility. Excluded: All sales, office clerical, professional employees, mechanics, guards and supervisors as defined by the Act.",6,"Teamsters Local Union No. 324","Open"
 "19-RC-283469","Hoffman Structures Inc.","Seattle","09/23/2021","WA","Included:  
@@ -577,6 +583,7 @@ All other employees (including those represented by other Unions), Guards and Su
 "19-RC-284052","Safeway, Inc.","Portland","10/05/2021","OR","Included: All pharmacy clerk and tech employees in Armour-Globe election into grocery contract. Excluded: All pharmacists and supervisors as defined by the Act.",3,"United Food and Commercial Workers, Local 555","Open"
 "19-RC-284053","Safeway, Inc.","Grants Pass","10/05/2021","OR","Included: All pharmacy clerk and tech employees in Armour-Globe election into grocery contract. Excluded: All pharmacists and supervisors as defined by the Act.",3,"United Food and Commercial Workers, Local 555","Open"
 "19-RC-284054","Safeway, Inc.","Boring","10/05/2021","OR","Included: All pharmacy clerk and tech employees in Armour-Globe election into grocery contract. Excluded: All pharmacists and supervisors as defined by the Act.",3,"United Food and Commercial Workers, Local 555","Open"
+"19-RC-284235","Fred Meyer Stores, Inc.","Richland","10/08/2021","WA","Included: All full time and regular part time employees in Grocery, Meat, Deli/Starbucks, Produce/floral, Bakery, Clicklist, Home, Apparel, Nutrition, Health and Beauty (GM), CCK/Front End. Excluding: Pharmacy & Jewelry, all office and clerical workers, Security/Loss Prevention, HR and Managers as per the NLRA.",240,"United Food and Commercial Workers Union, Local 1439","Open"
 "19-RD-204660","United Food and Commercial Workers Union, Local Union No. 21, AFL-CIO, CLC","Seattle","08/18/2017","WA","Included:  All union representatives, lead union representatives, grievance representatives, organizers, community organizers, political organizers, and researchers.
 
 Excluded:  All office/clerical employees, confidential employees, guards, department heads, supervisors, student interns under the supervision of a Local 21 staff person and full time negotiators.",38,"Federation of Agents and International Representatives","Open"
@@ -860,6 +867,12 @@ installation of sheet metal.
 
 Excluded: All other employees, guards, casual employees, confidential clerical and office
 workers, professional employees, and supervisors as defined by the Act.",36,"International Association of Sheet Metal, Air, Rail and Transportation Workers Local Union No. 28","Open"
+"29-RC-279360","SCH Sheet Metal, Inc.","Ronkonkoma","07/01/2021","NY","Included: All full-time and regular part-time Mechanics, Working Foremen, Junior
+Mechanics, Apprentices, and Helpers, engaged in the manufacturing and/or
+installation of sheet metal.
+
+Excluded: All other employees, guards, casual employees, confidential clerical and office
+workers, professional employees, and supervisors as defined by the Act.",36,"International Association of Sheet Metal, Air, Rail and Transportation Workers Local Union No. 28","Open"
 "29-RC-280172","Tower Isles Frozen Foods Ltd.","Brooklyn","07/16/2021","NY","Included: All regular full-time and part-time production, maintenance, shipping and
 
 Excluded: All other employees including office clerical employees, sales employees,",60,"United Construction Trades and Industrial Employees Union Local 621","Open"
@@ -871,10 +884,11 @@ All other employees, including, clerical, supervisors and security guards as per
 "29-RC-281184","Careful Bus Service, Inc.","Brooklyn","08/12/2021","NY","Included: All full and part time drivers and mechanics
 
 Excluded: All employees excluded by the act including security guards",150,"Amalgamated Transit Workers Local 854","Open"
-"29-RC-281726","North Shore Medical Accelerator, P.C. d/b/a North Shore Radiation Therapy","Greenlawn","08/20/2021","NY","Included: All full-time, regular part-time and per diem professional and non-professional
-employees.
-Excluded: All guards, managers, confidential employees and supervisors as defined by
-the Act.",10,"1199SEIU United Healthcare Workers East","Open"
+"29-RC-281726","North Shore Medical Accelerator, P.C. d/b/a North Shore Radiation Therapy","Greenlawn","08/20/2021","NY","Included: All full-time, regular part-time, and per diem non-professional employees, including Medical Assistants and Administrative Support Assistants employed by the
+Employer at 270 Pulaski Road, Green lawn, New York.
+
+
+Excluded: All professional employees, nurse practitioners, registered nurses, radiation and oncology therapists, confidential employees, guards and supervisors as defined by the Act.",10,"1199SEIU United Healthcare Workers East","Open"
 "29-RC-281775","ELH MGMT. LLC","Brooklyn","08/23/2021","NY","Included:
 All full time and regular part time employees of the employer.
 
@@ -925,6 +939,10 @@ Maintenance Mechanic.
 
 Excluded: All executives, superintendents, office clerical, guards, professional and
 supervisory employees, as defined in the National Labor Relations Act.",6,"International Union of Operating Engineers Local Union No. 12, AFL-CIO","Open"
+"31-RC-284233","Valiant","Fort Irwin","10/08/2021","CA","Included: All full-time hourly General Maintenance, Electricians, Plumbers, and HY AC 
+employees employed at this location. 
+
+Excluded: AII other employees, temporary workers, office clerical employees, and supervisors as defined by the Act.",5,"Aerospace and Defense Industry Related District Lodge No. 725, IAM & AW","Open"
 "32-RC-275310","Centerline Logistics Corporation, Leo Marine Services, Inc. and Olympic Tug and Barge, a single employer","Alameda","04/07/2021","CA","Included: All full-time and regular part-time employees, including all mates, junior mates, tankermen, chief engineers/deckhands, licensed engineers/deckhands, engineer deckhands, deckhands I, deckhands II, entry level deckhands, and barge deckhands in the San Francisco Bay Area region based at 321 A Avenue, Alameda, CA 94501.
 
 Excluded: Managers, guards, supervisors as defined by the Act, confidential employees, office clerical employees, irregular part-time employees, and temporary employees.
