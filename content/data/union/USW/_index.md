@@ -8,7 +8,7 @@ weight: 1
 ---
 ##  USW
 
-Excluding public employees, in the last year there have been 19 union elections filed by the USW and 19 union elections held. In 8 of those elections a new unit was certified. There are currently 7 open representation cases and 6 of are still waiting to vote.
+Excluding public employees, in the last year there have been 18 union elections filed by the USW and 18 union elections held. In 8 of those elections a new unit was certified. There are currently 6 open representation cases and 5 of are still waiting to vote.
 
 ### Number Employees in a Union Election by Outcome
 {{< image src="USW_hist_vic.png" >}}
