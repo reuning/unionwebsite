@@ -50,6 +50,7 @@ if (any(is.na(full_dt$seached))) {
   try(to_code_dt$address_components.formatted_street <- NULL)
   try(to_code_dt$address_components.suffix <- NULL)
   try(to_code_dt$address_components.predirectional <- NULL)
+  try(to_code_dt$address_components.postdirectional <- NULL)
   
   to_code_dt$seached <- 1
   
