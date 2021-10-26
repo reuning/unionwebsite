@@ -8,7 +8,7 @@ weight: 1
 ---
 ##  Oregon
 
-Excluding public employees, in the last year there have been 35 union elections filed in Oregon and 23 union elections held. In 11 of those elections a new unit was certified. There are currently 16 open representation cases and 15 of are still waiting to vote.
+Excluding public employees, in the last year there have been 35 union elections filed in Oregon and 23 union elections held. In 12 of those elections a new unit was certified. There are currently 15 open representation cases and 15 of are still waiting to vote.
 
 ### Number Employees in a Union Election by Outcome
 {{< image src="Oregon_hist_vic.png" >}}
