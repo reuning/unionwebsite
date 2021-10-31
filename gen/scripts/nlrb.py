@@ -37,8 +37,9 @@ def start_data(search_url, params=None):
                'token': str(datetime.datetime.now())}
 
     scraper = scrapelib.Scraper(retry_attempts=20)
-    response = scraper.post('https://www.nlrb.gov/nlrb-downloads/start-download',
-                         data=payload)
+    response = scraper.post('https://www.nlrb.gov/nlrb-downloads/start-download/' +
+                            payload['typeOfReport'] + '/' + payload['cacheId'] +
+                            '/' + payload['token'])
 
     result = response.json()['data']
     return result
