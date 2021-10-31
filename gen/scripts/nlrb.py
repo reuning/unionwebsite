@@ -22,7 +22,7 @@ BASE_URL = 'https://www.nlrb.gov'
 HEADER = {'user-agent':'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_2) AppleWebKit/601.3.9 (KHTML, like Gecko) Version/9.0.2 Safari/601.3.9'}
 
 def start_data(search_url, params=None):
-    browser = webdriver.Chrome(options=OPTIONS)
+    browser = webdriver.Chrome("gen/scripts/chromedriver", options=OPTIONS)
     browser.set_page_load_timeout(-1)
     browser.implicitly_wait(15)
 
@@ -37,8 +37,9 @@ def start_data(search_url, params=None):
                'token': str(datetime.datetime.now())}
 
     scraper = scrapelib.Scraper(retry_attempts=20)
-    response = scraper.post('https://www.nlrb.gov/nlrb-downloads/start-download',
-                         data=payload)
+    response = scraper.post('https://www.nlrb.gov/nlrb-downloads/start-download/' +
+                            payload['typeOfReport'] + '/' + payload['cacheId'] +
+                            '/' + payload['token'])
 
     result = response.json()['data']
     return result
