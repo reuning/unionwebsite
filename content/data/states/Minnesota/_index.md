@@ -8,7 +8,7 @@ weight: 1
 ---
 ##  Minnesota
 
-Excluding public employees, in the last year there have been 30 union elections filed in Minnesota and 22 union elections held. In 10 of those elections a new unit was certified. There are currently 16 open representation cases and 15 of are still waiting to vote.
+Excluding public employees, in the last year there have been 34 union elections filed in Minnesota and 22 union elections held. In 10 of those elections a new unit was certified. There are currently 19 open representation cases and 19 of are still waiting to vote.
 
 ### Number Employees in a Union Election by Outcome
 {{< image src="Minnesota_hist_vic.png" >}}
