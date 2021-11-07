@@ -8,7 +8,7 @@ weight: 1
 ---
 ##  UE
 
-Excluding public employees, in the last year there have been 8 union elections filed by the UE and 4 union elections held. In 2 of those elections a new unit was certified. There are currently 7 open representation cases and 5 of are still waiting to vote.
+Excluding public employees, in the last year there have been 8 union elections filed by the UE and 3 union elections held. In 2 of those elections a new unit was certified. There are currently 7 open representation cases and 7 of are still waiting to vote.
 
 ### Number Employees in a Union Election by Outcome
 {{< image src="UE_hist_vic.png" >}}
