@@ -8,7 +8,7 @@ weight: 1
 ---
 ##  UWA
 
-Excluding public employees, in the last year there have been 1 union elections filed by the UWA and 0 union elections held. In 0 of those elections a new unit was certified. There are currently 1 open representation cases and 1 of are still waiting to vote.
+Excluding public employees, in the last year there have been 5 union elections filed by the UWA and 0 union elections held. In 0 of those elections a new unit was certified. There are currently 5 open representation cases and 5 of are still waiting to vote.
 
 ### Number Employees in a Union Election by Outcome
 {{< image src="UWA_hist_vic.png" >}}
