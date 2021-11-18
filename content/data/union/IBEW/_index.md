@@ -8,7 +8,7 @@ weight: 1
 ---
 ##  IBEW
 
-Excluding public employees, in the last year there have been 45 union elections filed by the IBEW and 31 union elections held. In 16 of those elections a new unit was certified. There are currently 27 open representation cases and 21 of are still waiting to vote.
+Excluding public employees, in the last year there have been 45 union elections filed by the IBEW and 31 union elections held. In 16 of those elections a new unit was certified. There are currently 29 open representation cases and 23 of are still waiting to vote.
 
 ### Number Employees in a Union Election by Outcome
 {{< image src="IBEW_hist_vic.png" >}}
