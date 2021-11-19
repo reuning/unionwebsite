@@ -64,7 +64,14 @@ prep_data <- function(data=dt){
   cat("Identifying duplicates\n")
   data <- data[order(-Tally_Date)]
   data$Unique <- !duplicated(data, by='Case')
-
+  to_drop <- !duplicated(data, by=c('Case', 'Tally_Date',
+                                              'Tally_Type', 'Date_Filed', 
+                                              'Ballot_Type', 'Unit ID', 
+                                              'Total_Ballots_Counted', 
+                                              'Votes_Against', 'Votes_For_Union',
+                                              'Status', 'Reason_Closed'))
+  data <- data[to_drop]
+  
   # data <- data[Status=="Closed"]
   # data <- data[`Reason_Closed` %in% c("Certific. of Representative", "Certification of Results")]
   cat("Dropping elections with multiple\n")
