@@ -1,4 +1,4 @@
-"Case","Case Name","City","Date Filed","States & Territories","Voting Unit (Unit A)","No of Eligible Voters","Labor Union1","Status"
+"Case","Case Name","City","Date Filed","State","Voting Unit (Unit A)","No of Eligible Voters","Labor Union1","Status"
 "01-RC-283931","New Haven Ecology Project, Inc. d/b/a Common Ground","New Haven","10/05/2021","CT","Included: All full time and regular part time professional and non-professional employees.
 Excluded: Guards and supervisors as defined in the Act.",75,"Technical, Office and Professional Union, Local 2110, UAW","Open"
 "01-RC-284055","HNS Management Company d/b/a CT Transit","Hartford","10/06/2021","CT","Included
@@ -32,7 +32,7 @@ Excluded: Supervisors as defined by the act and all other employees of the Emplo
 Excluded: Guards, Professionals and Supervisors as defined by the Act.",9,"INTERNATIONAL BROTHERHOOD OF ELECTRICAL WORKERS, LOCAL 457, AFL-CIO","Open"
 "01-RC-285150","Precision Human Resource Solutions, Inc.","Hartford","10/26/2021","CT","Included: All employees of the Employer at the facility currently located at 317 West Service Road in Hartford, Connecticut.
 Excluded: All other employees, supervisors and managers, and guards as defined in the Act.",149,"Amalgamated Transit Union, AFL-CIO/CLC","Open"
-"01-RC-285563","Yankee Gas d/b/a Eversource","Waterbury","11/02/2021","CT","Included: All construction Specialists and """"Supervisors"""" Excluded: Sr Supervisors and Managers and guards",11,"International Brotherhood of Electrical Workers Local 420","Open"
+"01-RC-285563","Yankee Gas d/b/a Eversource","Waterbury","11/02/2021","CT","Included: All construction Specialists and """"""""Supervisors"""""""" Excluded: Sr Supervisors and Managers and guards",11,"International Brotherhood of Electrical Workers Local 420","Open"
 "01-RC-286116","FuelCell Energy, Inc.","Danbury","11/12/2021","CT","All full time and regular part time operation technicians employed at the Danbury facility; but 
 excluding office clerical employees, mechanics, and guards, professional employees and supervisors defined in the Act.",8,"INTERNATIONAL UNION OF OPERATING ENGINEERS, LOCAL UNION NO. 478","Open"
 "01-RC-286199","Pace Ambulance/Western Maine Health","Norway","11/12/2021","ME","Included:  Full-time and Per-diem EMT's/AEMT's/MEDIC's
@@ -73,7 +73,7 @@ All full-time, part-time, overtime and seasonal stage technicians and stage hand
 Excluded:
 All other employees, including all clerical workers, managers, guards, and supervisors as defined by the Act.",19,"Theatrical Protective Union, Local No. One, IATSE, AFL-CIO, CLC","Open"
 "02-RC-280769","The New York Times Company","New York","08/02/2021","NY","Included: All full-time and regular part-time engineers, analysts, designers, project managers, product managers, and assistants who perform work for the New York Times’ websites and mobile applications, wherever located in the United States Excluded: managers, supervisors and guards as defined by the Act",600,"The NewsGuild of New York, Local 31003, TNG/CWA","Open"
-"02-RC-281723","Professional Referee Organization, Inc. (""""PRO"""")","Manhattan","08/20/2021","NY","Included: Soccer Officials designated by the employer. PRO, as Tiers A, B, and C Officials. 
+"02-RC-281723","Professional Referee Organization, Inc. (""""""""PRO"""""""")","Manhattan","08/20/2021","NY","Included: Soccer Officials designated by the employer. PRO, as Tiers A, B, and C Officials. 
 
 Excluded: Soccer Officials designated y the employer, PRO, as Tier D",88,"Professional Soccer Referees Association (PSRA)","Open"
 "02-RC-283400","sp0n, Inc., dba Citizen","New York","09/22/2021","NY","Included: All full time and regular part time employees of the employer in the Central Ops Department Excluded: All other employees including those in the Central Ops Protect subdepartment, Protect Agents, Shift Managers, Project Managers, supervisors and guards as defined by the Act.",69,"Communications Workers of America","Open"
@@ -593,7 +593,7 @@ Excluded: electricians, painters, plumbers, operators, security guards, office e
 "14-RD-284436","CSL-Columbia II, LLC d/b/a Reflections at Garden Place","Columbia","10/13/2021","IL","Included:  All included - hourly staff.  Excluded:  Office staff, maintenance supervisors.",15,"International Union of Operating Engineers, Local 148","Open"
 "14-RD-286510","Blish-Mize Co.","Atchison","11/19/2021","KS","Included: all employees of the Employer's Distribution Center located in Atchison, Kansas
 
-Excluded: summer help, true replacements, part-time janitors, 5th Street janitors, maintenance personnel, inventory control administrative personnel, outside salesmen, office clerical employees, all employees of Hardware House, LLC, including """"working lead personnel,"""" all other non-Blish-Mize employees working out of the Distribution Center, professional employees, foreman, and all other supervisory employees and guards as defined in the NLRA",55,"Teamsters Local  696","Open"
+Excluded: summer help, true replacements, part-time janitors, 5th Street janitors, maintenance personnel, inventory control administrative personnel, outside salesmen, office clerical employees, all employees of Hardware House, LLC, including """"""""working lead personnel,"""""""" all other non-Blish-Mize employees working out of the Distribution Center, professional employees, foreman, and all other supervisory employees and guards as defined in the NLRA",55,"Teamsters Local  696","Open"
 "15-RC-008841","Outokumpu Stainless USA f/k/a ThyssenKrup Stainless USA, LLC","Calvert","05/17/2010","AL","Included:  All full-time and part-rime production and maintenance employees.
 
 Excluded:  All supervisors, managers and guards as defined in the Act, as amended.",80,"USW","Open"
