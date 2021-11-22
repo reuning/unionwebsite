@@ -66,7 +66,7 @@ open_dt$Voters[is.na(open_dt$Voters)] <-
   open_dt$`Employees on charge/petition`[is.na(open_dt$Voters)]
 
 open_dt <- open_dt[, c("Case Name", "Case Number", "City", "Date Filed",
-                       "States & Territories", "Unit Sought", "Voters" )]
+                       "State", "Unit Sought", "Voters" )]
 names(open_dt)[c(2,6,7)] <- c("Case", "Voting Unit (Unit A)",
                                 "No of Eligible Voters")
 
