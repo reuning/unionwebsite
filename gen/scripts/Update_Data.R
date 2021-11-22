@@ -22,7 +22,8 @@ dt <- fread(here("gen", "data", "recent_election_results.csv"))
 #downloader::download("csv-export",
 #                     here("gen", "data", "temp.csv"))
 dt_new <- fread(here("gen", "data", "temp.csv"))
-names(dt_new)[which(names(dt_new)=="Case Number")] <- "Case"
+try(names(dt_new)[which(names(dt_new) == "States & Territories")] <- "State")
+try(names(dt_new)[which(names(dt_new)=="Case Number")] <- "Case")
 dt_new$Election_Data <- "Yes"
 
 
@@ -63,7 +64,7 @@ open_dt$Voters[is.na(open_dt$Voters)] <-
   open_dt$`Employees on charge/petition`[is.na(open_dt$Voters)]
 
 open_dt <- open_dt[, c("Case Name", "Case Number", "City", "Date Filed",
-                       "State", "Unit Sought", "Voters" )]
+                       "States & Territories", "Unit Sought", "Voters" )]
 names(open_dt)[c(2,6,7)] <- c("Case", "Voting Unit (Unit A)",
                                 "No of Eligible Voters")
 
