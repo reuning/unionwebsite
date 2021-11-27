@@ -235,6 +235,9 @@ Excluded:  clerical, guards and supervisors as defined by the Act",10,"Internati
 
 Excluded: All other employees including but not limited to managers, building maintenance, custodians, supervisors, and guards as defined in the act.",53,"Teamster Local Union No. 773","Open"
 "04-RD-285496","Jones Lang LaSalle Americas, Inc.","Townsend","11/01/2021","DE","Included:  Operating Engineers Local 542",20,"International Union of Operating Engineers Local 542","Open"
+"05-RC-016565","W.E. Bowers, Inc.","Beltsville","08/11/2010","MD","Included:  All employees employed by the employer performing duties set forth in Article VI of the recently expired Building and Construction Agreement between the Mechanical Contractors Association of Metropolitan Washington, Inc. and Steamfitters Local 602, United Association, and all employees performing duties as set forth in Article lll of the Supplemental Service Agreement who are employed in the territorial area set forth in Section 3 of the Building and Construction Agreement.
+
+Excluded:  All other employees of the Employer and all office clerical employees and guards as defined in the Act, as amended.",140,"STEAMFITTERS LOCAL UNION NO. 602","Open"
 "05-RC-268024","Pyramid Baltimore Mgt. LLC d/b/a Residence Inn by Marriott at the Johns Hopkins Medical Campus","Baltimore","10/23/2020","MD","Included: All regular full-time and regular part-time hotel service, housekeeping, food and
 beverage, laundry and maintenance employees (including room cleaners, housepersons, kitchen
 employees, cooks, servers, runners, bartenders, cashiers, hosts, laundry workers, engineering and parking
@@ -295,10 +298,6 @@ Excluded: All other employees, guards, and supervisors as defined by the Act.",6
 
 Excluded:  All other employees, guards, and supervisors as defined by the Act.",23,"1199 SEIU United Healthcare Workers East","Open"
 "05-RD-256888","Mountaire Farms Inc.","Selbyville","02/25/2020","DE","Included: 1st Processing, 2nd Processing and Tray Pack;  Excluded:  Transportation, Live Haul Drivers, Shipping, Coolers, Maintenance, HR, Box room, QA, Paws, Giblets",800,"United Food and Commercial Workers Union Local 27 a/w United Food and Commercial Workers International Union, AFL-CIO","Open"
-"05-RD-284640","MGM National Harbor, LLC","Oxon Hill","10/18/2021","MD","Included: All Full-Time, Part-Time and On Call Officers
-
-Excluded:  All other employees
-",102,"Union Rights for Security Officers","Open"
 "05-RD-284734","Mountaire Farms, Inc.","Selbyville","10/18/2021","DE","Included: All full-time and regular part-time production employees employed by the Employer at its Selbyville, Delaware poultry processing facility, including, but not limited to employees employed in/as: live hangers, pinners, eviscerating, grading, cut-up, sawing, deboning, and other further processing employees. 
 
 Excluded: All employees employed in classifications covered by a contract between the Employer and Teamsters Local 355; as well as all employees employed as office clericals, supervisors as defined in Section 2(11) of the Act, and guards.",600,NA,"Open"
@@ -406,6 +405,9 @@ Excluded:  Inventory Coordinators, Information Technology Employees, Supervisors
 "09-RC-286639","TUDOR'S BISCUIT WORLD OF ELKVIEW","Elkview","11/22/2021","WV","Included:  All regular full-time and part-time employees at Tudor’s Biscuit World of Elkview.
 
 Excluded:  Supervisors as defined by the Act.",25,"United Food and Commercial Workers Union, Local 400","Open"
+"09-RC-286790","CRESCO LABS LLC D/B/A SUNNYSIDE*","Cincinnati","11/24/2021","OH","Included: All full time and regular part time non-exempt employees and lead employees employee.
+Excluded: General Managers, assistant managers, confidential employees, guards and supervisors 
+",23,"UNITED FOOD AND COMMERCIAL WORKERS INTERNATIONAL UNION, CLC (UFCW), LOCAL 75","Open"
 "09-RD-200329","LEGGETT & PLATT, INC.","Winchester","06/09/2017","KY","Included:  Production & Maintenance employees at the New St. and Ecton Rd., Winchester, KY facility including inspectors and shipping and receiving employees.
 
 Excluded:  Over the road drivers, office clerical emplooyees, quality auditors, inventory control employees, parts attendants, guards, professional employees, and supervisors.",50,"International Association of Machinists and Aerospace Workers, AFL-CIO (IAM), Local 619","Open"
@@ -637,7 +639,8 @@ Excluded: All Office Clerical employees, Professional employees, and Supervisors
 "16-RD-283976","EXXONMOBIL CORPORATION, BEAUMONT REFINERY","Beaumont","10/05/2021","TX","Included: Employees of the Company in the Process Division, Mechanical Division and Magpetco(including hourly paid subforemen, leaderman, all clerks, typists, and messengers)  atits Beaumont Refinery, Texas.
 
 Excluded: officials, supervisors, foremen with the right to hire and discharge, all subforeman A in the Machine Shop, plant protection employees, civil, chemical, mechanical and electrical engineers professional personnel, confidential employees, employees in the I.B.E.W of the AFL-CIO unit and casual temporary employees,",584,"UNITED STEEL, PAPER, AND FORESTRY, RUBBER, MANUFACTURING, ENERGY, ALLIED INDUSTRIAL, AND SERVICE WORKER'S INTERNATIONAL UNION AFL-CIO-CLC LOCAL 13-00243","Open"
-"18-RC-283141","Minnesota Historical Society","St. Paul","09/20/2021","MN","",295,"AFSCME Council 5","Open"
+"18-RC-283141","Minnesota Historical Society","St. Paul","09/20/2021","MN","Included: All employees 
+Excluded: Supervisors, Confidential Employees, and Guards",295,"AFSCME Council 5","Open"
 "18-RC-283298","LEO A. HOFFMAN CENTER, INC.","St. Peter","09/22/2021","MN","Included: All full-&part-time youth counselors and recreation coordinators
 Excluded: Supervisors. Confidential workers, Therapists, and RNs",44,"AFSCME COUNCIL 65","Open"
 "18-RC-283402","Semper Fi Express, LLC","Oak Creek","09/23/2021","WI","Included:   All regular full-time and part-time employees employed by the Employer at it's address of 305 E. Mahn Ct. Ste. 400, Oak Creek, WI 53154. 
@@ -725,7 +728,15 @@ Excluding:  All other professional employees, service and maintenance employees,
 
 Excluded: Quality control employees, production control clerks, cycle counters, all office clerical and professional employees, watchmen, guards, and all supervisors as defined in the National Labor Relations Act as amended, and all other employees.",222,"IAMAW DISTRICT NO. 10","Open"
 "18-RM-285330","THE POWERS MANUFACTURING COMPANY","Waterloo","10/28/2021","IA","All production, cutting and maintenance employees of The Powers Manufacturing Company of Waterloo, Iowa; excluding executives, supervisory employees, forepersons, clerical and office employees.",31,"UNITED FOOD AND COMMERCIAL WORKERS DISTRICT LOCAL 431","Open"
-"19-RC-276616","Cornish College of the Arts","Seattle","05/04/2021","WA","",52,"Office and Professional Employees International Union, Local #8","Open"
+"19-RC-276616","Cornish College of the Arts","Seattle","05/04/2021","WA","Included:  
+
+All Full-Time and Regular Part-Time employees employed by the employer in classifications set forth in Attachment A who are residual to the existing units represented by IATSE, AMF and CFT.
+
+Employees Excluded: 
+
+All other employees of the employer including all managerial, temporary, confidential employees and statutory supervisors as described under the Act.  
+
+",52,"Office and Professional Employees International Union, Local #8","Open"
 "19-RC-282922","Cannaseur's Choice LLC","Renton","09/14/2021","WA","Included:  
 
 Growers, Trimmers, Processors, and Fulfillment Associates
@@ -1052,7 +1063,6 @@ precast concrete panels at the Greenpoint Landing project jobsite in Greenpoint,
 excl;
 All other trades, employees, guards, casual employees, confidential clerical and office workers,
 professional employees and supervisors as defined by the Act.",11,"Iron Workers Local 197 Stone Derrickmen & Riggers","Open"
-"29-RC-278216","Prime Packaging Corp.","Brooklyn","06/07/2021","NY","Included: production, warehouse, laborer Excluded: office, clerical, guards",30,"Transportation, Production, & Warehouse Employees Union, Local 438","Open"
 "29-RC-279096","MJ Melo Painting, Ltd","Brooklyn","06/28/2021","NY","Employees included:
 Full time and regular part time Painters
 
