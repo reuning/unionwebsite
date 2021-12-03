@@ -8,7 +8,7 @@ weight: 2
 ---
 ##  Multiple
 
-Excluding public employees, in the last year there have been 165 union elections filed by the Multiple and 161 union elections held. In 97 of those elections a new unit was certified. There are currently 65 open representation cases and 42 of are still waiting to vote.
+Excluding public employees, in the last year there have been 164 union elections filed by the Multiple and 160 union elections held. In 95 of those elections a new unit was certified. There are currently 65 open representation cases and 41 of are still waiting to vote.
 
 ### Number Employees in a Union Election by Outcome
 {{< image src="Multiple_hist_vic.png" >}}
