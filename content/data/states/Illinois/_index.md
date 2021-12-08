@@ -8,7 +8,7 @@ weight: 1
 ---
 ##  Illinois
 
-Excluding public employees, in the last year there have been 80 union elections filed in Illinois and 70 union elections held. In 49 of those elections a new unit was certified. There are currently 23 open representation cases and 18 of are still waiting to vote.
+Excluding public employees, in the last year there have been 82 union elections filed in Illinois and 70 union elections held. In 49 of those elections a new unit was certified. There are currently 25 open representation cases and 20 of are still waiting to vote.
 
 ### Number Employees in a Union Election by Outcome
 {{< image src="Illinois_hist_vic.png" >}}
