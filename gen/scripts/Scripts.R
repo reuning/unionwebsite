@@ -62,7 +62,7 @@ prep_data <- function(data=dt){
 
   ### Get most recent
   cat("Identifying duplicates\n")
-  data <- data[order(-Tally_Date)]
+  data <- data[order(-Date_Filed, -Tally_Date, -Date_Closed, Num_Eligible_Voters)]
   data$Unique <- !duplicated(data, by='Case')
   to_drop <- !duplicated(data, by=c('Case', 'Tally_Date',
                                               'Tally_Type', 'Date_Filed', 
