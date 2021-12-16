@@ -498,7 +498,7 @@ report_page <- function(year, quarter){
   paste0("## ", year, " ", quarter, " quarter filings\n\n"),
   paste0("### Filings by Union\n"),
   paste0("{{< readtable table=\"/tables/reports/", year, "/", quarter, "union_filings.html\" >}}\n\n"),
-  paste0("### Filings by Union\n"),
+  paste0("### Closed Elections by Union\n"),
   paste0("{{< readtable table=\"/tables/reports/", year, "/", quarter, "union_closed.html\" >}}"))
 
   try(dir.create(here("content", "data", "reports", year)))
