@@ -22,7 +22,7 @@ dt[National_Count>1, National:="Multiple"]
 
 #### Create quarterly reports ####
 
-tmp <- seq.Date(lubridate::today()+1, as_date("2010-01-01"), by = "-3 month")
+tmp <- seq.Date(lubridate::today()+1, lubridate::as_date("2010-01-01"), by = "-3 month")
 quarters <- lubridate::quarter(tmp, type = "quarter")
 years <- year(tmp)
 starts <- lubridate::quarter(tmp, type="date_first")
