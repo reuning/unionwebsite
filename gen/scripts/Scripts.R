@@ -497,36 +497,30 @@ report_page <- function(year, quarter){
   "---\n\n", 
   paste0("## ", year, " ", quarter, " quarter filings\n\n"),
   paste0("### Filings by Union\n"),
-  paste0("{{< readtable table=\"/tables/", year, "/", quarter, "union_filings.html\" >}}"))
-  
+  paste0("{{< readtable table=\"/tables/reports/", year, "/", quarter, "union_filings.html\" >}}\n\n"),
+  paste0("### Filings by Union\n"),
+  paste0("{{< readtable table=\"/tables/reports/", year, "/", quarter, "union_closed.html\" >}}"))
+
   try(dir.create(here("content", "data", "reports", year)))
   writeLines(page, con=here("content", "data", "reports", year, paste0(quarter, ".md")))
 }
 
-report_table <- function(data, 
+report_table_filed <- function(data, 
                             start_time, 
                             end_time, 
-                            type="Filed", 
                          file_name){
-  if(type=="Filed"){
-    var <- "Date_Filed"
-  } else if (type=="Closed"){
-    var <- "Date_Closed"
-  } else { 
-    stop("Missing column")
-  }
-  
-  filed_table_current <- data[Unique==TRUE & get(var) > start_time & 
-                                get(var) <= end_time,.("Total Units Filed"=.N,
+
+  filed_table_current <- data[Unique==TRUE & Date_Filed > start_time & 
+                                Date_Filed <= end_time,.("Total Units Filed"=.N,
                                                               "Total Workers"=sum(Num_Eligible_Voters),
                                            "Median Unit Size" = median(Num_Eligible_Voters)),
                            by=National]
   
-  prev_q_start_time <- start_time - months(4)
-  prev_q_end_time <- end_time - months(4)
+  prev_start_time <- start_time - months(4)
+  prev_end_time <- end_time - months(4)
   
-  filed_table_prev <- data[Unique==TRUE & get(var) > prev_q_start_time & 
-                             get(var) <= prev_q_end_time,.("Prev_Units"=.N, 
+  filed_table_prev <- data[Unique==TRUE & Date_Filed > prev_start_time & 
+                             Date_Filed <= prev_end_time,.("Prev_Units"=.N, 
                                                                 "Prev_Workers"=sum(Num_Eligible_Voters),
                                                          "Prev_Size" = median(Num_Eligible_Voters)),
                               by=National]
@@ -558,6 +552,67 @@ report_table <- function(data,
     filed_table[order(-`Total Units Filed`)], 
     format="html",
     align="lcccccc",
+    table.attr="class='display summary-stats'"
+  )
+  
+  
+  if(!dir.exists(dirname(file_name))) dir.create(dirname(file_name))
+  
+  
+  writeLines(tab, con = file_name)
+  
+}
+
+
+
+report_table_closed <- function(data, 
+                               start_time, 
+                               end_time, 
+                               file_name){
+  
+  closed_table_current <- data[Unique==TRUE & Date_Closed > start_time & 
+                                 Date_Closed <= end_time,.("Total Units Closed"=.N),
+                              by=.(National)]
+  
+  prev_start_time <- start_time - months(4)
+  prev_end_time <- end_time - months(4)
+  
+  closed_table_prev <- data[Unique==TRUE & Date_Closed > prev_start_time & 
+                              Date_Closed <= prev_end_time,.("Prev_Units"=.N),
+                           by=National]
+  
+  succesful_table <- data[Unique==TRUE & Date_Closed > start_time & 
+                              Date_Closed <= end_time,.("Units Won"=sum(Union_Cer=="Yes"), 
+                                                             "Total Workers Added"=sum(Num_Eligible_Voters * 
+                                                                                         (Union_Cer == "Yes")), 
+                                                             "Median Successful Unit"=median(Num_Eligible_Voters[Union_Cer == "Yes"])),
+                            by=National]
+  
+  closed_table <- merge(closed_table_current, closed_table_prev,  all=T)
+  closed_table <- merge(closed_table, succesful_table, all=T)
+  closed_table[is.na(`Total Units Closed`), `Total Units Closed`:=0]
+  closed_table[is.na(`Units Won`), `Units Won`:=0]
+  closed_table[is.na(`Total Workers Added`), `Total Workers Added`:=0]
+  closed_table[is.na(`Median Successful Unit`), `Median Successful Unit`:=0]
+  
+  closed_table[, "Change in Units" := scales::comma(`Total Units Closed` - Prev_Units, accuracy = 1)]
+  closed_table <- closed_table[,.(National, `Total Units Closed`, `Change in Units`, 
+                                `Units Won`, `Total Workers Added`,
+                                `Median Successful Unit`)]
+  
+  
+  
+  closed_table[is.na(`Change in Units`), `Change in Units`:="-"]
+  closed_table[, `Total Workers Added`:=scales::comma(`Total Workers Added`, accuracy=1)]
+  # closed_table[, `Total Units Filed`:=scales::comma(`Total Units Filed`, accuracy=1)]
+  closed_table[, `Median Successful Unit`:=scales::comma(`Median Successful Unit`, accuracy=.1)]
+  
+  
+  
+  tab <- kable(
+    closed_table[order(-`Total Units Closed`)], 
+    format="html",
+    align="lccccc",
     table.attr="class='display summary-stats'"
   )
   

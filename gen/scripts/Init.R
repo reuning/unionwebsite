@@ -34,11 +34,20 @@ for(ii in 2:length(quarters)){
   report_page(year=year, quarter=quarter)
   file_name <- here("content", "tables","reports", year, paste0(quarter, "union_filings.html"))
   
-  report_table(data = dt, 
+  report_table_filed(data = dt, 
                start_time=starts[ii], 
                end_time=ends[ii], 
-               type="Filed", 
                file_name=file_name)
+  
+  
+  file_name <- here("content", "tables","reports", year, paste0(quarter, "union_closed.html"))
+  
+  report_table_closed(data = dt, 
+                     start_time=starts[ii], 
+                     end_time=ends[ii], 
+                     file_name=file_name)
+
+  
 }
 
 
