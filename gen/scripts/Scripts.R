@@ -516,8 +516,8 @@ report_table_filed <- function(data,
                                            "Median Unit Size" = median(Num_Eligible_Voters)),
                            by=National]
   
-  prev_start_time <- start_time - months(4)
-  prev_end_time <- end_time - months(4)
+  prev_start_time <- lubridate::add_with_rollback(start_time, months(-4))
+  prev_end_time <- lubridate::add_with_rollback(end_time, months(-4))
   
   filed_table_prev <- data[Unique==TRUE & Date_Filed > prev_start_time & 
                              Date_Filed <= prev_end_time,.("Prev_Units"=.N, 
