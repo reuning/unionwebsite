@@ -508,7 +508,7 @@ report_page <- function(year, quarter){
 report_table_filed <- function(data, 
                             start_time, 
                             end_time, 
-                         file_name){
+                         file_name, months_back=-4){
 
   filed_table_current <- data[Unique==TRUE & Date_Filed > start_time & 
                                 Date_Filed <= end_time,.("Total Units Filed"=.N,
@@ -568,14 +568,14 @@ report_table_filed <- function(data,
 report_table_closed <- function(data, 
                                start_time, 
                                end_time, 
-                               file_name){
+                               file_name, months_back=-4){
   
   closed_table_current <- data[Unique==TRUE & Date_Closed > start_time & 
                                  Date_Closed <= end_time,.("Total Units Closed"=.N),
                               by=.(National)]
   
-  prev_start_time <- start_time - months(4)
-  prev_end_time <- end_time - months(4)
+  prev_start_time <- lubridate::add_with_rollback(start_time, months(months_back))
+  prev_end_time <- lubridate::add_with_rollback(end_time, months(months_back))
   
   closed_table_prev <- data[Unique==TRUE & Date_Closed > prev_start_time & 
                               Date_Closed <= prev_end_time,.("Prev_Units"=.N),
