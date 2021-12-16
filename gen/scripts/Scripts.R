@@ -490,7 +490,7 @@ report_page <- function(year, quarter){
   
   page <- paste0("---\n",
   paste0("title: ",quarter, "\n"),
-  paste0("pagetitle:", year, " ", quarter, " quarter Union Filing Report\n"),
+  paste0("pagetitle: ", year, " ", quarter, " quarter Union Filing Report\n"),
   paste0("description: Data on union election filings in ", year, " ", quarter, " quarter \n"),
   "keywords: union filings\n",
   "weight: 1\n",

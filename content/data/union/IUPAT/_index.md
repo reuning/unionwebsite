@@ -8,7 +8,7 @@ weight: 1
 ---
 ##  IUPAT
 
-Excluding public employees, in the last year there have been 6 union elections filed by the IUPAT and 2 union elections held. In 1 of those elections a new unit was certified. There are currently 4 open representation cases and 4 of are still waiting to vote.
+Excluding public employees, in the last year there have been 6 union elections filed by the IUPAT and 5 union elections held. In 1 of those elections a new unit was certified. There are currently 4 open representation cases and 1 of are still waiting to vote.
 
 ### Number Employees in a Union Election by Outcome
 {{< image src="IUPAT_hist_vic.png" >}}
