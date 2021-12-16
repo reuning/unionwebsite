@@ -482,3 +482,89 @@ create_front_page_table <- function(data=NULL,
   
   
 }
+
+
+
+
+report_page <- function(year, quarter){
+  
+  page <- paste0("---\n",
+  paste0("title: ",quarter, "\n"),
+  paste0("pagetitle:", year, " ", quarter, " quarter Union Filing Report\n"),
+  paste0("description: Data on union election filings in ", year, " ", quarter, " quarter \n"),
+  "keywords: union filings\n",
+  "weight: 1\n",
+  "---\n\n", 
+  paste0("## ", year, " ", quarter, " quarter filings\n\n"),
+  paste0("### Filings by Union\n"),
+  paste0("{{< readtable table=\"/tables/", year, "/", quarter, "union_filings.html\" >}}"))
+  
+  try(dir.create(here("content", "data", "reports", year)))
+  writeLines(page, con=here("content", "data", "reports", year, paste0(quarter, ".md")))
+}
+
+report_table <- function(data, 
+                            start_time, 
+                            end_time, 
+                            type="Filed", 
+                         file_name){
+  if(type=="Filed"){
+    var <- "Date_Filed"
+  } else if (type=="Closed"){
+    var <- "Date_Closed"
+  } else { 
+    stop("Missing column")
+  }
+  
+  filed_table_current <- data[Unique==TRUE & get(var) > start_time & 
+                                get(var) <= end_time,.("Total Units Filed"=.N,
+                                                              "Total Workers"=sum(Num_Eligible_Voters),
+                                           "Median Unit Size" = median(Num_Eligible_Voters)),
+                           by=National]
+  
+  prev_q_start_time <- start_time - months(4)
+  prev_q_end_time <- end_time - months(4)
+  
+  filed_table_prev <- data[Unique==TRUE & get(var) > prev_q_start_time & 
+                             get(var) <= prev_q_end_time,.("Prev_Units"=.N, 
+                                                                "Prev_Workers"=sum(Num_Eligible_Voters),
+                                                         "Prev_Size" = median(Num_Eligible_Voters)),
+                              by=National]
+  
+  filed_table <- merge(filed_table_current, filed_table_prev, all=T)
+  filed_table[is.na(`Total Units Filed`), `Total Units Filed`:=0]
+  filed_table[is.na(`Total Workers`), `Total Workers`:=0]
+  filed_table[is.na(`Median Unit Size`), `Median Unit Size`:=0]
+  
+  filed_table[, "Change in Units" := scales::comma(`Total Units Filed` - Prev_Units, accuracy = 1)]
+  filed_table[, "Change in Total Workers" := scales::percent((`Total Workers` - Prev_Workers)/Prev_Workers, big.mark=",")]
+  filed_table[, "Change in Median Unit" := scales::percent((`Median Unit Size` - Prev_Size)/Prev_Size, big.mark = ",")]
+  filed_table <- filed_table[,.(National, `Total Units Filed`, `Change in Units`, 
+                 `Total Workers`, `Change in Total Workers`,
+                 `Median Unit Size`, `Change in Median Unit`)]
+  
+
+  
+  filed_table[is.na(`Change in Total Workers`), `Change in Total Workers`:="-"]
+  filed_table[is.na(`Change in Units`), `Change in Units`:="-"]
+  filed_table[is.na(`Change in Median Unit`), `Change in Median Unit`:="-"]
+  filed_table[, `Total Workers`:=scales::comma(`Total Workers`, accuracy=1)]
+  # filed_table[, `Total Units Filed`:=scales::comma(`Total Units Filed`, accuracy=1)]
+  filed_table[, `Median Unit Size`:=scales::comma(`Median Unit Size`, accuracy=.1)]
+  
+
+  
+  tab <- kable(
+    filed_table[order(-`Total Units Filed`)], 
+    format="html",
+    align="lcccccc",
+    table.attr="class='display summary-stats'"
+  )
+  
+  
+  if(!dir.exists(dirname(file_name))) dir.create(dirname(file_name))
+  
+  
+  writeLines(tab, con = file_name)
+  
+}

@@ -10,17 +10,39 @@ dt_old <- fread(here("gen", "data", "old_nlrb.csv"))
 
 dt <- rbind(dt, dt_old)
 # dt[Case=="19-RC-195508",`Labor Union1`:= "SEIU Healthcare 1199NW"]
-
 dt <- prep_data(dt)
 
-# View(dt[National_Count > 1])
-# View(table(dt[National_Count == 0, Labor_Union]))
+
 
 dt[National %in% names(which(table(dt$National) < 20)), National:="Other"]
 
 dt[National=="", National:="Uncoded"]
 dt[National_Count>1, National:="Multiple"]
 
+
+#### Create quarterly reports ####
+
+tmp <- seq.Date(today()+1, as_date("2010-01-01"), by = "-3 month")
+quarters <- lubridate::quarter(tmp, type = "quarter")
+years <- year(tmp)
+starts <- lubridate::quarter(tmp, type="date_first")
+ends <- lubridate::quarter(tmp, type="date_last")
+
+for(ii in 2:length(quarters)){
+  year <- years[ii]
+  quarter <- quarters[ii]
+  report_page(year=year, quarter=quarter)
+  file_name <- here("content", "tables","reports", year, paste0(quarter, "union_filings.html"))
+  
+  report_table(data = dt, 
+               start_time=starts[ii], 
+               end_time=ends[ii], 
+               type="Filed", 
+               file_name=file_name)
+}
+
+
+#### Create other pages ####
 nationals <- unique(dt$National)
 
 
