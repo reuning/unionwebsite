@@ -250,7 +250,7 @@ create_time_plot <- function(data=NULL,
   scale_x_date(limits=c(as.Date("1999-01-01"), lubridate::ceiling_date(lubridate::today(), unit = "month"))) +
     scale_y_continuous(labels=scales::label_comma()) +
   theme_minimal(base_family = "Crimson Pro") +
-    scale_fill_colorblind("Size of Unit", drop=F) +
+    scale_fill_viridis_d("Unionized?", direction = -1, begin = .1, end=.9) +
     theme(legend.position = "bottom",
           text = element_text(size=15, lineheight=.3)) +
     labs(x="Quarter", y="Number of Units",
@@ -262,12 +262,13 @@ create_time_plot <- function(data=NULL,
          units="in", dpi=200)
 
   ggplot(tmp_dt, aes(x=Tally_Quarter,
-                     fill=Union_Cer, weight=Num_Eligible_Voters)) +
+                     fill=forcats::fct_rev(Union_Cer), weight=Num_Eligible_Voters)) +
     geom_bar(position=position_stack(reverse=T), color="black", size=.2, width=80) +
-    scale_x_date(limits=c(as.Date("1999-01-01"), lubridate::ceiling_date(lubridate::today(), unit = "month"))) +
+    scale_x_date(limits=c(as.Date("1999-01-01"), 
+                          lubridate::ceiling_date(lubridate::today(), unit = "month"))) +
     scale_y_continuous(labels=scales::label_comma()) +
     theme_minimal(base_family = "Crimson Pro") +
-    scale_fill_colorblind("Unionized?") +
+    scale_fill_viridis_d("Unionized?", direction = -1, begin = .2, end=.8) +
     theme(legend.position = "bottom",
           text = element_text(size=15, lineheight=.3)) +
     labs(x="Quarter", y="Number of Voters", caption = "Includes only certification votes with a single union, data from NLRB. https://unionelections.org")
@@ -595,8 +596,10 @@ report_table_filed <- function(data,
   filed_table[is.na(`Median Unit Size`), `Median Unit Size`:=0]
   
   filed_table[, "Change in Units" := scales::comma(`Total Units Filed` - Prev_Units, accuracy = 1)]
-  filed_table[, "Change in Total Workers" := scales::percent((`Total Workers` - Prev_Workers)/Prev_Workers, big.mark=",")]
-  filed_table[, "Change in Median Unit" := scales::percent((`Median Unit Size` - Prev_Size)/Prev_Size, big.mark = ",")]
+  filed_table[, "Change in Total Workers" := scales::percent((`Total Workers` - Prev_Workers)/Prev_Workers, big.mark=",", 
+                                                             accuracy = 1.11)]
+  filed_table[, "Change in Median Unit" := scales::percent((`Median Unit Size` - Prev_Size)/Prev_Size, big.mark = ",",
+                                                           accuracy = 1.11)]
   filed_table <- filed_table[,.(National, `Total Units Filed`, `Change in Units`, 
                  `Total Workers`, `Change in Total Workers`,
                  `Median Unit Size`, `Change in Median Unit`)]
