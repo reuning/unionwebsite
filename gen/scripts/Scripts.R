@@ -533,12 +533,12 @@ report_page <- function(year, quarter, data, start_time, end_time,
   
   
   
-  filing <- sprintf("%d units were filed, %s quarter. The median size was %d with a total of %s workers across all units, %s quarter.", 
+  filing <- sprintf("%d units were filed, %s quarter. The median size was %1.0f with a total of %s workers across all units, %s quarter.", 
           tot_file, change_sentence(tot_file, prev_tot_file), 
           med_file_workers, scales::comma(tot_file_workers, 1),
           change_sentence(tot_file_workers, prev_tot_workers))
   
-  closed <- sprintf("%d units were closed, with %2.2f%% closed with a certification order, creating %d total new units. This was %s quarter in successful union certifications. Overall this represents approximately %s workers, which is %s quarter. The median bargaining unit has %d workers.",
+  closed <- sprintf("%d units were closed, with %2.2f%% closed with a certification order, creating %d total new units. This was %s quarter in successful union certifications. Overall this represents approximately %s workers, which is %s quarter. The median bargaining unit has %1.0f workers.",
                     tot_closed, tot_succes/tot_closed*100,
                     tot_succes, change_sentence(tot_succes, prev_tot_succes), 
                     scales::comma(tot_closed_workers, 1), 
