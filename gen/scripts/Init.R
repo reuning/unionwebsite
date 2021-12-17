@@ -31,7 +31,10 @@ ends <- lubridate::quarter(tmp, type="date_last")
 for(ii in 2:length(quarters)){
   year <- years[ii]
   quarter <- quarters[ii]
-  report_page(year=year, quarter=quarter)
+  report_page(year=year, quarter=quarter, 
+              data = dt, 
+              start_time=starts[ii], 
+              end_time=ends[ii])
   file_name <- here("content", "tables","reports", year, paste0(quarter, "union_filings.html"))
   
   report_table_filed(data = dt, 
