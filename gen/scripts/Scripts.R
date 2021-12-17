@@ -15,6 +15,17 @@ state.name <- c(state.name, "Puerto Rico", "Guam", "US Virgin Islands")
 state.abb <- c(state.abb, "PR", "GU", "VI")
 
 clean_num <- function(x) scales::number(x, big.mark=",")
+change_sentence <- function(new_val, prev_val){
+  change <- (new_val - prev_val)/new_val*100
+  if(new_val > prev_val){
+    sprintf("a %2.2f%% increase from the previous", change)
+  } else if (new_val < prev_val){
+    sprintf("a %2.2f%% decrease from the previous", change)
+  } else {
+    sprintf("the same as the previous", change)
+  }
+}
+
 
 prep_data <- function(data=dt){
   dict <- read.csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vTQj4UzxBycuPUVmIXM9RUnTWq0dwHICOk-phgwyfjqZAm8lsjl3D4JTLz73aa4dnOJ7gXmhehPGfu8/pub?gid=0&single=true&output=csv", 
@@ -486,19 +497,72 @@ create_front_page_table <- function(data=NULL,
 
 
 
-report_page <- function(year, quarter){
+report_page <- function(year, quarter, data, start_time, end_time, 
+                        months_back=-4){
+  
+  tmp_data <- data[Unique==TRUE & Date_Filed > start_time & 
+         Date_Filed <= end_time]
+  
+  tot_file <- nrow(tmp_data)
+  tot_file_workers <- sum(tmp_data$Num_Eligible_Voters, na.rm=T)
+  med_file_workers <- median(tmp_data$Num_Eligible_Voters, na.rm=T)
+  
+  tmp_data <- data[Unique==TRUE & Date_Closed > start_time & 
+         Date_Closed <= end_time]
+  tot_closed <- nrow(tmp_data)
+  tot_succes <- sum(tmp_data$Union_Cer=="Yes", na.rm=T)
+  tot_closed_workers <- sum(tmp_data$Num_Eligible_Voters[tmp_data$Union_Cer=="Yes"], na.rm=T)
+  med_closed_workers <- median(tmp_data$Num_Eligible_Voters[tmp_data$Union_Cer=="Yes"], na.rm=T)
+  
+  prev_start_time <- lubridate::add_with_rollback(start_time, months(months_back))
+  prev_end_time <- lubridate::add_with_rollback(end_time, months(months_back))
+  
+  tmp_data <- data[Unique==TRUE & Date_Filed > prev_start_time & 
+                     Date_Filed <= prev_end_time]
+  
+  prev_tot_file <- nrow(tmp_data)
+  prev_tot_workers <- sum(tmp_data$Num_Eligible_Voters, na.rm=T)
+  prev_med_workers <- median(tmp_data$Num_Eligible_Voters, na.rm=T)
+  
+  tmp_data <- data[Unique==TRUE & Date_Closed > prev_start_time & 
+                     Date_Closed <= prev_end_time]
+  prev_tot_closed <- nrow(tmp_data)
+  prev_tot_succes <- sum(tmp_data$Union_Cer=="Yes", na.rm=T)
+  prev_tot_closed_workers <- sum(tmp_data$Num_Eligible_Voters[tmp_data$Union_Cer=="Yes"], na.rm=T)
+  prev_med_closed_workers <- median(tmp_data$Num_Eligible_Voters[tmp_data$Union_Cer=="Yes"], na.rm=T)
+  
+  
+  
+  filing <- sprintf("%d units were filed, %s quarter. The median size was %d with a total of %s workers across all units, %s quarter.", 
+          tot_file, change_sentence(tot_file, prev_tot_file), 
+          med_file_workers, scales::comma(tot_file_workers, 1),
+          change_sentence(tot_file_workers, prev_tot_workers))
+  
+  closed <- sprintf("%d units were closed, with %2.2f%% closed with a certification order, creating %d total new units. This was %s quarter in successful union certifications. Overall this represents approximately %s workers, which is %s quarter. The median bargaining unit has %d workers.",
+                    tot_closed, tot_succes/tot_closed*100,
+                    tot_succes, change_sentence(tot_succes, prev_tot_succes), 
+                    scales::comma(tot_closed_workers, 1), 
+                    change_sentence(tot_closed_workers, prev_tot_closed_workers),
+                    med_closed_workers)
+
+  filing <- paste0("In the ", scales::ordinal(quarter), " quarter of ", year, ", ", filing)
+  closed <- paste0("In the ", scales::ordinal(quarter), " quarter of ", year, ", ", closed)
   
   page <- paste0("---\n",
-  paste0("title: ",quarter, "\n"),
+  paste0("title: ",scales::ordinal(quarter), " Quarter \n"),
   paste0("pagetitle: ", year, " ", quarter, " quarter Union Filing Report\n"),
   paste0("description: Data on union election filings in ", year, " ", quarter, " quarter \n"),
   "keywords: union filings\n",
   "weight: 1\n",
   "---\n\n", 
-  paste0("## ", year, " ", quarter, " quarter filings\n\n"),
+  paste0("## ", year, ", ", scales::ordinal(quarter), " quarter filings\n\n"),
+  paste0("This report details the number of filings and closed units in the ", scales::ordinal(quarter),
+         " of ", year, ". As a reminder, we are only showing filings and closures related to single union elections (rare multi-union elections are excluded).\n\n"), 
   paste0("### Filings by Union\n"),
+  paste0(filing, "\n"), 
   paste0("{{< readtable table=\"/tables/reports/", year, "/", quarter, "union_filings.html\" >}}\n\n"),
   paste0("### Closed Elections by Union\n"),
+  paste0(closed, "\n"), 
   paste0("{{< readtable table=\"/tables/reports/", year, "/", quarter, "union_closed.html\" >}}"))
 
   try(dir.create(here("content", "data", "reports", year)))
@@ -516,8 +580,8 @@ report_table_filed <- function(data,
                                            "Median Unit Size" = median(Num_Eligible_Voters)),
                            by=National]
   
-  prev_start_time <- lubridate::add_with_rollback(start_time, months(-4))
-  prev_end_time <- lubridate::add_with_rollback(end_time, months(-4))
+  prev_start_time <- lubridate::add_with_rollback(start_time, months(months_back))
+  prev_end_time <- lubridate::add_with_rollback(end_time, months(months_back))
   
   filed_table_prev <- data[Unique==TRUE & Date_Filed > prev_start_time & 
                              Date_Filed <= prev_end_time,.("Prev_Units"=.N, 
