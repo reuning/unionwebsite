@@ -62,6 +62,7 @@ if (any(is.na(full_dt$seached))) {
   )
 }
 
+full_dt[,Election_Data :=ifelse(`Tally Date`=="", "No", "Yes") ]
 
 
 
