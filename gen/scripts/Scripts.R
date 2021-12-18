@@ -67,6 +67,8 @@ prep_data <- function(data=dt){
   data[,Length:=Tally_Date-Date_Filed]
   data[,Tally_Quarter := anydate(cut(Tally_Date, breaks = "quarter"))]
 
+  data[is.na(Num_Eligible_Voters),Num_Eligible_Voters:=`Employees on charge/petition`]
+  data$`Employees on charge/petition` <- NULL
   data[,size:=cut(Num_Eligible_Voters, breaks = c(0, 5, 10, 25, 50, 100, 500, Inf), right = T,
                 labels=c("<5", "6-10", "11-25", "26-50", "51-100", "101-500", "500>"), ordered_result = T)]
 

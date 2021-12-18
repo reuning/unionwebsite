@@ -7,6 +7,7 @@ source(here("gen", "scripts", "Scripts.R"))
 
 dt <- fread(here("gen", "data", "recent_election_results.csv"))
 dt_old <- fread(here("gen", "data", "old_nlrb.csv"))
+dt_old$`Employees on charge/petition` <- NA
 
 dt_old$Election_Data <- NULL
 cols <- names(dt_old)

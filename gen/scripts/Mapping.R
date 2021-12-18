@@ -12,7 +12,6 @@ source(here("gen", "scripts", "Scripts.R"))
 
 dt <- fread(here("gen", "data", "recent_election_results.csv"))
 
-
 open_dt <- dt[Status == "Open"]
 
 open_dt <- unique(open_dt, by = c("Case", "City", "State"))
