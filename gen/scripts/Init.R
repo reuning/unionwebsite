@@ -8,7 +8,9 @@ source(here("gen", "scripts", "Scripts.R"))
 dt <- fread(here("gen", "data", "recent_election_results.csv"))
 dt_old <- fread(here("gen", "data", "old_nlrb.csv"))
 
-dt <- rbind(dt, dt_old)
+dt_old$Election_Data <- NULL
+cols <- names(dt_old)
+dt <- rbind(dt[,..cols], dt_old)
 # dt[Case=="19-RC-195508",`Labor Union1`:= "SEIU Healthcare 1199NW"]
 dt <- prep_data(dt)
 
