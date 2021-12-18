@@ -91,6 +91,7 @@ prep_data <- function(data=dt){
 
   cat("Filling in NAs with 0s\n")
 
+  data[,Election_Data:=ifelse(is.na(Tally_Date), "No","Yes")]
   data[is.na(`Votes_Against`) & Election_Data=="Yes",`Votes_Against`:=0 ]
   data[is.na(`Votes_For_Union`) & Election_Data=="Yes",`Votes_For_Union`:=0 ]
   data[is.na(`Total_Ballots_Counted`) & Election_Data=="Yes",`Total_Ballots_Counted`:=0 ]
@@ -499,16 +500,16 @@ create_front_page_table <- function(data=NULL,
 
 
 report_page <- function(year, quarter, data, start_time, end_time, 
-                        months_back=-4){
+                        months_back=-3){
   
-  tmp_data <- data[Unique==TRUE & Date_Filed > start_time & 
+  tmp_data <- data[Case_Type=="RC" & Unique==TRUE & Date_Filed > start_time & 
          Date_Filed <= end_time]
   
   tot_file <- nrow(tmp_data)
   tot_file_workers <- sum(tmp_data$Num_Eligible_Voters, na.rm=T)
   med_file_workers <- median(tmp_data$Num_Eligible_Voters, na.rm=T)
   
-  tmp_data <- data[Unique==TRUE & Date_Closed > start_time & 
+  tmp_data <- data[Case_Type=="RC" & Unique==TRUE & Date_Closed > start_time & 
          Date_Closed <= end_time]
   tot_closed <- nrow(tmp_data)
   tot_succes <- sum(tmp_data$Union_Cer=="Yes", na.rm=T)
@@ -518,14 +519,14 @@ report_page <- function(year, quarter, data, start_time, end_time,
   prev_start_time <- lubridate::add_with_rollback(start_time, months(months_back))
   prev_end_time <- lubridate::add_with_rollback(end_time, months(months_back))
   
-  tmp_data <- data[Unique==TRUE & Date_Filed > prev_start_time & 
+  tmp_data <- data[Case_Type=="RC" & Unique==TRUE & Date_Filed > prev_start_time & 
                      Date_Filed <= prev_end_time]
   
   prev_tot_file <- nrow(tmp_data)
   prev_tot_workers <- sum(tmp_data$Num_Eligible_Voters, na.rm=T)
   prev_med_workers <- median(tmp_data$Num_Eligible_Voters, na.rm=T)
   
-  tmp_data <- data[Unique==TRUE & Date_Closed > prev_start_time & 
+  tmp_data <- data[Case_Type=="RC" & Unique==TRUE & Date_Closed > prev_start_time & 
                      Date_Closed <= prev_end_time]
   prev_tot_closed <- nrow(tmp_data)
   prev_tot_succes <- sum(tmp_data$Union_Cer=="Yes", na.rm=T)
@@ -573,9 +574,9 @@ report_page <- function(year, quarter, data, start_time, end_time,
 report_table_filed <- function(data, 
                             start_time, 
                             end_time, 
-                         file_name, months_back=-4){
+                         file_name, months_back=-3){
 
-  filed_table_current <- data[Unique==TRUE & Date_Filed > start_time & 
+  filed_table_current <- data[Case_Type=="RC" & Unique==TRUE & Date_Filed > start_time & 
                                 Date_Filed <= end_time,.("Total Units Filed"=.N,
                                                               "Total Workers"=sum(Num_Eligible_Voters),
                                            "Median Unit Size" = median(Num_Eligible_Voters)),
@@ -584,7 +585,7 @@ report_table_filed <- function(data,
   prev_start_time <- lubridate::add_with_rollback(start_time, months(months_back))
   prev_end_time <- lubridate::add_with_rollback(end_time, months(months_back))
   
-  filed_table_prev <- data[Unique==TRUE & Date_Filed > prev_start_time & 
+  filed_table_prev <- data[Case_Type=="RC" & Unique==TRUE & Date_Filed > prev_start_time & 
                              Date_Filed <= prev_end_time,.("Prev_Units"=.N, 
                                                                 "Prev_Workers"=sum(Num_Eligible_Voters),
                                                          "Prev_Size" = median(Num_Eligible_Voters)),
@@ -637,18 +638,18 @@ report_table_closed <- function(data,
                                end_time, 
                                file_name, months_back=-4){
   
-  closed_table_current <- data[Unique==TRUE & Date_Closed > start_time & 
+  closed_table_current <- data[Case_Type=="RC" & Unique==TRUE & Date_Closed > start_time & 
                                  Date_Closed <= end_time,.("Total Units Closed"=.N),
                               by=.(National)]
   
   prev_start_time <- lubridate::add_with_rollback(start_time, months(months_back))
   prev_end_time <- lubridate::add_with_rollback(end_time, months(months_back))
   
-  closed_table_prev <- data[Unique==TRUE & Date_Closed > prev_start_time & 
+  closed_table_prev <- data[Case_Type=="RC" & Unique==TRUE & Date_Closed > prev_start_time & 
                               Date_Closed <= prev_end_time,.("Prev_Units"=.N),
                            by=National]
   
-  succesful_table <- data[Unique==TRUE & Date_Closed > start_time & 
+  succesful_table <- data[Case_Type=="RC" & Unique==TRUE & Date_Closed > start_time & 
                               Date_Closed <= end_time,.("Units Won"=sum(Union_Cer=="Yes"), 
                                                              "Total Workers Added"=sum(Num_Eligible_Voters * 
                                                                                          (Union_Cer == "Yes")), 

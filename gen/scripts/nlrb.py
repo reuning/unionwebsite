@@ -98,6 +98,5 @@ get_data(search_url = '/reports/graphs-data/recent-election-results',
 
 sleep(5)
 get_data(search_url = '/search/case',
-        params={"f[0]":"case_type:R",
-                "s[0]":"Open"},
-        file_name= "new_open_data.csv")
+        params={"f[0]":"case_type:R"},
+        file_name= "new_data.csv")

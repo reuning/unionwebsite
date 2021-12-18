@@ -17,16 +17,22 @@ retry_page <- function(url){
   stop("Cannot Download page after 5 tries")
 }
 
-dt <- fread(here("gen", "data", "recent_election_results.csv"))
+dt <- fread(here("gen", "data", "new_data.csv"))
+dt$`Case Type` <- NULL
+dt$Participants <- NULL
+try(names(dt)[which(names(dt) == "States & Territories")] <- "State")
+try(names(dt)[which(names(dt)=="Case Number")] <- "Case")
+# dt$Election_Data <- "No"
 
 #downloader::download("csv-export",
 #                     here("gen", "data", "temp.csv"))
 dt_new <- fread(here("gen", "data", "temp.csv"))
 try(names(dt_new)[which(names(dt_new) == "States & Territories")] <- "State")
 try(names(dt_new)[which(names(dt_new)=="Case Number")] <- "Case")
-dt_new$Election_Data <- "Yes"
+# dt_new$Election_Data <- "Yes"
 
-
+tmp <- merge(dt, dt_new, all=T)
+tmp[`Labor Union1`=="", `Labor Union1`:=Union]
 
 tmp1 <- dt_new[Status == "Closed"]
 tmp2 <- dt[Status == "Open"]
@@ -56,18 +62,19 @@ for (j in col_names) set(dt_out, j = j, value = gsub('"', '', dt_out[[j]]))
 
 # dt_out
 
+open_dt <- tmp[Status=="Open"]
+# View(open_dt[as.Date(open_dt$`Date Filed`, "%m/%d/%Y") < lubridate::today() - lubridate::years(5)])
+# open_dt <- fread(here("gen", "data", "new_open_data.csv"))
+# try(names(open_dt)[which(names(open_dt) == "States & Territories")] <- "State")
 
-open_dt <- fread(here("gen", "data", "new_open_data.csv"))
-try(names(open_dt)[which(names(open_dt) == "States & Territories")] <- "State")
+open_dt <- open_dt[grepl("RC|RD|RM|UD",`Case`)]
 
-open_dt <- open_dt[grepl("RC|RD|RM|UD",`Case Number`)]
+# open_dt$Voters[is.na(open_dt$Voters)] <-
+#   open_dt$`Employees on charge/petition`[is.na(open_dt$Voters)]
 
-open_dt$Voters[is.na(open_dt$Voters)] <-
-  open_dt$`Employees on charge/petition`[is.na(open_dt$Voters)]
-
-open_dt <- open_dt[, c("Case Name", "Case Number", "City", "Date Filed",
+open_dt <- open_dt[, c("Case Name", "Case", "City", "Date Filed",
                        "State", "Unit Sought", "Voters" )]
-names(open_dt)[c(2,6,7)] <- c("Case", "Voting Unit (Unit A)",
+names(open_dt)[c(6,7)] <- c("Voting Unit (Unit A)",
                                 "No of Eligible Voters")
 
 old_open <- fread(here("gen", "data", "open_petitions.csv"))
@@ -75,14 +82,15 @@ old_open <- fread(here("gen", "data", "open_petitions.csv"))
 
 open_dt <- merge(open_dt, old_open[,c("Case", "Labor Union1") ], all.x=T)
 
-open_dt <- open_dt[!open_dt$`Case` %in% dt_out$`Case`]
+open_dt <- open_dt[!open_dt$Case %in% tmp[Status=="Closed", Case]]
 
+open_check_dt <- unique(open_dt[,.(Case, `Labor Union1`)])
 
-for(ii in 1:nrow(open_dt)){
+for(ii in 1:nrow(open_check_dt)){
 
-  if(!is.na(open_dt$`Labor Union1`[ii])) next
+  if(!is.na(open_check_dt$`Labor Union1`[ii])) next
 
-  url <- paste0("https://www.nlrb.gov/case/", open_dt$`Case`[ii])
+  url <- paste0("https://www.nlrb.gov/case/", open_check_dt$`Case`[ii])
   cat(url, "\n")
   page <- retry_page(url)
   if(is.na(page %>% html_node("table.Participants"))) {
@@ -98,17 +106,20 @@ for(ii in 1:nrow(open_dt)){
     union <- union[which.max(nchar(union))]
   }
 
-  open_dt$`Labor Union1`[ii] <- union
+  open_check_dt$`Labor Union1`[ii] <- union
   Sys.sleep((runif(1, .1, .3)))
 }
+open_dt$`Labor Union1` <- NULL
+open_dt <- merge(open_dt, open_check_dt)
 
-
-open_dt$Status <- "Open"
+# open_dt$Status <- "Open"
 write.csv(open_dt, file=here("gen", "data", "open_petitions.csv"), row.names = F)
 ### Delete Temporary File
 
-open_dt$Election_Data <- "No"
-dt_out$Election_Data <- "Yes"
+open_dt <- tmp[Status=="Open"]
+open_dt$`Labor Union1` <- NULL
+open_dt <- merge(open_dt, open_check_dt)
+tmp <- tmp[Status=="Closed"]
+tmp <- rbind(tmp, open_dt)
 
-dt_out <- rbind(dt_out, open_dt, fill=T)
-fwrite(dt_out, file = here("gen", "data", "recent_election_results.csv"), row.names = F)
+fwrite(tmp, file = here("gen", "data", "recent_election_results.csv"), row.names = F)

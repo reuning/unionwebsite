@@ -38,7 +38,7 @@ if (any(is.na(full_dt$seached))) {
   done_dt <- full_dt[!is.na(seached)]
   
   to_code_dt <- tidygeocoder::geocode(
-    as.data.frame(to_code_dt[,1:`Election_Data`]),
+    as.data.frame(to_code_dt[,1:`Voting Unit (Unit D)`]),
     city = "City",
     state = "State",
     full_results = T,
@@ -62,6 +62,7 @@ if (any(is.na(full_dt$seached))) {
   )
 }
 
+full_dt[,Election_Data :=ifelse(`Tally Date`=="", "No", "Yes") ]
 
 
 
