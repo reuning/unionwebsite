@@ -16,7 +16,7 @@ state.abb <- c(state.abb, "PR", "GU", "VI")
 
 clean_num <- function(x) scales::number(x, big.mark=",")
 change_sentence <- function(new_val, prev_val){
-  change <- (new_val - prev_val)/new_val*100
+  change <- (new_val - prev_val)/prev_val*100
   if(new_val > prev_val){
     sprintf("a %2.2f%% increase from the previous", change)
   } else if (new_val < prev_val){
