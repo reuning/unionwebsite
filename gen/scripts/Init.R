@@ -22,10 +22,40 @@ dt[National %in% names(which(table(dt$National) < 20)), National:="Other"]
 dt[National=="", National:="Uncoded"]
 dt[National_Count>1, National:="Multiple"]
 
+#### Create Yearly reports ####
+
+years <-(year(lubridate::today())-1):2010
+starts <- lubridate::as_date(paste0(years, "-01-01"))
+ends <- lubridate::as_date(paste0(years, "-12-31"))
+
+
+for(ii in 1:length(years)){
+  year <- years[ii]
+  report_page(year=year, quarter=NULL,
+              data = dt, 
+              start_time=starts[ii], 
+              end_time=ends[ii], time_delta = months(-12))
+  file_name <- here("content", "tables","reports", year, paste0(0, "union_filings.html"))
+  
+  report_table_filed(data = dt, 
+                     start_time=starts[ii], 
+                     end_time=ends[ii], time_delta = months(-12),
+                     file_name=file_name)
+  
+  
+  file_name <- here("content", "tables","reports", year, paste0(0, "union_closed.html"))
+  
+  report_table_closed(data = dt, 
+                      start_time=starts[ii], 
+                      end_time=ends[ii], time_delta = months(-12),
+                      file_name=file_name)
+  
+  
+}
 
 #### Create quarterly reports ####
 
-tmp <- seq.Date(lubridate::today()+1, lubridate::as_date("2010-01-01"), by = "-3 month")
+tmp <- seq.Date(lubridate::today()-1, lubridate::as_date("2010-01-01"), by = "-3 month")
 quarters <- lubridate::quarter(tmp, type = "quarter")
 years <- year(tmp)
 starts <- lubridate::quarter(tmp, type="date_first")
@@ -55,6 +85,8 @@ for(ii in 2:length(quarters)){
 
   
 }
+
+
 
 
 #### Create other pages ####

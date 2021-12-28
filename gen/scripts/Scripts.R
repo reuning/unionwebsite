@@ -76,7 +76,7 @@ prep_data <- function(data=dt){
   ### Get most recent
   cat("Identifying duplicates\n")
   data <- data[order(-Date_Filed, -Tally_Date, -Date_Closed, Num_Eligible_Voters)]
-  data$Unique <- !duplicated(data, by='Case')
+  data$Unique <- !duplicated(data, by=c("Case", "Unit ID"))
   to_drop <- !duplicated(data, by=c('Case', 'Tally_Date',
                                               'Tally_Type', 'Date_Filed', 
                                               'Ballot_Type', 'Unit ID', 
@@ -501,9 +501,26 @@ create_front_page_table <- function(data=NULL,
 
 
 
-report_page <- function(year, quarter, data, start_time, end_time, 
-                        months_back=-3){
+report_page <- function(year, quarter=NULL, data, start_time, end_time, 
+                        time_delta=months(-3)){
   
+  if(is.null(quarter)){
+    time_frame <- paste0(year)
+    time_title <- paste0(year)
+    page_title <- paste0(year)
+    file_page <- "_index.md"
+    quarter <- 0
+    period <- "year"
+  } else {
+    time_frame <- paste0("the ", scales::ordinal(quarter), " quarter of ", year)
+    time_title <- paste0(year, ", ", scales::ordinal(quarter), " Quarter")
+    page_title <- paste0(scales::ordinal(quarter), " Quarter")
+    file_page <- paste0(quarter, ".md")
+    period <- "quarter"
+  }
+
+
+
   tmp_data <- data[Case_Type=="RC" & Unique==TRUE & Date_Filed > start_time & 
          Date_Filed <= end_time]
   
@@ -518,8 +535,8 @@ report_page <- function(year, quarter, data, start_time, end_time,
   tot_closed_workers <- sum(tmp_data$Num_Eligible_Voters[tmp_data$Union_Cer=="Yes"], na.rm=T)
   med_closed_workers <- median(tmp_data$Num_Eligible_Voters[tmp_data$Union_Cer=="Yes"], na.rm=T)
   
-  prev_start_time <- lubridate::add_with_rollback(start_time, months(months_back))
-  prev_end_time <- lubridate::add_with_rollback(end_time, months(months_back))
+  prev_start_time <- lubridate::add_with_rollback(start_time, time_delta)
+  prev_end_time <- lubridate::add_with_rollback(end_time, time_delta)
   
   tmp_data <- data[Case_Type=="RC" & Unique==TRUE & Date_Filed > prev_start_time & 
                      Date_Filed <= prev_end_time]
@@ -537,31 +554,31 @@ report_page <- function(year, quarter, data, start_time, end_time,
   
   
   
-  filing <- sprintf("%d units were filed, %s quarter. The median size was %1.0f with a total of %s workers across all units, %s quarter.", 
-          tot_file, change_sentence(tot_file, prev_tot_file), 
+  filing <- sprintf("%s petitions for new units were filed, %s %s The median size was %1.0f with a total of %s workers across all units, %s %s", 
+          scales::comma(tot_file, 1), change_sentence(tot_file, prev_tot_file), 
+          period,
           med_file_workers, scales::comma(tot_file_workers, 1),
-          change_sentence(tot_file_workers, prev_tot_workers))
+          change_sentence(tot_file_workers, prev_tot_workers), period)
   
-  closed <- sprintf("%d units were closed, with %2.2f%% closed with a certification order, creating %d total new units. This was %s quarter in successful union certifications. Overall this represents approximately %s workers, which is %s quarter. The median bargaining unit has %1.0f workers.",
-                    tot_closed, tot_succes/tot_closed*100,
-                    tot_succes, change_sentence(tot_succes, prev_tot_succes), 
+  closed <- sprintf("%s petitions for new units were closed (this includes petitions where no election was ever held), with %2.2f%% closed with a certification order, creating %d total new units. This was %s %s in successful union certifications. Overall this represents approximately %s workers, which is %s %s The median bargaining unit has %1.0f workers.",
+                    scales::comma(tot_closed, 1), tot_succes/tot_closed*100,
+                    tot_succes, change_sentence(tot_succes, prev_tot_succes), period,
                     scales::comma(tot_closed_workers, 1), 
-                    change_sentence(tot_closed_workers, prev_tot_closed_workers),
+                    change_sentence(tot_closed_workers, prev_tot_closed_workers), period,
                     med_closed_workers)
 
-  filing <- paste0("In the ", scales::ordinal(quarter), " quarter of ", year, ", ", filing)
-  closed <- paste0("In the ", scales::ordinal(quarter), " quarter of ", year, ", ", closed)
+  filing <- paste0("In ", time_frame," ", filing)
+  closed <- paste0("In ", time_frame," ", closed)
   
   page <- paste0("---\n",
-  paste0("title: ",scales::ordinal(quarter), " Quarter \n"),
-  paste0("pagetitle: ", scales::ordinal(quarter), " quarter ", year, " Union Filing Report\n"),
-  paste0("description: Data on union election filings in ", year, " ", scales::ordinal(quarter), " quarter \n"),
+  paste0("title: ", page_title, "\n"),
+  paste0("pagetitle: ", time_title, " Union Filing Report\n"),
+  paste0("description: Data on union election filings in ", time_frame, "\n"),
   "keywords: union filings\n",
   "weight: 1\n",
   "---\n\n", 
-  paste0("## ", year, ", ", scales::ordinal(quarter), " quarter filings\n\n"),
-  paste0("This report details the number of filings and closed units in the ", scales::ordinal(quarter),
-         " of ", year, ". As a reminder, we are only showing filings and closures related to single union elections (rare multi-union elections are excluded).\n\n"), 
+  paste0("## ", time_title ," filings\n\n"),
+  paste0("This report details the number of filings and closed units in ", time_frame, ". As a reminder, we are only showing filings and closures related to single union elections (rare multi-union elections are excluded).\n\n"), 
   paste0("### Filings by Union\n"),
   paste0(filing, "\n"), 
   paste0("{{< readtable table=\"/tables/reports/", year, "/", quarter, "union_filings.html\" >}}\n\n"),
@@ -570,13 +587,13 @@ report_page <- function(year, quarter, data, start_time, end_time,
   paste0("{{< readtable table=\"/tables/reports/", year, "/", quarter, "union_closed.html\" >}}"))
 
   try(dir.create(here("content", "data", "reports", year)))
-  writeLines(page, con=here("content", "data", "reports", year, paste0(quarter, ".md")))
+  writeLines(page, con=here("content", "data", "reports", year, file_page))
 }
 
 report_table_filed <- function(data, 
                             start_time, 
                             end_time, 
-                         file_name, months_back=-3){
+                         file_name, time_delta=months(-3)){
 
   filed_table_current <- data[Case_Type=="RC" & Unique==TRUE & Date_Filed > start_time & 
                                 Date_Filed <= end_time,.("Total Units Filed"=.N,
@@ -584,8 +601,8 @@ report_table_filed <- function(data,
                                            "Median Unit Size" = median(Num_Eligible_Voters)),
                            by=National]
   
-  prev_start_time <- lubridate::add_with_rollback(start_time, months(months_back))
-  prev_end_time <- lubridate::add_with_rollback(end_time, months(months_back))
+  prev_start_time <- lubridate::add_with_rollback(start_time, time_delta)
+  prev_end_time <- lubridate::add_with_rollback(end_time, time_delta)
   
   filed_table_prev <- data[Case_Type=="RC" & Unique==TRUE & Date_Filed > prev_start_time & 
                              Date_Filed <= prev_end_time,.("Prev_Units"=.N, 
@@ -638,14 +655,14 @@ report_table_filed <- function(data,
 report_table_closed <- function(data, 
                                start_time, 
                                end_time, 
-                               file_name, months_back=-4){
+                               file_name, time_delta=months(-3)){
   
   closed_table_current <- data[Case_Type=="RC" & Unique==TRUE & Date_Closed > start_time & 
                                  Date_Closed <= end_time,.("Total Units Closed"=.N),
                               by=.(National)]
   
-  prev_start_time <- lubridate::add_with_rollback(start_time, months(months_back))
-  prev_end_time <- lubridate::add_with_rollback(end_time, months(months_back))
+  prev_start_time <- lubridate::add_with_rollback(start_time, time_delta)
+  prev_end_time <- lubridate::add_with_rollback(end_time, time_delta)
   
   closed_table_prev <- data[Case_Type=="RC" & Unique==TRUE & Date_Closed > prev_start_time & 
                               Date_Closed <= prev_end_time,.("Prev_Units"=.N),
