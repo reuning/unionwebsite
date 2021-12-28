@@ -24,11 +24,11 @@ try(names(dt)[which(names(dt) == "States & Territories")] <- "State")
 try(names(dt)[which(names(dt)=="Case Number")] <- "Case")
 # dt$Election_Data <- "No"
 
-#downloader::download("csv-export",
-#                     here("gen", "data", "temp.csv"))
+
 dt_new <- fread(here("gen", "data", "temp.csv"))
 try(names(dt_new)[which(names(dt_new) == "States & Territories")] <- "State")
 try(names(dt_new)[which(names(dt_new)=="Case Number")] <- "Case")
+dt_new <- dt_new[`Union to Certify` != "inclusion"] ### Dropping weird data 
 # dt_new$Election_Data <- "Yes"
 
 tmp <- merge(dt, dt_new, all=T)
@@ -72,25 +72,21 @@ open_dt <- open_dt[grepl("RC|RD|RM|UD",`Case`)]
 # open_dt$Voters[is.na(open_dt$Voters)] <-
 #   open_dt$`Employees on charge/petition`[is.na(open_dt$Voters)]
 
-open_dt <- open_dt[, c("Case Name", "Case", "City", "Date Filed",
-                       "State", "Unit Sought", "Voters" )]
-names(open_dt)[c(6,7)] <- c("Voting Unit (Unit A)",
-                                "No of Eligible Voters")
+open_check <- unique(open_dt[, c("Case")])
 
 old_open <- fread(here("gen", "data", "open_petitions.csv"))
 
 
-open_dt <- merge(open_dt, old_open[,c("Case", "Labor Union1") ], all.x=T)
+open_check <- merge(open_check, unique(old_open[,c("Case", "Labor Union1") ]), all.x=T)
 
-open_dt <- open_dt[!open_dt$Case %in% tmp[Status=="Closed", Case]]
+open_check <- open_check[!Case %in% tmp[Status=="Closed", Case]]
 
-open_check_dt <- unique(open_dt[,.(Case, `Labor Union1`)])
 
-for(ii in 1:nrow(open_check_dt)){
+for(ii in 1:nrow(open_check)){
 
-  if(!is.na(open_check_dt$`Labor Union1`[ii])) next
+  if(!is.na(open_check$`Labor Union1`[ii])) next
 
-  url <- paste0("https://www.nlrb.gov/case/", open_check_dt$`Case`[ii])
+  url <- paste0("https://www.nlrb.gov/case/", open_check$`Case`[ii])
   cat(url, "\n")
   page <- retry_page(url)
   if(is.na(page %>% html_node("table.Participants"))) {
@@ -106,20 +102,55 @@ for(ii in 1:nrow(open_check_dt)){
     union <- union[which.max(nchar(union))]
   }
 
-  open_check_dt$`Labor Union1`[ii] <- union
+  open_check$`Labor Union1`[ii] <- union
   Sys.sleep((runif(1, .1, .3)))
 }
+
+open_dt <- tmp[Status=="Open"]
 open_dt$`Labor Union1` <- NULL
-open_dt <- merge(open_dt, open_check_dt)
+
+open_dt <- merge(open_dt, open_check, all.x=T)
 
 # open_dt$Status <- "Open"
 write.csv(open_dt, file=here("gen", "data", "open_petitions.csv"), row.names = F)
 ### Delete Temporary File
 
-open_dt <- tmp[Status=="Open"]
-open_dt$`Labor Union1` <- NULL
-open_dt <- merge(open_dt, open_check_dt)
-tmp <- tmp[Status=="Closed"]
-tmp <- rbind(tmp, open_dt)
+old_data <- fread(here("gen", "data", "recent_election_results.csv"))
+old_data <- old_data[`Union to Certify` != "inclusion"] ### Dropping weird data 
 
-fwrite(tmp, file = here("gen", "data", "recent_election_results.csv"), row.names = F)
+old_data <- old_data[Status=="Closed"]
+
+tmp <- tmp[Status=="Closed"]
+
+
+
+vnames <- colnames(old_data)
+old_data <- old_data[, lapply(.SD, function(x) ifelse(x=="", NA, x)), .SDcols = (vnames)]
+old_data <- old_data[, lapply(.SD,  trimws), .SDcols = (vnames)]
+for (j in vnames) set(old_data, j = j, value = gsub('"', '', old_data[[j]]))
+old_data <- unique(old_data)
+
+vnames <- colnames(tmp)
+tmp <- tmp[, lapply(.SD, function(x) ifelse(x=="", NA, x)), .SDcols = (vnames)]
+tmp <- tmp[, lapply(.SD, trimws), .SDcols = (vnames)]
+for (j in vnames) set(tmp, j = j, value = gsub('"', '', tmp[[j]]))
+tmp <- unique(tmp)
+
+var_drop <- c("Employees on charge/petition", "Allegations", "Union", 
+              "Unit Sought", "Voters")
+
+out <-((merge(tmp, old_data, all=T, by=vnames[!vnames %in% var_drop])))
+
+
+for(var in var_drop){
+  out[is.na(get(paste(var, "x", sep="."))) &
+        !is.na(get(paste(var, "y", sep="."))), 
+      paste(var, "x", sep="."):=get(paste(var, "y", sep="."))]
+}
+
+out[,paste(var_drop, "y", sep="."):=NULL]
+names(out) <- gsub(".x", "", names(out))
+
+out <- rbind(out, open_dt)
+
+fwrite(out, file = here("gen", "data", "recent_election_results.csv"), row.names = F)
