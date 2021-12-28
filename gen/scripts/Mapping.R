@@ -37,7 +37,7 @@ if (any(is.na(full_dt$seached))) {
   done_dt <- full_dt[!is.na(seached)]
   
   to_code_dt <- tidygeocoder::geocode(
-    as.data.frame(to_code_dt[,1:`Voting Unit (Unit D)`]),
+    as.data.frame(to_code_dt[,1:Voters]),
     city = "City",
     state = "State",
     full_results = T,
