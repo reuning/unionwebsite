@@ -24,7 +24,7 @@ dt[National_Count>1, National:="Multiple"]
 
 #### Create Yearly reports ####
 
-years <-(year(lubridate::today())-1):2010
+years <-(year(lubridate::today())):2010
 starts <- lubridate::as_date(paste0(years, "-01-01"))
 ends <- lubridate::as_date(paste0(years, "-12-31"))
 
