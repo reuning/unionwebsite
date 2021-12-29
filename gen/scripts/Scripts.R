@@ -511,7 +511,7 @@ report_page <- function(year, quarter=NULL, data, start_time, end_time,
     file_page <- "_index.md"
     quarter <- 0
     period <- "year"
-    weight <- year(Sys.Date()) + 1 - year
+    weight <- year - 2009
   } else {
     time_frame <- paste0("the ", scales::ordinal(quarter), " quarter of ", year)
     time_title <- paste0(year, ", ", scales::ordinal(quarter), " Quarter")
