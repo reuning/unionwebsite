@@ -1,6 +1,6 @@
 ---
 bookCollapseSection: true
-weight: -10
+weight: 12
 title: 2010
 pagetitle: 2010 Union Filing Report
 description: Data on union election filings in 2010
