@@ -195,7 +195,7 @@ create_plot <- function(number=10, data=NULL,
   tmp_dt$`Case_Name` <-  str_to_title(tmp_dt$`Case_Name`) %>% str_trunc(width = 50)
 
 
-
+  tmp_dt <- tmp_dt[!is.na(Num_Eligible_Voters) & !is.na(Tally_Date)]
   tmp_dt <- head(setorder(tmp_dt, -`Num_Eligible_Voters`), number)
 
 
