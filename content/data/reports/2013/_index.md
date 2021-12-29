@@ -1,6 +1,6 @@
 ---
 bookCollapseSection: true
-weight: -7
+weight: 9
 title: 2013
 pagetitle: 2013 Union Filing Report
 description: Data on union election filings in 2013

@@ -1,6 +1,6 @@
 ---
 bookCollapseSection: true
-weight: -8
+weight: 10
 title: 2012
 pagetitle: 2012 Union Filing Report
 description: Data on union election filings in 2012

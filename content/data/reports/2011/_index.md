@@ -1,6 +1,6 @@
 ---
 bookCollapseSection: true
-weight: -9
+weight: 11
 title: 2011
 pagetitle: 2011 Union Filing Report
 description: Data on union election filings in 2011

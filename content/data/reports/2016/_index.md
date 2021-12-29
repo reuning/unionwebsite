@@ -1,6 +1,6 @@
 ---
 bookCollapseSection: true
-weight: -4
+weight: 6
 title: 2016
 pagetitle: 2016 Union Filing Report
 description: Data on union election filings in 2016
