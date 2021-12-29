@@ -511,7 +511,7 @@ report_page <- function(year, quarter=NULL, data, start_time, end_time,
     file_page <- "_index.md"
     quarter <- 0
     period <- "year"
-    weight <- year - year(Sys.Date()) + 1
+    weight <- year(Sys.Date()) + 1 - year
   } else {
     time_frame <- paste0("the ", scales::ordinal(quarter), " quarter of ", year)
     time_title <- paste0(year, ", ", scales::ordinal(quarter), " Quarter")
@@ -616,8 +616,9 @@ report_table_filed <- function(data,
   
   filed_table <- merge(filed_table_current, filed_table_prev, all=T)
   filed_table[is.na(`Total Units Filed`), `Total Units Filed`:=0]
-  filed_table[is.na(`Total Workers`), `Total Workers`:=0]
-  filed_table[is.na(`Median Unit Size`), `Median Unit Size`:=0]
+  filed_table[is.na(`Prev_Units`), Prev_Units:=0]
+  
+
   
   filed_table[, "Change in Units" := scales::comma(`Total Units Filed` - Prev_Units, accuracy = 1)]
   filed_table[, "Change in Total Workers" := scales::percent((`Total Workers` - Prev_Workers)/Prev_Workers, big.mark=",", 
@@ -629,6 +630,8 @@ report_table_filed <- function(data,
                  `Median Unit Size`, `Change in Median Unit`)]
   
 
+  filed_table[is.na(`Total Workers`), `Total Workers`:=0]
+  filed_table[is.na(`Median Unit Size`), `Median Unit Size`:=0]
   
   filed_table[is.na(`Change in Total Workers`), `Change in Total Workers`:="-"]
   filed_table[is.na(`Change in Units`), `Change in Units`:="-"]
@@ -682,18 +685,21 @@ report_table_closed <- function(data,
   closed_table <- merge(closed_table_current, closed_table_prev,  all=T)
   closed_table <- merge(closed_table, succesful_table, all=T)
   closed_table[is.na(`Total Units Closed`), `Total Units Closed`:=0]
+  closed_table[is.na(Prev_Units), Prev_Units:=0]
+  
+
+  
+  closed_table[, "Change in Closed" := scales::comma(`Total Units Closed` - Prev_Units, accuracy = 1)]
+  closed_table <- closed_table[,.(National, `Total Units Closed`, `Change in Closed`, 
+                                `Units Won`, `Total Workers Added`,
+                                `Median Successful Unit`)]
+  
   closed_table[is.na(`Units Won`), `Units Won`:=0]
   closed_table[is.na(`Total Workers Added`), `Total Workers Added`:=0]
   closed_table[is.na(`Median Successful Unit`), `Median Successful Unit`:=0]
   
-  closed_table[, "Change in Units" := scales::comma(`Total Units Closed` - Prev_Units, accuracy = 1)]
-  closed_table <- closed_table[,.(National, `Total Units Closed`, `Change in Units`, 
-                                `Units Won`, `Total Workers Added`,
-                                `Median Successful Unit`)]
   
-  
-  
-  closed_table[is.na(`Change in Units`), `Change in Units`:="-"]
+  closed_table[is.na(`Change in Closed`), `Change in Closed`:="-"]
   closed_table[, `Total Workers Added`:=scales::comma(`Total Workers Added`, accuracy=1)]
   # closed_table[, `Total Units Filed`:=scales::comma(`Total Units Filed`, accuracy=1)]
   closed_table[, `Median Successful Unit`:=scales::comma(`Median Successful Unit`, accuracy=.1)]
