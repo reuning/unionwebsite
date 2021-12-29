@@ -511,12 +511,14 @@ report_page <- function(year, quarter=NULL, data, start_time, end_time,
     file_page <- "_index.md"
     quarter <- 0
     period <- "year"
+    weight <- year - year(Sys.Date()) + 1
   } else {
     time_frame <- paste0("the ", scales::ordinal(quarter), " quarter of ", year)
     time_title <- paste0(year, ", ", scales::ordinal(quarter), " Quarter")
     page_title <- paste0(scales::ordinal(quarter), " Quarter")
     file_page <- paste0(quarter, ".md")
     period <- "quarter"
+    weight <- quarter
   }
 
 
@@ -571,6 +573,8 @@ report_page <- function(year, quarter=NULL, data, start_time, end_time,
   closed <- paste0("In ", time_frame," ", closed)
   
   page <- paste0("---\n",
+  ifelse(period=="year" ,"bookCollapseSection: true\n",""),
+  paste0("weight: ", weight,"\n"),
   paste0("title: ", page_title, "\n"),
   paste0("pagetitle: ", time_title, " Union Filing Report\n"),
   paste0("description: Data on union election filings in ", time_frame, "\n"),
