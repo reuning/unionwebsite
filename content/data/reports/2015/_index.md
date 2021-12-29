@@ -1,4 +1,6 @@
 ---
+bookCollapseSection: true
+weight: -5
 title: 2015
 pagetitle: 2015 Union Filing Report
 description: Data on union election filings in 2015
