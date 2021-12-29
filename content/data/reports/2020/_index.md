@@ -1,4 +1,6 @@
 ---
+bookCollapseSection: true
+weight: 0
 title: 2020
 pagetitle: 2020 Union Filing Report
 description: Data on union election filings in 2020

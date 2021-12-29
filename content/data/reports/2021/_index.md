@@ -1,4 +1,6 @@
 ---
+bookCollapseSection: true
+weight: 1
 title: 2021
 pagetitle: 2021 Union Filing Report
 description: Data on union election filings in 2021

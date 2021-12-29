@@ -1,4 +1,6 @@
 ---
+bookCollapseSection: true
+weight: -2
 title: 2018
 pagetitle: 2018 Union Filing Report
 description: Data on union election filings in 2018
