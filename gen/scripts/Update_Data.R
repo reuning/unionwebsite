@@ -153,4 +153,11 @@ names(out) <- gsub(".x", "", names(out))
 
 out <- rbind(out, open_dt)
 
+### Checking that there are not duplicates from merging together new and old data
+### Finds instances with case records with no labor union, if case exists with a labor union
+### then it drops that first instance
+pot_drop <- which(out$Case %in% names(which(table(out$Case)>=2)) & is.na(out$`Labor Union1`))
+pot_drop <- pot_drop[out$Case[pot_drop] %in% out[!is.na(`Labor Union1`), Case]]
+out <- out[!pot_drop]
+
 fwrite(out, file = here("gen", "data", "recent_election_results.csv"), row.names = F)
