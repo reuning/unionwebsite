@@ -26,6 +26,9 @@ try(names(dt)[which(names(dt)=="Case Number")] <- "Case")
 
 
 dt_new <- fread(here("gen", "data", "temp.csv"))
+## Drop from petition data if election results exist 
+dt <- dt[!Case %in% dt_new$Case]
+
 try(names(dt_new)[which(names(dt_new) == "States & Territories")] <- "State")
 try(names(dt_new)[which(names(dt_new)=="Case Number")] <- "Case")
 dt_new <- dt_new[`Union to Certify` != "inclusion"] ### Dropping weird data 
@@ -111,6 +114,9 @@ open_dt$`Labor Union1` <- NULL
 
 open_dt <- merge(open_dt, open_check, all.x=T)
 
+open_dt <- open_dt[!Case %in% tmp[Status=="Closed", Case]]
+
+
 # open_dt$Status <- "Open"
 write.csv(open_dt, file=here("gen", "data", "open_petitions.csv"), row.names = F)
 ### Delete Temporary File
@@ -156,8 +162,8 @@ out <- rbind(out, open_dt)
 ### Checking that there are not duplicates from merging together new and old data
 ### Finds instances with case records with no labor union, if case exists with a labor union
 ### then it drops that first instance
-pot_drop <- which(out$Case %in% names(which(table(out$Case)>=2)) & is.na(out$`Labor Union1`))
-pot_drop <- pot_drop[out$Case[pot_drop] %in% out[!is.na(`Labor Union1`), Case]]
+pot_drop <- which(out$Case %in% names(which(table(out$Case)>=2)) & (is.na(out$`Labor Union1`) | out$`Labor Union1`=="" ))
+pot_drop <- pot_drop[out$Case[pot_drop] %in% out[!(is.na(`Labor Union1`) | `Labor Union1` == ""), Case]]
 out <- out[!pot_drop]
 
 fwrite(out, file = here("gen", "data", "recent_election_results.csv"), row.names = F)
