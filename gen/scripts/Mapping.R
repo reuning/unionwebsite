@@ -95,7 +95,7 @@ mainland <- ggplot(data = usa) +
     aes(fill = size, shape=Election_Data)
   ) +
   scale_shape_manual("Already Voted?", values=c("Yes"=21, "No"=24)) + 
-  scale_fill_viridis_d("Unit Size", begin=.1, end=.9,
+  scale_fill_viridis_d("Unit Size", begin=.05, end=.95,
     guide=guide_legend(override.aes = list(shape = 21)), 
     drop=F) + 
   # scale_fill_date(name = "Filing\nDate", 
@@ -132,7 +132,7 @@ alaska <- ggplot(data = usa) +
     aes(fill = size, shape=Election_Data)
   ) +
   scale_shape_manual("Already Voted?", values=c("Yes"=21, "No"=24)) + 
-  scale_fill_viridis_d("Unit Size", begin=.1, end=.9,
+  scale_fill_viridis_d("Unit Size", begin=.05, end=.95,
                        guide=guide_legend(override.aes = list(shape = 21)), 
                         drop=F) + 
   # scale_fill_date(name = "Filing\nDate", 
@@ -159,7 +159,7 @@ puerto <- ggplot(data = usa) +
     aes(fill = size, shape=Election_Data)
   ) +
   scale_shape_manual("Already Voted?", values=c("Yes"=21, "No"=24)) + 
-  scale_fill_viridis_d("Unit Size", begin=.1, end=.9,
+  scale_fill_viridis_d("Unit Size", begin=.05, end=.95,
                        guide=guide_legend(override.aes = list(shape = 21)), 
                         drop=F) + 
   # scale_fill_date(name = "Filing\nDate", 
@@ -187,7 +187,7 @@ hawaii  <- ggplot(data = usa) +
     aes(fill = size, shape=Election_Data)
   ) +
   scale_shape_manual("Already Voted?", values=c("Yes"=21, "No"=24)) + 
-  scale_fill_viridis_d("Unit Size", begin=.1, end=.9,
+  scale_fill_viridis_d("Unit Size", begin=.05, end=.95,
                        guide=guide_legend(override.aes = list(shape = 21)), 
                         drop=F) + 
   # scale_fill_date(name = "Filing\nDate", 
