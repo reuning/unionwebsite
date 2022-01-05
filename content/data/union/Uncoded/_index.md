@@ -8,7 +8,7 @@ weight: 2
 ---
 ##  Uncoded
 
-Excluding public employees, in the last year there have been 428 union elections filed by the Uncoded and 64 union elections held. In 48 of those elections a new unit was certified. There are currently 34 open representation cases and 27 of are still waiting to vote.
+Excluding public employees, in the last year there have been 429 union elections filed by the Uncoded and 64 union elections held. In 48 of those elections a new unit was certified. There are currently 32 open representation cases and 25 of are still waiting to vote.
 
 ### Number Employees in a Union Election by Outcome
 {{< image src="Uncoded_hist_vic.png" >}}
