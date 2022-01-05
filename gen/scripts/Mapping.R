@@ -29,7 +29,9 @@ tmp <- unique(coded_dt[, .(Case, `Case Name`, lat,
                            address_components.state, 
                            address_components.zip, 
                            address_components.country,
-                           seached)])
+                           seached, 
+                           lat_jit, 
+                           long_jit)])
 full_dt <- merge(open_dt, tmp, all.x = T, by=c("Case", "Case Name"))
 
 if (any(is.na(full_dt$seached))) {
@@ -52,6 +54,9 @@ if (any(is.na(full_dt$seached))) {
   try(to_code_dt$address_components.postdirectional <- NULL)
   
   to_code_dt$seached <- 1
+  to_code_dt$lat_jit <- to_code_dt$lat + runif(nrow(to_code_dt), -.5, .5)
+  to_code_dt$long_jit <- to_code_dt$long + runif(nrow(to_code_dt), -.5, .5)
+  
   
   full_dt <- rbind(done_dt, to_code_dt)
   write.csv(
@@ -76,12 +81,12 @@ full_dt <- full_dt[Case_Type == "RC"]
 full_dt <- unique(full_dt, by=c("Case", "City", "State"))
 full_dt[is.na(size), size:="Unknown"]
 
-site <- st_jitter(st_as_sf(
+site <- st_as_sf(
   unique(full_dt[!is.na(lat)], by = "Case"),
-  coords = c("long", "lat"),
+  coords = c("long_jit", "lat_jit"),
   crs = 4326,
   agr = "constant"
-), .5)
+)
 
 
 mainland <- ggplot(data = usa) +
@@ -91,7 +96,7 @@ mainland <- ggplot(data = usa) +
     data = site,
     # shape = 21,
     color = "gray",
-    size = 3,
+    size = 3, alpha=.7,
     aes(fill = size, shape=Election_Data)
   ) +
   scale_shape_manual("Already Voted?", values=c("Yes"=21, "No"=24)) + 
@@ -128,7 +133,7 @@ alaska <- ggplot(data = usa) +
     data = site,
     # shape = 21,
     color = "gray",
-    size = 3,
+    size = 3, alpha=.7,
     aes(fill = size, shape=Election_Data)
   ) +
   scale_shape_manual("Already Voted?", values=c("Yes"=21, "No"=24)) + 
@@ -155,7 +160,7 @@ puerto <- ggplot(data = usa) +
     data = site,
     # shape = 21,
     color = "gray",
-    size = 3,
+    size = 3, alpha=.7,
     aes(fill = size, shape=Election_Data)
   ) +
   scale_shape_manual("Already Voted?", values=c("Yes"=21, "No"=24)) + 
@@ -183,7 +188,7 @@ hawaii  <- ggplot(data = usa) +
     data = site,
     # shape = 21,
     color = "gray",
-    size = 3,
+    size = 3, alpha=.7,
     aes(fill = size, shape=Election_Data)
   ) +
   scale_shape_manual("Already Voted?", values=c("Yes"=21, "No"=24)) + 
