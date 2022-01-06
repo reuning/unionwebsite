@@ -13,7 +13,7 @@ weight: 1
 This report details the number of filings and closed units in 2012. As a reminder, we are only showing filings and closures related to single union elections (rare multi-union elections are excluded).
 
 ### Filings by Union
-In 2012 1,902 petitions for new units were filed, a 1.39% increase from the previous year The median size was 24 with a total of 112,402 workers across all units, a -4.18% decrease from the previous year
+In 2012 1,902 petitions for new units were filed, a 1.33% increase from the previous year The median size was 24 with a total of 112,402 workers across all units, a -4.19% decrease from the previous year
 {{< readtable table="/tables/reports/2012/0union_filings.html" >}}
 
 ### Closed Elections by Union
