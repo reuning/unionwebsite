@@ -8,7 +8,7 @@ weight: 1
 ---
 ##  Texas
 
-Excluding public employees, in the last year there have been 40 union elections filed in Texas and 28 union elections held. In 23 of those elections a new unit was certified. There are currently 5 open representation cases and 5 of are still waiting to vote.
+Excluding public employees, in the last year there have been 39 union elections filed in Texas and 28 union elections held. In 23 of those elections a new unit was certified. There are currently 4 open representation cases and 3 of are still waiting to vote.
 
 ### Number Employees in a Union Election by Outcome
 {{< image src="Texas_hist_vic.png" >}}
