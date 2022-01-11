@@ -8,7 +8,7 @@ weight: 1
 ---
 ##  IAM
 
-Excluding public employees, in the last year there have been 47 union elections filed by the IAM and 53 union elections held. In 33 of those elections a new unit was certified. There are currently 10 open representation cases and 5 of are still waiting to vote.
+Excluding public employees, in the last year there have been 48 union elections filed by the IAM and 53 union elections held. In 33 of those elections a new unit was certified. There are currently 11 open representation cases and 6 of are still waiting to vote.
 
 ### Number Employees in a Union Election by Outcome
 {{< image src="IAM_hist_vic.png" >}}
