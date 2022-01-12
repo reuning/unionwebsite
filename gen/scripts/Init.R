@@ -17,6 +17,7 @@ dt <- prep_data(dt)
 
 
 
+
 dt[National %in% names(which(table(dt$National) < 20)), National:="Other"]
 
 dt[National=="", National:="Uncoded"]
@@ -112,6 +113,15 @@ create_table_open(data=dt,
                   file_name=here("content", 
                                  "tables/national/", 
                                  paste0("United_States", "_open.html")))
+
+st_dt <- dt[grepl("starbuck", Case_Name, ignore.case = T) & 
+     Date_Filed > as.Date("2010-01-01")]
+
+try(dir.create(here("content",  "tables", "temp")) )
+create_table_open(data=st_dt, 
+                  file_name=here("content", 
+                                 "tables", "temp", 
+                                 paste0("starbucks_open.html")))
 
 ## State Plots
 for(state in state.abb){
