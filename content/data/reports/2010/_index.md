@@ -5,7 +5,6 @@ title: 2010
 pagetitle: 2010 Union Filing Report
 description: Data on union election filings in 2010
 keywords: union filings
-weight: 1
 ---
 
 ## 2010 filings

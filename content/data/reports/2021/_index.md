@@ -5,7 +5,6 @@ title: 2021
 pagetitle: 2021 Union Filing Report
 description: Data on union election filings in 2021
 keywords: union filings
-weight: 1
 ---
 
 ## 2021 filings

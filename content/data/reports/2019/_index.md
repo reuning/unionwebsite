@@ -5,7 +5,6 @@ title: 2019
 pagetitle: 2019 Union Filing Report
 description: Data on union election filings in 2019
 keywords: union filings
-weight: 1
 ---
 
 ## 2019 filings
