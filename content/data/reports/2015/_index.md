@@ -5,7 +5,6 @@ title: 2015
 pagetitle: 2015 Union Filing Report
 description: Data on union election filings in 2015
 keywords: union filings
-weight: 1
 ---
 
 ## 2015 filings
