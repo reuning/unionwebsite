@@ -304,7 +304,9 @@ create_table_open <- function(state_abb = NULL, data=NULL,
   tab <- tmp_dt[,.(City, State, Case_Name, Labor_Union, Date_Filed,  Tally_Date,
                    Tally_Type, Ballot_Type, Votes_For_Union, Votes_Against,
                    Num_Eligible_Voters, Case )]
-  tab <- kable(
+  
+
+  tab_out <- kable(
     tab, 
     format="html",
     col.names=gsub("_", " ", names(tab)), 
@@ -313,22 +315,49 @@ create_table_open <- function(state_abb = NULL, data=NULL,
     table.attr="class='display summary-stats'"
   )
   
+
   
   if(!dir.exists(dirname(file_name))) dir.create(dirname(file_name))
 
   
-  writeLines(tab, con = file_name)
+  # writeLines(tab_out, con = file_name)
   
   cases <- unique(tmp_dt$Case)
   for(case in cases){
 
 
-    tab <- gsub(case,
+    tab_out <- gsub(case,
                 paste0("<a href='https://www.nlrb.gov/case/", case, "'>", case, "</a>"),
-                tab)
+                tab_out)
 
   }
-  write(tab, file = file_name)
+  dates <- tab$Date_Filed
+  for(date in dates){
+    
+    ordering = paste0("data-order=\"",
+                      as.numeric(anytime(date)), 
+                      "\"")
+    tab_out <- gsub(paste0("<td style=\"text-align:center;\"> ",date," </td>"), 
+         paste0("<td style=\"text-align:center;\" ", ordering,"> ",date," </td>"),
+         tab_out)
+    
+    
+  }
+  
+  dates <- tab$Tally_Date
+  for(date in dates){
+    
+    ordering = paste0("data-order=\"",
+                      as.numeric(anytime(date)), 
+                      "\"")
+    tab_out <- gsub(paste0("<td style=\"text-align:center;\"> ",date," </td>"), 
+                    paste0("<td style=\"text-align:center;\" ", ordering,"> ",date," </td>"),
+                    tab_out)
+    
+    
+  }
+  
+  write(tab_out, file = file_name)
 }
 
 
