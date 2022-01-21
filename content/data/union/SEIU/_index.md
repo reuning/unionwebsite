@@ -8,7 +8,7 @@ weight: 1
 ---
 ##  SEIU
 
-Excluding public employees, in the last year there have been 94 union elections filed by the SEIU and 91 union elections held. In 56 of those elections a new unit was certified. There are currently 27 open representation cases and 15 of are still waiting to vote.
+Excluding public employees, in the last year there have been 94 union elections filed by the SEIU and 88 union elections held. In 53 of those elections a new unit was certified. There are currently 27 open representation cases and 15 of are still waiting to vote.
 
 ### Number Employees in a Union Election by Outcome
 {{< image src="SEIU_hist_vic.png" >}}
