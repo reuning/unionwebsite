@@ -7,6 +7,8 @@ library(stringr)
 library(curl)
 library(knitr)
 library(anytime)
+ggsave <- function(..., bg = 'white') ggplot2::ggsave(..., bg = bg)
+
 addFormats(c("%m/%e/%y", "%m/%d/%Y"))
 options(knitr.kable.NA = "")
 
