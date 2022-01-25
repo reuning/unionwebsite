@@ -281,7 +281,7 @@ mainland <- ggplot(data = usa) +
   ) +
   NULL
 
-mainland
+# mainland
 
 alaska <- ggplot(data = usa) +
   geom_sf(fill = "white") + 
