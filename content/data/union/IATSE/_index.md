@@ -8,7 +8,7 @@ weight: 1
 ---
 ##  IATSE
 
-Excluding public employees, in the last year there have been 9 union elections filed by the IATSE and 7 union elections held. In 4 of those elections a new unit was certified. There are currently 6 open representation cases and 6 of are still waiting to vote.
+Excluding public employees, in the last year there have been 10 union elections filed by the IATSE and 8 union elections held. In 4 of those elections a new unit was certified. There are currently 6 open representation cases and 6 of are still waiting to vote.
 
 ### Number Employees in a Union Election by Outcome
 {{< image src="IATSE_hist_vic.png" >}}
