@@ -260,7 +260,7 @@ mainland <- ggplot(data = usa) +
     data = site,
     # shape = 21,
     color = "orangered3",
-    size = 3, alpha=.7,
+    size = 4, alpha=.7,
     # aes(fill = size, shape=Election_Data)
   ) +
   ggtitle("Open Starbucks Union Filings") + 
@@ -290,7 +290,7 @@ alaska <- ggplot(data = usa) +
     data = site,
     # shape = 21,
     color = "orangered3",
-    size = 3, alpha=.7,
+    size = 4, alpha=.7,
     # aes(fill = size, shape=Election_Data)
   ) + 
   guides(fill = F, shape=F) +
@@ -310,7 +310,7 @@ puerto <- ggplot(data = usa) +
     data = site,
     # shape = 21,
     color = "orangered3",
-    size = 3, alpha=.7,
+    size = 4, alpha=.7,
     # aes(fill = size, shape=Election_Data)
   ) +
   guides(fill = F, shape=F) +
@@ -331,7 +331,7 @@ hawaii  <- ggplot(data = usa) +
     data = site,
     # shape = 21,
     color = "orangered3",
-    size = 3, alpha=.7,
+    size = 4, alpha=.7,
     # aes(fill = size, shape=Election_Data)
   )  + 
   # scale_fill_date(name = "Filing\nDate", 
