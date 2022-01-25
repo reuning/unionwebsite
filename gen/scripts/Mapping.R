@@ -78,6 +78,7 @@ full_dt <- prep_data(full_dt)
 # full_dt <- full_dt[grepl("RC", Case)]
 # full_dt[, Date := as.Date(`Date Filed`, format = "%m/%d/%Y")]
 full_dt <- full_dt[Case_Type == "RC"]
+st_dt <- full_dt[grepl("starbuck", Case_Name, ignore.case = T)]
 full_dt <- unique(full_dt, by=c("Case", "City", "State"))
 full_dt[is.na(size), size:="Unknown"]
 
@@ -234,3 +235,141 @@ p <- mainland +
 ggsave(here("content", "data",  "national", "map.png"),
        height=6, width=10, type = "cairo",
        units="in", dpi=200)
+
+
+
+
+
+
+
+
+### Starbucks ###
+
+site <- st_as_sf(
+  unique(st_dt[!is.na(lat)], by = "Case"),
+  coords = c("long_jit", "lat_jit"),
+  crs = 4326,
+  agr = "constant"
+)
+
+
+mainland <- ggplot(data = usa) +
+  geom_sf(fill = "white") + 
+  theme_void(base_family = "Crimson Pro")  +
+  geom_sf(
+    data = site,
+    # shape = 21,
+    color = "orangered3",
+    size = 3, alpha=.7,
+    # aes(fill = size, shape=Election_Data)
+  ) +
+  ggtitle("Open Starbucks Union Filings") + 
+  labs(caption = "Location is approximate based on cities. Each is jittered so overlapping cases are obvious.") +
+  # ggrepel::geom_text_repel(
+  #   data = site,
+  #   aes(label = Case, geometry = geometry),
+  #   stat = "sf_coordinates",
+  #   min.segment.length = 0,
+  #   size=2
+  #
+  # ) +
+  # theme(legend.position = "bottom") +
+  coord_sf(
+    crs = st_crs(2163),
+    xlim = c(-2500000, 2500000),
+    ylim = c(-2300000,  730000)
+  ) +
+  NULL
+
+# mainland
+
+alaska <- ggplot(data = usa) +
+  geom_sf(fill = "white") + 
+  theme_void(base_family = "Crimson Pro")  +
+  geom_sf(
+    data = site,
+    # shape = 21,
+    color = "orangered3",
+    size = 3, alpha=.7,
+    # aes(fill = size, shape=Election_Data)
+  ) + 
+  guides(fill = F, shape=F) +
+  coord_sf(
+    crs = st_crs(3467),
+    xlim = c(-2400000, 1600000),
+    ylim = c(200000, 2500000),
+    expand = FALSE,
+    datum = NA
+  )
+
+
+puerto <- ggplot(data = usa) +
+  geom_sf(fill = "white") + 
+  theme_void(base_family = "Crimson Pro")  +
+  geom_sf(
+    data = site,
+    # shape = 21,
+    color = "orangered3",
+    size = 3, alpha=.7,
+    # aes(fill = size, shape=Election_Data)
+  ) +
+  guides(fill = F, shape=F) +
+  coord_sf(
+    crs = st_crs(3991),
+    xlim = c(-50000, 1000000),
+    ylim = c(0, 260000),
+    expand = FALSE,
+    datum = NA
+  )
+
+# puerto
+
+hawaii  <- ggplot(data = usa) +
+  geom_sf(fill = "white") +  
+  theme_void(base_family = "Crimson Pro")  +
+  geom_sf(
+    data = site,
+    # shape = 21,
+    color = "orangered3",
+    size = 3, alpha=.7,
+    # aes(fill = size, shape=Election_Data)
+  )  + 
+  # scale_fill_date(name = "Filing\nDate", 
+  #                 low = "#0072B2",
+  #                 high = "#D55E00") +
+  guides(fill = F, shape=F) +
+  coord_sf(
+    crs = st_crs(4135),
+    xlim = c(-161,-154),
+    ylim = c(18, 23),
+    expand = FALSE,
+    datum = NA
+  )
+
+p <- mainland +
+  annotation_custom(
+    grob = ggplotGrob(alaska),
+    xmin = -2750000,
+    xmax = -2750000 + (1600000 - (-2400000)) / 2.5,
+    ymin = -2450000,
+    ymax = -2450000 + (2500000 - 200000) / 2.5
+  ) +
+  annotation_custom(
+    grob = ggplotGrob(hawaii),
+    xmin = -1250000,
+    xmax = -1250000 + (-154 - (-161)) * 120000,
+    ymin = -2450000,
+    ymax = -2450000 + (23 - 18) * 120000
+  ) +
+  annotation_custom(
+    grob = ggplotGrob(puerto),
+    xmin = 750000,
+    xmax = 750000 + (1000000 - (-50000)) / 2,
+    ymin = -2250000,
+    ymax = -2250000 + (260000 - 0) /2
+  ) 
+
+ggsave(here("content", "data",  "starbucks", "map.png"),
+       height=6, width=10, type = "cairo",
+       units="in", dpi=200)
+
