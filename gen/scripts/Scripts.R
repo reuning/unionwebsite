@@ -422,8 +422,8 @@ create_table_sb <- function(data=NULL,
     ordering = paste0("data-order=\"",
                       as.numeric(anytime(date)), 
                       "\"")
-    tab_out <- gsub(paste0("<td style=\"text-align:center;\"> ",date," </td>"), 
-                    paste0("<td style=\"text-align:center;\" ", ordering,"> ",date," </td>"),
+    tab_out <- gsub(paste0("<td style=\"text-align:left;\"> ",date," </td>"), 
+                    paste0("<td style=\"text-align:left;\" ", ordering,"> ",date," </td>"),
                     tab_out)
     
     
