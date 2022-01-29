@@ -363,6 +363,94 @@ create_table_open <- function(state_abb = NULL, data=NULL,
 }
 
 
+create_table_sb <- function(data=NULL,
+                              file_name=NULL){
+  
+  if(is.null(file_name)) stop("Need file name")
+  
+  tmp_dt <- data[Case_Type == "RC"]
+  tmp_dt <- setorder(tmp_dt, -`Date_Filed`)
+  
+  tmp_dt <- tmp_dt[Unique==TRUE,]
+  tmp_dt <- unique(tmp_dt)
+  tmp_dt$Date_Filed <- as.character(tmp_dt$Date_Filed, "%b %d, %Y")
+  tmp_dt$Tally_Date <- as.character(tmp_dt$Tally_Date, "%b %d, %Y")
+  tmp_dt[,Ballot_Type:=ifelse(Ballot_Type == "Revised Single Labor Org", "Revised", "Initial")]
+  tmp_dt[,Labor_Union:=Plot_Labor_Union ]
+  tmp_dt[,Status := ifelse(Status=="Open", "Open", 
+                           ifelse(Reason_Closed=="Certific. of Representative", 
+                                  "Unionized", 
+                                  ifelse(Reason_Closed=="Certification of Results", "Voted Failed", 
+                                         ifelse(Reason_Closed=="Withdrawal Non-adjusted", "Withdrawn", "Other"))))]
+  
+  # tmp_dt$Case <- paste0("<a href='https://www.nlrb.gov/case/", tmp_dt$Case, "'>", tmp_dt$Case, "</a>")
+  
+
+  tab <- tmp_dt[,.(Date_Filed, City, State, Status, Case_Name, Labor_Union, 
+                   Tally_Date, Ballot_Type, Votes_For_Union, Votes_Against,
+                   Num_Eligible_Voters, Case )]
+  
+  
+  tab_out <- kable(
+    tab, 
+    format="html",
+    col.names=gsub("_", " ", names(tab)), 
+    align="llllcccccccc",
+    digits=0, 
+    table.attr="class='display summary-stats'"
+  )
+  
+  
+  
+  if(!dir.exists(dirname(file_name))) dir.create(dirname(file_name))
+  
+  
+  # writeLines(tab_out, con = file_name)
+  
+  cases <- unique(tmp_dt$Case)
+  for(case in cases){
+    
+    
+    tab_out <- gsub(case,
+                    paste0("<a href='https://www.nlrb.gov/case/", case, "'>", case, "</a>"),
+                    tab_out)
+    
+  }
+  dates <- tab$Date_Filed
+  for(date in dates){
+    
+    ordering = paste0("data-order=\"",
+                      as.numeric(anytime(date)), 
+                      "\"")
+    tab_out <- gsub(paste0("<td style=\"text-align:center;\"> ",date," </td>"), 
+                    paste0("<td style=\"text-align:center;\" ", ordering,"> ",date," </td>"),
+                    tab_out)
+    
+    
+  }
+  
+  dates <- tab$Tally_Date
+  for(date in dates){
+    
+    ordering = paste0("data-order=\"",
+                      as.numeric(anytime(date)), 
+                      "\"")
+    tab_out <- gsub(paste0("<td style=\"text-align:center;\"> ",date," </td>"), 
+                    paste0("<td style=\"text-align:center;\" ", ordering,"> ",date," </td>"),
+                    tab_out)
+    
+    
+  }
+  
+  write(tab_out, file = file_name)
+  page <- readLines(here("content","data","starbucks","_index.md" ))
+  
+  page[8] <- sprintf("There are currently %i open petitions for unions at Starbucks stores covering %i total workers.",
+          sum(tmp_dt$Status=="Open"), 
+          sum(tmp_dt$Num_Eligible_Voters[tmp_dt$Status=="Open"]))
+  writeLines(page, here("content","data","starbucks","_index.md" ))
+}
+
 create_page <- function(title = "California",
                               data=NULL,
                               file_name = NULL,
