@@ -8,7 +8,7 @@ weight: 1
 ---
 ##  New Jersey
 
-Excluding public employees, in the last year there have been 54 union elections filed in New Jersey and 30 union elections held. In 20 of those elections a new unit was certified. There are currently 22 open representation cases and 11 of are still waiting to vote.
+Excluding public employees, in the last year there have been 53 union elections filed in New Jersey and 31 union elections held. In 22 of those elections a new unit was certified. There are currently 19 open representation cases and 10 of are still waiting to vote.
 
 ### Number Employees in a Union Election by Outcome
 {{< image src="New_Jersey_hist_vic.png" >}}
