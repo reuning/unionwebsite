@@ -8,7 +8,7 @@ weight: 1
 ---
 ##  NUHW
 
-Excluding public employees, in the last year there have been 9 union elections filed by the NUHW and 8 union elections held. In 3 of those elections a new unit was certified. There are currently 4 open representation cases and 1 of are still waiting to vote.
+Excluding public employees, in the last year there have been 10 union elections filed by the NUHW and 9 union elections held. In 3 of those elections a new unit was certified. There are currently 4 open representation cases and 1 of are still waiting to vote.
 
 ### Number Employees in a Union Election by Outcome
 {{< image src="NUHW_hist_vic.png" >}}
