@@ -30,7 +30,7 @@ change_sentence <- function(new_val, prev_val){
 
 
 prep_data <- function(data=dt){
-  dict <- read.csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vTQj4UzxBycuPUVmIXM9RUnTWq0dwHICOk-phgwyfjqZAm8lsjl3D4JTLz73aa4dnOJ7gXmhehPGfu8/pub?gid=0&single=true&output=csv", 
+  dict <- read.csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vTQj4UzxBycuPUVmIXM9RUnTWq0dwHICOk-phgwyfjqZAm8lsjl3D4JTLz73aa4dnOJ7gXmhehPGfu8/pub?gid=0&single=true&output=csv",
                    encoding="UTF-8")
 
 
@@ -60,12 +60,12 @@ prep_data <- function(data=dt){
   data[,Tally_Date:=anydate(`Tally_Date`)]
   data[,Date_Filed:=anydate(`Date_Filed`)]
   data[,Date_Closed:=anydate(`Date_Closed`)]
-  
+
   data[Tally_Date> as.Date("2080-01-01"), Tally_Date:=Tally_Date- lubridate::dyears(100)]
   data[Date_Filed> as.Date("2080-01-01"), Date_Filed:=Date_Filed- lubridate::dyears(100)]
   data[Date_Closed> as.Date("2080-01-01"), Date_Closed:=Date_Closed- lubridate::dyears(100)]
-  
-  
+
+
   data[,Length:=Tally_Date-Date_Filed]
   data[,Tally_Quarter := anydate(cut(Tally_Date, breaks = "quarter"))]
 
@@ -80,13 +80,13 @@ prep_data <- function(data=dt){
   data <- data[order(-Date_Filed, -Tally_Date, -Date_Closed, Num_Eligible_Voters)]
   data$Unique <- !duplicated(data, by=c("Case", "Unit ID"))
   to_drop <- !duplicated(data, by=c('Case', 'Tally_Date',
-                                              'Tally_Type', 'Date_Filed', 
-                                              'Ballot_Type', 'Unit ID', 
-                                              'Total_Ballots_Counted', 
+                                              'Tally_Type', 'Date_Filed',
+                                              'Ballot_Type', 'Unit ID',
+                                              'Total_Ballots_Counted',
                                               'Votes_Against', 'Votes_For_Union',
                                               'Status', 'Reason_Closed'))
   data <- data[to_drop]
-  
+
   # data <- data[Status=="Closed"]
   # data <- data[`Reason_Closed` %in% c("Certific. of Representative", "Certification of Results")]
   cat("Dropping elections with multiple\n")
@@ -107,10 +107,10 @@ prep_data <- function(data=dt){
   data[,National:=character(nrow(data))]
   data[,National_Count:=0]
   data[,tmp_Labor_Union:=gsub("&", "and", Labor_Union)]
-  
+
   doubles <- dict$National[dict$National!=""]
   names(doubles) <- dict$International[dict$National!=""]
-  
+
   for(ii in 1:nrow(dict)){
     srch <- gsub("[[:space:]]|\u00A0", " ", dict$Name[ii]) ## annoyingly cleaning
     repl <- ifelse(dict$National[ii]== "",
@@ -118,15 +118,15 @@ prep_data <- function(data=dt){
 
     # repl <- dict$International[ii]
     tmp <- 1*grepl(srch, data$tmp_Labor_Union, ignore.case = T)
-    if(repl %in% names(doubles)) { 
+    if(repl %in% names(doubles)) {
       double_sel <- repl == names(doubles)
       tmp[(1*grepl(paste0(c(dict[dict$National %in% doubles[double_sel], "Name"],
                           dict[dict$National %in% doubles[double_sel], "National"]),
-                          collapse = "|"), 
-                   data$tmp_Labor_Union, 
-                   ignore.case = T)) == tmp] <- 0 
+                          collapse = "|"),
+                   data$tmp_Labor_Union,
+                   ignore.case = T)) == tmp] <- 0
     }
-    
+
     data[tmp == 1 & National_Count==0, National := repl ]
     data[tmp == 1 & National_Count==0, National_Count := 1 ]
 
@@ -135,24 +135,24 @@ prep_data <- function(data=dt){
   }
 
   nationals <- unique(c(dict$International, dict$National))
-  
+
   nationals <- nationals[nationals!=""]
   for(ii in 1:length(nationals)){
     srch <- nationals[ii]
 
-    tmp <- 1*grepl(paste0("(\\W|\\b|\\d)",srch, "(\\W|\\b|\\d)"), 
+    tmp <- 1*grepl(paste0("(\\W|\\b|\\d)",srch, "(\\W|\\b|\\d)"),
                    data$tmp_Labor_Union, ignore.case = T)
 
-    if(srch %in% names(doubles)) { 
+    if(srch %in% names(doubles)) {
       double_sel <- srch == names(doubles)
-      
+
       tmp[(1*grepl(paste0(c(dict[dict$National %in% doubles[double_sel], "Name"],
                             dict[dict$National %in% doubles[double_sel], "National"]),
-                          collapse = "|"), 
-                   data$tmp_Labor_Union, 
-                   ignore.case = T)) == tmp] <- 0 
+                          collapse = "|"),
+                   data$tmp_Labor_Union,
+                   ignore.case = T)) == tmp] <- 0
     }
-    
+
     data[tmp == 1 & National_Count==0, National := srch ]
     data[tmp == 1 & National_Count==0, National_Count := 1 ]
 
@@ -269,7 +269,7 @@ create_time_plot <- function(data=NULL,
   ggplot(tmp_dt, aes(x=Tally_Quarter,
                      fill=forcats::fct_rev(Union_Cer), weight=Num_Eligible_Voters)) +
     geom_bar(position=position_stack(reverse=T), color="black", size=.2, width=80) +
-    scale_x_date(limits=c(as.Date("1999-01-01"), 
+    scale_x_date(limits=c(as.Date("1999-01-01"),
                           lubridate::ceiling_date(lubridate::today(), unit = "month"))) +
     scale_y_continuous(labels=scales::label_comma()) +
     theme_minimal(base_family = "Crimson Pro") +
@@ -302,28 +302,28 @@ create_table_open <- function(state_abb = NULL, data=NULL,
   tmp_dt[,Ballot_Type:=ifelse(Ballot_Type == "Revised Single Labor Org", "Revised", "Initial")]
   tmp_dt[,Labor_Union:=Plot_Labor_Union ]
   # tmp_dt$Case <- paste0("<a href='https://www.nlrb.gov/case/", tmp_dt$Case, "'>", tmp_dt$Case, "</a>")
-  
+
   tab <- tmp_dt[,.(City, State, Case_Name, Labor_Union, Date_Filed,  Tally_Date,
                    Tally_Type, Ballot_Type, Votes_For_Union, Votes_Against,
                    Num_Eligible_Voters, Case )]
-  
+
 
   tab_out <- kable(
-    tab, 
+    tab,
     format="html",
-    col.names=gsub("_", " ", names(tab)), 
+    col.names=gsub("_", " ", names(tab)),
     align="llllcccccccc",
-    digits=0, 
+    digits=0,
     table.attr="class='display summary-stats'"
   )
-  
 
-  
+
+
   if(!dir.exists(dirname(file_name))) dir.create(dirname(file_name))
 
-  
+
   # writeLines(tab_out, con = file_name)
-  
+
   cases <- unique(tmp_dt$Case)
   for(case in cases){
 
@@ -335,118 +335,118 @@ create_table_open <- function(state_abb = NULL, data=NULL,
   }
   dates <- tab$Date_Filed
   for(date in dates){
-    
+
     ordering = paste0("data-order=\"",
-                      as.numeric(anytime(date)), 
+                      as.numeric(anytime(date)),
                       "\"")
-    tab_out <- gsub(paste0("<td style=\"text-align:center;\"> ",date," </td>"), 
+    tab_out <- gsub(paste0("<td style=\"text-align:center;\"> ",date," </td>"),
          paste0("<td style=\"text-align:center;\" ", ordering,"> ",date," </td>"),
          tab_out)
-    
-    
+
+
   }
-  
+
   dates <- tab$Tally_Date
   for(date in dates){
-    
+
     ordering = paste0("data-order=\"",
-                      as.numeric(anytime(date)), 
+                      as.numeric(anytime(date)),
                       "\"")
-    tab_out <- gsub(paste0("<td style=\"text-align:center;\"> ",date," </td>"), 
+    tab_out <- gsub(paste0("<td style=\"text-align:center;\"> ",date," </td>"),
                     paste0("<td style=\"text-align:center;\" ", ordering,"> ",date," </td>"),
                     tab_out)
-    
-    
+
+
   }
-  
+
   write(tab_out, file = file_name)
 }
 
 
 create_table_sb <- function(data=NULL,
                               file_name=NULL){
-  
+
   if(is.null(file_name)) stop("Need file name")
-  
+
   tmp_dt <- data[Case_Type == "RC"]
   tmp_dt <- setorder(tmp_dt, -`Date_Filed`)
-  
+
   tmp_dt <- tmp_dt[Unique==TRUE,]
   tmp_dt <- unique(tmp_dt)
   tmp_dt$Date_Filed <- as.character(tmp_dt$Date_Filed, "%b %d, %Y")
   tmp_dt$Tally_Date <- as.character(tmp_dt$Tally_Date, "%b %d, %Y")
   tmp_dt[,Ballot_Type:=ifelse(Ballot_Type == "Revised Single Labor Org", "Revised", "Initial")]
   tmp_dt[,Labor_Union:=Plot_Labor_Union ]
-  tmp_dt[,Status := ifelse(Status=="Open", "Open", 
-                           ifelse(Reason_Closed=="Certific. of Representative", 
-                                  "Unionized", 
-                                  ifelse(Reason_Closed=="Certification of Results", "Voted Failed", 
+  tmp_dt[,Status := ifelse(Status=="Open", "Open",
+                           ifelse(Reason_Closed=="Certific. of Representative",
+                                  "Unionized",
+                                  ifelse(Reason_Closed=="Certification of Results", "Voted Failed",
                                          ifelse(Reason_Closed=="Withdrawal Non-adjusted", "Withdrawn", "Other"))))]
-  
-  # tmp_dt$Case <- paste0("<a href='https://www.nlrb.gov/case/", tmp_dt$Case, "'>", tmp_dt$Case, "</a>")
-  
 
-  tab <- tmp_dt[,.(Date_Filed, City, State, Status, Case_Name, Labor_Union, 
+  # tmp_dt$Case <- paste0("<a href='https://www.nlrb.gov/case/", tmp_dt$Case, "'>", tmp_dt$Case, "</a>")
+
+
+  tab <- tmp_dt[,.(Date_Filed, City, State, Status, Case_Name, Labor_Union,
                    Tally_Date, Ballot_Type, Votes_For_Union, Votes_Against,
                    Num_Eligible_Voters, Case )]
-  
-  
+
+
   tab_out <- kable(
-    tab, 
+    tab,
     format="html",
-    col.names=gsub("_", " ", names(tab)), 
+    col.names=gsub("_", " ", names(tab)),
     align="llllcccccccc",
-    digits=0, 
+    digits=0,
     table.attr="class='display summary-stats'"
   )
-  
-  
-  
+
+
+
   if(!dir.exists(dirname(file_name))) dir.create(dirname(file_name))
-  
-  
+
+
   # writeLines(tab_out, con = file_name)
-  
+
   cases <- unique(tmp_dt$Case)
   for(case in cases){
-    
-    
+
+
     tab_out <- gsub(case,
                     paste0("<a href='https://www.nlrb.gov/case/", case, "'>", case, "</a>"),
                     tab_out)
-    
+
   }
   dates <- tab$Date_Filed
   for(date in dates){
-    
+
     ordering = paste0("data-order=\"",
-                      as.numeric(anytime(date)), 
+                      as.numeric(anytime(date)),
                       "\"")
-    tab_out <- gsub(paste0("<td style=\"text-align:left;\"> ",date," </td>"), 
+    tab_out <- gsub(paste0("<td style=\"text-align:left;\"> ",date," </td>"),
                     paste0("<td style=\"text-align:left;\" ", ordering,"> ",date," </td>"),
                     tab_out)
-    
-    
+
+
   }
-  
+
   dates <- tab$Tally_Date
   for(date in dates){
-    
+
     ordering = paste0("data-order=\"",
-                      as.numeric(anytime(date)), 
+                      as.numeric(anytime(date)),
                       "\"")
-    tab_out <- gsub(paste0("<td style=\"text-align:center;\"> ",date," </td>"), 
+    tab_out <- gsub(paste0("<td style=\"text-align:center;\"> ",date," </td>"),
                     paste0("<td style=\"text-align:center;\" ", ordering,"> ",date," </td>"),
                     tab_out)
-    
-    
+
+
   }
-  
+
   write(tab_out, file = file_name)
   page <- readLines(here("content","data","starbucks","_index.md" ))
-  
-  page[8] <- sprintf("There are currently %i open petitions for unions at Starbucks stores covering %i total workers.",
-          sum(tmp_dt$Status=="Open"), 
+
+  page[11] <- sprintf("There are currently %i open petitions for unions at Starbucks stores covering %i total workers.",
+          sum(tmp_dt$Status=="Open"),
           sum(tmp_dt$Num_Eligible_Voters[tmp_dt$Status=="Open"]))
   writeLines(page, here("content","data","starbucks","_index.md" ))
 }
@@ -557,31 +557,31 @@ create_page <- function(title = "California",
 
 create_front_page_table <- function(data=NULL,
                                     var="National",
-                        weight=1, 
-                        column_name = "Date_Filed", 
-                        file_name = "all_ytd.html", 
+                        weight=1,
+                        column_name = "Date_Filed",
+                        file_name = "all_ytd.html",
                         all_groups = NULL){
-  
 
-  
+
+
   tmp_dt <- data[Case_Type == "RC"]
   tmp_dt <- setorder(tmp_dt, -`Date_Filed`)
-  
+
   tmp_dt <- unique(tmp_dt)
-  
+
   stat_tab <-  tmp_dt[  get(column_name) >(Sys.Date() - 365), .N, by= mget(c(var,"Status"))]
   stat_tab <- dcast(stat_tab, get(var) ~ Status, fill = 0)
-  stat_tab <- rbind(stat_tab, data.table("var"=all_groups[!all_groups %in% stat_tab$var], 
-             "Closed"=0, 
+  stat_tab <- rbind(stat_tab, data.table("var"=all_groups[!all_groups %in% stat_tab$var],
+             "Closed"=0,
              "Open"=0), fill=T)
-  
+
   vic_tab <-  tmp_dt[  get(column_name) >(Sys.Date() - 365) & Status == "Closed",
                         .N, by= mget(c(var,"Union_Cer"))]
   vic_tab <- dcast(vic_tab, get(var) ~ Union_Cer, fill = 0)
   vic_tab[,Percentage:=scales::percent(Yes/(Yes+No), accuracy = 0.01)]
   vic_tab$No <- NULL
-  
-  emp_tab <-  tmp_dt[  get(column_name) >(Sys.Date() - 365) & Status == "Closed" 
+
+  emp_tab <-  tmp_dt[  get(column_name) >(Sys.Date() - 365) & Status == "Closed"
                        & Union_Cer == "Yes",
                        .(median(Num_Eligible_Voters, na.rm=T),
                        sum(Num_Eligible_Voters, na.rm=T)), by= get(var)]
@@ -590,16 +590,16 @@ create_front_page_table <- function(data=NULL,
   full_tab[is.na(Percentage), Percentage:= "-"]
   full_tab <- merge(full_tab, emp_tab, all=T)
   full_tab[is.na(full_tab)] <- 0
-  
+
   # tmp_dt$Case <- paste0("<a href='https://www.nlrb.gov/case/", tmp_dt$Case, "'>", tmp_dt$Case, "</a>")
   tab <- kable(
-    full_tab[,.(var, Open, Closed, Yes, Percentage, Median, Total)], 
+    full_tab[,.(var, Open, Closed, Yes, Percentage, Median, Total)],
     format="html",
     col.names=c(var, "Open Elections", "Closed Elections",
-                "Union Certified", "Percent Certified", 
-                "Median Successful BU", "Total Workers Unionized"), 
+                "Union Certified", "Percent Certified",
+                "Median Successful BU", "Total Workers Unionized"),
     align="lcccccc",
-    digits=0, 
+    digits=0,
     table.attr="class='display summary-stats'"
   )
 
@@ -611,18 +611,18 @@ create_front_page_table <- function(data=NULL,
     stop("'var' not recognized")
   }
   writeLines(tab, con = file)
-  
 
-  
-  
+
+
+
 }
 
 
 
 
-report_page <- function(year, quarter=NULL, data, start_time, end_time, 
+report_page <- function(year, quarter=NULL, data, start_time, end_time,
                         time_delta=months(-3)){
-  
+
   if(is.null(quarter)){
     time_frame <- paste0(year)
     time_title <- paste0(year)
@@ -642,55 +642,55 @@ report_page <- function(year, quarter=NULL, data, start_time, end_time,
 
 
 
-  tmp_data <- data[Case_Type=="RC" & Unique==TRUE & Date_Filed > start_time & 
+  tmp_data <- data[Case_Type=="RC" & Unique==TRUE & Date_Filed > start_time &
          Date_Filed <= end_time]
-  
+
   tot_file <- nrow(tmp_data)
   tot_file_workers <- sum(tmp_data$Num_Eligible_Voters, na.rm=T)
   med_file_workers <- median(tmp_data$Num_Eligible_Voters, na.rm=T)
-  
-  tmp_data <- data[Case_Type=="RC" & Unique==TRUE & Date_Closed > start_time & 
+
+  tmp_data <- data[Case_Type=="RC" & Unique==TRUE & Date_Closed > start_time &
          Date_Closed <= end_time]
   tot_closed <- nrow(tmp_data)
   tot_succes <- sum(tmp_data$Union_Cer=="Yes", na.rm=T)
   tot_closed_workers <- sum(tmp_data$Num_Eligible_Voters[tmp_data$Union_Cer=="Yes"], na.rm=T)
   med_closed_workers <- median(tmp_data$Num_Eligible_Voters[tmp_data$Union_Cer=="Yes"], na.rm=T)
-  
+
   prev_start_time <- lubridate::add_with_rollback(start_time, time_delta)
   prev_end_time <- lubridate::add_with_rollback(end_time, time_delta)
-  
-  tmp_data <- data[Case_Type=="RC" & Unique==TRUE & Date_Filed > prev_start_time & 
+
+  tmp_data <- data[Case_Type=="RC" & Unique==TRUE & Date_Filed > prev_start_time &
                      Date_Filed <= prev_end_time]
-  
+
   prev_tot_file <- nrow(tmp_data)
   prev_tot_workers <- sum(tmp_data$Num_Eligible_Voters, na.rm=T)
   prev_med_workers <- median(tmp_data$Num_Eligible_Voters, na.rm=T)
-  
-  tmp_data <- data[Case_Type=="RC" & Unique==TRUE & Date_Closed > prev_start_time & 
+
+  tmp_data <- data[Case_Type=="RC" & Unique==TRUE & Date_Closed > prev_start_time &
                      Date_Closed <= prev_end_time]
   prev_tot_closed <- nrow(tmp_data)
   prev_tot_succes <- sum(tmp_data$Union_Cer=="Yes", na.rm=T)
   prev_tot_closed_workers <- sum(tmp_data$Num_Eligible_Voters[tmp_data$Union_Cer=="Yes"], na.rm=T)
   prev_med_closed_workers <- median(tmp_data$Num_Eligible_Voters[tmp_data$Union_Cer=="Yes"], na.rm=T)
-  
-  
-  
-  filing <- sprintf("%s petitions for new units were filed, %s %s The median size was %1.0f with a total of %s workers across all units, %s %s", 
-          scales::comma(tot_file, 1), change_sentence(tot_file, prev_tot_file), 
+
+
+
+  filing <- sprintf("%s petitions for new units were filed, %s %s The median size was %1.0f with a total of %s workers across all units, %s %s",
+          scales::comma(tot_file, 1), change_sentence(tot_file, prev_tot_file),
           period,
           med_file_workers, scales::comma(tot_file_workers, 1),
           change_sentence(tot_file_workers, prev_tot_workers), period)
-  
+
   closed <- sprintf("%s petitions for new units were closed (this includes petitions where no election was ever held), with %2.2f%% closed with a certification order, creating %d total new units. This was %s %s in successful union certifications. Overall this represents approximately %s workers, which is %s %s The median bargaining unit has %1.0f workers.",
                     scales::comma(tot_closed, 1), tot_succes/tot_closed*100,
                     tot_succes, change_sentence(tot_succes, prev_tot_succes), period,
-                    scales::comma(tot_closed_workers, 1), 
+                    scales::comma(tot_closed_workers, 1),
                     change_sentence(tot_closed_workers, prev_tot_closed_workers), period,
                     med_closed_workers)
 
   filing <- paste0("In ", time_frame," ", filing)
   closed <- paste0("In ", time_frame," ", closed)
-  
+
   page <- paste0("---\n",
   ifelse(period=="year" ,"bookCollapseSection: true\n",""),
   paste0("weight: ", weight,"\n"),
@@ -698,143 +698,143 @@ report_page <- function(year, quarter=NULL, data, start_time, end_time,
   paste0("pagetitle: ", time_title, " Union Filing Report\n"),
   paste0("description: Data on union election filings in ", time_frame, "\n"),
   "keywords: union filings\n",
-  "---\n\n", 
+  "---\n\n",
   paste0("## ", time_title ," filings\n\n"),
-  paste0("This report details the number of filings and closed units in ", time_frame, ". As a reminder, we are only showing filings and closures related to single union elections (rare multi-union elections are excluded).\n\n"), 
+  paste0("This report details the number of filings and closed units in ", time_frame, ". As a reminder, we are only showing filings and closures related to single union elections (rare multi-union elections are excluded).\n\n"),
   paste0("### Filings by Union\n"),
-  paste0(filing, "\n"), 
+  paste0(filing, "\n"),
   paste0("{{< readtable table=\"/tables/reports/", year, "/", quarter, "union_filings.html\" >}}\n\n"),
   paste0("### Closed Elections by Union\n"),
-  paste0(closed, "\n"), 
+  paste0(closed, "\n"),
   paste0("{{< readtable table=\"/tables/reports/", year, "/", quarter, "union_closed.html\" >}}"))
 
   try(dir.create(here("content", "data", "reports", year)))
   writeLines(page, con=here("content", "data", "reports", year, file_page))
 }
 
-report_table_filed <- function(data, 
-                            start_time, 
-                            end_time, 
+report_table_filed <- function(data,
+                            start_time,
+                            end_time,
                          file_name, time_delta=months(-3)){
 
-  filed_table_current <- data[Case_Type=="RC" & Unique==TRUE & Date_Filed > start_time & 
+  filed_table_current <- data[Case_Type=="RC" & Unique==TRUE & Date_Filed > start_time &
                                 Date_Filed <= end_time,.("Total Units Filed"=.N,
                                                               "Total Workers"=sum(Num_Eligible_Voters),
                                            "Median Unit Size" = median(Num_Eligible_Voters)),
                            by=National]
-  
+
   prev_start_time <- lubridate::add_with_rollback(start_time, time_delta)
   prev_end_time <- lubridate::add_with_rollback(end_time, time_delta)
-  
-  filed_table_prev <- data[Case_Type=="RC" & Unique==TRUE & Date_Filed > prev_start_time & 
-                             Date_Filed <= prev_end_time,.("Prev_Units"=.N, 
+
+  filed_table_prev <- data[Case_Type=="RC" & Unique==TRUE & Date_Filed > prev_start_time &
+                             Date_Filed <= prev_end_time,.("Prev_Units"=.N,
                                                                 "Prev_Workers"=sum(Num_Eligible_Voters),
                                                          "Prev_Size" = median(Num_Eligible_Voters)),
                               by=National]
-  
+
   filed_table <- merge(filed_table_current, filed_table_prev, all=T)
   filed_table[is.na(`Total Units Filed`), `Total Units Filed`:=0]
   filed_table[is.na(`Prev_Units`), Prev_Units:=0]
-  
 
-  
+
+
   filed_table[, "Change in Units" := scales::comma(`Total Units Filed` - Prev_Units, accuracy = 1)]
-  filed_table[, "Change in Total Workers" := scales::percent((`Total Workers` - Prev_Workers)/Prev_Workers, big.mark=",", 
+  filed_table[, "Change in Total Workers" := scales::percent((`Total Workers` - Prev_Workers)/Prev_Workers, big.mark=",",
                                                              accuracy = 1.11)]
   filed_table[, "Change in Median Unit" := scales::percent((`Median Unit Size` - Prev_Size)/Prev_Size, big.mark = ",",
                                                            accuracy = 1.11)]
-  filed_table <- filed_table[,.(National, `Total Units Filed`, `Change in Units`, 
+  filed_table <- filed_table[,.(National, `Total Units Filed`, `Change in Units`,
                  `Total Workers`, `Change in Total Workers`,
                  `Median Unit Size`, `Change in Median Unit`)]
-  
+
 
   filed_table[is.na(`Total Workers`), `Total Workers`:=0]
   filed_table[is.na(`Median Unit Size`), `Median Unit Size`:=0]
-  
+
   filed_table[is.na(`Change in Total Workers`), `Change in Total Workers`:="-"]
   filed_table[is.na(`Change in Units`), `Change in Units`:="-"]
   filed_table[is.na(`Change in Median Unit`), `Change in Median Unit`:="-"]
   filed_table[, `Total Workers`:=scales::comma(`Total Workers`, accuracy=1)]
   # filed_table[, `Total Units Filed`:=scales::comma(`Total Units Filed`, accuracy=1)]
   filed_table[, `Median Unit Size`:=scales::comma(`Median Unit Size`, accuracy=.1)]
-  
 
-  
+
+
   tab <- kable(
-    filed_table[order(-`Total Units Filed`)], 
+    filed_table[order(-`Total Units Filed`)],
     format="html",
     align="lcccccc",
     table.attr="class='display summary-stats'"
   )
-  
-  
+
+
   if(!dir.exists(dirname(file_name))) dir.create(dirname(file_name))
-  
-  
+
+
   writeLines(tab, con = file_name)
-  
+
 }
 
 
 
-report_table_closed <- function(data, 
-                               start_time, 
-                               end_time, 
+report_table_closed <- function(data,
+                               start_time,
+                               end_time,
                                file_name, time_delta=months(-3)){
-  
-  closed_table_current <- data[Case_Type=="RC" & Unique==TRUE & Date_Closed > start_time & 
+
+  closed_table_current <- data[Case_Type=="RC" & Unique==TRUE & Date_Closed > start_time &
                                  Date_Closed <= end_time,.("Total Units Closed"=.N),
                               by=.(National)]
-  
+
   prev_start_time <- lubridate::add_with_rollback(start_time, time_delta)
   prev_end_time <- lubridate::add_with_rollback(end_time, time_delta)
-  
-  closed_table_prev <- data[Case_Type=="RC" & Unique==TRUE & Date_Closed > prev_start_time & 
+
+  closed_table_prev <- data[Case_Type=="RC" & Unique==TRUE & Date_Closed > prev_start_time &
                               Date_Closed <= prev_end_time,.("Prev_Units"=.N),
                            by=National]
-  
-  succesful_table <- data[Case_Type=="RC" & Unique==TRUE & Date_Closed > start_time & 
-                              Date_Closed <= end_time,.("Units Won"=sum(Union_Cer=="Yes"), 
-                                                             "Total Workers Added"=sum(Num_Eligible_Voters * 
-                                                                                         (Union_Cer == "Yes")), 
+
+  succesful_table <- data[Case_Type=="RC" & Unique==TRUE & Date_Closed > start_time &
+                              Date_Closed <= end_time,.("Units Won"=sum(Union_Cer=="Yes"),
+                                                             "Total Workers Added"=sum(Num_Eligible_Voters *
+                                                                                         (Union_Cer == "Yes")),
                                                              "Median Successful Unit"=median(Num_Eligible_Voters[Union_Cer == "Yes"])),
                             by=National]
-  
+
   closed_table <- merge(closed_table_current, closed_table_prev,  all=T)
   closed_table <- merge(closed_table, succesful_table, all=T)
   closed_table[is.na(`Total Units Closed`), `Total Units Closed`:=0]
   closed_table[is.na(Prev_Units), Prev_Units:=0]
-  
 
-  
+
+
   closed_table[, "Change in Closed" := scales::comma(`Total Units Closed` - Prev_Units, accuracy = 1)]
-  closed_table <- closed_table[,.(National, `Total Units Closed`, `Change in Closed`, 
+  closed_table <- closed_table[,.(National, `Total Units Closed`, `Change in Closed`,
                                 `Units Won`, `Total Workers Added`,
                                 `Median Successful Unit`)]
-  
+
   closed_table[is.na(`Units Won`), `Units Won`:=0]
   closed_table[is.na(`Total Workers Added`), `Total Workers Added`:=0]
   closed_table[is.na(`Median Successful Unit`), `Median Successful Unit`:=0]
-  
-  
+
+
   closed_table[is.na(`Change in Closed`), `Change in Closed`:="-"]
   closed_table[, `Total Workers Added`:=scales::comma(`Total Workers Added`, accuracy=1)]
   # closed_table[, `Total Units Filed`:=scales::comma(`Total Units Filed`, accuracy=1)]
   closed_table[, `Median Successful Unit`:=scales::comma(`Median Successful Unit`, accuracy=.1)]
-  
-  
-  
+
+
+
   tab <- kable(
-    closed_table[order(-`Total Units Closed`)], 
+    closed_table[order(-`Total Units Closed`)],
     format="html",
     align="lccccc",
     table.attr="class='display summary-stats'"
   )
-  
-  
+
+
   if(!dir.exists(dirname(file_name))) dir.create(dirname(file_name))
-  
-  
+
+
   writeLines(tab, con = file_name)
-  
+
 }
