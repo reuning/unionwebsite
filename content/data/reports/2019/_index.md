@@ -12,7 +12,7 @@ keywords: union filings
 This report details the number of filings and closed units in 2019. As a reminder, we are only showing filings and closures related to single union elections (rare multi-union elections are excluded).
 
 ### Filings by Union
-In 2019 1,702 petitions for new units were filed, a 13.39% increase from the previous year The median size was 19 with a total of 90,575 workers across all units, a -1.35% decrease from the previous year
+In 2019 1,702 petitions for new units were filed, a 13.39% increase from the previous year The median size was 19 with a total of 90,587 workers across all units, a -1.34% decrease from the previous year
 {{< readtable table="/tables/reports/2019/0union_filings.html" >}}
 
 ### Closed Elections by Union
