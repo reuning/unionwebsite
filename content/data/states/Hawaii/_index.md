@@ -8,7 +8,7 @@ weight: 1
 ---
 ##  Hawaii
 
-Excluding public employees, in the last year there have been 13 union elections filed in Hawaii and 11 union elections held. In 5 of those elections a new unit was certified. There are currently 1 open representation cases and 1 of are still waiting to vote.
+Excluding public employees, in the last year there have been 14 union elections filed in Hawaii and 11 union elections held. In 5 of those elections a new unit was certified. There are currently 2 open representation cases and 2 of are still waiting to vote.
 
 ### Number Employees in a Union Election by Outcome
 {{< image src="Hawaii_hist_vic.png" >}}
