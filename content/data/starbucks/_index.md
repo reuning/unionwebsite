@@ -3,7 +3,7 @@ title: Starbucks
 bookCollapseSection: false
 type: docs
 description: Data on elections to unionize local Starbucks.
-images: 'data/starbucks/map.png'
+images: ["data/starbucks/map.png"]
 keywords: ["Starbucks union elections", "Starbucks union", "Barista union"]
 weight: 4
 ---
