@@ -8,7 +8,7 @@ weight: 1
 ---
 ##  ATU
 
-Excluding public employees, in the last year there have been 30 union elections filed by the ATU and 16 union elections held. In 14 of those elections a new unit was certified. There are currently 17 open representation cases and 17 of are still waiting to vote.
+Excluding public employees, in the last year there have been 27 union elections filed by the ATU and 16 union elections held. In 14 of those elections a new unit was certified. There are currently 14 open representation cases and 14 of are still waiting to vote.
 
 ### Number Employees in a Union Election by Outcome
 {{< image src="ATU_hist_vic.png" >}}
