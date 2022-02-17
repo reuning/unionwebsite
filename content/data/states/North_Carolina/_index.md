@@ -8,7 +8,7 @@ weight: 1
 ---
 ##  North Carolina
 
-Excluding public employees, in the last year there have been 11 union elections filed in North Carolina and 8 union elections held. In 5 of those elections a new unit was certified. There are currently 5 open representation cases and 2 of are still waiting to vote.
+Excluding public employees, in the last year there have been 12 union elections filed in North Carolina and 8 union elections held. In 5 of those elections a new unit was certified. There are currently 6 open representation cases and 3 of are still waiting to vote.
 
 ### Number Employees in a Union Election by Outcome
 {{< image src="North_Carolina_hist_vic.png" >}}
