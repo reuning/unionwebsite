@@ -80,7 +80,12 @@ open_check <- unique(open_dt[, c("Case")])
 old_open <- fread(here("gen", "data", "open_petitions.csv"))
 
 
-open_check <- merge(open_check, unique(old_open[,c("Case", "Labor Union1") ]), all.x=T)
+open_check <- merge(open_check,
+                    unique(old_open[,c("Case", "Labor Union1") ]), 
+                    all=T)
+
+open_check <- open_check[grepl("RC|RD|RM|UD",`Case`)]
+
 
 open_check <- open_check[!Case %in% tmp[Status=="Closed", Case]]
 
@@ -110,9 +115,13 @@ for(ii in 1:nrow(open_check)){
 }
 
 open_dt <- tmp[Status=="Open"]
-open_dt$`Labor Union1` <- NULL
 
-open_dt <- merge(open_dt, open_check, all.x=T)
+open_dt <- unique(rbind(open_dt, old_open), by=c("Case", "Unit ID"))
+
+open_dt$`Labor Union1` <- NULL
+open_dt <- open_dt[grepl("RC|RD|RM|UD",`Case`)]
+
+open_dt <- merge(open_dt, open_check, all.x=T, by="Case")
 
 open_dt <- open_dt[!Case %in% tmp[Status=="Closed", Case]]
 
