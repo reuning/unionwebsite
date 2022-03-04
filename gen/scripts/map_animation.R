@@ -208,7 +208,9 @@ site_map <- site_map %>%
          label= ordered(label, levels=rev(c("\uf6de", "\uf7b6", "\uf00d") )))
 
 
-# font_add("font-awesome", regular = "~/Library/Fonts/Font Awesome 6 Free-Solid-900.otf")
+sysfonts::font_add("font-awesome", regular = "~/Library/Fonts/Font Awesome 6 Free-Solid-900.otf")
+library(showtext)
+showtext::showtext_auto()
 # tmp <- site_map[site_map$Case %in% names(which(table(site_map$Case) > 1)),]
 # tmp <- tmp[tmp$State == "NY",]
 mainland <- ggplot(data = x3) +
@@ -218,7 +220,7 @@ mainland <- ggplot(data = x3) +
   geom_sf_text(
     family="font-awesome",
     data = site_map,
-    size = 3,
+    size = 2.5,
     aes(label=label,
         color=Status, 
         alpha=Status)
@@ -260,53 +262,4 @@ mainland <- ggplot(data = x3) +
 animate(mainland, end_pause=10, height=4, width=6, units="in", res=150)
 
 anim_save("~/Desktop/starbucks_filings.gif")
-
-
-# library(ggstar)
-# site_map <- mutate(site_map, 
-#        label=case_when(
-#          Status == "Voted to Unionize" ~ "\uf6de", 
-#          Status == "Filed" ~ "\uf7b6",
-#          Status == "Withdrawn" ~ "0"
-#        ))
-# 
-# 
-# tmp <- site_map %>% 
-#   arrange(case_when(
-#     Status == "Voted to Unionize" ~ 3, 
-#     Status == "Filed" ~ 2,
-#     Status == "Withdrawn" ~ 1
-#   )) %>% ungroup() %>% 
-#   mutate(Status = ordered(Status, levels=rev(c("Voted to Unionize", 
-#                                            "Filed", "Withdrawn"))), 
-#          label= ordered(label, levels=rev(c("\uf6de", "\uf7b6", "\uf00d") )))
-# 
-# mainland <- ggplot(data = x3) +
-#   geom_sf(fill = "white") + 
-#   theme_void() + 
-#   # theme_void(base_family = "Crimson Pro")  +
-#   geom_sf_text(
-#     family="font-awesome",
-#     data = filter(tmp, value==as.Date("2022-02-01")),
-#     # shape = 21,
-#     size = 4, 
-#     aes(label=label,
-#         color=Status, 
-#         alpha=Status)
-#     # aes(fill = size, shape=Election_Data)
-#   ) + 
-#   scale_alpha_manual(values = c("Voted to Unionize"= 1, 
-#                                 "Filed"=.5, 
-#                                 "Withdrawn"=.5)) + 
-#   scale_color_manual(values = c("Voted to Unionize"= "black", 
-#                                 "Filed"= "orangered3", 
-#                                 "Withdrawn"="yellow3"))  + 
-#   guides(color = 
-#            guide_legend(override.aes = 
-#                           list(label = 
-#                                  c("\uf6de", "\uf7b6", "\uf00d")) ), 
-#          alpha="none") 
-# 
-# mainland
-
 
