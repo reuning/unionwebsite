@@ -125,6 +125,10 @@ open_dt <- merge(open_dt, open_check, all.x=T, by="Case")
 
 open_dt <- open_dt[!Case %in% tmp[Status=="Closed", Case]]
 
+### Fixing quote issue
+col_names <-which(apply(open_dt, 2, function(x) any(grepl('"', x))))
+for (j in col_names) set(open_dt, j = j, value = gsub('"', '', open_dt[[j]]))
+
 
 # open_dt$Status <- "Open"
 write.csv(open_dt, file=here("gen", "data", "open_petitions.csv"), row.names = F)

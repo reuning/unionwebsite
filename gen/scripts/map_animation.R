@@ -78,12 +78,14 @@ full_dt <- prep_data(full_dt)
 full_dt <- full_dt[Case_Type == "RC"]
 st_dt <- full_dt[grepl("starbuck", Case_Name, ignore.case = T)]
 
-sub_dt <- st_dt[,.(Case, Date_Filed, Date_Closed, Reason_Closed, long_jit, lat_jit, State)]
+sub_dt <- st_dt[,.(Case, Date_Filed, Date_Closed, Reason_Closed, Tally_Date, Margin, long_jit, lat_jit, State)]
 
-sub_dt <- melt(sub_dt, measure = patterns("Date_"), na.rm = T )
+sub_dt <- melt(sub_dt, measure = patterns("Date"), na.rm = T )
 sub_dt[variable=="Date_Filed", Reason_Closed:="Filed"]
 sub_dt[Reason_Closed=="Withdrawal Non-adjusted", Reason_Closed:="Withdrawn" ]
 sub_dt[Reason_Closed=="Certific. of Representative", Reason_Closed:="Voted to Unionize" ]
+sub_dt[Margin>.5 & variable =="Tally_Date", Reason_Closed:="Voted to Unionize" ]
+
 names(sub_dt)[2] <- "Status"
  
 
