@@ -7,3 +7,7 @@ chromedriver
 cases_*.csv
 recent_election_results__*
 .hugo_build.lock
+public/
+
+# Local Netlify folder
+.netlify
