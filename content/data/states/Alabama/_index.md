@@ -11,13 +11,13 @@ weight: 1
 Excluding public employees, in the last year there have been 10 union elections filed in Alabama and 6 union elections held. In 2 of those elections a new unit was certified. There are currently 5 open representation cases and 3 of are still waiting to vote.
 
 ### Number Employees in a Union Election by Outcome
-{{< image src="Alabama_hist_vic.png" >}}
+{{< image src="Alabama_hist_vic.png" width="1000" height="800">}}
 
 ### Number of Elections by Unit Size
-{{< image src="Alabama_hist_size.png" >}}
+{{< image src="Alabama_hist_size.png" width="1000" height="800" >}}
 
 ### Largest Private Union Elections
-{{< image src="Alabama_10.png" >}}
+{{< image src="Alabama_10.png" width="1000" height="1000"  >}}
 
 ### Open Election Related Cases
 {{< readtable table="/tables/states/Alabama_open.html" >}}
