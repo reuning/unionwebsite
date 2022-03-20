@@ -1,14 +1,14 @@
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,700;1,300&display=swap" rel="stylesheet">
 
-{{ with resources.GetRemote "https://cdn.datatables.net/1.10.25/css/jquery.dataTables.min.css" | minify }}
+{{ with resources.GetRemote "https://cdn.datatables.net/1.10.25/css/jquery.dataTables.min.css"}}
 <style>{{ .Content | safeCSS }}</style>
 {{ end }}
 
 
 <script type="text/javascript" language="javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
 
-{{ with resources.GetRemote "https://cdn.datatables.net/1.10.25/js/jquery.dataTables.min.js" | minify }}
+{{ with resources.GetRemote "https://cdn.datatables.net/1.10.25/js/jquery.dataTables.min.js"}}
 <script type="text/javascript" language="javascript">{{ .Content | safeJS }}</script>
 {{ end }}
 
