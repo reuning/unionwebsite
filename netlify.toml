@@ -2,10 +2,13 @@
 publish = "public"
 command = "hugo --gc --minify --theme book"
 
+
 [context.production.environment]
 HUGO_VERSION = "0.91.2"
 HUGO_ENV = "production"
 HUGO_ENABLEGITINFO = "false"
+NODE_VERSION = "12.18.0"
+NPM_VERSION = "8.5.2"
 
 [context.split1]
 command = "hugo --gc --minify --enableGitInfo"
