@@ -10,6 +10,6 @@ The is currently broken up by state or by union. The breakdown by union is not p
 
 Each page includes a plot showing the trends in elections since 2008. There is also information about the largest union elections and any open election related cases. If you have suggestions on additional visualizations please reach out to me at <kevin.reuning@gmail.com>. Data is automatically updated daily; for more information, please read the [FAQ]({{< ref "data/info/faq" >}}).
 
-{{< figure
+{{< image
     src="/data/national/map.png"
-    width="90%">}}
+    width="1000" height="600">}}
