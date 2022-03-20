@@ -1,1 +1,1 @@
-<img src="{{.Get "src" }}" alt="" class="plot">
+<img src="{{.Get "src" }}" alt="" class="plot"  {{ with .Get "width" }}width="{{.}}"{{ end }}  {{ with .Get "height" }}height="{{.}}"{{ end }}>
