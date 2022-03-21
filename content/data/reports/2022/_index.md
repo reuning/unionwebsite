@@ -12,7 +12,7 @@ keywords: union filings
 This report details the number of filings and closed units in 2022. As a reminder, we are only showing filings and closures related to single union elections (rare multi-union elections are excluded).
 
 ### Filings by Union
-In 2022 495 petitions for new units were filed, a -63.06% decrease from the previous year The median size was 22 with a total of 32,288 workers across all units, a -54.37% decrease from the previous year
+In 2022 501 petitions for new units were filed, a -62.61% decrease from the previous year The median size was 22 with a total of 32,538 workers across all units, a -54.02% decrease from the previous year
 {{< readtable table="/tables/reports/2022/0union_filings.html" >}}
 
 ### Closed Elections by Union
