@@ -6,7 +6,7 @@
 {{ end }}
 
 
-<script type="text/javascript" language="javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script type="text/javascript" language="javascript" src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
 
 {{ with resources.GetRemote "https://cdn.datatables.net/1.10.25/js/jquery.dataTables.min.js"}}
 <script type="text/javascript" language="javascript">{{ .Content | safeJS }}</script>
