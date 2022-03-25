@@ -21,7 +21,7 @@ jobs:
       - name: Install dependencies
         run: |
           sudo apt-get update
-          sudo apt-get install -y libgeos-dev libudunits2-dev libgdal-dev libcurl4-openssl-dev
+          sudo apt-get install -y libgeos-dev libudunits2-dev libgdal-dev libcurl4-openssl-dev webp
 
       - name: Set up python
         uses: actions/setup-python@v2
@@ -75,6 +75,7 @@ jobs:
         run: |
           Rscript gen/scripts/Init.R
           Rscript gen/scripts/Mapping.R
+          find /content/data/ -type f -name '*.png' -execdir sh -c 'cwebp -quiet $1 -o "${1%.png}.webp"' _ {} \;
 
       - name: Finish and comit
         if: ${{ steps.commit.outputs.committed == 'true' }}
