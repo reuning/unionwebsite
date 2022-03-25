@@ -75,7 +75,7 @@ jobs:
         run: |
           Rscript gen/scripts/Init.R
           Rscript gen/scripts/Mapping.R
-          git ls-files -m | grep '\.png$' | xargs -n 1 sh -c 'cwebp -quiet $1 -o "${1%.png}.webp"' _
+          git ls-files -m | grep '\.png$' | xargs -r -n 1 sh -c 'cwebp -quiet $1 -o "${1%.png}.webp"' _
 
       - name: Finish and comit
         if: ${{ steps.commit.outputs.committed == 'true' }}
