@@ -19,7 +19,7 @@ jobs:
       - name: Install dependencies
         run: |
           sudo apt update
-          sudo apt install -y libgeos-dev libudunits2-dev libgdal-dev libcurl4-openssl-dev
+          sudo apt install -y libgeos-dev libudunits2-dev libgdal-dev libcurl4-openssl-dev webp
 
       - name: Setup R
         uses: r-lib/actions/setup-r@v1
@@ -44,6 +44,7 @@ jobs:
         run: |
           Rscript gen/scripts/Init.R
           Rscript gen/scripts/Mapping.R
+          git ls-files -m | grep '\.png$' | xargs -r -n 1 sh -c 'cwebp -quiet $1 -o "${1%.png}.webp"' _
           git config user.name github-actions
           git config user.email github-actions@github.com
           git add .
