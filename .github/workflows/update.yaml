@@ -67,7 +67,7 @@ jobs:
         id: commit
         uses: EndBug/add-and-commit@v7 # You can change this to use a specific version
         with:
-          add: "['gen/data/recent_election_results.csv', 'gen/data/open_petitions.csv', 'gen/data/temp.csv', 'gen/data/new_data.csv']"
+          add: "['gen/data/recent_election_results.csv', 'gen/data/open_petitions.csv']"
           message: 'Updated data'
 
       - name: Build Plots and Pages
