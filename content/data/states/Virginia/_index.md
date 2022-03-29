@@ -8,7 +8,7 @@ weight: 1
 ---
 ##  Virginia
 
-Excluding public employees, in the last year there have been 35 union elections filed in Virginia and 17 union elections held. In 12 of those elections a new unit was certified. There are currently 19 open representation cases and 15 of are still waiting to vote.
+Excluding public employees, in the last year there have been 36 union elections filed in Virginia and 17 union elections held. In 12 of those elections a new unit was certified. There are currently 20 open representation cases and 16 of are still waiting to vote.
 
 ### Number Employees in a Union Election by Outcome
 {{< image src="Virginia_hist_vic.png" width="1000" height="800">}}
