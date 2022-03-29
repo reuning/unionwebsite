@@ -45,11 +45,9 @@ jobs:
           Rscript gen/scripts/Init.R
           Rscript gen/scripts/Mapping.R
           git ls-files -m | grep '\.png$' | xargs -r -n 1 sh -c 'cwebp -quiet $1 -o "${1%.png}.webp"' _
-          git config user.name github-actions
-          git config user.email github-actions@github.com
-          git add .
-          git commit -m "Updated Plots"
-          git push
-          git checkout production
-          git merge main
-          git push
+
+      - name: Finish and comit
+        id: commitfinal
+        uses: EndBug/add-and-commit@v7 # You can change this to use a specific version
+        with:
+          message: 'Updated plots'
