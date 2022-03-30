@@ -105,8 +105,8 @@ crs_pr <- "+proj=lcc +lat_1=18.43333333333333 +lat_2=18.03333333333333 +lat_0=17
 
 site <- as_tibble(sub_dt) %>% group_by(Case) %>% 
   group_modify(~ add_row(.x, value=as.Date(Sys.Date()))) %>% 
-  # ungroup() %>% 
-  complete(Case, value=full_seq(value, 1)) %>% 
+  # ungroup() %>%
+  complete(value=full_seq(value, 1)) %>% 
   arrange(Case) %>% 
   fill(Status:variable) %>% 
   filter(!is.na(lat_jit))
@@ -261,7 +261,8 @@ mainland <- ggplot(data = x3) +
   theme(plot.caption.position = "plot") +
   coord_sf(clip = 'off') + 
   NULL
-animate(mainland, end_pause=10, height=4, width=6, units="in", res=150)
+p <- animate(mainland, end_pause=10, height=4, width=6, units="in", res=150, 
+             renderer=gifski_renderer())
 
-anim_save("~/Desktop/starbucks_filings.gif")
+anim_save("~/Desktop/starbucks_filings.gif", animation=p)
 

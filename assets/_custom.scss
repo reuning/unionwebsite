@@ -10,13 +10,21 @@ figure.plot {
 table.open-cases {
     font-size: 12px;
     border-spacing: 1px;
-  }
+    line-height: 1;
+
+}
 
 table.open-cases tr td{
    padding: 0rem .1rem;
- }
+}
 
  table.summary-stats {
-     font-size: 14px;
+     font-size: 12px;
      border-spacing: 1px;
-  }
+     line-height: 1;
+}
+
+div.data-table {
+  width: 100%;
+
+}
