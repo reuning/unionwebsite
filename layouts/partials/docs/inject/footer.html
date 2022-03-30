@@ -1,3 +1,38 @@
 <div class="flex justify-end">
   Data last updated on: {{ (time now "America/New_York").Format "Jan 2 2006 15:04 MST" }}
 </div>
+
+{{ with resources.GetRemote "https://cdn.datatables.net/1.10.25/css/jquery.dataTables.min.css"}}
+<style>{{ .Content | safeCSS }}</style>
+{{ end }}
+
+
+<script type="text/javascript" language="javascript" src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+
+{{ with resources.GetRemote "https://cdn.datatables.net/1.10.25/js/jquery.dataTables.min.js"}}
+<script type="text/javascript" language="javascript">{{ .Content | safeJS }}</script>
+{{ end }}
+
+
+<script type="text/javascript" class="init">
+
+  $(document).ready(function() {
+  	$('table.display').DataTable({
+      paging: false
+    }
+    );
+  } );
+
+</script>
+
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-0KB2SGQR50"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-0KB2SGQR50');
+</script>
