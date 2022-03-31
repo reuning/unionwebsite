@@ -8,7 +8,7 @@ weight: 1
 ---
 ##  New York
 
-Excluding public employees, in the last year there have been 195 union elections filed in New York and 110 union elections held. In 77 of those elections a new unit was certified. There are currently 52 open representation cases and 44 of are still waiting to vote.
+Excluding public employees, in the last year there have been 193 union elections filed in New York and 110 union elections held. In 77 of those elections a new unit was certified. There are currently 51 open representation cases and 43 of are still waiting to vote.
 
 ### Number Employees in a Union Election by Outcome
 {{< image src="New_York_hist_vic.png" width="1000" height="800">}}
