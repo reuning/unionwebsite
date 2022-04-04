@@ -8,7 +8,7 @@ keywords: ["Starbucks union elections", "Starbucks union", "Barista union"]
 weight: 4
 ---
 
-There are currently 173 open petitions for unions at Starbucks stores covering 4522 total workers.
+There are currently 175 open petitions for unions at Starbucks stores covering 4597 total workers.
 ### Map of open cases
 {{< image
     src="/data/starbucks/map.png"
