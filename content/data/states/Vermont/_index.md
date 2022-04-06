@@ -8,7 +8,7 @@ weight: 1
 ---
 ##  Vermont
 
-Excluding public employees, in the last year there have been 9 union elections filed in Vermont and 4 union elections held. In 3 of those elections a new unit was certified. There are currently 4 open representation cases and 3 of are still waiting to vote.
+Excluding public employees, in the last year there have been 10 union elections filed in Vermont and 4 union elections held. In 3 of those elections a new unit was certified. There are currently 5 open representation cases and 4 of are still waiting to vote.
 
 ### Number Employees in a Union Election by Outcome
 {{< image src="Vermont_hist_vic.png" width="1000" height="800">}}
