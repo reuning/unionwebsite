@@ -8,7 +8,7 @@ weight: 1
 ---
 ##  Oklahoma
 
-Excluding public employees, in the last year there have been 6 union elections filed in Oklahoma and 3 union elections held. In 1 of those elections a new unit was certified. There are currently 3 open representation cases and 3 of are still waiting to vote.
+Excluding public employees, in the last year there have been 7 union elections filed in Oklahoma and 3 union elections held. In 1 of those elections a new unit was certified. There are currently 4 open representation cases and 4 of are still waiting to vote.
 
 ### Number Employees in a Union Election by Outcome
 {{< image src="Oklahoma_hist_vic.png" width="1000" height="800">}}

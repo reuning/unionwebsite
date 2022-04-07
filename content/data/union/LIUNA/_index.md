@@ -8,7 +8,7 @@ weight: 1
 ---
 ##  LIUNA
 
-Excluding public employees, in the last year there have been 22 union elections filed by the LIUNA and 19 union elections held. In 11 of those elections a new unit was certified. There are currently 10 open representation cases and 5 of are still waiting to vote.
+Excluding public employees, in the last year there have been 23 union elections filed by the LIUNA and 19 union elections held. In 11 of those elections a new unit was certified. There are currently 11 open representation cases and 6 of are still waiting to vote.
 
 ### Number Employees in a Union Election by Outcome
 {{< image src="LIUNA_hist_vic.png" width="1000" height="800">}}
