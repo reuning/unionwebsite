@@ -8,7 +8,7 @@ weight: 1
 ---
 ##  PASNAP
 
-Excluding public employees, in the last year there have been 5 union elections filed by the PASNAP and 4 union elections held. In 4 of those elections a new unit was certified. There are currently 2 open representation cases and 1 of are still waiting to vote.
+Excluding public employees, in the last year there have been 3 union elections filed by the PASNAP and 4 union elections held. In 4 of those elections a new unit was certified. There are currently 2 open representation cases and 1 of are still waiting to vote.
 
 ### Number Employees in a Union Election by Outcome
 {{< image src="PASNAP_hist_vic.png" width="1000" height="800">}}
