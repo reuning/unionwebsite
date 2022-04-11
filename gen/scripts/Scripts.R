@@ -445,9 +445,9 @@ create_table_sb <- function(data=NULL,
   write(tab_out, file = file_name)
   page <- readLines(here("content","data","starbucks","_index.md" ))
 
-  page[11] <- sprintf("There are currently %i open petitions for unions at Starbucks stores covering %i total workers.",
+  page[11] <- sprintf("There are currently %i open petitions for unions at Starbucks stores covering %s total workers.",
           sum(tmp_dt$Status=="Open"),
-          sum(tmp_dt$Num_Eligible_Voters[tmp_dt$Status=="Open"]))
+          scales::comma(sum(tmp_dt$Num_Eligible_Voters[tmp_dt$Status=="Open"]),1))
   writeLines(page, here("content","data","starbucks","_index.md" ))
 }
 
