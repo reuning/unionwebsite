@@ -8,7 +8,7 @@ weight: 1
 ---
 ##  Maryland
 
-Excluding public employees, in the last year there have been 59 union elections filed in Maryland and 22 union elections held. In 18 of those elections a new unit was certified. There are currently 30 open representation cases and 29 of are still waiting to vote.
+Excluding public employees, in the last year there have been 59 union elections filed in Maryland and 22 union elections held. In 18 of those elections a new unit was certified. There are currently 31 open representation cases and 30 of are still waiting to vote.
 
 ### Number Employees in a Union Election by Outcome
 {{< image src="Maryland_hist_vic.png" width="1000" height="800">}}
