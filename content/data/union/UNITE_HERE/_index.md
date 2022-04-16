@@ -8,7 +8,7 @@ weight: 1
 ---
 ##  UNITE HERE
 
-Excluding public employees, in the last year there have been 6 union elections filed by the UNITE HERE and 4 union elections held. In 1 of those elections a new unit was certified. There are currently 6 open representation cases and 3 of are still waiting to vote.
+Excluding public employees, in the last year there have been 7 union elections filed by the UNITE HERE and 4 union elections held. In 1 of those elections a new unit was certified. There are currently 7 open representation cases and 4 of are still waiting to vote.
 
 ### Number Employees in a Union Election by Outcome
 {{< image src="UNITE_HERE_hist_vic.png" width="1000" height="800">}}

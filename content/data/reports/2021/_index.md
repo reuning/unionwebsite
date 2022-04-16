@@ -16,5 +16,5 @@ In 2021 1,346 petitions for new units were filed, a 4.83% increase from the prev
 {{< readtable table="/tables/reports/2021/0union_filings.html" >}}
 
 ### Closed Elections by Union
-In 2021 1,266 petitions for new units were closed (this includes petitions where no election was ever held), with 50.79% closed with a certification order, creating 643 total new units. This was a 14.62% increase from the previous year in successful union certifications. Overall this represents approximately 30,901 workers, which is a 10.80% increase from the previous year The median bargaining unit has 20 workers.
+In 2021 1,267 petitions for new units were closed (this includes petitions where no election was ever held), with 50.75% closed with a certification order, creating 643 total new units. This was a 14.62% increase from the previous year in successful union certifications. Overall this represents approximately 30,901 workers, which is a 10.80% increase from the previous year The median bargaining unit has 20 workers.
 {{< readtable table="/tables/reports/2021/0union_closed.html" >}}
