@@ -8,7 +8,7 @@ weight: 1
 ---
 ##  SPFPA
 
-Excluding public employees, in the last year there have been 35 union elections filed by the SPFPA and 20 union elections held. In 14 of those elections a new unit was certified. There are currently 19 open representation cases and 16 of are still waiting to vote.
+Excluding public employees, in the last year there have been 33 union elections filed by the SPFPA and 19 union elections held. In 14 of those elections a new unit was certified. There are currently 17 open representation cases and 15 of are still waiting to vote.
 
 ### Number Employees in a Union Election by Outcome
 {{< image src="SPFPA_hist_vic.png" width="1000" height="800">}}
