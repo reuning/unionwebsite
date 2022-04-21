@@ -82,7 +82,8 @@ sub_dt <- st_dt[,.(Case, Date_Filed, Date_Closed, Reason_Closed, Tally_Date, Mar
 
 sub_dt <- melt(sub_dt, measure = patterns("Date"), na.rm = T )
 sub_dt[variable=="Date_Filed", Reason_Closed:="Filed"]
-sub_dt[Reason_Closed=="Withdrawal Non-adjusted", Reason_Closed:="Withdrawn" ]
+sub_dt[Reason_Closed=="Withdrawal Non-adjusted", Reason_Closed:="Withdrawn/Dismissed" ]
+sub_dt[Reason_Closed=="Dismissal Non-adjusted", Reason_Closed:="Withdrawn/Dismissed" ]
 sub_dt[Reason_Closed=="Certific. of Representative", Reason_Closed:="Voted to Unionize" ]
 sub_dt[Margin>.5 & variable =="Tally_Date", Reason_Closed:="Voted to Unionize" ]
 
@@ -196,17 +197,17 @@ site_map <- mutate(site_map,
                    label=case_when(
                      Status == "Voted to Unionize" ~ "\uf6de", 
                      Status == "Filed" ~ "\uf7b6",
-                     Status == "Withdrawn" ~ "\uf00d"
+                     Status == "Withdrawn/Dismissed" ~ "\uf00d"
                    ))
 
 site_map <- site_map %>% 
   arrange(case_when(
     Status == "Voted to Unionize" ~ 3, 
     Status == "Filed" ~ 2,
-    Status == "Withdrawn" ~ 1
+    Status == "Withdrawn/Dismissed" ~ 1
   )) %>% ungroup() %>% 
   mutate(Status = ordered(Status, levels=rev(c("Voted to Unionize", 
-                                               "Filed", "Withdrawn"))), 
+                                               "Filed", "Withdrawn/Dismissed"))), 
          label= ordered(label, levels=rev(c("\uf6de", "\uf7b6", "\uf00d") )))
 
 
@@ -230,17 +231,17 @@ mainland <- ggplot(data = x3) +
   ) + 
   scale_alpha_manual(values = c("Voted to Unionize"= 1, 
                                 "Filed"=.5, 
-                                "Withdrawn"=.5)) + 
+                                "Withdrawn/Dismissed"=.5)) + 
   scale_color_manual(values = c("Voted to Unionize"= "black", 
                                 "Filed"= "orangered3", 
-                                "Withdrawn"="yellow3"))  + 
+                                "Withdrawn/Dismissed"="yellow3"))  + 
   guides(color = 
            guide_legend(override.aes = 
                           list(label = 
                                  c("\uf6de", "\uf7b6", "\uf00d")) ), 
          alpha="none") + 
   geom_text(x=2500000, y=-550000, aes(label=paste(n)), 
-             data=stats[stats$Status=="Withdrawn",]) + 
+             data=stats[stats$Status=="Withdrawn/Dismissed",]) + 
   geom_text(x=2500000, y=-240000, aes(label=paste(n)), 
             data=stats[stats$Status=="Filed",]) + 
   geom_text(x=2500000, y=70000, aes(label=paste(n)), 
