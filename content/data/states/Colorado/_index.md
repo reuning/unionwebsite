@@ -8,7 +8,7 @@ weight: 1
 ---
 ##  Colorado
 
-Excluding public employees, in the last year there have been 34 union elections filed in Colorado and 19 union elections held. In 7 of those elections a new unit was certified. There are currently 23 open representation cases and 16 of are still waiting to vote.
+Excluding public employees, in the last year there have been 35 union elections filed in Colorado and 17 union elections held. In 5 of those elections a new unit was certified. There are currently 24 open representation cases and 17 of are still waiting to vote.
 
 ### Number Employees in a Union Election by Outcome
 {{< image src="Colorado_hist_vic.png" width="1000" height="800">}}
