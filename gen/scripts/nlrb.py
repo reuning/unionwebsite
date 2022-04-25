@@ -74,7 +74,7 @@ def get_data(file_name, search_url,
             current = result['processed']
             pbar.update(current - previous)
             previous = current
-            sleep(2)
+            #sleep(2)
 
 
     print(BASE_URL + result['filename'])
