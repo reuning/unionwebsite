@@ -8,7 +8,7 @@ weight: 1
 ---
 ##  AFSCME
 
-Excluding public employees, in the last year there have been 31 union elections filed by the AFSCME and 27 union elections held. In 19 of those elections a new unit was certified. There are currently 16 open representation cases and 14 of are still waiting to vote.
+Excluding public employees, in the last year there have been 30 union elections filed by the AFSCME and 27 union elections held. In 19 of those elections a new unit was certified. There are currently 15 open representation cases and 13 of are still waiting to vote.
 
 ### Number Employees in a Union Election by Outcome
 {{< image src="AFSCME_hist_vic.png" width="1000" height="800">}}
