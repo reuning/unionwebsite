@@ -8,7 +8,7 @@ weight: 1
 ---
 ##  Wisconsin
 
-Excluding public employees, in the last year there have been 15 union elections filed in Wisconsin and 9 union elections held. In 6 of those elections a new unit was certified. There are currently 8 open representation cases and 7 of are still waiting to vote.
+Excluding public employees, in the last year there have been 17 union elections filed in Wisconsin and 9 union elections held. In 6 of those elections a new unit was certified. There are currently 10 open representation cases and 9 of are still waiting to vote.
 
 ### Number Employees in a Union Election by Outcome
 {{< image src="Wisconsin_hist_vic.png" width="1000" height="800">}}
