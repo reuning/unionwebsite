@@ -13,3 +13,5 @@ Each page includes a plot showing the trends in elections since 2008. There is a
 {{< image
     src="/data/national/map.png"
     width="1000" height="600">}}
+
+{{<accordion>}}
