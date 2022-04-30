@@ -14,7 +14,7 @@ Excluding public employees, in the last year there have been 56 union elections 
 {{< image src="New_Jersey_hist_vic.png" width="1000" height="800">}}
 
 ### Timeline of Filings and Elections by Unit Size
-{{< accordion src="New_Jersey_hist_size.png" width="1000" height="800" >}}
+{{< accordion src="New_Jersey_hist.png" width="1000" height="800" >}}
 
 ### Largest Private Union Elections
 {{< image src="New_Jersey_10.png" width="1000" height="1000"  >}}

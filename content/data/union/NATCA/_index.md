@@ -14,7 +14,7 @@ Excluding public employees, in the last year there have been 6 union elections f
 {{< image src="NATCA_hist_vic.png" width="1000" height="800">}}
 
 ### Timeline of Filings and Elections by Unit Size
-{{< accordion src="NATCA_hist_size.png" width="1000" height="800" >}}
+{{< accordion src="NATCA_hist.png" width="1000" height="800" >}}
 
 ### Largest Private Union Elections
 {{< image src="NATCA_10.png" width="1000" height="1000"  >}}

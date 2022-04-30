@@ -14,7 +14,7 @@ Excluding public employees, in the last year there have been 0 union elections f
 {{< image src="ACOPS_hist_vic.png" width="1000" height="800">}}
 
 ### Timeline of Filings and Elections by Unit Size
-{{< accordion src="ACOPS_hist_size.png" width="1000" height="800" >}}
+{{< accordion src="ACOPS_hist.png" width="1000" height="800" >}}
 
 ### Largest Private Union Elections
 {{< image src="ACOPS_10.png" width="1000" height="1000"  >}}

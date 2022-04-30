@@ -14,7 +14,7 @@ Excluding public employees, in the last year there have been 8 union elections f
 {{< image src="West_Virginia_hist_vic.png" width="1000" height="800">}}
 
 ### Timeline of Filings and Elections by Unit Size
-{{< accordion src="West_Virginia_hist_size.png" width="1000" height="800" >}}
+{{< accordion src="West_Virginia_hist.png" width="1000" height="800" >}}
 
 ### Largest Private Union Elections
 {{< image src="West_Virginia_10.png" width="1000" height="1000"  >}}

@@ -14,7 +14,7 @@ Excluding public employees, in the last year there have been 10 union elections 
 {{< image src="UNITE_HERE_hist_vic.png" width="1000" height="800">}}
 
 ### Timeline of Filings and Elections by Unit Size
-{{< accordion src="UNITE_HERE_hist_size.png" width="1000" height="800" >}}
+{{< accordion src="UNITE_HERE_hist.png" width="1000" height="800" >}}
 
 ### Largest Private Union Elections
 {{< image src="UNITE_HERE_10.png" width="1000" height="1000"  >}}

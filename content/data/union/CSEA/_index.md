@@ -14,7 +14,7 @@ Excluding public employees, in the last year there have been 0 union elections f
 {{< image src="CSEA_hist_vic.png" width="1000" height="800">}}
 
 ### Timeline of Filings and Elections by Unit Size
-{{< accordion src="CSEA_hist_size.png" width="1000" height="800" >}}
+{{< accordion src="CSEA_hist.png" width="1000" height="800" >}}
 
 ### Largest Private Union Elections
 {{< image src="CSEA_10.png" width="1000" height="1000"  >}}

@@ -8,16 +8,17 @@ weight: 1
 ---
 ##  CWA
 
-Excluding public employees, in the last year there have been 39 union elections filed by the CWA and 24 union elections held. In 18 of those elections a new unit was certified. There are currently 21 open representation cases and 18 of are still waiting to vote.
+Excluding public employees, in the last year there have been 40 union elections filed by the CWA and 24 union elections held. In 18 of those elections a new unit was certified. There are currently 22 open representation cases and 19 of are still waiting to vote.
 
 ### Number Employees in a Union Election by Outcome
 {{< image src="CWA_hist_vic.png" width="1000" height="800">}}
 
 ### Timeline of Filings and Elections by Unit Size
-{{< accordion src="CWA_hist_size.png" width="1000" height="800" >}}
+{{< accordion src="CWA_hist.png" width="1000" height="800" >}}
 
 ### Largest Private Union Elections
 {{< image src="CWA_10.png" width="1000" height="1000"  >}}
 
 ### Open Election Related Cases
 {{< readtable table="/tables/union/CWA_open.html" >}}
+
