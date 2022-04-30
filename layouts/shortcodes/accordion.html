@@ -1,0 +1,48 @@
+{{ $src := .Get "src"}}
+{{ $type_arr := split $src "." }}
+{{ $srcbase := index $type_arr 0 }}
+
+<p>
+  <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#filings" aria-expanded="false" aria-controls="filings">
+    Data on Filings
+  </button>
+  <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#elections" aria-expanded="false" aria-controls="elections">
+    Data on Elections
+  </button>
+</p>
+<div id="timelines" class = "card">
+  <div class="collapse show" id="filings" data-bs-parent="#timelines">
+    <div class="card-body">
+      <figure class="plot">
+          <picture>
+            <source srcset="{{$srcbase}}_filings.webp" type="image/webp"
+              {{ with .Get "width" }}width="{{.}}"{{ end }}
+              {{ with .Get "height" }}height="{{.}}"{{ end }} >
+              <img src="{{$srcbase}}_filings.png"
+              {{ with .Get "width" }}width="{{.}}"{{ end }}
+              {{ with .Get "height" }}height="{{.}}"{{ end }}
+              loading="lazy"
+              decoding="async" >
+          </picture>
+      </figure>
+    </div>
+  </div>
+  <div class="collapse" id="elections" data-bs-parent="#timelines">
+    <div class="card-body">
+      <div class="card-body">
+        <figure class="plot">
+            <picture>
+              <source srcset="{{$srcbase}}_elections.webp" type="image/webp"
+                {{ with .Get "width" }}width="{{.}}"{{ end }}
+                {{ with .Get "height" }}height="{{.}}"{{ end }} >
+              <img src="{{$srcbase}}_elections.png"
+                {{ with .Get "width" }}width="{{.}}"{{ end }}
+                {{ with .Get "height" }}height="{{.}}"{{ end }}
+                loading="lazy"
+                decoding="async" >
+            </picture>
+        </figure>
+      </div>
+    </div>
+  </div>
+</div>

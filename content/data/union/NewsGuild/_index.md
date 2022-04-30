@@ -8,13 +8,13 @@ weight: 1
 ---
 ##  NewsGuild
 
-Excluding public employees, in the last year there have been 13 union elections filed by the NewsGuild and 13 union elections held. In 12 of those elections a new unit was certified. There are currently 5 open representation cases and 4 of are still waiting to vote.
+Excluding public employees, in the last year there have been 13 union elections filed by the NewsGuild and 12 union elections held. In 11 of those elections a new unit was certified. There are currently 5 open representation cases and 4 of are still waiting to vote.
 
 ### Number Employees in a Union Election by Outcome
 {{< image src="NewsGuild_hist_vic.png" width="1000" height="800">}}
 
-### Number of Elections by Unit Size
-{{< image src="NewsGuild_hist_size.png" width="1000" height="800" >}}
+### Timeline of Filings and Elections by Unit Size
+{{< accordion src="NewsGuild_hist_size.png" width="1000" height="800" >}}
 
 ### Largest Private Union Elections
 {{< image src="NewsGuild_10.png" width="1000" height="1000"  >}}
