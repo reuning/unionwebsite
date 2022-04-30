@@ -154,7 +154,7 @@ for(state in state.abb){
 
 
 
-## State Plots
+## Union Plots
 for(union in nationals){
   tmp_data = dt[dt$National == union]
   union_file <- gsub(" ", "_", union)

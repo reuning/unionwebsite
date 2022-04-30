@@ -13,8 +13,8 @@ Excluding public employees, in the last year there have been 15 union elections 
 ### Number Employees in a Union Election by Outcome
 {{< image src="Wisconsin_hist_vic.png" width="1000" height="800">}}
 
-### Number of Elections by Unit Size
-{{< image src="Wisconsin_hist_size.png" width="1000" height="800" >}}
+### Timeline of Filings and Elections by Unit Size
+{{< accordion src="Wisconsin_hist_size.png" width="1000" height="800" >}}
 
 ### Largest Private Union Elections
 {{< image src="Wisconsin_10.png" width="1000" height="1000"  >}}

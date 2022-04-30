@@ -68,7 +68,8 @@ prep_data <- function(data=dt){
 
   data[,Length:=Tally_Date-Date_Filed]
   data[,Tally_Quarter := anydate(cut(Tally_Date, breaks = "quarter"))]
-
+  data[,Filed_Quarter := anydate(cut(Date_Filed, breaks = "quarter"))]
+  
   data[is.na(Num_Eligible_Voters),Num_Eligible_Voters:=`Employees on charge/petition`]
   data$`Employees on charge/petition` <- NULL
   data[,size:=cut(Num_Eligible_Voters, breaks = c(0, 5, 10, 25, 50, 100, 500, Inf), right = T,
@@ -218,14 +219,14 @@ create_plot <- function(number=10, data=NULL,
     scale_y_discrete(label=scales::label_wrap(50)) +
     scale_fill_manual("", values=c("#009E73", "#56B4E9", "grey"),
                       labels=c("Votes for", "Votes Against", "Didn't Vote")) +
-    guides(color=F) +
+    guides(color="none") +
     theme_minimal(base_family = "Crimson Pro") +
     theme(legend.position = "bottom", legend.margin=margin(l=-100),
           text = element_text(size=15, lineheight=.8),
           panel.grid=element_blank()) +
     scale_color_manual(values = c("#56B4E9", "#009E73")) +
     annotate("text", x=x_lim*.95, y=number + .5, label="Margin") +
-    guides(alpha=F) +
+    guides(alpha="none") +
     labs(y="", x="Votes", caption = "Includes only certification votes with a single union, data from NLRB. https://unionelections.org")
 
   ggsave(file_name, height=10*log10(number), width=10, type = "cairo",
@@ -243,45 +244,88 @@ create_time_plot <- function(data=NULL,
 
   tmp_dt <- data[Case_Type == "RC" &
                    Ballot_Type != "Revised Single Labor Org" &
-                   !is.na(size) ]
+                   !is.na(size) & Unique ==TRUE ]
 
 
 
-
-
+  curr_quarter <- lubridate::floor_date(lubridate::today(), 
+                                        unit = "quarter")
+  y_max <- sum(tmp_dt$Tally_Quarter==curr_quarter, na.rm=T)
   ggplot(tmp_dt, aes(x=Tally_Quarter,
              fill=size)) +
   geom_bar(position=position_stack(reverse=T), color="black", size=.2, width=80) +
-  scale_x_date(limits=c(as.Date("1999-01-01"), lubridate::ceiling_date(lubridate::today(), unit = "month"))) +
+  scale_x_date(limits=c(as.Date("1999-01-01"), 
+                        lubridate::ceiling_date(lubridate::today(), 
+                                                unit = "quarter"))) +
     scale_y_continuous(labels=scales::label_comma()) +
   theme_minimal(base_family = "Crimson Pro") +
-    scale_fill_viridis_d("Unionized?", direction = -1, begin = .1, end=.9) +
+    annotate("text", 
+                  x=curr_quarter, 
+                  y=ifelse(y_max == 0, 1, y_max*1.10),label="*") + 
+    scale_fill_viridis_d("Unit Size", direction = -1, begin = .1, end=.9) +
     theme(legend.position = "bottom",
           text = element_text(size=15, lineheight=.3)) +
+    ggtitle("Number of Union Elections in a Quarter") + 
     labs(x="Quarter", y="Number of Units",
-       caption = "Includes only certification votes with a single union, data from NLRB. https://unionelections.org")
+       caption = "* Current quarter, not all data complete\n\nIncludes only certification votes with a single union, data from NLRB. https://unionelections.org")
 
-  f <- paste0(file_name, "_hist_size.png")
+  f <- paste0(file_name, "_hist_elections.png")
 
   ggsave(f, height=8, width=10, type = "cairo",
          units="in", dpi=200)
-
+  
+  
+  y_max <- sum(tmp_dt[Tally_Quarter==curr_quarter, Num_Eligible_Voters], na.rm=T)
+  
   ggplot(tmp_dt, aes(x=Tally_Quarter,
                      fill=forcats::fct_rev(Union_Cer), weight=Num_Eligible_Voters)) +
     geom_bar(position=position_stack(reverse=T), color="black", size=.2, width=80) +
     scale_x_date(limits=c(as.Date("1999-01-01"),
-                          lubridate::ceiling_date(lubridate::today(), unit = "month"))) +
+                          lubridate::ceiling_date(lubridate::today(),
+                                                  unit = "quarter"))) +
     scale_y_continuous(labels=scales::label_comma()) +
     theme_minimal(base_family = "Crimson Pro") +
     scale_fill_viridis_d("Unionized?", direction = -1, begin = .2, end=.8) +
+    annotate("text", 
+             x=curr_quarter, 
+             y=ifelse(y_max == 0, 1, y_max*1.10),label="*") + 
     theme(legend.position = "bottom",
           text = element_text(size=15, lineheight=.3)) +
-    labs(x="Quarter", y="Number of Voters", caption = "Includes only certification votes with a single union, data from NLRB. https://unionelections.org")
-
+    labs(x="Quarter", y="Number of Voters", 
+         caption = "* Current quarter, not all data complete\n\nIncludes only certification votes with a single union, data from NLRB. https://unionelections.org")
+  
   f <- paste0(file_name, "_hist_vic.png")
-
+  
   ggsave(f, height=8, width=10, type = "cairo",
          units="in", dpi=200)
+  
+  y_max <- sum(tmp_dt$Filed_Quarter==curr_quarter, na.rm=T)
+  ggplot(tmp_dt, aes(x=Filed_Quarter,
+                     fill=size)) +
+    geom_bar(position=position_stack(reverse=T), color="black", size=.2, width=80) +
+    scale_x_date(limits=c(as.Date("1999-01-01"), 
+                          lubridate::ceiling_date(lubridate::today(), 
+                                                  unit = "quarter"))) +
+    scale_y_continuous(labels=scales::label_comma()) +
+    theme_minimal(base_family = "Crimson Pro") +
+    scale_fill_viridis_d("Unit Size", direction = -1, begin = .1, end=.9) +
+    theme(legend.position = "bottom",
+          text = element_text(size=15, lineheight=.3)) +
+    annotate("text", 
+             x=curr_quarter, 
+             y=ifelse(y_max == 0, 1, y_max*1.10),label="*") + 
+    ggtitle("Number of Union Filings in a Quarter") + 
+    labs(x="Quarter", y="Number of Units",
+         caption = "* Current quarter, not all data complete\n\nIncludes only filings with a single union, data from NLRB. https://unionelections.org")
+  
+  f <- paste0(file_name, "_hist_filings.png")
+  
+  ggsave(f, height=8, width=10, type = "cairo",
+         units="in", dpi=200)
+  
+  
+
+
 
 
 }
@@ -532,8 +576,8 @@ create_page <- function(title = "California",
           paste("### Number Employees in a Union Election by Outcome"),
           paste0("{{< image src=\"",path, "_hist_vic.png\" width=\"1000\" height=\"800\">}}"),
           "",
-          paste("### Number of Elections by Unit Size"),
-          paste0("{{< image src=\"",path, "_hist_size.png\" width=\"1000\" height=\"800\" >}}"),
+          paste("### Timeline of Filings and Elections by Unit Size"),
+          paste0("{{< accordion src=\"",path, "_hist.png\" width=\"1000\" height=\"800\" >}}"),
           "",
           paste("### Largest Private Union Elections"),
           paste0("{{< image src=\"",path, "_10.png\" width=\"1000\" height=\"1000\"  >}}"),

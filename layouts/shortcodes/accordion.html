@@ -1,13 +1,48 @@
+{{ $src := .Get "src"}}
+{{ $type_arr := split $src "." }}
+{{ $srcbase := index $type_arr 0 }}
+
 <p>
-  <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-    Link with href
-  </a>
-  <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-    Button with data-bs-target
+  <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#filings" aria-expanded="false" aria-controls="filings">
+    Data on Filings
+  </button>
+  <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#elections" aria-expanded="false" aria-controls="elections">
+    Data on Elections
   </button>
 </p>
-<div class="collapse" id="collapseExample">
-  <div class="card card-body">
-    Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+<div id="timelines" class = "card">
+  <div class="collapse" id="filings" data-bs-parent="#timelines">
+    <div class="card-body">
+      <figure class="plot">
+          <picture>
+            <source srcset="{{$srcbase}}_filings.webp" type="image/webp"
+              {{ with .Get "width" }}width="{{.}}"{{ end }}
+              {{ with .Get "height" }}height="{{.}}"{{ end }} >
+              <img src="{{$srcbase}}_filings.png"
+              {{ with .Get "width" }}width="{{.}}"{{ end }}
+              {{ with .Get "height" }}height="{{.}}"{{ end }}
+              loading="lazy"
+              decoding="async" >
+          </picture>
+      </figure>
+    </div>
+  </div>
+  <div class="collapse" id="elections" data-bs-parent="#timelines">
+    <div class="card-body">
+      <div class="card-body">
+        <figure class="plot">
+            <picture>
+              <source srcset="{{$srcbase}}_elections.webp" type="image/webp"
+                {{ with .Get "width" }}width="{{.}}"{{ end }}
+                {{ with .Get "height" }}height="{{.}}"{{ end }} >
+              <img src="{{$srcbase}}_elections.png"
+                {{ with .Get "width" }}width="{{.}}"{{ end }}
+                {{ with .Get "height" }}height="{{.}}"{{ end }}
+                loading="lazy"
+                decoding="async" >
+            </picture>
+        </figure>
+      </div>
+    </div>
   </div>
 </div>

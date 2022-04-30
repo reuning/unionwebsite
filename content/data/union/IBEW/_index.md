@@ -13,8 +13,8 @@ Excluding public employees, in the last year there have been 60 union elections 
 ### Number Employees in a Union Election by Outcome
 {{< image src="IBEW_hist_vic.png" width="1000" height="800">}}
 
-### Number of Elections by Unit Size
-{{< image src="IBEW_hist_size.png" width="1000" height="800" >}}
+### Timeline of Filings and Elections by Unit Size
+{{< accordion src="IBEW_hist_size.png" width="1000" height="800" >}}
 
 ### Largest Private Union Elections
 {{< image src="IBEW_10.png" width="1000" height="1000"  >}}
