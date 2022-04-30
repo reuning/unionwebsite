@@ -8,7 +8,7 @@ weight: 1
 ---
 ##  Washington
 
-Excluding public employees, in the last year there have been 97 union elections filed in Washington and 61 union elections held. In 41 of those elections a new unit was certified. There are currently 30 open representation cases and 26 of are still waiting to vote.
+Excluding public employees, in the last year there have been 102 union elections filed in Washington and 64 union elections held. In 41 of those elections a new unit was certified. There are currently 34 open representation cases and 27 of are still waiting to vote.
 
 ### Number Employees in a Union Election by Outcome
 {{< image src="Washington_hist_vic.png" width="1000" height="800">}}

@@ -21,4 +21,3 @@ Excluding public employees, in the last year there have been 202 union elections
 
 ### Open Election Related Cases
 {{< readtable table="/tables/union/Teamsters_open.html" >}}
-

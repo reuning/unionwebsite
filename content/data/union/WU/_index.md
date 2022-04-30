@@ -8,7 +8,7 @@ weight: 1
 ---
 ##  WU
 
-Excluding public employees, in the last year there have been 248 union elections filed by the WU and 31 union elections held. In 19 of those elections a new unit was certified. There are currently 229 open representation cases and 218 of are still waiting to vote.
+Excluding public employees, in the last year there have been 258 union elections filed by the WU and 40 union elections held. In 19 of those elections a new unit was certified. There are currently 239 open representation cases and 219 of are still waiting to vote.
 
 ### Number Employees in a Union Election by Outcome
 {{< image src="WU_hist_vic.png" width="1000" height="800">}}

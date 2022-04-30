@@ -21,4 +21,3 @@ Excluding public employees, in the last year there have been 101 union elections
 
 ### Open Election Related Cases
 {{< readtable table="/tables/union/SEIU_open.html" >}}
-

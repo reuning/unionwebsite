@@ -21,4 +21,3 @@ Excluding public employees, in the last year there have been 49 union elections 
 
 ### Open Election Related Cases
 {{< readtable table="/tables/states/Ohio_open.html" >}}
-

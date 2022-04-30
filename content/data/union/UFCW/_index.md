@@ -21,4 +21,3 @@ Excluding public employees, in the last year there have been 128 union elections
 
 ### Open Election Related Cases
 {{< readtable table="/tables/union/UFCW_open.html" >}}
-

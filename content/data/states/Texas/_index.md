@@ -21,4 +21,3 @@ Excluding public employees, in the last year there have been 50 union elections 
 
 ### Open Election Related Cases
 {{< readtable table="/tables/states/Texas_open.html" >}}
-

@@ -21,4 +21,3 @@ Excluding public employees, in the last year there have been 1,792 union electio
 
 ### Open Election Related Cases
 {{< readtable table="/tables/national/United_States_open.html" >}}
-
