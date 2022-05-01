@@ -86,6 +86,7 @@ sub_dt[Reason_Closed=="Withdrawal Non-adjusted", Reason_Closed:="Withdrawn/Dismi
 sub_dt[Reason_Closed=="Dismissal Non-adjusted", Reason_Closed:="Withdrawn/Dismissed" ]
 sub_dt[Reason_Closed=="Certific. of Representative", Reason_Closed:="Voted to Unionize" ]
 sub_dt[Margin>.5 & variable =="Tally_Date", Reason_Closed:="Voted to Unionize" ]
+sub_dt[Margin<=.5 & variable =="Tally_Date", Reason_Closed:="Voted Against" ]
 
 names(sub_dt)[2] <- "Status"
  
@@ -197,18 +198,21 @@ site_map <- mutate(site_map,
                    label=case_when(
                      Status == "Voted to Unionize" ~ "\uf6de", 
                      Status == "Filed" ~ "\uf7b6",
-                     Status == "Withdrawn/Dismissed" ~ "\uf00d"
+                     Status == "Withdrawn/Dismissed" ~ "\uf00d",
+                     Status == "Voted Against"  ~ "\uf05e"
                    ))
 
 site_map <- site_map %>% 
   arrange(case_when(
+    Status == "Voted Against" ~ 4, 
     Status == "Voted to Unionize" ~ 3, 
     Status == "Filed" ~ 2,
     Status == "Withdrawn/Dismissed" ~ 1
   )) %>% ungroup() %>% 
   mutate(Status = ordered(Status, levels=rev(c("Voted to Unionize", 
-                                               "Filed", "Withdrawn/Dismissed"))), 
-         label= ordered(label, levels=rev(c("\uf6de", "\uf7b6", "\uf00d") )))
+                                               "Filed", "Withdrawn/Dismissed", 
+                                               "Voted Against"))), 
+         label= ordered(label, levels=rev(c("\uf6de", "\uf7b6", "\uf00d", "\uf05e") )))
 
 
 sysfonts::font_add("font-awesome", regular = "~/Library/Fonts/Font Awesome 6 Free-Solid-900.otf")
@@ -223,6 +227,7 @@ mainland <- ggplot(data = x3) +
   geom_sf_text(
     family="font-awesome",
     data = site_map,
+    # data = filter(site_map, value ==Sys.Date()),
     size = 2.5,
     aes(label=label,
         color=Status, 
@@ -231,21 +236,26 @@ mainland <- ggplot(data = x3) +
   ) + 
   scale_alpha_manual(values = c("Voted to Unionize"= 1, 
                                 "Filed"=.5, 
-                                "Withdrawn/Dismissed"=.5)) + 
+                                "Withdrawn/Dismissed"=.5, 
+                                "Voted Against"=1)) + 
   scale_color_manual(values = c("Voted to Unionize"= "black", 
                                 "Filed"= "orangered3", 
-                                "Withdrawn/Dismissed"="yellow3"))  + 
+                                "Withdrawn/Dismissed"="yellow3", 
+                                "Voted Against"="blue"))  + 
   guides(color = 
            guide_legend(override.aes = 
                           list(label = 
-                                 c("\uf6de", "\uf7b6", "\uf00d")) ), 
+                                 c("\uf6de", "\uf7b6", "\uf00d", 
+                                   "\uf05e")) ), 
          alpha="none") + 
-  geom_text(x=2500000, y=-550000, aes(label=paste(n)), 
-             data=stats[stats$Status=="Withdrawn/Dismissed",]) + 
-  geom_text(x=2500000, y=-240000, aes(label=paste(n)), 
+  geom_text(x=2500000, y=200000, aes(label=paste(n)), 
+            data=stats[stats$Status=="Voted to Unionize",]) +
+  geom_text(x=2500000, y=-100000, aes(label=paste(n)), 
             data=stats[stats$Status=="Filed",]) + 
-  geom_text(x=2500000, y=70000, aes(label=paste(n)), 
-            data=stats[stats$Status=="Voted to Unionize",]) + 
+  geom_text(x=2500000, y=-425000, aes(label=paste(n)), 
+             data=stats[stats$Status=="Withdrawn/Dismissed",]) + 
+  geom_text(x=2500000, y=-750000, aes(label=paste(n)), 
+            data=stats[stats$Status=="Voted Against",]) + 
   transition_manual(value)+
   # shadow_mark() +
   # enter_grow() +
@@ -253,7 +263,7 @@ mainland <- ggplot(data = x3) +
   # ggtitle("Union Filings at Starbucks", subtitle = "Date: {frame_time}") + 
   labs(title="Union Filings at Starbucks", 
        subtitle = "Date: {current_frame}",
-    caption = "Location is approximate based on cities. Each is jittered so overlapping cases are obvious.") +
+    caption = "Location is approximate based on cities. Each is jittered so overlapping cases are obvious.\nNote: Decisions are not final in some elections as challenges are pending.") +
   # coord_sf(
   #   crs = st_crs(2163),
   #   xlim = c(-2500000, 2500000),
@@ -262,7 +272,10 @@ mainland <- ggplot(data = x3) +
   theme(plot.caption.position = "plot") +
   coord_sf(clip = 'off') + 
   NULL
-p <- animate(mainland, end_pause=10, height=4, width=6, units="in", res=150, 
+p <- animate(mainland, 
+             end_pause=10, 
+             height=4, width=6, 
+             units="in", res=150, 
              renderer=gifski_renderer())
 
 anim_save("~/Desktop/starbucks_filings.gif", animation=p)
