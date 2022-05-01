@@ -8,7 +8,7 @@ weight: 1
 ---
 ##  Arizona
 
-Excluding public employees, in the last year there have been 30 union elections filed in Arizona and 15 union elections held. In 9 of those elections a new unit was certified. There are currently 15 open representation cases and 11 of are still waiting to vote.
+Excluding public employees, in the last year there have been 31 union elections filed in Arizona and 15 union elections held. In 9 of those elections a new unit was certified. There are currently 16 open representation cases and 12 of are still waiting to vote.
 
 ### Number Employees in a Union Election by Outcome
 {{< image src="Arizona_hist_vic.png" width="1000" height="800">}}
