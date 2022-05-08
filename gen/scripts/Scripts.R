@@ -422,11 +422,31 @@ create_table_sb <- function(data=NULL,
   tmp_dt[,Ballot_Type:=ifelse(Ballot_Type == "Revised Single Labor Org", "Revised", "Initial")]
   tmp_dt[,Labor_Union:=Plot_Labor_Union ]
   tmp_dt[,Status := ifelse(Status=="Open", "Open",
-                           ifelse(Reason_Closed=="Certific. of Representative",
-                                  "Unionized",
+                           ifelse(Reason_Closed=="Certific. of Representative", "Unionized",
                                   ifelse(Reason_Closed=="Certification of Results", "Voted Failed",
-                                         ifelse(Reason_Closed=="Withdrawal Non-adjusted", "Withdrawn", "Other"))))]
+                                         ifelse(Reason_Closed%in%c("Withdrawal Non-adjusted", "Withdrawl Adjusted"),
+                                                "Withdrawn", "Other"))))]
 
+  #### Summary statsitics ###
+  tab <- tmp_dt[,.(.N, sum(Num_Eligible_Voters), 
+            sum(Votes_For_Union, na.rm=T), 
+            sum(Votes_Against, na.rm=T)), by=Status]
+
+  colnames(tab) <- c("Status", "Number", "Total Employees", 
+                     "Votes for Union", "Votes Against")
+  
+  tab_out <- kable(
+    tab,
+    format="html",
+    col.names=gsub("_", " ", names(tab)),
+    align="lcccc",
+    digits=0,
+    table.attr="class='summary-stats center'"
+  )
+  
+  if(!dir.exists(file_name)) dir.create(file_name)
+  write(tab_out, file = paste0(file_name, "/starbucks_stats.html"))
+  
   # tmp_dt$Case <- paste0("<a href='https://www.nlrb.gov/case/", tmp_dt$Case, "'>", tmp_dt$Case, "</a>")
 
 
@@ -446,7 +466,6 @@ create_table_sb <- function(data=NULL,
 
 
 
-  if(!dir.exists(dirname(file_name))) dir.create(dirname(file_name))
 
 
   # writeLines(tab_out, con = file_name)
@@ -486,13 +505,7 @@ create_table_sb <- function(data=NULL,
 
   }
 
-  write(tab_out, file = file_name)
-  page <- readLines(here("content","data","starbucks","_index.md" ))
-
-  page[11] <- sprintf("There are currently %i open petitions for unions at Starbucks stores covering %s total workers.",
-          sum(tmp_dt$Status=="Open"),
-          scales::comma(sum(tmp_dt$Num_Eligible_Voters[tmp_dt$Status=="Open"]),1))
-  writeLines(page, here("content","data","starbucks","_index.md" ))
+  write(tab_out, file = paste0(file_name, "/starbucks_open.html"))
 }
 
 create_page <- function(title = "California",

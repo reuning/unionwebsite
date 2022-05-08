@@ -22,7 +22,7 @@ table.open-cases tr td{
    padding: 0rem .1rem;
 }
 
- table.summary-stats {
+table.summary-stats {
      font-size: .75rem;
      border-spacing: .1rem;
      line-height: 1;
@@ -40,6 +40,15 @@ input[type=search] {
   background: var(--gray-100);
   color: var(--body-font-color);
 }
+
+.markdown img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    height: auto;
+}
+
 
 .collapse {
   &:not(.show) {

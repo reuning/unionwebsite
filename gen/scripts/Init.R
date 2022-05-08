@@ -114,14 +114,14 @@ create_table_open(data=dt,
                                  "tables/national/", 
                                  paste0("United_States", "_open.html")))
 
+#### Starbucks ####
 st_dt <- dt[grepl("starbuck", Case_Name, ignore.case = T) & 
      Date_Filed > as.Date("2010-01-01")]
 
 try(dir.create(here("content",  "tables", "temp")) )
 create_table_sb(data=st_dt, 
                   file_name=here("content", 
-                                 "tables", "temp", 
-                                 paste0("starbucks_open.html")))
+                                 "tables", "temp"))
 
 ## State Plots
 for(state in state.abb){
