@@ -273,7 +273,8 @@ mainland <- ggplot(data = x3) +
   coord_sf(clip = 'off') + 
   NULL
 p <- animate(mainland, 
-             end_pause=10, 
+             nframes=200,
+             end_pause=20, 
              height=4, width=6, 
              units="in", res=150, 
              renderer=gifski_renderer())
