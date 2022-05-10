@@ -8,11 +8,7 @@ cases_*.csv
 recent_election_results__*
 .hugo_build.lock
 public/
-<<<<<<< HEAD
 node_modules
-=======
-node_modules/
->>>>>>> newfeatures
 
 # Local Netlify folder
 .netlify
