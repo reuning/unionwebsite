@@ -12,7 +12,7 @@ keywords: union filings
 This report details the number of filings and closed units in 2010. As a reminder, we are only showing filings and closures related to single union elections (rare multi-union elections are excluded).
 
 ### Filings by Union
-In 2010 2,286 petitions for new units were filed, a 12.83% increase from the previous year The median size was 22 with a total of 176,067 workers across all units, a -11.31% decrease from the previous year
+In 2010 2,287 petitions for new units were filed, a 12.88% increase from the previous year The median size was 22 with a total of 176,381 workers across all units, a -11.15% decrease from the previous year
 {{< readtable table="/tables/reports/2010/0union_filings.html" >}}
 
 ### Closed Elections by Union
