@@ -8,7 +8,7 @@ weight: 1
 ---
 ##  IWW
 
-Excluding public employees, in the last year there have been 3 union elections filed by the IWW and 2 union elections held. In 1 of those elections a new unit was certified. There are currently 3 open representation cases and 2 of are still waiting to vote.
+Excluding public employees, in the last year there have been 4 union elections filed by the IWW and 2 union elections held. In 1 of those elections a new unit was certified. There are currently 4 open representation cases and 3 of are still waiting to vote.
 
 ### Number Employees in a Union Election by Outcome
 {{< image src="IWW_hist_vic.png" width="1000" height="800">}}
