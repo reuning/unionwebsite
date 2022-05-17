@@ -8,7 +8,7 @@ weight: 1
 ---
 ##  Nevada
 
-Excluding public employees, in the last year there have been 17 union elections filed in Nevada and 13 union elections held. In 7 of those elections a new unit was certified. There are currently 13 open representation cases and 9 of are still waiting to vote.
+Excluding public employees, in the last year there have been 19 union elections filed in Nevada and 14 union elections held. In 7 of those elections a new unit was certified. There are currently 15 open representation cases and 10 of are still waiting to vote.
 
 ### Number Employees in a Union Election by Outcome
 {{< image src="Nevada_hist_vic.png" width="1000" height="800">}}
