@@ -235,97 +235,98 @@ create_plot <- function(number=10, data=NULL,
 
 }
 
+create_time_plots <- function(data=NULL, 
+                              file_name=NULL){
+  
+  if(is.null(file_name)) stop("Need file name")
+  
+  create_time_plot(data=data, 
+                   file_name=paste0(file_name, "_hist_elections.png"), 
+                   type="units", 
+                   fill="size", 
+                   date="Tally_Quarter",
+                   title="Number of Union Elections in a Quarter by Unit Size")
+  
+  create_time_plot(data=data, 
+                   file_name=paste0(file_name, "_hist_filings.png"), 
+                   type="units", 
+                   fill="size", 
+                   date="Filed_Quarter",
+                   title="Number of Union Filings in a Quarter by Unit Size")
+  
+  create_time_plot(data=data, 
+                   file_name=paste0(file_name, "_hist_vic.png"), 
+                   type="indiv", 
+                   fill="Union_Cer", 
+                   date="Tally_Quarter",
+                   title="Number of Union Elections in a Quarter by Election Outcome")
+  
+  create_time_plot(data=data, 
+                   file_name=paste0(file_name, "_hist_vic_union.png"), 
+                   type="units", 
+                   fill="Union_Cer", 
+                   date="Tally_Quarter",
+                   title="Number of Union Elections in a Quarter by Election Outcome")
+}
 
 create_time_plot <- function(data=NULL,
-                             file_name=NULL ) {
+                             file_name=NULL, 
+                             type="units", 
+                             fill="Union_Cer",
+                             date="Tally_Quarter",
+                             title="Number of Union Elections in a Quarter by Outcome") {
 
 
-  if(is.null(file_name)) stop("Need file name")
-
+  date <- sym(date)
   tmp_dt <- data[Case_Type == "RC" &
                    Ballot_Type != "Revised Single Labor Org" &
                    !is.na(size) & Unique ==TRUE ]
 
-
+  tmp_dt <- tmp_dt[,Union_Cer:=forcats::fct_rev(Union_Cer)]
 
   curr_quarter <- lubridate::floor_date(lubridate::today(), 
                                         unit = "quarter")
-  y_max <- sum(tmp_dt$Tally_Quarter==curr_quarter, na.rm=T)
-  ggplot(tmp_dt, aes(x=Tally_Quarter,
-             fill=size)) +
+  
+  
+  if(type=="units"){
+    y_max <- tmp_dt[get(date)==curr_quarter, .N,]
+    y_lab <- "Number of Units"
+    weight <- 1
+  } else {
+    y_max <- tmp_dt[get(date)==curr_quarter, sum(Num_Eligible_Voters),]
+    y_lab <- "Number of Workers"
+    weight <- sym("Num_Eligible_Voters")
+  }
+  
+  fill_label <- ifelse(fill=="Union_Cer", "Vote for Union?", "Unit Size")
+  fill <- sym(fill)
+  date <- sym(date)## STOP MIXING TIDY AND DATATABLE 
+  
+  ggplot(tmp_dt, aes(x=!!date,
+             fill=!!fill,
+             weight=!!weight)) +
   geom_bar(position=position_stack(reverse=T), color="black", size=.2, width=80) +
   scale_x_date(limits=c(as.Date("1999-01-01"), 
                         lubridate::ceiling_date(lubridate::today(), 
                                                 unit = "quarter"))) +
-    scale_y_continuous(labels=scales::label_comma()) +
+  scale_y_continuous(labels=scales::label_comma()) +
   theme_minimal(base_family = "Crimson Pro") +
-    annotate("text", 
-                  x=curr_quarter, 
-                  y=ifelse(y_max == 0, 1, y_max*1.10),label="*") + 
-    scale_fill_viridis_d("Unit Size", direction = -1, begin = .1, end=.9) +
-    theme(legend.position = "bottom",
+  annotate("text",
+           x=curr_quarter, 
+           y=ifelse(y_max == 0, 1, y_max*1.10),label="*") + 
+  scale_fill_viridis_d(fill_label,
+                       direction = -1, 
+                       begin = .15, 
+                       end=.85) +
+  theme(legend.position = "bottom",
           text = element_text(size=15, lineheight=.3)) +
-    ggtitle("Number of Union Elections in a Quarter") + 
-    labs(x="Quarter", y="Number of Units",
+  ggtitle(title) + 
+  labs(x="Quarter", 
+       y=y_lab,
        caption = "* Current quarter, not all data complete\n\nIncludes only certification votes with a single union, data from NLRB. https://unionelections.org")
 
-  f <- paste0(file_name, "_hist_elections.png")
-
-  ggsave(f, height=8, width=10, type = "cairo",
+  ggsave(file_name, height=8, width=10, type = "cairo",
          units="in", dpi=200)
-  
-  
-  y_max <- sum(tmp_dt[Tally_Quarter==curr_quarter, Num_Eligible_Voters], na.rm=T)
-  
-  ggplot(tmp_dt, aes(x=Tally_Quarter,
-                     fill=forcats::fct_rev(Union_Cer), weight=Num_Eligible_Voters)) +
-    geom_bar(position=position_stack(reverse=T), color="black", size=.2, width=80) +
-    scale_x_date(limits=c(as.Date("1999-01-01"),
-                          lubridate::ceiling_date(lubridate::today(),
-                                                  unit = "quarter"))) +
-    scale_y_continuous(labels=scales::label_comma()) +
-    theme_minimal(base_family = "Crimson Pro") +
-    scale_fill_viridis_d("Unionized?", direction = -1, begin = .2, end=.8) +
-    annotate("text", 
-             x=curr_quarter, 
-             y=ifelse(y_max == 0, 1, y_max*1.10),label="*") + 
-    theme(legend.position = "bottom",
-          text = element_text(size=15, lineheight=.3)) +
-    labs(x="Quarter", y="Number of Voters", 
-         caption = "* Current quarter, not all data complete\n\nIncludes only certification votes with a single union, data from NLRB. https://unionelections.org")
-  
-  f <- paste0(file_name, "_hist_vic.png")
-  
-  ggsave(f, height=8, width=10, type = "cairo",
-         units="in", dpi=200)
-  
-  y_max <- sum(tmp_dt$Filed_Quarter==curr_quarter, na.rm=T)
-  ggplot(tmp_dt, aes(x=Filed_Quarter,
-                     fill=size)) +
-    geom_bar(position=position_stack(reverse=T), color="black", size=.2, width=80) +
-    scale_x_date(limits=c(as.Date("1999-01-01"), 
-                          lubridate::ceiling_date(lubridate::today(), 
-                                                  unit = "quarter"))) +
-    scale_y_continuous(labels=scales::label_comma()) +
-    theme_minimal(base_family = "Crimson Pro") +
-    scale_fill_viridis_d("Unit Size", direction = -1, begin = .1, end=.9) +
-    theme(legend.position = "bottom",
-          text = element_text(size=15, lineheight=.3)) +
-    annotate("text", 
-             x=curr_quarter, 
-             y=ifelse(y_max == 0, 1, y_max*1.10),label="*") + 
-    ggtitle("Number of Union Filings in a Quarter") + 
-    labs(x="Quarter", y="Number of Units",
-         caption = "* Current quarter, not all data complete\n\nIncludes only filings with a single union, data from NLRB. https://unionelections.org")
-  
-  f <- paste0(file_name, "_hist_filings.png")
-  
-  ggsave(f, height=8, width=10, type = "cairo",
-         units="in", dpi=200)
-  
-  
-
-
 
 
 }
@@ -574,6 +575,14 @@ create_page <- function(title = "California",
     stop("Type unknown")
   }
 
+  accordion_outcome <-  paste0("{{< accordion images=\"",path, 
+                            "_hist_vic:By Number of Workers,", path, 
+                            "_hist_vic_union:By Number of Units\" width=\"1000\" height=\"800\" >}}")
+  
+  accordion_hist <-  paste0("{{< accordion images=\"",path, 
+                            "_hist_filings:Data on Filings,", path, 
+                            "_hist_elections:Data on Elections\" width=\"1000\" height=\"800\" >}}")
+
   tmp <-c("---",
           paste("title:", title),
           paste("pagetitle:", title, "Union Elections"),
@@ -586,11 +595,11 @@ create_page <- function(title = "California",
           "",
           recent_stats,
           "",
-          paste("### Number Employees in a Union Election by Outcome"),
-          paste0("{{< image src=\"",path, "_hist_vic.png\" width=\"1000\" height=\"800\">}}"),
+          paste("### Union Elections by Outcome"),
+          accordion_outcome,
           "",
           paste("### Timeline of Filings and Elections by Unit Size"),
-          paste0("{{< accordion src=\"",path, "_hist.png\" width=\"1000\" height=\"800\" >}}"),
+          accordion_hist,
           "",
           paste("### Largest Private Union Elections"),
           paste0("{{< image src=\"",path, "_10.png\" width=\"1000\" height=\"1000\"  >}}"),

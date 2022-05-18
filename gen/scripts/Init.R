@@ -106,7 +106,7 @@ create_page(title = "United States",
 create_plot(data=dt, 
             file_name = here("content", "data", "national", 
                              paste0("United_States", "_10.png")))
-create_time_plot(data=dt,
+create_time_plots(data=dt,
                  file_name = here("content", "data", "national",
                                   "United_States"))
 create_table_open(data=dt, 
@@ -141,7 +141,7 @@ for(state in state.abb){
                                paste0(state_name_file, "_10.png")), 
               number=10)
   
-  create_time_plot(data=tmp_data, 
+  create_time_plots(data=tmp_data, 
                    file_name = here("content", "data", "states",
                                     state_name_file, 
                                     paste0(state_name_file)))
@@ -172,7 +172,7 @@ for(union in nationals){
                                paste0(union_file, "_10.png")), 
               number=10)
   
-  create_time_plot(data=tmp_data, 
+  create_time_plots(data=tmp_data, 
                    file_name = here("content", "data", "union",
                                     union_file, 
                                     paste0(union_file)))

@@ -243,7 +243,7 @@ ggsave(here("content", "data",  "national", "map.png"),
 
 
 
-### Starbucks ###
+#### Starbucks ####
 
 site <- st_as_sf(
   unique(st_dt[!is.na(lat)], by = "Case"),
