@@ -8,7 +8,7 @@ weight: 1
 ---
 ##  Delaware
 
-Excluding public employees, in the last year there have been 5 union elections filed in Delaware and 6 union elections held. In 4 of those elections a new unit was certified. There are currently 2 open representation cases and 2 of are still waiting to vote.
+Excluding public employees, in the last year there have been 5 union elections filed in Delaware and 6 union elections held. In 4 of those elections a new unit was certified. There are currently 1 open representation cases and 1 of are still waiting to vote.
 
 ### Union Elections by Outcome
 {{< accordion images="Delaware_hist_vic:By Number of Workers,Delaware_hist_vic_union:By Number of Units" width="1000" height="800" >}}

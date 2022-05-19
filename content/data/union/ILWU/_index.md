@@ -8,7 +8,7 @@ weight: 1
 ---
 ##  ILWU
 
-Excluding public employees, in the last year there have been 9 union elections filed by the ILWU and 6 union elections held. In 4 of those elections a new unit was certified. There are currently 5 open representation cases and 4 of are still waiting to vote.
+Excluding public employees, in the last year there have been 7 union elections filed by the ILWU and 5 union elections held. In 4 of those elections a new unit was certified. There are currently 3 open representation cases and 3 of are still waiting to vote.
 
 ### Union Elections by Outcome
 {{< accordion images="ILWU_hist_vic:By Number of Workers,ILWU_hist_vic_union:By Number of Units" width="1000" height="800" >}}
