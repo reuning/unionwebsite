@@ -11,10 +11,10 @@ weight: 1
 Excluding public employees, in the last year there have been 9 union elections filed by the NNU and 9 union elections held. In 8 of those elections a new unit was certified. There are currently 2 open representation cases and 2 of are still waiting to vote.
 
 ### Union Elections by Outcome
-{{< accordion images="NNU_hist_vic:By Number of Workers,NNU_hist_vic_union:By Number of Units" width="1000" height="800" >}}
+{{< nav images="NNU_hist_vic:By Number of Workers,NNU_hist_vic_union:By Number of Units" width="1000" height="800" >}}
 
 ### Timeline of Filings and Elections by Unit Size
-{{< accordion images="NNU_hist_filings:Data on Filings,NNU_hist_elections:Data on Elections" width="1000" height="800" >}}
+{{< nav images="NNU_hist_filings:Data on Filings,NNU_hist_elections:Data on Elections" width="1000" height="800" >}}
 
 ### Largest Private Union Elections
 {{< image src="NNU_10.png" width="1000" height="1000"  >}}

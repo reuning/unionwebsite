@@ -11,10 +11,10 @@ weight: 1
 Excluding public employees, in the last year there have been 2 union elections filed by the IUJAT and 3 union elections held. In 3 of those elections a new unit was certified. There are currently 0 open representation cases and 0 of are still waiting to vote.
 
 ### Union Elections by Outcome
-{{< accordion images="IUJAT_hist_vic:By Number of Workers,IUJAT_hist_vic_union:By Number of Units" width="1000" height="800" >}}
+{{< nav images="IUJAT_hist_vic:By Number of Workers,IUJAT_hist_vic_union:By Number of Units" width="1000" height="800" >}}
 
 ### Timeline of Filings and Elections by Unit Size
-{{< accordion images="IUJAT_hist_filings:Data on Filings,IUJAT_hist_elections:Data on Elections" width="1000" height="800" >}}
+{{< nav images="IUJAT_hist_filings:Data on Filings,IUJAT_hist_elections:Data on Elections" width="1000" height="800" >}}
 
 ### Largest Private Union Elections
 {{< image src="IUJAT_10.png" width="1000" height="1000"  >}}
