@@ -69,7 +69,7 @@ prep_data <- function(data=dt){
   data[,Length:=Tally_Date-Date_Filed]
   data[,Tally_Quarter := anydate(cut(Tally_Date, breaks = "quarter"))]
   data[,Filed_Quarter := anydate(cut(Date_Filed, breaks = "quarter"))]
-  
+
   data[is.na(Num_Eligible_Voters),Num_Eligible_Voters:=`Employees on charge/petition`]
   data$`Employees on charge/petition` <- NULL
   data[,size:=cut(Num_Eligible_Voters, breaks = c(0, 5, 10, 25, 50, 100, 500, Inf), right = T,
@@ -235,43 +235,43 @@ create_plot <- function(number=10, data=NULL,
 
 }
 
-create_time_plots <- function(data=NULL, 
+create_time_plots <- function(data=NULL,
                               file_name=NULL){
-  
+
   if(is.null(file_name)) stop("Need file name")
-  
-  create_time_plot(data=data, 
-                   file_name=paste0(file_name, "_hist_elections.png"), 
-                   type="units", 
-                   fill="size", 
+
+  create_time_plot(data=data,
+                   file_name=paste0(file_name, "_hist_elections.png"),
+                   type="units",
+                   fill="size",
                    date="Tally_Quarter",
                    title="Number of Union Elections in a Quarter by Unit Size")
-  
-  create_time_plot(data=data, 
-                   file_name=paste0(file_name, "_hist_filings.png"), 
-                   type="units", 
-                   fill="size", 
+
+  create_time_plot(data=data,
+                   file_name=paste0(file_name, "_hist_filings.png"),
+                   type="units",
+                   fill="size",
                    date="Filed_Quarter",
                    title="Number of Union Filings in a Quarter by Unit Size")
-  
-  create_time_plot(data=data, 
-                   file_name=paste0(file_name, "_hist_vic.png"), 
-                   type="indiv", 
-                   fill="Union_Cer", 
+
+  create_time_plot(data=data,
+                   file_name=paste0(file_name, "_hist_vic.png"),
+                   type="indiv",
+                   fill="Union_Cer",
                    date="Tally_Quarter",
                    title="Number of Union Elections in a Quarter by Election Outcome")
-  
-  create_time_plot(data=data, 
-                   file_name=paste0(file_name, "_hist_vic_union.png"), 
-                   type="units", 
-                   fill="Union_Cer", 
+
+  create_time_plot(data=data,
+                   file_name=paste0(file_name, "_hist_vic_union.png"),
+                   type="units",
+                   fill="Union_Cer",
                    date="Tally_Quarter",
                    title="Number of Union Elections in a Quarter by Election Outcome")
 }
 
 create_time_plot <- function(data=NULL,
-                             file_name=NULL, 
-                             type="units", 
+                             file_name=NULL,
+                             type="units",
                              fill="Union_Cer",
                              date="Tally_Quarter",
                              title="Number of Union Elections in a Quarter by Outcome") {
@@ -284,10 +284,10 @@ create_time_plot <- function(data=NULL,
 
   tmp_dt <- tmp_dt[,Union_Cer:=forcats::fct_rev(Union_Cer)]
 
-  curr_quarter <- lubridate::floor_date(lubridate::today(), 
+  curr_quarter <- lubridate::floor_date(lubridate::today(),
                                         unit = "quarter")
-  
-  
+
+
   if(type=="units"){
     y_max <- tmp_dt[get(date)==curr_quarter, .N,]
     y_lab <- "Number of Units"
@@ -297,31 +297,31 @@ create_time_plot <- function(data=NULL,
     y_lab <- "Number of Workers"
     weight <- sym("Num_Eligible_Voters")
   }
-  
+
   fill_label <- ifelse(fill=="Union_Cer", "Vote for Union?", "Unit Size")
   fill <- sym(fill)
-  date <- sym(date)## STOP MIXING TIDY AND DATATABLE 
-  
+  date <- sym(date)## STOP MIXING TIDY AND DATATABLE
+
   ggplot(tmp_dt, aes(x=!!date,
              fill=!!fill,
              weight=!!weight)) +
   geom_bar(position=position_stack(reverse=T), color="black", size=.2, width=80) +
-  scale_x_date(limits=c(as.Date("1999-01-01"), 
-                        lubridate::ceiling_date(lubridate::today(), 
+  scale_x_date(limits=c(as.Date("1999-01-01"),
+                        lubridate::ceiling_date(lubridate::today(),
                                                 unit = "quarter"))) +
   scale_y_continuous(labels=scales::label_comma()) +
   theme_minimal(base_family = "Crimson Pro") +
   annotate("text",
-           x=curr_quarter, 
-           y=ifelse(y_max == 0, 1, y_max*1.10),label="*") + 
+           x=curr_quarter,
+           y=ifelse(y_max == 0, 1, y_max*1.10),label="*") +
   scale_fill_viridis_d(fill_label,
-                       direction = -1, 
-                       begin = .15, 
+                       direction = -1,
+                       begin = .15,
                        end=.85) +
   theme(legend.position = "bottom",
           text = element_text(size=15, lineheight=.3)) +
-  ggtitle(title) + 
-  labs(x="Quarter", 
+  ggtitle(title) +
+  labs(x="Quarter",
        y=y_lab,
        caption = "* Current quarter, not all data complete\n\nIncludes only certification votes with a single union, data from NLRB. https://unionelections.org")
 
@@ -429,13 +429,13 @@ create_table_sb <- function(data=NULL,
                                                 "Withdrawn", "Other"))))]
 
   #### Summary statsitics ###
-  tab <- tmp_dt[,.(.N, sum(Num_Eligible_Voters), 
-            sum(Votes_For_Union, na.rm=T), 
+  tab <- tmp_dt[,.(.N, sum(Num_Eligible_Voters),
+            sum(Votes_For_Union, na.rm=T),
             sum(Votes_Against, na.rm=T)), by=Status]
 
-  colnames(tab) <- c("Status", "Number", "Total Employees", 
+  colnames(tab) <- c("Status", "Number", "Total Employees",
                      "Votes for Union", "Votes Against")
-  
+
   tab_out <- kable(
     tab,
     format="html",
@@ -444,10 +444,10 @@ create_table_sb <- function(data=NULL,
     digits=0,
     table.attr="class='summary-stats center'"
   )
-  
+
   if(!dir.exists(file_name)) dir.create(file_name)
   write(tab_out, file = paste0(file_name, "/starbucks_stats.html"))
-  
+
   # tmp_dt$Case <- paste0("<a href='https://www.nlrb.gov/case/", tmp_dt$Case, "'>", tmp_dt$Case, "</a>")
 
 
@@ -575,12 +575,12 @@ create_page <- function(title = "California",
     stop("Type unknown")
   }
 
-  accordion_outcome <-  paste0("{{< accordion images=\"",path, 
-                            "_hist_vic:By Number of Workers,", path, 
+  nav_outcome <-  paste0("{{< nav images=\"",path,
+                            "_hist_vic:By Number of Workers,", path,
                             "_hist_vic_union:By Number of Units\" width=\"1000\" height=\"800\" >}}")
-  
-  accordion_hist <-  paste0("{{< accordion images=\"",path, 
-                            "_hist_filings:Data on Filings,", path, 
+
+nav_hist <-  paste0("{{< nav images=\"",path,
+                            "_hist_filings:Data on Filings,", path,
                             "_hist_elections:Data on Elections\" width=\"1000\" height=\"800\" >}}")
 
   tmp <-c("---",
@@ -596,10 +596,10 @@ create_page <- function(title = "California",
           recent_stats,
           "",
           paste("### Union Elections by Outcome"),
-          accordion_outcome,
+          nav_outcome,
           "",
           paste("### Timeline of Filings and Elections by Unit Size"),
-          accordion_hist,
+          nav_hist,
           "",
           paste("### Largest Private Union Elections"),
           paste0("{{< image src=\"",path, "_10.png\" width=\"1000\" height=\"1000\"  >}}"),

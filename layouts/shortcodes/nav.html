@@ -1,0 +1,38 @@
+{{ $images := .Get "images" }}
+{{ $width := .Get "width" }}
+{{ $height := .Get "height" }}
+
+{{ $class := md5 $images }}
+{{ $images := split $images ","}}
+
+<nav>
+  <div class="nav nav-tabs" id="nav-tab" role="tablist">
+    {{ range $index, $arg := $images }}
+    {{ $arg := split $arg ":" }}
+    {{ $image := index $arg 0 }}
+    {{ $label := index $arg 1 }}
+      <button class="nav-link {{with not $index}}active{{end}}" id="nav-{{ $image }}-tab" data-bs-toggle="tab" data-bs-target="#nav-{{ $image }}" type="button" role="tab" aria-controls="nav-{{ $image }}" aria-selected={{with not $index}}"true"{{else}}"false"{{end}}>{{$label}}</button>
+    {{end}}
+  </div>
+</nav>
+<div class="tab-content" id="nav-tabContent">
+  {{ range $index, $arg := $images }}
+    {{ $arg := split $arg ":" }}
+    {{ $image := index $arg 0 }}
+    {{ $label := index $arg 1 }}
+    <div class="tab-pane fade {{with not $index}}show active{{end}}" id="nav-{{ $image }}" role="tabpanel" aria-labelledby="nav-{{ $image }}-tab">
+      <figure class="plot">
+          <picture>
+            <source srcset="{{$image}}.webp" type="image/webp"
+              width="{{ $width }}"
+              height="{{ $height }}">
+              <img src="{{$image}}.png"
+              width="{{ $width }}"
+              height="{{ $height }}"
+              loading="lazy"
+              decoding="async" >
+          </picture>
+      </figure>
+    </div>
+  {{end}}
+</div>
