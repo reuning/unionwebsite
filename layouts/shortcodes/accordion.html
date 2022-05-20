@@ -9,9 +9,9 @@
     {{ $arg := split $arg ":" }}
     {{ $image := index $arg 0 }}
     {{ $label := index $arg 1 }}
-  <input type="radio" class="btn-check" name="btnradio"
+  <input type="radio" class="btn-check" name="group{{$class}}"
           id = "btn{{ $image }}" autocomplete="off" data-bs-toggle="collapse"
-          data-bs-target="#{{ $image }}" aria-expanded="false"
+          data-bs-target="#{{ $image }}" aria-expanded={{with not $index}}"true"{{else}}"false"{{end}}
           aria-controls="{{ $image }}" {{with not $index}}checked{{end}}>
   <label class="btn btn-outline-primary" for="btn{{ $image }}">
   {{$label}}
