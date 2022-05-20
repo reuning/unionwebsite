@@ -4,25 +4,27 @@
 
 {{ $class := md5 $images }}
 {{ $images := split $images ","}}
-<p>
-  {{ range $images }}
-    {{ $arg := split . ":" }}
+<div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+    {{ range $index, $arg := $images }}
+    {{ $arg := split $arg ":" }}
     {{ $image := index $arg 0 }}
     {{ $label := index $arg 1 }}
-    <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
-            data-bs-target="#{{ $image }}" aria-expanded="false"
-            aria-controls="{{ $image }}">
-      {{$label}}
-    </button>
+  <input type="radio" class="btn-check" name="btnradio"
+          id = "btn{{ $image }}" autocomplete="off" data-bs-toggle="collapse"
+          data-bs-target="#{{ $image }}" aria-expanded="false"
+          aria-controls="{{ $image }}" {{with not $index}}checked{{end}}>
+  <label class="btn btn-outline-primary" for="btn{{ $image }}">
+  {{$label}}
+  </label>
   {{ end }}
-</p>
+</div>
 
 <div id="acc{{ $class }}" class = "card">
-  {{ range $images }}
-    {{ $arg := split . ":" }}
+  {{ range $index, $arg := $images }}
+    {{ $arg := split $arg ":" }}
     {{ $image := index $arg 0 }}
     {{ $label := index $arg 1 }}
-    <div class="collapse show" id="{{ $image }}" data-bs-parent="#acc{{ $class }}">
+    <div class="collapse{{with not $index}} show{{end}}" id="{{ $image }}" data-bs-parent="#acc{{ $class }}">
       <div class="card-body">
         <figure class="plot">
             <picture>
