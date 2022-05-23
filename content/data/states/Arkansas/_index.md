@@ -11,10 +11,10 @@ weight: 1
 Excluding public employees, in the last year there have been 3 union elections filed in Arkansas and 3 union elections held. In 1 of those elections a new unit was certified. There are currently 0 open representation cases and 0 of are still waiting to vote.
 
 ### Union Elections by Outcome
-{{< nav images="Arkansas_hist_vic:By Number of Workers,Arkansas_hist_vic_union:By Number of Units" width="1000" height="800" >}}
+{{< nav images="Arkansas_hist_vic:By Number of Workers,Arkansas_hist_vic_union:By Number of Units" width="1000" height="800" tables="/tables/states/Arkansas_stats.html:Raw Data">}}
 
-### Timeline of Filings and Elections by Unit Size
-{{< nav images="Arkansas_hist_filings:Data on Filings,Arkansas_hist_elections:Data on Elections" width="1000" height="800" >}}
+### Timeline of Activity by Unit Size
+{{< nav images="Arkansas_hist_filings:By Filing Date,Arkansas_hist_elections:By Tally Date" width="1000" height="800" >}}
 
 ### Largest Private Union Elections
 {{< image src="Arkansas_10.png" width="1000" height="1000"  >}}

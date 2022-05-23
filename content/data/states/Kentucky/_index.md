@@ -11,10 +11,10 @@ weight: 1
 Excluding public employees, in the last year there have been 13 union elections filed in Kentucky and 7 union elections held. In 3 of those elections a new unit was certified. There are currently 7 open representation cases and 5 of are still waiting to vote.
 
 ### Union Elections by Outcome
-{{< nav images="Kentucky_hist_vic:By Number of Workers,Kentucky_hist_vic_union:By Number of Units" width="1000" height="800" >}}
+{{< nav images="Kentucky_hist_vic:By Number of Workers,Kentucky_hist_vic_union:By Number of Units" width="1000" height="800" tables="/tables/states/Kentucky_stats.html:Raw Data">}}
 
-### Timeline of Filings and Elections by Unit Size
-{{< nav images="Kentucky_hist_filings:Data on Filings,Kentucky_hist_elections:Data on Elections" width="1000" height="800" >}}
+### Timeline of Activity by Unit Size
+{{< nav images="Kentucky_hist_filings:By Filing Date,Kentucky_hist_elections:By Tally Date" width="1000" height="800" >}}
 
 ### Largest Private Union Elections
 {{< image src="Kentucky_10.png" width="1000" height="1000"  >}}
