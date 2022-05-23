@@ -600,6 +600,8 @@ create_page <- function(title = "California",
                     "'data/national/", path, "_hist_vic.png', ",
                     "'data/national/", path, "_hist_size.png', ",
                     "'data/national/", path, "_10.png']")
+    table_nav <- paste0('"table/national/', path, '_stats.html:Raw Date"')
+    
   } else if(type=="union") {
     description <- paste0("description: Data on recent union elections involving the ", title, ".")
     recent_stats <- sprintf("Excluding public employees, in the last year there have been %s union elections filed by the %s and %s union elections held. In %s of those elections a new unit was certified. There are currently %s open representation cases and %s of are still waiting to vote.",
@@ -611,6 +613,8 @@ create_page <- function(title = "California",
                     "'data/union/", path, "/", path, "_hist_vic.png', ",
                     "'data/union/", path, "/", path, "_hist_size.png', ",
                     "'data/union/", path, "/", path, "_10.png']")
+    table_nav <- paste0('"table/union/', path, '_stats.html:Raw Date"')
+    
   } else if(type=="states") {
     description <-paste0("description: Data on recent union elections in ", title, ".")
     recent_stats <- sprintf("Excluding public employees, in the last year there have been %s union elections filed in %s and %s union elections held. In %s of those elections a new unit was certified. There are currently %s open representation cases and %s of are still waiting to vote.",
@@ -622,13 +626,17 @@ create_page <- function(title = "California",
                     "'data/states/", path, "/", path, "_hist_vic.png', ",
                     "'data/states/", path, "/", path, "_hist_size.png', ",
                     "'data/states/", path, "/", path, "_10.png']")
+    
+    table_nav <- paste0('"/tables/states/', path, '_stats.html:Raw Data"')
   } else {
     stop("Type unknown")
   }
   
   nav_outcome <-  paste0("{{< nav images=\"",path,
                          "_hist_vic:By Number of Workers,", path,
-                         "_hist_vic_union:By Number of Units\" width=\"1000\" height=\"800\" >}}")
+                         "_hist_vic_union:By Number of Units\" width=\"1000\" height=\"800\" tables=",
+                         table_nav,
+                         ">}}")
   
   nav_hist <-  paste0("{{< nav images=\"",path,
                       "_hist_filings:By Filing Date,", path,
