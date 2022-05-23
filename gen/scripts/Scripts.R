@@ -600,7 +600,7 @@ create_page <- function(title = "California",
                     "'data/national/", path, "_hist_vic.png', ",
                     "'data/national/", path, "_hist_size.png', ",
                     "'data/national/", path, "_10.png']")
-    table_nav <- paste0('"tables/national/', path, '_stats.html:Raw Date"')
+    table_nav <- paste0('"tables/national/', path, '_stats.html:Raw Data"')
     
   } else if(type=="union") {
     description <- paste0("description: Data on recent union elections involving the ", title, ".")
@@ -613,7 +613,7 @@ create_page <- function(title = "California",
                     "'data/union/", path, "/", path, "_hist_vic.png', ",
                     "'data/union/", path, "/", path, "_hist_size.png', ",
                     "'data/union/", path, "/", path, "_10.png']")
-    table_nav <- paste0('"tables/union/', path, '_stats.html:Raw Date"')
+    table_nav <- paste0('"tables/union/', path, '_stats.html:Raw Data"')
     
   } else if(type=="states") {
     description <-paste0("description: Data on recent union elections in ", title, ".")
