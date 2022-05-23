@@ -156,7 +156,7 @@ for(state in state.abb){
                                          paste0(state_name_file, "_open.html")))
   
   create_time_table(data=dt, file_name=here("content", "tables/states/", 
-                                            paste0(state_name_file, "_open.html")))
+                                            paste0(state_name_file, "_stats.html")))
   #
 }
 
@@ -190,7 +190,7 @@ for(union in nationals){
                                    paste0(union_file, "_open.html")))
   
   create_time_table(data=dt, file_name=here("content", "tables/union/", 
-                                            paste0(union_file, "_open.html")))
+                                            paste0(union_file, "_stats.html")))
   #
 }
 
