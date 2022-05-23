@@ -332,6 +332,57 @@ create_time_plot <- function(data=NULL,
 }
 
 
+create_time_table <- function(data=NULL,
+                             file_name=NULL,
+                             margin="Union_Cer",
+                             date="Tally_Quarter") {
+  
+  
+  date <- sym(date)
+  tmp_dt <- data[Case_Type == "RC" &
+                   Ballot_Type != "Revised Single Labor Org" &
+                   !is.na(size) & Unique ==TRUE ]
+  
+  tmp_dt <- tmp_dt[,Union_Cer:=forcats::fct_rev(Union_Cer)]
+  
+  
+  tab <- tmp_dt[,.("Units"=scales::comma(.N, 1), 
+                   "Voters"=scales::comma(sum(Num_Eligible_Voters)),1),
+                by=.("Date"=get(date), "margin"=get(margin))]
+  
+  tab <- dcast(tab, Date~margin, value.var=c("Voters", "Units"), fill=0)
+  setorder(tab, -Date)
+  tab <- tab[Date > as.Date("2000-01-01")]
+  names(tab)[1] <- c("Quarter")
+  names(tab) <- gsub("_Yes", " - For", names(tab))
+  names(tab) <- gsub("_No", " - Against", names(tab))
+  
+
+  tab_out <- kable(
+    tab,
+    format="html",
+    align="lcccc",
+    table.attr="class='paged summary-stats'"
+  )
+  
+
+  dates <- as.character(tab$Quarter)
+  for(date in dates){
+    
+    ordering = paste0("data-order=\"",
+                      as.numeric(anytime(date)),
+                      "\"")
+    tab_out <- gsub(paste0("<td style=\"text-align:left;\"> ",date," </td>"),
+                    paste0("<td style=\"text-align:left;\" ", ordering,"> ",date," </td>"),
+                    tab_out)
+    
+    
+  }
+  
+  write(tab_out, file = file_name)
+  
+}
+
 
 create_table_open <- function(state_abb = NULL, data=NULL,
                               file_name=NULL){

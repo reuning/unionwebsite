@@ -114,6 +114,11 @@ create_table_open(data=dt,
                                  "tables/national/", 
                                  paste0("United_States", "_open.html")))
 
+create_time_table(data=dt, 
+                  file_name=here("content", 
+                                 "tables/national/", 
+                                 paste0("United_States", "_stats.html")))
+
 #### Starbucks ####
 st_dt <- dt[grepl("starbuck", Case_Name, ignore.case = T) & 
      Date_Filed > as.Date("2010-01-01")]
@@ -149,6 +154,9 @@ for(state in state.abb){
   create_table_open(data=tmp_data, 
                           file_name=here("content", "tables/states/", 
                                          paste0(state_name_file, "_open.html")))
+  
+  create_time_table(data=dt, file_name=here("content", "tables/states/", 
+                                            paste0(state_name_file, "_open.html")))
   #
 }
 
@@ -180,6 +188,9 @@ for(union in nationals){
   create_table_open(data=tmp_data, 
                     file_name=here("content", "tables/union/", 
                                    paste0(union_file, "_open.html")))
+  
+  create_time_table(data=dt, file_name=here("content", "tables/union/", 
+                                            paste0(union_file, "_open.html")))
   #
 }
 
