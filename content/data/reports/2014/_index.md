@@ -12,7 +12,7 @@ keywords: union filings
 This report details the number of filings and closed units in 2014. As a reminder, we are only showing filings and closures related to single union elections (rare multi-union elections are excluded).
 
 ### Filings by Union
-In 2014 2,044 petitions for new units were filed, a 3.91% increase from the previous year The median size was 25 with a total of 120,960 workers across all units, a 6.00% increase from the previous year
+In 2014 2,045 petitions for new units were filed, a 3.97% increase from the previous year The median size was 25 with a total of 120,970 workers across all units, a 6.01% increase from the previous year
 {{< readtable table="/tables/reports/2014/0union_filings.html" >}}
 
 ### Closed Elections by Union
