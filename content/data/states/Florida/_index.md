@@ -8,7 +8,7 @@ weight: 1
 ---
 ##  Florida
 
-Excluding public employees, in the last year there have been 41 union elections filed in Florida and 22 union elections held. In 16 of those elections a new unit was certified. There are currently 14 open representation cases and 11 of are still waiting to vote.
+Excluding public employees, in the last year there have been 41 union elections filed in Florida and 26 union elections held. In 19 of those elections a new unit was certified. There are currently 14 open representation cases and 11 of are still waiting to vote.
 
 ### Union Elections by Outcome
 {{< nav images="Florida_hist_vic:By Number of Workers,Florida_hist_vic_union:By Number of Units" width="1000" height="800" tables="/tables/states/Florida_stats.html:Raw Data">}}
