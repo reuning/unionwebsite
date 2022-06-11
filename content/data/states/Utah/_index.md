@@ -8,7 +8,7 @@ weight: 1
 ---
 ##  Utah
 
-Excluding public employees, in the last year there have been 10 union elections filed in Utah and 3 union elections held. In 0 of those elections a new unit was certified. There are currently 5 open representation cases and 4 of are still waiting to vote.
+Excluding public employees, in the last year there have been 11 union elections filed in Utah and 4 union elections held. In 0 of those elections a new unit was certified. There are currently 6 open representation cases and 4 of are still waiting to vote.
 
 ### Union Elections by Outcome
 {{< nav images="Utah_hist_vic:By Number of Workers,Utah_hist_vic_union:By Number of Units" width="1000" height="800" tables="/tables/states/Utah_stats.html:Raw Data">}}
