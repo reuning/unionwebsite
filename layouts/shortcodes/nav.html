@@ -13,41 +13,47 @@
 {{ end }}
 
 {{ $images := union $images ($scratch.Get "tables")}}
-
-<nav>
-  <div class="nav nav-tabs" id="nav-tab" role="tablist">
-    {{ range $index, $arg := $images }}
-    {{ $arg := split $arg ":" }}
-    {{ $image := index $arg 0 }}
-    {{ $label := index $arg 1 }}
-      <button class="nav-link {{with not $index}}active{{end}}" id="nav-{{ md5 $image }}-tab" data-bs-toggle="tab" data-bs-target="#nav-{{ md5 $image }}" type="button" role="tab" aria-controls="nav-{{ md5 $image }}" aria-selected={{with not $index}}"true"{{else}}"false"{{end}}>{{$label}}</button>
-    {{end}}
-  </div>
-</nav>
-<div class="tab-content" id="nav-tabContent">
-  {{ range $index, $arg := $images }}
-    {{ $arg := split $arg ":" }}
-    {{ $image := index $arg 0 }}
-    {{ $label := index $arg 1 }}
-    <div class="tab-pane fade {{with not $index}}show active{{end}}" id="nav-{{ md5 $image }}" role="tabpanel" aria-labelledby="nav-{{ md5 $image }}-tab">
-      {{if lt $index $N_images}}
-        <figure class="plot">
-            <picture>
-              <source srcset="{{$image}}.webp" type="image/webp"
-                width="{{ $width }}"
-                height="{{ $height }}">
-                <img src="{{$image}}.png"
-                width="{{ $width }}"
-                height="{{ $height }}"
-                loading="lazy"
-                decoding="async" >
-            </picture>
-        </figure>
-      {{ else}}
-        <div class="data-table">
-          {{ $image  | readFile | safeHTML }}
-        </div>
+{{ $image_check := split (index $images 0) ":" }}
+{{ $image_check := index $image_check 0 }}
+{{ $image_check := (printf "%s%s%s"  .Page.File.Dir $image_check ".png") }}
+{{ if (os.FileExists $image_check) }}
+  <nav>
+    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+      {{ range $index, $arg := $images }}
+      {{ $arg := split $arg ":" }}
+      {{ $image := index $arg 0 }}
+      {{ $label := index $arg 1 }}
+        <button class="nav-link {{with not $index}}active{{end}}" id="nav-{{ md5 $image }}-tab" data-bs-toggle="tab" data-bs-target="#nav-{{ md5 $image }}" type="button" role="tab" aria-controls="nav-{{ md5 $image }}" aria-selected={{with not $index}}"true"{{else}}"false"{{end}}>{{$label}}</button>
       {{end}}
     </div>
-  {{end}}
-</div>
+  </nav>
+  <div class="tab-content" id="nav-tabContent">
+    {{ range $index, $arg := $images }}
+      {{ $arg := split $arg ":" }}
+      {{ $image := index $arg 0 }}
+      {{ $label := index $arg 1 }}
+      <div class="tab-pane fade {{with not $index}}show active{{end}}" id="nav-{{ md5 $image }}" role="tabpanel" aria-labelledby="nav-{{ md5 $image }}-tab">
+        {{if lt $index $N_images}}
+          <figure class="plot">
+              <picture>
+                <source srcset="{{$image}}.webp" type="image/webp"
+                  width="{{ $width }}"
+                  height="{{ $height }}">
+                  <img src="{{$image}}.png"
+                  width="{{ $width }}"
+                  height="{{ $height }}"
+                  loading="lazy"
+                  decoding="async" >
+              </picture>
+          </figure>
+        {{ else}}
+          <div class="data-table">
+            {{ $image  | readFile | safeHTML }}
+          </div>
+        {{end}}
+      </div>
+    {{end}}
+  </div>
+{{ else }}
+  <p> Not available </p>
+{{ end }}

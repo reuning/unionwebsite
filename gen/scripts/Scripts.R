@@ -613,7 +613,12 @@ create_page <- function(title = "California",
                     "'data/union/", path, "/", path, "_hist_vic.png', ",
                     "'data/union/", path, "/", path, "_hist_size.png', ",
                     "'data/union/", path, "/", path, "_10.png']")
+    
+    nav_membership <- paste0("{{< nav images=\"",path,
+                             "_membership:Membership\" width=\"1000\" height=\"800\" tables=\"tables/union/", path, "_membership.html:Raw Data\">}}")
+    
     table_nav <- paste0('"tables/union/', path, '_stats.html:Raw Data"')
+    
     
   } else if(type=="states") {
     description <-paste0("description: Data on recent union elections in ", title, ".")
@@ -660,6 +665,11 @@ create_page <- function(title = "California",
           paste("### Timeline of Activity by Unit Size"),
           nav_hist,
           "",
+          if(type=="union"){ 
+             c(paste("### Membership"), 
+               nav_membership,
+               "")
+          },
           paste("### Largest Private Union Elections"),
           paste0("{{< image src=\"",path, "_10.png\" width=\"1000\" height=\"1000\"  >}}"),
           "",

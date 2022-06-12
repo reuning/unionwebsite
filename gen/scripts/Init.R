@@ -162,7 +162,7 @@ for(state in state.abb){
 
 
 
-## Union Plots
+#### Union Plots ####
 for(union in nationals){
   tmp_data = dt[dt$National == union]
   union_file <- gsub(" ", "_", union)
@@ -196,7 +196,7 @@ for(union in nationals){
 
 
 
-### Create National union table
+#### Create National union table ####
 dt <- fread(here("gen", "data", "recent_election_results.csv"))
 
 

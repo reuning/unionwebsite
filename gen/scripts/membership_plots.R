@@ -60,13 +60,14 @@ dict <- dict %>% mutate(International = gsub(" ", "_", International),
 for(ii in 1:length(unions)){
   if(!unions[ii] %in% names(out)) next
   fnum <- filter(dict, International == unions[ii]) %>% pull(LM_ID)
-  
+  if(is.na(fnum)) next
   if(nrow(out[[unions[ii]]] ) != 0) {
     all_data <- filter(dt_out, F_NUM == fnum) %>% 
       select(YR_COVERED, MEMBERS) %>% 
+      distinct() %>% 
       left_join(out[[unions[ii]]]) %>% 
       pivot_longer(4:last_col(), names_to="Category") %>% 
-      filter(Category !=)
+      filter(Category !="NA")
   }
   
   if(nrow(all_data) == 0 | nrow(out[[unions[ii]]] ) == 0 ){
@@ -87,9 +88,10 @@ for(ii in 1:length(unions)){
     theme(text = element_text(size=15, lineheight=.3)) +
     labs(caption = "Data from OLMS reports. Not all unions are required to report membership data. https://unionelections.org")
   
-  file_name <- here::here("content" "data" "union", unions[ii], "membership.png")
-  ggsave(file_name, height=8, width=10, type = "cairo",
-         units="in", dpi=200)
+  file_name <- here::here("content", "data", "union", unions[ii],
+                          paste0(unions[ii], "_membership.png"))
+  ggsave(file_name, height=6, width=8, type = "cairo",
+         units="in", dpi=120)
   if(detailed_data){
     all_data <- all_data %>% pivot_wider(names_from = Category, values_from = value ) %>%  
       select(-RPT_ID)
@@ -106,8 +108,9 @@ for(ii in 1:length(unions)){
     table.attr="class='display summary-stats'"
   )
   
-  file_name <- here::here("content" "data" "union", unions[ii], "membership.png")
-  writeLines(tab, con = file)
+  file_name <- here::here("content", "tables", "union", 
+                          paste0(unions[ii],"_membership.html"))
+  write(tab_out, file = file_name)
   
   
 }
