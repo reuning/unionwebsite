@@ -16,6 +16,9 @@ Excluding public employees, in the last year there have been 4 union elections f
 ### Timeline of Activity by Unit Size
 {{< nav images="Ironworkers_hist_filings:By Filing Date,Ironworkers_hist_elections:By Tally Date" width="1000" height="800" >}}
 
+### Membership
+{{< nav images="Ironworkers_membership:Membership" width="1000" height="800" tables="tables/union/Ironworkers_membership.html:Raw Data">}}
+
 ### Largest Private Union Elections
 {{< image src="Ironworkers_10.png" width="1000" height="1000"  >}}
 

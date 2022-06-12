@@ -16,6 +16,9 @@ Excluding public employees, in the last year there have been 8 union elections f
 ### Timeline of Activity by Unit Size
 {{< nav images="FCGOA_hist_filings:By Filing Date,FCGOA_hist_elections:By Tally Date" width="1000" height="800" >}}
 
+### Membership
+{{< nav images="FCGOA_membership:Membership" width="1000" height="800" tables="tables/union/FCGOA_membership.html:Raw Data">}}
+
 ### Largest Private Union Elections
 {{< image src="FCGOA_10.png" width="1000" height="1000"  >}}
 

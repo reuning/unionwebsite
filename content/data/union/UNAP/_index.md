@@ -16,6 +16,9 @@ Excluding public employees, in the last year there have been 2 union elections f
 ### Timeline of Activity by Unit Size
 {{< nav images="UNAP_hist_filings:By Filing Date,UNAP_hist_elections:By Tally Date" width="1000" height="800" >}}
 
+### Membership
+{{< nav images="UNAP_membership:Membership" width="1000" height="800" tables="tables/union/UNAP_membership.html:Raw Data">}}
+
 ### Largest Private Union Elections
 {{< image src="UNAP_10.png" width="1000" height="1000"  >}}
 

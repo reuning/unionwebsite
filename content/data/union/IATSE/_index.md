@@ -16,6 +16,9 @@ Excluding public employees, in the last year there have been 20 union elections 
 ### Timeline of Activity by Unit Size
 {{< nav images="IATSE_hist_filings:By Filing Date,IATSE_hist_elections:By Tally Date" width="1000" height="800" >}}
 
+### Membership
+{{< nav images="IATSE_membership:Membership" width="1000" height="800" tables="tables/union/IATSE_membership.html:Raw Data">}}
+
 ### Largest Private Union Elections
 {{< image src="IATSE_10.png" width="1000" height="1000"  >}}
 

@@ -16,6 +16,9 @@ Excluding public employees, in the last year there have been 0 union elections f
 ### Timeline of Activity by Unit Size
 {{< nav images="NEMSA_hist_filings:By Filing Date,NEMSA_hist_elections:By Tally Date" width="1000" height="800" >}}
 
+### Membership
+{{< nav images="NEMSA_membership:Membership" width="1000" height="800" tables="tables/union/NEMSA_membership.html:Raw Data">}}
+
 ### Largest Private Union Elections
 {{< image src="NEMSA_10.png" width="1000" height="1000"  >}}
 

@@ -16,6 +16,9 @@ Excluding public employees, in the last year there have been 23 union elections 
 ### Timeline of Activity by Unit Size
 {{< nav images="AFT_hist_filings:By Filing Date,AFT_hist_elections:By Tally Date" width="1000" height="800" >}}
 
+### Membership
+{{< nav images="AFT_membership:Membership" width="1000" height="800" tables="tables/union/AFT_membership.html:Raw Data">}}
+
 ### Largest Private Union Elections
 {{< image src="AFT_10.png" width="1000" height="1000"  >}}
 

@@ -16,6 +16,9 @@ Excluding public employees, in the last year there have been 0 union elections f
 ### Timeline of Activity by Unit Size
 {{< nav images="TWU_hist_filings:By Filing Date,TWU_hist_elections:By Tally Date" width="1000" height="800" >}}
 
+### Membership
+{{< nav images="TWU_membership:Membership" width="1000" height="800" tables="tables/union/TWU_membership.html:Raw Data">}}
+
 ### Largest Private Union Elections
 {{< image src="TWU_10.png" width="1000" height="1000"  >}}
 

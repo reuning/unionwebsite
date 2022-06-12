@@ -16,6 +16,9 @@ Excluding public employees, in the last year there have been 10 union elections 
 ### Timeline of Activity by Unit Size
 {{< nav images="ILWU_hist_filings:By Filing Date,ILWU_hist_elections:By Tally Date" width="1000" height="800" >}}
 
+### Membership
+{{< nav images="ILWU_membership:Membership" width="1000" height="800" tables="tables/union/ILWU_membership.html:Raw Data">}}
+
 ### Largest Private Union Elections
 {{< image src="ILWU_10.png" width="1000" height="1000"  >}}
 

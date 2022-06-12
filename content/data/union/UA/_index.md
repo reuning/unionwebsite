@@ -16,6 +16,9 @@ Excluding public employees, in the last year there have been 24 union elections 
 ### Timeline of Activity by Unit Size
 {{< nav images="UA_hist_filings:By Filing Date,UA_hist_elections:By Tally Date" width="1000" height="800" >}}
 
+### Membership
+{{< nav images="UA_membership:Membership" width="1000" height="800" tables="tables/union/UA_membership.html:Raw Data">}}
+
 ### Largest Private Union Elections
 {{< image src="UA_10.png" width="1000" height="1000"  >}}
 

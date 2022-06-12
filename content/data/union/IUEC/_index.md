@@ -16,6 +16,9 @@ Excluding public employees, in the last year there have been 1 union elections f
 ### Timeline of Activity by Unit Size
 {{< nav images="IUEC_hist_filings:By Filing Date,IUEC_hist_elections:By Tally Date" width="1000" height="800" >}}
 
+### Membership
+{{< nav images="IUEC_membership:Membership" width="1000" height="800" tables="tables/union/IUEC_membership.html:Raw Data">}}
+
 ### Largest Private Union Elections
 {{< image src="IUEC_10.png" width="1000" height="1000"  >}}
 

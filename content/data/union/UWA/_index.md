@@ -16,6 +16,9 @@ Excluding public employees, in the last year there have been 4 union elections f
 ### Timeline of Activity by Unit Size
 {{< nav images="UWA_hist_filings:By Filing Date,UWA_hist_elections:By Tally Date" width="1000" height="800" >}}
 
+### Membership
+{{< nav images="UWA_membership:Membership" width="1000" height="800" tables="tables/union/UWA_membership.html:Raw Data">}}
+
 ### Largest Private Union Elections
 {{< image src="UWA_10.png" width="1000" height="1000"  >}}
 

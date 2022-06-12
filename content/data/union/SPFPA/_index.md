@@ -16,6 +16,9 @@ Excluding public employees, in the last year there have been 30 union elections 
 ### Timeline of Activity by Unit Size
 {{< nav images="SPFPA_hist_filings:By Filing Date,SPFPA_hist_elections:By Tally Date" width="1000" height="800" >}}
 
+### Membership
+{{< nav images="SPFPA_membership:Membership" width="1000" height="800" tables="tables/union/SPFPA_membership.html:Raw Data">}}
+
 ### Largest Private Union Elections
 {{< image src="SPFPA_10.png" width="1000" height="1000"  >}}
 

@@ -16,6 +16,9 @@ Excluding public employees, in the last year there have been 65 union elections 
 ### Timeline of Activity by Unit Size
 {{< nav images="IBEW_hist_filings:By Filing Date,IBEW_hist_elections:By Tally Date" width="1000" height="800" >}}
 
+### Membership
+{{< nav images="IBEW_membership:Membership" width="1000" height="800" tables="tables/union/IBEW_membership.html:Raw Data">}}
+
 ### Largest Private Union Elections
 {{< image src="IBEW_10.png" width="1000" height="1000"  >}}
 

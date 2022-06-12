@@ -16,6 +16,9 @@ Excluding public employees, in the last year there have been 1 union elections f
 ### Timeline of Activity by Unit Size
 {{< nav images="AWPPU_hist_filings:By Filing Date,AWPPU_hist_elections:By Tally Date" width="1000" height="800" >}}
 
+### Membership
+{{< nav images="AWPPU_membership:Membership" width="1000" height="800" tables="tables/union/AWPPU_membership.html:Raw Data">}}
+
 ### Largest Private Union Elections
 {{< image src="AWPPU_10.png" width="1000" height="1000"  >}}
 
