@@ -11,10 +11,8 @@ disableKinds = ['taxonomy', 'taxonomyTerm']
 
 [params]
   description = "Data on union elections in the United States"
-  BookToC = true
+  BookToC = false
   BookSection = "data"
   BookComments = false
 
 
-[markup.tableOfContents]
-  startLevel = 2

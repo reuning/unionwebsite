@@ -16,6 +16,9 @@ Excluding public employees, in the last year there have been 0 union elections f
 ### Timeline of Activity by Unit Size
 {{< nav images="ACOPS_hist_filings:By Filing Date,ACOPS_hist_elections:By Tally Date" width="1000" height="800" >}}
 
+### Membership
+{{< nav images="ACOPS_membership:Membership" width="1000" height="800" tables="tables/union/ACOPS_membership.html:Raw Data">}}
+
 ### Largest Private Union Elections
 {{< image src="ACOPS_10.png" width="1000" height="1000"  >}}
 

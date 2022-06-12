@@ -68,9 +68,12 @@ for(ii in 1:length(unions)){
       left_join(out[[unions[ii]]]) %>% 
       pivot_longer(4:last_col(), names_to="Category") %>% 
       filter(Category !="NA")
+  } else {
+    all_data <- filter(dt_out, F_NUM == fnum) %>% 
+      select(YR_COVERED, MEMBERS) 
   }
   
-  if(nrow(all_data) == 0 | nrow(out[[unions[ii]]] ) == 0 ){
+  if(nrow(all_data) == 0 ){
     all_data <- filter(dt_out, F_NUM == fnum) %>% 
       select(YR_COVERED, MEMBERS) 
   }
