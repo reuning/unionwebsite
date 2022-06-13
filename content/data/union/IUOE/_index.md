@@ -8,7 +8,7 @@ weight: 1
 ---
 ##  IUOE
 
-Excluding public employees, in the last year there have been 70 union elections filed by the IUOE and 76 union elections held. In 57 of those elections a new unit was certified. There are currently 24 open representation cases and 17 of are still waiting to vote.
+Excluding public employees, in the last year there have been 71 union elections filed by the IUOE and 77 union elections held. In 57 of those elections a new unit was certified. There are currently 25 open representation cases and 17 of are still waiting to vote.
 
 ### Union Elections by Outcome
 {{< nav images="IUOE_hist_vic:By Number of Workers,IUOE_hist_vic_union:By Number of Units" width="1000" height="800" tables="tables/union/IUOE_stats.html:Raw Data">}}
