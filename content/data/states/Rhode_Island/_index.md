@@ -8,7 +8,7 @@ weight: 1
 ---
 ##  Rhode Island
 
-Excluding public employees, in the last year there have been 7 union elections filed in Rhode Island and 5 union elections held. In 4 of those elections a new unit was certified. There are currently 3 open representation cases and 2 of are still waiting to vote.
+Excluding public employees, in the last year there have been 10 union elections filed in Rhode Island and 5 union elections held. In 4 of those elections a new unit was certified. There are currently 6 open representation cases and 5 of are still waiting to vote.
 
 ### Union Elections by Outcome
 {{< nav images="Rhode_Island_hist_vic:By Number of Workers,Rhode_Island_hist_vic_union:By Number of Units" width="1000" height="800" tables="/tables/states/Rhode_Island_stats.html:Raw Data">}}
