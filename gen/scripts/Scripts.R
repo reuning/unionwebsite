@@ -463,7 +463,7 @@ create_table_sb <- function(data=NULL,
                             file_name=NULL){
   
   if(is.null(file_name)) stop("Need file name")
-  
+
   tmp_dt <- data[Case_Type == "RC"]
   tmp_dt <- setorder(tmp_dt, -`Date_Filed`)
   
@@ -478,6 +478,8 @@ create_table_sb <- function(data=NULL,
                                   ifelse(Reason_Closed=="Certification of Results", "Voted Failed",
                                          ifelse(Reason_Closed%in%c("Withdrawal Non-adjusted", "Withdrawl Adjusted"),
                                                 "Withdrawn", "Other"))))]
+  srch <- paste0("\\d+(?!(.*located))(.|\\n)+?(", paste(c(state.abb, state.name), collapse="|"),")")
+  tmp_dt[,Address:=stringr::str_extract(`Voting Unit (Unit A)`, srch)]
   
   #### Summary statsitics ###
   tab <- tmp_dt[,.(.N, sum(Num_Eligible_Voters),
@@ -502,7 +504,7 @@ create_table_sb <- function(data=NULL,
   # tmp_dt$Case <- paste0("<a href='https://www.nlrb.gov/case/", tmp_dt$Case, "'>", tmp_dt$Case, "</a>")
   
   
-  tab <- tmp_dt[,.(Date_Filed, City, State, Status, Case_Name, Labor_Union,
+  tab <- tmp_dt[,.(Date_Filed, City, State, Address, Status, Case_Name, Labor_Union,
                    Tally_Date, Ballot_Type, Votes_For_Union, Votes_Against,
                    Num_Eligible_Voters, Case )]
   
@@ -511,7 +513,7 @@ create_table_sb <- function(data=NULL,
     tab,
     format="html",
     col.names=gsub("_", " ", names(tab)),
-    align="llllcccccccc",
+    align="lllllcccccccc",
     digits=0,
     table.attr="class='display summary-stats'"
   )
