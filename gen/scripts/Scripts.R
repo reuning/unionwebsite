@@ -97,6 +97,8 @@ prep_data <- function(data=dt){
   cat("Filling in NAs with 0s\n")
   
   data[,Election_Data:=ifelse(is.na(Tally_Date), "No","Yes")]
+  data <- data[!(Election_Data=="No" & Case %in% data[Election_Data=="Yes", Case]), ]
+  
   data[is.na(`Votes_Against`) & Election_Data=="Yes",`Votes_Against`:=0 ]
   data[is.na(`Votes_For_Union`) & Election_Data=="Yes",`Votes_For_Union`:=0 ]
   data[is.na(`Total_Ballots_Counted`) & Election_Data=="Yes",`Total_Ballots_Counted`:=0 ]
