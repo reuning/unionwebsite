@@ -24,7 +24,7 @@ HEADER = {'user-agent':'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_2) AppleWeb
 def start_data(search_url, params=None):
     browser = webdriver.Chrome(options=OPTIONS)
     browser.set_page_load_timeout(-1)
-    browser.implicitly_wait(15)
+    browser.implicitly_wait(60)
 
     if params is None:
         browser.get(BASE_URL + search_url)
