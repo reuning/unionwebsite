@@ -101,7 +101,7 @@ while True:
 
     if (getsize(abspath("gen/data/temp.csv")) > 1000000):
         break
-    if tries > 4
+    if tries > 4:
         raise RuntimeError("Unable to download election results")
 
     tries += 1
@@ -116,7 +116,7 @@ while True:
 
     if (getsize(abspath("gen/data/new_data.csv")) > 1000000):
         break
-    if tries > 4
+    if tries > 4:
         raise RuntimeError("Unable to download cases")
 
     tries += 1
