@@ -2,7 +2,7 @@
 import datetime
 import scrapelib
 import tqdm
-from os.path import abspath
+from os.path import abspath, getsize
 from time import sleep
 import urllib.parse
 
@@ -94,10 +94,30 @@ def get_data(file_name, search_url,
           f.write(file_out.content)
 
 
-get_data(search_url = '/reports/graphs-data/recent-election-results',
-        file_name= "temp.csv")
+tries = 0
+while True:
+    get_data(search_url = '/reports/graphs-data/recent-election-results',
+            file_name= "temp.csv")
+
+    if (getsize(abspath("gen/data/temp.csv")) > 1000000):
+        break
+    if tries > 4
+        raise RuntimeError("Unable to download election results")
+
+    tries += 1
+    sleep(5)
 
 sleep(5)
-get_data(search_url = '/search/case',
-        params={"f[0]":"case_type:R"},
-        file_name= "new_data.csv")
+tries = 0
+while True:
+    get_data(search_url = '/search/case',
+            params={"f[0]":"case_type:R"},
+            file_name= "new_data.csv")
+
+    if (getsize(abspath("gen/data/new_data.csv")) > 1000000):
+        break
+    if tries > 4
+        raise RuntimeError("Unable to download cases")
+
+    tries += 1
+    sleep(5)
