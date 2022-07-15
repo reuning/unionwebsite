@@ -8,18 +8,21 @@ import urllib.parse
 
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
-from selenium.webdriver.support.ui import Select
+from selenium.webdriver.support.ui import Select, WebDriverWait
+import selenium.webdriver.support.expected_conditions
+import selenium.webdriver.common.by
 
 OPTIONS = Options()
 
 OPTIONS.add_argument("--headless")
 OPTIONS.add_argument("--no-sandbox")
 OPTIONS.add_argument("--disable-dev-shm-usage")
-
+OPTIONS.add_argument("--disable-gpu")
+OPTIONS.add_argument("disable-infobars")
+OPTIONS.add_argument("--disable-extensions")
 
 DOWNLOAD_FOLDER = abspath("gen/data")
 BASE_URL = 'https://www.nlrb.gov'
-HEADER = {'user-agent':'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_2) AppleWebKit/601.3.9 (KHTML, like Gecko) Version/9.0.2 Safari/601.3.9'}
 
 def start_data(search_url, params=None):
     browser = webdriver.Chrome(options=OPTIONS)
@@ -31,13 +34,32 @@ def start_data(search_url, params=None):
     else:
         browser.get(BASE_URL + search_url + "?" + urllib.parse.urlencode(params))
 
+    wait = WebDriverWait(browser, 15)
+    wait.until(
+        selenium.webdriver.support.expected_conditions.presence_of_element_located(
+            (selenium.webdriver.common.by.By.ID, "download-button")
+        )
+    )
+
+    download_link = browser.find_element("xpath", "//a[@id='download-button']")
+    for retry in range(4):
+        try:
+            download_token=browser.get_cookie("nlrb-dl-sessid")["value"]
+        except TypeError:
+            sleep(1)
+            continue
+    else:
+        download_token=browser.get_cookie("nlrb-dl-sessid")["value"]
+
+
     download_link = browser.find_element_by_id('download-button')
     payload = {'cacheId': download_link.get_attribute('data-cacheid'),
                'typeOfReport': download_link.get_attribute('data-typeofreport'),
-               'token': str(datetime.datetime.now())}
+               'token': download_token}
+
 
     scraper = scrapelib.Scraper(retry_attempts=20)
-    response = scraper.post('https://www.nlrb.gov/nlrb-downloads/start-download/' +
+    response = scraper.get('https://www.nlrb.gov/nlrb-downloads/start-download/' +
                             payload['typeOfReport'] + '/' + payload['cacheId'] +
                             '/' + payload['token'])
 
@@ -47,18 +69,20 @@ def start_data(search_url, params=None):
 def get_data(file_name, search_url,
                 params = None ):
 
+    result = start_data(search_url=search_url, params=params)
     attempts = 0
-    while True:
-        print("Attempt " + str(attempts + 1))
-        try:
-            result = start_data(search_url=search_url, params=params)
-            break
-        except:
-            attempts += 1
-            sleep(10)
-            if attempts > 40:
-                print("Unable to download")
-                raise
+    # while True:
+    #     print("Attempt " + str(attempts + 1))
+    #     try:
+    #         result = start_data(search_url=search_url, params=params)
+    #         break
+    #     except:
+    #         attempts += 1
+    #         sleep(10)
+    #         if attempts > 40:
+    #             print("Unable to download")
+    #             raise
+
 
 
 
@@ -93,10 +117,9 @@ def get_data(file_name, search_url,
     with open(DOWNLOAD_FOLDER + "/" +  file_name,'wb') as f:
           f.write(file_out.content)
 
-
 tries = 0
 while True:
-    get_data(search_url = '/reports/graphs-data/recent-election-results',
+    get_data(search_url = '/reports/graphs-data/recent-election-results?date_start=01%2F01%2F2010&date_end=',
             file_name= "temp.csv")
 
     if (getsize(abspath("gen/data/temp.csv")) > 1000000):
