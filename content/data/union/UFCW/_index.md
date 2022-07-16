@@ -8,7 +8,7 @@ weight: 1
 ---
 ##  UFCW
 
-Excluding public employees, in the last year there have been 144 union elections filed by the UFCW and 112 union elections held. In 57 of those elections a new unit was certified. There are currently 62 open representation cases and 39 of are still waiting to vote.
+Excluding public employees, in the last year there have been 145 union elections filed by the UFCW and 111 union elections held. In 57 of those elections a new unit was certified. There are currently 65 open representation cases and 41 of are still waiting to vote.
 
 ### Union Elections by Outcome
 {{< nav images="UFCW_hist_vic:By Number of Workers,UFCW_hist_vic_union:By Number of Units" width="1000" height="800" tables="tables/union/UFCW_stats.html:Raw Data">}}
