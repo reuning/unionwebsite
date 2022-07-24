@@ -8,7 +8,7 @@ weight: 1
 ---
 ##  Ohio
 
-Excluding public employees, in the last year there have been 56 union elections filed in Ohio and 32 union elections held. In 21 of those elections a new unit was certified. There are currently 19 open representation cases and 12 of are still waiting to vote.
+Excluding public employees, in the last year there have been 57 union elections filed in Ohio and 33 union elections held. In 22 of those elections a new unit was certified. There are currently 19 open representation cases and 12 of are still waiting to vote.
 
 ### Union Elections by Outcome
 {{< nav images="Ohio_hist_vic:By Number of Workers,Ohio_hist_vic_union:By Number of Units" width="1000" height="800" tables="/tables/states/Ohio_stats.html:Raw Data">}}
