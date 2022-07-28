@@ -8,7 +8,7 @@ weight: 1
 ---
 ##  Tennessee
 
-Excluding public employees, in the last year there have been 21 union elections filed in Tennessee and 13 union elections held. In 9 of those elections a new unit was certified. There are currently 4 open representation cases and 3 of are still waiting to vote.
+Excluding public employees, in the last year there have been 21 union elections filed in Tennessee and 14 union elections held. In 9 of those elections a new unit was certified. There are currently 4 open representation cases and 3 of are still waiting to vote.
 
 ### Union Elections by Outcome
 {{< nav images="Tennessee_hist_vic:By Number of Workers,Tennessee_hist_vic_union:By Number of Units" width="1000" height="800" tables="/tables/states/Tennessee_stats.html:Raw Data">}}
