@@ -22,6 +22,7 @@ dt[National %in% names(which(table(dt$National) < 20)), National:="Other"]
 
 dt[National=="", National:="Uncoded"]
 dt[National_Count>1, National:="Multiple"]
+write.csv(dt, here("gen", "data", "cleaned_data.csv"), row.names = F)
 
 # View(table(dt[National == "Uncoded" & Date_Filed > as.Date("2019-01-01"), Labor_Union]))
 # View(table(dt[National == "Multiple" & Date_Filed > as.Date("2019-01-01"), Labor_Union]))
