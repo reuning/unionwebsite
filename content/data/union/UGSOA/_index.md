@@ -8,7 +8,7 @@ weight: 1
 ---
 ##  UGSOA
 
-Excluding public employees, in the last year there have been 5 union elections filed by the UGSOA and 4 union elections held. In 3 of those elections a new unit was certified. There are currently 4 open representation cases and 3 of are still waiting to vote.
+Excluding public employees, in the last year there have been 4 union elections filed by the UGSOA and 3 union elections held. In 3 of those elections a new unit was certified. There are currently 3 open representation cases and 3 of are still waiting to vote.
 
 ### Union Elections by Outcome
 {{< nav images="UGSOA_hist_vic:By Number of Workers,UGSOA_hist_vic_union:By Number of Units" width="1000" height="800" tables="tables/union/UGSOA_stats.html:Raw Data">}}
