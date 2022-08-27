@@ -595,7 +595,7 @@ create_page <- function(title = "California",
   
   if(type=="national"){
     description <- paste0("description: Data on recent union elections in the United States.")
-    recent_stats <- sprintf("Excluding public employees, in the last year there have been %s union elections filed in the United States and %s union elections held. In %s of those elections a new unit was certified. There are currently %s open representation cases and %s of are still waiting to vote.",
+    recent_stats <- sprintf("Excluding public employees and multi-union elections, in the last 12 months there have been %s union elections filed in the United States and %s union elections held. In %s of those elections a new unit was certified. There are currently %s open representation cases and %s of are still waiting to vote.",
                             clean_num(filed_last_year),
                             clean_num(voted_last_year), clean_num(cert_last_year),
                             clean_num(open_cases), clean_num(open_cases_waiting))
@@ -608,7 +608,7 @@ create_page <- function(title = "California",
     
   } else if(type=="union") {
     description <- paste0("description: Data on recent union elections involving the ", title, ".")
-    recent_stats <- sprintf("Excluding public employees, in the last year there have been %s union elections filed by the %s and %s union elections held. In %s of those elections a new unit was certified. There are currently %s open representation cases and %s of are still waiting to vote.",
+    recent_stats <- sprintf("Excluding public employees and multi-union elections, in the last 12 months there have been %s union elections filed by the %s and %s union elections held. In %s of those elections a new unit was certified. There are currently %s open representation cases and %s of are still waiting to vote.",
                             clean_num(filed_last_year), title,
                             clean_num(voted_last_year), clean_num(cert_last_year),
                             clean_num(open_cases), clean_num(open_cases_waiting))
@@ -626,7 +626,7 @@ create_page <- function(title = "California",
     
   } else if(type=="states") {
     description <-paste0("description: Data on recent union elections in ", title, ".")
-    recent_stats <- sprintf("Excluding public employees, in the last year there have been %s union elections filed in %s and %s union elections held. In %s of those elections a new unit was certified. There are currently %s open representation cases and %s of are still waiting to vote.",
+    recent_stats <- sprintf("Excluding public employees and multi-union election, in the last 12 months there have been %s union elections filed in %s and %s union elections held. In %s of those elections a new unit was certified. There are currently %s open representation cases and %s of are still waiting to vote.",
                             clean_num(filed_last_year), title,
                             clean_num(voted_last_year), clean_num(cert_last_year),
                             clean_num(open_cases), clean_num(open_cases_waiting))
