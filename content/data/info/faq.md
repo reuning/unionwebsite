@@ -27,5 +27,7 @@ title: FAQ
 
 - Why did you make this website?
   - I wanted there to be better information out there about what is happening in the labor movement.
+- Who made this website? 
+  - My name is Kevin Reuning, I am an Assistant Professor of Political Science at Miami University. You can find out more about me on my [website](http://kevinreuning.com). Although I am interested in the labor movement, my training is more focused on political parties and social movements.
 - I found an issue...
   - You can [email me](mailto:kevin.reuning@gmail.com). The code is all up on [github as well](https://github.com/reuning/unionwebsite).
