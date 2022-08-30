@@ -14,7 +14,7 @@ import selenium.webdriver.common.by
 
 OPTIONS = Options()
 
-## OPTIONS.add_argument("--headless")
+OPTIONS.add_argument("--headless")
 OPTIONS.add_argument("--no-sandbox")
 OPTIONS.add_argument("--disable-dev-shm-usage")
 OPTIONS.add_argument("--disable-gpu")
