@@ -1,3 +1,9 @@
+library/
+local/
+cellar/
+lock/
+python/
+staging/
 .Rhistory
 .DS_Store
 .Rproj.user

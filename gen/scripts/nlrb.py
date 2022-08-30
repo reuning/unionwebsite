@@ -14,7 +14,7 @@ import selenium.webdriver.common.by
 
 OPTIONS = Options()
 
-OPTIONS.add_argument("--headless")
+## OPTIONS.add_argument("--headless")
 OPTIONS.add_argument("--no-sandbox")
 OPTIONS.add_argument("--disable-dev-shm-usage")
 OPTIONS.add_argument("--disable-gpu")
@@ -23,6 +23,7 @@ OPTIONS.add_argument("--disable-extensions")
 
 DOWNLOAD_FOLDER = abspath("gen/data")
 BASE_URL = 'https://www.nlrb.gov'
+VERIFY = False ## turn off SSL verification
 
 def start_data(search_url, params=None):
     browser = webdriver.Chrome(options=OPTIONS)
@@ -61,7 +62,7 @@ def start_data(search_url, params=None):
     scraper = scrapelib.Scraper(retry_attempts=20)
     response = scraper.get('https://www.nlrb.gov/nlrb-downloads/start-download/' +
                             payload['typeOfReport'] + '/' + payload['cacheId'] +
-                            '/' + payload['token'])
+                            '/' + payload['token'], verify=VERIFY)
 
     result = response.json()['data']
     return result
@@ -91,7 +92,7 @@ def get_data(file_name, search_url,
 
     with tqdm.tqdm(total=result['total'], desc='NLRB.gov preparing download') as pbar:
         while not result['finished']:
-            response = s.get(BASE_URL + '/nlrb-downloads/progress/' + str(result['id']))
+            response = s.get(BASE_URL + '/nlrb-downloads/progress/' + str(result['id']), verify=VERIFY)
             result = response.json()['data']
 
             # update progress bar
@@ -104,7 +105,7 @@ def get_data(file_name, search_url,
     print(BASE_URL + result['filename'])
     attempts = 0
     while True:
-        file_out = s.get(BASE_URL + result['filename'])
+        file_out = s.get(BASE_URL + result['filename'], verify=VERIFY)
         if file_out.content[0:6] == b'Region' or file_out.content[0:5] == b'"Case':
             break
         else:
