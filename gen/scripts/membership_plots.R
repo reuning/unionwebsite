@@ -6,8 +6,10 @@ files <- dir()
 
 
 library(ggplot2)
-library(tidyverse)
+library(dplyr)
 library(knitr)
+library(readr)
+library(tidyr)
 
 ggsave <- function(..., bg = 'white') ggplot2::ggsave(..., bg = bg)
 
