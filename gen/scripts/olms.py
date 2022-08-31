@@ -37,4 +37,7 @@ for report in tqdm(reports):
 
     files = z.namelist()
     for file in (filter(re.compile(".*membership.*").match, files)):
-        z.extract(file, "gen/data/temp")
+        z.extract(file, "/Users/kevinreuning//Dropbox/Projects/unionwebsite/gen/data/membership")
+    
+    for file in (filter(re.compile(".*data_data.*").match, files)):
+        z.extract(file, "/Users/kevinreuning//Dropbox/Projects/unionwebsite/gen/data/membership")
