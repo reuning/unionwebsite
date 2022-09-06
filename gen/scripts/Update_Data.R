@@ -4,8 +4,8 @@ library(rvest)
 
 retry_page <- function(url){
   check <- 0
-  h <- curl::new_handle(ssl_verifypeer=0)
   while(check < 20){
+    h <- curl::new_handle(ssl_verifypeer=0)
     con <- curl::curl(url,  handle = h)
     page <- try(read_html(con))
     if(class(page)[1]=="try-error"){
