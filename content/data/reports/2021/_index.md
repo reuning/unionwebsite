@@ -12,9 +12,9 @@ keywords: union filings
 This report details the number of filings and closed units in 2021. As a reminder, we are only showing filings and closures related to single union elections (rare multi-union elections are excluded).
 
 ### Filings by Union
-In 2021 1,333 petitions for new units were filed, a 3.82% increase from the previous year The median size was 18 with a total of 74,398 workers across all units, a 0.85% increase from the previous year
+In 2021 1,333 petitions for new units were filed, a 3.82% increase from the previous year The median size was 18 with a total of 74,341 workers across all units, a 0.77% increase from the previous year
 {{< readtable table="/tables/reports/2021/0union_filings.html" >}}
 
 ### Closed Elections by Union
-In 2021 1,277 petitions for new units were closed (this includes petitions where no election was ever held), with 50.67% closed with a certification order, creating 647 total new units. This was a 15.33% increase from the previous year in successful union certifications. Overall this represents approximately 30,936 workers, which is a 10.93% increase from the previous year The median bargaining unit has 20 workers.
+In 2021 1,278 petitions for new units were closed (this includes petitions where no election was ever held), with 50.70% closed with a certification order, creating 648 total new units. This was a 15.51% increase from the previous year in successful union certifications. Overall this represents approximately 30,940 workers, which is a 10.94% increase from the previous year The median bargaining unit has 20 workers.
 {{< readtable table="/tables/reports/2021/0union_closed.html" >}}
