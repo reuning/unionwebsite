@@ -488,7 +488,7 @@ create_table_sb <- function(data=NULL,
                    sum(Votes_For_Union, na.rm=T),
                    sum(Votes_Against, na.rm=T)), by=Status]
   
-  colnames(tab) <- c("Status", "Number", "Total Employees",
+  colnames(tab) <- c("Status of Election", "Number of Stores", "Total Employees",
                      "Votes for Union", "Votes Against")
   
   tab_out <- kable(
@@ -497,7 +497,8 @@ create_table_sb <- function(data=NULL,
     col.names=gsub("_", " ", names(tab)),
     align="lcccc",
     digits=0,
-    table.attr="class='summary-stats center'"
+    table.attr="class='summary-stats center'", 
+    caption="Current Starbucks Union Election Stats"
   )
   
   if(!dir.exists(file_name)) dir.create(file_name)

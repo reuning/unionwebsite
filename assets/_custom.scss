@@ -22,10 +22,16 @@ table.open-cases tr td{
    padding: 0rem .1rem;
 }
 
-table.summary-stats {
-     font-size: .75rem;
-     border-spacing: .1rem;
-     line-height: 1;
+
+
+.summary-stats{
+  font-size: .75rem;
+  border-spacing: .1rem;
+  line-height: 1;
+
+  caption {
+    font-size: 1.25rem;
+  }
 }
 
 div.data-table {
