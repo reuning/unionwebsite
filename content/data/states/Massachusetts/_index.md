@@ -8,7 +8,7 @@ weight: 1
 ---
 ##  Massachusetts
 
-Excluding public employees and multi-union election, in the last 12 months there have been 70 union elections filed in Massachusetts and 51 union elections held. In 42 of those elections a new unit was certified. There are currently 15 open representation cases and 14 of are still waiting to vote.
+Excluding public employees and multi-union election, in the last 12 months there have been 70 union elections filed in Massachusetts and 49 union elections held. In 41 of those elections a new unit was certified. There are currently 15 open representation cases and 14 of are still waiting to vote.
 
 ### Union Elections by Outcome
 {{< nav images="Massachusetts_hist_vic:By Number of Workers,Massachusetts_hist_vic_union:By Number of Units" width="1000" height="800" tables="/tables/states/Massachusetts_stats.html:Raw Data">}}
