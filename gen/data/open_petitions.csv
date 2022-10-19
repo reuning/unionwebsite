@@ -1,5 +1,8 @@
 "Case","Region","Case Name","Status","Date Filed","Date Closed","Reason Closed","City","State","Employees on charge/petition","Allegations","Union","Unit Sought","Voters","Unit ID","Ballot Type","Tally Type","Tally Date","No of Eligible Voters","Void Ballots","Votes for Labor Union1","Labor Union2","Votes for Labor Union2","Labor Union3","Votes for Labor Union3","Votes Against","Total Ballots Counted","Runoff Required","Challenged Ballots","Challenges are Determinative","Union to Certify","Voting Unit (Unit A)","Voting Unit (Unit B)","Voting Unit (Unit C)","Voting Unit (Unit D)","Labor Union1"
-"01-RC-284384","Region 01, Boston, Massachusetts","President and Trustees of Bates College","Open","10/08/2021","","","Lewiston","ME",652,"","","",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Maine Service Employee Association – SEIU Local 1989"
+"01-RC-284384","Region 01, Boston, Massachusetts","President and Trustees of Bates College","Open","10/08/2021","","","Lewiston","ME",652,"","","Included:
+All non-tenure and non-tenure track faculty and all staff not excluded below.
+Excluded:
+All managers, tenured and tenure track faculty, confidential employees, guards and sup",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Maine Service Employee Association – SEIU Local 1989"
 "01-RC-288998","Region 01, Boston, Massachusetts","I.N.S.A., Inc.","Open","01/18/2022","","","Salem","MA",28,"","","Included: All full-time and part-time retail associates, retail leads, inventory associates, and inventory leads employed by the employer at its 462 Highland Ave, Salem, MA facility.
 Excluded: All other employees, asset protection employees, managerial employees, professional employees, guards and supervisors as defined by the Act.",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"UNITED FOOD AND COMMERCIAL WORKERS UNION LOCAL 1445"
 "01-RC-290605","Region 01, Boston, Massachusetts","Charter Communications, Inc. d/b/a Spectrum","Open","02/15/2022","","","North Windham","CT",30,"","International Brotherhood of Electrical Workers (IBEW) Local 2323","Field Technicians, Maintenance Technicians, Plant Maintenance Technicians, Broadband Technicians, TQA Technicians, Construction Technicians; but excluding all other employees, office clerical employees, and guards, professional employees and supervisors as defined in the Act.",26,"A","Single Labor Organization","Initial","04/07/2022",26,NA,13,"",NA,"",NA,13,26,"",3,"Y","International Brotherhood of Electrical Workers (IBEW) Local 2323","All full-time and regular part-time Field Technicians and Maintenance Technicians employed by the Employer at its North Windham, Connecticut facility; but excluding Office clericals, managers, and guards, professional employees and supervisors as defined in the Act.
@@ -8,7 +11,7 @@ Others Permitted to Vote:  The parties agree that Construction Coordinators and 
 ","","","","International Brotherhood of Electrical Workers (IBEW) Local 2323"
 "01-RC-290605","Region 01, Boston, Massachusetts","Charter Communications, Inc. d/b/a Spectrum","Open","02/15/2022","","","North Windham","CT",30,NA,"International Brotherhood of Electrical Workers (IBEW) Local 2323","Field Technicians, Maintenance Technicians, Plant Maintenance Technicians, Broadband Technicians, TQA Technicians, Construction Technicians; but excluding all other employees, office clerical employees, and guards, professional employees and supervisors as defined in the Act.",26,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"International Brotherhood of Electrical Workers (IBEW) Local 2323"
 "01-RC-298068","Region 01, Boston, Massachusetts","Chipotle Mexican Grill","Open","06/22/2022","","","Augusta","ME",18,"","","Included: Crew, Cashier, Certified Trainer. Excluded: Kitchen Manager, Service Manager, Apprentice, General Manager, and any other statutory supervisors.",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Chipotle United"
-"01-RC-301503","Region 01, Boston, Massachusetts","Cernak/Hop Energy","Open","08/17/2022","","","Easthampton","MA",3,NA,"","Included;  Service Technicians, truck/delivery drivers.  Excluded: Managers, office administration .",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"INTERNATIONAL BROTHERHOOD OF TEAMSTERS LOCAL 404"
+"01-RC-301503","Region 01, Boston, Massachusetts","Cernak/Hop Energy","Open","08/17/2022","","","Easthampton","MA",3,"","","Included;  Service Technicians, truck/delivery drivers.  Excluded: Managers, office administration .",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"INTERNATIONAL BROTHERHOOD OF TEAMSTERS LOCAL 404"
 "01-RC-301879","Region 01, Boston, Massachusetts","Starbucks Corporation","Open","08/23/2022","","","Portland","ME",15,"","","Included: All full-time and regular part-time Baristas and Shift Supervisors. Excluded: Store Mgrs, Asst. Store Mgrs, office clericals, guards, supervisors under the Act.",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Workers United"
 "01-RC-302289","Region 01, Boston, Massachusetts","Starbucks Corporation","Open","08/29/2022","","","Boston","MA",9,"","","Included: All full-time and regular part-time Baristas and Shift Managers. Excluded: Store Mgrs. Asst. Store Mgrs, office clericals, guards supervisors under the Act.",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Workers United"
 "01-RC-302338","Region 01, Boston, Massachusetts","Western Massachusetts Training Consortium","Open","08/29/2022","","","Northampton","MA",18,"","","Included: Advocates (includes the titles Peer Advocate, Bridging Advocate, and Peer Specialist) Excluded: Coordinators, Trainers, members of the Leadership Team, and all other supervisory and managerial staff",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"United Auto Workers Local 2322"
@@ -35,8 +38,12 @@ Excluded:  All substitutes, confidential and temporary employees, managers, and 
 Excluded:
 All other employees, office clerical employees, guards, professional employees and supervisors as defined in the Act.",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"INTERNATIONAL BROTHERHOOD OF TEAMSTERS LOCAL UNION NO. 671"
 "01-RC-303310","Region 01, Boston, Massachusetts","1 Emerson Drive South Operations LLC, d/b/a Kimberly Hall South","Open","09/14/2022","","","Windsor","CT",4,"","","",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"NEW ENGLAND HEALTH CARE EMPLOYEES UNION, DISTRICT 1199, SEIU"
-"01-RC-303347","Region 01, Boston, Massachusetts","Eversource Gas Company of Massachusetts, d/b/a Eversource Energy","Open","09/13/2022","","","Lawrence","MA",3,"","","Included: Gas Operations Specialist, Gas Operations Coordinators, Operations Support Specialist Excluded: All other employees, guards, professional employees and supervisors as defined in the Act.",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"International Brotherhood of Electrical Workers (IBEW) Local 326"
-"01-RC-303445","Region 01, Boston, Massachusetts","Treevit LLC","Open","09/15/2022","10/04/2022","Withdrawal Non-adjusted","Athol","MA",13,"","","Included: All fulltime and regular part-time delivery drivers working out of Boston and Newton locations. Excluded: All non delivery drivers, dispatch, managers, supervisors, and security.",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"International Brotherhood of Teamsters Joint Council 10 New England on Behalf of Teamsters Local 25"
+"01-RC-303347","Region 01, Boston, Massachusetts","Eversource Gas Company of Massachusetts, d/b/a Eversource Energy","Open","09/13/2022","","","Lawrence","MA",3,"","International Brotherhood of Electrical Workers (IBEW) Local 326","Included: Gas Operations Specialist, Gas Operations Coordinators, Operations Support Specialist Excluded: All other employees, guards, professional employees and supervisors as defined in the Act.",3,"A","Single Labor Organization","Initial","10/12/2022",3,NA,2,"",NA,"",NA,NA,NA,"",NA,"","International Brotherhood of Electrical Workers (IBEW) Local 326","Included: All full-time and regular part-time Coordinator (Operations Support, Gas Operations) and Paving Coordinator. 
+
+Excluded: All confidential employees, managers, guards, professional employees and supervisors as defined in the Act.
+
+If a majority of valid ballots are cast for International Brotherhood of Electrical Workers (IBEW) Local 326, they will be taken to have indicated the employees’ desire to be included in the existing unit of Construction Inspectors, Technicians, and Service Techs currently represented by International Brotherhood of Electrical Workers (IBEW) Local 326. If a majority of valid ballots are not cast for representation, they will be taken to have indicated the employees desire to remain unrepresented.","","","","International Brotherhood of Electrical Workers (IBEW) Local 326"
+"01-RC-303347","Region 01, Boston, Massachusetts","Eversource Gas Company of Massachusetts, d/b/a Eversource Energy","Open","09/13/2022","","","Lawrence","MA",3,NA,"","Included: Gas Operations Specialist, Gas Operations Coordinators, Operations Support Specialist Excluded: All other employees, guards, professional employees and supervisors as defined in the Act.",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"International Brotherhood of Electrical Workers (IBEW) Local 326"
 "01-RC-303674","Region 01, Boston, Massachusetts","First Student, Inc.","Open","09/20/2022","","","Fairhaven","MA",4,"","","Included: All full-time and regular part-time drivers and monitors serving Fairhaven, MA public schools. Excluded: Dispatchers, mechanics, clerical employees, managers, supervisors and guards.",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"United Food and Commercial Workers Union, Local 1459"
 "01-RC-303677","Region 01, Boston, Massachusetts","Worcester Polytechnic Institute","Open","09/20/2022","","","Worcester","MA",500,"","","Included: All graduate student employees enrolled at Worcester Polytechnic
 Institute who provide instructional services, research services or administrative
@@ -166,7 +173,8 @@ All service workers
 Excluded:
 statutory guards and supervisors including superintendents
 ",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Local 32BJ SEIU"
-"02-RC-302863","Region 02, New York, New York","Medstar Surgical & Breathing Equipment, Inc.","Open","09/07/2022","","","Bronx","NY",15,"","","Included: Medical Supplies Warehouse Workers Excluded: Supervisor, Clerical, Managers",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"International Brotherhood of Electrical Workers Local 1430"
+"02-RC-302863","Region 02, New York, New York","Medstar Surgical & Breathing Equipment, Inc.","Open","09/07/2022","","","Bronx","NY",15,"","","Included: Medical Supplies Warehouse Workers Excluded: Supervisor, Clerical, Managers",15,"A","Single Labor Organization","Initial","10/13/2022",15,NA,2,"",NA,"",NA,11,13,"",NA,"","","","","","","International Brotherhood of Electrical Workers Local 1430"
+"02-RC-302863","Region 02, New York, New York","Medstar Surgical & Breathing Equipment, Inc.","Open","09/07/2022","","","Bronx","NY",15,NA,"","Included: Medical Supplies Warehouse Workers Excluded: Supervisor, Clerical, Managers",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"International Brotherhood of Electrical Workers Local 1430"
 "02-RC-303501","Region 02, New York, New York","Real Payroll Group LLC","Open","09/16/2022","","","Manhattan","NY",12,"","","All full-time, and regular part-time, Housekeeping Employees including but not limited to, Room Inspectors/Supervisors, Room Attendants and Housepersons",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Hotel and Gaming Trades Council, AFL-CIO"
 "02-RC-303506","Region 02, New York, New York","Four Points by Sheraton Midtown-Times Square","Open","09/16/2022","","","Manhattan","NY",13,"","","Included:
 All full-time, and regular part-time, Housekeeping Employees including but not limited to, Room Inspectors/Supervisors, Room Attendants and Housepersons. 
@@ -191,7 +199,7 @@ Security Officers
 
 Excluded:
 Senior Security Officers, Drivers, Receptionists, Locksmiths",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Local One Security Officers Union"
-"02-RC-304333","Region 02, New York, New York","The New York Eye and Ear Infirmary of Mount Sinai","Open","09/30/2022","","","Manhattan","NY",30,"","","Included: all regular full time, part time and per diem Pharmacists as residual to the existing professional unit.
+"02-RC-304333","Region 02, New York, New York","The New York Eye and Ear Infirmary of Mount Sinai","Open","09/30/2022","","","Manhattan","NY",30,NA,"","Included: all regular full time, part time and per diem Pharmacists as residual to the existing professional unit.
 
 Excluded:  all guards, managers, confidential employees and supervisors as defined in the act.
 ",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"1199SEIU United Healthcare Workers East"
@@ -226,6 +234,10 @@ Excluded: All guards, managers, confidential employees, and supervisors as defin
 
 Excluded: All managerial employees, supervisors, security guards, and confidential employees as defined by the Act, and employees already covered by collective bargaining agreement.
 ",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"District Council 37, AFSCME, AFL-CIO"
+"02-RC-305306","Region 02, New York, New York","Barnard College","Open","10/17/2022","","","New York","NY",57,"","","included: All Resident Assistants employed by the employer
+
+Excluded: All confidential employees, managers, guards, and supervisors as defined
+",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Office Professional Employees International Union Local 153"
 "02-RD-152184","Region 02, New York, New York","Sparks Steak House","Open","05/13/2015","","","New York","NY",34,"","","Included:  Waiters and Bartenders
 
 Excluded:  Managers, kitchen staff (including chefs, cooks, dishwashers, kitchen head).",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"United Food and Commercial Workers Union, Local 342, AFL-CIO"
@@ -274,10 +286,6 @@ Others permitted to vote:  The parties have agreed that Assistant Store Managers
 
 Excluded:  Store Managers; office clericals, guards, and supervisors as defined by the Act.",32,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Workers United"
 "03-RC-299607","Region 03, Buffalo, New York","Blizzard Entertainment, Inc.","Open","07/19/2022","","","Schenectady","NY",20,"","","All full time and regular part time employees of the Employer's Blizzard Albany Quality Assurance division whether working remotely or in person, including QA Testers, QA Functional Testers, and Associate Test Analysts.  Excluded:  All other employees, managers, supervisors and guards as defined by the Act.",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Communications Workers of America, AFL-CIO"
-"03-RC-301223","Region 03, Buffalo, New York","Communication Service for the Deaf, Inc.","Open","08/12/2022","","","Syracuse","NY",45,"","Communications Workers of America","Included: All full time and regular part-time Communication Assistant NY and TRS Team Leads employed by the Employer who report to its Syracuse, New York facility, 
-Excluded: Office clerical employees, confidential employees, all CapTel Department employees, guards and supervisors as defined in the Act, and all other employees.",46,"A","Single Labor Organization","Initial","09/30/2022",46,3,34,"",NA,"",NA,NA,34,"",NA,"","Communications Workers of America","","","","","Communications Workers of America"
-"03-RC-301223","Region 03, Buffalo, New York","Communication Service for the Deaf, Inc.","Open","08/12/2022","","","Syracuse","NY",45,NA,"","Included: All full time and regular part-time Communication Assistant NY and TRS Team Leads employed by the Employer who report to its Syracuse, New York facility, 
-Excluded: Office clerical employees, confidential employees, all CapTel Department employees, guards and supervisors as defined in the Act, and all other employees.",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Communications Workers of America"
 "03-RC-301507","Region 03, Buffalo, New York","Amazon.com Services LLC","Open","08/17/2022","","","Castleton-on-Hudson","NY",400,"","","Included: All hourly full-time and regular-part time fulfillment center associates employed at the Employer’s ALB1 building located at 1835 US ROUTE 9 US, Castleton, New York, including all employees in the unit who have worked an average of four (4) hours or more per week during the 13 weeks immediately preceding the eligibility date for the election. Excluded: Truck drivers, seasonal employees, temporary employees, clerical employees, professional employees, managerial employees, engineering employees, maintenance employees, robotics employees, information technology employees, delivery associates, loss prevention employees, on-site medical employees, guards and supervisors as defined by the Act.",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Amazon Labor Union (ALU)"
 "03-RC-302475","Region 03, Buffalo, New York","Starbucks Corporation","Open","09/01/2022","","","Victor","NY",13,"","","All full-time and regular part-time Baristas, Shift Supervisors.  Excluded:  Store Managers; office clericals, guards, and supervisors as defined by the Act.",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Workers United"
 "03-RC-303084","Region 03, Buffalo, New York","Fabcon Precast, LLC","Open","09/12/2022","","","Selkirk","NY",75,"","","Included: Batch plant; equipment operators, labors, qc techs, and all involved in production. Excluded Administrative and Management.",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,""
@@ -301,6 +309,7 @@ Excluded:  All administrative and clerical workers, guards, supervisors, and man
 "03-RC-304862","Region 03, Buffalo, New York","Kennedy Mechanical Plumbing and Heating Inc.","Open","10/07/2022","","","Rochester","NY",22,"","","Included: All full time and regular part-time employees engaged in the installation and service of fire suppression sprinkler systems employed by Kennedy Mechanical, Plumbing and Heating Inc.
 
 Excluded: All other employees, plumbers, HVAC technicians, office clerical employees, professional employees, guards, supervisors, and managers as defined by the Act.",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"UA Local Union 669 Road Sprinkler Fitters"
+"03-RC-305283","Region 03, Buffalo, New York","GE Renewable Energy","Open","10/17/2022","","","Schenectady","NY",135,"","","Included:  Full and part-time Major Component Exchange (MCE) Engineering Technicians, MCE Lead Wind Technicians, MCE Lead Specialists, MCE Field Specialist Is, MCE Field Specialist IIs, MCE Field Specialist IIIs, MCE Wind Technicians IIs, MCE Wind Technicians IIIs, MCE Technicians LIFTRA.",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Utility Workers Union of America, AFL-CIO"
 "03-RD-271639","Region 03, Buffalo, New York","Gimme Coffee, Inc.","Open","01/22/2021","","","Ithaca","NY",13,"","","Included: All full-time, part-time, and variable hour employees with the job title “Barista” including Lead Baristas, employed by Gimme! Coffee at its facilities in Ithaca and Trumansburg Excluded: Store managers, confidential employees, professional employees, and supervisors as defined in the National Labor Relations Act, and all other non-barista employees.",31,"A","Single Labor Organization","Initial","03/17/2021",31,NA,4,"",NA,"",NA,7,11,"",10,"Y","","Employees Included
 
 All full-time, part-time, and variable hour employees with the job title “Barista” including Lead 
@@ -330,9 +339,14 @@ The parties have further agreed that Kevin Keefer may vote in the election, but 
 "03-RD-304186","Region 03, Buffalo, New York","Hertz","Open","09/28/2022","","","Cheektowaga","NY",12,"","","Included: All full-time and regular part-time counter sales representatives stationed at Greater Buffalo Int'l Airport.
 
 Excluded:  All other employees, guards, professional employees and supervisors as defined in the Act.",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Teamsters Local 449"
-"03-RD-304972","Region 03, Buffalo, New York","Whitacre Rebar","Open","10/12/2022","","","Liverpool","NY",3,"","","cut and bend and load on trucks for shipment.",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Ironworkers Local 824"
+"03-RD-304972","Region 03, Buffalo, New York","Whitacre Engineering Co. dba Whitacre Rebar","Open","10/12/2022","","","Liverpool","NY",3,"","","cut and bend and load on trucks for shipment.",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Ironworkers Local 824"
 "03-UD-302296","Region 03, Buffalo, New York","Gray Media Group, Inc. d/b/a WWNY","Open","08/29/2022","","","Watertown","NY",13,"","","Technicians/Operators",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"NABET-CWA"
-"04-RC-162716","Region 04, Philadelphia, Pennsylvania","Temple University Hospital","Open","10/27/2015","","","Philadelphia","PA",15,"","Pennsylvania Association of Staff Nurses and Allied Professionals (PASNAP)","",12,"C","Single Labor Organization","Initial","01/28/2016",12,NA,11,"",NA,"",NA,1,12,"",NA,"","Pennsylvania Association of Staff Nurses and Allied Professionals (PASNAP)","All full-time and regular part-time professional medical interpreters employed by the Employer, excluding all other employees, transplant financial coordinators, physicians, nurses, pharmacists, office clerical employees, students, and employees on temporary visas, management level employees, supervisors, first level supervisors, confidential employees and guards as defined in the Act.
+"04-RC-162716","Region 04, Philadelphia, Pennsylvania","Temple University Hospital","Open","10/27/2015","","","Philadelphia","PA",15,"","Pennsylvania Association of Staff Nurses and Allied Professionals (PASNAP)","Included: All full time and regular
+part time certified medical interpreters and transplant financial coordinators
+
+Excluded:
+All other employees,
+supervisors and guards as defined by the Act",12,"C","Single Labor Organization","Initial","01/28/2016",12,NA,11,"",NA,"",NA,1,12,"",NA,"","Pennsylvania Association of Staff Nurses and Allied Professionals (PASNAP)","All full-time and regular part-time professional medical interpreters employed by the Employer, excluding all other employees, transplant financial coordinators, physicians, nurses, pharmacists, office clerical employees, students, and employees on temporary visas, management level employees, supervisors, first level supervisors, confidential employees and guards as defined in the Act.
 
 If a majority of valid ballots are cast by the professional medical interpreters and transplant financial coordinators for the Petitioner, they will be taken to have indicated these employees’ desire to be included in the existing unit covered by the collective-bargaining agreement between Petitioner and the Hospital.  If a majority of the valid ballots are not cast for representation, they will be taken to have indicated the professional medical interpreters and transplant financial coordinators desire to remain unrepresented, and I will issue a certification of results of election to that effect.","All full-time and regular part-time transplant financial coordinators employed by the Employer, excluding all other employees, professional medical interpreters physicians, nurses, pharmacists, office clerical employees, students, and employees on temporary visas, management level employees, supervisors, first level supervisors, confidential employees and guards as defined in the Act.","INCLUDED: All full-time and regular part-time professional medical interpreters and transplant financial coordinators employed by the Employer.
 
@@ -447,6 +461,10 @@ Excluded:  All other employees
 "04-RC-305171","Region 04, Philadelphia, Pennsylvania","Nevulis Beverages","Open","10/14/2022","","","Emmaus","PA",10,"","","Included:  part time and full time drivers
 
 Excluded:  building maintenance, custodians, guards, managers, supervisors and sales representatives as defined by the Act",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Teamsters Local 773"
+"04-RC-305330","Region 04, Philadelphia, Pennsylvania","Levy Restaurants at the Franklin Institute","Open","10/17/2022","","","Philadelphia","PA",16,"","","Included:  All full-time and part-time employees including, but not limited to, cooks, prep cooks, dishwashers and cashiers
+
+Excluded:  All managerial, supervisory and guards as defined by the Act
+",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"United Food and Commercial Workers Local 1776KS (Keystone State)"
 "04-RD-300930","Region 04, Philadelphia, Pennsylvania","Gold Bond Building Products, LLC","Open","08/08/2022","","","Burlington","NJ",50,"","","Included:  all production and maintenance employees at the company's Burlington, NJ plant.
 
 Excluded:  Office clerical employees, laboratory employees, inspectors, guards, watchmen, and all other supervisors as defined in the NLRA.  The laboratory technician position will return to the bargaining unit position once it is vacated (as of 8/1/12).",51,"A","Single Labor Organization","Initial","10/07/2022",51,1,14,"",NA,"",NA,28,42,"",NA,"","","Included: All full-time and regular part-time production and maintenance employees and laboratory technicians employed by the Employer at its facility located at 1818 River Road, Burlington, NJ.
@@ -558,7 +576,7 @@ Excluded: Supervisors, managerial employees and confidential employees as define
 "05-RC-305083","Region 05, Baltimore, Maryland","The Cogar Group","Open","10/12/2022","","","Glen Burnie","MD",7,"","","Included:  All armed and unarmed officers and Sergeants.
 
 Excluded:  Office personal, LT, Captain, Project manager.",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Governed United Security Professionals"
-"05-RC-305115","Region 05, Baltimore, Maryland","Moms Organic Market","Open","10/13/2022","","","Timonium","MD",65,"","","Included: All full-time and part-time MTM's (MOM's Team Members) 
+"05-RC-305115","Region 05, Baltimore, Maryland","MOM's Organic Market, Inc.","Open","10/13/2022","","","Timonium","MD",65,"","","Included: All full-time and part-time MTM's (MOM's Team Members) 
 
 Excluded:  All other classificatlons, office, clerical, management, temporary employees, confidential, guards, supervisors
 and professional employees as defi ned by the act.",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Teamsters Local 570 a/w International Brotherhood of Teamsters"
@@ -571,7 +589,7 @@ Excluded: Captain and other management.",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
 "05-UD-301225","Region 05, Baltimore, Maryland","North American Security, Inc.","Open","08/10/2022","","","College Park","MD",60,"","","Included: All Full-time and regular part-time security officers employed by the Employer at the Food and Drug Administration and United States Department of Agriculture buildings located in College Park Maryland and Riverdale Maryland. 
 
 Excluded: All other employees, professional employees, managerial employees and supervisors, as defined by the Act.",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Fraternity of American Protective Officers"
-"06-RC-281254","Region 06, Pittsburgh, Pennsylvania","Hudson Legal Group PC/HIPR Pacsoft Technologies, a Joint Employer","Open","08/12/2021","","","Pittsburgh","PA",180,"","United Electrical, Radio, and Machine Workers of America","Included: Hourly employees in the United States including: Legal Writing Specialists, 
+"06-RC-281254","Region 06, Pittsburgh, Pennsylvania","Hudson Legal Group PC/HIPR Pacsoft Technologies, a Joint Employer","Open","08/12/2021","","","Pittsburgh","PA",180,"","","Included: Hourly employees in the United States including: Legal Writing Specialists, 
 Senior Writing Specialists 
 Team Leads and Senior Editors 
 Team Lead Assistants and Senior Editors 
@@ -586,7 +604,7 @@ Legal Assistants
 Senior Paralegals 
 Paralegal Team Leads
  
-Excluded: Supervisors, Managerial Employees, Attorneys, Security Guards, and Confidential Employees as defined in the Act.",162,"A","Revised Single Labor Org","Initial","07/28/2022",154,1,83,"",NA,"",NA,1,84,"",31,"","","Unit A (Professional Unit)
+Excluded: Supervisors, Managerial Employees, Attorneys, Security Guards, and Confidential Employees as defined in the Act.",154,"A","Revised Single Labor Org","Initial","07/28/2022",154,1,83,"",NA,"",NA,1,84,"",31,"","","Unit A (Professional Unit)
 
 Included: All legal writing specialists, senior writing specialists, legal evidence specialists, I-140 team leads, team lead assistants/senior editors and floating team lead assistants, Legal Evidence (Package) team leads, legal evidence specialists, senior legal evidence specialists, Forms team leads, Forms paralegals/forms assistants (a/k/a case administration specialists), I-485 team leads, I-485 senior team leader, I-485 senior paralegal specialists (a/k/a senior case administration specialists), I-485 paralegals, revisions specialists, RFE writers and senior RFE writers and RFE team leads employed by the Employer at all its locations in the United States.
 
@@ -731,7 +749,10 @@ Act.
 
 Excluded:  Management",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Michigan AFSCME Council 25"
 "08-RC-284759","Region 08, Cleveland, Ohio","Kenyon College","Open","10/18/2021","","","Gambier","OH",600,"","","Included: All hourly paid student employees of Kenyon College Excluded: All managerial employees, guards, professional employees and supervisors as defined by the Act, and all other employees",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"United Electrical, Radio and Machine Workers of America (UE)"
-"08-RC-288488","Region 08, Cleveland, Ohio","Midwest Terminals of Toledo International, Inc.","Open","01/05/2022","","","Toledo","OH",NA,NA,NA,NA,NA,"A","Revised Single Labor Org","Initial","08/08/2022",44,NA,8,"",NA,"",NA,20,28,"",11,"","","Included: All full-time, regular part-time, on call (fn. 1) maintenance employees and dockworkers performing longshoring, stevedoring and warehousing duties employed by the Employer its Facility 1 location in Toledo, Ohio; excluding all other employees, office clerical employees, confidential employees, managers, guards, and supervisors as defined in the Act. 
+"08-RC-288488","Region 08, Cleveland, Ohio","Midwest Terminals of Toledo International, Inc.","Open","01/05/2022","","","Toledo","OH",25,"","","lncluded: All regular full-time and part-time longshoremen, checkers, port laborers, loader operators, front end loaders, warehousemen, crane 
+operators, power operators, tow motor operators, material handler operators, mechanics, maintenance employees, welders, signalmen, winchmen, linesmen, dispatchers, dock stewards, expeditors, hatch leaders, warehouse leaders and deck leaders
+Excluded: All other employees, including executive, managerial, supervisory and confidential employees and guards, as defined by the Act.
+",44,"A","Revised Single Labor Org","Initial","08/08/2022",44,NA,8,"",NA,"",NA,20,28,"",11,"","","Included: All full-time, regular part-time, on call (fn. 1) maintenance employees and dockworkers performing longshoring, stevedoring and warehousing duties employed by the Employer its Facility 1 location in Toledo, Ohio; excluding all other employees, office clerical employees, confidential employees, managers, guards, and supervisors as defined in the Act. 
 (fn. 1) Any employee who has worked an average of four (4) hours or more per week during the 13 weeks immediately preceding the eligibility date is eligible to vote in the election.  
 Excluded: All other employees, office clerical employees, confidential employees, managers, guards, and supervisors as defined in the Act.  
 OTHERS PERMITTED TO VOTE:  The parties agree that Samuel A. Dumas, Scott D. Fisher, Ryan Richardson, Jordan C. Salhoff and David H. Whetsel may vote in the election, but their ballots will be challenged since their eligibility has not been resolved.  No decision has been made regarding whether the individuals are included in, or excluded from, the bargaining unit.  The eligibility or inclusion of these individuals will be resolved, if necessary, following the election.  
@@ -740,7 +761,7 @@ OTHERS PERMITTED TO VOTE:  The parties agree that Samuel A. Dumas, Scott D. Fish
 operators, power operators, tow motor operators, material handler operators, mechanics, maintenance employees, welders, signalmen, winchmen, linesmen, dispatchers, dock stewards, expeditors, hatch leaders, warehouse leaders and deck leaders
 Excluded: All other employees, including executive, managerial, supervisory and confidential employees and guards, as defined by the Act.
 ",44,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"International Longshoremen's Association"
-"08-RC-289585","Region 08, Cleveland, Ohio","HHC Ohio, Inc. d/b/a Windsor Laurelwood Center for Behavioral Health","Open","01/27/2022","","","Willoughby","OH",75,"","","",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Ohio Nurses and Healthcare Employees Association, Ohio Nurses Association"
+"08-RC-289585","Region 08, Cleveland, Ohio","HHC Ohio, Inc. d/b/a Windsor Laurelwood Center for Behavioral Health","Open","01/27/2022","","","Willoughby","OH",75,"","","Included: All Registered Nurses who are not managers. All Licensed Practical Nurses who are not managers. Excluded: All managers. All employees not a registered nurse or licensed practical nurse",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Ohio Nurses and Healthcare Employees Association, Ohio Nurses Association"
 "08-RC-291604","Region 08, Cleveland, Ohio","Marietta Area Health Care","Open","03/03/2022","","","Marietta","OH",220,"","","Included: 
  All registered nurses employed at Memorial Health System in Marietta, Ohio.
 Excluded: all Non-Direct Patient Care Nurses (e.g. Clerical Nurses, Office Nurses, Safety Nurses, Education Nurses) Traveling Nurses, Contracted International Nurses, Shift Coordinators, Supervisors and Managerial Employees, Skilled Maintenance Employees, Technical Employees, Office Clerical Employees, Guards and all others specifically excluded by the National Labor Relations Act.
@@ -880,9 +901,8 @@ Excluded:All supervisors, management-level, confidential, contingent, seasonal a
 
 Professional: Therapist, and Therapist Team-Lead (Working Titles of: Therapist, Outpatient Therapist, School Based Therapist, Counselor, School Based Counselor, Child Therapist, Child Team Therapist, Child Outpatient Counselor, and Clinical Services Coordinator). 
 
-Nonprofessional: CPST Provider (Working Titles of: Case Manager, and School Based CPST Provider).",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Ohio Council 8, American Federation of State, County and Municipal Employees, AFL-CIO"
-"09-RC-303075","Region 09, Cincinnati, Ohio","PEOPLES GAS KENTUCKY, LLC, A SUBSIDIARY OF PNG COMPANIES, LLC","Open","09/09/2022","","","Pikeville","KY",6,"","","Included: Full and part-time service technicians and meter technicians.
-Excluded: Managerial employees, professional employees, guards and supervisors as defined in the Act and all other employees.",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Utility Workers Union of America, AFL-CIO"
+Nonprofessional: CPST Provider (Working Titles of: Case Manager, and School Based CPST Provider). 
+",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Ohio Council 8, American Federation of State, County and Municipal Employees, AFL-CIO"
 "09-RC-303303","Region 09, Cincinnati, Ohio","DHL EXPRESS","Open","09/13/2022","","","Erlanger","KY",900,"","","Included: All full-time and regular part-time employees at the Company's CVG Global Hub in the job positions of ramp agents and of tug operators working under the tug dispatch department. 
 
 Excluded: All drivers, sort employees, clerical workers, employees covered by the Railway Labor Act, guards and supervisors as defined by the Act, and all other employees.",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Teamsters Local Union No. 100"
@@ -892,13 +912,16 @@ Excluded:  Management and administrative personnel.",NA,NA,NA,NA,NA,NA,NA,NA,NA,
 "09-RC-303946","Region 09, Cincinnati, Ohio","SUNERGOS COFFEE","Open","09/23/2022","","","Louisville","KY",35,"","","Included: All hourly baristas and shift leads employed at 2122 S. Preston St; 306 West Woodlawn; 232 S. 5th St; 1647 Norris Place.  
 
 Excluded: All managers, bakery staff, wholesale distribution staff, office and clerical staff.",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"National Conference of Firemen & Oilers, 32BJ SEIU"
-"09-RC-304309","Region 09, Cincinnati, Ohio","TP MECHANICAL CONTRACTORS, LLC","Open","09/29/2022","","","Dayton","OH",4,NA,"","Included:  All full time and regular part time Sprinkler Fitters and Sprinkler Fitter Helpers employed by TP Mechanical
+"09-RC-304309","Region 09, Cincinnati, Ohio","TP MECHANICAL CONTRACTORS, LLC","Open","09/29/2022","","","Dayton","OH",4,"","","Included:  All full time and regular part time Sprinkler Fitters and Sprinkler Fitter Helpers employed by TP Mechanical
 at its Dayton, Ohio location.
 
 Excluded:  All other employees, clericals, professionals, guards, managers and supervisors as defined by the Act.",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Road Sprinkler Fitters Local 669"
 "09-RC-305269","Region 09, Cincinnati, Ohio","BROWN-FORMAN CORP. (WOODFORD RESERVE)","Open","10/14/2022","","","Versailles","KY",63,"","","Included:  All hourly employees to include:  bottling, distillery, processing/regauge/wh, logistics.
 
 Excluded:  All maintenance, clerical, adm and salaried employees as defined by the Act.",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"International Brotherhood of Teamsters (IBT), Local 651"
+"09-RC-305322","Region 09, Cincinnati, Ohio","VALIANT INTEGRATED SYSTEMS","Open","10/17/2022","","","Wright-Patterson AFB","OH",27,"","","Included:  All full-time and part-time hourly employees - HVAC techs, electricians, leads, adn.
+
+Excluded:  Professional, management and security guard.",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"International Association of Machinists and Aerospace Workers, AFL-CIO (IAM) District 34"
 "09-RD-200329","Region 09, Cincinnati, Ohio","LEGGETT & PLATT, INC.","Open","06/09/2017","","","Winchester","KY",50,"","","Included:  Production & Maintenance employees at the New St. and Ecton Rd., Winchester, KY facility including inspectors and shipping and receiving employees.
 
 Excluded:  Over the road drivers, office clerical emplooyees, quality auditors, inventory control employees, parts attendants, guards, professional employees, and supervisors.",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"International Association of Machinists and Aerospace Workers, AFL-CIO (IAM), Local 619"
@@ -982,6 +1005,12 @@ Excluded:  Salary employee and non-bargaining unit.",NA,NA,NA,NA,NA,NA,NA,NA,NA,
 "12-RC-286390","Region 12, Tampa, Florida","Universal Protection Service, LLC d/b/a Allied Universal Security Services","Open","11/16/2021","","","Florida City","FL",24,"","","INCLUDED: ALL full-time and part-time armed and unarmed Supervisor/Lieutenants performing guard duties as defined in Section 9(b)(3) of the National Labor Relations Act employed by G4S d/b/a Allied Universal @ 9060 SW 344 Street, Florida City, Florida, 33035.  
 
 EXCLUDED:  All Office Clerical Employees, Professional Employees and Supervisors as defined by the Act.",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"International Union, Security, Police & Fire Professionals of America (SPFPA)"
+"12-RC-290700","Region 12, Tampa, Florida","Starbucks Corporation","Open","02/16/2022","","","Tallahassee","FL",NA,NA,NA,NA,NA,"A","Single Labor Organization","Initial","05/25/2022",33,NA,4,"",NA,"",NA,3,7,"",1,"Y","","Included;  All full-time and regular part-time baristas and shift supervisors employed by the Employer at its Store 8804, located at 1703 W. Tennessee Street, Tallahassee, Florida.
+
+Excluded; Office clerical employees, guards, professional employees, and supervisors as defined in the Act.
+
+Others permitted to vote: Assistant Store Managers 
+","","","","Workers United, Southern Regional Joint Board"
 "12-RC-292669","Region 12, Tampa, Florida","Starbucks Corporation","Open","03/22/2022","","","Estero","FL",40,"","","Included: All full-time and regular part-time Baristas, Shift Supervisors, Asst. Store Managers. 
 
 Excluded: Store Managers, office clericals, guards, and supervisors as defined by the Act.",37,"A","Single Labor Organization","Initial","05/06/2022",37,NA,11,"",NA,"",NA,21,32,"",NA,"","","Included: All full-time and regular part-time Baristas and Shift Supervisors employed by Starbucks Corporation at 19533 Highland Oaks Dr., Estero, Florida (Store #52053).
@@ -1116,7 +1145,13 @@ Excluded: All guards, supervisors, managers, and clericals, as defined by the Ac
 "13-RC-300655","Region 13, Chicago, Illinois","Victory Gardens Theater","Open","08/03/2022","","","Chicago","IL",16,"","","Included:  All front of house staff, stagehands, and theater administrative staff. 
 
 Excluded: Professional employees and supervisors.",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Treasurers and icket Sellers Union, Local 750, IATSE"
-"13-RC-302711","Region 13, Chicago, Illinois","WCCC Homewood, LLC","Open","09/06/2022","","","Homewood","IL",38,"","","Included:All Full-time and regular Part-time dispensary Associates & AIC.
+"13-RC-302711","Region 13, Chicago, Illinois","WCCC Homewood, LLC","Open","09/06/2022","","","Homewood","IL",38,"","United Food and Commercial Workers Union Local 881","Included:All Full-time and regular Part-time dispensary Associates & AIC.
+
+Excluded: Managers, Guards, Professional employees & supervisors 
+",31,"A","Single Labor Organization","Initial","10/13/2022",31,NA,17,"",NA,"",NA,7,10,"",3,"","United Food and Commercial Workers Union Local 881","Included: All full-time and regular part-time dispensary associates employed by the Employer at the facility currently located at 1137 175th Street, Homewood, Illinois.
+
+Excluded: All other employees, managers, office clerical employees and guards, and professional employees and supervisors as defined by the Act.","","","","United Food and Commercial Workers Union Local 881"
+"13-RC-302711","Region 13, Chicago, Illinois","WCCC Homewood, LLC","Open","09/06/2022","","","Homewood","IL",38,NA,"","Included:All Full-time and regular Part-time dispensary Associates & AIC.
 
 Excluded: Managers, Guards, Professional employees & supervisors 
 ",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"United Food and Commercial Workers Union Local 881"
@@ -1169,9 +1204,9 @@ Front desk, night auditors
 Excluded:
 All other employees, including all managers, supervisors, and guards as defined in the Act.
 ",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"UNITE HERE Local 1"
-"13-RC-304185","Region 13, Chicago, Illinois","School of the Art Institute of Chicago","Open","09/28/2022","","","Chicago","IL",668,"","","Included: All full-time and part-time non-tenure-eligible faculty who teach at least 1 credit-bearing undergraduate or graduate course.
+"13-RC-304185","Region 13, Chicago, Illinois","The School of the Art Institute of Chicago","Open","09/28/2022","","","Chicago","IL",668,"","","Included: All full-time and part-time non-tenure-eligible faculty who teach at least 1 credit-bearing undergraduate or graduate course.
 Attached B: Excluded: All confidential and managerial employees, and supervisors and guards as defined by the Act.",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"AFSCME (American Federation of State, County, & Municipal Employees) Council 31, AFL-CIO"
-"13-RC-304195","Region 13, Chicago, Illinois","Windy City Cannabis","Open","09/28/2022","","","Chicago","IL",25,"","","Included: 
+"13-RC-304195","Region 13, Chicago, Illinois","WCCC Posen, LLC","Open","09/28/2022","","","Chicago","IL",25,"","","Included: 
 All Full-Time and regular Part-time dispensary Associates & AIC. 
 Excluded: 
 Managers, Guards. Proffesional employees & supervisors",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"United Food and Commercial Workers Union Local 881"
@@ -1215,7 +1250,7 @@ Excluded: Store managers, Office Clericals, Guards, Professional Employees, and 
 "14-RC-292753","Region 14, Saint Louis, Missouri","Starbucks Corporation","Open","03/22/2022","","","Kansas City","MO",37,NA,"Chicago & Midwest Regional Joint Board, Workers United/SEIU","Included:  All full-time and regular part-time Baristas and Shift Supervisors.  Excluded:  Store managers, Office Clericals, Guards, Professional employees, and Supervisors.",32,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Chicago & Midwest Regional Joint Board - Workers United/SEIU"
 "14-RC-293357","Region 14, Saint Louis, Missouri","Starbucks Corporation","Open","04/01/2022","","","Bridgeton","MO",46,"","Workers United","Included:  All full-time and regular part-time Baristas and Shift Supervisors.  Excluded:  Store managers, Office Clericals, Guards, Professional Employees, and Supervisors.",41,"A","Single Labor Organization","Initial","06/13/2022",41,NA,9,"",NA,"",NA,14,23,"",1,"","Workers United","All full-time and regular part-time hourly Baristas and Shift Supervisors by Starbucks Corporation at 12419 St. Charles Rock Road, Bridgeton, MO 63044 (Store #62677 - often referred to as St. Charles Rock Road & Natural Bridge), but EXCLUDING all Store Managers, office clerical employees, professional employees, guards, and supervisors as defined by the Act.","","","","Chicago and Midwest Regional Joint Board, Workers United/ SEIU"
 "14-RC-293357","Region 14, Saint Louis, Missouri","Starbucks Corporation","Open","04/01/2022","","","Bridgeton","MO",46,NA,"Workers United","Included:  All full-time and regular part-time Baristas and Shift Supervisors.  Excluded:  Store managers, Office Clericals, Guards, Professional Employees, and Supervisors.",41,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Chicago and Midwest Regional Joint Board, Workers United/ SEIU"
-"14-RC-295063","Region 14, Saint Louis, Missouri","Bloom Medicinals of Missouri-Dispensary 1, LLC","Open","05/03/2022","","","Saint Charles","MO",6,"","United Food and Commercial Workers Local 655","Included:  Budtender, Inventory.  Excluded:  General Manager, Operations Manager.",7,"A","Single Labor Organization","Initial","09/12/2022",7,NA,4,"",NA,"",NA,2,6,"",NA,"","United Food and Commercial Workers Local 655","All full-time and regular part-time dispensary agents employed by the Employer at its facility located at 6700 Hwy N, St. Charles, MO  63304, but EXCLUDING salaried managers and supervisors as defined in the Act, confidential, professional and office clerical employees, temporary employees and other contracted employees, and guards.","","","","United Food & Commercial Workers Local 655"
+"14-RC-295063","Region 14, Saint Louis, Missouri","Bloom Medicinals of Missouri-Dispensary 1, LLC","Open","05/03/2022","","","Saint Charles","MO",6,"","","Included:  Budtender, Inventory.  Excluded:  General Manager, Operations Manager.",7,"A","Single Labor Organization","Initial","09/12/2022",7,NA,4,"",NA,"",NA,2,6,"",NA,"","United Food and Commercial Workers Local 655","All full-time and regular part-time dispensary agents employed by the Employer at its facility located at 6700 Hwy N, St. Charles, MO  63304, but EXCLUDING salaried managers and supervisors as defined in the Act, confidential, professional and office clerical employees, temporary employees and other contracted employees, and guards.","","","","United Food & Commercial Workers Local 655"
 "14-RC-295063","Region 14, Saint Louis, Missouri","Bloom Medicinals of Missouri-Dispensary 1, LLC","Open","05/03/2022","","","Saint Charles","MO",6,NA,"","Included:  Budtender, Inventory.  Excluded:  General Manager, Operations Manager.",7,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"United Food & Commercial Workers Local 655"
 "14-RC-295709","Region 14, Saint Louis, Missouri","Starbucks Corporation","Open","05/11/2022","","","Wichita","KS",29,"","Central and Rock Partners Union","Included:  all full-time and regular part-time Baristas, Shift Supervisors, shift Managers, and Asst. Store Managers.  Excluded:  Store Managers, office clericals, guards, and supervisors as defined by the Act.",28,"A","Single Labor Organization","Initial","08/16/2022",28,3,9,"",NA,"",NA,6,15,"",NA,"","Central and Rock Partners Union","All full-time and regular part-time baristas and shift supervisors employed by the Employer at its Store 2675 located at 8008 East Central, Wichita, Kansas 67206, but EXCLUDING office clerical employees, store managers, professional employees, guards, and supervisors as defined in the Act.","","","","Central and Rock Partners Union"
 "14-RC-295709","Region 14, Saint Louis, Missouri","Starbucks Corporation","Open","05/11/2022","","","Wichita","KS",29,NA,"Central and Rock Partners Union","Included:  all full-time and regular part-time Baristas, Shift Supervisors, shift Managers, and Asst. Store Managers.  Excluded:  Store Managers, office clericals, guards, and supervisors as defined by the Act.",28,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Central and Rock Partners Union"
@@ -1246,7 +1281,7 @@ Excluded: All Temporary, Seasonal, Automations Technicians, Inventory Coordinato
 ",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Teamsters Local Union No. 688"
 "14-RC-301473","Region 14, Saint Louis, Missouri","Bloom Medicinals of MO-Dispensary 1, LLC","Open","08/16/2022","","","Springfield","MO",8,"","","All Regularly Scheduled Full Time and Part Time Hourly Agents but EXCLUDING Manager, Assistant Managers, Office Clerical Employees, Guards, Supervisor as defined by Act.",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"UFCW District Union Local Two"
 "14-RC-301477","Region 14, Saint Louis, Missouri","Summit On Site Solutions, LLC d/b/a Altus Biologics","Open","08/16/2022","","","Wentzville","MO",2,"","","Included: All Nurses Excluded: All other employees, managers, technicians, guards, and supervisors as defined in act",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Congress of Independent Unions"
-"14-RC-301607","Region 14, Saint Louis, Missouri","Ralls County Electric Cooperative","Open","08/17/2022","","","New London","MO",NA,NA,NA,NA,NA,"A","Single Labor Organization","Initial","10/13/2022",10,NA,8,"",NA,"",NA,2,10,"",1,"","International Brotherhood of Electrical Workers, Local No. 2","All full-time and regular part-time journeyman lineman foreman and journeyman lineman employed by the Employer at its facility located at 17594 Highway 19, New London, Missouri, excluding all office clerical employees, professional employees, guards and supervisors as defined by the Act.","","","","International Brotherhood of Electrical Workers, Local No. 2"
+"14-RC-301607","Region 14, Saint Louis, Missouri","Ralls County Electric Cooperative","Open","08/17/2022","","","New London","MO",11,"","International Brotherhood of Electrical Workers, Local No. 2","All full-time and regular part-time mechanics, lineman, journeyman lineman, foreman lineman, and foreman lineman/safety director employed by the Employer at the Employer's facility located at 17594 Highway 19, New London, MO; but EXCLUDING Office clerical, professional employees, supervisors, guards as defined by the Act.",10,"A","Single Labor Organization","Initial","10/13/2022",10,NA,8,"",NA,"",NA,2,10,"",1,"","International Brotherhood of Electrical Workers, Local No. 2","All full-time and regular part-time journeyman lineman foreman and journeyman lineman employed by the Employer at its facility located at 17594 Highway 19, New London, Missouri, excluding all office clerical employees, professional employees, guards and supervisors as defined by the Act.","","","","International Brotherhood of Electrical Workers, Local No. 2"
 "14-RC-301607","Region 14, Saint Louis, Missouri","Ralls County Electric Cooperative","Open","08/17/2022","","","New London","MO",11,NA,"","All full-time and regular part-time mechanics, lineman, journeyman lineman, foreman lineman, and foreman lineman/safety director employed by the Employer at the Employer's facility located at 17594 Highway 19, New London, MO; but EXCLUDING Office clerical, professional employees, supervisors, guards as defined by the Act.",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"International Brotherhood of Electrical Workers, Local No. 2"
 "14-RC-301656","Region 14, Saint Louis, Missouri","MERS Goodwill Industries","Open","08/17/2022","","","Affton","MO",19,"","","Included: Retail Associates;
 Excluded: Store Manager, Assistant Manager, and Leads",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"United Food and Commercial Workers Local 655"
@@ -1363,9 +1398,7 @@ EXCLUDED: All other employees, including office clerical employees, professional
 "16-RC-288492","Region 16, Fort Worth, Texas","MVM, INC.","Open","01/05/2022",NA,NA,"McAllen","TX",150,NA,"","INCLUDED:  All full-time and part-time armed and unarmed transportation officers performing guard duties as defined in Section 9(b)(3) of the National Labor Relations Act, Employed by MVM, Inc. at 220 S K Center Road, McAllen, TX 78501.
 
 EXCLUDED:  All office clerical employees, professional employees and supervisors as defined by the Act.",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"INTERNATIONAL UNION, SECURITY, POLICE AND FIRE PROFESSIONALS OF AMERICA (SPFPA)"
-"16-RC-294032","Region 16, Fort Worth, Texas","PACKERS SANITATION SERVICES, INC., LTD.","Open","04/13/2022","","","Fort Worth","TX",35,"","","Included: All full time and regular part time employees at the facility, sanitation, janitors, trainers and leads.
-
-Excluded: All other employees, office clerical, and supervisors as defined in the Act.",33,"A","Single Labor Organization","Initial","06/17/2022",33,NA,3,"",NA,"",NA,13,16,"",1,"","","INCLUDED: All regular full-time and part-time food safety sanitation employees, including Employee Retention Program Trainers (ERP Trainers), Food Safety Sanitors, and Leads working at the Cargill Meat Solutions facility located at 1301 Northpark Dr., Fort Worth, Texas.
+"16-RC-294032","Region 16, Fort Worth, Texas","PACKERS SANITATION SERVICES, INC., LTD.","Open","04/13/2022","","","Fort Worth","TX",35,"","","",33,"A","Single Labor Organization","Initial","06/17/2022",33,NA,3,"",NA,"",NA,13,16,"",1,"","","INCLUDED: All regular full-time and part-time food safety sanitation employees, including Employee Retention Program Trainers (ERP Trainers), Food Safety Sanitors, and Leads working at the Cargill Meat Solutions facility located at 1301 Northpark Dr., Fort Worth, Texas.
 
 EXCLUDED: All other employees, office clericals, confidential employees, managers, guards, and supervisors as defined in the Act.","","","","UNITED FOOD & COMMERCIAL WORKERS LOCAL 540"
 "16-RC-294032","Region 16, Fort Worth, Texas","PACKERS SANITATION SERVICES, INC., LTD.","Open","04/13/2022","","","Fort Worth","TX",35,NA,"","",33,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"UNITED FOOD & COMMERCIAL WORKERS LOCAL 540"
@@ -1465,7 +1498,7 @@ Excluded: Clerical, Guards, Supervisors, and others as defined by the Act.",7,"A
 
 Excluded: Clerical, Guards, Supervisors, and others as defined by the Act.",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"International Brotherhood of Electrical Workers Local Union 160"
 "18-RC-302916","Region 18, Minneapolis, Minnesota","Crushin It LLC","Open","09/08/2022","","","Madison","WI",9,"","","Included: Workers employed in the preparation and production of screen printed garments",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Painters District Council 7 and its Local 770"
-"18-RC-303543","Region 18, Minneapolis, Minnesota","Ziegler Inc.","Open","09/16/2022","","","Columbus","MN",5,"","","Included: Branch Warehouse classification Excluded: all other non-represented employees.",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"International Union of Operating Engineers, Local 49"
+"18-RC-303543","Region 18, Minneapolis, Minnesota","Ziegler Inc.","Open","09/16/2022","","","Columbus","MN",5,NA,"","Included: Branch Warehouse classification Excluded: all other non-represented employees.",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"International Union of Operating Engineers, Local 49"
 "18-RC-304165","Region 18, Minneapolis, Minnesota","Dyno Nobel Inc.","Open","09/27/2022","","","Ishpeming","MI",11,"","","Included: Operator, Lead Operator, Lead Plant Operator, Semi Driver, Blaster, and Mechanic.
 
 Excluded: All other employees including office, clerical, supervisors, and Guards as defined by the Act.",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"United Steel, Paper and Forestry, Rubber, Manufacturing, Energy, Allied Industrial and Service Workers International Union AFL-CIO, CLC"
@@ -1488,21 +1521,6 @@ Excluded:  Registered Nurses, Registered Physical Therapists, Supervisors and al
 Excluded:  Payroll Clerk, Bookkeeper, Supervisors and all other employees.",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"SEIU Healthcare Minnesota"
 "18-RD-302476","Region 18, Minneapolis, Minnesota","Mayo Clinic Health System - Austin","Open","08/31/2022","","","Austin","MN",125,"","","Included: EVS / Linen / Nursing Asst. HUC / Central Processing Tech Home Health Hospice Aides Emergency Dept. Tech / Grounds Person/Receiving Clerk Certified CPT / Carpenter, Painter
 Excluded: 2nd Class Engineer / 1st Class Engineer / Chief Engineer Nurses / Security / Supervisors",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"United Steel Workers International Union Local 11-00578"
-"18-RD-302484","Region 18, Minneapolis, Minnesota","Mayo Clinic Health System - Lake City","Open","08/31/2022","","","Lake City","MN",32,"","Minnesota Nurses Association","Included:  Hospital (Med/Surg), ER and Surgery Nurses.
-
-Excluded:  Clinic (all other staff), HUCs/NSTs, all other departments.",32,"C","Single Labor Organization","Initial","10/06/2022",32,NA,22,"",NA,"",NA,5,27,"",NA,"","Minnesota Nurses Association","Unit A:  Included: All Registered Nurses employed by the Employer at its facility located at 500 W. Grant St., Lake City, Minnesota. 
-
-Excluded: All other professionals, all non-professionals, Health Unit Coordinators, Nursing Unit Coordinators, managers, confidential employees, and guards and supervisors as defined by the Act, and all other employees. 
-","Unit B:  Included: All Licensed Practical Nurses employed by the Employer at its facility located at 500 W. Grant St., Lake City, Minnesota. 
-
-Excluded: All other non-professionals, all professionals, Health Unit Coordinators, Nursing Unit Coordinators, managers, confidential employees, and guards and supervisors as defined by the Act, and all other employees.
-","Unit C:  Included: All Registered Nurses and Licensed Practical Nurses employed by the Employer at its facility located at 500 W. Grant St., Lake City, Minnesota. 
-
-Excluded: All Health Unit Coordinators, Nursing Unit Coordinators, managers, confidential employees, and guards and supervisors as defined by the Act, and all other employees.
-","","Minnesota Nurses Association"
-"18-RD-302484","Region 18, Minneapolis, Minnesota","Mayo Clinic Health System - Lake City","Open","08/31/2022","","","Lake City","MN",32,NA,"","Included:  Hospital (Med/Surg), ER and Surgery Nurses.
-
-Excluded:  Clinic (all other staff), HUCs/NSTs, all other departments.",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Minnesota Nurses Association"
 "18-RD-303422","Region 18, Minneapolis, Minnesota","University of St Thomas","Open","09/14/2022","","","Saint Paul","MN",2,"","","Included: Electricians 
 Excluded: All other employees, managers, supervisors",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"International Brotherhood of Electrical Workers Local Union 110"
 "18-RD-303682","Region 18, Minneapolis, Minnesota","Goodwill Retail Services, Inc.","Open","09/19/2022","","","Sturtevant","WI",16,"","","Included:  Semi & Straight Truckdrivers in Retail Transportation Dept.
@@ -1682,7 +1700,7 @@ Store Managers, Asst. Store Managers, office clericals, guards, and supervisors 
 "19-RC-303987","Region 19, Seattle, Washington","Roth's Fresh Markets","Open","09/23/2022","","","Salem","OR",8,"","","Included: All full- and part-time Head Meat Cutter, Journeyperson and Apprentice Meat Cutter, Journeyperson and Apprentice Meat Wrapper, Journeyperson and Apprentice Service Counter/Butcher Block and Fresh Fish Department Clerks employed at the following stores: • 918 N 1st St, Silverton, OR 97381 • 702 Lancaster Dr NE, Salem, OR 97301 • 1595 SW Baker St, McMinnville, OR 97128 • 1401 Monmouth St, Independence, OR 97351 • 4555 Liberty Rd S, Salem, OR 97302 • 1130 Wallace Rd NW, Salem, OR 97304 • 1770 Shaff Rd, Stayton, OR 97383 • 4764 Portland Rd NE, Salem, OR 97305 • 3045 Commercial Street S, Salem, OR 97302
 and all full- and part-time Head Delicatessen, Journeyperson and Apprentice Delicatessen Clerks employed by the Employer at 3045 Commercial Street S, Salem, OR 97302. Excluded: All other employees, including supervisors, managers, and guards as defined by the Act.",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"United Food and Commercial Workers Local 555"
 "19-RC-304147","Region 19, Seattle, Washington","Jenny's of Oregon I, Inc. d/b/a Jenny's Dispensary","Open","09/27/2022","","","Bend","OR",7,"","","Included: All Budtenders and Leads. Excluded: All Managers and Supervisors as defined by the Act.",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"United Food and Commercial Workers Local 555"
-"19-RC-304188","Region 19, Seattle, Washington","Deep Roots Seattle, LLC","Open","09/28/2022","","","Seattle","WA",11,"","","Included: All full-time and part-time employees, employed at Deep Roots Seattle at 4517 University Way NE , Seattle WA 98105, Deep Roots Alderwood at 18920 28th Ave W Lynnwood WA 98036, and Deep Roots Bellevue at 209 Bellevue Way NE, Bellevue WA 98004 including the following job classifications: Co-leads, Counter staff, and Jewelry Gallery Specialists. Excluded: All tattoo artists and piercing artists, as well as managers, guards, and confidential employees as defined by the Act.",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"United Food and Commercial Workers Local 3000"
+"19-RC-304188","Region 19, Seattle, Washington","Inner Light, Inc. d/b/a Deep Roots Piercing & Fine Jewelry","Open","09/28/2022","","","Seattle","WA",11,"","","Included: All full-time and part-time employees, employed at Deep Roots Seattle at 4517 University Way NE , Seattle WA 98105, Deep Roots Alderwood at 18920 28th Ave W Lynnwood WA 98036, and Deep Roots Bellevue at 209 Bellevue Way NE, Bellevue WA 98004 including the following job classifications: Co-leads, Counter staff, and Jewelry Gallery Specialists. Excluded: All tattoo artists and piercing artists, as well as managers, guards, and confidential employees as defined by the Act.",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"United Food and Commercial Workers Local 3000"
 "19-RC-304344","Region 19, Seattle, Washington","Tri- Cities Community Health","Open","09/30/2022","","","Pasco","WA",15,"","","Included:
 
 All full-time, regular part-time, per-diem, registered nurses, and charge nurses employed at 3180 W Clearwater Ave, Suite A Kennewick, WA 99336, and 515 W Court St, Pasco, WA 99301, and 915 Goethals Dr. Richland WA 99352, and 829 Goethals Dr Richland, WA 99352, and 1801 E Sheppard St. Pasco WA 99301, and 830 W Vineyard Dr. Kennewick WA 99336, and 721 S. Auburn St. Kennewick WA, 99336.
@@ -1721,6 +1739,13 @@ Employer’s operations at the addresses listed in Exhibit A. Excluded: Office c
 "19-RC-305313","Region 19, Seattle, Washington","Starbucks Corporation","Open","10/14/2022","","","Puyallup","WA",25,"","","Included: All full-time and regular part-time Baristas and Shift Supervisors.  
 
 Excluded:  Store managers, Asst. Store Managers, office clericals, guards, and supervisors as defined by the Act.",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Workers United"
+"19-RC-305361","Region 19, Seattle, Washington","Waste Management of Washington Inc.","Open","10/17/2022","","","Bremerton","WA",30,"","","Included:  Recycle, Container Delivery, Cart Delivery Drivers, Cart washers.
+
+Excluded:  All other employees, supervisors, and guards, as prescribed by the Act.",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Teamsters Local 589"
+"19-RC-305402","Region 19, Seattle, Washington","Starbucks Corporation","Open","10/17/2022","","","Bellingham","WA",28,"","","Included:
+All full-time and regular part-time Baristas, Shift Supervisors.
+Excluded:
+Store Managers, Asst. Store Managers, office clericals, guards, and supervisors as defined by the Act.",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Workers United a/w SEIU"
 "19-RD-223516","Region 19, Seattle, Washington","CP Anchorage Hotel 2, LLC, d/b/a Hilton Anchorage","Open","07/11/2018","","","Anchorage","AK",153,"","","Included:  Unit involved: Banquet Bartender; Banquet Captain; Banquet Server; Banquet Houseman; Barista; Bellman; Bell Captain; Bruins Bartender; Bus Person; Cashier; Coat Check/Room Check Attendant; Cocktail Server; Concierge; Cook; Dishwasher/Steward; Doorman; Front Desk/PBX; Host/Hostess; Housekeeping Clerk; Housekeeper/Room Attendant; Houseman; Housekeeping inspector; Laundry-Presser/Chute; Laundry-Washer; Maintenance; Maintenance Supervisor; Night Auditor; Purchasing; Restaurant Server; Room Service.
 
 Exclude:  Security, Managers, Confidential employee; Clerical employee, Supervisor as defined in the Act.",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"UNITE HERE! LOCAL 878"
@@ -1828,7 +1853,7 @@ Excluded:  Managers, Guards",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
 
 Excluded: Supervisory and Managerial Employees
 ",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Digital and Multimedia Workers Union (DMWU)"
-"20-RC-304223","Region 20, San Francisco, California","CommonSpirit Methodist Hospital of Sacramento","Open","09/28/2022","","","Sacramento","CA",39,"","","All Acute and Outpatient Units-Physical Therapist, Occupational Health Therapist, and Speech Therapists.
+"20-RC-304223","Region 20, San Francisco, California","Dignity Community Care d/b/a Methodist Hospital of Sacramento","Open","09/28/2022","","","Sacramento","CA",39,"","","All Acute and Outpatient Units-Physical Therapist, Occupational Health Therapist, and Speech Therapists.
 Excluded:  All other classifications, including but not limited to guards, managers, confidential employees and supervisors as defined by the Act.",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Service Employees International Union, United Healthcare Workers-West"
 "20-RC-304824","Region 20, San Francisco, California","Glide Foundation","Open","10/06/2022","","","San Francisco","CA",102,"","","Included:  Wall-to-Wall unit including all full-time and regular part-time employees employed by Glide Foundation.
 
@@ -1988,7 +2013,7 @@ Excluded: (i) All employees employed by third parties; (ii) all clerical, confid
 Excluded:  All other employees, hourly supervisors, office clerical employees, professional employees, managerial employees, guards, and supervisors as defined in the Act.
 
 ","","","","Wholesale Delivery Drivers, General Truck Drivers, Chauffeurs, Sales, Industrial and Allied Workers, Teamsters Local 848, International Brotherhood of Teamsters"
-"21-UD-296547","Region 21, Los Angeles, California","Emerald Textiles, LLC","Open","05/25/2022","","","Commerce","CA",NA,NA,NA,NA,NA,"A","UD","Initial","06/23/2022",147,NA,87,"",NA,"",NA,22,109,"",6,"","Western States Regional Joint Board, Local 52, SEIU","Included:  All full-time and regular part-time production employees, including leads, employed by the Employer at its facility currently located at 4500 Dunham Street, Commerce, California.
+"21-UD-296547","Region 21, Los Angeles, California","Emerald Textiles, LLC","Open","05/25/2022","","","Commerce","CA",NA,NA,NA,NA,NA,"A","UD","Initial","06/23/2022",147,NA,87,"",NA,NA,NA,22,109,"",6,"","Western States Regional Joint Board, Local 52, SEIU","Included:  All full-time and regular part-time production employees, including leads, employed by the Employer at its facility currently located at 4500 Dunham Street, Commerce, California.
 
 Excluded:  Maintenance employees, drivers, office clerical employees, guards, and supervisors as defined in the Act.
 ","","","","Western States Regional Joint Board, Local 52, SEIU"
@@ -2092,7 +2117,7 @@ Excluded:  All store managers, assistant store managers, office clerical employe
 "25-RC-295115","Region 25, Indianapolis, Indiana","Starbucks Corporation","Open","05/03/2022","","","Peoria","IL",21,NA,"","Included: All full-time and regular part-time Baristas and Shift Supervisors
 
 Excluded: Store Managers, Office Clericals, Guards, Professional Employees, and Supervisors",8,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Chicago and Midwest Regional Joint Board, Workers United/SEIU"
-"25-RC-296418","Region 25, Indianapolis, Indiana","Oak Street Health MSO, LLC","Open","05/25/2022","","","Indianapolis","IN",24,"","","",25,"A","Revised Single Labor Org","Initial","08/19/2022",25,1,8,"",NA,"",NA,9,17,"",NA,"Y","SEIU Healthcare Illinois & Indiana","INCLUDED: All full-time and regular part-time medical assistants, clinical testing medical assistants, medical assistant/phlebotomists, community health workers, welcome coordinators, outreach executives I, outreach executives II, medical social workers, patient representatives/patient relations managers, clinical informatics specialists, and lead clinical informatics specialists employed by the Employer at its clinic located at 4200 S. East St., Indianapolis, Indiana 46227;  
+"25-RC-296418","Region 25, Indianapolis, Indiana","Oak Street Health MSO, LLC","Open","05/25/2022","","","Indianapolis","IN",24,"","SEIU Healthcare Illinois & Indiana","medical assitant/welcome cord/outreach exec./social workers/patient rep/clinincal spec.",25,"A","Revised Single Labor Org","Initial","08/19/2022",25,1,8,"",NA,"",NA,9,17,"",NA,"Y","SEIU Healthcare Illinois & Indiana","INCLUDED: All full-time and regular part-time medical assistants, clinical testing medical assistants, medical assistant/phlebotomists, community health workers, welcome coordinators, outreach executives I, outreach executives II, medical social workers, patient representatives/patient relations managers, clinical informatics specialists, and lead clinical informatics specialists employed by the Employer at its clinic located at 4200 S. East St., Indianapolis, Indiana 46227;  
 EXCLUDED: All office clerical employees, professional employees, temporary employees, managerial employees, guards and supervisors as defined in the Act, and all other employees.","","","","SEIU Healthcare Illinois & Indiana"
 "25-RC-296418","Region 25, Indianapolis, Indiana","Oak Street Health MSO, LLC","Open","05/25/2022","","","Indianapolis","IN",24,NA,"","",25,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"SEIU Healthcare Illinois & Indiana"
 "25-RC-297000","Region 25, Indianapolis, Indiana","SOLV Energy and Aerotek, Joint-Employers","Open","06/03/2022","","","Bass Lake","IN",25,"","","Included: All regular full- and part-time heavy equipment operators and mechanics.  Excluded:  All supervisors, guards, and clericals, as defined by the Act.",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"International Union of Operating Engineers Local 150, AFL-CIO"
@@ -2423,6 +2448,9 @@ Excluded: Lead Case Manager and Assistant Lead Case Managers",NA,NA,NA,NA,NA,NA,
 "28-RD-303851","Region 28, Phoenix, Arizona","Center for Biological Diversity, Inc.","Open","09/20/2022","","","Tucson","AZ",97,"","","INCLUDED:  Non-supervisory legal, science, campaign, policy, media, digital, fundraising, and IT staff.
 
 EXCLUDED:  Confidential, financial, people services, supervisory, and managerial staff.",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Communications Workers of America AFL-CIO"
+"28-RD-305350","Region 28, Phoenix, Arizona","Lockheed Martin Corporation","Open","09/26/2022","","","Luke Air Force Base","AZ",4,"","","INCLUDED:  F-16 SME (Field Engineer Senior Staff), Weapons Director (WD), SME (Field Engineer Senior)
+
+EXLCUDED:  Managers, supervisors, clerical workers, and all other employees including professional employees",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Intentional Association of Machinists and Aerospace Workers, AFL-CIO, Local Lodge 519"
 "28-RM-234875","Region 28, Phoenix, Arizona","American Medical Response of Maricopa, LLC dba AMR; Professional Medical Transport, Inc. dba PMT, Life Line, and AMR; and SW General Inc. dba Southwest Ambulance and AMR","Open","01/25/2019","","","Mesa","AZ",307,"","","Included: 3 units, full-time and regular part-time non-emergency EMTs, paramedics, and nurses
 
 Excluded: On-call employees, supervisors, all other employees",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"International Association of Fire Fighters Local Industrial 60 (IAFF I-60)"
@@ -2484,7 +2512,14 @@ Store managers, office clericals, guards, and supervisors as defined by the Act"
 Excluded: All office clerical, confidential employees, managerial employees, guards, and supervisors as defined by the Act. 
 ","","","","Enterprise Association of Steamfitters Local 638"
 "29-RC-292132","Region 29, Brooklyn, New York","Peak Fire Protection LLC and Peak Mechanical Solutions Inc., a Single Employer","Open","03/11/2022","","","Brooklyn","NY",9,NA,"","",64,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Enterprise Association of Steamfitters Local 638"
-"29-RC-292166","Region 29, Brooklyn, New York","Peak Fire Protection LLC and Peak Mechanical Solutions Inc., a Single Employer","Open","03/11/2022","","","Brooklyn","NY",NA,NA,NA,NA,NA,"A","Single Labor Organization","Initial","06/02/2022",64,2,16,"",NA,"",NA,27,43,"",5,"","","Included: All full-time and regular part-time sprinkler fitters, sprinkler-fitter helpers, steamfitters, pipefitters, welders, mechanics, and mechanical helpers employed by the Employer, working at various job sites.
+"29-RC-292166","Region 29, Brooklyn, New York","Peak Fire Protection LLC and Peak Mechanical Solutions Inc., a Single Employer","Open","03/11/2022","","","Brooklyn","NY",34,"","","Included:
+All full time and regular part-time Steamfitters, Pipefitters, Welders, and helpers performing mechanical work
+employed by Peak Mechanical Solutions, Inc.
+
+
+
+Excluded:
+All other employees, office clerical employees, guards, supervisors, and managers as defined by the Act.",64,"A","Single Labor Organization","Initial","06/02/2022",64,2,16,"",NA,"",NA,27,43,"",5,"","","Included: All full-time and regular part-time sprinkler fitters, sprinkler-fitter helpers, steamfitters, pipefitters, welders, mechanics, and mechanical helpers employed by the Employer, working at various job sites.
 
 Excluded: All office clerical, confidential employees, managerial employees, guards, and supervisors as defined by the Act. 
 ","","","","Enterprise Association of Steamfitters Local 638"
@@ -2568,7 +2603,7 @@ Excluded: All office clerical employees, managerial personnel, supervisors as de
 "31-RC-296066","Region 31, Los Angeles, California","Starbucks Corporation","Open","05/18/2022","","","Sylmar","CA",25,"","","Included: All full time and regular part time Baristas, Shift Supervisors, and Assistant Store Managers employed by the Employer at its facility currently located at 12980 Foothill Blvd., Sylmar, CA 91342.
 
 Excluded: All Store Managers, office clericals, guards and supervisors as defined by the Act",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Workers United"
-"31-RC-299354","Region 31, Los Angeles, California","Keck Medicine of USC, Ambulatory Care, Pasadena Clinic","Open","07/13/2022","","","Pasadena","CA",31,"","","Included: 
+"31-RC-299354","Region 31, Los Angeles, California","USC Care Medical Group, Inc., Keck Medicine of USC","Open","07/13/2022","","","Pasadena","CA",31,"","","Included: 
 All full-time, regular part-time and per diem Health Care Concierges, LVN/LPNs, Patient Access Representatives, Health Information Clerks, Medical Assistants (CMA), Technicians-Med Lab (MLT), Laboratory Assistants, and Scheduling Coordinators employed by the employer in the Keck Pasadena Clinic-Main, Pasadena Clinic-Main, and Pasadena Clinic-Lab Departments at 625 S Fair Oaks Ave, Suite 400, Pasadena, CA 91105 (Armour Globe into the Ambulatory Care Contract). 
 
 Excluded: 
@@ -2582,14 +2617,21 @@ Buena Park, CA 90620.
 Excluded: 1099 workers whose services are limited strictly to retail, and all other employees,
 office clerical employees, professional employees, managerial employees, guards and
 supervisors as defined in the Act.",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"California Retail and Restaurant Workers Union"
-"31-RC-301557","Region 31, Los Angeles, California","21st Century Valet Parking, LLC d/b/a Star Garden","Open","08/17/2022","","","North Hollywood","CA",30,"","","Included: All Strippers, Dancers and Entertainers 
+"31-RC-301557","Region 31, Los Angeles, California","21st Century Valet Parking, LLC d/b/a Star Garden","Open","08/17/2022","","","North Hollywood","CA",30,NA,"","Included: All Strippers, Dancers and Entertainers 
 
 Excluded: All Supervisors and Guards",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Actors' Equity Association (Equity or AEA)"
 "31-RC-302370","Region 31, Los Angeles, California","Consolidated Networks Corporation","Open","08/30/2022","","","Fort Irwin","CA",6,"","","Included: All full-time Junior System Administrators, System Administrators, Senior System
 Administrators, and MOUT System Administrators.
 
 Excluded: None",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"International Association of Machinists & Aerospace Workers, AFL-CIO, District Lodge 725"
-"31-RC-302627","Region 31, Los Angeles, California","Dignity Health d/b/a Marian Regional Medical Center","Open","09/01/2022","","","Santa Maria","CA",11,"","","Included:  Social Workers: Home Health, Palliative Care, and Hospice.
+"31-RC-302627","Region 31, Los Angeles, California","Dignity Health d/b/a Marian Regional Medical Center","Open","09/01/2022","","","Santa Maria","CA",11,"","Service Employees International Union, United Healthcare Workers-West","Included:  Social Workers: Home Health, Palliative Care, and Hospice.
+
+Excluded:  All other classifications, including but not limited to guards, managers, confidential employees and supervisors as defined by the Act.  
+",11,"A","Single Labor Organization","Initial","10/18/2022",11,1,10,"",NA,"",NA,NA,10,"",NA,"","Service Employees International Union, United Healthcare Workers-West","Included: All full-time, part-time, and per diem Social Worker BSW and Social Worker MSW in Medical Social Services, Social Worker LCSW in Home Health Based Palliative, and Social Worker MSW and Social Worker LCSW in Hospice Medical Social Services.
+
+Excluded: All other classifications, including but not limited to managers, confidential employees, guards and supervisors as defined
+by the Act.","","","","Service Employees International Union, United Healthcare Workers-West"
+"31-RC-302627","Region 31, Los Angeles, California","Dignity Health d/b/a Marian Regional Medical Center","Open","09/01/2022","","","Santa Maria","CA",11,NA,"","Included:  Social Workers: Home Health, Palliative Care, and Hospice.
 
 Excluded:  All other classifications, including but not limited to guards, managers, confidential employees and supervisors as defined by the Act.  
 ",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Service Employees International Union, United Healthcare Workers-West"
@@ -2609,6 +2651,9 @@ Excluded: All other employees",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,N
 "31-RD-304956","Region 31, Los Angeles, California","Hilton Santa Monica Hotel and Suites","Open","10/11/2022","","","Santa Monica","CA",100,"","","Included: Banquet Captain, Banquet Housemen, Banquet Server, Bell Captain, Bellperson, Front Desk Agent, PBX Operator, Laundry Attendant, Lobby Attendant  Room Attendant, HSKP Houseperson, HSKP inspectress, Maintenance Engineer I, Maintenance Engineer II, Maintenance Engineer Ill, Hotel Services Line Cook, Hotel Services Steward, F&B Steward  F&B Cook I (Lead), F&B Cook Il, Bartender  F&B Server, Busser, Room Service Server, Coffee Attendant 
 
 Excluded: None",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"UNITE HERE Local 11"
+"31-RD-305363","Region 31, Los Angeles, California","Smoke House Restaurant Inc.","Open","10/17/2022","","","Burbank","CA",96,"","","Included: Servers (waiters/waitresses), bussers, hosts, bartenders, cooks, and maintenance workers.
+
+Excluded: Managers and supervisors.",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Hotel Employees and Restaurant Employees International Union"
 "31-UD-303553","Region 31, Los Angeles, California","Burrtec Kern LLC","Open","09/16/2022","","","Bakersfield","CA",19,"","","Included: Drivers
 
 Excluded: All other employees",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Teamsters Local 87"
@@ -2675,11 +2720,11 @@ Excluded: Supervisors/Guards.",1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "32-RC-297592","Region 32, Oakland, California","Dependable Highway Express, Inc.","Open","06/14/2022","","","Fresno","CA",10,"","","Included:
 All full time and regular part time night drivers in the Fresno location.
 
-Excluded: All supervisors, guards, clerical employees, and day delivery time drivers.",10,"A","Single Labor Organization","Initial","08/18/2022",10,NA,5,"",NA,"",NA,5,10,"",NA,"","","All full time and regular part-time linehaul drivers operating out of the Employer’s location at 4668 E. Commerce Ave., Fresno, CA 93725; Excluding day delivery time drivers, confidential employees, office clerical employees, guards, and supervisors as defined by the Act.","","","","Teamsters Local 431"
+Excluded: All supervisors, guards, clerical employees, and day delivery time drivers.",10,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Teamsters Local 431"
 "32-RC-297592","Region 32, Oakland, California","Dependable Highway Express, Inc.","Open","06/14/2022","","","Fresno","CA",10,NA,"","Included:
 All full time and regular part time night drivers in the Fresno location.
 
-Excluded: All supervisors, guards, clerical employees, and day delivery time drivers.",10,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Teamsters Local 431"
+Excluded: All supervisors, guards, clerical employees, and day delivery time drivers.",10,"A","Single Labor Organization","Initial","08/18/2022",10,NA,5,"",NA,NA,NA,5,10,"",NA,"","","All full time and regular part-time linehaul drivers operating out of the Employer’s location at 4668 E. Commerce Ave., Fresno, CA 93725; Excluding day delivery time drivers, confidential employees, office clerical employees, guards, and supervisors as defined by the Act.","","","","Teamsters Local 431"
 "32-RC-300824","Region 32, Oakland, California","The Conservation Society of California d/b/a The Oakland Zoo","Open","08/04/2022","","","Oakland","CA",45,"","International Brotherhood of Teamsters Local 853","Included: All full time and regular part time Zookeepers
 Excluded: All other employees, guards, supervisors, and managers",55,"A","Single Labor Organization","Initial","09/30/2022",55,NA,46,"",NA,"",NA,4,50,"",2,"","International Brotherhood of Teamsters Local 853","All full-time and regular part-time animal zookeepers, including Apprentices, Keeper Aides, and Temporary Keepers, employed by the Employer at its operations located at 9777 Golf Links Road, Oakland, CA 94605, excluding all other employees, confidential employees, office clerical employees, guards, and supervisors as defined in the Act.
 
@@ -2691,7 +2736,12 @@ All full time and regular part time Automation Clerks
 
 Excluded:
 All other employees, guards and supervisors",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Teamsters Local Union 439"
-"32-RC-301356","Region 32, Oakland, California","Hyatt Corporation d/b/a Hyatt Regency Santa Clara","Open","08/15/2022","","","Santa Clara","CA",8,"","","Included:
+"32-RC-301356","Region 32, Oakland, California","Hyatt Corporation d/b/a Hyatt Regency Santa Clara","Open","08/15/2022","","","Santa Clara","CA",8,"","INTERNATIONAL UNION OF OPERATING ENGINEERS, LOCAL 39, AFL-CIO","Included:
+Chief Eng., ACE, Stationary Eng., Maintenance Eng., Handyperson, Utility Eng.
+
+Excluded:
+All other employees, Security Guards and Supervisors",8,"A","Single Labor Organization","Initial","10/18/2022",8,1,3,"",NA,"",NA,2,5,"",NA,"","INTERNATIONAL UNION OF OPERATING ENGINEERS, LOCAL 39, AFL-CIO","All full-time and regular part-time maintenance, shift, utility, and handyman engineering employees performing any engineering work employed by the Employer employed by the Employer at 5101 Great America Parkway, Santa Clara, CA 95054; excluding all other employees, bartenders, servers, front desk employees, housekeeping employees, laundry employees, office clerical employees, professional employees, managerial employees, guards, and supervisors as defined in the Act.","","","","INTERNATIONAL UNION OF OPERATING ENGINEERS, LOCAL 39"
+"32-RC-301356","Region 32, Oakland, California","Hyatt Corporation d/b/a Hyatt Regency Santa Clara","Open","08/15/2022","","","Santa Clara","CA",8,NA,"","Included:
 Chief Eng., ACE, Stationary Eng., Maintenance Eng., Handyperson, Utility Eng.
 
 Excluded:
@@ -2768,7 +2818,7 @@ All Care Coordination Navigators
 
 Excluded:
 All other classifications, including but not limited to guards, managers, and supervisors, as defined by the Act.",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Service Employees International Union, United Healthcare Workers-West"
-"32-RC-304734","Region 32, Oakland, California","Reyes Fleet Management","Open","10/05/2022","","","Stockton","CA",3,"","","Included: 
+"32-RC-304734","Region 32, Oakland, California","Reyes Fleet Management L.L.C.","Open","10/05/2022","","","Stockton","CA",3,"","","Included: 
 All MHE Mechanics/Technicians 
 
 Excluded: 
