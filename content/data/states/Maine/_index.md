@@ -8,7 +8,7 @@ weight: 1
 ---
 ##  Maine
 
-Excluding public employees and multi-union election, in the last 12 months there have been 11 union elections filed in Maine and 3 union elections held. In 1 of those elections a new unit was certified. There are currently 5 open representation cases and 5 of are still waiting to vote.
+Excluding public employees and multi-union election, in the last 12 months there have been 12 union elections filed in Maine and 3 union elections held. In 1 of those elections a new unit was certified. There are currently 6 open representation cases and 6 of are still waiting to vote.
 
 ### Union Elections by Outcome
 {{< nav images="Maine_hist_vic:By Number of Workers,Maine_hist_vic_union:By Number of Units" width="1000" height="800" tables="/tables/states/Maine_stats.html:Raw Data">}}
