@@ -16,5 +16,5 @@ In 2013 1,967 petitions for new units were filed, a 3.42% increase from the prev
 {{< readtable table="/tables/reports/2013/0union_filings.html" >}}
 
 ### Closed Elections by Union
-In 2013 1,934 petitions for new units were closed (this includes petitions where no election was ever held), with 42.50% closed with a certification order, creating 822 total new units. This was a 3.92% increase from the previous year in successful union certifications. Overall this represents approximately 36,928 workers, which is a -7.53% decrease from the previous year The median bargaining unit has 18 workers.
+In 2013 1,935 petitions for new units were closed (this includes petitions where no election was ever held), with 42.53% closed with a certification order, creating 823 total new units. This was a 4.05% increase from the previous year in successful union certifications. Overall this represents approximately 37,068 workers, which is a -7.18% decrease from the previous year The median bargaining unit has 18 workers.
 {{< readtable table="/tables/reports/2013/0union_closed.html" >}}
