@@ -25,9 +25,11 @@ dt_memb <- read_delim(grep("membership_data", files, value = T),
                      delim = "|", guess_max = 5000, trim_ws = T, quote = "")
 
 
+
 dict <- read.csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vTQj4UzxBycuPUVmIXM9RUnTWq0dwHICOk-phgwyfjqZAm8lsjl3D4JTLz73aa4dnOJ7gXmhehPGfu8/pub?gid=1590219215&single=true&output=csv",
                  encoding="UTF-8")
 clean_categories <- read_csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vTQj4UzxBycuPUVmIXM9RUnTWq0dwHICOk-phgwyfjqZAm8lsjl3D4JTLz73aa4dnOJ7gXmhehPGfu8/pub?gid=250121075&single=true&output=csv")
+
 
 dict$id <- as.numeric(gsub("-", "", dict$LM_ID))
 dt_memb$CATEGORY <-  tolower(dt_memb$CATEGORY)
@@ -36,6 +38,12 @@ clean_categories$F_NUM <- as.numeric(gsub("-", "", clean_categories$F_NUM))
 
 dt_memb <- dt_memb %>% left_join(dt_out[,c("RPT_ID","YR_COVERED", "F_NUM")])  %>% 
   left_join(clean_categories)
+
+all_unions <- dt_out %>% filter(F_NUM %in% dict$id) %>% pull(RPT_ID)
+
+dt_memb %>% filter(RPT_ID %in% all_unions & is.na(Real_Category) & YR_COVERED>2015) %>% 
+write_csv(here::here("gen", "data", "membership", "new_cats.csv"))
+
 
 out <- list()
 for(ii in 1:nrow(dict)){
@@ -89,7 +97,7 @@ for(ii in 1:length(unions)){
     scale_y_continuous("", labels=scales::label_comma()) + 
     scale_color_manual("", values = c("Total Members"="black")) + 
     scale_fill_brewer(type = "qual", palette=3) +
-    scale_x_continuous("Year", limits = c(2000, 2022)) + 
+    scale_x_continuous("Year", limits = c(2000, 2023)) + 
     theme(text = element_text(size=15, lineheight=.3)) +
     labs(caption = "Data from OLMS reports. Not all unions are required to report membership data. https://unionelections.org")
   

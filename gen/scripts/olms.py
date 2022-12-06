@@ -31,7 +31,7 @@ s = requests.Session()
 #passing the cookies generated from the browser to the session
 c = [s.cookies.set(c['name'], c['value']) for c in request_cookies_browser]
 
-for report in tqdm(reports):
+for report in tqdm(reports[0:5]):
     r = s.get('https://olmsapps.dol.gov' + report.attrs['href'])
     z = zipfile.ZipFile(io.BytesIO(r.content))
 
