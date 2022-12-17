@@ -85,8 +85,12 @@ sub_dt[variable=="Date_Filed", Reason_Closed:="Filed"]
 sub_dt[Reason_Closed=="Withdrawal Non-adjusted", Reason_Closed:="Withdrawn/Dismissed" ]
 sub_dt[Reason_Closed=="Dismissal Non-adjusted", Reason_Closed:="Withdrawn/Dismissed" ]
 sub_dt[Reason_Closed=="Certific. of Representative", Reason_Closed:="Voted to Unionize" ]
+sub_dt[Reason_Closed=="Certification of Results", Reason_Closed:="Voted Against" ]
+
 sub_dt[Margin>.5 & variable =="Tally_Date", Reason_Closed:="Voted to Unionize" ]
 sub_dt[Margin<=.5 & variable =="Tally_Date", Reason_Closed:="Voted Against" ]
+
+sub_dt[Reason_Closed=="", Reason_Closed:="Filed"]
 
 names(sub_dt)[2] <- "Status"
  
@@ -106,12 +110,16 @@ crs_hawaii <- "+proj=aea +lat_1=8 +lat_2=18 +lat_0=13 +lon_0=-157 +x_0=0 +y_0=0 
 crs_pr <- "+proj=lcc +lat_1=18.43333333333333 +lat_2=18.03333333333333 +lat_0=17.83333333333333 +lon_0=-66.43333333333334 +x_0=200000 +y_0=200000 +ellps=GRS80 +units=m +no_defs"
 
 site <- as_tibble(sub_dt) %>% group_by(Case) %>% 
+  arrange(value) %>% 
   group_modify(~ add_row(.x, value=as.Date(Sys.Date()))) %>% 
   # ungroup() %>%
   complete(value=full_seq(value, 1)) %>% 
-  arrange(Case) %>% 
+  #arrange(Case) %>% 
   fill(Status:variable) %>% 
   filter(!is.na(lat_jit))
+
+site %>% filter(State=="HI") %>% View()
+
 
 site <- st_as_sf(
   unique(site, by = c("Case", "Status")),
@@ -194,6 +202,7 @@ stats <- site %>% ungroup() %>%
 stats$geometry <- NULL
 
 
+
 site_map <- mutate(site_map, 
                    label=case_when(
                      Status == "Voted to Unionize" ~ "\uf6de", 
@@ -209,10 +218,10 @@ site_map <- site_map %>%
     Status == "Filed" ~ 2,
     Status == "Withdrawn/Dismissed" ~ 1
   )) %>% ungroup() %>% 
-  mutate(Status = ordered(Status, levels=rev(c("Voted to Unionize", 
+  mutate(Status = ordered(Status, levels=(c("Voted to Unionize", 
                                                "Filed", "Withdrawn/Dismissed", 
                                                "Voted Against"))), 
-         label= ordered(label, levels=rev(c("\uf6de", "\uf7b6", "\uf00d", "\uf05e") )))
+         label= ordered(label, levels=(c("\uf6de", "\uf7b6", "\uf00d", "\uf05e") )))
 
 
 sysfonts::font_add("font-awesome", regular = "~/Library/Fonts/Font Awesome 6 Free-Solid-900.otf")
@@ -234,19 +243,21 @@ mainland <- ggplot(data = x3) +
         alpha=Status)
     # aes(fill = size, shape=Election_Data)
   ) + 
-  scale_alpha_manual(values = c("Voted to Unionize"= 1, 
+  scale_alpha_manual(values = (c("Voted to Unionize"= 1, 
                                 "Filed"=.5, 
                                 "Withdrawn/Dismissed"=.5, 
-                                "Voted Against"=1)) + 
-  scale_color_manual(values = c("Voted to Unionize"= "black", 
+                                "Voted Against"=1))) + 
+  scale_color_manual(values =(c("Voted to Unionize"= "black", 
                                 "Filed"= "orangered3", 
                                 "Withdrawn/Dismissed"="yellow3", 
-                                "Voted Against"="blue"))  + 
+                                "Voted Against"="blue"))) + 
   guides(color = 
            guide_legend(override.aes = 
                           list(label = 
                                  c("\uf6de", "\uf7b6", "\uf00d", 
-                                   "\uf05e")) ), 
+                                   "\uf05e")
+                              #color=c("black", "oranegred3", "yellow3", "blue"))), 
+                          )),
          alpha="none") + 
   geom_text(x=2500000, y=200000, aes(label=paste(n)), 
             data=stats[stats$Status=="Voted to Unionize",]) +
@@ -279,5 +290,5 @@ p <- animate(mainland,
              units="in", res=150, 
              renderer=gifski_renderer())
 
-anim_save("~/Desktop/starbucks_filings.gif", animation=p)
+anim_save("starbucks_filings.gif", animation=p)
 
