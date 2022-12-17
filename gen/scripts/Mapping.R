@@ -245,8 +245,86 @@ ggsave(here("content", "data",  "national", "map.png"),
 
 #### Starbucks ####
 
+dt <- fread(here("gen", "data", "recent_election_results.csv"))
+st_dt <- dt[grepl("starbuck", `Case Name` , ignore.case = T)]
+st_dt <- prep_data(st_dt)
+
+st_dt <- st_dt[Unique==TRUE]
+
+
+
+# cols <- c(as.vector(which(apply(open_dt, 2,
+#                                 function(x)
+#                                   all(!is.na(x))))), 32:42)
+coded_dt <-
+  fread(here("gen", "data", "starbucks_with_location.csv"))
+tmp <- unique(coded_dt[, .(Case, Case_Name, lat, 
+                           long, formatted_address, 
+                           accuracy, accuracy_type, 
+                           source, address_components.city, 
+                           address_components.county, 
+                           address_components.state, 
+                           address_components.zip, 
+                           address_components.country,
+                           seached, 
+                           lat_jit, 
+                           long_jit)])
+full_dt <- merge(st_dt, tmp, all.x = T, by=c("Case", "Case_Name"))
+
+
+if (any(is.na(full_dt$seached))) {
+  to_code_dt <- full_dt[is.na(seached)]
+  done_dt <- full_dt[!is.na(seached)]
+  
+  to_code_dt <- tidygeocoder::geocode(
+    as.data.frame(to_code_dt[,1:Voters]),
+    city = "City",
+    state = "State",
+    full_results = T,
+    # return_type = "geographies",
+    method = "geocodio"
+  )
+  
+  try(to_code_dt$address_components.street <- NULL)
+  try(to_code_dt$address_components.formatted_street <- NULL)
+  try(to_code_dt$address_components.suffix <- NULL)
+  try(to_code_dt$address_components.predirectional <- NULL)
+  try(to_code_dt$address_components.postdirectional <- NULL)
+  
+  to_code_dt$seached <- 1
+  to_code_dt$lat_jit <- to_code_dt$lat + runif(nrow(to_code_dt), -.5, .5)
+  to_code_dt$long_jit <- to_code_dt$long + runif(nrow(to_code_dt), -.5, .5)
+  
+  
+  full_dt <- rbind(done_dt, to_code_dt)
+  write.csv(
+    full_dt,
+    file = here("gen", "data", "starbucks_with_location.csv"),
+    row.names = F
+  )
+}
+
+full_dt[,Election_Data :=ifelse(`Tally Date`=="", "No", "Yes") ]
+
+
+
+
+usa <- ne_states(returnclass = 'sf',
+                 country = c("united states of america", 
+                             "puerto rico"))
+
+full_dt <- full_dt[Case_Type == "RC"]
+full_dt[is.na(size), size:="Unknown"]
+
+full_dt[,Status := ifelse(Status=="Open", "Open",
+                           ifelse(Reason_Closed=="Certific. of Representative", "Unionized",
+                                  ifelse(Reason_Closed=="Certification of Results", "Voted Failed",
+                                         ifelse(Reason_Closed%in%c("Withdrawal Non-adjusted", "Withdrawl Adjusted"),
+                                                "Withdrawn", "Other"))))]
+
+
 site <- st_as_sf(
-  unique(st_dt[!is.na(lat)], by = "Case"),
+  unique(full_dt[!is.na(lat)], by = "Case"),
   coords = c("long_jit", "lat_jit"),
   crs = 4326,
   agr = "constant"
@@ -258,21 +336,15 @@ mainland <- ggplot(data = usa) +
   theme_void(base_family = "Crimson Pro")  +
   geom_sf(
     data = site,
-    # shape = 21,
-    color = "orangered3",
-    size = 4, alpha=.7,
-    # aes(fill = size, shape=Election_Data)
-  ) +
-  ggtitle("Open Starbucks Union Filings") + 
+    aes(shape = Status,
+    color = Status),
+    size = 2, alpha=.7 ) +
+  scale_color_viridis_d("Status",
+                      begin = .15,
+                      end=.85) +
+  ggtitle("Starbucks Union Filings") + 
   labs(caption = "Location is approximate based on cities. Each is jittered so overlapping cases are obvious.") +
-  # ggrepel::geom_text_repel(
-  #   data = site,
-  #   aes(label = Case, geometry = geometry),
-  #   stat = "sf_coordinates",
-  #   min.segment.length = 0,
-  #   size=2
-  #
-  # ) +
+
   # theme(legend.position = "bottom") +
   coord_sf(
     crs = st_crs(2163),
@@ -288,12 +360,13 @@ alaska <- ggplot(data = usa) +
   theme_void(base_family = "Crimson Pro")  +
   geom_sf(
     data = site,
-    # shape = 21,
-    color = "orangered3",
-    size = 4, alpha=.7,
-    # aes(fill = size, shape=Election_Data)
-  ) + 
-  guides(fill = F, shape=F) +
+    aes(shape = Status,
+    color = Status),
+    size = 2, alpha=.7 ) +
+  scale_color_viridis_d("Status",
+                      begin = .15,
+                      end=.85) +
+  guides(color = F, shape=F) +
   coord_sf(
     crs = st_crs(3467),
     xlim = c(-2400000, 1600000),
@@ -308,12 +381,13 @@ puerto <- ggplot(data = usa) +
   theme_void(base_family = "Crimson Pro")  +
   geom_sf(
     data = site,
-    # shape = 21,
-    color = "orangered3",
-    size = 4, alpha=.7,
-    # aes(fill = size, shape=Election_Data)
-  ) +
-  guides(fill = F, shape=F) +
+    aes(shape = Status,
+    color = Status),
+    size = 2, alpha=.7 ) +
+  scale_color_viridis_d("Status",
+                      begin = .15,
+                      end=.85) +
+  guides(color = F, shape=F) +
   coord_sf(
     crs = st_crs(3991),
     xlim = c(-50000, 1000000),
@@ -329,15 +403,13 @@ hawaii  <- ggplot(data = usa) +
   theme_void(base_family = "Crimson Pro")  +
   geom_sf(
     data = site,
-    # shape = 21,
-    color = "orangered3",
-    size = 4, alpha=.7,
-    # aes(fill = size, shape=Election_Data)
-  )  + 
-  # scale_fill_date(name = "Filing\nDate", 
-  #                 low = "#0072B2",
-  #                 high = "#D55E00") +
-  guides(fill = F, shape=F) +
+    aes(shape = Status,
+    color = Status),
+    size = 2, alpha=.7 ) +
+  scale_color_viridis_d("Status",
+                      begin = .15,
+                      end=.85) +
+  guides(color = F, shape=F) +
   coord_sf(
     crs = st_crs(4135),
     xlim = c(-161,-154),
