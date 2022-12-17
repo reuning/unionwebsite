@@ -13,7 +13,7 @@ weight: 4
 {{< readtable table="/tables/temp/starbucks_stats.html" >}}
 Note: It takes time after a vote for the election to be finalized so open cases can have votes counted already.
 
-### Map of open cases
+### Map of Elections 
 {{< image
     src="/data/starbucks/map.png"
     width="1000" height="600">}}
