@@ -16,5 +16,5 @@ In 2023 0 petitions for new units were filed, a -100.00% decrease from the previ
 {{< readtable table="/tables/reports/2023/0union_filings.html" >}}
 
 ### Closed Elections by Union
-In 2023 0 petitions for new units were closed (this includes petitions where no election was ever held), with NaN% closed with a certification order, creating 0 total new units. This was a -100.00% decrease from the previous year in successful union certifications. Overall this represents approximately 0 workers, which is a -100.00% decrease from the previous year The median bargaining unit has NA workers.
+In 2023 2 petitions for new units were closed (this includes petitions where no election was ever held), with 100.00% closed with a certification order, creating 2 total new units. This was a -99.82% decrease from the previous year in successful union certifications. Overall this represents approximately 79 workers, which is a -99.86% decrease from the previous year The median bargaining unit has 40 workers.
 {{< readtable table="/tables/reports/2023/0union_closed.html" >}}
