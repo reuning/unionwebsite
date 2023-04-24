@@ -8,7 +8,7 @@ weight: 1
 ---
 ##  AFT
 
-Excluding public employees and multi-union elections, in the last 12 months there have been 34 union elections filed by the AFT and 36 union elections held. In 21 of those elections a new unit was certified. There are currently 12 open representation cases and 5 of are still waiting to vote.
+Excluding public employees and multi-union elections, in the last 12 months there have been 35 union elections filed by the AFT and 36 union elections held. In 21 of those elections a new unit was certified. There are currently 13 open representation cases and 6 of are still waiting to vote.
 
 ### Union Elections by Outcome
 {{< nav images="AFT_hist_vic:By Number of Workers,AFT_hist_vic_union:By Number of Units" width="1000" height="800" tables="tables/union/AFT_stats.html:Raw Data">}}
