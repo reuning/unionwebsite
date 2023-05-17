@@ -8,7 +8,7 @@ weight: 1
 ---
 ##  Georgia
 
-Excluding public employees and multi-union election, in the last 12 months there have been 36 union elections filed in Georgia and 27 union elections held. In 18 of those elections a new unit was certified. There are currently 15 open representation cases and 12 of are still waiting to vote.
+Excluding public employees and multi-union election, in the last 12 months there have been 35 union elections filed in Georgia and 27 union elections held. In 18 of those elections a new unit was certified. There are currently 13 open representation cases and 10 of are still waiting to vote.
 
 ### Union Elections by Outcome
 {{< nav images="Georgia_hist_vic:By Number of Workers,Georgia_hist_vic_union:By Number of Units" width="1000" height="800" tables="/tables/states/Georgia_stats.html:Raw Data">}}
