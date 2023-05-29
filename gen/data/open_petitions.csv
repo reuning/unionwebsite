@@ -52,9 +52,9 @@ Excluded: All office clericals, mechanics, monitors, dispatchers, managers, and 
 "01-RC-305104","Region 01, Boston, Massachusetts","Brown University","Open","10/13/2022","","","Providence","RI",34,"","","Included: Masters of Fine Arts Graduate Students employed as actors and directors.
 Excluded: Supervisory faculty, Managers, Guards.",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"GRADUATE LABOR ORGANIZATION, RIFT-AFT LOCAL 6516"
 "01-RC-305438","Region 01, Boston, Massachusetts","Life Essence, Inc. d/b/a Trulieve","Open","10/18/2022","","","Framingham","MA",10,"","","Included: All full-time and regular part-time employees working at the Employer's
-retail cannabis dispensary in Framingham, Massachusetts. Excluded: Managers, supervisors, and guards",9,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"United Food & Commercial Workers Union, Local 1445"
-"01-RC-305438","Region 01, Boston, Massachusetts","Life Essence, Inc. d/b/a Trulieve","Open","10/18/2022","","","Framingham","MA",10,NA,"","Included: All full-time and regular part-time employees working at the Employer's
 retail cannabis dispensary in Framingham, Massachusetts. Excluded: Managers, supervisors, and guards",9,"A","Single Labor Organization","Initial","12/14/2022",9,NA,3,"",NA,"",NA,2,5,"",3,"Y","","All full-time and regular part-time Dispensary Associates, Shift Supervisors and Associate Inventory Managers employed by the Employer at its 85 Worcester Road, Framingham, Massachusetts facility; but excluding managers, office clerical employees and guards, professional employees and supervisors as defined in the Act.","","","","United Food & Commercial Workers Union, Local 1445"
+"01-RC-305438","Region 01, Boston, Massachusetts","Life Essence, Inc. d/b/a Trulieve","Open","10/18/2022","","","Framingham","MA",10,NA,"","Included: All full-time and regular part-time employees working at the Employer's
+retail cannabis dispensary in Framingham, Massachusetts. Excluded: Managers, supervisors, and guards",9,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"United Food & Commercial Workers Union, Local 1445"
 "01-RC-306528","Region 01, Boston, Massachusetts","Electric Boat Corporation","Open","11/03/2022","","","Groton","CT",22,"","","Included: Firefighters Excluded: non-firefighters / management",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Southeastern CT Fire Professionals Union"
 "01-RC-307281","Region 01, Boston, Massachusetts","Saint-Gobain Performance Plastics Corporation","Open","11/16/2022","","","Taunton","MA",80,"","","Included: All full-time employees including Assembly, Extruder Operators, Miller, QA Coordinators, Warehouse, Machine Operators, QA Techs, Shippers, Receivers, Custom Compounders, Utility Operators, Molding Machine Operators, Quality Control Inspectors, clerks, and Warehouse Leads at the following locations 700 Warner Blvd Taunton, MA 02780 and 250 Revolutionary Dr East Taunton MA 02718.
 Excluded: All other employees at the following locations 700 Warner Blvd Taunton, MA 02780 and 250 Revolutionary Dr East Taunton MA 02718 including Managers, Supervisors, Engineers, Inspectors, Administrative Assistants, Site Controllers, Supply Chain Analysts, and Guards as defined in the act.",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"International Brotherhood of Teamsters, Joint Council 10 New England, Teamsters Local Union No. 653"
@@ -1269,15 +1269,15 @@ Excluded:  Clerical, Supervisors and Guards as defined by the Act.",15,NA,NA,NA,
 Full and regular part-time heavy equipment and vac truck operators, techs and laborers.
 
 Excluded:
-Supervisors, guards and clericals as defined by the Act.",23,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"International Union of Operating Engineers, Local 150, AFL-CIO"
-"13-RC-281169","Region 13, Chicago, Illinois","Spike Enterprise, Inc.","Open","08/11/2021","","","Channahon (Township)","IL",17,NA,"","Included:
-Full and regular part-time heavy equipment and vac truck operators, techs and laborers.
-
-Excluded:
 Supervisors, guards and clericals as defined by the Act.",23,"A","Single Labor Organization","Initial","11/23/2021",23,NA,5,"",NA,"",NA,8,13,"",8,"Y","","Included:  All full-time and regular part-time operators, techs, and laborers employed by the Employer at the following locations: Citgo Petroleum located at 135th Street & New Avenue in Lemont, Illinois 60439; Exxon-Mobil, Arsenal Rd & I-55, Channahon, Illinois 60410; and Citgo Petroleum 12815 South Homan, Blue Island, Illinois 60406.
 
 Excluded:   All salaried managers, temporary employees, other contracted employees, office clerical employees, confidential employees, professional employees, guards, and supervisors as defined in the Act.
 ","","","","International Union of Operating Engineers, Local 150, AFL-CIO"
+"13-RC-281169","Region 13, Chicago, Illinois","Spike Enterprise, Inc.","Open","08/11/2021","","","Channahon (Township)","IL",17,NA,"","Included:
+Full and regular part-time heavy equipment and vac truck operators, techs and laborers.
+
+Excluded:
+Supervisors, guards and clericals as defined by the Act.",23,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"International Union of Operating Engineers, Local 150, AFL-CIO"
 "13-RC-296747","Region 12, Tampa, Florida","Starbucks Corporation","Open","05/31/2022","","","Chicago","IL",NA,NA,NA,NA,NA,"A","Single Labor Organization","Initial","08/19/2022",24,NA,12,"",NA,"",NA,2,14,"",NA,"","Chicago and Midwest Regional Joint Board, Workers United/Service Employees International Union","Included: All full-time and regular part-time hourly Baristas and Shift Supervisors employed by the Employer at its 6350 N. Broadway, Chicago Illinois facility. 
 
 Excluded: All Store Managers, Assistant Store Managers, office clerical employees and guards, professional employees and supervisors as defined in the Act.","","","","Chicago & Midwest Regional Joint Board, Workers United, an affiliate of SEIU"
@@ -1335,12 +1335,7 @@ Excluded:  All other employees, office clerical employees, professional employee
 "13-RC-313713","Region 13, Chicago, Illinois","Custom Plumbing","Open","03/09/2023","","","Crown Point","IN",3,"","","Included: All full time and regular part time plumbers employed by the Employer.
 
 Excluded: All other employees, clericals, professionals, guards, managers and supervisors as defined by the Act.",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Plumbers Local 210"
-"13-RC-313847","Region 13, Chicago, Illinois","Portillo's Hot Dogs, LLC","Open","03/10/2023","","","Addison","IL",39,"","International Association of Bridge, Structural, Ornamental and Reinforcing Iron Workers, AFL-CIO","Included: All full time and regular part time employees employed by the Employer as slicing 
-room workers, chilies/peppers workers, beef kitchen workers, gravy room workers, lavado/pot 
-cleaning workers, shipping/receiving workers, sanitation workers, maintenance workers, forklift 
-operators and temporary employees.
-Excluded: All other employees including, but not limited to, salaried employees, professional 
-employees, guards and supervisors as defined in the Act",48,"A","Single Labor Organization","Initial","04/13/2023",48,NA,28,"",NA,"",NA,20,48,"",NA,"","International Association of Bridge, Structural, Ornamental and Reinforcing Iron Workers, AFL-CIO","Included: All full-time and regular part-time Production Associates, Forklift Operators, HACCP Coordinators, FSQA Associate, Plant Mechanic, Crew Chiefs, and temporary employees in these classifications, employed by the Employer at its facility currently located at 380 S. Rohlwing Rd, Addison, Illinois.
+"13-RC-313847","Region 13, Chicago, Illinois","Portillo's Hot Dogs, LLC","Open","03/10/2023","","","Addison","IL",NA,NA,NA,NA,NA,"A","Single Labor Organization","Initial","04/13/2023",48,NA,28,"",NA,"",NA,20,48,"",NA,"","International Association of Bridge, Structural, Ornamental and Reinforcing Iron Workers, AFL-CIO","Included: All full-time and regular part-time Production Associates, Forklift Operators, HACCP Coordinators, FSQA Associate, Plant Mechanic, Crew Chiefs, and temporary employees in these classifications, employed by the Employer at its facility currently located at 380 S. Rohlwing Rd, Addison, Illinois.
  
 Excluded: All other employees, salaried employees, office clerical employees and guards, professional employees and supervisors as defined in the Act.
 ","","","","International Association of Bridge, Structural, Ornamental and Reinforcing Iron Workers, AFL-CIO"
@@ -1637,9 +1632,7 @@ Eligible to vote are those in the unit who were employed during the payroll peri
 EXCLUDED: Team Leads, temporary employees, seasonal employees, managerial employees, professional employees, confidential employees, guards and supervisors as defined in the Act. 
 ","","","","ALPHABET WORKERS UNION-COMMUNICATION WORKERS OF AMERICA, LOCAL 1400"
 "16-RC-305751","Region 16, Fort Worth, Texas","COGNIZANT TECHNOLOGY SOLUTIONS U.S. CORPORATION AND GOOGLE LLC, JOINT EMPLOYERS","Open","10/21/2022","","Certific. of Representative","Austin","TX",58,"","ALPHABET WORKERS UNION-COMMUNICATIONS WORKERS OF AMERICA, LOCAL 1400","Included: All non-supervisory, permanent employees based in the United States of YouTube Music Content Operations, including the following teams: OAC, Corpus Quality, Rights Management, Content Coverage, Classification, Alt Mon, Artist Enablement, Audio Library, and any other teams within music content operations.",49,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"ALPHABET WORKERS UNION-COMMUNICATION WORKERS OF AMERICA, LOCAL 1400"
-"16-RC-313779","Region 16, Fort Worth, Texas","XFL PROPERTIES LLC","Open","03/10/2023","","","Arlington","TX",50,"","","Included: All XFL football players employed by XFL who are either (1) assigned to an XFL Player Roster, (2) on the Suspended Player List, or (3) on the Injured Reserve Players List or Physically Unable to Perform List.
-
-Excluded: Coaches, team personnel, all other employees, office clerical employees, guards and supervisors as defined by the Act.",474,"A","Single Labor Organization","Initial","04/19/2023",474,NA,73,"",NA,"",NA,123,197,"",NA,"","","Included: All XFL football players employed by XFL who are either (1) assigned to an XFL Player Roster, (2) on the Suspended Players List, or (3) on the injured Reserve Players List or Physically Unable to Perform List.
+"16-RC-313779","Region 16, Fort Worth, Texas","XFL PROPERTIES LLC","Open","03/10/2023","","","Arlington","TX",NA,NA,NA,NA,NA,"A","Single Labor Organization","Initial","04/19/2023",474,NA,73,"",NA,"",NA,123,197,"",NA,"","","Included: All XFL football players employed by XFL who are either (1) assigned to an XFL Player Roster, (2) on the Suspended Players List, or (3) on the injured Reserve Players List or Physically Unable to Perform List.
 
 Excluded: Coaches, team personnel, all other employees, office clerical employees, guards and supervisors as defined by the Act.
 ","","","","UNITED STEEL, PAPER AND FORESTRY, RUBBER, MANUFACTURING, ENERGY, ALLIED AND INDUSTRIAL SERVICE WORKERS INTERNATIONAL UNION, AFL-CIO, CLC"
