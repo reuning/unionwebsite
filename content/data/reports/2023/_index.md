@@ -12,7 +12,7 @@ keywords: union filings
 This report details the number of filings and closed units in 2023. As a reminder, we are only showing filings and closures related to single union elections (rare multi-union elections are excluded).
 
 ### Filings by Union
-In 2023 1,034 petitions for new units were filed, a -51.55% decrease from the previous year The median size was 20 with a total of 67,173 workers across all units, a -49.39% decrease from the previous year
+In 2023 1,039 petitions for new units were filed, a -51.31% decrease from the previous year The median size was 21 with a total of 67,473 workers across all units, a -49.17% decrease from the previous year
 {{< readtable table="/tables/reports/2023/0union_filings.html" >}}
 
 ### Closed Elections by Union
