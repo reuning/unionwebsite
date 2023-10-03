@@ -12,9 +12,9 @@ keywords: union filings
 This report details the number of filings and closed units in 2023. As a reminder, we are only showing filings and closures related to single union elections (rare multi-union elections are excluded).
 
 ### Filings by Union
-In 2023 1,623 petitions for new units were filed, a -23.91% decrease from the previous year The median size was 20 with a total of 93,552 workers across all units, a -29.46% decrease from the previous year
+In 2023 1,643 petitions for new units were filed, a -22.97% decrease from the previous year The median size was 20 with a total of 94,392 workers across all units, a -28.83% decrease from the previous year
 {{< readtable table="/tables/reports/2023/0union_filings.html" >}}
 
 ### Closed Elections by Union
-In 2023 1,513 petitions for new units were closed (this includes petitions where no election was ever held), with 56.25% closed with a certification order, creating 851 total new units. This was a -23.54% decrease from the previous year in successful union certifications. Overall this represents approximately 67,062 workers, which is a 19.14% increase from the previous year The median bargaining unit has 20 workers.
+In 2023 1,516 petitions for new units were closed (this includes petitions where no election was ever held), with 56.27% closed with a certification order, creating 853 total new units. This was a -23.36% decrease from the previous year in successful union certifications. Overall this represents approximately 67,095 workers, which is a 19.20% increase from the previous year The median bargaining unit has 20 workers.
 {{< readtable table="/tables/reports/2023/0union_closed.html" >}}
