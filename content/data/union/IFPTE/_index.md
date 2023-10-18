@@ -8,7 +8,7 @@ weight: 1
 ---
 ##  IFPTE
 
-Excluding public employees and multi-union elections, in the last 12 months there have been 1 union elections filed by the IFPTE and 0 union elections held. In 0 of those elections a new unit was certified. There are currently 1 open representation cases and 1 of are still waiting to vote.
+Excluding public employees and multi-union elections, in the last 12 months there have been 1 union elections filed by the IFPTE and 1 union elections held. In 0 of those elections a new unit was certified. There are currently 1 open representation cases and 0 of are still waiting to vote.
 
 ### Union Elections by Outcome
 {{< nav images="IFPTE_hist_vic:By Number of Workers,IFPTE_hist_vic_union:By Number of Units" width="1000" height="800" tables="tables/union/IFPTE_stats.html:Raw Data">}}
