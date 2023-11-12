@@ -862,7 +862,7 @@ Road, Vienna, Virginia, 22182.
 
 Excluded:  Office clerical employees, professional employees, managers and supervisors as defined in the Act
 ",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"National Capital Union for Security Officers (NCUFSO)"
-"05-RC-322397","Region 05, Baltimore, Maryland","Washington College","Open","07/24/2023","","","Chestertown","MD",80,"","","Included: All tenure track and tenured professors at the rank of Professor, Associate Professor, and Assistant Professor, and Librarians employed by Washington College.
+"05-RC-322397","Region 05, Baltimore, Maryland","Washington College","Open","07/24/2023",NA,"","Chestertown","MD",80,NA,"","Included: All tenure track and tenured professors at the rank of Professor, Associate Professor, and Assistant Professor, and Librarians employed by Washington College.
 
 Excluded: All other employees, office clerical employees, managerial employees, guards, and supervisors as defined in the Act.",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Washington College Chapter of the American Association of University Professors"
 "05-RC-322551","Region 05, Baltimore, Maryland","Fredericksburg Glass and Mirror, Inc.","Open","07/26/2023","","","Fredericksburg","VA",13,"","","Included: All full-time and regular part-time Field Glazers, Foremen, Field Caulkers
@@ -1761,9 +1761,7 @@ Excluded: All other employees, employees employed with an agency, temporary empl
 ","","","","Laborers International Union of North America, Local 681"
 "13-RC-326382","Region 13, Chicago, Illinois","Sterigenics U.S., LLC","Open","09/22/2023",NA,"","Gurnee","IL",36,NA,"","Included: All full-time and part-time production, maintenance, and shipping and receiving employees.
 Excluded: All other employees, including office clericals, administrative employees, professional employees, confidential employees, drivers, guards, managers and supervisors as defined in the National Labor Relations Act.",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Laborers International Union of North America, Local 681"
-"13-RC-326971","Region 13, Chicago, Illinois","LTS Managed Technical Services, LLC","Open","09/29/2023","","","Elmhurst","IL",30,"","International Union of Operating Engineers, Local 150, AFL-CIO","Included:  Foremen, locators, operators, laborers, linesmen, splicers, and drivers.
-
-Excluded: Guards, clericals, supervisors, and managers as defined by the Act.",32,"A","Single Labor Organization","Initial","11/03/2023",32,NA,16,"",NA,"",NA,15,31,"",NA,"","International Union of Operating Engineers, Local 150, AFL-CIO","Included: All full-time foremen, locators, operators, laborers, linesmen, and splicers employed by the Employer at its facility currently located at 723 North Oaklawn Avenue, Elmhurst, IL 60126.
+"13-RC-326971","Region 13, Chicago, Illinois","LTS Managed Technical Services, LLC","Open","09/29/2023","","","Elmhurst","IL",NA,NA,NA,NA,NA,"A","Single Labor Organization","Initial","11/03/2023",32,NA,16,"",NA,"",NA,15,31,"",NA,"","International Union of Operating Engineers, Local 150, AFL-CIO","Included: All full-time foremen, locators, operators, laborers, linesmen, and splicers employed by the Employer at its facility currently located at 723 North Oaklawn Avenue, Elmhurst, IL 60126.
 
 Excluded: All office clerical employees, confidential employees, professional employees, managerial employees, guards and supervisors as defined by the Act.","","","","International Union of Operating Engineers, Local 150, AFL-CIO"
 "13-RC-326971","Region 13, Chicago, Illinois","LTS Managed Technical Services, LLC","Open","09/29/2023",NA,"","Elmhurst","IL",30,NA,"","Included:  Foremen, locators, operators, laborers, linesmen, splicers, and drivers.
@@ -1909,7 +1907,7 @@ Excluded: All other employees, office clerical employees, professional employees
 "14-RC-327457","Region 14, Saint Louis, Missouri","Born Electric, Inc.","Open","10/10/2023","","","Imperial","MO",9,"","","Included: All full-time and regular part-time journeyman and apprentice electricians employed by the Employer from its facility in Imperial, Missouri.
 Excluded: Office clerical employees, dispatchers, warehousemen/fabricators, drivers, and guards and supervisors defined by the Act, and all other employees.",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Local No. 1, International Brotherhood of Electrical Workers, AFL-CIO"
 "14-RC-327524","Region 14, Saint Louis, Missouri","Half Price Books, Records, Magazines, Incorporated","Open","10/10/2023","","","Kansas City","MO",13,"","","Included: All regular full-time and part-time hourly employees, booksellers, and shift leaders. Excluded: Managers as defined by the NLRA.",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"United Food and Commercial Workers Union Local 2"
-"14-RC-327574","Region 14, Saint Louis, Missouri","Motors and Armatures","Open","10/10/2023","","","Earth City","MO",45,"","","Included: Warehouseman, forktruck drivers, machine operators, receivers, balers, leads, sanitation;
+"14-RC-327574","Region 14, Saint Louis, Missouri","Motors and Armatures","Open","10/10/2023",NA,"","Earth City","MO",45,NA,"","Included: Warehouseman, forktruck drivers, machine operators, receivers, balers, leads, sanitation;
 Excluded: All temporary workers and supervisors defined in the act.
 ",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Teamsters Local Union No. 688"
 "14-RC-328117","Region 14, Saint Louis, Missouri","Oklahoma Policy Institute, Inc.","Open","10/18/2023","","","Tulsa","OK",19,"","","Included: all fulltime and parttime employees employed by the company;
@@ -2575,9 +2573,7 @@ Excluded: All other employees, confidential employees, employees represented by 
 "20-RC-325558","Region 20, San Francisco, California","LightHouse for the Blind and Visually Impaired","Open","09/11/2023","","","San Francisco","CA",90,"","","Included: Wall-to-wall all full time and regular part-time employees.
 Excluded: Supervisory, Managerial employees, Seasonal employees, temporary employees, confidential employees, and guards as defined in the National Labor Relations Act.
 ",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Office and Professional Employees International Union Local 29"
-"20-RC-326084","Region 20, San Francisco, California","Snap Studios LLC, by KQED Inc.","Open","09/18/2023","","","San Francisco","CA",13,"","National Association of Broadcast Employees and Technicians-CWA","Included: All full-time, part-time Producers (including Producers, Producers II, Senior Producers, Audio Producers, Senior Audio Producers); Audio Engineers, Graphic/Video Editors in Story Production Dept., Spooked Dept., Operations Dept., Audio Production Dept. of Snap Studios, LLC, by KQED Inc. 
-Excluded:  Managers, Supervisors as defined by the Act. 
-",13,"A","Single Labor Organization","Initial","10/26/2023",13,NA,10,"",NA,"",NA,1,11,"",1,"","National Association of Broadcast Employees and Technicians-CWA","","","","","National Association of Broadcast Employees and Technicians - CWA"
+"20-RC-326084","Region 20, San Francisco, California","Snap Studios LLC, by KQED Inc.","Open","09/18/2023","","","San Francisco","CA",NA,NA,NA,NA,NA,"A","Single Labor Organization","Initial","10/26/2023",13,NA,10,"",NA,"",NA,1,11,"",1,"","National Association of Broadcast Employees and Technicians-CWA","","","","","National Association of Broadcast Employees and Technicians - CWA"
 "20-RC-326084","Region 20, San Francisco, California","Snap Studios LLC, by KQED Inc.","Open","09/18/2023",NA,"","San Francisco","CA",13,NA,"","Included: All full-time, part-time Producers (including Producers, Producers II, Senior Producers, Audio Producers, Senior Audio Producers); Audio Engineers, Graphic/Video Editors in Story Production Dept., Spooked Dept., Operations Dept., Audio Production Dept. of Snap Studios, LLC, by KQED Inc. 
 Excluded:  Managers, Supervisors as defined by the Act. 
 ",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"National Association of Broadcast Employees and Technicians - CWA"
@@ -2952,6 +2948,15 @@ EXCLUDED:  Excluding supervisors and guards as defined in the Act.",NA,NA,NA,NA,
 EXCLUDED:  Excluding supervisors and guards as defined in the Act.
 ",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"SEIU Local 32BJ"
 "22-RC-327064","Region 22, Newark, New Jersey","PRINCETON UNIVERSITY/PRINCETON PLASMA PHYSICS LABORATORY","Open","10/02/2023","","","Princeton","NJ",17,"","","INCLUDED:  Emergency Services Officers, Lieutenants, and Site Protection Training Coordinator 
+
+EXCLUDED:  All other employees, subcontractors and supervisors",NA,"A","Two Labor Organizations","Initial","11/10/2023",17,NA,11,"INTERNATIONAL ASSOCIATION OF FIREFIGHTERS, LOCAL I-74",NA,"",NA,NA,11,"",NA,"","NEW JERSEY STATE FIREFIGHTERS MUTUAL BENEVOLENT ASSOCIATION","
+INCLUDED:	All full-time and regular part-time Emergency Services Officers and Lieutenants employed by the Employer in the Princeton University Plasma Physics Laboratory at its 100 Stellarator Road, Princeton, New Jersey facility.
+
+EXCLUDED:	All other employees including all office clerical employees, guards, professional employees and supervisors as defined in the Act.        
+
+
+","","","","New Jersey State Firefighters Mutual Benevolent Association"
+"22-RC-327064","Region 22, Newark, New Jersey","PRINCETON UNIVERSITY/PRINCETON PLASMA PHYSICS LABORATORY","Open","10/02/2023",NA,"","Princeton","NJ",17,NA,"","INCLUDED:  Emergency Services Officers, Lieutenants, and Site Protection Training Coordinator 
 
 EXCLUDED:  All other employees, subcontractors and supervisors",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"New Jersey State Firefighters Mutual Benevolent Association"
 "22-RC-327733","Region 22, Newark, New Jersey","GEORGE S. COYNE CHEMICAL CO., INC.","Open","10/12/2023","","","Paterson","NJ",3,"","","INCLUDED:  All employees that handle, warehouse and transport chemicals.
@@ -3949,7 +3954,12 @@ Excluded: All other employees",73,"A","Single Labor Organization","Initial","05/
 "32-RC-315940","Region 32, Oakland, California","G & J Heavy Haul, Inc.","Open","04/12/2023",NA,NA,"Tulare","CA",70,NA,"","Included: All truck drivers
 
 Excluded: All other employees",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Teamsters Local 948"
-"32-RC-318944","Region 32, Oakland, California","Foster Farms LLC","Open","05/30/2023","","","Fresno","CA",NA,NA,NA,NA,NA,"A","Single Labor Organization","Initial","06/27/2023",38,1,24,"",NA,"",NA,8,32,"",3,"","United Food and Commercial Workers 8 - Golden State","All full-time and regular part-time Set-Up AG employees, Chem Sprayer AG employees, Lead persons AG and Tractor Drivers AG employed by the Employer at its facility located at 5489 E Lamona Avenue, Fresno, CA 93727 excluding confidential employees, office clerical employees, guards, and supervisors as defined by the Act.
+"32-RC-318944","Region 32, Oakland, California","Foster Farms LLC","Open","05/30/2023","","","Fresno","CA",35,"","United Food and Commercial Workers 8 - Golden State","Included: 
+
+Full/Part-Time workers and leads that are part of the set-up/clean-up ranch crew.
+
+Excluded:
+Supervisors.",38,"A","Single Labor Organization","Initial","06/27/2023",38,1,24,"",NA,"",NA,8,32,"",3,"","United Food and Commercial Workers 8 - Golden State","All full-time and regular part-time Set-Up AG employees, Chem Sprayer AG employees, Lead persons AG and Tractor Drivers AG employed by the Employer at its facility located at 5489 E Lamona Avenue, Fresno, CA 93727 excluding confidential employees, office clerical employees, guards, and supervisors as defined by the Act.
 
 Others permitted to vote: The parties have agreed that mechanics and deadhaul drivers may vote in the election but their ballots will be challenged since their eligibility has not been resolved.  No decision has been made regarding whether the individuals in these classifications or groups are included in, or excluded from, the bargaining unit.  The eligibility or inclusion of these individuals will be resolved, if necessary, following the election.","","","","United Food and Commercial Workers 8 - Golden State"
 "32-RC-318944","Region 32, Oakland, California","Foster Farms LLC","Open","05/30/2023",NA,NA,"Fresno","CA",35,NA,"","Included: 
