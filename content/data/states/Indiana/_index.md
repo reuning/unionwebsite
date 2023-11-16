@@ -8,7 +8,7 @@ weight: 1
 ---
 ##  Indiana
 
-Excluding public employees and multi-union election, in the last 12 months there have been 39 union elections filed in Indiana and 33 union elections held. In 19 of those elections a new unit was certified. There are currently 7 open representation cases and 0 of are still waiting to vote.
+Excluding public employees and multi-union election, in the last 12 months there have been 40 union elections filed in Indiana and 32 union elections held. In 19 of those elections a new unit was certified. There are currently 7 open representation cases and 1 of are still waiting to vote.
 
 ### Union Elections by Outcome
 {{< nav images="Indiana_hist_vic:By Number of Workers,Indiana_hist_vic_union:By Number of Units" width="1000" height="800" tables="/tables/states/Indiana_stats.html:Raw Data">}}
