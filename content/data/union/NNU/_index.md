@@ -8,7 +8,7 @@ weight: 1
 ---
 ##  NNU
 
-Excluding public employees and multi-union elections, in the last 12 months there have been 11 union elections filed by the NNU and 8 union elections held. In 6 of those elections a new unit was certified. There are currently 5 open representation cases and 4 of are still waiting to vote.
+Excluding public employees and multi-union elections, in the last 12 months there have been 12 union elections filed by the NNU and 9 union elections held. In 7 of those elections a new unit was certified. There are currently 5 open representation cases and 4 of are still waiting to vote.
 
 ### Union Elections by Outcome
 {{< nav images="NNU_hist_vic:By Number of Workers,NNU_hist_vic_union:By Number of Units" width="1000" height="800" tables="tables/union/NNU_stats.html:Raw Data">}}
