@@ -8,7 +8,7 @@ weight: 1
 ---
 ##  Missouri
 
-Excluding public employees and multi-union election, in the last 12 months there have been 39 union elections filed in Missouri and 33 union elections held. In 20 of those elections a new unit was certified. There are currently 12 open representation cases and 7 of are still waiting to vote.
+Excluding public employees and multi-union election, in the last 12 months there have been 39 union elections filed in Missouri and 31 union elections held. In 20 of those elections a new unit was certified. There are currently 11 open representation cases and 7 of are still waiting to vote.
 
 ### Union Elections by Outcome
 {{< nav images="Missouri_hist_vic:By Number of Workers,Missouri_hist_vic_union:By Number of Units" width="1000" height="800" tables="/tables/states/Missouri_stats.html:Raw Data">}}
