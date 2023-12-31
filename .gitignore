@@ -20,3 +20,5 @@ node_modules
 .netlify
 starbucks_filings.gif
 tmp.txt
+
+/.quarto/

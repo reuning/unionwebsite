@@ -1,0 +1,17 @@
+project:
+  type: website
+  render: 
+    - index.qmd
+
+website:
+  title: "Union Elections"
+  open-graph: true
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+
+format:
+  html:
+    theme: cosmo
+    toc: true
