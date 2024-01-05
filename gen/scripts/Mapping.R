@@ -1,10 +1,10 @@
 library(tidygeocoder)
 library(here)
 library(sf)
-library(rnaturalearth)
-library(rnaturalearthdata)
-library(rnaturalearthhires)
-library(rgeos)
+#library(rnaturalearth)
+#library(rnaturalearthdata)
+#library(rnaturalearthhires)
+#library(rgeos)
 
 source(here("gen", "scripts", "Scripts.R"))
 

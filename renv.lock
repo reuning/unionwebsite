@@ -830,6 +830,9 @@
     "renv": {
       "Package": "renv",
       "Version": "1.0.3",
+      "OS_type": null,
+      "NeedsCompilation": "no",
+      "Repository": "CRAN",
       "Source": "Repository"
     },
     "rex": {
@@ -840,16 +843,6 @@
       "Hash": "ae34cd56890607370665bee5bd17812f",
       "Requirements": [
         "lazyeval"
-      ]
-    },
-    "rgeos": {
-      "Package": "rgeos",
-      "Version": "0.5-9",
-      "Source": "Repository",
-      "Repository": "CRAN",
-      "Hash": "7cfa4f73a070042ecf141d5c1d1bfcae",
-      "Requirements": [
-        "sp"
       ]
     },
     "rlang": {
