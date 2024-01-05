@@ -1,0 +1,104 @@
+---
+title: State Comparison
+execute: 
+  echo: false
+  warning: false
+---
+
+## Last Year of Private Union Elections
+
+
+```{r}
+
+library(tidyverse)
+library(gt)
+library(here)
+dt <- read_csv(here("gen", "data", 
+  "cleaned_data.csv")
+)
+full_state <- sort(c(state.abb, "DC", "PR", "VI", "SK", "GU", "AE", "AS"))
+
+```
+
+::: {.panel-tabset}
+
+## Filed in Last Year
+```{r}
+dt |> arrange(desc(Date_Filed)) |> 
+  mutate(State=factor(State, levels=full_state)) |> 
+  distinct() |> 
+  filter( `Case_Type`=="RC" & (`Date_Filed`  > (today() - years(1))))  |> 
+  group_by(State) |> 
+  summarize( "Closed Elections"=sum(!is.na(Date_Closed)), 
+            "Unions Certified"=sum(Union_Cer=="Yes"), 
+            "Percent Certified"=`Unions Certified`/`Closed Elections`, 
+            "Median Succesful BU"=median(Num_Eligible_Voters[Union_Cer=="Yes"], na.rm=T), 
+            "Total Workers Unionized"=sum(Num_Eligible_Voters[Union_Cer=="Yes"], na.rm=T)) |>
+  complete(State, 
+            fill=list("Open Elections"=0, 
+                      "Closed Elections"=0, 
+                      "Unions Certified"=0)   ) |> 
+  gt() |> 
+  fmt_percent(columns=`Percent Certified`, decimals=1) |> 
+  fmt_integer(columns=`Total Workers Unionized`) |> 
+  sub_missing(missing_text="-") |> 
+  sub_zero(columns=`Percent Certified`:`Total Workers Unionized`, 
+            zero_text="-")
+
+```
+
+
+## Voted in Last Year
+```{r}
+dt |> arrange(desc(Tally_Date)) |> 
+  mutate(State=factor(State, levels=full_state)) |> 
+  distinct() |> 
+  filter( `Case_Type`=="RC" & (`Tally_Date`  > (today() - years(1))))  |> 
+  group_by(State) |> 
+  summarize("Open Elections"=sum(is.na(Date_Closed)), 
+            "Closed Elections"=sum(!is.na(Date_Closed)), 
+            "Unions Certified"=sum(Union_Cer=="Yes"), 
+            "Percent Certified"=`Unions Certified`/`Closed Elections`, 
+            "Median Succesful BU"=median(Num_Eligible_Voters[Union_Cer=="Yes"], na.rm=T), 
+            "Total Workers Unionized"=sum(Num_Eligible_Voters[Union_Cer=="Yes"], na.rm=T)) |>
+  complete(State, 
+            fill=list("Open Elections"=0, 
+                      "Closed Elections"=0, 
+                      "Unions Certified"=0)   ) |> 
+  gt() |> 
+  fmt_percent(columns=`Percent Certified`, decimals=1) |> 
+  fmt_integer(columns=`Total Workers Unionized`) |> 
+  sub_missing(missing_text="-") |> 
+  sub_zero(columns=`Percent Certified`:`Total Workers Unionized`, 
+            zero_text="-")
+
+```
+
+
+## Closed in Last Year
+```{r}
+dt |> arrange(desc(Date_Closed)) |> 
+  mutate(State=factor(State, levels=full_state)) |> 
+  distinct() |> 
+  filter( `Case_Type`=="RC" & (`Date_Closed`  > (today() - years(1))))  |> 
+  group_by(State) |> 
+  summarize("Open Elections"=sum(is.na(Date_Closed)), 
+            "Closed Elections"=sum(!is.na(Date_Closed)), 
+            "Unions Certified"=sum(Union_Cer=="Yes"), 
+            "Percent Certified"=`Unions Certified`/`Closed Elections`, 
+            "Median Succesful BU"=median(Num_Eligible_Voters[Union_Cer=="Yes"], na.rm=T), 
+            "Total Workers Unionized"=sum(Num_Eligible_Voters[Union_Cer=="Yes"], na.rm=T)) |>
+  complete(State, 
+            fill=list("Open Elections"=0, 
+                      "Closed Elections"=0, 
+                      "Unions Certified"=0)   ) |> 
+  gt() |> 
+  fmt_percent(columns=`Percent Certified`, decimals=1) |> 
+  fmt_integer(columns=`Total Workers Unionized`) |> 
+  sub_missing(missing_text="-") |> 
+  sub_zero(columns=`Percent Certified`:`Total Workers Unionized`, 
+            zero_text="-")
+
+```
+
+:::
