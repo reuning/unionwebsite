@@ -1,7 +1,5 @@
 project:
-  type: website
-  render: 
-    - index.qmd
+  type: reporting-website
 
 website:
   title: "Union Elections"
