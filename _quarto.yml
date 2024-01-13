@@ -4,12 +4,25 @@ project:
 website:
   title: "Union Elections"
   open-graph: true
-  navbar:
-    left:
+  sidebar:
+    contents: 
       - href: index.qmd
         text: Home
+      - section: States
+        href: content/data/states/index.qmd
+        contents: content/data/states/*
+
+knitr:
+    opts_chunk: 
+        dev: "svg"
 
 format:
   html:
     theme: cosmo
     toc: true
+    fig-width: 12
+    fig-height: 9
+
+execute: 
+  echo: false
+  warning: false
