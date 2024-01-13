@@ -3,9 +3,6 @@ title: {{< template State >}}
 open-graph: 
     title: {{< template State >}} Union Elections
     description: Data on recent union elections in {{< template State >}}.
-execute: 
-    echo: false
-    warning: false
 ---
 
 
@@ -69,6 +66,9 @@ Excluding public employees and multi-union election, in the last 12 months there
 #### By Unit 
 
 ```{r}
+#| classes: preview-image
+#| label: unit-outcome-{{< template State >}}
+
 start_quarter <- ymd("1999-01-01")
 plot_data <- data |>
         filter(Ballot_Type!="Revised" & Unique==TRUE) |>
@@ -112,6 +112,7 @@ ggplot(unit_data, aes(x=Tally_Quarter,
 
 
 ```{r}
+#| label: worker-outcome-{{< template State >}}
 
 indiv_data <- plot_data |> group_by(Tally_Quarter) |> 
     summarize(`Votes For`=sum(Votes_For_Union), 
@@ -156,6 +157,7 @@ ggplot(indiv_data, aes(x=Tally_Quarter,
 #### Newly Covered Workers 
 
 ```{r}
+#| label: newly-covered-{{< template State >}}
 
 covered_data <- plot_data |> filter(Union_Cer=="Yes") |> 
     group_by(Tally_Quarter) |> 
@@ -191,6 +193,7 @@ ggplot(covered_data, aes(x=Tally_Quarter, y=Covered)) +
 #### Raw Data
 
 ```{r}
+#| label: timline-{{< template State >}}
 
 indiv_data <- indiv_data |> 
     pivot_wider(id_cols=Tally_Quarter)

@@ -22,3 +22,6 @@ starbucks_filings.gif
 tmp.txt
 
 /.quarto/
+_site
+
+.vdoc.r
