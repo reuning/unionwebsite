@@ -8,8 +8,49 @@ This website provides information about elections governed by the National Labor
 
 The is currently broken up by state or by union. The breakdown by union is not perfect, as I currently use a dictionary to identify locals and place them in their national (or international). Not all locals are currently captured.
 
-Each page includes a plot showing the trends in elections since 2008. There is also information about the largest union elections and any open election related cases. If you have suggestions on additional visualizations please reach out to me at <kevin.reuning@gmail.com>. Data is automatically updated daily; for more information, please read the [FAQ]({{< ref "data/info/faq" >}}).
+Each page includes a plot showing the trends in elections since 2008. There is also information about the largest union elections and any open election related cases. If you have suggestions on additional visualizations please reach out to me at <kevin.reuning@gmail.com>. Data is automatically updated daily; for more information, please read the [FAQ](data/info/faq).
 
-{{< image
-    src="/data/national/map.png"
-    width="1000" height="600">}}
+
+```{r}
+library(tidyverse)
+library(rnaturalearth)
+library(rnaturalearthhires)
+library(here)
+library(sf)
+library(htmltools)
+library(leaflet)
+
+election_data <- read_csv(here("gen", "data", "elections_with_location.csv"))
+
+election_data <- election_data |> mutate(Election_Data=ifelse(`Tally Date`=="", "No", "Yes")) |> select(c(starts_with("address"), lat_jit, long_jit, Case, Election_Data))
+
+
+data <- read_csv(here::here("gen", "data", "cleaned_data.csv")) |> 
+  mutate(Ballot_Type= 
+            ifelse(Ballot_Type == "Revised Single Labor Org", 
+        "Revised", "Initial")) 
+
+election_data <- election_data |> left_join(data)  |> 
+    filter(Case_Type == "RC") |>  
+    distinct(Case, City, State, .keep_all=TRUE) |> 
+    mutate(size=factor(size, c("<5", "5-10", "11-25", "26-50", "51-100", "101-500", "500>"))) |> 
+    mutate(label=paste0("<b>", htmlEscape(Case_Name), "</b></br>"), 
+            popup=paste0("<b>", htmlEscape(Case_Name), "</b></br>",
+                "Filed: ", Date_Filed, "</br>",
+                "Union: ", Plot_Labor_Union, "</br>", 
+                "Case:  ", Case))
+
+qpal <- colorFactor(palette=viridis::viridis_pal(begin=.05, end=0.95)(5), 
+election_data$size)
+
+
+leaflet(election_data) |> 
+    addProviderTiles(providers$CartoDB ) |> 
+    addCircleMarkers(lng = ~long_jit, lat = ~lat_jit, 
+    popup=~popup, label=~lapply(label, HTML), color=~qpal(size), 
+    stroke=F, fillOpacity = .75, radius=8, 
+    labelOptions = labelOptions(noHide = F, textOnly = F)) |> 
+    addLegend(pal = qpal, values = ~size, opacity = 1, na.label="Unknown", 
+    position="bottomleft", title="Unit Size")
+
+```
