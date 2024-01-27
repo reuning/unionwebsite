@@ -291,15 +291,13 @@ table_out <- data |> filter(Status=="Open") |>
     select(City, State, Case_Name, Labor_Union, Date_Filed, 
          Tally_Date,Tally_Type, Ballot_Type, Votes_For_Union,
          Votes_Against, Num_Eligible_Voters, Case ) |>
-    mutate(NLRB=paste0("https://www.nlrb.gov/case/", Case)) |> 
+    mutate(Case=paste0("<a href=https://www.nlrb.gov/case/", Case, ">", Case, "</a>")) |> 
     gt()
 
 table_out |> 
     cols_label_with(  fn=function(x) gsub("_", " ", x)) |>
-    fmt_url(columns=NLRB, label="(NLRB)") |> 
-    cols_merge(
-    columns = c(Case, NLRB),
-    pattern = "{1} {2}"
-  )
+    fmt(Case, fn=function(x) sapply(x, html))  |> 
+    opt_interactive()
+
 
 ```
