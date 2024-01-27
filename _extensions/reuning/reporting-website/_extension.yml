@@ -1,6 +1,6 @@
 title: Reporting Website
 author: Kevin Reuning
-version: 0.0.1
+version: 0.0.2
 quarto-version: ">=1.2.0"
 contributes:
   project:
@@ -10,5 +10,4 @@ contributes:
       post-render: template-clean.R
       render: 
         - "!**/*-template.qmd"
-        - "!**/*.md"
         - "**/*.qmd"

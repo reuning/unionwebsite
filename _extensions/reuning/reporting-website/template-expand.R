@@ -1,6 +1,12 @@
+if (!nzchar(Sys.getenv("QUARTO_PROJECT_RENDER_ALL"))) {
+    ## If previewing/rending one page
+    quit()
+}
+
 if (!require(yaml)) {
     simpleError("Please install the yaml package")
 }
+
 
 
 template_files <- list.files(pattern = "*-template.qmd",
