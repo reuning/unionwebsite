@@ -31,7 +31,7 @@ for (ii in seq_along(template_files)){
         eval(parse(text = all_vars$data))
     }
 
-    items <- unlist(all_vars$items, recursive = FALSE)
+    items <- all_vars$items
     for (jj in seq_along(items)){
         qmd_out <- template
 

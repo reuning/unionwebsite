@@ -1,6 +1,6 @@
 title: Reporting Website
 author: Kevin Reuning
-version: 0.0.2
+version: 0.0.3
 quarto-version: ">=1.2.0"
 contributes:
   project:

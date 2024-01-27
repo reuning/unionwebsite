@@ -28,7 +28,7 @@ for (ii in seq_along(template_files)){
     base_path <- dirname(yml_files[ii])
     all_vars <- read_yaml(yml_files[ii])
 
-    items <- unlist(all_vars$items, recursive = FALSE)
+    items <- all_vars$items
     for (jj in seq_along(items)){
 
         if ("data" %in% names(items[[jj]])) {
