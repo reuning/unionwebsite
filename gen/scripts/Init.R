@@ -97,69 +97,69 @@ for(ii in 2:length(quarters)){
 nationals <- unique(dt$National)
 
 
-dir.create(here("content", "tables"))
-### National Plots
-create_page(title = "United States",  
-                  data=dt, 
-                  file_name = here("content", "data", "national",  
-                                     "_index.md"), 
-            type="national")
-create_plot(data=dt, 
-            file_name = here("content", "data", "national", 
-                             paste0("United_States", "_10.png")))
-create_time_plots(data=dt,
-                 file_name = here("content", "data", "national",
-                                  "United_States"))
-create_table_open(data=dt, 
-                  file_name=here("content", 
-                                 "tables/national/", 
-                                 paste0("United_States", "_open.html")))
+# dir.create(here("content", "tables"))
+# ### National Plots
+# create_page(title = "United States",  
+#                   data=dt, 
+#                   file_name = here("content", "data", "national",  
+#                                      "_index.md"), 
+#             type="national")
+# create_plot(data=dt, 
+#             file_name = here("content", "data", "national", 
+#                              paste0("United_States", "_10.png")))
+# create_time_plots(data=dt,
+#                  file_name = here("content", "data", "national",
+#                                   "United_States"))
+# create_table_open(data=dt, 
+#                   file_name=here("content", 
+#                                  "tables/national/", 
+#                                  paste0("United_States", "_open.html")))
 
-create_time_table(data=dt, 
-                  file_name=here("content", 
-                                 "tables/national/", 
-                                 paste0("United_States", "_stats.html")))
+# create_time_table(data=dt, 
+#                   file_name=here("content", 
+#                                  "tables/national/", 
+#                                  paste0("United_States", "_stats.html")))
 
-#### Starbucks ####
-st_dt <- dt[grepl("starbuck", Case_Name, ignore.case = T) & 
-     Date_Filed > as.Date("2010-01-01")]
+# #### Starbucks ####
+# st_dt <- dt[grepl("starbuck", Case_Name, ignore.case = T) & 
+#      Date_Filed > as.Date("2010-01-01")]
 
-try(dir.create(here("content",  "tables", "temp")) )
-create_table_sb(data=st_dt, 
-                  file_name=here("content", 
-                                 "tables", "temp"))
+# try(dir.create(here("content",  "tables", "temp")) )
+# create_table_sb(data=st_dt, 
+#                   file_name=here("content", 
+#                                  "tables", "temp"))
 
-## State Plots
-for(state in state.abb){
-  tmp_data = dt[dt$State == state]
-  state_name <- state.name[state.abb == state]
-  state_name_file <- gsub(" ", "_", state_name)
+# ## State Plots
+# for(state in state.abb){
+#   tmp_data = dt[dt$State == state]
+#   state_name <- state.name[state.abb == state]
+#   state_name_file <- gsub(" ", "_", state_name)
   
-  create_page(title = state_name, 
-                    data=tmp_data, 
-                    file_name = here("content", "data", "states", 
-                                     state_name_file, 
-                                     "_index.md"))
+#   create_page(title = state_name, 
+#                     data=tmp_data, 
+#                     file_name = here("content", "data", "states", 
+#                                      state_name_file, 
+#                                      "_index.md"))
 
-  create_plot(data=tmp_data, 
-              file_name = here("content", "data", "states", 
-                               state_name_file, 
-                               paste0(state_name_file, "_10.png")), 
-              number=10)
+#   create_plot(data=tmp_data, 
+#               file_name = here("content", "data", "states", 
+#                                state_name_file, 
+#                                paste0(state_name_file, "_10.png")), 
+#               number=10)
   
-  create_time_plots(data=tmp_data, 
-                   file_name = here("content", "data", "states",
-                                    state_name_file, 
-                                    paste0(state_name_file)))
+#   create_time_plots(data=tmp_data, 
+#                    file_name = here("content", "data", "states",
+#                                     state_name_file, 
+#                                     paste0(state_name_file)))
 
-  create_table_open(data=tmp_data, 
-                          file_name=here("content", "tables/states/", 
-                                         paste0(state_name_file, "_open.html")))
+#   create_table_open(data=tmp_data, 
+#                           file_name=here("content", "tables/states/", 
+#                                          paste0(state_name_file, "_open.html")))
   
-  create_time_table(data=tmp_data, file_name=here("content", "tables/states/", 
-                                            paste0(state_name_file, "_stats.html")))
-  #
-}
+#   create_time_table(data=tmp_data, file_name=here("content", "tables/states/", 
+#                                             paste0(state_name_file, "_stats.html")))
+#   #
+# }
 
 
 
