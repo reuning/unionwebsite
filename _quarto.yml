@@ -4,26 +4,18 @@ project:
 website:
   title: "Union Elections"
   open-graph: true
-  navbar: 
-    left: 
-      - text: "Home"
-        file: index.qmd
-      - text: "Starbucks"
-        file: content/data/starbucks/index.qmd
-      - sidebar:states
-      - sidebar:info
 
 
   sidebar:
-    - href: index.qmd
-      text: Home
-    - id: states
-      title: States
-      href: content/data/states/index.qmd
-      contents: content/data/states/*
-    - id: info
-      title: Info
-      contents: content/data/info/*
+    collapse-level: 1
+    contents: 
+      - href: index.qmd
+        text: Home
+      - section: States
+        href: content/data/states/index.qmd
+        contents: content/data/states/*
+      - section: Info
+        contents: content/data/info/*
 
 knitr:
     opts_chunk: 
@@ -43,7 +35,7 @@ format:
       body-width: 1200px
       margin-width: 300px
       gutter-width: 1.5rem
-    toc-location: left
+    toc-location: right
 
 execute: 
   echo: false
