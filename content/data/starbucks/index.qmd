@@ -1,0 +1,130 @@
+---
+title: Starbucks
+open-graph: 
+    title: Starbucks Union Elections
+    description: Data on elections to unionize local Starbucks.
+---
+
+### Current Starbucks Statistics
+
+```{r}
+
+# prep
+library(tidyverse)
+    dt <- read_csv(here::here("gen", "data", 
+    "cleaned_data.csv")
+    )
+
+    dt <- dt |> filter(grepl("starbuck", Case_Name, ignore.case = T) & 
+                    Date_Filed > as.Date("2010-01-01")) |> 
+        filter(Case_Type == "RC" & Unique==TRUE) |> 
+        arrange(desc(Date_Filed)) |> 
+        distinct() |> 
+        mutate(Labor_Union = Plot_Labor_Union, 
+            Ballot_Type = ifelse(Ballot_Type == "Revised Single Labor Org",
+                "Revised", "Initial"), 
+            Status = case_when(
+                Status == "Open" ~ "Open", 
+                Reason_Closed == "Certific. of Representative" ~ "Unionized", 
+                Reason_Closed == "Certification of Results" ~ "Vote Failed", 
+                Reason_Closed %in% c("Withdrawal Non-adjusted", "Withdrawl Adjusted") ~ "Withdrawn", 
+                .default= "Other"))
+
+    srch <- paste0("\\d+(?!(.*located))(.|\\n)+?(", paste(c(state.abb, state.name), collapse="|"),")")
+    dt <- dt |> 
+        mutate(Address=stringr::str_extract(`Voting Unit (Unit A)`, srch))     
+
+```
+
+```{r}
+
+library(gt)
+
+tab <- dt |> group_by(Status) |> 
+        summarize("Number of Stores"=n(),
+                    "Total Employees"= sum(Num_Eligible_Voters), 
+                    "Votes for Union"=sum(Votes_For_Union, na.rm=T), 
+                    "Votes Against"=sum(Votes_Against, na.rm=T)) 
+  #### Summary statsitics ###
+
+    gt(tab[match(tab$Status, c("Open", "Unionized", "Vote Failed", "Withdrawn", "Other")), ]) |> 
+    tab_footnote(footnote="It takes time after a vote for the election to be finalized so open cases can have votes counted already.", 
+                location=cells_body(columns=Status, 
+                    rows=Status == "Open")) |> 
+        fmt_number(decimals=0)
+```
+
+## Map of Elections
+```{r}
+library(rnaturalearth)
+library(rnaturalearthhires)
+library(sf)
+library(htmltools)
+library(leaflet)
+
+
+coded_dt <-
+  read_csv(here::here("gen", "data", "starbucks_with_location.csv"))
+tmp <- coded_dt |> select(Case, Case_Name, lat, 
+                           long, formatted_address, 
+                           accuracy, accuracy_type, 
+                           source, address_components.city, 
+                           address_components.county, 
+                           address_components.state, 
+                           address_components.zip, 
+                           address_components.country,
+                           seached, 
+                           lat_jit, 
+                           long_jit) |> 
+                           distinct()
+full_dt <- left_join(dt, tmp, by=c("Case", "Case_Name"))
+
+full_dt <- full_dt |> 
+    mutate(label=paste0("<b>", htmlEscape(City), "</b></br>"), 
+            popup=paste0("<b>", htmlEscape(City), "</b></br>",
+                "Filed: ", Date_Filed, "</br>",
+                "Status ", Status, "</br>",
+                "Case:  ", Case))
+
+qpal <- colorFactor(palette=RColorBrewer::brewer.pal(n=5, name="Dark2"), 
+full_dt$Status)
+
+
+leaflet(full_dt) |> 
+    addProviderTiles(providers$CartoDB ) |> 
+    addCircleMarkers(lng = ~long_jit, lat = ~lat_jit, 
+    popup=~popup, label=~lapply(label, HTML), color=~qpal(Status), 
+    stroke=F, fillOpacity = .75, radius=8, 
+    labelOptions = labelOptions(noHide = F, textOnly = F)) |> 
+    addLegend(pal = qpal, values = ~Status, opacity = 1, na.label="Unknown", 
+    position="bottomleft", title="Status")
+
+```
+
+## All Cases
+
+```{r}
+
+  
+tab <- dt |> select(Date_Filed, City, State, Address, 
+                Status, Case_Name, Labor_Union,
+                Tally_Date, Ballot_Type, Votes_For_Union, 
+                Votes_Against,
+                Num_Eligible_Voters, Case) |> 
+mutate(Case=paste0("<a href=https://www.nlrb.gov/case/", Case, ">", Case, "</a>"))
+
+
+tab |> gt() |> 
+    cols_label_with(  fn=function(x) gsub("_", " ", x)) |>
+    fmt_date(columns=c("Date_Filed", "Tally_Date"), 
+    date_style="m_day_year") |> 
+    sub_missing(missing_text = "")  |> 
+    cols_align(align="left", columns=1:6) |> 
+    cols_align(align="center", columns=7:13) |>
+    fmt(Case, fn=function(x) sapply(x, html))  |>
+    opt_interactive()
+
+```
+
+
+
