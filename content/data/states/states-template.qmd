@@ -54,16 +54,15 @@ open_cases_waiting <- sum(tmp_dt$Election_Data == "No")
 
 
 
-##  {{< template State >}}
 
 Excluding public employees and multi-union election, in the last 12 months there have been `r clean_num(filed_last_year)` union elections filed in {{< template State >}} and `r clean_num(voted_last_year)` union elections held. In `r clean_num(cert_last_year)` of those elections a new unit was certified. There are currently `r clean_num(open_cases)` open representation cases and `r clean_num(open_cases_waiting)` of are still waiting to vote.
 
 
-### Union Elections by Outcome
+## Union Elections by Outcome
 
 ::: {.panel-tabset}
 
-#### By Unit 
+### By Unit 
 
 ```{r}
 #| classes: preview-image
@@ -108,7 +107,7 @@ ggplot(unit_data, aes(x=Tally_Quarter,
 
 ```
 
-#### By Worker Vote 
+### By Worker Vote 
 
 
 ```{r}
@@ -154,7 +153,7 @@ ggplot(indiv_data, aes(x=Tally_Quarter,
 
 ```
 
-#### Newly Covered Workers 
+### Newly Covered Workers 
 
 ```{r}
 #| label: newly-covered-{{< template State >}}
@@ -190,7 +189,7 @@ ggplot(covered_data, aes(x=Tally_Quarter, y=Covered)) +
 ```
 
 
-#### Raw Data
+### Raw Data
 
 ```{r}
 #| label: timline-{{< template State >}}
@@ -220,12 +219,12 @@ gt(table_out) |>
 
 
 
-### Timeline of Activity by Unit Size
+## Timeline of Activity by Unit Size
 
 
 ::: {.panel-tabset}
 
-#### Plot 
+### Plot 
 
 ```{r}
 #| classes: preview-image
@@ -264,7 +263,7 @@ ggplot(activity_data, aes(x=Filed_Quarter, y=n,
 
 ```
 
-#### Raw Data
+### Raw Data
 
 ```{r}
 
@@ -281,7 +280,7 @@ activity_data |> pivot_wider(names_from="size",
 
 
 
-### Open Election Related Cases
+## Open Election Related Cases
 
 ```{r}
 
