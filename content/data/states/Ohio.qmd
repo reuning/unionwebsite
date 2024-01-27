@@ -1,8 +1,8 @@
 ---
-title: Alabama
+title: Ohio
 open-graph: 
-    title: Alabama Union Elections
-    description: Data on recent union elections in Alabama.
+    title: Ohio Union Elections
+    description: Data on recent union elections in Ohio.
 ---
 
 
@@ -26,7 +26,7 @@ library(tidyverse)
 theme_set(theme_minimal(base_family = "Crimson Pro"))
 library(gt)
 library(here)
-data <- read_csv("AL_data.csv") |> filter(Case_Type == "RC") |> 
+data <- read_csv("OH_data.csv") |> filter(Case_Type == "RC") |> 
   mutate(Ballot_Type= 
             ifelse(Ballot_Type == "Revised Single Labor Org", 
         "Revised", "Initial"))
@@ -55,7 +55,7 @@ open_cases_waiting <- sum(tmp_dt$Election_Data == "No")
 
 
 
-Excluding public employees and multi-union election, in the last 12 months there have been `r clean_num(filed_last_year)` union elections filed in Alabama and `r clean_num(voted_last_year)` union elections held. In `r clean_num(cert_last_year)` of those elections a new unit was certified. There are currently `r clean_num(open_cases)` open representation cases and `r clean_num(open_cases_waiting)` of are still waiting to vote.
+Excluding public employees and multi-union election, in the last 12 months there have been `r clean_num(filed_last_year)` union elections filed in Ohio and `r clean_num(voted_last_year)` union elections held. In `r clean_num(cert_last_year)` of those elections a new unit was certified. There are currently `r clean_num(open_cases)` open representation cases and `r clean_num(open_cases_waiting)` of are still waiting to vote.
 
 
 ## Union Elections by Outcome
@@ -66,7 +66,7 @@ Excluding public employees and multi-union election, in the last 12 months there
 
 ```{r}
 #| classes: preview-image
-#| label: unit-outcome-Alabama
+#| label: unit-outcome-Ohio
 
 start_quarter <- ymd("1999-01-01")
 plot_data <- data |>
@@ -111,7 +111,7 @@ ggplot(unit_data, aes(x=Tally_Quarter,
 
 
 ```{r}
-#| label: worker-outcome-Alabama
+#| label: worker-outcome-Ohio
 
 indiv_data <- plot_data |> group_by(Tally_Quarter) |> 
     summarize(`Votes For`=sum(Votes_For_Union), 
@@ -156,7 +156,7 @@ ggplot(indiv_data, aes(x=Tally_Quarter,
 ### Newly Covered Workers 
 
 ```{r}
-#| label: newly-covered-Alabama
+#| label: newly-covered-Ohio
 
 covered_data <- plot_data |> filter(Union_Cer=="Yes") |> 
     group_by(Tally_Quarter) |> 
@@ -192,7 +192,7 @@ ggplot(covered_data, aes(x=Tally_Quarter, y=Covered)) +
 ### Raw Data
 
 ```{r}
-#| label: timline-Alabama
+#| label: timline-Ohio
 
 indiv_data <- indiv_data |> 
     pivot_wider(id_cols=Tally_Quarter)

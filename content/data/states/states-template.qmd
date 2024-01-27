@@ -232,7 +232,7 @@ activity_data <- plot_data |>
     group_by(Filed_Quarter, size) |> 
     summarize(n=n()) |> 
     ungroup() |> 
-    mutate(size=factor(size, labels=c("<5", "6-10", "11-25", "26-50", "51-100", "101-500", "500>"))) |> 
+    mutate(size=factor(size, levels=c("<5", "6-10", "11-25", "26-50", "51-100", "101-500", "500>"))) |> 
     complete(Filed_Quarter=seq(start_quarter, curr_quarter, "quarter"),
     size, fill=list("n"=0)) |> 
     filter(Filed_Quarter >= start_quarter) 
