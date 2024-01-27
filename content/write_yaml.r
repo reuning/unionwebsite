@@ -1,9 +1,8 @@
 library(yaml)
 
-setwd("content/data/states")
+setwd(here::here("content/data/states"))
 data <- read_yaml("states-template.yml")
 
-data$items$Alabama
 
 state.abb
 state.name
@@ -16,3 +15,24 @@ for(ii in seq_along(state.abb)){
 }
 
 write_yaml(data, "states-template.yml")
+
+
+election_data <- readr::read_csv(here::here("gen", "data", "cleaned_data.csv"))
+nationals <- sort(unique(election_data$National))
+
+
+data <- read_yaml("states-template.yml")
+data$items <- NULL
+
+for(ii in seq_along(nationals)){
+    tmp_list <- list("Union_Short"=nationals[ii], 
+                    "Union_Long"=nationals[ii], 
+        data=list(subset=paste0("data[data$National==\"", nationals[ii], "\",]"),
+                filename=paste0(nationals[ii], "_data.csv")))
+
+    data$items[[nationals[ii]]] <- tmp_list
+}
+
+setwd(here::here("content/data/union"))
+
+write_yaml(data, "unions-template.yml")
