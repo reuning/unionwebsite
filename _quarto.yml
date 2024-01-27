@@ -11,6 +11,8 @@ website:
       - section: States
         href: content/data/states/index.qmd
         contents: content/data/states/*
+      - section: Info
+        contents: content/data/info/*
 
 knitr:
     opts_chunk: 
