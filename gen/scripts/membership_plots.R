@@ -61,13 +61,19 @@ for(ii in 1:nrow(dict)){
   names(out)[ii] <- gsub(" " , "_", dict$International[ii])
 }
 
-unions <- dir(here::here("content", "data", "union"))
 
+
+
+### OLD ####
+
+unions <- yaml::read_yaml(here::here("content", "data", "union", "unions-template.yml"))
+
+unions <- names(unions$items)
 dict <- dict %>% mutate(International = gsub(" ", "_", International), 
                         LM_ID = as.numeric(gsub("-", "", LM_ID)))
 
-
-for(ii in 1:length(unions)){
+all_member_out <- list()
+for(ii in seq_along(unions)){
   if(!unions[ii] %in% names(out)) next
   fnum <- filter(dict, International == unions[ii]) %>% pull(LM_ID)
   if(is.na(fnum)) next
@@ -88,45 +94,13 @@ for(ii in 1:length(unions)){
       select(YR_COVERED, MEMBERS) 
   }
 
-  detailed_data <- "Category" %in% names(all_data)
-  ggplot(all_data, aes(x=YR_COVERED)) + 
-    {if(detailed_data)geom_col(aes(y=value, fill=Category))} + 
-    geom_line(aes(y=MEMBERS, color="Total Members")) +
-    theme_minimal(base_family = "Crimson Pro") +
-    ggtitle(paste("Membership Data for", unions[ii])) + 
-    scale_y_continuous("", labels=scales::label_comma()) + 
-    scale_color_manual("", values = c("Total Members"="black")) + 
-    scale_fill_brewer(type = "qual", palette=3) +
-    scale_x_continuous("Year", limits = c(2000, 2023)) + 
-    theme(text = element_text(size=15, lineheight=.3)) +
-    labs(caption = "Data from OLMS reports. Not all unions are required to report membership data. https://unionelections.org")
-  
-  file_name <- here::here("content", "data", "union", unions[ii],
-                          paste0(unions[ii], "_membership.png"))
-  ggsave(file_name, height=6, width=8, type = "cairo",
-         units="in", dpi=120)
-  if(detailed_data){
-    all_data <- all_data %>% pivot_wider(names_from = Category, values_from = value ) %>%  
-      select(-RPT_ID)
-  }
-  tab <- all_data %>% 
-    rename("Year"="YR_COVERED", 
-           "Total Members"="MEMBERS") %>% 
-    mutate(across(2:last_col(), ~scales::comma(.x, 1)))
-  
-  tab_out <- kable(
-    tab,
-    format="html",
-    align="l",
-    table.attr="class='display summary-stats'"
-  )
-  
-  file_name <- here::here("content", "tables", "union", 
-                          paste0(unions[ii],"_membership.html"))
-  write(tab_out, file = file_name)
-  
+  all_member_out[[unions[ii]]] <- all_data
+
   
 }
-    
+# all_member_out    
 
 
+json_version <- jsonlite::toJSON(all_member_out, pretty=T,  dataframe = 'rows')
+
+jsonlite::write_json(json_version, here::here("gen", "data", "members.json"))
