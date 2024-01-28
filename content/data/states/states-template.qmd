@@ -1,8 +1,8 @@
 ---
 title: {{< template State >}}
-open-graph: 
-    title: {{< template State >}} Union Elections
-    description: Data on recent union elections in {{< template State >}}.
+pagetitle: {{< template State >}} Union Elections
+hide-description: true 
+description: Data on recent union elections in {{< template State >}}.
 ---
 
 

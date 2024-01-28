@@ -4,8 +4,7 @@ project:
 website:
   title: "Union Elections"
   open-graph: true
-
-
+  twitter-card: true
   sidebar:
     collapse-level: 1
     contents: 
@@ -39,6 +38,7 @@ format:
       margin-width: 300px
       gutter-width: 1.5rem
     toc-location: right
+    author-meta: Kevin Reuning
 
 execute: 
   echo: false

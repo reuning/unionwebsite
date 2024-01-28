@@ -1,8 +1,7 @@
 ---
-title: United States
-open-graph: 
-    title: United States Union Elections
-    description: Data on recent union elections in the United States.
+title: United States Union Elections
+hide-description: true 
+description: Data on recent union elections in the United States.
 ---
 
 

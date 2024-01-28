@@ -1,8 +1,8 @@
 ---
 title: Starbucks
-open-graph: 
-    title: Starbucks Union Elections
-    description: Data on elections to unionize local Starbucks.
+pagetitle: Starbucks Union Elections
+hide-description: true 
+description: Data on elections to unionize local Starbucks.
 ---
 
 ### Current Starbucks Statistics
