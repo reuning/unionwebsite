@@ -16,5 +16,5 @@ In 2024 154 petitions for new units were filed, a -92.81% decrease from the prev
 {{< readtable table="/tables/reports/2024/0union_filings.html" >}}
 
 ### Closed Elections by Union
-In 2024 147 petitions for new units were closed (this includes petitions where no election was ever held), with 54.42% closed with a certification order, creating 80 total new units. This was a -92.99% decrease from the previous year in successful union certifications. Overall this represents approximately 5,655 workers, which is a -93.52% decrease from the previous year The median bargaining unit has 21 workers.
+In 2024 148 petitions for new units were closed (this includes petitions where no election was ever held), with 54.05% closed with a certification order, creating 80 total new units. This was a -92.98% decrease from the previous year in successful union certifications. Overall this represents approximately 5,631 workers, which is a -93.54% decrease from the previous year The median bargaining unit has 21 workers.
 {{< readtable table="/tables/reports/2024/0union_closed.html" >}}
