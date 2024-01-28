@@ -164,67 +164,67 @@ nationals <- unique(dt$National)
 
 
 #### Union Plots ####
-for(union in nationals){
-  tmp_data = dt[dt$National == union]
-  union_file <- gsub(" ", "_", union)
-  weight <- ifelse(union %in% c("Other", "Uncoded","Multiple"), 2, 1)
-  create_page(title = union, 
-              data=tmp_data, 
-              file_name = here("content", "data", "union", 
-                               union_file, 
-                               "_index.md"), 
-              type = "union", weight=weight)
+# for(union in nationals){
+#   tmp_data = dt[dt$National == union]
+#   union_file <- gsub(" ", "_", union)
+#   weight <- ifelse(union %in% c("Other", "Uncoded","Multiple"), 2, 1)
+#   create_page(title = union, 
+#               data=tmp_data, 
+#               file_name = here("content", "data", "union", 
+#                                union_file, 
+#                                "_index.md"), 
+#               type = "union", weight=weight)
   
-  create_plot(data=tmp_data, 
-              file_name = here("content", "data", "union", 
-                               union_file, 
-                               paste0(union_file, "_10.png")), 
-              number=10)
+#   create_plot(data=tmp_data, 
+#               file_name = here("content", "data", "union", 
+#                                union_file, 
+#                                paste0(union_file, "_10.png")), 
+#               number=10)
   
-  create_time_plots(data=tmp_data, 
-                   file_name = here("content", "data", "union",
-                                    union_file, 
-                                    paste0(union_file)))
+#   create_time_plots(data=tmp_data, 
+#                    file_name = here("content", "data", "union",
+#                                     union_file, 
+#                                     paste0(union_file)))
   
-  create_table_open(data=tmp_data, 
-                    file_name=here("content", "tables/union/", 
-                                   paste0(union_file, "_open.html")))
+#   create_table_open(data=tmp_data, 
+#                     file_name=here("content", "tables/union/", 
+#                                    paste0(union_file, "_open.html")))
   
-  create_time_table(data=tmp_data, file_name=here("content", "tables/union/", 
-                                            paste0(union_file, "_stats.html")))
-  #
-}
+#   create_time_table(data=tmp_data, file_name=here("content", "tables/union/", 
+#                                             paste0(union_file, "_stats.html")))
+#   #
+# }
 
 
 
 #### Create National union table ####
-dt <- fread(here("gen", "data", "recent_election_results.csv"))
+# dt <- fread(here("gen", "data", "recent_election_results.csv"))
 
 
-dt <- prep_data(dt)
+# dt <- prep_data(dt)
 
-dt[National=="", National:="Uncoded"]
-dt[National_Count>1, National:="Multiple"]
-all_unions <- unique(dt$National)
-all_unions <- all_unions[all_unions!=""]
+# dt[National=="", National:="Uncoded"]
+# dt[National_Count>1, National:="Multiple"]
+# all_unions <- unique(dt$National)
+# all_unions <- all_unions[all_unions!=""]
 
-create_front_page_table(data=dt, file_name="filed_ytd.html", 
-                        column_name = "Date_Filed", all_groups = all_unions)
-create_front_page_table(data=dt, file_name = "tally_ytd.html", column_name = "Tally_Date", 
-                        all_groups = all_unions)
+# create_front_page_table(data=dt, file_name="filed_ytd.html", 
+#                         column_name = "Date_Filed", all_groups = all_unions)
+# create_front_page_table(data=dt, file_name = "tally_ytd.html", column_name = "Tally_Date", 
+#                         all_groups = all_unions)
 
-dt$Date_Closed <- as.Date(dt$Date_Closed, format="%m/%d/%Y")
-create_front_page_table(data=dt, file_name = "closed_ytd.html", 
-                        column_name = "Date_Closed", all_groups = all_unions)
+# dt$Date_Closed <- as.Date(dt$Date_Closed, format="%m/%d/%Y")
+# create_front_page_table(data=dt, file_name = "closed_ytd.html", 
+#                         column_name = "Date_Closed", all_groups = all_unions)
 
-all_states <- unique(dt$State)
-all_states <- all_states[all_states!=""]
-create_front_page_table(data=dt, file_name="filed_ytd.html", column_name = "Date_Filed", 
-                        var="State",all_groups = all_states)
-create_front_page_table(data=dt, file_name = "tally_ytd.html", column_name = "Tally_Date",  
-                        var="State",all_groups = all_states)
-create_front_page_table(data=dt, file_name = "closed_ytd.html", column_name = "Date_Closed",  
-                        var="State",all_groups = all_states)
+# all_states <- unique(dt$State)
+# all_states <- all_states[all_states!=""]
+# create_front_page_table(data=dt, file_name="filed_ytd.html", column_name = "Date_Filed", 
+#                         var="State",all_groups = all_states)
+# create_front_page_table(data=dt, file_name = "tally_ytd.html", column_name = "Tally_Date",  
+#                         var="State",all_groups = all_states)
+# create_front_page_table(data=dt, file_name = "closed_ytd.html", column_name = "Date_Closed",  
+#                         var="State",all_groups = all_states)
 
 # create_state_time_plot(data=dt)
 # create_state_page(state_abb = "GU")
