@@ -10,11 +10,13 @@ website:
     contents: 
       - href: index.qmd
         text: Home
+      - href: content/data/starbucks/index.qmd
+        text: Starbucks Elections
       - section: States
         href: content/data/states/index.qmd
         contents: content/data/states/*
       - section: Unions
-        href: content/data/states/index.qmd
+        href: content/data/union/index.qmd
         contents: content/data/union/*
       - section: Info
         contents: content/data/info/*
