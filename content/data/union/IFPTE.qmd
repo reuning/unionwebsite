@@ -1,8 +1,8 @@
 ---
-title: {{< template Union_Short >}}
+title: IFPTE
 open-graph: 
-    title: {{< template Union_Long >}} Union Elections
-    description: Data on recent union elections in {{< template Union_Long >}}.
+    title: IFPTE Union Elections
+    description: Data on recent union elections in IFPTE.
 ---
 
 
@@ -26,7 +26,7 @@ library(tidyverse)
 theme_set(theme_minimal(base_family = "Crimson Pro"))
 library(gt)
 library(here)
-data <- read_csv({{< template data_filename >}}) |> filter(Case_Type == "RC") |> 
+data <- read_csv("IFPTE_data.csv") |> filter(Case_Type == "RC") |> 
   mutate(Ballot_Type= 
             ifelse(Ballot_Type == "Revised Single Labor Org", 
         "Revised", "Initial"))
@@ -55,7 +55,7 @@ open_cases_waiting <- sum(tmp_dt$Election_Data == "No")
 
 
 
-Excluding public employees and multi-union election, in the last 12 months there have been `r clean_num(filed_last_year)` union elections filed by the {{< template Union_Long >}} and `r clean_num(voted_last_year)` union elections held. In `r clean_num(cert_last_year)` of those elections a new unit was certified. There are currently `r clean_num(open_cases)` open representation cases and `r clean_num(open_cases_waiting)` of are still waiting to vote.
+Excluding public employees and multi-union election, in the last 12 months there have been `r clean_num(filed_last_year)` union elections filed by the IFPTE and `r clean_num(voted_last_year)` union elections held. In `r clean_num(cert_last_year)` of those elections a new unit was certified. There are currently `r clean_num(open_cases)` open representation cases and `r clean_num(open_cases_waiting)` of are still waiting to vote.
 
 
 ## Union Elections by Outcome
@@ -66,7 +66,7 @@ Excluding public employees and multi-union election, in the last 12 months there
 
 ```{r}
 #| classes: preview-image
-#| label: unit-outcome-{{< template Union_Short >}}
+#| label: unit-outcome-IFPTE
 
 start_quarter <- ymd("1999-01-01")
 plot_data <- data |>
@@ -111,7 +111,7 @@ ggplot(unit_data, aes(x=Tally_Quarter,
 
 
 ```{r}
-#| label: worker-outcome-{{< template Union_Short >}}
+#| label: worker-outcome-IFPTE
 
 indiv_data <- plot_data |> group_by(Tally_Quarter) |> 
     summarize(`Votes For`=sum(Votes_For_Union), 
@@ -156,7 +156,7 @@ ggplot(indiv_data, aes(x=Tally_Quarter,
 ### Newly Covered Workers 
 
 ```{r}
-#| label: newly-covered-{{< template Union_Short >}}
+#| label: newly-covered-IFPTE
 
 covered_data <- plot_data |> filter(Union_Cer=="Yes") |> 
     group_by(Tally_Quarter) |> 
@@ -192,7 +192,7 @@ ggplot(covered_data, aes(x=Tally_Quarter, y=Covered)) +
 ### Raw Data
 
 ```{r}
-#| label: timline-{{< template Union_Short >}}
+#| label: timline-IFPTE
 
 indiv_data <- indiv_data |> 
     pivot_wider(id_cols=Tally_Quarter)
@@ -287,13 +287,13 @@ activity_data |> pivot_wider(names_from="size",
 ### Plot 
 
 ```{r}
-#| label: members-{{< template Union_Short >}}
+#| label: members-IFPTE
 
 member_data <- jsonlite::fromJSON(here::here("gen", "data", "members.json"))
 
 member_data <- jsonlite::fromJSON(member_data)
 
-member_data <- member_data[[ "{{< template Union_Short >}}" ]]
+member_data <- member_data[[ "IFPTE" ]]
 in_data <- length(member_data) > 0
 if(!in_data){
     cat("No data available")
