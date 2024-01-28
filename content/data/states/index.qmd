@@ -1,5 +1,7 @@
 ---
 title: States
+description: Comparison of union elections across all states
+hide-description: true
 ---
 
 ## Last Year of Private Union Elections
@@ -40,7 +42,9 @@ dt |> arrange(desc(Date_Filed)) |>
   fmt_integer(columns=`Total Workers Unionized`) |> 
   sub_missing(missing_text="-") |> 
   sub_zero(columns=`Percent Certified`:`Total Workers Unionized`, 
-            zero_text="-")
+            zero_text="-") |>
+      opt_interactive(use_pagination=FALSE)
+
 
 ```
 
@@ -67,7 +71,9 @@ dt |> arrange(desc(Tally_Date)) |>
   fmt_integer(columns=`Total Workers Unionized`) |> 
   sub_missing(missing_text="-") |> 
   sub_zero(columns=`Percent Certified`:`Total Workers Unionized`, 
-            zero_text="-")
+            zero_text="-") |> 
+      opt_interactive(use_pagination=FALSE)
+
 
 ```
 
@@ -94,7 +100,9 @@ dt |> arrange(desc(Date_Closed)) |>
   fmt_integer(columns=`Total Workers Unionized`) |> 
   sub_missing(missing_text="-") |> 
   sub_zero(columns=`Percent Certified`:`Total Workers Unionized`, 
-            zero_text="-")
+            zero_text="-") |>
+  opt_interactive(use_pagination=FALSE)
+
 
 ```
 
