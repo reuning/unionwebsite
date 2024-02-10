@@ -1,6 +1,6 @@
 ---
-title: {{< template Year >}} Union Filing Report
-description: Data on union election filings in {{< template Year >}}
+title: 2022 Union Filing Report
+description: Data on union election filings in 2022
 hide-description: true 
 execute:
         echo: false
@@ -23,25 +23,25 @@ all_unions <- sort(unique(dt$National))
 
 
 filed <- dt |> filter( `Case_Type`=="RC")  |>
-        filter(year(Date_Filed) == {{< template Year >}}) |> nrow()
+        filter(year(Date_Filed) == 2022) |> nrow()
 closed <- dt |>  filter( `Case_Type`=="RC")  |>
-        filter(year(Date_Closed) == {{< template Year >}}) |> nrow()
+        filter(year(Date_Closed) == 2022) |> nrow()
 closed_success <- dt |>  filter( `Case_Type`=="RC")  |> 
-        filter((year(Date_Closed) == {{< template Year >}}) &
+        filter((year(Date_Closed) == 2022) &
                 (Union_Cer=="Yes")) |> nrow()
 median_unit <- dt |>  filter( `Case_Type`=="RC")  |> 
-        filter((year(Date_Closed) == {{< template Year >}}) &
+        filter((year(Date_Closed) == 2022) &
                 (Union_Cer=="Yes")) |> pull(Num_Eligible_Voters) |>
                 median()
 
 total_unit <- dt |>  filter( `Case_Type`=="RC")  |> 
-        filter((year(Date_Closed) == {{< template Year >}}) &
+        filter((year(Date_Closed) == 2022) &
                 (Union_Cer=="Yes")) |> pull(Num_Eligible_Voters) |>
                 sum()
 
 ```
 
-In {{< template Year >}} there were `r scales::number(filed, big.mark=",")` representation cases filed[^note] and `r scales::number(closed, big.mark=",")` closed. Of those cases that were closed in {{< template Year >}} `r scales::percent(closed_success/closed, accuracy=.1)` led to the certification of a union. The median bargaining unit for successful cases had `r scales::number(median_unit, big.mark=",")` workers. In total this led to approximately `r scales::number(total_unit, big.mark=",")` new workers with union representation. 
+In 2022 there were `r scales::number(filed, big.mark=",")` representation cases filed[^note] and `r scales::number(closed, big.mark=",")` closed. Of those cases that were closed in 2022 `r scales::percent(closed_success/closed, accuracy=.1)` led to the certification of a union. The median bargaining unit for successful cases had `r scales::number(median_unit, big.mark=",")` workers. In total this led to approximately `r scales::number(total_unit, big.mark=",")` new workers with union representation. 
 
 [^note]: This only includes cases with a single union filed, excluding the rare cases with multiple unions in an election. 
 
@@ -55,7 +55,7 @@ In {{< template Year >}} there were `r scales::number(filed, big.mark=",")` repr
 ## Filed 
 ```{r}
 
-year_dt <- dt |> filter(year(Date_Filed) == {{< template Year >}})
+year_dt <- dt |> filter(year(Date_Filed) == 2022)
 year_dt |> arrange(desc(Date_Filed)) |> 
     mutate(National=factor(National, levels=all_unions)) |> 
     distinct() |> 
@@ -84,7 +84,7 @@ year_dt |> arrange(desc(Date_Filed)) |>
 
 ## Closed
 ```{r}
-year_dt <- dt |> filter(year(Date_Closed) == {{< template Year >}})
+year_dt <- dt |> filter(year(Date_Closed) == 2022)
 
 year_dt |> arrange(desc(Date_Closed)) |> 
     mutate(National=factor(National, levels=all_unions)) |> 
@@ -122,7 +122,7 @@ year_dt |> arrange(desc(Date_Closed)) |>
 ```{r}
 full_state <- sort(c(state.abb, "DC", "PR", "VI", "SK", "GU", "AE", "AS"))
 
-year_dt <- dt |> filter(year(Date_Filed) == {{< template Year >}})
+year_dt <- dt |> filter(year(Date_Filed) == 2022)
 year_dt |> arrange(desc(Date_Filed)) |> 
     mutate(State=factor(State, levels=full_state)) |> 
     distinct() |> 
@@ -151,7 +151,7 @@ year_dt |> arrange(desc(Date_Filed)) |>
 
 ## Closed
 ```{r}
-year_dt <- dt |> filter(year(Date_Closed) == {{< template Year >}})
+year_dt <- dt |> filter(year(Date_Closed) == 2022)
 
 year_dt |> arrange(desc(Date_Closed)) |> 
     mutate(State=factor(State, levels=full_state)) |> 
