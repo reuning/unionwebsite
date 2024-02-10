@@ -1,0 +1,184 @@
+---
+title: 2010 Union Filing Report
+description: Data on union election filings in 2010
+hide-description: true 
+execute:
+        echo: false
+---
+
+
+```{r}
+
+library(tidyverse)
+library(gt)
+library(here)
+dt <- read_csv(here("gen", "data", 
+  "cleaned_data.csv")
+)
+
+dt <- dt |> mutate(National=ifelse(National=="","Uncoded", National)) |> 
+    mutate(National = ifelse(National_Count >1 , "Multiple", National))
+
+all_unions <- sort(unique(dt$National))
+
+
+filed <- dt |> filter( `Case_Type`=="RC")  |>
+        filter(year(Date_Filed) == 2010) |> nrow()
+closed <- dt |>  filter( `Case_Type`=="RC")  |>
+        filter(year(Date_Closed) == 2010) |> nrow()
+closed_success <- dt |>  filter( `Case_Type`=="RC")  |> 
+        filter((year(Date_Closed) == 2010) &
+                (Union_Cer=="Yes")) |> nrow()
+median_unit <- dt |>  filter( `Case_Type`=="RC")  |> 
+        filter((year(Date_Closed) == 2010) &
+                (Union_Cer=="Yes")) |> pull(Num_Eligible_Voters) |>
+                median()
+
+total_unit <- dt |>  filter( `Case_Type`=="RC")  |> 
+        filter((year(Date_Closed) == 2010) &
+                (Union_Cer=="Yes")) |> pull(Num_Eligible_Voters) |>
+                sum()
+
+```
+
+In 2010 there were `r scales::number(filed, big.mark=",")` representation cases filed[^note] and `r scales::number(closed, big.mark=",")` closed. Of those cases that were closed in 2010 `r scales::percent(closed_success/closed, accuracy=.1)` led to the certification of a union. The median bargaining unit for successful cases had `r scales::number(median_unit, big.mark=",")` workers. In total this led to approximately `r scales::number(total_unit, big.mark=",")` new workers with union representation. 
+
+[^note]: This only includes cases with a single union filed, excluding the rare cases with multiple unions in an election. 
+
+## By Union 
+
+
+
+
+::: {.panel-tabset}
+
+## Filed 
+```{r}
+
+year_dt <- dt |> filter(year(Date_Filed) == 2010)
+year_dt |> arrange(desc(Date_Filed)) |> 
+    mutate(National=factor(National, levels=all_unions)) |> 
+    distinct() |> 
+    filter( `Case_Type`=="RC")  |> 
+    group_by(National) |> 
+    summarize("Filed" = n(),
+            "Closed"=sum(!is.na(Date_Closed)), 
+            "Closed with Union"=sum(Union_Cer=="Yes"), 
+            "Percent Successful"=`Closed with Union`/`Closed`, 
+            "Median Successful BU"=median(Num_Eligible_Voters[Union_Cer=="Yes"], na.rm=T)) |>
+    complete(National, 
+            fill=list("Filed"=0, 
+                        "Closed"=0, 
+                        "Closed with Union"=0)   ) |> 
+    gt() |> 
+    fmt_percent(columns=`Percent Successful`, decimals=1) |> 
+    sub_missing(missing_text="-") |> 
+    tab_footnote(footnote="Of those filed during the year", 
+        locations=cells_column_labels(columns=3:4) ) |> 
+    sub_zero(columns=`Percent Successful`, 
+            zero_text="-") |>
+    opt_interactive(use_pagination=FALSE)
+
+```
+
+
+## Closed
+```{r}
+year_dt <- dt |> filter(year(Date_Closed) == 2010)
+
+year_dt |> arrange(desc(Date_Closed)) |> 
+    mutate(National=factor(National, levels=all_unions)) |> 
+    distinct() |> 
+    filter( `Case_Type`=="RC")  |> 
+    group_by(National) |> 
+    summarize("Number Closed"=n(), 
+            "Closed with Union"=sum(Union_Cer=="Yes"), 
+            "Percent Unionized"=`Closed with Union`/`Number Closed`, 
+            "Median Succesful BU"=median(Num_Eligible_Voters[Union_Cer=="Yes"], na.rm=T), 
+            "Total Workers Unionized"=sum(Num_Eligible_Voters[Union_Cer=="Yes"], na.rm=T)) |>
+    complete(National, 
+            fill=list("Number Closed"=0, 
+                        "Closed with Union"=0)   ) |> 
+    gt() |> 
+    fmt_percent(columns=`Percent Unionized`, decimals=1) |> 
+    fmt_integer(columns=`Total Workers Unionized`) |> 
+    sub_missing(missing_text="-") |> 
+    sub_zero(columns=`Percent Unionized`:`Total Workers Unionized`, 
+            zero_text="-") |>
+    opt_interactive(use_pagination=FALSE)
+
+
+```
+
+:::
+
+
+## By State
+
+
+::: {.panel-tabset}
+
+## Filed 
+```{r}
+full_state <- sort(c(state.abb, "DC", "PR", "VI", "SK", "GU", "AE", "AS"))
+
+year_dt <- dt |> filter(year(Date_Filed) == 2010)
+year_dt |> arrange(desc(Date_Filed)) |> 
+    mutate(State=factor(State, levels=full_state)) |> 
+    distinct() |> 
+    filter( `Case_Type`=="RC")   |> 
+    group_by(State) |> 
+    summarize("Filed" = n(),
+            "Closed"=sum(!is.na(Date_Closed)), 
+            "Closed with Union"=sum(Union_Cer=="Yes"), 
+            "Percent Successful"=`Closed with Union`/`Closed`, 
+            "Median Successful BU"=median(Num_Eligible_Voters[Union_Cer=="Yes"], na.rm=T)) |>
+    complete(State, 
+            fill=list("Filed"=0, 
+                        "Closed"=0, 
+                        "Closed with Union"=0)   ) |> 
+    gt() |> 
+    fmt_percent(columns=`Percent Successful`, decimals=1) |> 
+    sub_missing(missing_text="-") |> 
+    tab_footnote(footnote="Of those filed during the year", 
+        locations=cells_column_labels(columns=3:4) ) |> 
+    sub_zero(columns=`Percent Successful`, 
+            zero_text="-") |>
+    opt_interactive(use_pagination=FALSE)
+
+```
+
+
+## Closed
+```{r}
+year_dt <- dt |> filter(year(Date_Closed) == 2010)
+
+year_dt |> arrange(desc(Date_Closed)) |> 
+    mutate(State=factor(State, levels=full_state)) |> 
+    distinct() |> 
+    filter( `Case_Type`=="RC")  |> 
+    group_by(State) |> 
+    summarize("Number Closed"=n(), 
+            "Closed with Union"=sum(Union_Cer=="Yes"), 
+            "Percent Unionized"=`Closed with Union`/`Number Closed`, 
+            "Median Succesful BU"=median(Num_Eligible_Voters[Union_Cer=="Yes"], na.rm=T), 
+            "Total Workers Unionized"=sum(Num_Eligible_Voters[Union_Cer=="Yes"], na.rm=T)) |>
+    complete(State, 
+            fill=list("Number Closed"=0, 
+                        "Closed with Union"=0)   ) |> 
+    gt() |> 
+    fmt_percent(columns=`Percent Unionized`, decimals=1) |> 
+    fmt_integer(columns=`Total Workers Unionized`) |> 
+    sub_missing(missing_text="-") |> 
+    sub_zero(columns=`Percent Unionized`:`Total Workers Unionized`, 
+            zero_text="-") |>
+    opt_interactive(use_pagination=FALSE)
+
+
+```
+
+:::
+
+
+
+
