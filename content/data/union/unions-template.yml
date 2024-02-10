@@ -1,426 +1,426 @@
 data: data <- readr::read_csv(here::here("gen", "data", "cleaned_data.csv"))
 items:
-  ACOPS:
+  acops:
     Union_Short: ACOPS
     Union_Long: ACOPS
     data:
       subset: data[data$National=="ACOPS",]
       filename: ACOPS_data.csv
-  AFM:
+  afm:
     Union_Short: AFM
-    Union_Long: American Federation of Musicians
+    Union_Long: AFM
     data:
       subset: data[data$National=="AFM",]
       filename: AFM_data.csv
-  AFSCME:
+  afscme:
     Union_Short: AFSCME
     Union_Long: AFSCME
     data:
       subset: data[data$National=="AFSCME",]
       filename: AFSCME_data.csv
-  AFT:
+  aft:
     Union_Short: AFT
-    Union_Long: American Federation of Teachers
+    Union_Long: AFT
     data:
       subset: data[data$National=="AFT",]
       filename: AFT_data.csv
-  APWU:
+  apwu:
     Union_Short: APWU
     Union_Long: APWU
     data:
       subset: data[data$National=="APWU",]
       filename: APWU_data.csv
-  ATU:
+  atu:
     Union_Short: ATU
     Union_Long: ATU
     data:
       subset: data[data$National=="ATU",]
       filename: ATU_data.csv
-  AWPPU:
+  awppu:
     Union_Short: AWPPU
     Union_Long: AWPPU
     data:
       subset: data[data$National=="AWPPU",]
       filename: AWPPU_data.csv
-  BAC:
+  bac:
     Union_Short: BAC
     Union_Long: BAC
     data:
       subset: data[data$National=="BAC",]
       filename: BAC_data.csv
-  BCTGM:
+  bctgm:
     Union_Short: BCTGM
     Union_Long: BCTGM
     data:
       subset: data[data$National=="BCTGM",]
       filename: BCTGM_data.csv
-  CSEA:
+  csea:
     Union_Short: CSEA
     Union_Long: CSEA
     data:
       subset: data[data$National=="CSEA",]
       filename: CSEA_data.csv
-  CWA:
+  cwa:
     Union_Short: CWA
     Union_Long: CWA
     data:
       subset: data[data$National=="CWA",]
       filename: CWA_data.csv
-  FCGOA:
+  fcgoa:
     Union_Short: FCGOA
     Union_Long: FCGOA
     data:
       subset: data[data$National=="FCGOA",]
       filename: FCGOA_data.csv
-  IAFF:
+  iaff:
     Union_Short: IAFF
     Union_Long: IAFF
     data:
       subset: data[data$National=="IAFF",]
       filename: IAFF_data.csv
-  IAM:
+  iam:
     Union_Short: IAM
     Union_Long: IAM
     data:
       subset: data[data$National=="IAM",]
       filename: IAM_data.csv
-  IATSE:
+  iatse:
     Union_Short: IATSE
     Union_Long: IATSE
     data:
       subset: data[data$National=="IATSE",]
       filename: IATSE_data.csv
-  IBB:
+  ibb:
     Union_Short: IBB
     Union_Long: IBB
     data:
       subset: data[data$National=="IBB",]
       filename: IBB_data.csv
-  IBEW:
+  ibew:
     Union_Short: IBEW
     Union_Long: IBEW
     data:
       subset: data[data$National=="IBEW",]
       filename: IBEW_data.csv
-  IFPTE:
+  ifpte:
     Union_Short: IFPTE
     Union_Long: IFPTE
     data:
       subset: data[data$National=="IFPTE",]
       filename: IFPTE_data.csv
-  ILA:
+  ila:
     Union_Short: ILA
     Union_Long: ILA
     data:
       subset: data[data$National=="ILA",]
       filename: ILA_data.csv
-  ILWU:
+  ilwu:
     Union_Short: ILWU
     Union_Long: ILWU
     data:
       subset: data[data$National=="ILWU",]
       filename: ILWU_data.csv
-  Insulators:
+  insulators:
     Union_Short: Insulators
     Union_Long: Insulators
     data:
       subset: data[data$National=="Insulators",]
       filename: Insulators_data.csv
-  Ironworkers:
+  ironworkers:
     Union_Short: Ironworkers
     Union_Long: Ironworkers
     data:
       subset: data[data$National=="Ironworkers",]
       filename: Ironworkers_data.csv
-  IUEC:
+  iuec:
     Union_Short: IUEC
     Union_Long: IUEC
     data:
       subset: data[data$National=="IUEC",]
       filename: IUEC_data.csv
-  IUJAT:
+  iujat:
     Union_Short: IUJAT
     Union_Long: IUJAT
     data:
       subset: data[data$National=="IUJAT",]
       filename: IUJAT_data.csv
-  IUOE:
+  iuoe:
     Union_Short: IUOE
     Union_Long: IUOE
     data:
       subset: data[data$National=="IUOE",]
       filename: IUOE_data.csv
-  IUPAT:
+  iupat:
     Union_Short: IUPAT
     Union_Long: IUPAT
     data:
       subset: data[data$National=="IUPAT",]
       filename: IUPAT_data.csv
-  IWW:
+  iww:
     Union_Short: IWW
     Union_Long: IWW
     data:
       subset: data[data$National=="IWW",]
       filename: IWW_data.csv
-  LIUNA:
+  liuna:
     Union_Short: LIUNA
     Union_Long: LIUNA
     data:
       subset: data[data$National=="LIUNA",]
       filename: LIUNA_data.csv
-  Multiple:
+  multiple:
     Union_Short: Multiple
     Union_Long: Multiple
     data:
       subset: data[data$National=="Multiple",]
       filename: Multiple_data.csv
-  NABET:
+  nabet:
     Union_Short: NABET
     Union_Long: NABET
     data:
       subset: data[data$National=="NABET",]
       filename: NABET_data.csv
-  NAGE:
+  nage:
     Union_Short: NAGE
     Union_Long: NAGE
     data:
       subset: data[data$National=="NAGE",]
       filename: NAGE_data.csv
-  NATCA:
+  natca:
     Union_Short: NATCA
     Union_Long: NATCA
     data:
       subset: data[data$National=="NATCA",]
       filename: NATCA_data.csv
-  NEA:
+  nea:
     Union_Short: NEA
     Union_Long: NEA
     data:
       subset: data[data$National=="NEA",]
       filename: NEA_data.csv
-  NEMSA:
+  nemsa:
     Union_Short: NEMSA
     Union_Long: NEMSA
     data:
       subset: data[data$National=="NEMSA",]
       filename: NEMSA_data.csv
-  NewsGuild:
+  newsguild:
     Union_Short: NewsGuild
     Union_Long: NewsGuild
     data:
       subset: data[data$National=="NewsGuild",]
       filename: NewsGuild_data.csv
-  NLJSP:
+  nljsp:
     Union_Short: NLJSP
     Union_Long: NLJSP
     data:
       subset: data[data$National=="NLJSP",]
       filename: NLJSP_data.csv
-  NNU:
+  nnu:
     Union_Short: NNU
     Union_Long: NNU
     data:
       subset: data[data$National=="NNU",]
       filename: NNU_data.csv
-  NUHW:
+  nuhw:
     Union_Short: NUHW
     Union_Long: NUHW
     data:
       subset: data[data$National=="NUHW",]
       filename: NUHW_data.csv
-  NYSNA:
+  nysna:
     Union_Short: NYSNA
     Union_Long: NYSNA
     data:
       subset: data[data$National=="NYSNA",]
       filename: NYSNA_data.csv
-  OPEIU:
+  opeiu:
     Union_Short: OPEIU
     Union_Long: OPEIU
     data:
       subset: data[data$National=="OPEIU",]
       filename: OPEIU_data.csv
-  Other:
+  other:
     Union_Short: Other
     Union_Long: Other
     data:
       subset: data[data$National=="Other",]
       filename: Other_data.csv
-  PASNAP:
+  pasnap:
     Union_Short: PASNAP
     Union_Long: PASNAP
     data:
       subset: data[data$National=="PASNAP",]
       filename: PASNAP_data.csv
-  PATCO:
+  patco:
     Union_Short: PATCO
     Union_Long: PATCO
     data:
       subset: data[data$National=="PATCO",]
       filename: PATCO_data.csv
-  RWDSU:
+  rwdsu:
     Union_Short: RWDSU
     Union_Long: RWDSU
     data:
       subset: data[data$National=="RWDSU",]
       filename: RWDSU_data.csv
-  SAG-AFTRA:
+  sag-aftra:
     Union_Short: SAG-AFTRA
     Union_Long: SAG-AFTRA
     data:
       subset: data[data$National=="SAG-AFTRA",]
       filename: SAG-AFTRA_data.csv
-  Seafarers:
+  seafarers:
     Union_Short: Seafarers
     Union_Long: Seafarers
     data:
       subset: data[data$National=="Seafarers",]
       filename: Seafarers_data.csv
-  SEIU:
+  seiu:
     Union_Short: SEIU
     Union_Long: SEIU
     data:
       subset: data[data$National=="SEIU",]
       filename: SEIU_data.csv
-  SMART:
+  smart:
     Union_Short: SMART
     Union_Long: SMART
     data:
       subset: data[data$National=="SMART",]
       filename: SMART_data.csv
-  SPFPA:
+  spfpa:
     Union_Short: SPFPA
     Union_Long: SPFPA
     data:
       subset: data[data$National=="SPFPA",]
       filename: SPFPA_data.csv
-  SSOBA:
+  ssoba:
     Union_Short: SSOBA
     Union_Long: SSOBA
     data:
       subset: data[data$National=="SSOBA",]
       filename: SSOBA_data.csv
-  Teamsters:
+  teamsters:
     Union_Short: Teamsters
     Union_Long: Teamsters
     data:
       subset: data[data$National=="Teamsters",]
       filename: Teamsters_data.csv
-  TWU:
+  twu:
     Union_Short: TWU
     Union_Long: TWU
     data:
       subset: data[data$National=="TWU",]
       filename: TWU_data.csv
-  UA:
+  ua:
     Union_Short: UA
     Union_Long: UA
     data:
       subset: data[data$National=="UA",]
       filename: UA_data.csv
-  UAW:
+  uaw:
     Union_Short: UAW
     Union_Long: UAW
     data:
       subset: data[data$National=="UAW",]
       filename: UAW_data.csv
-  UBC:
+  ubc:
     Union_Short: UBC
     Union_Long: UBC
     data:
       subset: data[data$National=="UBC",]
       filename: UBC_data.csv
-  UE:
+  ue:
     Union_Short: UE
     Union_Long: UE
     data:
       subset: data[data$National=="UE",]
       filename: UE_data.csv
-  UFCW:
+  ufcw:
     Union_Short: UFCW
     Union_Long: UFCW
     data:
       subset: data[data$National=="UFCW",]
       filename: UFCW_data.csv
-  UGSOA:
+  ugsoa:
     Union_Short: UGSOA
     Union_Long: UGSOA
     data:
       subset: data[data$National=="UGSOA",]
       filename: UGSOA_data.csv
-  UMWA:
+  umwa:
     Union_Short: UMWA
     Union_Long: UMWA
     data:
       subset: data[data$National=="UMWA",]
       filename: UMWA_data.csv
-  UNAP:
+  unap:
     Union_Short: UNAP
     Union_Long: UNAP
     data:
       subset: data[data$National=="UNAP",]
       filename: UNAP_data.csv
-  Uncoded:
+  uncoded:
     Union_Short: Uncoded
     Union_Long: Uncoded
     data:
       subset: data[data$National=="Uncoded",]
       filename: Uncoded_data.csv
-  UNITE HERE:
+  unite_here:
     Union_Short: UNITE HERE
     Union_Long: UNITE HERE
     data:
       subset: data[data$National=="UNITE HERE",]
       filename: UNITE HERE_data.csv
-  United Federation LEOS-PBA:
+  united_federation_leos-pba:
     Union_Short: United Federation LEOS-PBA
     Union_Long: United Federation LEOS-PBA
     data:
       subset: data[data$National=="United Federation LEOS-PBA",]
       filename: United Federation LEOS-PBA_data.csv
-  URSO:
+  urso:
     Union_Short: URSO
     Union_Long: URSO
     data:
       subset: data[data$National=="URSO",]
       filename: URSO_data.csv
-  USCSO:
+  uscso:
     Union_Short: USCSO
     Union_Long: USCSO
     data:
       subset: data[data$National=="USCSO",]
       filename: USCSO_data.csv
-  USOA:
+  usoa:
     Union_Short: USOA
     Union_Long: USOA
     data:
       subset: data[data$National=="USOA",]
       filename: USOA_data.csv
-  USPOA:
+  uspoa:
     Union_Short: USPOA
     Union_Long: USPOA
     data:
       subset: data[data$National=="USPOA",]
       filename: USPOA_data.csv
-  USW:
+  usw:
     Union_Short: USW
     Union_Long: USW
     data:
       subset: data[data$National=="USW",]
       filename: USW_data.csv
-  UWA:
+  uwa:
     Union_Short: UWA
     Union_Long: UWA
     data:
       subset: data[data$National=="UWA",]
       filename: UWA_data.csv
-  UWUA:
+  uwua:
     Union_Short: UWUA
     Union_Long: UWUA
     data:
       subset: data[data$National=="UWUA",]
       filename: UWUA_data.csv
-  WU:
+  wu:
     Union_Short: WU
     Union_Long: WU
     data:

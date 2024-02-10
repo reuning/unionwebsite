@@ -1,252 +1,252 @@
 data: data <- readr::read_csv(here::here("gen", "data", "cleaned_data.csv"))
 items:
   Alabama:
-    State: Alabama
+    State: alabama
     data:
       subset: data[data$State=="AL",]
       filename: AL_data.csv
   Alaska:
-    State: Alaska
+    State: alaska
     data:
       subset: data[data$State=="AK",]
       filename: AK_data.csv
   Arizona:
-    State: Arizona
+    State: arizona
     data:
       subset: data[data$State=="AZ",]
       filename: AZ_data.csv
   Arkansas:
-    State: Arkansas
+    State: arkansas
     data:
       subset: data[data$State=="AR",]
       filename: AR_data.csv
   California:
-    State: California
+    State: california
     data:
       subset: data[data$State=="CA",]
       filename: CA_data.csv
   Colorado:
-    State: Colorado
+    State: colorado
     data:
       subset: data[data$State=="CO",]
       filename: CO_data.csv
   Connecticut:
-    State: Connecticut
+    State: connecticut
     data:
       subset: data[data$State=="CT",]
       filename: CT_data.csv
   Delaware:
-    State: Delaware
+    State: delaware
     data:
       subset: data[data$State=="DE",]
       filename: DE_data.csv
   Florida:
-    State: Florida
+    State: florida
     data:
       subset: data[data$State=="FL",]
       filename: FL_data.csv
   Georgia:
-    State: Georgia
+    State: georgia
     data:
       subset: data[data$State=="GA",]
       filename: GA_data.csv
   Hawaii:
-    State: Hawaii
+    State: hawaii
     data:
       subset: data[data$State=="HI",]
       filename: HI_data.csv
   Idaho:
-    State: Idaho
+    State: idaho
     data:
       subset: data[data$State=="ID",]
       filename: ID_data.csv
   Illinois:
-    State: Illinois
+    State: illinois
     data:
       subset: data[data$State=="IL",]
       filename: IL_data.csv
   Indiana:
-    State: Indiana
+    State: indiana
     data:
       subset: data[data$State=="IN",]
       filename: IN_data.csv
   Iowa:
-    State: Iowa
+    State: iowa
     data:
       subset: data[data$State=="IA",]
       filename: IA_data.csv
   Kansas:
-    State: Kansas
+    State: kansas
     data:
       subset: data[data$State=="KS",]
       filename: KS_data.csv
   Kentucky:
-    State: Kentucky
+    State: kentucky
     data:
       subset: data[data$State=="KY",]
       filename: KY_data.csv
   Louisiana:
-    State: Louisiana
+    State: louisiana
     data:
       subset: data[data$State=="LA",]
       filename: LA_data.csv
   Maine:
-    State: Maine
+    State: maine
     data:
       subset: data[data$State=="ME",]
       filename: ME_data.csv
   Maryland:
-    State: Maryland
+    State: maryland
     data:
       subset: data[data$State=="MD",]
       filename: MD_data.csv
   Massachusetts:
-    State: Massachusetts
+    State: massachusetts
     data:
       subset: data[data$State=="MA",]
       filename: MA_data.csv
   Michigan:
-    State: Michigan
+    State: michigan
     data:
       subset: data[data$State=="MI",]
       filename: MI_data.csv
   Minnesota:
-    State: Minnesota
+    State: minnesota
     data:
       subset: data[data$State=="MN",]
       filename: MN_data.csv
   Mississippi:
-    State: Mississippi
+    State: mississippi
     data:
       subset: data[data$State=="MS",]
       filename: MS_data.csv
   Missouri:
-    State: Missouri
+    State: missouri
     data:
       subset: data[data$State=="MO",]
       filename: MO_data.csv
   Montana:
-    State: Montana
+    State: montana
     data:
       subset: data[data$State=="MT",]
       filename: MT_data.csv
   Nebraska:
-    State: Nebraska
+    State: nebraska
     data:
       subset: data[data$State=="NE",]
       filename: NE_data.csv
   Nevada:
-    State: Nevada
+    State: nevada
     data:
       subset: data[data$State=="NV",]
       filename: NV_data.csv
   New Hampshire:
-    State: New Hampshire
+    State: new_hampshire
     data:
       subset: data[data$State=="NH",]
       filename: NH_data.csv
   New Jersey:
-    State: New Jersey
+    State: new_jersey
     data:
       subset: data[data$State=="NJ",]
       filename: NJ_data.csv
   New Mexico:
-    State: New Mexico
+    State: new_mexico
     data:
       subset: data[data$State=="NM",]
       filename: NM_data.csv
   New York:
-    State: New York
+    State: new_york
     data:
       subset: data[data$State=="NY",]
       filename: NY_data.csv
   North Carolina:
-    State: North Carolina
+    State: north_carolina
     data:
       subset: data[data$State=="NC",]
       filename: NC_data.csv
   North Dakota:
-    State: North Dakota
+    State: north_dakota
     data:
       subset: data[data$State=="ND",]
       filename: ND_data.csv
   Ohio:
-    State: Ohio
+    State: ohio
     data:
       subset: data[data$State=="OH",]
       filename: OH_data.csv
   Oklahoma:
-    State: Oklahoma
+    State: oklahoma
     data:
       subset: data[data$State=="OK",]
       filename: OK_data.csv
   Oregon:
-    State: Oregon
+    State: oregon
     data:
       subset: data[data$State=="OR",]
       filename: OR_data.csv
   Pennsylvania:
-    State: Pennsylvania
+    State: pennsylvania
     data:
       subset: data[data$State=="PA",]
       filename: PA_data.csv
   Rhode Island:
-    State: Rhode Island
+    State: rhode_island
     data:
       subset: data[data$State=="RI",]
       filename: RI_data.csv
   South Carolina:
-    State: South Carolina
+    State: south_carolina
     data:
       subset: data[data$State=="SC",]
       filename: SC_data.csv
   South Dakota:
-    State: South Dakota
+    State: south_dakota
     data:
       subset: data[data$State=="SD",]
       filename: SD_data.csv
   Tennessee:
-    State: Tennessee
+    State: tennessee
     data:
       subset: data[data$State=="TN",]
       filename: TN_data.csv
   Texas:
-    State: Texas
+    State: texas
     data:
       subset: data[data$State=="TX",]
       filename: TX_data.csv
   Utah:
-    State: Utah
+    State: utah
     data:
       subset: data[data$State=="UT",]
       filename: UT_data.csv
   Vermont:
-    State: Vermont
+    State: vermont
     data:
       subset: data[data$State=="VT",]
       filename: VT_data.csv
   Virginia:
-    State: Virginia
+    State: virginia
     data:
       subset: data[data$State=="VA",]
       filename: VA_data.csv
   Washington:
-    State: Washington
+    State: washington
     data:
       subset: data[data$State=="WA",]
       filename: WA_data.csv
   West Virginia:
-    State: West Virginia
+    State: west_virginia
     data:
       subset: data[data$State=="WV",]
       filename: WV_data.csv
   Wisconsin:
-    State: Wisconsin
+    State: wisconsin
     data:
       subset: data[data$State=="WI",]
       filename: WI_data.csv
   Wyoming:
-    State: Wyoming
+    State: wyoming
     data:
       subset: data[data$State=="WY",]
       filename: WY_data.csv

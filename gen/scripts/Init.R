@@ -16,10 +16,7 @@ dt <- rbind(dt[,..cols], dt_old)
 dt <- prep_data(dt)
 
 
-
-
 dt[National %in% names(which(table(dt$National) < 20)), National:="Other"]
-
 dt[National=="", National:="Uncoded"]
 dt[National_Count>1, National:="Multiple"]
 write.csv(dt, here("gen", "data", "cleaned_data.csv"), row.names = F)
