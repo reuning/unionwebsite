@@ -18,6 +18,8 @@ website:
       - section: Unions
         href: content/data/union/index.qmd
         contents: content/data/union/*
+      - section: Yearly Reports
+        contents: content/data/reports/*
       - section: Info
         contents: content/data/info/*
 
