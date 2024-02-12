@@ -63,9 +63,6 @@ for(ii in 1:nrow(dict)){
 
 
 
-
-### OLD ####
-
 unions <- yaml::read_yaml(here::here("content", "data", "union", "unions-template.yml"))
 
 unions <- names(unions$items)
