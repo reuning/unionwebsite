@@ -29,10 +29,13 @@ for (ii in seq_along(template_files)){
     all_vars <- read_yaml(yml_files[ii])
 
     items <- all_vars$items
+    dir_out <- file.path(base_path, names(items)[[jj]])
+    if(!dir.exists(dir_out)) dir.create(dir_out)
+    
     for (jj in seq_along(items)){
 
         if ("data" %in% names(items[[jj]])) {
-            file_out <- file.path(base_path, items[[jj]]$data$filename)
+            file_out <- file.path(dir_out, items[[jj]]$data$filename)
             file.remove(file_out)
         }
 

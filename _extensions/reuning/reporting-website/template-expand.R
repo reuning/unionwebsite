@@ -32,12 +32,15 @@ for (ii in seq_along(template_files)){
     }
 
     items <- all_vars$items
+    dir_out <- file.path(base_path, names(items)[[jj]])
+    if(!dir.exists(dir_out)) dir.create(dir_out)
+
     for (jj in seq_along(items)){
         qmd_out <- template
 
         if ("data" %in% names(items[[jj]])) {
             eval(parse(text = paste0("tmp_df <- ", items[[jj]]$data$subset)))
-            file_out <- file.path(base_path, items[[jj]]$data$filename)
+            file_out <- file.path(dir_out, items[[jj]]$data$filename)
             write.csv(tmp_df, file_out, row.names = FALSE)
 
             qmd_out <- gsub("\\{\\{< template data_filename >\\}\\}",
@@ -53,7 +56,8 @@ for (ii in seq_along(template_files)){
                              vars[[kk]], qmd_out)
         }
 
-        file_out <- file.path(base_path, paste0(names(items)[[jj]], ".qmd"))
+
+        file_out <- file.path(dir_out, "index.qmd")
         writeLines(qmd_out, file_out)
     }
 
