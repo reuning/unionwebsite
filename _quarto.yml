@@ -5,23 +5,24 @@ website:
   title: "Union Elections"
   open-graph: true
   twitter-card: true
+  site-url: "https://unionelections.org"
   sidebar:
     collapse-level: 1
     contents: 
       - href: index.qmd
         text: Home
-      - href: content/data/starbucks/index.qmd
+      - href: data/starbucks/index.qmd
         text: Starbucks Elections
       - section: States
-        href: content/data/states/index.qmd
-        contents: content/data/states/*
+        href: data/states/index.qmd
+        contents: data/states/*/*
       - section: Unions
-        href: content/data/union/index.qmd
-        contents: content/data/union/*
+        href: data/union/index.qmd
+        contents: data/union/*/*
       - section: Yearly Reports
-        contents: content/data/reports/*
+        contents: data/reports/*/*
       - section: Info
-        contents: content/data/info/*
+        contents: data/info/*
 
 knitr:
     opts_chunk: 
@@ -43,7 +44,10 @@ format:
       gutter-width: 1.5rem
     toc-location: right
     author-meta: Kevin Reuning
+    include-in-header: 
+      - text: '<script defer data-domain="unionelections.org" src="https://plausible.io/js/script.js"></script>'
 
 execute: 
   echo: false
   warning: false
+  freeze: true
