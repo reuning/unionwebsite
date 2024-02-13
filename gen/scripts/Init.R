@@ -1,6 +1,7 @@
 
 library(data.table)
 library(here)
+sysfonts::font_add_google("Crimson Pro")
 
 source(here("gen", "scripts", "Scripts.R"))
 
