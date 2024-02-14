@@ -1,0 +1,301 @@
+---
+title: Tennessee
+pagetitle: Tennessee Union Elections
+hide-description: true 
+description: Data on recent union elections in Tennessee.
+---
+
+
+```{r}
+clean_num <- function(x) scales::number(x, big.mark=",")
+change_sentence <- function(new_val, prev_val){
+  change <- (new_val - prev_val)/prev_val*100
+  if(new_val > prev_val){
+    sprintf("a %2.2f%% increase from the previous", change)
+  } else if (new_val < prev_val){
+    sprintf("a %2.2f%% decrease from the previous", change)
+  } else {
+    sprintf("the same as the previous", change)
+  }
+}
+
+
+library(tidyverse)
+theme_set(theme_minimal(base_family = "Crimson Pro"))
+library(gt)
+library(here)
+data <- read_csv("TN_data.csv") |> filter(Case_Type == "RC") |> 
+  mutate(Ballot_Type= 
+            ifelse(Ballot_Type == "Revised Single Labor Org", 
+        "Revised", "Initial"))
+
+year_ago <- today() - years(1)
+filed_last_year <- sum((data$Unique == TRUE) & 
+    data$Date_Filed > year_ago )
+voted_last_year <- sum((data$Unique == TRUE) & 
+    data$Tally_Date > year_ago, na.rm=T)
+
+if(is.na(voted_last_year)) voted_last_year <- 0
+
+cert_last_year <- sum((data$Unique == TRUE) &
+    data$Tally_Date > year_ago & 
+    data$Union_Cer == "Yes", na.rm=T)
+
+
+tmp_dt <- data |> filter(Status=="Open") |>
+    arrange(desc(Date_Filed)) |> distinct()
+open_cases <- nrow(tmp_dt)
+open_cases_waiting <- sum(tmp_dt$Election_Data == "No")
+
+```
+
+
+
+
+
+Excluding public employees and multi-union election, in the last 12 months there have been `r clean_num(filed_last_year)` union elections filed in Tennessee and `r clean_num(voted_last_year)` union elections held. In `r clean_num(cert_last_year)` of those elections a new unit was certified. There are currently `r clean_num(open_cases)` open representation cases and `r clean_num(open_cases_waiting)` of are still waiting to vote.
+
+
+## Union Elections by Outcome
+
+::: {.panel-tabset}
+
+### By Unit 
+
+```{r}
+#| classes: preview-image
+#| label: unit-outcome-Tennessee
+
+start_quarter <- ymd("1999-01-01")
+plot_data <- data |>
+        filter(Ballot_Type!="Revised" & Unique==TRUE) |>
+        drop_na(size) |> 
+        mutate(Union_Cer=fct_rev(Union_Cer))
+
+curr_quarter <- floor_date(today(), unit="quarter")
+
+unit_data <- plot_data |> group_by(Tally_Quarter, Union_Cer) |> 
+    summarize(n=n()) |> ungroup() |> 
+    complete(Tally_Quarter=seq(start_quarter, curr_quarter, "quarter"),
+    Union_Cer, fill=list("n"=0)) |> 
+    filter(Tally_Quarter >= start_quarter)
+
+y_max <- unit_data |> 
+    filter(Tally_Quarter==curr_quarter) |> 
+    summarize(out=sum(n)) |> 
+    pull(out) 
+
+ggplot(unit_data, aes(x=Tally_Quarter,
+                    fill=Union_Cer, y=n)) +
+    geom_col(position=position_stack(reverse=T), 
+        color="black", size=.2, width=80) +
+    scale_y_continuous(labels=scales::label_comma()) +
+    annotate("text", x=curr_quarter,
+            y=ifelse(y_max == 0, 1, y_max*1.10),label="*") +
+    scale_fill_viridis_d("Voted for Union?",
+                        direction = -1,
+                        begin = .15,
+                        end=.85) +
+    theme(legend.position = "bottom",
+        text = element_text(size=15, lineheight=.3)) +
+    ggtitle("Number of Union Elections in a Quarter by Outcome") +
+    labs(x="Quarter",
+        y="Number of Units",
+        caption = "* Current quarter, not all data complete\n\nIncludes only certification votes with a single union, data from NLRB. https://unionelections.org")
+
+```
+
+### By Worker Vote 
+
+
+```{r}
+#| label: worker-outcome-Tennessee
+
+indiv_data <- plot_data |> group_by(Tally_Quarter) |> 
+    summarize(`Votes For`=sum(Votes_For_Union), 
+                `Votes Against`=sum(Votes_Against), 
+                `Abstained`=sum(Didnt_Vote)) |>
+                 ungroup() |> 
+    complete(Tally_Quarter = 
+        seq(start_quarter, curr_quarter, "quarter"),
+        fill=list("Votes For"=0, 
+                "Votes Against"=0, 
+                "Abstained"=0)) |> 
+    mutate(Abstained=ifelse(Abstained<0, 0, Abstained)) |> 
+    filter(Tally_Quarter >= start_quarter) |> 
+    pivot_longer(-Tally_Quarter)
+
+y_max <- indiv_data |> 
+    filter(Tally_Quarter==curr_quarter) |> 
+    summarize(out=sum(value)) |> 
+    pull(out) 
+
+ggplot(indiv_data, aes(x=Tally_Quarter,
+                    fill=name, y=value)) +
+    geom_col(position=position_stack(reverse=F), 
+        color="black", size=.2, width=80) +
+    scale_y_continuous(labels=scales::label_comma()) +
+    # theme_minimal(base_family = "Crimson Pro") +
+    annotate("text", x=curr_quarter,
+            y=ifelse(y_max == 0, 1, y_max*1.10),label="*") +
+    scale_fill_viridis_d("Vote?",
+                        direction = -1,
+                        begin = .15,
+                        end=.85) +
+    theme(legend.position = "bottom",
+        text = element_text(size=15, lineheight=.3)) +
+    ggtitle("Votes in Union Elections by Quarter") +
+    labs(x="Quarter",
+        y="Number of Votes",
+        caption = "* Current quarter, not all data complete\n\nIncludes only certification votes with a single union, data from NLRB. https://unionelections.org")
+
+```
+
+### Newly Covered Workers 
+
+```{r}
+#| label: newly-covered-Tennessee
+
+covered_data <- plot_data |> filter(Union_Cer=="Yes") |> 
+    group_by(Tally_Quarter) |> 
+    summarize(`Covered`=sum(Num_Eligible_Voters)) |>
+                 ungroup() |> 
+    complete(Tally_Quarter = 
+        seq(start_quarter, curr_quarter, "quarter"),
+        fill=list("Covered"=0)) |> 
+    filter(Tally_Quarter >= start_quarter) 
+
+y_max <- covered_data |> 
+    filter(Tally_Quarter==curr_quarter) |> 
+    summarize(out=sum(Covered)) |> 
+    pull(out) 
+
+ggplot(covered_data, aes(x=Tally_Quarter, y=Covered)) +
+    geom_col(position=position_stack(reverse=F), 
+        color="black", size=.2, width=80) +
+    scale_y_continuous(labels=scales::label_comma()) +
+    # theme_minimal(base_family = "Crimson Pro") +
+    annotate("text", x=curr_quarter,
+            y=ifelse(y_max == 0, 1, y_max*1.10),label="*") +
+    theme(legend.position = "bottom",
+        text = element_text(size=15, lineheight=.3)) +
+    ggtitle("Votes in Union Elections by Quarter") +
+    labs(x="Quarter",
+        y="Number of Newly Covered Workers",
+        caption = "* Current quarter, not all data complete\n\nIncludes only certification votes with a single union, data from NLRB. https://unionelections.org")
+
+```
+
+
+### Raw Data
+
+```{r}
+#| label: timline-Tennessee
+
+indiv_data <- indiv_data |> 
+    pivot_wider(id_cols=Tally_Quarter)
+unit_data <- unit_data |> 
+    pivot_wider(id_cols=Tally_Quarter, 
+        names_from="Union_Cer", values_from="n") |> 
+    rename("Unionized"="Yes", "Voted Against"="No")
+table_out <- unit_data |>  
+    left_join(indiv_data)|> left_join(covered_data) |> 
+    rename("Quarter"=Tally_Quarter) |> 
+    arrange(desc(Quarter))
+
+gt(table_out) |> 
+  fmt_integer(columns=`Unionized`:`Covered`) |> 
+  tab_spanner( "By Unit", columns=c(Unionized, `Voted Against`)) |> 
+  tab_spanner("By Worker", columns=`Votes For`:`Covered`)
+    
+
+```
+
+:::
+
+
+
+
+
+## Timeline of Activity by Unit Size
+
+
+::: {.panel-tabset}
+
+### Plot 
+
+```{r}
+#| classes: preview-image
+activity_data <- plot_data |> 
+    group_by(Filed_Quarter, size) |> 
+    summarize(n=n()) |> 
+    ungroup() |> 
+    mutate(size=factor(size, levels=c("<5", "6-10", "11-25", "26-50", "51-100", "101-500", "500>"))) |> 
+    complete(Filed_Quarter=seq(start_quarter, curr_quarter, "quarter"),
+    size, fill=list("n"=0)) |> 
+    filter(Filed_Quarter >= start_quarter) 
+
+y_max <- activity_data |> 
+    filter(Filed_Quarter==curr_quarter) |> 
+    summarize(out=sum(n)) |> 
+    pull(out) 
+
+ggplot(activity_data, aes(x=Filed_Quarter, y=n, 
+            fill=size)) +
+    geom_col(position=position_stack(reverse=T), 
+        color="black", size=.2, width=80) +
+    scale_y_continuous(labels=scales::label_comma()) +
+    # theme_minimal(base_family = "Crimson Pro") +
+    annotate("text", x=curr_quarter,
+            y=ifelse(y_max == 0, 1, y_max*1.10),label="*") +
+    scale_fill_viridis_d("Vote?",
+            direction = -1,
+            begin = .15,
+            end=.85) +
+    theme(legend.position = "bottom",
+        text = element_text(size=15, lineheight=.3)) +
+    ggtitle("Number of Union Filings in a Quarter by Unit Size") +
+    labs(x="Quarter",
+        y="Number of Units",
+        caption = "* Current quarter, not all data complete\n\nIncludes only certification votes with a single union, data from NLRB. https://unionelections.org")
+
+```
+
+### Raw Data
+
+```{r}
+
+activity_data |> pivot_wider(names_from="size", 
+    values_from="n") |> 
+    rename("Quarter"="Filed_Quarter") |> 
+    arrange(desc(Quarter)) |> 
+    gt() |> 
+  fmt_integer(columns=`<5`:`500>`)
+    
+
+```
+::: 
+
+
+
+## Open Election Related Cases
+
+```{r}
+
+table_out <- data |> filter(Status=="Open") |> 
+    arrange(desc(Date_Filed)) |> 
+    distinct() |> 
+    mutate(Labor_Union=Plot_Labor_Union) |> 
+    select(City, State, Case_Name, Labor_Union, Date_Filed, 
+         Tally_Date,Tally_Type, Ballot_Type, Votes_For_Union,
+         Votes_Against, Num_Eligible_Voters, Case ) |>
+    mutate(Case=paste0("<a href=https://www.nlrb.gov/case/", Case, ">", Case, "</a>")) |> 
+    gt()
+
+table_out |> 
+    cols_label_with(  fn=function(x) gsub("_", " ", x)) |>
+    fmt(Case, fn=function(x) sapply(x, html))  |> 
+    opt_interactive()
+
+
+```

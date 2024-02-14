@@ -32,10 +32,12 @@ for (ii in seq_along(template_files)){
     }
 
     items <- all_vars$items
-    dir_out <- file.path(base_path, names(items)[[jj]])
-    if(!dir.exists(dir_out)) dir.create(dir_out)
+
 
     for (jj in seq_along(items)){
+        dir_out <- file.path(base_path, names(items)[[jj]])
+        if(!dir.exists(dir_out)) dir.create(dir_out)
+
         qmd_out <- template
 
         if ("data" %in% names(items[[jj]])) {
