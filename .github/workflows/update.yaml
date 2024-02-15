@@ -19,7 +19,7 @@ jobs:
     - name: Install dependencies
       run: |
         sudo apt-get update
-        sudo apt-get install -y libgeos-dev libudunits2-dev libgdal-dev libcurl4-openssl-dev webp libharfbuzz-dev libfribidi-dev gh
+        sudo apt-get install -y libgeos-dev libudunits2-dev libgdal-dev libcurl4-openssl-dev webp libharfbuzz-dev libfribidi-dev
 
     - name: Set up Quarto
       uses: quarto-dev/quarto-actions/setup@v2
@@ -77,8 +77,8 @@ jobs:
     - name: Publish to Netlify (and render)
       uses: quarto-dev/quarto-actions/publish@v2
       with:
-      target: netlify
-      NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+        target: netlify
+        NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
 
     - name: Finish and comit
       id: commitfinal
