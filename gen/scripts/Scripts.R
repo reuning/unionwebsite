@@ -147,7 +147,10 @@ prep_data <- function(data=dt){
   data[,`Margin`:=(`Votes_For_Union`)/(`Votes_For_Union`+`Votes_Against`)]
   data[`Total_Ballots_Counted`==0,`Margin`:=NA]
   
-  data[,`Union_Cer`:=ifelse(`Reason_Closed`=="Certific. of Representative", "Yes", "No")]
+  data[,`Union_Cer`:=dplyr::case_match(`Reason_Closed`, 
+      "Certific. of Representative" ~ "Yes",
+      c("Certification of Results", "Withdrawl") ~ "No",
+      .default=NA)]
   
   # data <- data[Case_Type %in% c("RC", "RD")]
   
