@@ -5,80 +5,83 @@ on:
   workflow_dispatch:
 jobs:
   update:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-latest
     env:
       GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
       GEOCODIO_API_KEY: ${{secrets.GEOCODIO_API_KEY}}
 
     steps:
-      - name: Checkout repo
-        uses: actions/checkout@v2
-        with:
-          lfs: 'true'
-          submodules: true
-          fetch-depth: 0
+    - name: Checkout repo
+      uses: actions/checkout@v4
+      with:
+        lfs: 'true'
 
-      - name: Install dependencies
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y libgeos-dev libudunits2-dev libgdal-dev libcurl4-openssl-dev webp
+    - name: Install dependencies
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y libgeos-dev libudunits2-dev libgdal-dev libcurl4-openssl-dev webp libharfbuzz-dev libfribidi-dev gh
 
-      - name: Set up python
-        uses: actions/setup-python@v4
-        with:
-          python-version: '3.10'
+    - name: Set up Quarto
+      uses: quarto-dev/quarto-actions/setup@v2
 
-      - name: Cache Python
-        uses: actions/cache@v2
-        with:
-          path: ~/.cache/pip
-          key: ${{ runner.os }}-pip-${{ hashFiles('gen/scripts/requirements.txt') }}
-          restore-keys: |
-            ${{ runner.os }}-pip-
+    - name: Set up python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.10'
 
-      - name: Install and run Python
-        run: |
-          pip install -r gen/scripts/requirements.txt
-          python gen/scripts/nlrb.py
+    - name: Cache Python
+      uses: actions/cache@v2
+      with:
+        path: ~/.cache/pip
+        key: ${{ runner.os }}-pip-${{ hashFiles('gen/scripts/requirements.txt') }}
+        restore-keys: |
+          ${{ runner.os }}-pip-
 
-      - name: Setup R
-        uses: r-lib/actions/setup-r@v2
-        with:
-          r-version: 4.2.1
+    - name: Install and run Python
+      run: |
+        pip install -r gen/scripts/requirements.txt
+        python gen/scripts/nlrb.py
 
-      - name: Cache packages
-        uses: actions/cache@v3
-        with:
-          path: ~/.local/share/renv
-          key: ${{ runner.os }}-renv-${{ hashFiles('**/renv.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-renv-
+    - name: Setup R
+      uses: r-lib/actions/setup-r@v2
+      with:
+        r-version: 4.3.2
 
-      - name: Restore packages
-        shell: Rscript {0}
-        run: |
-          if (!requireNamespace("renv", quietly = TRUE)) install.packages("renv")
-          renv::restore()
+    - name: Cache packages
+      uses: actions/cache@v3
+      with:
+        path: ~/.local/share/renv
+        key: ${{ runner.os }}-renv-${{ hashFiles('**/renv.lock') }}
+        restore-keys: |
+          ${{ runner.os }}-renv-
 
-      - name: Get New Data
-        run: Rscript gen/scripts/Update_Data.R
+    - name: Restore packages
+      shell: Rscript {0}
+      run: |
+        if (!requireNamespace("renv", quietly = TRUE)) install.packages("renv")
+        renv::restore()
 
-      - name: Commit new data
-        id: commit
-        uses: EndBug/add-and-commit@v7 # You can change this to use a specific version
-        with:
-          add: "['gen/data/recent_election_results.csv', 'gen/data/open_petitions.csv']"
-          message: 'Updated data'
+    - name: Get New Data
+      run: Rscript gen/scripts/Update_Data.R
 
-      - name: Build Plots and Pages
-        if: ${{ steps.commit.outputs.committed == 'true' }}
-        run: |
-          Rscript gen/scripts/Init.R
-          Rscript gen/scripts/Mapping.R
-          git ls-files -m | grep '\.png$' | xargs -r -n 1 sh -c 'cwebp -quiet $1 -o "${1%.png}.webp"' _
+    - name: Prep New Data
+      run: Rscript gen/scripts/Init.R
 
-      - name: Finish and comit
-        id: commitfinal
-        uses: EndBug/add-and-commit@v7 # You can change this to use a specific version
-        with:
-          message: 'Updated plots'
+    - name: Commit new data
+      id: commit
+      uses: EndBug/add-and-commit@v7 # You can change this to use a specific version
+      with:
+        add: "['gen/data/recent_election_results.csv', 'gen/data/open_petitions.csv']"
+        message: 'Updated data'
+
+    - name: Publish to Netlify (and render)
+      uses: quarto-dev/quarto-actions/publish@v2
+      with:
+      target: netlify
+      NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+
+    - name: Finish and comit
+      id: commitfinal
+      uses: EndBug/add-and-commit@v7 # You can change this to use a specific version
+      with:
+        message: 'Updated plots'
