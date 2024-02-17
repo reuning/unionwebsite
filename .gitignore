@@ -8,7 +8,6 @@ staging/
 .DS_Store
 .Rproj.user
 my.secrets
-.Renviron
 chromedriver
 cases_*.csv
 recent_election_results__*
