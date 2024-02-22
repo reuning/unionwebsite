@@ -74,7 +74,10 @@ plot_data <- data |>
 
 curr_quarter <- floor_date(today(), unit="quarter")
 
-unit_data <- plot_data |> group_by(Tally_Quarter, Union_Cer) |> 
+unit_data <- plot_data |> 
+    mutate(Union_Cer=factor(Union_Cer, levels=c("Yes", "No", "Other", 
+    "Still Open"))) |> 
+    group_by(Tally_Quarter, Union_Cer) |> 
     summarize(n=n()) |> ungroup() |> 
     complete(Tally_Quarter=seq(start_quarter, curr_quarter, "quarter"),
     Union_Cer, fill=list("n"=0)) |> 
@@ -85,6 +88,7 @@ y_max <- unit_data |>
     summarize(out=sum(n)) |> 
     pull(out) 
 
+color_pal <- viridis::viridis_pal(begin=.15, end=.85)(4)
 ggplot(unit_data, aes(x=Tally_Quarter,
                     fill=Union_Cer, y=n)) +
     geom_col(position=position_stack(reverse=T), 
@@ -92,10 +96,8 @@ ggplot(unit_data, aes(x=Tally_Quarter,
     scale_y_continuous(labels=scales::label_comma()) +
     annotate("text", x=curr_quarter,
             y=ifelse(y_max == 0, 1, y_max*1.10),label="*") +
-    scale_fill_viridis_d("Voted for Union?",
-                        direction = -1,
-                        begin = .15,
-                        end=.85) +
+    scale_fill_manual("Voted for Union?",
+        values=color_pal[c(4,1,2,3)]) +
     theme(legend.position = "bottom",
         text = element_text(size=15, lineheight=.3)) +
     ggtitle("Number of Union Elections in a Quarter by Outcome") +
@@ -205,7 +207,7 @@ table_out <- unit_data |>
 
 gt(table_out) |> 
   fmt_integer(columns=`Unionized`:`Covered`) |> 
-  tab_spanner( "By Unit", columns=c(Unionized, `Voted Against`)) |> 
+  tab_spanner( "By Unit", columns=Unionized:`Still Open`) |> 
   tab_spanner("By Worker", columns=`Votes For`:`Covered`)
     
 
