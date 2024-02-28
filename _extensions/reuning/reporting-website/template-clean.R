@@ -1,6 +1,6 @@
 if (!nzchar(Sys.getenv("QUARTO_PROJECT_RENDER_ALL"))) {
     ## If previewing/rending one page
-    quit()
+    ## quit()
 }
 
 if (!require(yaml)) {

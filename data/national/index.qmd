@@ -20,6 +20,8 @@ change_sentence <- function(new_val, prev_val){
 }
 
 sysfonts::font_add_google("Crimson Pro")
+showtext::showtext_auto()
+theme_set(theme_minimal(base_family = "Crimson Pro"))
 
 
 library(tidyverse)
@@ -208,7 +210,13 @@ gt(table_out) |>
   fmt_integer(columns=`Unionized`:`Covered`) |> 
   tab_spanner( "By Unit", columns=c(Unionized, `Voted Against`)) |> 
   tab_spanner("By Worker", columns=`Votes For`:`Covered`) |> 
-  opt_interactive()
+  opt_interactive()  |> 
+    tab_style(
+        style = cell_text(
+            font = "Crimson Pro"
+        ),
+        locations = cells_body()
+  )
     
 
 ```
@@ -274,7 +282,13 @@ activity_data |> pivot_wider(names_from="size",
     arrange(desc(Quarter)) |> 
     gt() |> 
   fmt_integer(columns=`<5`:`500>`) |>
-  opt_interactive()
+  opt_interactive()  |> 
+    tab_style(
+        style = cell_text(
+            font = "Crimson Pro"
+        ),
+        locations = cells_body()
+  )
     
 
 ```
@@ -294,7 +308,13 @@ table_out <- data |> filter(Status=="Open") |>
          Tally_Date,Tally_Type, Ballot_Type, Votes_For_Union,
          Votes_Against, Num_Eligible_Voters, Case ) |>
     mutate(Case=paste0("<a href=https://www.nlrb.gov/case/", Case, ">", Case, "</a>")) |>
-    gt()
+    gt()  |> 
+    tab_style(
+        style = cell_text(
+            font = "Crimson Pro"
+        ),
+        locations = cells_body()
+  )
 
 table_out |> 
     cols_label_with(  fn=function(x) gsub("_", " ", x)) |>

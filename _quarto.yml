@@ -44,8 +44,13 @@ format:
       gutter-width: 1.5rem
     toc-location: right
     author-meta: Kevin Reuning
+    mainfont: Crimson Pro
     include-in-header: 
-      - text: '<script defer data-domain="unionelections.org" src="https://plausible.io/js/script.js"></script>'
+      text:  |
+        <script defer data-domain="unionelections.org" src="https://plausible.io/js/script.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
 
 execute: 
   echo: false

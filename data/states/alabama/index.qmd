@@ -21,7 +21,10 @@ change_sentence <- function(new_val, prev_val){
 
 
 library(tidyverse)
+sysfonts::font_add_google("Crimson Pro")
+showtext::showtext_auto()
 theme_set(theme_minimal(base_family = "Crimson Pro"))
+
 library(gt)
 library(here)
 data <- read_csv("AL_data.csv") |> filter(Case_Type == "RC") |> 

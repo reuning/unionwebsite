@@ -21,7 +21,10 @@ change_sentence <- function(new_val, prev_val){
 
 
 library(tidyverse)
+sysfonts::font_add_google("Crimson Pro")
+showtext::showtext_auto()
 theme_set(theme_minimal(base_family = "Crimson Pro"))
+
 library(gt)
 library(here)
 data <- read_csv({{< template data_filename >}}) |> filter(Case_Type == "RC") |> 
@@ -209,7 +212,13 @@ table_out <- unit_data |>
 gt(table_out) |> 
   fmt_integer(columns=`Unionized`:`Covered`) |> 
   tab_spanner( "By Unit", columns=Unionized:`Still Open`) |> 
-  tab_spanner("By Worker", columns=`Votes For`:`Covered`)
+  tab_spanner("By Worker", columns=`Votes For`:`Covered`)  |> 
+    tab_style(
+        style = cell_text(
+            font = "Crimson Pro"
+        ),
+        locations = cells_body()
+  )
     
 
 ```
@@ -273,7 +282,13 @@ activity_data |> pivot_wider(names_from="size",
     rename("Quarter"="Filed_Quarter") |> 
     arrange(desc(Quarter)) |> 
     gt() |> 
-  fmt_integer(columns=`<5`:`500>`)
+  fmt_integer(columns=`<5`:`500>`)  |> 
+    tab_style(
+        style = cell_text(
+            font = "Crimson Pro"
+        ),
+        locations = cells_body()
+  )
     
 
 ```
@@ -333,7 +348,13 @@ if(!in_data){
     gt(member_data) |> 
         cols_label("YR_COVERED"="Year", 
             "MEMBERS"="Total Members") |> 
-        fmt_number(columns=-1, decimal=0)
+        fmt_number(columns=-1, decimal=0)  |> 
+    tab_style(
+        style = cell_text(
+            font = "Crimson Pro"
+        ),
+        locations = cells_body()
+  )
 
 }
 ```
@@ -352,7 +373,13 @@ table_out <- data |> filter(Status=="Open") |>
          Tally_Date,Tally_Type, Ballot_Type, Votes_For_Union,
          Votes_Against, Num_Eligible_Voters, Case ) |>
     mutate(Case=paste0("<a href=https://www.nlrb.gov/case/", Case, ">", Case, "</a>")) |> 
-    gt()
+    gt()  |> 
+    tab_style(
+        style = cell_text(
+            font = "Crimson Pro"
+        ),
+        locations = cells_body()
+  )
 
 table_out |> 
     cols_label_with(  fn=function(x) gsub("_", " ", x)) |>
