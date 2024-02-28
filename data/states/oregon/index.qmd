@@ -211,8 +211,14 @@ table_out <- unit_data |>
 gt(table_out) |> 
   fmt_integer(columns=`Unionized`:`Covered`) |> 
   tab_spanner( "By Unit", columns=Unionized:`Still Open`) |> 
-  tab_spanner("By Worker", columns=`Votes For`:`Covered`)
-    
+  tab_spanner("By Worker", columns=`Votes For`:`Covered`)  |> 
+    tab_style(
+        style = cell_text(
+            font = "Crimson Pro"
+        ),
+        locations = cells_body()
+    )
+
 
 ```
 
@@ -275,7 +281,13 @@ activity_data |> pivot_wider(names_from="size",
     rename("Quarter"="Filed_Quarter") |> 
     arrange(desc(Quarter)) |> 
     gt() |> 
-  fmt_integer(columns=`<5`:`500>`)
+  fmt_integer(columns=`<5`:`500>`)  |> 
+    tab_style(
+        style = cell_text(
+            font = "Crimson Pro"
+        ),
+        locations = cells_body()
+  )
     
 
 ```
@@ -295,7 +307,13 @@ table_out <- data |> filter(Status=="Open") |>
          Tally_Date,Tally_Type, Ballot_Type, Votes_For_Union,
          Votes_Against, Num_Eligible_Voters, Case ) |>
     mutate(Case=paste0("<a href=https://www.nlrb.gov/case/", Case, ">", Case, "</a>")) |> 
-    gt()
+    gt()  |> 
+    tab_style(
+        style = cell_text(
+            font = "Crimson Pro"
+        ),
+        locations = cells_body()
+  )
 
 table_out |> 
     cols_label_with(  fn=function(x) gsub("_", " ", x)) |>
