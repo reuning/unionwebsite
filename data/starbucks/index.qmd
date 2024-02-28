@@ -9,35 +9,38 @@ description: Data on elections to unionize local Starbucks.
 
 ```{r}
 
-# prep
+
 library(tidyverse)
-    dt <- read_csv(here::here("gen", "data", 
-    "cleaned_data.csv")
-    )
+sysfonts::font_add_google("Crimson Pro")
+showtext::showtext_auto()
+theme_set(theme_minimal(base_family = "Crimson Pro"))
 
-    dt <- dt |> filter(grepl("starbuck", Case_Name, ignore.case = T) & 
-                    Date_Filed > as.Date("2010-01-01")) |> 
-        filter(Case_Type == "RC" & Unique==TRUE) |> 
-        arrange(desc(Date_Filed)) |> 
-        distinct() |> 
-        mutate(Labor_Union = Plot_Labor_Union, 
-            Ballot_Type = ifelse(Ballot_Type == "Revised Single Labor Org",
-                "Revised", "Initial"), 
-            Status = case_when(
-                Status == "Open" ~ "Open", 
-                Reason_Closed == "Certific. of Representative" ~ "Unionized", 
-                Reason_Closed == "Certification of Results" ~ "Vote Failed", 
-                Reason_Closed %in% c("Withdrawal Non-adjusted", "Withdrawl Adjusted") ~ "Withdrawn", 
-                .default= "Other"))
+dt <- read_csv(here::here("gen", "data", 
+"cleaned_data.csv")
+)
 
-    srch <- paste0("\\d+(?!(.*located))(.|\\n)+?(", paste(c(state.abb, state.name), collapse="|"),")")
-    dt <- dt |> 
-        mutate(Address=stringr::str_extract(`Voting Unit (Unit A)`, srch))     
+dt <- dt |> filter(grepl("starbuck", Case_Name, ignore.case = T) & 
+                Date_Filed > as.Date("2010-01-01")) |> 
+    filter(Case_Type == "RC" & Unique==TRUE) |> 
+    arrange(desc(Date_Filed)) |> 
+    distinct() |> 
+    mutate(Labor_Union = Plot_Labor_Union, 
+        Ballot_Type = ifelse(Ballot_Type == "Revised Single Labor Org",
+            "Revised", "Initial"), 
+        Status = case_when(
+            Status == "Open" ~ "Open", 
+            Reason_Closed == "Certific. of Representative" ~ "Unionized", 
+            Reason_Closed == "Certification of Results" ~ "Vote Failed", 
+            Reason_Closed %in% c("Withdrawal Non-adjusted", "Withdrawl Adjusted") ~ "Withdrawn", 
+            .default= "Other"))
+
+srch <- paste0("\\d+(?!(.*located))(.|\\n)+?(", paste(c(state.abb, state.name), collapse="|"),")")
+dt <- dt |> 
+    mutate(Address=stringr::str_extract(`Voting Unit (Unit A)`, srch))     
 
 ```
 
 ```{r}
-
 library(gt)
 
 tab <- dt |> group_by(Status) |> 
@@ -47,11 +50,46 @@ tab <- dt |> group_by(Status) |>
                     "Votes Against"=sum(Votes_Against, na.rm=T)) 
   #### Summary statsitics ###
 
-    gt(tab[match(tab$Status, c("Open", "Unionized", "Vote Failed", "Withdrawn", "Other")), ]) |> 
-    tab_footnote(footnote="It takes time after a vote for the election to be finalized so open cases can have votes counted already.", 
-                location=cells_body(columns=Status, 
-                    rows=Status == "Open")) |> 
-        fmt_number(decimals=0)
+gt(tab[match(tab$Status, c("Open", "Unionized", "Vote Failed", "Withdrawn", "Other")), ]) |> 
+tab_footnote(footnote="It takes time after a vote for the election to be finalized so open cases can have votes counted already.", 
+            location=cells_body(columns=Status, 
+                rows=Status == "Open")) |> 
+    fmt_number(decimals=0) |> 
+    tab_style(
+        style = cell_text(
+            font = "Crimson Pro"
+        ),
+        locations = cells_body()
+  )
+```
+
+```{r}
+
+library(plotly)
+
+t <- list(
+  family = "Crimson Pro",
+  size = 12)
+
+color_pal <- viridis::viridis_pal(begin=.15, end=.85)(4)
+
+
+p <- dt |> mutate(Week=cut(Date_Filed, breaks="week")) |> 
+    mutate(Outcome=factor(Union_Cer, levels=c("Yes", "No", "Other", 
+    "Still Open"))) |>
+    group_by(Week, Outcome) |> 
+    summarize(Filed=n()) |> 
+    mutate(Week=as.Date(Week)) |>
+    ggplot(aes(x=Week, y=Filed, fill=Outcome)) + 
+    geom_col() + 
+    ggtitle("Union Elections Filed at Starbucks per Week") + 
+    scale_fill_manual("Voted for Union?",
+        values=color_pal[c(4,1,2,3)]) +
+    theme(legend.position = "bottom",
+        text = element_text(size=12, lineheight=.3))
+
+ggplotly(p)  |> layout(font=t)
+
 ```
 
 ## Map of Elections
