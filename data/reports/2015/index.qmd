@@ -77,13 +77,8 @@ year_dt |> arrange(desc(Date_Filed)) |>
         locations=cells_column_labels(columns=3:4) ) |> 
     sub_zero(columns=`Percent Successful`, 
             zero_text="-") |>
-    opt_interactive(use_pagination=FALSE)  |> 
-    tab_style(
-        style = cell_text(
-            font = "Crimson Pro"
-        ),
-        locations = cells_body()
-  )
+    opt_interactive(use_pagination=FALSE) |> 
+    opt_table_font(font="Crimson Pro")
 
 ```
 
@@ -111,14 +106,8 @@ year_dt |> arrange(desc(Date_Closed)) |>
     sub_missing(missing_text="-") |> 
     sub_zero(columns=`Percent Unionized`:`Total Workers Unionized`, 
             zero_text="-") |>
-    opt_interactive(use_pagination=FALSE)  |> 
-    tab_style(
-        style = cell_text(
-            font = "Crimson Pro"
-        ),
-        locations = cells_body()
-  )
-
+    opt_interactive(use_pagination=FALSE) |> 
+    opt_table_font(font="Crimson Pro")
 
 ```
 
@@ -157,12 +146,7 @@ year_dt |> arrange(desc(Date_Filed)) |>
     sub_zero(columns=`Percent Successful`, 
             zero_text="-") |>
     opt_interactive(use_pagination=FALSE)  |> 
-    tab_style(
-        style = cell_text(
-            font = "Crimson Pro"
-        ),
-        locations = cells_body()
-  )
+    opt_table_font(font="Crimson Pro")
 
 ```
 
@@ -190,14 +174,8 @@ year_dt |> arrange(desc(Date_Closed)) |>
     sub_missing(missing_text="-") |> 
     sub_zero(columns=`Percent Unionized`:`Total Workers Unionized`, 
             zero_text="-") |>
-    opt_interactive(use_pagination=FALSE)  |> 
-    tab_style(
-        style = cell_text(
-            font = "Crimson Pro"
-        ),
-        locations = cells_body()
-  )
-
+    opt_interactive(use_pagination=FALSE) |> 
+    opt_table_font(font="Crimson Pro")
 
 ```
 
