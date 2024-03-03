@@ -54,13 +54,8 @@ gt(tab[match(tab$Status, c("Open", "Unionized", "Vote Failed", "Withdrawn", "Oth
 tab_footnote(footnote="It takes time after a vote for the election to be finalized so open cases can have votes counted already.", 
             location=cells_body(columns=Status, 
                 rows=Status == "Open")) |> 
-    fmt_number(decimals=0) |> 
-    tab_style(
-        style = cell_text(
-            font = "Crimson Pro"
-        ),
-        locations = cells_body()
-  )
+    fmt_number(decimals=0)  |> 
+    opt_table_font(font="Crimson Pro")
 ```
 
 ```{r}
@@ -160,7 +155,8 @@ tab |> gt() |>
     cols_align(align="left", columns=1:6) |> 
     cols_align(align="center", columns=7:13) |>
     fmt(Case, fn=function(x) sapply(x, html))  |>
-    opt_interactive()
+    opt_interactive()  |> 
+    opt_table_font(font="Crimson Pro")
 
 ```
 
