@@ -17,6 +17,7 @@ dt <- read_csv(here("gen", "data",
 )
 full_state <- sort(c(state.abb, "DC", "PR", "VI", "SK", "GU", "AE", "AS"))
 
+
 ```
 
 ::: {.panel-tabset}
@@ -43,13 +44,8 @@ dt |> arrange(desc(Date_Filed)) |>
   sub_missing(missing_text="-") |> 
   sub_zero(columns=`Percent Certified`:`Total Workers Unionized`, 
             zero_text="-") |>
-      opt_interactive(use_pagination=FALSE)  |> 
-    tab_style(
-        style = cell_text(
-            font = "Crimson Pro"
-        ),
-        locations = cells_body()
-  )
+  opt_interactive(use_pagination=FALSE)  
+
 
 
 ```
@@ -78,13 +74,8 @@ dt |> arrange(desc(Tally_Date)) |>
   sub_missing(missing_text="-") |> 
   sub_zero(columns=`Percent Certified`:`Total Workers Unionized`, 
             zero_text="-") |> 
-      opt_interactive(use_pagination=FALSE)  |> 
-    tab_style(
-        style = cell_text(
-            font = "Crimson Pro"
-        ),
-        locations = cells_body()
-  )
+      opt_interactive(use_pagination=FALSE)  
+
 
 
 ```
@@ -113,13 +104,7 @@ dt |> arrange(desc(Date_Closed)) |>
   sub_missing(missing_text="-") |> 
   sub_zero(columns=`Percent Certified`:`Total Workers Unionized`, 
             zero_text="-") |>
-  opt_interactive(use_pagination=FALSE)  |> 
-    tab_style(
-        style = cell_text(
-            font = "Crimson Pro"
-        ),
-        locations = cells_body()
-  )
+  opt_interactive(use_pagination=FALSE) 
 
 
 ```
