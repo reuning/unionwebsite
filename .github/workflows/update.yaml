@@ -25,12 +25,12 @@ jobs:
       uses: quarto-dev/quarto-actions/setup@v2
 
     - name: Set up python
-      uses: actions/setup-python@v4
+      uses: actions/setup-python@v5
       with:
         python-version: '3.10'
 
     - name: Cache Python
-      uses: actions/cache@v2
+      uses: actions/cache@v4
       with:
         path: ~/.cache/pip
         key: ${{ runner.os }}-pip-${{ hashFiles('gen/scripts/requirements.txt') }}
@@ -48,7 +48,7 @@ jobs:
         r-version: 4.3.2
 
     - name: Cache packages
-      uses: actions/cache@v3
+      uses: actions/cache@v4
       with:
         path: ~/.local/share/renv
         key: ${{ runner.os }}-renv-${{ hashFiles('**/renv.lock') }}
@@ -69,7 +69,7 @@ jobs:
 
     - name: Commit new data
       id: commit
-      uses: EndBug/add-and-commit@v7 # You can change this to use a specific version
+      uses: EndBug/add-and-commit@v9 # You can change this to use a specific version
       with:
         add: "['gen/data/recent_election_results.csv', 'gen/data/open_petitions.csv']"
         message: 'Updated data'
@@ -82,6 +82,6 @@ jobs:
 
     - name: Finish and comit
       id: commitfinal
-      uses: EndBug/add-and-commit@v7 # You can change this to use a specific version
+      uses: EndBug/add-and-commit@v9 # You can change this to use a specific version
       with:
         message: 'Updated plots'
