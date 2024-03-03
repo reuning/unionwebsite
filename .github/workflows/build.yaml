@@ -28,7 +28,7 @@ jobs:
         r-version: 4.3.2
 
     - name: Cache packages
-      uses: actions/cache@v3
+      uses: actions/cache@v4
       with:
         path: ~/.local/share/renv
         key: ${{ runner.os }}-renv-${{ hashFiles('**/renv.lock') }}
@@ -52,6 +52,6 @@ jobs:
 
     - name: Finish and comit
       id: commitfinal
-      uses: EndBug/add-and-commit@v7 # You can change this to use a specific version
+      uses: EndBug/add-and-commit@v9 # You can change this to use a specific version
       with:
-        message: 'Updated plots'
+        message: 'Updated site'
