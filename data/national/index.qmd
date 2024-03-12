@@ -281,13 +281,8 @@ activity_data |> pivot_wider(names_from="size",
     arrange(desc(Quarter)) |> 
     gt() |> 
   fmt_integer(columns=`<5`:`500>`) |>
-  opt_interactive()  |> 
-    tab_style(
-        style = cell_text(
-            font = "Crimson Pro"
-        ),
-        locations = cells_body()
-  )
+  opt_interactive()   |> 
+    opt_table_font(font="Crimson Pro")
     
 
 ```
@@ -307,17 +302,12 @@ table_out <- data |> filter(Status=="Open") |>
          Tally_Date,Tally_Type, Ballot_Type, Votes_For_Union,
          Votes_Against, Num_Eligible_Voters, Case ) |>
     mutate(Case=paste0("<a href=https://www.nlrb.gov/case/", Case, ">", Case, "</a>")) |>
-    gt()  |> 
-    tab_style(
-        style = cell_text(
-            font = "Crimson Pro"
-        ),
-        locations = cells_body()
-  )
+    gt()     
 
 table_out |> 
     cols_label_with(  fn=function(x) gsub("_", " ", x)) |>
     fmt(Case, fn=function(x) sapply(x, html))   |> 
-  opt_interactive()
+  opt_interactive() |> 
+    opt_table_font(font="Crimson Pro")
 
 ```
