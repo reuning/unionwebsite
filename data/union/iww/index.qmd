@@ -213,12 +213,7 @@ gt(table_out) |>
   fmt_integer(columns=`Unionized`:`Covered`) |> 
   tab_spanner( "By Unit", columns=Unionized:`Still Open`) |> 
   tab_spanner("By Worker", columns=`Votes For`:`Covered`)  |> 
-    tab_style(
-        style = cell_text(
-            font = "Crimson Pro"
-        ),
-        locations = cells_body()
-  )
+    opt_table_font(font="Crimson Pro")
     
 
 ```
@@ -282,14 +277,8 @@ activity_data |> pivot_wider(names_from="size",
     rename("Quarter"="Filed_Quarter") |> 
     arrange(desc(Quarter)) |> 
     gt() |> 
-  fmt_integer(columns=`<5`:`500>`)  |> 
-    tab_style(
-        style = cell_text(
-            font = "Crimson Pro"
-        ),
-        locations = cells_body()
-  )
-    
+  fmt_integer(columns=`<5`:`500>`) |> 
+    opt_table_font(font="Crimson Pro")
 
 ```
 ::: 
@@ -349,12 +338,7 @@ if(!in_data){
         cols_label("YR_COVERED"="Year", 
             "MEMBERS"="Total Members") |> 
         fmt_number(columns=-1, decimal=0)  |> 
-    tab_style(
-        style = cell_text(
-            font = "Crimson Pro"
-        ),
-        locations = cells_body()
-  )
+    opt_table_font(font="Crimson Pro")
 
 }
 ```
@@ -373,18 +357,13 @@ table_out <- data |> filter(Status=="Open") |>
          Tally_Date,Tally_Type, Ballot_Type, Votes_For_Union,
          Votes_Against, Num_Eligible_Voters, Case ) |>
     mutate(Case=paste0("<a href=https://www.nlrb.gov/case/", Case, ">", Case, "</a>")) |> 
-    gt()  |> 
-    tab_style(
-        style = cell_text(
-            font = "Crimson Pro"
-        ),
-        locations = cells_body()
-  )
+    gt() 
 
 table_out |> 
     cols_label_with(  fn=function(x) gsub("_", " ", x)) |>
     fmt(Case, fn=function(x) sapply(x, html))  |> 
-    opt_interactive()
+    opt_interactive()    |> 
+    opt_table_font(font="Crimson Pro")
 
 
 ```
