@@ -63,7 +63,7 @@ for(ii in 1:nrow(dict)){
 
 
 
-unions <- yaml::read_yaml(here::here("content", "data", "union", "unions-template.yml"))
+unions <- yaml::read_yaml(here::here("data", "union", "unions-template.yml"))
 
 unions <- names(unions$items)
 dict <- dict %>% mutate(International = gsub(" ", "_", International), 
@@ -71,14 +71,15 @@ dict <- dict %>% mutate(International = gsub(" ", "_", International),
 
 all_member_out <- list()
 for(ii in seq_along(unions)){
-  if(!unions[ii] %in% names(out)) next
-  fnum <- filter(dict, International == unions[ii]) %>% pull(LM_ID)
+  if(!unions[ii] %in% tolower(names(out))) next
+  union_proper_name <- names(out)[match(unions[ii], tolower(names(out)))]
+  fnum <- filter(dict, International == union_proper_name) %>% pull(LM_ID)
   if(is.na(fnum)) next
-  if(nrow(out[[unions[ii]]] ) != 0) {
+  if(nrow(out[[union_proper_name]] ) != 0) {
     all_data <- filter(dt_out, F_NUM == fnum) %>% 
       select(YR_COVERED, MEMBERS) %>% 
       distinct() %>% 
-      left_join(out[[unions[ii]]]) %>% 
+      left_join(out[[union_proper_name]]) %>% 
       pivot_longer(4:last_col(), names_to="Category") %>% 
       filter(Category !="NA")
   } else {
