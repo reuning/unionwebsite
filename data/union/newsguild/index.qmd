@@ -298,7 +298,9 @@ member_data <- jsonlite::fromJSON(here::here("gen", "data", "members.json"))
 
 member_data <- jsonlite::fromJSON(member_data)
 
-member_data <- member_data[[ "NewsGuild" ]]
+name_select <- "NewsGuild" 
+name_select <- gsub(" ", "_", tolower(name_select))
+member_data <- member_data[[name_select]]
 in_data <- length(member_data) > 0
 if(!in_data){
     cat("No data available")
