@@ -313,7 +313,7 @@ if(!in_data){
         scale_y_continuous("", labels=scales::label_comma()) + 
         scale_color_manual("", values = c("Total Members"="black")) + 
         scale_fill_brewer(type = "qual", palette=3) +
-        scale_x_continuous("Year", limits = c(2000, 2023)) + 
+        scale_x_continuous("Year", limits = c(2000, 2025)) + 
         theme(text = element_text(size=15, lineheight=.3)) +
         labs(caption = "Data from OLMS reports. Not all unions are required to report membership data. https://unionelections.org")
 }
