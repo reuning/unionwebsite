@@ -7,16 +7,10 @@ files <- dir()
 
 library(ggplot2)
 library(dplyr)
-library(knitr)
 library(readr)
 library(tidyr)
 
-ggsave <- function(..., bg = 'white') ggplot2::ggsave(..., bg = bg)
 
-options(knitr.kable.NA = "")
-
-sysfonts::font_add_google("Crimson Pro")
-showtext::showtext_auto()
 ####
 dt_out <- read_delim(grep("data_data", files, value = T),
                      delim = "|", guess_max = 5000, trim_ws = T)
@@ -98,7 +92,9 @@ for(ii in seq_along(unions)){
 }
 # all_member_out    
 
-
 json_version <- jsonlite::toJSON(all_member_out, pretty=T,  dataframe = 'rows')
 
 jsonlite::write_json(json_version, here::here("gen", "data", "members.json"))
+
+
+dt_out |> filter(AFF_ABBR == "UAW") |> View()
