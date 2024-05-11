@@ -27,8 +27,9 @@ theme_set(theme_minimal(base_family = "Crimson Pro"))
 
 library(gt)
 library(here)
-data <- read_csv("Ironworkers_data.csv") |> filter(Case_Type == "RC") |> 
-  mutate(Ballot_Type= 
+data <- read_csv("Ironworkers_data.csv") |>
+    filter(Case_Type == "RC" | (Case_Type=="RM" & Date_Filed > as.Date("2023-08-25")))  |>
+    mutate(Ballot_Type= 
             ifelse(Ballot_Type == "Revised Single Labor Org", 
         "Revised", "Initial"))
 

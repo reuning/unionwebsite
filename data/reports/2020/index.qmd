@@ -22,19 +22,24 @@ dt <- dt |> mutate(National=ifelse(National=="","Uncoded", National)) |>
 all_unions <- sort(unique(dt$National))
 
 
-filed <- dt |> filter( `Case_Type`=="RC")  |>
+filed <- dt |>
+        filter(Case_Type == "RC" | (Case_Type=="RM" & Date_Filed > as.Date("2023-08-25"))) |>
         filter(year(Date_Filed) == 2020) |> nrow()
-closed <- dt |>  filter( `Case_Type`=="RC")  |>
+closed <- dt |>  
+        filter(Case_Type == "RC" | (Case_Type=="RM" & Date_Filed > as.Date("2023-08-25"))) |> 
         filter(year(Date_Closed) == 2020) |> nrow()
-closed_success <- dt |>  filter( `Case_Type`=="RC")  |> 
+closed_success <- dt |>  
+        filter(Case_Type == "RC" | (Case_Type=="RM" & Date_Filed > as.Date("2023-08-25")))   |> 
         filter((year(Date_Closed) == 2020) &
                 (Union_Cer=="Yes")) |> nrow()
-median_unit <- dt |>  filter( `Case_Type`=="RC")  |> 
+median_unit <- dt |>  
+        filter(Case_Type == "RC" | (Case_Type=="RM" & Date_Filed > as.Date("2023-08-25")))  |> 
         filter((year(Date_Closed) == 2020) &
                 (Union_Cer=="Yes")) |> pull(Num_Eligible_Voters) |>
                 median()
 
-total_unit <- dt |>  filter( `Case_Type`=="RC")  |> 
+total_unit <- dt |>   
+        filter(Case_Type == "RC" | (Case_Type=="RM" & Date_Filed > as.Date("2023-08-25")))  |> 
         filter((year(Date_Closed) == 2020) &
                 (Union_Cer=="Yes")) |> pull(Num_Eligible_Voters) |>
                 sum()
@@ -59,7 +64,7 @@ year_dt <- dt |> filter(year(Date_Filed) == 2020)
 year_dt |> arrange(desc(Date_Filed)) |> 
     mutate(National=factor(National, levels=all_unions)) |> 
     distinct() |> 
-    filter( `Case_Type`=="RC")  |> 
+    filter(Case_Type == "RC" | (Case_Type=="RM" & Date_Filed > as.Date("2023-08-25")))   |> 
     group_by(National) |> 
     summarize("Filed" = n(),
             "Closed"=sum(!is.na(Date_Closed)), 
@@ -90,7 +95,7 @@ year_dt <- dt |> filter(year(Date_Closed) == 2020)
 year_dt |> arrange(desc(Date_Closed)) |> 
     mutate(National=factor(National, levels=all_unions)) |> 
     distinct() |> 
-    filter( `Case_Type`=="RC")  |> 
+    filter(Case_Type == "RC" | (Case_Type=="RM" & Date_Filed > as.Date("2023-08-25")))   |> 
     group_by(National) |> 
     summarize("Number Closed"=n(), 
             "Closed with Union"=sum(Union_Cer=="Yes"), 
@@ -127,7 +132,7 @@ year_dt <- dt |> filter(year(Date_Filed) == 2020)
 year_dt |> arrange(desc(Date_Filed)) |> 
     mutate(State=factor(State, levels=full_state)) |> 
     distinct() |> 
-    filter( `Case_Type`=="RC")   |> 
+    filter(Case_Type == "RC" | (Case_Type=="RM" & Date_Filed > as.Date("2023-08-25")))    |> 
     group_by(State) |> 
     summarize("Filed" = n(),
             "Closed"=sum(!is.na(Date_Closed)), 
@@ -158,7 +163,7 @@ year_dt <- dt |> filter(year(Date_Closed) == 2020)
 year_dt |> arrange(desc(Date_Closed)) |> 
     mutate(State=factor(State, levels=full_state)) |> 
     distinct() |> 
-    filter( `Case_Type`=="RC")  |> 
+    filter(Case_Type == "RC" | (Case_Type=="RM" & Date_Filed > as.Date("2023-08-25")))   |> 
     group_by(State) |> 
     summarize("Number Closed"=n(), 
             "Closed with Union"=sum(Union_Cer=="Yes"), 
