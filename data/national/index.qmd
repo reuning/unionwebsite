@@ -27,7 +27,8 @@ library(tidyverse)
 theme_set(theme_minimal(base_family = "Crimson Pro"))
 library(gt)
 library(here)
-data <- read_csv(here::here("gen", "data", "cleaned_data.csv")) |> filter(Case_Type == "RC") |> 
+data <- read_csv(here::here("gen", "data", "cleaned_data.csv")) |> 
+    filter(Case_Type == "RC" | (Case_Type=="RM" & Date_Filed > as.Date("2023-08-25"))) |> 
   mutate(Ballot_Type= 
             ifelse(Ballot_Type == "Revised Single Labor Org", 
         "Revised", "Initial"))

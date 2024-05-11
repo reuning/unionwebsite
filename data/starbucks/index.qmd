@@ -21,7 +21,8 @@ dt <- read_csv(here::here("gen", "data",
 
 dt <- dt |> filter(grepl("starbuck", Case_Name, ignore.case = T) & 
                 Date_Filed > as.Date("2010-01-01")) |> 
-    filter(Case_Type == "RC" & Unique==TRUE) |> 
+    filter(Case_Type == "RC" | (Case_Type=="RM" & Date_Filed > as.Date("2023-08-25"))) |>
+    filter(Unique==TRUE) |> 
     arrange(desc(Date_Filed)) |> 
     distinct() |> 
     mutate(Labor_Union = Plot_Labor_Union, 
