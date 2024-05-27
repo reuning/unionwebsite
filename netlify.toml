@@ -1,0 +1,10 @@
+[build]
+publish = "_site"
+command = "quarto render ."
+
+
+[[plugins]]
+  package = "netlify-plugin-submit-sitemap"
+
+[[plugins]]
+  package = "@netlify/plugin-lighthouse"

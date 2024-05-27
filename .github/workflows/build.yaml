@@ -44,11 +44,16 @@ jobs:
     - name: Prep New Data
       run: Rscript gen/scripts/Init.R
 
-    - name: Publish to Netlify (and render)
-      uses: quarto-dev/quarto-actions/publish@v2
+    - name: Setup Quarto 
+      uses: quarto-dev/quarto-actions/setup@v2
+
+    - name: Build and Publish to Netlify 
+      uses: nwtgck/actions-netlify@v3.0
       with:
-        target: netlify
+        publish-dir: './_site'
+      env: 
         NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+        NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
 
     - name: Finish and comit
       id: commitfinal
