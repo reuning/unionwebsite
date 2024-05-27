@@ -41,9 +41,6 @@ jobs:
         if (!requireNamespace("renv", quietly = TRUE)) install.packages("renv")
         renv::restore()
 
-    - name: Prep New Data
-      run: Rscript gen/scripts/Init.R
-
     - name: Setup Quarto 
       uses: quarto-dev/quarto-actions/setup@v2
 
