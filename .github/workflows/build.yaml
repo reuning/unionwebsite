@@ -48,9 +48,9 @@ jobs:
       uses: quarto-dev/quarto-actions/setup@v2
 
     - name: Build and Publish to Netlify 
-      uses: nwtgck/actions-netlify@v3.0
+      uses: netlify/actions/cli@master
       with:
-        publish-dir: './_site'
+        args: deploy --prod --build
       env: 
         NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
         NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
