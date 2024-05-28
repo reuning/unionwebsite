@@ -21,9 +21,6 @@ jobs:
         sudo apt-get update
         sudo apt-get install -y libgeos-dev libudunits2-dev libgdal-dev libcurl4-openssl-dev webp libharfbuzz-dev libfribidi-dev
 
-    - name: Set up Quarto
-      uses: quarto-dev/quarto-actions/setup@v2
-
     - name: Set up python
       uses: actions/setup-python@v5
       with:
@@ -74,11 +71,16 @@ jobs:
         add: "['gen/data/recent_election_results.csv', 'gen/data/open_petitions.csv']"
         message: 'Updated data'
 
-    - name: Publish to Netlify (and render)
-      uses: quarto-dev/quarto-actions/publish@v2
+    - name: Setup Quarto 
+      uses: quarto-dev/quarto-actions/setup@v2
+
+    - name: Build and Publish to Netlify 
+      uses: South-Paw/action-netlify-cli@v2
       with:
-        target: netlify
+        args: 'deploy --prod --build'
+      env: 
         NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+        NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
 
     - name: Finish and comit
       id: commitfinal
