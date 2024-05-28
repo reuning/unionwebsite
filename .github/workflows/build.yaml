@@ -42,9 +42,9 @@ jobs:
       uses: quarto-dev/quarto-actions/setup@v2
 
     - name: Build and Publish to Netlify 
-      uses: netlify/actions/cli@master
+      uses: South-Paw/action-netlify-cli@v2
       with:
-        args: deploy --prod --build
+        args: 'deploy --prod --build'
       env: 
         NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
         NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
