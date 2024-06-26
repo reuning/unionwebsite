@@ -70,7 +70,7 @@ Excluding public employees and multi-union election, in the last 12 months there
 ```{r}
 #| classes: preview-image
 #| label: unit-outcome-us
-start_quarter <- ymd("1999-01-01")
+start_quarter <- ymd("2000-01-01")
 plot_data <- data |>
         filter(Ballot_Type!="Revised" & Unique==TRUE) |>
         drop_na(size) |> 
@@ -216,6 +216,10 @@ gt(table_out) |>
             font = "Crimson Pro"
         ),
         locations = cells_body()
+  ) |> 
+  tab_footnote(
+    footnote = "Date recorded based on when an election was tallied.",
+    locations = cells_column_labels(columns = Quarter)
   )
     
 
@@ -283,7 +287,11 @@ activity_data |> pivot_wider(names_from="size",
     gt() |> 
   fmt_integer(columns=`<5`:`500>`) |>
   opt_interactive()   |> 
-    opt_table_font(font="Crimson Pro")
+    opt_table_font(font="Crimson Pro") |> 
+  tab_footnote(
+    footnote = "Date recorded based on when a petition was submitted.",
+    locations = cells_column_labels(columns = Quarter)
+  )
     
 
 ```
