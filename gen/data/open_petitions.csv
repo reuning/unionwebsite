@@ -1825,7 +1825,7 @@ Technician-Level 3, Retail Pharmacy Technician-Level 4, Pharmacy Technician-Seni
 
 Excluded:  All other employees, including office clerical employees, guards, confidential employees, managerial employees, and supervisors as defined in the Act.",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"The Pharmacy Guild, affiliated with the International Association of Machinists and Aerospace Workers, AFL-CIO"
 "09-RC-352339","Region 09, Cincinnati, Ohio","DUBLIN CONVALARIUM OPERATING COMPANY, LLC","Open","10/04/2024","","","Dublin","OH",55,"","","",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"United Food and Commercial Workers Union Local No. 1059"
-"09-RC-352655","Region 09, Cincinnati, Ohio","PROFESSIONAL CONTRACT SERVICES, INC.","Open","10/15/2024","","","Fort Knox","KY",110,"","","Include: All full-time and regular part-time employees of the Employer at its facilities located at Fort Knox, Kentucky, including all generator operators, electricians, plumbers, alarm technicians, electronics technicians, IT appliance technicians, estimators, buyers, pool technicians, heavy equipment operators, machinery maintenance workers, carpenters, locksmiths, wash rack operators, lead persons, accounting clerks, general maintenance workers, warehouse workers, staff clerks, supply clerks, graphic designers, and sign makers.
+"09-RC-352655","Region 09, Cincinnati, Ohio","PROFESSIONAL CONTRACT SERVICES, INC.","Open","10/15/2024",NA,NA,"Fort Knox","KY",110,NA,"","Include: All full-time and regular part-time employees of the Employer at its facilities located at Fort Knox, Kentucky, including all generator operators, electricians, plumbers, alarm technicians, electronics technicians, IT appliance technicians, estimators, buyers, pool technicians, heavy equipment operators, machinery maintenance workers, carpenters, locksmiths, wash rack operators, lead persons, accounting clerks, general maintenance workers, warehouse workers, staff clerks, supply clerks, graphic designers, and sign makers.
 
 Exclude: Excluding the project manager, assistant project manager, operations manager, IT/security manager, human resources manager, human resources assistant manager, QHSE inspectors, quality coordinators, and all office clerical employees, all professional employees, guards and supervisors as defined by the Act
 ",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"International Brotherhood of Electrical Workers, AFL-CIO (IBEW), Local Union No. 369"
@@ -3708,7 +3708,7 @@ Excluded: All other employees, Guards and Supervisors",NA,NA,NA,NA,NA,NA,NA,NA,N
 "21-RC-352127","Region 21, Los Angeles, California","Barnes & Noble Booksellers, Inc.","Open","10/04/2024","","","Glendora","CA",26,"","","Included: All regular part-time and full-time employees
 
 Excluded: All volunteers & interns, office clerical employees, guards and supervisors as defined in the Act",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"United Food and Commercial Workers Union, Local 1428"
-"21-RC-352735","Region 21, Los Angeles, California","The Living Coast Discovery Center","Open","10/15/2024","","","Chula Vista","CA",12,"","","Included: All Full Time and Part Time Animal Care Specialist and Animal Care Keeper Employees at this facility. 
+"21-RC-352735","Region 21, Los Angeles, California","The Living Coast Discovery Center","Open","10/15/2024",NA,NA,"Chula Vista","CA",12,NA,"","Included: All Full Time and Part Time Animal Care Specialist and Animal Care Keeper Employees at this facility. 
 
 Excluded: All other employees, Guards and Supervisors",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Teamsters, Chauffeurs, Warehousemen & Helpers Local Union No. 542"
 "21-RC-353363","Region 21, Los Angeles, California","LOUD SD INC.","Open","10/23/2024","","","San Diego","CA",21,"","","Included: Budtenders, Inventory Clerk, Manager on Duty, all other employees
@@ -4103,7 +4103,19 @@ wigs, to be added to the existing bargaining-unit employed at the Amphitheatre.
 Excluded: All other employees, including guards and supervisors, as defined in the Act.",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"International Alliance of Theatrical Stage Employees, Moving Picture Technicians, Artists and Allied Crafts of the United States, its Territories and Canada, Local 720, AFL-CIO, CLC"
 "27-RC-352757","Region 27, Denver, Colorado","The Beautiful Opco, LLC","Open","10/16/2024","","","Lakewood","CO",57,"","","Included: Entertainment performers - including wet and dry cast members. Excluded: Supervisors and Guards.",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Actors' Equity Association (Equity or AEA), AFL-CIO"
 "27-RC-352771","Region 27, Denver, Colorado","The Beautiful Opco, LLC","Open","10/16/2024","","","Lakewood","CO",21,"","","Included: All full time and part time Entertainment Crew employees, including costumers. Excluded: All other employees including but not limited to supervisors, managers, and guards as defined in the Act.",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"International Alliance of Theatrical Stage Employees, Local 7"
-"27-RC-353129","Region 27, Denver, Colorado","TDS Broadband Service LLC","Open","10/21/2024","","","Saint George","UT",38,"","","Included: All employees in the St. George, Cedar City and Mesquite offices (BBT I, II & III, System 
+"27-RC-353129","Region 27, Denver, Colorado","TDS Broadband Service LLC","Open","10/21/2024","","","Saint George","UT",38,"","Communications Workers of America, AFL-CIO","Included: All employees in the St. George, Cedar City and Mesquite offices (BBT I, II & III, System 
+Technician I,II, FSA, Warehouse Technician, Headend Technician).
+
+Excluded All statutorily excluded employees.
+",38,"A","Single Labor Organization","Initial","11/08/2024",38,NA,28,"",NA,"",NA,7,35,"",NA,"","Communications Workers of America, AFL-CIO","Included: All full-time and regular part-time employees in the Field Services Department
+in the classifications of Broadband Technician I, Broadband Technician II, Broadband
+Technician III, System Technician I, System Technician II, Field Service Agent,
+Warehouse Technician, and Headend Technician, employed by the Employer at its
+facilities in St. George, UT, Cedar City, UT, and Mesquite, NV.
+
+Excluded: All office clerical employees, professional employees, confidential employees,
+managerial employees, guards, and supervisors, as defined in the Act.","","","","Communications Workers of America"
+"27-RC-353129","Region 27, Denver, Colorado","TDS Broadband Service LLC","Open","10/21/2024",NA,NA,"Saint George","UT",38,NA,"","Included: All employees in the St. George, Cedar City and Mesquite offices (BBT I, II & III, System 
 Technician I,II, FSA, Warehouse Technician, Headend Technician).
 
 Excluded All statutorily excluded employees.
@@ -4790,7 +4802,7 @@ defined in the Act.",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 "31-RC-352646","Region 31, Los Angeles, California","Fiore Industries, Inc.","Open","10/15/2024","","","Pasadena","CA",13,"","","Included: All full time and regular part time dispatchers working at the Employer's facility located at 4800 Oakgrove Dr., Pasadena, CA 91101.
 
 Excluded: Standard Exclusions.",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Teamsters Local Union No. 896"
-"31-RC-352713","Region 31, Los Angeles, California","Pacifica Hotel Company d/b/a Jamaica Bay Inn Marina Del Rey, Tapestry Collection by Hilton","Open","10/15/2024",NA,NA,"Marina del Rey","CA",80,NA,"","Included:  All full-time and regular part-time employees working for the Employer at its facility located at 4175 Admiralty Way, Marina de Rey, CA 90292.
+"31-RC-352713","Region 31, Los Angeles, California","Pacifica Hotel Company d/b/a Jamaica Bay Inn Marina Del Rey, Tapestry Collection by Hilton","Open","10/15/2024","","","Marina del Rey","CA",80,"","","Included:  All full-time and regular part-time employees working for the Employer at its facility located at 4175 Admiralty Way, Marina de Rey, CA 90292.
 
 Excluded:  All other employees, including managerial employees, confidential employees, guards, and supervisors as defined by the National Labor Relations Act, as amended.
 
