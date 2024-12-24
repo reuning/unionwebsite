@@ -34,9 +34,10 @@ jobs:
       uses: actions/cache@v4
       with:
         path: ~/.cache/pip
-        key: ${{ runner.os }}-pip-${{ hashFiles('gen/scripts/requirements.txt') }}
+        key: pip-ubuntu-${{ env.UBUNTU_VERSION }}-${{ hashFiles('gen/scripts/requirements.txt') }}
         restore-keys: |
-          ${{ runner.os }}-pip-
+          pip-ubuntu-${{ env.UBUNTU_VERSION }}
+          pip-ubuntu
 
     - name: Install and run Python
       run: |
