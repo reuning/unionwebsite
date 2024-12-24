@@ -1,8 +1,11 @@
 name: Update data
+
 on:
   schedule:
     - cron: "0 0 * * *"
-  workflow_dispatch:
+  workflow_dispatch
+
+
 jobs:
   update:
     runs-on: ubuntu-latest
@@ -17,8 +20,8 @@ jobs:
         lfs: 'true'
 
     - name: Get Ubuntu version
-        id: ubuntu-version
-        run: echo "UBUNTU_VERSION=$(lsb_release -rs)" >> $GITHUB_ENV
+      id: ubuntu-version
+      run: echo "UBUNTU_VERSION=$(lsb_release -rs)" >> $GITHUB_ENV
 
     - name: Install dependencies
       run: |
