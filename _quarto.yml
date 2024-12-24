@@ -11,6 +11,8 @@ website:
     contents: 
       - href: index.qmd
         text: Home
+      - href: data/national/index.qmd
+        text: National
       - href: data/starbucks/index.qmd
         text: Starbucks Elections
       - section: States
