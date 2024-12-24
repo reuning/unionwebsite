@@ -14,6 +14,10 @@ jobs:
       with:
         lfs: 'true'
 
+    - name: Get Ubuntu version
+        id: ubuntu-version
+        run: echo "UBUNTU_VERSION=$(lsb_release -rs)" >> $GITHUB_ENV
+
     - name: Install dependencies
       run: |
         sudo apt-get update
@@ -28,9 +32,10 @@ jobs:
       uses: actions/cache@v4
       with:
         path: ~/.local/share/renv
-        key: ${{ runner.os }}-renv-${{ hashFiles('**/renv.lock') }}
+        key: renv-ubuntu-${{ env.UBUNTU_VERSION }}-${{ hashFiles('**/renv.lock') }}
         restore-keys: |
-          ${{ runner.os }}-renv-
+          renv-ubuntu-${{ env.UBUNTU_VERSION }}
+          renv-ubuntu
 
     - name: Restore packages
       shell: Rscript {0}
