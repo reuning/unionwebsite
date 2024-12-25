@@ -23,7 +23,7 @@ jobs:
     - name: Install dependencies
       run: |
         sudo apt-get update
-        sudo apt-get install -y libgeos-dev libudunits2-dev libgdal-dev libcurl4-openssl-dev webp libharfbuzz-dev libfribidi-dev
+        sudo apt-get install -y libgeos-dev libudunits2-dev libgdal-dev libcurl4-openssl-dev webp libharfbuzz-dev libfribidi-dev libfontconfig1-dev
 
     - name: Setup R
       uses: r-lib/actions/setup-r@v2
