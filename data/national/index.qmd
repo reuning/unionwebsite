@@ -194,6 +194,7 @@ ggplot(covered_data, aes(x=Tally_Quarter, y=Covered)) +
 #### Raw Data
 
 ```{r}
+#| label: timeline-All
 
 indiv_data <- indiv_data |> 
     pivot_wider(id_cols=Tally_Quarter)
@@ -210,13 +211,7 @@ gt(table_out) |>
   fmt_integer(columns=`Unionized`:`Covered`) |> 
   tab_spanner( "By Unit", columns=c(Unionized, `Voted Against`)) |> 
   tab_spanner("By Worker", columns=`Votes For`:`Covered`) |> 
-  opt_interactive()  |> 
-    tab_style(
-        style = cell_text(
-            font = "Crimson Pro"
-        ),
-        locations = cells_body()
-  ) |> 
+  opt_table_font(font="Crimson Pro") |> 
   tab_footnote(
     footnote = "Date recorded based on when an election was tallied.",
     locations = cells_column_labels(columns = Quarter)
@@ -286,8 +281,7 @@ activity_data |> pivot_wider(names_from="size",
     arrange(desc(Quarter)) |> 
     gt() |> 
   fmt_integer(columns=`<5`:`500>`) |>
-  opt_interactive()   |> 
-    opt_table_font(font="Crimson Pro") |> 
+  opt_table_font(font="Crimson Pro") |> 
   tab_footnote(
     footnote = "Date recorded based on when a petition was submitted.",
     locations = cells_column_labels(columns = Quarter)
@@ -295,8 +289,8 @@ activity_data |> pivot_wider(names_from="size",
     
 
 ```
-::: 
 
+::: 
 
 
 ### Open Election Related Cases
