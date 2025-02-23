@@ -72,6 +72,8 @@ jobs:
 
     - name: Prep New Data
       run: Rscript gen/scripts/Init.R
+      env: 
+        GEOCODIO_API_KEY: ${{ secrets.GEOCODIO_API_KEY }}
 
     - name: Commit new data
       id: commit
