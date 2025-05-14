@@ -76,7 +76,7 @@ if (any(is.na(full_dt$seached))) {
   to_code_dt$long_jit <- to_code_dt$long + runif(nrow(to_code_dt), -.5, .5)
   
   
-  full_dt <- rbind(done_dt, to_code_dt)
+  full_dt <- rbind(done_dt, to_code_dt, fill=TRUE)
   write.csv(
     full_dt,
     file = here("gen", "data", "elections_with_location.csv"),
@@ -129,7 +129,7 @@ if (any(is.na(full_dt$seached))) {
   to_code_dt$long_jit <- to_code_dt$long + runif(nrow(to_code_dt), -.5, .5)
   
   
-  full_dt <- rbind(done_dt, to_code_dt)
+  full_dt <- rbind(done_dt, to_code_dt, fill=TRUE)
   write.csv(
     full_dt,
     file = here("gen", "data", "starbucks_with_location.csv"),
