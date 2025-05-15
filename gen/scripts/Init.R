@@ -77,7 +77,7 @@ if (any(is.na(full_dt$seached))) {
   
   
   full_dt <- rbind(done_dt, to_code_dt, fill=TRUE)
-  write.csv(
+  fwrite(
     full_dt,
     file = here("gen", "data", "elections_with_location.csv"),
     row.names = F
@@ -130,7 +130,7 @@ if (any(is.na(full_dt$seached))) {
   
   
   full_dt <- rbind(done_dt, to_code_dt, fill=TRUE)
-  write.csv(
+  fwrite(
     full_dt,
     file = here("gen", "data", "starbucks_with_location.csv"),
     row.names = F
