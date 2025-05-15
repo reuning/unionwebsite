@@ -293,40 +293,6 @@ activity_data |> pivot_wider(names_from="size",
 ::: 
 
 
-### Comparison to Previous Years
-
-The below chart shows the number of filings in each month over the last 10 years. The current year's filings are in red. Note, it drops the _current_ month in order, but even with that there can be delays in filing processing. 
-
-```{r}
-#| label: yearly-comparison
-
-plot_data <- data |>
-        filter(Ballot_Type!="Revised" & Unique==TRUE) |>
-        drop_na(size) |> 
-        mutate(Union_Cer=fct_rev(Union_Cer))
-
-Month_Data <- plot_data |> 
-    group_by(Month=month(Date_Filed), Year=year(Date_Filed)) |> 
-    summarize(n=n()) |> 
-    ungroup() |> 
-    filter(Year>2010) |> 
-    filter(!(Year == year(today()) & Month == month(today()))) |> 
-    mutate(Current = Year==year(today()))
-
-ggplot(Month_Data, aes(x=Month, y=n, group=Year, color=Current, alpha=Current)) + 
-    geom_line() + 
-    scale_color_manual(values=c("FALSE"="black", "TRUE"="red"))+ 
-    scale_alpha_manual(values=c("FALSE"=.5, "TRUE"=1)) + 
-    guides(color="none", alpha="none") + 
-    labs(y="Number of Filings") + 
-    scale_x_continuous(breaks = c(1,4,7,11), 
-    labels=c("January", "April", "July", "November"))
-
-
-
-
-
-```
 
 
 ### Open Election Related Cases
