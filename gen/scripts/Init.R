@@ -75,7 +75,9 @@ if (any(is.na(full_dt$seached))) {
   to_code_dt$lat_jit <- to_code_dt$lat + runif(nrow(to_code_dt), -.5, .5)
   to_code_dt$long_jit <- to_code_dt$long + runif(nrow(to_code_dt), -.5, .5)
   
-  
+  print(names(to_code_dt))
+  print(names(done_dt))
+  head(to_code_dt)
   full_dt <- rbind(done_dt, to_code_dt, fill=TRUE)
   fwrite(
     full_dt,
