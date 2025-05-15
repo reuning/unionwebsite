@@ -75,11 +75,9 @@ if (any(is.na(full_dt$seached))) {
   to_code_dt$lat_jit <- to_code_dt$lat + runif(nrow(to_code_dt), -.5, .5)
   to_code_dt$long_jit <- to_code_dt$long + runif(nrow(to_code_dt), -.5, .5)
   
-  print(names(to_code_dt))
-  print(names(done_dt))
-  head(to_code_dt)
+  to_code_dt$address_lines <- NULL
   full_dt <- rbind(done_dt, to_code_dt, fill=TRUE)
-  fwrite(
+  write.csv(
     full_dt,
     file = here("gen", "data", "elections_with_location.csv"),
     row.names = F
@@ -130,9 +128,9 @@ if (any(is.na(full_dt$seached))) {
   to_code_dt$lat_jit <- to_code_dt$lat + runif(nrow(to_code_dt), -.5, .5)
   to_code_dt$long_jit <- to_code_dt$long + runif(nrow(to_code_dt), -.5, .5)
   
-  
+  to_code_dt$address_lines <- NULL
   full_dt <- rbind(done_dt, to_code_dt, fill=TRUE)
-  fwrite(
+  write.csv(
     full_dt,
     file = here("gen", "data", "starbucks_with_location.csv"),
     row.names = F
