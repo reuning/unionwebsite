@@ -295,7 +295,7 @@ activity_data |> pivot_wider(names_from="size",
 
 ### Comparison to Previous Years
 
-
+The below chart shows the number of filings in each month over the last 10 years. The current year's filings are in red. Note, it drops the _current_ month in order, but even with that there can be delays in filing processing. 
 
 ```{r}
 #| label: yearly-comparison
