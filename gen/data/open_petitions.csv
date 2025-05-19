@@ -253,7 +253,7 @@ Excluded:  Managerial employees, guards and supervisors as defined in the Act, a
 ","","","","American Federation of State, County and Municipal Employees, Council 93, AFL-CIO"
 "01-RC-362587","Region 01, Boston, Massachusetts","FootCare by Nurses, LLC","Open","03/26/2025","","","Greenfield","MA",32,NA,"","Included:  All full-time, part-time, per diem registered nurses.
 Excluded:  All titles excluded under the Act.",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"American Federation of State, County and Municipal Employees, Council 93, AFL-CIO"
-"01-RC-362873","Region 01, Boston, Massachusetts","Connecticut Institute for the Blind, Inc. d/b/a Oak Hill","Open","03/31/2025","","","Hartford","CT",38,"","","Included: All full-time, regular part-time and per diem Residential Program Technicians.
+"01-RC-362873","Region 01, Boston, Massachusetts","Connecticut Institute for the Blind, Inc. d/b/a Oak Hill","Open","03/31/2025","","","Hartford","CT",38,NA,"","Included: All full-time, regular part-time and per diem Residential Program Technicians.
 Excluded: All other employees, all professional employees, all guards and supervisors as defined in the Act.",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"NEW ENGLAND HEALTH CARE EMPLOYEES UNION, DISTRICT 1199, SEIU"
 "01-RC-363156","Region 01, Boston, Massachusetts","Jones Lang LaSalle Americas, Inc.","Open","04/04/2025","","","New London","CT",4,"","INTERNATIONAL UNION OF OPERATING ENGINEERS, LOCAL 30","Included: All full-time and part-time Operating Engineers.
 Excluded: All office and professional employees, guards and supervisors under the Act.",4,"A","Single Labor Organization","Initial","05/09/2025",4,NA,4,"",NA,"",NA,NA,4,"",NA,"","INTERNATIONAL UNION OF OPERATING ENGINEERS, LOCAL 30","All full-time and part-time employees Operating Engineers employed by the Employer at its facility currently located at General Dynamics Electric Boat facility in Building 802 Tower A, 50 Pequot Avenue, New London, Connecticut, but excluding all office clerical employees and guards, professional employees, and supervisors as defined in the Act.","","","","International Union of Operating Engineers, Local 30"
@@ -1134,13 +1134,13 @@ All Guards, Supervisors within the meaning of the act",NA,NA,NA,NA,NA,NA,NA,NA,N
 "02-RD-356540","Region 02, New York, New York","New York Funeral Chapels, LLC d/b/a  Frank E. Campbell, The Funeral Chapel, Riverside Memorial Chapel, Westside Funeral Service","Open","12/11/2024","","","Manhattan","NY",20,"","","Included: 
 Licensed Funeral Directors and Registered Residents 
 Excluded: 
-All other employees, office clericals, guards, and supervisors as defined in the Ac",20,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Local 813, International Brotherhood of Teamsters"
-"02-RD-356540","Region 02, New York, New York","New York Funeral Chapels, LLC d/b/a  Frank E. Campbell, The Funeral Chapel, Riverside Memorial Chapel, Westside Funeral Service","Open","12/11/2024","","","Manhattan","NY",20,NA,"","Included: 
-Licensed Funeral Directors and Registered Residents 
-Excluded: 
 All other employees, office clericals, guards, and supervisors as defined in the Ac",20,"A","Single Labor Organization","Initial","01/16/2025",20,NA,10,"",NA,"",NA,10,20,"",NA,"","","INCLUDED: All Licensed Funeral Directors and Registered Residents employed by the Employer at its facilities located at 1076 Madison Ave, New York, NY 10028; 180 76th Street New York, NY 10023, and 1450 Broadway Hewlett, NY 11557, and 100 Saw Mill River Road, Hawthorne, NY 10532, who were employed during the payroll period ending December 13, 2024.
 
 EXCLUDED: All other employees, office clerical employees, guards, and supervisors as defined in the Act.","","","","Local 813, International Brotherhood of Teamsters"
+"02-RD-356540","Region 02, New York, New York","New York Funeral Chapels, LLC d/b/a  Frank E. Campbell, The Funeral Chapel, Riverside Memorial Chapel, Westside Funeral Service","Open","12/11/2024","","","Manhattan","NY",20,NA,"","Included: 
+Licensed Funeral Directors and Registered Residents 
+Excluded: 
+All other employees, office clericals, guards, and supervisors as defined in the Ac",20,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Local 813, International Brotherhood of Teamsters"
 "02-RD-364536","Region 02, New York, New York","DistroKid, LLC","Open","04/28/2025","","","New York","NY",36,"","","Included: Senior Artist Relations Specialist,  Artist Relations Specialist, Artist Relations Associate, Customer Support Experience Designer, Senior Quality Control Specialist, Quality Control Specialist, Quality Control Associate, Fraud Specialist, Infringement Specialist, Senior Content Operations Specialist, Content Operations Specialist, UGC Monetization Lead, Lead-Software Engineer, Senior Software Engineer, Software Engineer, Agile Coach, Senior Product Manager, Product Manager, Senior Product Designer, Product Designer, Delivery Manager, Lead-QA Analyst, QA Analyst, Lead-QA Automation, Project Manager – Artist Relations, Vendor Ops Manager, and Head of Partner Ops & Special Projects, based in the United States. 
 
 Excluded: Everything not on the included list",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"National Association of Broadcast Employees and Technicians–Communications Workers of America (NABET-CWA)"
@@ -1405,7 +1405,13 @@ EXCLUDED: Office clerical employees, guards, and supervisors as defined in the A
 "04-RC-362966","Region 04, Philadelphia, Pennsylvania","Inspira Medical Centers, Inc.","Open","04/01/2025","","","Millville","NJ",124,"","","Included: All full-time, regular part-time, and per diem Emergency Medical Technicians (EMTs) dispatched from the locations listed in block 2b.
 
 Excluded: All other employees, office clericals, guards, and supervisors as defined in the Act.",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Teamsters Local 676"
-"04-RC-363490","Region 04, Philadelphia, Pennsylvania","Oldcastle BuildingEnvelope, Inc.","Open","04/10/2025","","","Moorestown","NJ",7,"","","INCLUDED: All full-time and regular part-time Drivers employed by the Employer at its 1500 Glen Avenue, Moorestown, New Jersey facility. 
+"04-RC-363490","Region 04, Philadelphia, Pennsylvania","Oldcastle BuildingEnvelope, Inc.","Open","04/10/2025","","","Moorestown","NJ",7,"","Teamsters Local 676 a/w International Brotherhood of Teamsters","INCLUDED: All full-time and regular part-time Drivers employed by the Employer at its 1500 Glen Avenue, Moorestown, New Jersey facility. 
+
+EXCLUDED: All other employees, office clerical employees, managers, guards, and supervisors as defined in the Act.",7,"A","Single Labor Organization","Initial","05/16/2025",7,NA,5,"",NA,"",NA,1,6,"",NA,"","Teamsters Local 676 a/w International Brotherhood of Teamsters","Included: All full-time and regular part-time Drivers employed by the Employer at its 1500 Glen Avenue, Moorestown, New Jersey facility. 
+
+Excluded: All other employees, office clerical employees, managers, guards, and supervisors as defined in the Act.
+","","","","Teamsters Local 676 a/w International Brotherhood of Teamsters"
+"04-RC-363490","Region 04, Philadelphia, Pennsylvania","Oldcastle BuildingEnvelope, Inc.","Open","04/10/2025","","","Moorestown","NJ",7,NA,"","INCLUDED: All full-time and regular part-time Drivers employed by the Employer at its 1500 Glen Avenue, Moorestown, New Jersey facility. 
 
 EXCLUDED: All other employees, office clerical employees, managers, guards, and supervisors as defined in the Act.",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Teamsters Local 676 a/w International Brotherhood of Teamsters"
 "04-RC-363785","Region 04, Philadelphia, Pennsylvania","Grand Opera House, Inc.","Open","04/15/2025","","","Wilmington","DE",17,"","","INCLUDED: All full-time, regular part-time, and on-call Production Department employees.
@@ -1719,11 +1725,11 @@ Excluded: All office clerical employees, professional employees and supervisors 
 "05-RC-362509","Region 05, Baltimore, Maryland","Starbucks Corporation","Open","03/24/2025","","","Mechanicsville","VA",18,"","Workers United a/w Service Employees International Union","Included:  All full-time and regular part-time Baristas and Shift Supervisors
 
 Excluded:  Store Managers; office clericals, guards and supervisors as defined by the Act.
-",17,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Workers United"
+",17,"A","Single Labor Organization","Initial","04/29/2025",17,NA,14,"",NA,"",NA,2,16,"",NA,"","Workers United a/w Service Employees International Union","All full-time and regular part-time baristas and shift supervisors employed by the Employer at its facility currently located at 7291 Battle Hill Drive, Unit B, Mechanicsville, Virginia, but excluding all assistant store managers, store managers, office clerical employees, guards, and supervisors as defined in the Act.","","","","Workers United"
 "05-RC-362509","Region 05, Baltimore, Maryland","Starbucks Corporation","Open","03/24/2025","","","Mechanicsville","VA",18,NA,"Workers United a/w Service Employees International Union","Included:  All full-time and regular part-time Baristas and Shift Supervisors
 
 Excluded:  Store Managers; office clericals, guards and supervisors as defined by the Act.
-",17,"A","Single Labor Organization","Initial","04/29/2025",17,NA,14,"",NA,"",NA,2,16,"",NA,"","Workers United a/w Service Employees International Union","All full-time and regular part-time baristas and shift supervisors employed by the Employer at its facility currently located at 7291 Battle Hill Drive, Unit B, Mechanicsville, Virginia, but excluding all assistant store managers, store managers, office clerical employees, guards, and supervisors as defined in the Act.","","","","Workers United"
+",17,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Workers United"
 "05-RC-363189","Region 05, Baltimore, Maryland","Johnson Controls, Inc.","Open","04/04/2025","","","York","PA",388,"","","Included: All manufacturing and warehouse employees working 100 JCI Way York, PA.
 
 Excluded: Supervisors, office, clerical, guards, and all positions excluded by the Act.",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Sheet Metal Workers Local 19"
@@ -3731,11 +3737,11 @@ Excluded:  RN, LPN, Management Staff.",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 Excluded: All other employees, and guards, and supervisors as defined by the Act.",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,""
 "18-RD-356346","Region 18, Minneapolis, Minnesota","Frito-Lay, Inc.","Open","12/09/2024","","","Menomonee Falls","WI",150,"","Teamsters Local Union No. 344, Sales and Service Industry","Included:  Warehouse, Merchandiser, Merchandiser Lead, DS Driver, RSA, RSR, DTS, RSS, Warehouse Leads.
 
-Excluded:  Management.",177,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Teamsters Local Union 344"
-"18-RD-356346","Region 18, Minneapolis, Minnesota","Frito-Lay, Inc.","Open","12/09/2024","","","Menomonee Falls","WI",150,NA,"Teamsters Local Union No. 344, Sales and Service Industry","Included:  Warehouse, Merchandiser, Merchandiser Lead, DS Driver, RSA, RSR, DTS, RSS, Warehouse Leads.
-
 Excluded:  Management.",177,"A","Single Labor Organization","Initial","01/16/2025",177,NA,75,"",NA,"",NA,75,150,"",NA,"","Teamsters Local Union No. 344, Sales and Service Industry","Included:	All full-time and regular part-time Delivery Specialists, Route Sales Associates, Route Sales Representatives, Detailers, Merchandisers and Warehouse employees employed by the Employer at its facility currently located at N60W16830 Kohler Lane, Menomonee Falls, Wisconsin.
 Excluded:	Office clerical employees and guards, professional employees and supervisors as defined in the Act.","","","","Teamsters Local Union 344"
+"18-RD-356346","Region 18, Minneapolis, Minnesota","Frito-Lay, Inc.","Open","12/09/2024","","","Menomonee Falls","WI",150,NA,"Teamsters Local Union No. 344, Sales and Service Industry","Included:  Warehouse, Merchandiser, Merchandiser Lead, DS Driver, RSA, RSR, DTS, RSS, Warehouse Leads.
+
+Excluded:  Management.",177,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Teamsters Local Union 344"
 "18-RD-361073","Region 18, Minneapolis, Minnesota","QCMF LLC d/b/a Quality Sheet Metal Fabricators","Open","02/27/2025","","","Winona","MN",4,"","","Included: Sheet Metal Workers Excluded: Supervisor/Front Office",4,"A","Single Labor Organization","Initial","05/13/2025",4,NA,NA,"",NA,"",NA,4,NA,"",NA,"","","Included: All full-time and regular part-time employees involved in metal work. 
 
 Excluded: Office clericals, managers, guards and supervisors as defined by the Act, as amended, and all other employees. 
