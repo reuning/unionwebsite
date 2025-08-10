@@ -339,7 +339,7 @@ Excluded:
 All dispatchers, office staff and managerial employees, and guards, professional employees and
 supervisors as defined in the Act.
 ",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"International Brotherhood of Teamsters Joint Council 10 on Behalf of Teamsters Local 340"
-"01-RM-355674","Region 01, Boston, Massachusetts","Everon, LLC","Open","11/27/2024","","","North Haven","CT","9","","","
+"01-RM-355674","Region 01, Boston, Massachusetts","Everon, LLC","Open","11/27/2024","","","North Haven","CT","9",NA,"","
 Included: All full-time and regular part-time employees engaged in assembling, installation,
 maintenance, inspection, and service of sprinkler systems employed by the Employer at its
 facility located at 118 Quinnipiac Ave., North Haven, Connecticut facility.
@@ -688,7 +688,7 @@ Excluded: confidential employees, custodians, managers, faculty, student workers
 "03-RC-366072","Region 03, Buffalo, New York","Norwich University - The Military College of Vermont","Open","05/21/2025",NA,"","Northfield","VT","26",NA,"","Included: Facilities Workers, Grounds Crew Chief, Boiler Operator, Plumber, BAS and HVAC Control, Carpenter, Maintenance, Ice Rink Assistant Manager, Locksmith, Lead sound tech, Grounds, Vehicle Maintenance, Electrician.
 
 Excluded: Supervisors, guards, custodians, Supervisors, Confidential Employees, Custodians, Managers, Faculty, Student Workers, guards.",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Chauffeurs, Teamster, Warehousemen and Helpers Union No. 597"
-"03-RC-370073","Region 03, Buffalo, New York","GE Vernova International LLC","Open","07/25/2025","","","Schenectady","NY","133","","","Included: All regular full-time and regular part-time Major Component Upgrades (MCU) employees employed by the Employer, including MCU Technicians, MCU Lead Technicians, and MCU Engineering Technicians. 
+"03-RC-370073","Region 03, Buffalo, New York","GE Vernova International LLC","Open","07/25/2025","","","Schenectady","NY","133",NA,"","Included: All regular full-time and regular part-time Major Component Upgrades (MCU) employees employed by the Employer, including MCU Technicians, MCU Lead Technicians, and MCU Engineering Technicians. 
 Excluded: Office clerical employees, managerial employees, guards, professional employees, and supervisors as defined in the Act.",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"IUE-CWA, the Industrial Division of the Communications Workers of America"
 "03-RC-370310","Region 03, Buffalo, New York","Housing Options Made Easy, Inc. d/b/a Recovery Options Made Easy","Open","07/29/2025","","","Buffalo","NY","19","","","Included: All regular full-time and regular part-time Peer Support Specialists and Nurse Educators employed at the Kristen Vincent Respite & Recovery Center, 111 Maple Street, Buffalo, NY 14204
 
@@ -1540,12 +1540,7 @@ Excluded: All other employees, office clerical employees, professional employees
 
 Excluded: All other employees, including managerial employees, supervisory employees, professional employees, clerical employees, guards and confidential employees.
 ",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Pipeliners Local Union 798 affiliated with the United Association of Journeymen and Apprentices of the Plumbing and Pipefitting Industry of the United States and Canada"
-"08-RC-364525","Region 08, Cleveland, Ohio","Zidian Management, LLC d/b/a Lassonde Industries","Open","04/28/2025","","","Youngstown","OH","56","","","Included: Production, Sanitation and Warehouse employees.
-
-Excluded: Maintenance (including Facilities Maintenance Technician, Lead Facilities Maintenance Technician, Senior Electrical Engineer), Quality Control (including Senior Assurance Technician, Quality Control Technician, Supply Chain Quality Technician), Drivers, and all other employees, including temporary employees, office clerical employees, professional employees, guards, and supervisors as defined in the Act.",85,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Teamsters Local Union No. 377 a/w International Brotherhood of Teamsters"
-"08-RC-364525","Region 08, Cleveland, Ohio","Zidian Management, LLC d/b/a Lassonde Industries","Open","04/28/2025",NA,"","Youngstown","OH","56",NA,"","Included: Production, Sanitation and Warehouse employees.
-
-Excluded: Maintenance (including Facilities Maintenance Technician, Lead Facilities Maintenance Technician, Senior Electrical Engineer), Quality Control (including Senior Assurance Technician, Quality Control Technician, Supply Chain Quality Technician), Drivers, and all other employees, including temporary employees, office clerical employees, professional employees, guards, and supervisors as defined in the Act.",85,"A","Single Labor Organization","Initial","06/10/2025",85,NA,34,"",NA,"",NA,26,60,"",14,"","","All employees in the classifications of packaging operator, sanitation technician, retort batchmaker, floater, capper operator, retort filler operator, warehouse technician, depal operator, warehouse sanitation associate, retort load operator, retort operator, retort packaging operator, 
+"08-RC-364525","Region 08, Cleveland, Ohio","Zidian Management, LLC d/b/a Lassonde Industries","Open","04/28/2025","","","Youngstown","OH",NA,NA,NA,NA,NA,"A","Single Labor Organization","Initial","06/10/2025",85,NA,34,"",NA,"",NA,26,60,"",14,"","","All employees in the classifications of packaging operator, sanitation technician, retort batchmaker, floater, capper operator, retort filler operator, warehouse technician, depal operator, warehouse sanitation associate, retort load operator, retort operator, retort packaging operator, 
 filler operator, retort unload operator, food prep,  batchmaker, retort capper operator,  batchmaker  lead, tomato preparation, lead sanitation technician, 
 1st shift line lead, 2nd shift line lead, production support, quality assurance technician, quality control technician, and supply chain quality technician employed by the Employer at its 500 McClurg Road, Ohio facility, but excluding all employees in the classifications of transfer driver warehouse, truck driver warehouse technician, warehouse driver floater, and all temporary employees, office clerical employees, professional employees,
 guards and supervisors as defined by the Act, and all other employees.
@@ -1553,6 +1548,9 @@ guards and supervisors as defined by the Act, and all other employees.
 
 
 ","","","","Teamsters Local Union No. 377 a/w International Brotherhood of Teamsters"
+"08-RC-364525","Region 08, Cleveland, Ohio","Zidian Management, LLC d/b/a Lassonde Industries","Open","04/28/2025","","","Youngstown","OH","56",NA,"","Included: Production, Sanitation and Warehouse employees.
+
+Excluded: Maintenance (including Facilities Maintenance Technician, Lead Facilities Maintenance Technician, Senior Electrical Engineer), Quality Control (including Senior Assurance Technician, Quality Control Technician, Supply Chain Quality Technician), Drivers, and all other employees, including temporary employees, office clerical employees, professional employees, guards, and supervisors as defined in the Act.",85,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Teamsters Local Union No. 377 a/w International Brotherhood of Teamsters"
 "08-RC-364849","Region 08, Cleveland, Ohio","The Cleveland Museum of Natural History","Open","04/30/2025","","","Cleveland","OH","76","","","Included: All full-time and part-time employees in non-professional classifications including 3D Capture Technician, Administrative Coordinator, Archivist, AV Technician, Collections Assistant, Content Marketing Manager, Copy Editor, Data Visualization Analyst, Database and Gift Processing Specialist, Database Administrator, Ecologist, Education Scheduler, Exhibit Project Manager, Exhibit Specialist, Exhibit Technician, External Communications Manager, Grants Manager, Graphic Designer, Groundskeeper, Help Desk Technician, HVAC Technician, General Maintenance Technician, Major Gifts Officer, Manager of Land Stewardship, Manager of Preserve Operations, Manager of Volunteer Engagement, Marketing Communications Manager, Multimedia & Audio Visual Services Technician, Network and Systems Engineer 11, Philanthropy Associate, Smead Discovery Center Facilitator, Venue Sales & Event Coordinator, Visitor Experience Associate, Visitor Experience Team Lead, Visitor Experience Team Lead/Community Engagement Coordinator, and Youth Initiative Coordinator.
 
 Excluded: Supervisors, management-level employees, and guards.
@@ -2848,7 +2846,9 @@ including operators, welders, material handlers, sequencers, flow leads, gap lea
 Inspectors, quality technicians, and maintenance technicians.
 EXCLUDED: All other employees, including office, clerical, temporary, safety, guards, and
 supervisors as defined by the Act",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"UNITED AUTOMOBILE, AEROSPACE & AGRICULTURAL IMPLEMENT WORKERS OF AMERICA, UAW"
-"16-RM-360104","Region 16, Fort Worth, Texas","United Insurance Company of America","Open","02/11/2025","","","Beaumont","TX",NA,NA,NA,NA,NA,"A","Single Labor Organization","Initial","03/21/2025",19,NA,15,"",NA,"",NA,3,18,"",NA,"","United Food and Commercial Workers District Union Local One","Included: All full-time and regular part-time Agents employed by the Employer at its facility located at 185 Interstate Highway 10 North, Suite 206, Beaumont, Texas 77707.
+"16-RM-360104","Region 16, Fort Worth, Texas","United Insurance Company of America","Open","02/11/2025","","","Beaumont","TX","18","","United Food and Commercial Workers District Union Local One","Included: All full-time and regular part-time Agents employed at the Employer's 186 Interstate Hwy 10 North, Suite 206, Beaumont, TX 77707.
+
+Excluded: All clerical, managerial, confidential and professional employees, mechanics, guards and supervisors as defined in the Act,",19,"A","Single Labor Organization","Initial","03/21/2025",19,NA,15,"",NA,"",NA,3,18,"",NA,"","United Food and Commercial Workers District Union Local One","Included: All full-time and regular part-time Agents employed by the Employer at its facility located at 185 Interstate Highway 10 North, Suite 206, Beaumont, Texas 77707.
 
 Excluded: All other employees including office clerical employees, managerial employees, professional employees, guards, and supervisors as defined by the Act.","","","","United Food and Commercial Workers District Union Local One"
 "16-RM-360104","Region 16, Fort Worth, Texas","United Insurance Company of America","Open","02/11/2025",NA,"","Beaumont","TX","18",NA,"","Included: All full-time and regular part-time Agents employed at the Employer's 186 Interstate Hwy 10 North, Suite 206, Beaumont, TX 77707.
@@ -3568,7 +3568,7 @@ Others Permitted to Vote: The parties have agreed that Associate Pharmacy Techni
 Excluded: All other employees, other represented employees, managerial employees, confidential employees, physicians, Registered Nurses, guards, and supervisors as defined by the National Labor Relations Act.",386,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"National Union of Healthcare Workers (NUHW)"
 "21-RC-357719","Region 21, Los Angeles, California","Bio-Medical Applications of California, Inc.","Open","01/03/2025","","","San Diego","CA","22","","Service Employees International Union, United Healthcare Workers - West","Included: All full time and part time Registered Nurses, Charge nurses, Patient Care Technicians, Administration Assistants and Unit Secretaries. 
 
-Excluded: All other classifications, including but not limited to guards, managers, confidential employees and supervisors as defined by the Act.",22,"A","Single Labor Organization","Initial","02/14/2025",22,NA,10,"",NA,"",NA,5,15,"",4,"","Service Employees International Union, United Healthcare Workers - West","VOTING GROUP - UNIT A (PROFESSIONAL UNIT):
+Excluded: All other classifications, including but not limited to guards, managers, confidential employees and supervisors as defined by the Act.",22,"A","Single Labor Organization","Initial","02/05/2025",22,NA,10,"",NA,"",NA,5,15,"",6,"Y","","VOTING GROUP - UNIT A (PROFESSIONAL UNIT):
 
 Included: All full-time, regular part-time, and per diem registered nurses (RN) employed by the Employer at its facility currently located at 11031 Via Frontera, Suite C, San Diego, California.
 
@@ -3794,13 +3794,13 @@ the Act.",150,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"In
 EXCLUDED:  All drivers, office clerical employees, confidential employees, guards and supervisors within the meaning of the Act.",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"New Jersey Building Construction Laborers' District Council"
 "22-RC-365680","Region 22, Newark, New Jersey","Pye-Barker Fire & Safety, LLC d/b/a Survivor Fire & Safety Equip. Co., Inc.","Open","05/15/2025","","","Cranford","NJ","8","","Pye-Barker Fire & Safety, LLC d/b/a Survivor Fire & Safety Equip. Co., Inc.","INCLUDED:  All full time and regular part time Fire Alarm Technicians, Fire Sprinkler Service Technicians, Fire Extinguisher/Suppression System Service Technicians, and Fire Protection Technicians employed by the Employer out of its facility currently located at 39A Myrtle Street, Cranford, NJ 07016.
 
-EXCLUDED:  All other employees, shop personnel, guards, professionals, office clericals, supervisors and managerial employees as defined by the Act.",8,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Road Sprinkler Fitters Local Union No. 669 and Sprinkler Fitters and Apprentices Local Union 696, as Joint Petitioners"
-"22-RC-365680","Region 22, Newark, New Jersey","Pye-Barker Fire & Safety, LLC d/b/a Survivor Fire & Safety Equip. Co., Inc.","Open","05/15/2025",NA,"","Cranford","NJ","8",NA,"Pye-Barker Fire & Safety, LLC d/b/a Survivor Fire & Safety Equip. Co., Inc.","INCLUDED:  All full time and regular part time Fire Alarm Technicians, Fire Sprinkler Service Technicians, Fire Extinguisher/Suppression System Service Technicians, and Fire Protection Technicians employed by the Employer out of its facility currently located at 39A Myrtle Street, Cranford, NJ 07016.
-
 EXCLUDED:  All other employees, shop personnel, guards, professionals, office clericals, supervisors and managerial employees as defined by the Act.",8,"A","Single Labor Organization","Initial","06/26/2025",8,NA,4,"",NA,"",NA,4,8,"",NA,"","Pye-Barker Fire & Safety, LLC d/b/a Survivor Fire & Safety Equip. Co., Inc.","Included:	All full-time and regular part-time fire alarm technicians, fire sprinkler service technicians, fire extinguisher/suppression system service technicians, and fire protection technicians employed by the Employer at its facility located at 39A Myrtle Street, Cranford, NJ 07016.
 
 Excluded:	All office clerical employees, shop personnel employees, managerial employees, guards, professionals and supervisors as defined in the Act, and all other employees.
 ","","","","Road Sprinkler Fitters Local Union No. 669 and Sprinkler Fitters and Apprentices Local Union 696, as Joint Petitioners"
+"22-RC-365680","Region 22, Newark, New Jersey","Pye-Barker Fire & Safety, LLC d/b/a Survivor Fire & Safety Equip. Co., Inc.","Open","05/15/2025","","","Cranford","NJ","8",NA,"Pye-Barker Fire & Safety, LLC d/b/a Survivor Fire & Safety Equip. Co., Inc.","INCLUDED:  All full time and regular part time Fire Alarm Technicians, Fire Sprinkler Service Technicians, Fire Extinguisher/Suppression System Service Technicians, and Fire Protection Technicians employed by the Employer out of its facility currently located at 39A Myrtle Street, Cranford, NJ 07016.
+
+EXCLUDED:  All other employees, shop personnel, guards, professionals, office clericals, supervisors and managerial employees as defined by the Act.",8,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Road Sprinkler Fitters Local Union No. 669 and Sprinkler Fitters and Apprentices Local Union 696, as Joint Petitioners"
 "22-RC-366926","Region 22, Newark, New Jersey","Elizabethtown Gas Company","Open","06/04/2025","","","Union","NJ","10","","Utility Workers Union of America","INCLUDED:  All full-time and regular part-time Dispatchers, Dispatcher 1s and Dispatcher 2s at the 520 Green Lane, Union, New Jersey location of Elizabethtown Gas.
 
 EXCLUDED:  Managerial employees, professional employees, guards and supervisors as defined in the Act
@@ -5070,7 +5070,9 @@ employees and supervisors as defined by the Act.
 "32-RC-364505","Region 32, Oakland, California","unWired Broadband, Inc.","Open","04/25/2025","","","Fresno","CA","39","","","Included: All Tower Service, Project Labor, Field Service FTTH, Field Construction, FTTH, Field Construction, Operations - Field Management.
 
 Excluded: All other employees, supervisors, and guards as defined by the Act.",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Communications Workers of America"
-"32-RC-364534","Region 32, Oakland, California","Satellite Healthcare, Inc.","Open","04/28/2025","","","Sunnyvale","CA",NA,NA,NA,NA,NA,"B","Single Labor Organization","Initial","05/29/2025",14,NA,5,"",NA,"",NA,7,12,"",NA,"","","VOTING GROUP – UNIT A (PROFESSIONAL EMPLOYEES)
+"32-RC-364534","Region 32, Oakland, California","Satellite Healthcare, Inc.","Open","04/28/2025","","","Sunnyvale","CA","22","","","Included: CCHT, CHT, PCT Trainee, CCHT Advanced, CCHT Master, EST, RN, LVN
+
+Excluded: All other employees, statutory supervisors, and guards as defined by the Act.",9,"B","Single Labor Organization","Initial","05/29/2025",14,NA,5,"",NA,"",NA,7,12,"",NA,"","","VOTING GROUP – UNIT A (PROFESSIONAL EMPLOYEES)
 
 All full-time, regular part-time, and eligible per diem employees in the following classifications employed by the Employer out of its facility located at 610 N. Pastoria Ave., Sunnyvale, CA 94086, the sole facility involved herein: RN Staff Per Diem; IC RN1 Trainee; IC RN 3 Intermediate; and  IC RN4 Advanced; excluding non-professional employees, Center Managers, Assistant Center Managers, confidential employees, office clerical employees, guards, and supervisors as defined by the Act.
 
@@ -5082,7 +5084,9 @@ Also eligible to vote are all employees in the unit who have worked an average o
 
 
 ","","","","Service Employees International Union, United Healthcare Workers - West"
-"32-RC-364534","Region 32, Oakland, California","Satellite Healthcare, Inc.","Open","04/28/2025","","","Sunnyvale","CA",NA,NA,NA,NA,NA,"A","Single Labor Organization","Initial","05/29/2025",9,NA,3,"",NA,"",NA,4,7,"",NA,"","","VOTING GROUP – UNIT A (PROFESSIONAL EMPLOYEES)
+"32-RC-364534","Region 32, Oakland, California","Satellite Healthcare, Inc.","Open","04/28/2025","","","Sunnyvale","CA","22","","","Included: CCHT, CHT, PCT Trainee, CCHT Advanced, CCHT Master, EST, RN, LVN
+
+Excluded: All other employees, statutory supervisors, and guards as defined by the Act.",9,"A","Single Labor Organization","Initial","05/29/2025",9,NA,3,"",NA,"",NA,4,7,"",NA,"","","VOTING GROUP – UNIT A (PROFESSIONAL EMPLOYEES)
 
 All full-time, regular part-time, and eligible per diem employees in the following classifications employed by the Employer out of its facility located at 610 N. Pastoria Ave., Sunnyvale, CA 94086, the sole facility involved herein: RN Staff Per Diem; IC RN1 Trainee; IC RN 3 Intermediate; and  IC RN4 Advanced; excluding non-professional employees, Center Managers, Assistant Center Managers, confidential employees, office clerical employees, guards, and supervisors as defined by the Act.
 
@@ -5099,9 +5103,6 @@ Also eligible to vote are all employees in the unit who have worked an average o
 Excluded: All other employees, statutory supervisors, and guards as defined by the Act.",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Service Employees International Union, United Healthcare Workers - West"
 "32-RC-364650","Region 32, Oakland, California","Renal Advantage Inc.","Open","04/29/2025","","","Stockton","CA","17","","","Included: RN, RN1, PCT, PCT I, PCT II, PCT III, PCT Trainee, CCHT, CHT, LPN, PVN, Secretary, Administrative Assistant, Ward Clerk, Inventory Tech
 
-Excluded: All other employees, statutory supervisors, and guards as defined by the Act.",13,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Service Employees International Union - United Healthcare Workers West"
-"32-RC-364650","Region 32, Oakland, California","Renal Advantage Inc.","Open","04/29/2025",NA,"","Stockton","CA","17",NA,"","Included: RN, RN1, PCT, PCT I, PCT II, PCT III, PCT Trainee, CCHT, CHT, LPN, PVN, Secretary, Administrative Assistant, Ward Clerk, Inventory Tech
-
 Excluded: All other employees, statutory supervisors, and guards as defined by the Act.",13,"B","Single Labor Organization","Initial","07/18/2025",13,NA,6,"",NA,"",NA,5,11,"",1,"Y","","UNIT A Professional Employees
 
 All full-time, regular part-time, and per diem RNs (Registered Nurses) employed by the Employer at its facility currently located at 545 E Cleveland St, Stockton, California 95204, excluding all other employees, non-professional employees, Charge Registered Nurses II, Bio-Medical Technicians, Social Workers, Dieticians, Clinical Educators, managerial employees, confidential employees, guards, and supervisors, as defined by the Act.
@@ -5112,7 +5113,7 @@ All full-time, regular part-time, and per diem Patient Care Technicians (PCTs), 
 
 Eligible to vote are all per diem employees in the unit who have worked an average of four (4) hours or more per week during the 13 weeks immediately preceding the eligibility date for the election.
 ","","","","Service Employees International Union - United Healthcare Workers West"
-"32-RC-364650","Region 32, Oakland, California","Renal Advantage Inc.","Open","04/29/2025",NA,"","Stockton","CA","17",NA,"","Included: RN, RN1, PCT, PCT I, PCT II, PCT III, PCT Trainee, CCHT, CHT, LPN, PVN, Secretary, Administrative Assistant, Ward Clerk, Inventory Tech
+"32-RC-364650","Region 32, Oakland, California","Renal Advantage Inc.","Open","04/29/2025","","","Stockton","CA","17","","","Included: RN, RN1, PCT, PCT I, PCT II, PCT III, PCT Trainee, CCHT, CHT, LPN, PVN, Secretary, Administrative Assistant, Ward Clerk, Inventory Tech
 
 Excluded: All other employees, statutory supervisors, and guards as defined by the Act.",13,"A","Single Labor Organization","Initial","07/18/2025",5,NA,2,"",NA,"",NA,3,5,"",NA,"","","UNIT A Professional Employees
 
@@ -5124,6 +5125,9 @@ All full-time, regular part-time, and per diem Patient Care Technicians (PCTs), 
 
 Eligible to vote are all per diem employees in the unit who have worked an average of four (4) hours or more per week during the 13 weeks immediately preceding the eligibility date for the election.
 ","","","","Service Employees International Union - United Healthcare Workers West"
+"32-RC-364650","Region 32, Oakland, California","Renal Advantage Inc.","Open","04/29/2025","","","Stockton","CA","17",NA,"","Included: RN, RN1, PCT, PCT I, PCT II, PCT III, PCT Trainee, CCHT, CHT, LPN, PVN, Secretary, Administrative Assistant, Ward Clerk, Inventory Tech
+
+Excluded: All other employees, statutory supervisors, and guards as defined by the Act.",13,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Service Employees International Union - United Healthcare Workers West"
 "32-RC-364808","Region 32, Oakland, California","Capital Glass, LLC","Open","05/01/2025","","","Carson City","NV","52","","","Included: All commercial, residential, and service glaziers located at 2951 N. Deer Run Road #1, Carson City, NV 89701 and 11331 S. Virginia St #3, Reno, NV 89511.
 
 Excluded: All office staff, delivery drivers, fab shop and non-glazing employees.",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"International Union of Painters & Allied Trades, District Council 16"
