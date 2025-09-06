@@ -1,6 +1,6 @@
 ---
-title: 2020 Union Filing Report
-description: Data on union election filings in 2020
+title: 2025 Union Filing Report
+description: Data on union election filings in 2025
 hide-description: true 
 execute:
         echo: false
@@ -24,34 +24,34 @@ all_unions <- sort(unique(dt$National))
 
 filed <- dt |>
         filter(Case_Type == "RC" | (Case_Type=="RM" & Date_Filed > as.Date("2023-08-25"))) |>
-        filter(year(Date_Filed) == 2020) |> nrow()
+        filter(year(Date_Filed) == 2025) |> nrow()
 closed <- dt |>  
         filter(Case_Type == "RC" | (Case_Type=="RM" & Date_Filed > as.Date("2023-08-25"))) |> 
-        filter(year(Date_Closed) == 2020) |> nrow()
+        filter(year(Date_Closed) == 2025) |> nrow()
 closed_success <- dt |>  
         filter(Case_Type == "RC" | (Case_Type=="RM" & Date_Filed > as.Date("2023-08-25")))   |> 
-        filter((year(Date_Closed) == 2020) &
+        filter((year(Date_Closed) == 2025) &
                 (Union_Cer=="Yes")) |> nrow()
 median_unit <- dt |>  
         filter(Case_Type == "RC" | (Case_Type=="RM" & Date_Filed > as.Date("2023-08-25")))  |> 
-        filter((year(Date_Closed) == 2020) &
+        filter((year(Date_Closed) == 2025) &
                 (Union_Cer=="Yes")) |> pull(Num_Eligible_Voters) |>
                 median()
 
 total_unit <- dt |>   
         filter(Case_Type == "RC" | (Case_Type=="RM" & Date_Filed > as.Date("2023-08-25")))  |> 
-        filter((year(Date_Closed) == 2020) &
+        filter((year(Date_Closed) == 2025) &
                 (Union_Cer=="Yes")) |> pull(Num_Eligible_Voters) |>
                 sum()
 
-if(2020 == lubridate::year(Sys.Date())){
-        intro = "So far in 2020"
+if(2025 == lubridate::year(Sys.Date())){
+        intro = "So far in 2025"
 } else {
-        intro = "In 2020"
+        intro = "In 2025"
 }
 ```
 
-r`intro` there were `r scales::number(filed, big.mark=",")` representation cases filed[^note] and `r scales::number(closed, big.mark=",")` closed. Of those cases that were closed in 2020 `r scales::percent(closed_success/closed, accuracy=.1)` led to the certification of a union. The median bargaining unit for successful cases had `r scales::number(median_unit, big.mark=",")` workers. In total this led to approximately `r scales::number(total_unit, big.mark=",")` new workers with union representation. 
+r`intro` there were `r scales::number(filed, big.mark=",")` representation cases filed[^note] and `r scales::number(closed, big.mark=",")` closed. Of those cases that were closed in 2025 `r scales::percent(closed_success/closed, accuracy=.1)` led to the certification of a union. The median bargaining unit for successful cases had `r scales::number(median_unit, big.mark=",")` workers. In total this led to approximately `r scales::number(total_unit, big.mark=",")` new workers with union representation. 
 
 [^note]: This only includes cases with a single union filed, excluding the rare cases with multiple unions in an election. 
 
@@ -65,7 +65,7 @@ r`intro` there were `r scales::number(filed, big.mark=",")` representation cases
 ## Filed 
 ```{r}
 
-year_dt <- dt |> filter(year(Date_Filed) == 2020)
+year_dt <- dt |> filter(year(Date_Filed) == 2025)
 year_dt |> arrange(desc(Date_Filed)) |> 
     mutate(National=factor(National, levels=all_unions)) |> 
     distinct() |> 
@@ -95,7 +95,7 @@ year_dt |> arrange(desc(Date_Filed)) |>
 
 ## Closed
 ```{r}
-year_dt <- dt |> filter(year(Date_Closed) == 2020)
+year_dt <- dt |> filter(year(Date_Closed) == 2025)
 
 year_dt |> arrange(desc(Date_Closed)) |> 
     mutate(National=factor(National, levels=all_unions)) |> 
@@ -133,7 +133,7 @@ year_dt |> arrange(desc(Date_Closed)) |>
 ```{r}
 full_state <- sort(c(state.abb, "DC", "PR", "VI", "SK", "GU", "AE", "AS"))
 
-year_dt <- dt |> filter(year(Date_Filed) == 2020)
+year_dt <- dt |> filter(year(Date_Filed) == 2025)
 year_dt |> arrange(desc(Date_Filed)) |> 
     mutate(State=factor(State, levels=full_state)) |> 
     distinct() |> 
@@ -163,7 +163,7 @@ year_dt |> arrange(desc(Date_Filed)) |>
 
 ## Closed
 ```{r}
-year_dt <- dt |> filter(year(Date_Closed) == 2020)
+year_dt <- dt |> filter(year(Date_Closed) == 2025)
 
 year_dt |> arrange(desc(Date_Closed)) |> 
     mutate(State=factor(State, levels=full_state)) |> 

@@ -44,9 +44,14 @@ total_unit <- dt |>
                 (Union_Cer=="Yes")) |> pull(Num_Eligible_Voters) |>
                 sum()
 
+if(2019 == lubridate::year(Sys.Date())){
+        intro = "So far in 2019"
+} else {
+        intro = "In 2019"
+}
 ```
 
-In 2019 there were `r scales::number(filed, big.mark=",")` representation cases filed[^note] and `r scales::number(closed, big.mark=",")` closed. Of those cases that were closed in 2019 `r scales::percent(closed_success/closed, accuracy=.1)` led to the certification of a union. The median bargaining unit for successful cases had `r scales::number(median_unit, big.mark=",")` workers. In total this led to approximately `r scales::number(total_unit, big.mark=",")` new workers with union representation. 
+r`intro` there were `r scales::number(filed, big.mark=",")` representation cases filed[^note] and `r scales::number(closed, big.mark=",")` closed. Of those cases that were closed in 2019 `r scales::percent(closed_success/closed, accuracy=.1)` led to the certification of a union. The median bargaining unit for successful cases had `r scales::number(median_unit, big.mark=",")` workers. In total this led to approximately `r scales::number(total_unit, big.mark=",")` new workers with union representation. 
 
 [^note]: This only includes cases with a single union filed, excluding the rare cases with multiple unions in an election. 
 
