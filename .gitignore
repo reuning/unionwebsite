@@ -25,4 +25,6 @@ _site
 
 .vdoc.r
 _freeze
+**/*.quarto_ipynb
+
 .env
