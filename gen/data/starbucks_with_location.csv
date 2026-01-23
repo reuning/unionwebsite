@@ -228,7 +228,10 @@ All full-time and regular part-time Baristas and Shift Supervisors employed by t
 
 Excluded:  
 All store managers, assistant store managers, office clericals, confidential employees, guards, professional employees and supervisors as defined by the Act.
-","","","","","","",NA,14,2024-10-01,2024-10-01,"11-25",TRUE,"RC","Yes","Starbucks Workers United","WU",1,0.7,"Still Open",3,40.750422,-73.996328,"New York, NY 10001",1,"place","TIGER/Line® dataset from the US Census Bureau","New York","New York County","NY","10001","US",1,40.3850672382859,-73.7572305642742
+","","","","","Starbucks Workers United, affiliated with SEIU","Included: All full and regular part-time Baristas and Shift Supervisors employed by the Employer at its store located at 291 Broadway, New York, NY 10007
+
+Excluded:  All store managers, assistant store managers, office clericals, confidential employees, guards, professional employees and supervisors as defined by the Act.
+",13,14,2024-10-01,2024-10-01,"11-25",TRUE,"RC","Yes","Starbucks Workers United","WU",1,0.7,"Still Open",3,40.750422,-73.996328,"New York, NY 10001",1,"place","TIGER/Line® dataset from the US Census Bureau","New York","New York County","NY","10001","US",1,40.3850672382859,-73.7572305642742
 "02-RC-354509","Starbucks Corporation","Region 02, New York, New York","Closed",2024-11-08,2024-12-03,"Certification of Results","New York","NY","A","Single Labor Organization","Initial",2024-11-22,14,NA,"Starbucks Corporation",5,"",NA,"",NA,9,14,"",NA,"","Starbucks Workers United, affiliated with SEIU","Included: All full-time and regular part-time Baristas and Shift Supervisors employed by the Employer at its store located at 180 West Broadway, New York, NY 10007. 
 
 Excluded: All store managers, assistant store managers, office clericals, confidential employees, guards, professional employees and supervisors as defined by the Act.","","","","","Starbucks Workers United, affiliated with SEIU","Included: All full-time and regular part-time Baristas and Shift Supervisors employed by the Employer at its store located at
@@ -971,6 +974,9 @@ All full-time and regular part-time Baristas and Shift Supervisors.
 Excluded:
 
 Store Managers, Office Clericals, Guards, Professional Employees and Shift Supervisors under the Act.",12,42,2025-04-01,2025-04-01,"11-25",TRUE,"RC","Yes","Workers United a/w SEIU","WU",1,1,"Yes",1,40.47441,-79.950968,"Pittsburgh, PA 15201",1,"place","TIGER/Line® dataset from the US Census Bureau","Pittsburgh","Allegheny County","PA","15201","US",1,40.0994816836657,-79.7754284277425
+"06-RC-379435","Starbucks Corporation","Region 06, Pittsburgh, Pennsylvania","Open",2026-01-20,NA,"","Pittsburgh","PA","","","",NA,23,NA,"Workers United a/w Service Employees International Union (SEIU)",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","","","","Included: All full-time and regular part-time Baristas and Shift Supervisors.
+
+Excluded: Store Managers, Office Clericals, Guards, Professional Employees and Supervisors under the Act.",NA,NA,NA,2026-01-01,"11-25",TRUE,"RC","No","Workers United a/w Service Employees International Union (SEIU)","WU",1,NA,"Still Open",NA,40.47441,-79.950968,"Pittsburgh, PA 15201",1,"place","TIGER/Line® dataset from the US Census Bureau","Pittsburgh","Allegheny County","PA","15201","US",1,40.7569985682832,-80.0349394994654
 "06-RD-321620","Starbucks Corporation","Region 06, Pittsburgh, Pennsylvania","Closed",2023-07-12,2023-11-30,"Dismissal Non-adjusted","Pittsburgh","PA","","","",NA,3,NA,"",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","","","","Included
 
 All full time and regular part-time hourly Baristas and shift Supervisors
@@ -4179,6 +4185,4 @@ facility located at 6890 S. McCarran Blvd., Reno, NV 89509.
 
 Excluded: All store managers, assistant store managers, office clericals, confidential employees, managerial
 employees, and all other employees, professional employees, and guards and supervisors as defined in the Act.",NA,NA,NA,2024-01-01,"11-25",TRUE,"RM","No","","",0,NA,"Other",NA,39.525749,-119.813051,"Reno, NV 89501",1,"place","TIGER/Line® dataset from the US Census Bureau","Reno","Washoe County","NV","89501","US",1,39.8822838098055,-120.069474357874
-"06-RC-379435","Starbucks Corporation","Region 06, Pittsburgh, Pennsylvania","Open",2026-01-20,NA,"","Pittsburgh","PA","","","",NA,23,NA,"Workers United a/w Service Employees International Union (SEIU)",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","","","","Included: All full-time and regular part-time Baristas and Shift Supervisors.
-
-Excluded: Store Managers, Office Clericals, Guards, Professional Employees and Supervisors under the Act.",NA,NA,NA,2026-01-01,"11-25",TRUE,"RC","No","Workers United a/w Service Employees International Union (SEIU)","WU",1,NA,"Still Open",NA,40.47441,-79.950968,"Pittsburgh, PA 15201",1,"place","TIGER/Line® dataset from the US Census Bureau","Pittsburgh","Allegheny County","PA","15201","US",1,40.7569985682832,-80.0349394994654
+"27-RC-379580","Starbucks Corporation","Region 27, Denver, Colorado","Open",2026-01-21,NA,"","Gunnison","CO","","","",NA,19,NA,"Workers United a/w Service Employees International Union, AFL-CIO",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","","","","Included: All full-time and regular part-time Baristas and Shift Supervisors. Excluded: Store managers, assistant managers, office clericals, guards, professionals, and supervisors.",NA,NA,NA,2026-01-01,"11-25",TRUE,"RC","No","Workers United a/w Service Employees International Union, AFL-CIO","WU",1,NA,"Still Open",NA,38.528323,-107.037294,"Gunnison, CO 81230",1,"place","TIGER/Line® dataset from the US Census Bureau","Gunnison","Gunnison County","CO","81230","US",1,38.0868880587454,-107.343428007405
