@@ -4076,6 +4076,11 @@ Excluded: All Store Managers, Assistants Store Managers, office clericals, super
 Excluded: All Store Managers, Assistant Store Managers, office clericals, supervisors and guards as defined in the Act.","","","","","","Included: All full time and regular part time Baristas and Shift Supervisors employed by the Employer at: 34050 Yucaipa Blvd, Yucaipa, CA 92399.
 
 Excluded: All Store Managers, Assistant Store Managers, office clericals, supervisors and guards as defined in the Act.",28,82,2025-10-01,2025-07-01,"26-50",TRUE,"RC","Yes","Workers United","WU",1,0.37037037037037,"No",1,34.06226,-116.971138,"Yucaipa, CA 92399",1,"place","TIGER/Line® dataset from the US Census Bureau","Yucaipa","San Bernardino County","CA","92399","US",1,33.6931352682526,-116.525706099789,NA,NA
+"31-RC-383887","Starbucks Corporation","Region 31, Los Angeles, California","Open",2026-03-30,NA,"","Bakersfield","CA","","","",NA,21,NA,"Workers United",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","","","","Included: All full time and regular part time Baristas and Shift Supervisors employed by the Employer at: 6001 Niles St, Bakersfield, CA 93306.
+
+Excluded: All Store Managers, Assistants Store Managers, office clericals, supervisors and guards as defined in the Act.
+
+",NA,NA,NA,2026-01-01,"11-25",TRUE,"RC","No","Workers United","WU",1,NA,"Still Open",NA,35.384337,-119.020562,"Bakersfield, CA 93301",1,"place","TIGER/Line® dataset from the US Census Bureau","Bakersfield","Kern County","CA","93301","US",1,35.1047240955855,-118.545778543116,NA,NA
 "31-RM-331129","Starbucks Corporation","Region 31, Los Angeles, California","Closed",2023-12-01,2024-03-13,"Dismissal Non-adjusted","Los Angeles","CA","","","",NA,14,NA,"",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","","","","Included: All full-time and regular part time baristas and shift supervisors employed by the Employer at its facility located at 5757 Wilshire Blvd., Los Angeles, CA 90036.
 
 Excluded: All store managers, assistant store managers, office clercials, confidential employees, managerial employees, and all other
@@ -4261,8 +4266,9 @@ facility located at 6890 S. McCarran Blvd., Reno, NV 89509.
 
 Excluded: All store managers, assistant store managers, office clericals, confidential employees, managerial
 employees, and all other employees, professional employees, and guards and supervisors as defined in the Act.",NA,NA,NA,2024-01-01,"11-25",TRUE,"RM","No","","",0,NA,"Other",NA,39.525749,-119.813051,"Reno, NV 89501",1,"place","TIGER/Line® dataset from the US Census Bureau","Reno","Washoe County","NV","89501","US",1,39.8822838098055,-120.069474357874,NA,NA
-"31-RC-383887","Starbucks Corporation","Region 31, Los Angeles, California","Open",2026-03-30,NA,"","Bakersfield","CA","","","",NA,21,NA,"Workers United",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","","","","Included: All full time and regular part time Baristas and Shift Supervisors employed by the Employer at: 6001 Niles St, Bakersfield, CA 93306.
+"03-RC-383951","Starbucks Corporation","Region 03, Buffalo, New York","Open",2026-03-31,NA,"","Buffalo","NY","","","",NA,20,NA,"Workers United",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","","","","Included:  All baristas, shift supervisors, and employees defined by the Act.
 
-Excluded: All Store Managers, Assistants Store Managers, office clericals, supervisors and guards as defined in the Act.
+Excluded:  All assistant store managers, store managers, and supervisors as defined by the Act.",NA,NA,NA,2026-01-01,"11-25",TRUE,"RC","No","Workers United","WU",1,NA,"Still Open",NA,42.89606,-78.886424,"Buffalo, NY 14201",1,"place","TIGER/Line® dataset from the US Census Bureau","Buffalo","Erie County","NY","14201","US",1,42.8985572364772,-79.282259506497,NA,NA
+"13-RC-383953","Starbucks Corporation","Region 13, Chicago, Illinois","Open",2026-03-31,NA,"","Chicago","IL","","","",NA,19,NA,"Workers United",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","","","","Included: All full-time and regular part-time Baristas and Shift Supervisors
 
-",NA,NA,NA,2026-01-01,"11-25",TRUE,"RC","No","Workers United","WU",1,NA,"Still Open",NA,35.384337,-119.020562,"Bakersfield, CA 93301",1,"place","TIGER/Line® dataset from the US Census Bureau","Bakersfield","Kern County","CA","93301","US",1,35.1047240955855,-118.545778543116,NA,NA
+Excluded: Store managers, assistant managers, office clericals, guards, professionals, supervisors",NA,NA,NA,2026-01-01,"11-25",TRUE,"RC","No","Workers United","WU",1,NA,"Still Open",NA,41.88531,-87.62213,"Chicago, IL 60601",1,"place","TIGER/Line® dataset from the US Census Bureau","Chicago","Cook County","IL","60601","US",1,42.1509156412961,-87.3823312965363,NA,NA
