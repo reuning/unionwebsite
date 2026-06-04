@@ -2790,6 +2790,7 @@ Excluded: Store managers, assistant managers, office clericals, guards, professi
 Excluded: All store managers, assistant store managers, office clericals, professional employees, guards and supervisors as defined by the Act.","","","","","Chicago & Midwest Regional Joint Board, Workers United/SEIU","Included: All full-time and regular part-time Baristas and Shift Supervisors.
 
 Excluded: All store managers, assistant managers, office clericals, guards, professionals, and supervisors.",23,71,2025-10-01,2025-07-01,"11-25",TRUE,"RC","Yes","Chicago & Midwest Regional Joint Board, Workers United/SEIU","WU",1,0.947368421052632,"Yes",4,44.951483,-93.090649,"Saint Paul, MN 55101",1,"place","TIGER/Line® dataset from the US Census Bureau","Saint Paul","Ramsey County","MN","55101","US",1,45.1220589821925,-92.8786034515163,NA,NA
+"18-RC-388050","Starbucks Corporation","Region 18, Minneapolis, Minnesota","Open",2026-05-29,NA,"","Edina","MN","","","",NA,19,NA,"Workers United",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","","","","Included:",NA,NA,NA,2026-04-01,"11-25",TRUE,"RC","No","Workers United","WU",1,NA,"Still Open",NA,44.889687,-93.349949,"Edina, MN 55424",1,"place","TIGER/Line® from the US Census Bureau","Edina","Hennepin County","MN","55424","US",1,44.552529778489,-93.0937964970404,NA,NA
 "18-RD-321704","Starbucks Corporation","Region 18, Minneapolis, Minnesota","Closed",2023-07-13,2024-01-05,"Dismissal Non-adjusted","Bloomington","MN","","","",NA,17,NA,"",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","","","","Included:
 all full time and regular part time baristas and shift supervisors at store 2705
 Excluded:
@@ -4412,4 +4413,8 @@ facility located at 6890 S. McCarran Blvd., Reno, NV 89509.
 
 Excluded: All store managers, assistant store managers, office clericals, confidential employees, managerial
 employees, and all other employees, professional employees, and guards and supervisors as defined in the Act.",NA,NA,NA,2024-01-01,"11-25",TRUE,"RM","No","","",0,NA,"Other",NA,39.525749,-119.813051,"Reno, NV 89501",1,"place","TIGER/Line® dataset from the US Census Bureau","Reno","Washoe County","NV","89501","US",1,39.8822838098055,-120.069474357874,NA,NA
-"18-RC-388050","Starbucks Corporation","Region 18, Minneapolis, Minnesota","Open",2026-05-29,NA,"","Edina","MN","","","",NA,19,NA,"Workers United",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","","","","Included:",NA,NA,NA,2026-04-01,"11-25",TRUE,"RC","No","Workers United","WU",1,NA,"Still Open",NA,44.889687,-93.349949,"Edina, MN 55424",1,"place","TIGER/Line® from the US Census Bureau","Edina","Hennepin County","MN","55424","US",1,44.552529778489,-93.0937964970404,NA,NA
+"05-RC-388128","Starbucks Corporation","Region 05, Baltimore, Maryland","Open",2026-06-02,NA,"","Columbia","MD","","","",NA,22,NA,"Workers United",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","","","","Included:
+All full-time and regular part-time Baristas and Shift Supervisors.
+
+Excluded:
+Store Managers; office clericals, guards and supervisors as defined by the Act.",NA,NA,NA,2026-04-01,"11-25",TRUE,"RC","No","Workers United","WU",1,NA,"Still Open",NA,39.206132,-76.887905,"Columbia, MD 21044",1,"place","TIGER/Line® from the US Census Bureau","Columbia","Howard County","MD","21044","US",1,39.6606407087899,-77.1876594773389,NA,NA
