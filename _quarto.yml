@@ -26,6 +26,9 @@ website:
       - section: Info
         contents: data/info/*
 
+  page-footer:
+    center: "Data last updated: {{< now isodate >}}"
+
 knitr:
     opts_chunk: 
         dev: "svg"
