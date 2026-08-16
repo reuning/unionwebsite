@@ -23,3 +23,7 @@ Commits made with meaningful AI assistance carry a Git trailer for attribution:
     Co-authored-by: Posit Assistant <reuning+posit-assistant@users.noreply.github.com>
 
 The `git co-ai` alias commits with this trailer attached, and `.gitmessage` is the commit message template (see the commented trailer line inside).
+
+# Things to do
+
+- Fix the "NA"s for certification decisions.
