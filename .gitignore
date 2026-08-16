@@ -28,3 +28,4 @@ _freeze
 **/*.quarto_ipynb
 
 .env
+AGENTS.md
