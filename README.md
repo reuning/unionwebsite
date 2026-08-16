@@ -10,6 +10,16 @@ Github for [unionelections.org](https://unionelections.org).
   - Scraping script is adapted from [nlrb-cases](https://github.com/labordata/nlrb-cases)
 - The website is built using [Quarto](https://quarto.org/). 
 
-# Things to do
+# Note on union name matching
 
-- Fix the "NA"s for certification decisions. 
+The `National` union affiliation is assigned in `gen/scripts/Scripts.R` by matching free-text `Labor_Union` names against a local dictionary (`gen/data/union_dictionary_exact.csv` and `gen/data/union_dictionary_substrings.csv`). These dictionaries were reconstructed from historical data after the original Google Sheets lookup was accidentally deleted; they can be regenerated with `gen/scripts/rebuild_union_dictionary.R`.
+
+# Note on AI use
+
+Code and data analysis in this repository are developed with the assistance of a large language model (LLM), accessed through [Positron](https://positron.posit.co/)'s Posit Assistant with [OpenRouter](https://openrouter.ai/) as the model provider. AI assistance is used to help write, refactor, and debug code and to help with data analysis and interpretation; specific models may vary by session. All AI-generated output is reviewed by a human before it is committed, and a human remains responsible for the correctness of the data and code.
+
+Commits made with meaningful AI assistance carry a Git trailer for attribution:
+
+    Co-authored-by: Posit Assistant <reuning+posit-assistant@users.noreply.github.com>
+
+The `git co-ai` alias commits with this trailer attached, and `.gitmessage` is the commit message template (see the commented trailer line inside).
