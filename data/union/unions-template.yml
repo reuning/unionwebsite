@@ -234,12 +234,6 @@ items:
     data:
       subset: data[data$National=="OPEIU",]
       filename: OPEIU_data.csv
-  other:
-    Union_Short: Other
-    Union_Long: Other
-    data:
-      subset: data[data$National=="Other",]
-      filename: Other_data.csv
   pasnap:
     Union_Short: PASNAP
     Union_Long: PASNAP
