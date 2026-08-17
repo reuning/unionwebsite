@@ -54,12 +54,6 @@ items:
     data:
       subset: data[data$National=="BCTGM",]
       filename: BCTGM_data.csv
-  csea:
-    Union_Short: CSEA
-    Union_Long: CSEA
-    data:
-      subset: data[data$National=="CSEA",]
-      filename: CSEA_data.csv
   cwa:
     Union_Short: CWA
     Union_Long: CWA
