@@ -197,12 +197,12 @@ Excluded: All other employees, clerical/administrative, managers, confidential e
 "01-RC-392468","Sonesta International Hotels Corporation","Region 01, Boston, Massachusetts","Open","08/07/2026","","","Cambridge","MA","","","","",NA,NA,"UNITE HERE, Local 26",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","",45,"","","Included: All room attendants, house attendants, and lobby attendants
 
 Excluded: All managers, guards, and supervisors as defined in the Act, and all other employees.",NA,42.380442,-71.132947,"Cambridge, MA 02138",1,"place","TIGER/Line® from the US Census Bureau","Cambridge","Middlesex County","MA","2138","US",1,42.4626501801016,-71.0067799727203,NA,NA
-"01-RC-392776","Sam Adams Boston Brewing","Region 01, Boston, Massachusetts","Open","08/13/2026","","","Boston","MA","","","","",NA,NA,"",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","",30,"","","Included: Senior Brewery Ambassadors, Brewery Ambassadors, Bartenders, Tour Center Coordinators, Kitchen Cooks/ Help 
-
-Excluded: All clerical employees, confidential employees, managers, and guards, professional employees and supervisors as defined in the Act.",NA,42.354318,-71.073449,"Boston, MA 02106",1,"place","TIGER/Line® from the US Census Bureau","Boston","Suffolk County","MA","2106","US",1,42.0740904143043,-70.6483379187816,NA,NA
 "01-RC-392819","Jones Lang LaSalle Americas, Inc.","Region 01, Boston, Massachusetts","Open","08/14/2026","","","West Greenwich","RI","","","","",NA,NA,"International Union of Operating Engineers, Local 877",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","",3,"","","Included: All full time and regular part-time Logistics Mail Room Leads Techs and Logistics Service Coordinators.
 
 Excluded: All other Employees, clerical/administrative, managers, confidential employees, guards and supervisors as defined in the Act.",NA,41.631168,-71.667165,"West Greenwich, RI 02817",1,"place","TIGER/Line® from the US Census Bureau","West Greenwich","Kent County","RI","2817","US",1,41.3831017721169,-71.4340816433625,NA,NA
+"01-RC-392929","First Student","Region 01, Boston, Massachusetts","Open","08/17/2026","","","Bloomfield","CT","","","","",NA,NA,"INTERNATIONAL BROTHERHOOD OF TEAMSTERS, LOCAL 671",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","",10,"","","Included: All full-time CREC dispatchers
+
+Excluded: All other employees, professional employees, guards, and supervisors, as defined by the act.",NA,41.851961,-72.738939,"Bloomfield, CT 06002",1,"place","TIGER/Line® from the US Census Bureau","Bloomfield","Capitol Planning Region","CT","6002","US",1,41.7809890698333,-72.6847760783832,NA,NA
 "01-RD-379428","Everon, LLC","Region 01, Boston, Massachusetts","Open","01/21/2026","","","Wallingford","CT","","","","",NA,NA,"Road Sprinkler Fitters UA Local 669, a/w the United Association of Journeymen and Apprentices of the Plumbing and Pipe Fitting Industry of the United States and Canada",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","",5,"","","Included: Sprinkler Fitters All & Service & Installation.",NA,41.456205,-72.811047,"Wallingford, CT 06492",1,"place","TIGER/Line® dataset from the US Census Bureau","Wallingford","South Central Connecticut Planning Region","CT","6492","US",1,41.5336530334949,-72.5074912827739,NA,NA
 "01-RD-386098","Mayflower Medicinals, Inc.","Region 01, Boston, Massachusetts","Open","05/01/2026","","","Fall River","MA","","","","",NA,NA,"UNITED FOOD AND COMMERCIAL WORKERS INTERNATIONAL UNION, LOCAL 328",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","",21,"","","Included: All full-time and regular part-time production,Cultivation Leads, Cultivation Technician Is, and Cultivation Technician IIs located at the employer's facility at 1100 Innovation Way, Fall River, MA 02722.
 
@@ -437,9 +437,12 @@ mechanics, mixing, grinding, sheeting, packing, cleaning, and warehouse employee
 facility located in Park Avenue and Washington Avenue in the Bronx, NY 10457
 Excluded:
 All other employees, including office clerical, managers, sales employees, and Supervisors as defined in the act.",NA,40.819329,-73.920355,"Bronx, NY 10451",1,"place","TIGER/Line® from the US Census Bureau","Bronx","Bronx County","NY","10451","US",1,40.4734478114788,-73.4938772792719,NA,NA
-"02-RC-390576","Brightview Holdings, Inc.","Region 02, New York, New York","Open","07/08/2026","","","Bronx","NY","","","","",NA,NA,"Progressive Workers of the World Local 311",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","",20,"","","Included:  All employees working ground services at St. Raymond and St. Anthony's cemeteries
+"02-RC-390576","Brightview Holdings, Inc.","Region 02, New York, New York","Open","07/08/2026","","","Bronx","NY","A","Single Labor Organization","Initial","08/18/2026",10,NA,"Progressive Workers of the World Local 311",2,"",NA,"",NA,5,10,"",3,"","","Included: All full-time and regular part-time maintenance and landscaping employees including but not limited to crew leaders, landscapers, and gardeners working at or based out of the 2600 Lafayette Ave, Bronx, NY 10465 facility.
+
+Excluded: All managerial employees, including production managers, enhancement managers, specialty services managers, account managers, administrative employees, sales employee , per-diem/casual employees, confidential employees and professional employees, guards and supervisors as defined in the Act.
+","","","",20,"","","Included:  All employees working ground services at St. Raymond and St. Anthony's cemeteries
 Excluded:
-All other employees as defined in the act",NA,40.819329,-73.920355,"Bronx, NY 10451",1,"place","TIGER/Line® from the US Census Bureau","Bronx","Bronx County","NY","10451","US",1,40.9431334239581,-73.9037882147148,NA,NA
+All other employees as defined in the act",10,40.819329,-73.920355,"Bronx, NY 10451",1,"place","TIGER/Line® from the US Census Bureau","Bronx","Bronx County","NY","10451","US",1,40.9431334239581,-73.9037882147148,NA,NA
 "02-RC-390898","Northern Westchester Hospital","Region 02, New York, New York","Open","07/15/2026","","","Mount Kisco","NY","","","","",NA,NA,"1199 SEIU Healthcare Workers East",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","",15,"","","Included: All full-time and regular part-time, including per diem, surgical supply assistants and telecommunications employees (including leads) employed by Northern Westchester Hospital, residual to the existing collective bargaining unit represented by 1199SEIU United Healthcare Workers East.
 
 Excluded: All other employees, guards and supervisors as defined in the Act",NA,41.197329,-73.72286,"Mount Kisco, NY 10549",1,"place","TIGER/Line® from the US Census Bureau","Mount Kisco","Westchester County","NY","10549","US",1,41.0446351663099,-73.5336325384179,NA,NA
@@ -458,33 +461,10 @@ OTHERS PERMITTED TO VOTE: The parties have agreed that the following employees m
 Excluded:  All office and professional employees, guards, and supervisors under the Act.
 
 ",NA,40.750422,-73.996328,"New York, NY 10001",1,"place","TIGER/Line® from the US Census Bureau","New York","New York County","NY","10001","US",1,40.8204959789754,-74.4629572699985,NA,NA
-"02-RC-392612","Allied Universal Security Services","Region 02, New York, New York","Open","08/10/2026","","","New York","NY","","","","",NA,NA,"Local One Security Officers Union",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","",73,"","","Included: Tactical Response Officers (Armed); Security Officers, Fire Life Safety Director Officers, F-01 Freight Operators and Security/BES at the following locations:
+"02-RC-392985","Auto Zone, Inc.","Region 02, New York, New York","Open","08/17/2026","","","White Plains","NY","","","","",NA,NA,"UAW Local 259",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","",11,"","","Included: All full-time and regular part-time drivers, counter employees, and stock employees.
 
-1.  1 Manhattan West
-    395 9th Avenue /401 9th Avenue
-    New York, NY 10001
-
-2.   2 Manhattan West
-      375 9th Avenue
-      New York, NY 10001
-
-3. 4 Manhattan West
-    424 West 33rd Street
-    New York, NY 10001
-
-4. Manhattan West
-    450 West 33rd Street
-    New York, NY 10001
-
-5. Manhattan West Shared Services
-    424 West 33rd Street
-    New York, NY 10001
-
-6. Brookfield Development
-    434 West 33rd Street
-     New York, NY 10001
-
-Excluded: All other employees.",NA,40.750422,-73.996328,"New York, NY 10001",1,"place","TIGER/Line® from the US Census Bureau","New York","New York County","NY","10001","US",1,40.976925379643,-74.1684251893519,NA,NA
+Excluded:
+All other employees or statutory supervisors.",NA,41.031397,-73.769626,"White Plains, NY 10601",1,"place","TIGER/Line® from the US Census Bureau","White Plains","Westchester County","NY","10601","US",1,40.6494005017896,-73.8237609335108,NA,NA
 "02-RD-307958","Bronx Global Learning Institute for Girls Charter School, The Shirley Rodriguez Remenski School","Region 02, New York, New York","Open","11/30/2022","","","Bronx","NY","","","","",NA,NA,"UFT",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","",40,"","","Included: Teachers, TA's, Instructioanl and Literacy Coaches , Guidance Counselors, Special Education Coordinator 
 Excluded: Office staff and Supervisors , Professionals and all other guards as defincd by the ACT",NA,40.819329,-73.920355,"Bronx, NY 10451",1,"place","TIGER/Line® dataset from the US Census Bureau","Bronx","Bronx County","NY","10451","US",1,40.4206938780063,-74.1078404376074,NA,NA
 "02-RD-317733","Siren Retail Corp. d/b/a Starbucks","Region 02, New York, New York","Open","05/10/2023","","","New York","NY","","","","",NA,NA,"NY-NJ Regional Joint Board, Workers United a/k/a Starbucks Workers United",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","",122,"","","Included: All full-time and regular part-time Baristas, Mixologists, Ops Leads, and Bakers.
@@ -646,6 +626,9 @@ Excluded: Project Manager, Assistant Site Manager, and All other Persons.",NA,41
 "04-RD-391343","Airgas USA, LLC","Region 04, Philadelphia, Pennsylvania","Open","07/23/2026","","","Allentown","PA","","","","",NA,NA,"Teamsters Local Union No. 773 a/w International Brotherhood of Teamsters",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","",7,"","","INCLUDED: All Drivers and Loaders
 
 EXCLUDED: All other employees, managers and supervisors as defined by the Act.",NA,40.602658,-75.469236,"Allentown, PA 18101",1,"place","TIGER/Line® from the US Census Bureau","Allentown","Lehigh County","PA","18101","US",1,40.3840640964156,-75.1329448058051,NA,NA
+"04-RD-392905","Fairmount Foundry Inc","Region 04, Philadelphia, Pennsylvania","Open","08/14/2026","","","Hamburg","PA","","","","",NA,NA,"United Steel, Paper and Forestry, Rubber, Manufacturing, Energy, Allied Industrial and Service Workers, AFL-CIO-CLC",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","",48,"","","Involved: All non-office or non-management full-time employees.
+
+Excluded: All office and management employees and part-time employees.",NA,40.55565,-75.98188,"Hamburg, PA 19526",1,"place","TIGER/Line® from the US Census Bureau","Hamburg","Berks County","PA","19526","US",1,40.8704338201839,-75.7420781519256,NA,NA
 "04-RM-380814","Jack Duggans PHL Inc.","Region 04, Philadelphia, Pennsylvania","Open","02/11/2026","","","Philadelphia","PA","","","","",NA,NA,"Unite Here Local 274",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","",29,"","","INCLUDED: 29
 
 EXCLUDED: 0",NA,40.001811,-75.11787,"Philadelphia, PA 19101",1,"place","TIGER/Line® dataset from the US Census Bureau","Philadelphia","Philadelphia County","PA","19101","US",1,39.7751001095802,-75.0134026608848,NA,NA
@@ -852,14 +835,17 @@ All employees performing guard duties as defined in Section 9(b)(3) of the Natio
 
 Excluded:
 All office clerical employees, professional employees and supervisors as defined in the Act.",NA,38.911936,-77.016719,"Washington, DC 20001",1,"place","TIGER/Line® from the US Census Bureau","Washington","District of Columbia","DC","20001","US",1,39.0894064791605,-76.5314779806002,NA,NA
-"05-RC-389644","Triple Canopy, a Constellis Company","Region 05, Baltimore, Maryland","Open","06/29/2026","","","Silver Spring","MD","","","","",NA,NA,"International Guards Union of America",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","",240,"","","Included: 
+"05-RC-389644","Triple Canopy, a Constellis Company","Region 05, Baltimore, Maryland","Open","06/29/2026","","","Silver Spring","MD","A","Three Labor Organizations","Initial","08/18/2026",248,20,"International Guards Union of America",52,"Protective Service Officers United (PSO United)",16,"United Federation LEOS-PBA Law Enforcement Officers Security & Police Benevolent Association (LEOS-PBA)",6,1,75,"",NA,"","International Guards Union of America (IGUA)","Included: All full-time and regular part-time security officers employed by the Employer at the White Oak Research Center facilities currently located at 10903 New Hampshire Ave, Silver Spring, Maryland, 8455 Colesville Rd, Silver Spring, Maryland, and 10001 New Hampshire Ave, Silver Spring, Maryland. 
+
+Excluded: Office clerical employees, professional employees, managerial employees, Project Managers, Assistant Project Managers, Captains, and Supervisors as defined by the Act. 
+","","","",240,"","International Guards Union of America (IGUA)","Included: 
 All full-time and regular part-time security officers employed by the Employer at the White Oak
 Research Center facilities currently located at 10903 New Hampshire Ave, 8455 Colesville Rd
 and 10001 New Hampshire Ave in Silver Springs, MD.
 
 Excluded: 
 Office clerical employees, professional employees, managerial employees, Project Managers,
-Assistant Project Managers, Captains, and Supervisors as defined in the Act.",NA,39.036289,-77.010948,"Silver Spring, MD 20901",1,"place","TIGER/Line® from the US Census Bureau","Silver Spring","Montgomery County","MD","20901","US",1,39.3918859307199,-77.0018121513903,NA,NA
+Assistant Project Managers, Captains, and Supervisors as defined in the Act.",248,39.036289,-77.010948,"Silver Spring, MD 20901",1,"place","TIGER/Line® from the US Census Bureau","Silver Spring","Montgomery County","MD","20901","US",1,39.3918859307199,-77.0018121513903,NA,NA
 "05-RC-390668","Tatitlek Federal Services, LLC","Region 05, Baltimore, Maryland","Open","07/14/2026","","","Catonsville","MD","","","","",NA,NA,"Governed United Security Professionals",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","",16,"","","Included: All armed and unarmed officers.
 
 Excluded: Office personnel, managers, Project manager.",NA,39.26461,-76.74241,"Catonsville, MD 21228",1,"place","TIGER/Line® from the US Census Bureau","Catonsville","Baltimore County","MD","21228","US",1,39.6418267572752,-76.8448144274818,NA,NA
@@ -914,9 +900,6 @@ All managerial employees, all professional employees, all and guards and supervi
 "05-RC-392565","Jones Lang LaSalle Americas, Inc.","Region 05, Baltimore, Maryland","Open","08/10/2026","","","Herndon","VA","","","","",NA,NA,"International Union of Operating Engineers Local 99 a/w International Union of Operating Engineers, AFL-CIO",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","",2,"","","Included: All fulltime and regular part-time employees employed by the employer and engaged in facilities maintenance at 13665 Dulles Technology Drive, 13665 Dulles Technology Drive, and13641 Sunrise Valley Drive, Herdon, VA, including all Maintenance Mechanics, all building engineers, all helpers. 
 
 Excluded: All managerial employees, all professional employees, all clerical employees and guards and supervisors as defined by the act.",NA,38.983887,-77.367457,"Herndon, VA 20170",1,"place","TIGER/Line® from the US Census Bureau","Herndon","Fairfax County","VA","20170","US",1,38.8190035433414,-77.8003073340948,NA,NA
-"05-RC-392580","Lamar Advertising","Region 05, Baltimore, Maryland","Open","08/10/2026","","","Lemoyne","PA","","","","",NA,NA,"Sheet Metal, Air, Rail, Transportation (SMART) Local 19",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","",8,"","","Included: All full-time Billboard Installers
-
-Excluded: All other employees including supervisors as defined by the Act",NA,40.2412,-76.89414,"Lemoyne, PA 17043",1,"place","TIGER/Line® from the US Census Bureau","Lemoyne","Cumberland County","PA","17043","US",1,39.983441022177,-77.2907848134743,NA,NA
 "05-RD-305423","Magnum Carbide LLC","Region 05, Baltimore, Maryland","Open","10/18/2022","","","Waynesboro","PA","","","","",NA,NA,"",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","",16,"","","Included:  Manufacturing.
 
 Excluded:  Warehousing.",NA,39.793552,-77.59228,"Waynesboro, PA 17268",1,"place","TIGER/Line® dataset from the US Census Bureau","Waynesboro","Franklin County","PA","17268","US",1,39.8683200480126,-77.4377650749113,NA,NA
@@ -1159,6 +1142,12 @@ Excluded: 0",NA,42.723851,-83.423242,"Clarkston, MI 48346",1,"place","TIGER/Line
 
 Excluded: Supervisors and Guards as defined by the Act",NA,43.175953,-85.514105,"Cedar Springs, MI 49319",1,"place","TIGER/Line® from the US Census Bureau","Cedar Springs","Kent County","MI","49319","US",1,42.8427992655507,-85.5759985211096,NA,NA
 "07-RC-392844","U.S Foods","Region 07, Detroit, Michigan","Open","08/07/2026","","","Wixom","MI","","","","",NA,NA,"Local 337, International Brotherhood of Teamsters (IBT)",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","",3,"","","Included: truck builder, router-sr, router int",NA,42.520533,-83.549145,"Wixom, MI 48393",1,"place","TIGER/Line® from the US Census Bureau","Wixom","Oakland County","MI","48393","US",1,42.6821704417208,-83.1031749913846,NA,NA
+"07-RC-392974","DTE ENERGY, FERMI 2","Region 07, Detroit, Michigan","Open","08/13/2026","","","Newport","MI","","","","",NA,NA,"Local 223, Utility Workers Union of America (UWUA), AFL-CIO",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","",3,"","","Included: 
+
+1. Senior Technical Specialist-RPO-Nuclear Production-Radiation Protection
+2. Associate Technical Specialist-RPO-Nuclear Production-Radiation Protection
+
+Excluded: all supervisors, managers, guards, and all other employees not listed above.",NA,42.00227,-83.30854,"Newport, MI 48166",1,"place","TIGER/Line® from the US Census Bureau","Newport","Monroe County","MI","48166","US",1,41.6146242594723,-83.0120300377039,NA,NA
 "07-RD-336983","Starbucks","Region 07, Detroit, Michigan","Open","02/29/2024","","","Flint","MI","","","","",NA,NA,"Starbucks Workers United",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","",30,"","","Included:  All baristas and shift supervisors at store #8874
 
 Excluded:  Store Manager",NA,42.965926,-83.780835,"Flint, MI 48501",1,"place","TIGER/Line® dataset from the US Census Bureau","Flint","Genesee County","MI","48501","US",1,43.4075967346682,-83.6217237633122,NA,NA
@@ -1539,16 +1528,15 @@ professional employees, confidential employees, managerial employees, guards, an
 as defined by the Act.",NA,35.26002,-80.804151,"Charlotte, NC 28201",1,"place","TIGER/Line® from the US Census Bureau","Charlotte","Mecklenburg County","NC","28201","US",1,34.8681052805171,-80.7280471543888,NA,NA
 "10-RC-392402","Karns Fire Department","Region 10, Atlanta, Georgia","Open","08/06/2026","","","Knoxville","TN","","","","",NA,NA,"United Firefighters of Karns Local 4900",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","",19,"","","Included: Full-time Captains, Engineers, and Fire Fighters employed by the employer.
 Excluded: Volunteers, Fire Chief, Assistant Chiefs, Training Captain, guards, and supervisors as defined in the Act.",NA,36.032334,-83.884804,"Knoxville, TN 37901",1,"place","TIGER/Line® from the US Census Bureau","Knoxville","Knox County","TN","37901","US",1,36.0905715596277,-83.8944714456727,NA,NA
-"10-RC-392483","Ascent Chemical","Region 10, Atlanta, Georgia","Open","08/07/2026","","","Cleveland","TN","","","","",NA,NA,"United Steel, Paper and Forestry, Rubber, Manufacturing, Energy, Allied Industrial and Service Workers International Union, AFL-CIO, CLC or United Steelworkers",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","",28,"","","Included: All full-time and regular part-time production, maintenance, and lab employees employed by the Employer at its facility in Cleveland, TN.
-
-Excluded: All temporary employees, agency and joint employees, office clerical employees, professional employees, managerial employees, guards, and supervisors as defined by the Act.",NA,35.149223,-84.874031,"Cleveland, TN 37311",1,"place","TIGER/Line® from the US Census Bureau","Cleveland","Bradley County","TN","37311","US",1,35.5487242559462,-85.1467118772422,NA,NA
-"10-RC-392521","AGL Services Company","Region 10, Atlanta, Georgia","Open","08/10/2026","","","Atlanta","GA","","","","",NA,NA,"International Brotherhood of Electrical Workers Local #1997",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","",7,"","","Included: Safety & Health Specialist 1, 2, and Sr.
-
-Excluded: All clerical, supervisors, management, guards, and all others defined by the Act.",NA,33.844371,-84.47405,"Atlanta, GA 30301",1,"place","TIGER/Line® from the US Census Bureau","Atlanta","Cobb County","GA","30301","US",1,34.0795260091989,-84.5372134637248,NA,NA
 "10-RC-392550","Laboratory Corporation of America","Region 10, Atlanta, Georgia","Open","08/10/2026","","","Tucker","GA","","","","",NA,NA,"International Union of Painters & Allied Trades District Council No. 77",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","",80,"","","Included; All regular part-time and full-time warehouse workers and drivers (Service Reps/Senior Service Reps).
 
 Excluded; All other employees, guards, supervisors, office clerical and employees of
 temporary services.",NA,33.853945,-84.215369,"Tucker, GA 30084",1,"place","TIGER/Line® from the US Census Bureau","Tucker","Dekalb County","GA","30084","US",1,34.2338165167213,-83.9163142164639,NA,NA
+"10-RC-392839","RATP-Dev USA, Inc.","Region 10, Atlanta, Georgia","Open","08/14/2026","","","Asheville","NC","","","","",NA,NA,"Amalgamated Transit Union, Local Union 128",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","",85,"","","Included: Road Supervisors and Customer Service Supervisors. ATU seeks an Armour-Globe self-determination election to add these employees to the existing unit at the facility. 
+
+Excluded:    
+All other employees, and all managers, and guards and supervisors as defined in 
+the Act.",NA,35.602711,-82.567281,"Asheville, NC 28801",1,"place","TIGER/Line® from the US Census Bureau","Asheville","Buncombe County","NC","28801","US",1,35.3221366696384,-82.4173403504868,NA,NA
 "10-RC-392876","St. Martin's In The Pines","Region 10, Atlanta, Georgia","Open","08/14/2026","","","Birmingham","AL","","","","",NA,NA,"Retail Wholesale and Department Store Union Mid-South Council",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","",58,"","","Included:
 Full-time/part-time CNA's, Restorative, and Caregivers.
 
@@ -1612,9 +1600,6 @@ EXCLUDED:  All others.",10,28.468477,-82.595728,"Spring Hill, FL 34606",1,"place
 Excluded: All other employees, office clerical employees, manager., guards and supervisors as defined in the Act.","","","",83,"","","Included: General Foreman, Foreman, Lineman, Equipment Operators, Groundman & Apprentices.
 
 Excluded: Supervisors, Safety, Mechanics, Secretaries & Security guards.",100,26.021239,-80.340396,"Pembroke Pines, FL 33028",1,"place","TIGER/Line® dataset from the US Census Bureau","Pembroke Pines","Broward County","FL","33028","US",1,26.1943426121491,-80.2907817970703,NA,NA
-"12-RC-389034","One Corps, Inc.","Region 12, Tampa, Florida","Open","06/17/2026","","","San Juan","PR","","","","",NA,NA,"International Union Security, Police & Fire Professionals of America (SPFPA)",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","",81,"","","Included:  All employees performing guard duties as defined in Section 9(b)(3) of the National Labor Relations Act, employed by One Corps@ 10 Calle Casia, San Juan, PR 00921.
-
-Excluded:  All office clerical employees, professional employees and supervisors as defined in the Act.",NA,18.465299,-66.116666,"San Juan, PR 00901",1,"place","TIGER/Line® from the US Census Bureau","San Juan","San Juan Municipio","PR","901","US",1,18.4186901582548,-66.2511070632737,NA,NA
 "12-RC-391438","Metropolitan Security Services, Inc. d/b/a Walden Security","Region 12, Tampa, Florida","Open","07/23/2026","","","Jacksonville","FL","","","","",NA,NA,"United States Court Security Officers",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","",22,"","","Attachment 
 5b. Description of Unit Involved: 
 The unit is defined as all full-time and shared-time Court Security Officers (CSOs) and Lead 
@@ -1744,9 +1729,11 @@ Excluded: All other employees, guards and supervisors as defined in the Act.",NA
 "13-RC-389289","Cardtronics USA, Inc.","Region 13, Chicago, Illinois","Open","06/23/2026","","","Chicago","IL","","","","",NA,NA,"Communications Workers of America, AFL-CIO",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","",36,"","","Included: All Customer Engineers, Customer Engineer II's and Senior Customer Engineers
 
 Excluded: All others Excluded by the Act.",NA,41.88531,-87.62213,"Chicago, IL 60601",1,"place","TIGER/Line® from the US Census Bureau","Chicago","Cook County","IL","60601","US",1,42.2152454959745,-87.3506619264047,NA,NA
-"13-RC-390794","Rebecca's Raspberries, Inc. d/b/a Enjoy, An Urban General Store","Region 13, Chicago, Illinois","Open","07/16/2026","","","Chicago","IL","","","","",NA,NA,"United Food and Commercial Workers Union, Local 1546",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","",9,"","","Included:  All Enjoyees, Cashiers, and Leads employed by the Employer at the following facilities:  Enjoy Urban General Store - Lincoln Square, 4723 N. Lincoln Avenue, Chicago, IL 60625; Enjoy Urban General Store - Andersonville, 5307 N. Clark Street, Chicago, IL 60640; and Enjoy Urban General Store - Warehouse, 5111 N. Lincoln Avenue, Chicago, IL 60625.
+"13-RC-390794","Rebecca's Raspberries, Inc. d/b/a Enjoy, An Urban General Store","Region 13, Chicago, Illinois","Open","07/16/2026","","","Chicago","IL","A","Single Labor Organization","Initial","08/14/2026",9,NA,"United Food and Commercial Workers Union, Local 1546",8,"",NA,"",NA,1,9,"",NA,"","United Food & Commercial Workers Union, Local 1546","Included: All full-time and regular part-time sales associates and leads employed by the Employer at its three facilities currently located at 4723 N Lincoln Ave., Chicago, IL, 5307 N Clark St., Chicago, IL and 5111 N Lincoln Ave., Chicago, IL. 
+Excluded: All confidential employees, managerial employees, office clerical employees and guards, professional employees and supervisors as defined in the Act.
+","","","",9,"","United Food & Commercial Workers Union, Local 1546","Included:  All Enjoyees, Cashiers, and Leads employed by the Employer at the following facilities:  Enjoy Urban General Store - Lincoln Square, 4723 N. Lincoln Avenue, Chicago, IL 60625; Enjoy Urban General Store - Andersonville, 5307 N. Clark Street, Chicago, IL 60640; and Enjoy Urban General Store - Warehouse, 5111 N. Lincoln Avenue, Chicago, IL 60625.
 
-Excluded:  All office clerical employees, confidential employees, managerial employees, professional employees, guards, and supervisors as defined by the Act.",NA,41.88531,-87.62213,"Chicago, IL 60601",1,"place","TIGER/Line® from the US Census Bureau","Chicago","Cook County","IL","60601","US",1,42.1204789073257,-87.3499379853859,NA,NA
+Excluded:  All office clerical employees, confidential employees, managerial employees, professional employees, guards, and supervisors as defined by the Act.",9,41.88531,-87.62213,"Chicago, IL 60601",1,"place","TIGER/Line® from the US Census Bureau","Chicago","Cook County","IL","60601","US",1,42.1204789073257,-87.3499379853859,NA,NA
 "13-RC-391014","Trane Technologies Company, LLC","Region 13, Chicago, Illinois","Open","07/20/2026","","","Willowbrook","IL","","","","",NA,NA,"Pipefitters Association, Local 597, U.A.",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","",15,"","","Included: Contracting Control Technicians
 
 Excluded: All office clerical employees, guards, professionals, and supervisors under the Act",NA,41.768417,-87.936984,"Willowbrook, IL 60527",1,"place","TIGER/Line® from the US Census Bureau","Willowbrook","Dupage County","IL","60527","US",1,42.076172430229,-87.7078809896194,NA,NA
@@ -1777,9 +1764,6 @@ Excluded: All warehouse, office clerical employees, managerial employees, profes
 "13-RC-392489","The Adler Planetarium","Region 13, Chicago, Illinois","Open","08/10/2026","","","Chicago","IL","","","","",NA,NA,"Adler Planetarium Workers United, AFSCME Council 31",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","",1,"","","Included: All full-time and regular part-time Fundraising Specialists, to be included in the existing unit certified in Case 13-RC-374476.
 
 Excluded: All confidential employees, managerial employees, guards and supervisors as defined by the Act.",NA,41.88531,-87.62213,"Chicago, IL 60601",1,"place","TIGER/Line® from the US Census Bureau","Chicago","Cook County","IL","60601","US",1,41.7269949279311,-87.8910748788296,NA,NA
-"13-RC-392561","CBRE","Region 13, Chicago, Illinois","Open","08/11/2026","","","Chicago","IL","","","","",NA,NA,"International Union of Operating Engineers, Local 399",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","",2,"","","Included:  All full-time and regular part-time skilled maintenance employees and building engineers in the engineering department working for CBRE at 2100 W. Harrison Street, Chicago, IL 60612.
-
-Excluded:  Office clerical, professional employees, managers, guards and supervisors as defined by the Act.",NA,41.88531,-87.62213,"Chicago, IL 60601",1,"place","TIGER/Line® from the US Census Bureau","Chicago","Cook County","IL","60601","US",1,41.4439189440621,-88.1046762331064,NA,NA
 "13-RC-392694","Ecology Solutions LLC, a division of Lakeshore Recycling Services","Region 13, Chicago, Illinois","Open","08/12/2026","","","Rosemont","IL","","","","",NA,NA,"International Union of Operating Engineers Local 150 AFL CIO",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","",28,"","","Included: All full-time and regular part-time equipment operators, mechanics, and laborers
 employed at the Company’s Atkinson, Illinois, facility.
 
@@ -1791,11 +1775,6 @@ Excluded: Supervisors, Managers and Professionals",NA,41.93106,-88.01305,"Addiso
 "13-RD-372038","Cranemasters","Region 13, Chicago, Illinois","Open","08/25/2025","","","Merrillville","IN","","","","",NA,NA,"IUOE Local 150",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","",40,"","","Included:  Operators, laborers, mechanics
 
 Excluded: Managers",NA,41.497212,-87.338656,"Merrillville, IN 46410",1,"place","TIGER/Line® dataset from the US Census Bureau","Merrillville","Lake County","IN","46410","US",1,41.7453874545588,-86.9837276387481,NA,NA
-"13-RD-372800","Relish Labs, LLC","Region 13, Chicago, Illinois","Open","09/05/2025","","","Bedford Park","IL","A","Single Labor Organization","Initial","08/08/2026",457,14,"UFCW Local 1546",105,"",NA,"",NA,202,307,"",3,"","","Included: All full-time and part-time Gatekeepers, Production Associates, Laborers, Environmental Health and Safety Leads, Forklift Operators, Pallet-Jack Operators, Machine Operators, Quality Control, Runners, Sanitation Workers, Training Leads, Warehouse Associates, Shipping and Receiving Associates, and Shift Leads as well as RTH Production Associates and Decanters, RTH Production Leads, RTH Gatekeepers, RTH Production Machine Operators, RTH Sanitation Associates, RTH FSQA Techs and RTH FSQA Leads employed by Relish Labs LLC DBA Home Chef at its facility currently located at 6901 W 65th St., Bedford Park, IL.
-
-Excluded: All other employees, confidential employees, Maintenance Technicians, Production Administrator Leads, Onsite Associate Recruiters, Human Resource Specialist, Administrative Assistant, Workforce Management Specialist, RTH Cooks, managerial employees, office clerical employees, guards, professional employees, and supervisors as defined by the Act.","","","",380,"","","Included: Production, Warehouse
-
-Excluded: FSQA Safety",457,41.811929,-87.68732,"Bedford Park, IL 60499",1,"place","TIGER/Line® from the US Census Bureau","Bedford Park","Cook County","IL","60499","US",1,41.5416560363197,-87.3822444390707,NA,NA
 "13-RD-383878","Sona Senior Living IL 2, LLC","Region 13, Chicago, Illinois","Open","03/31/2026","","","Deerfield","IL","","","","",NA,NA,"Service Employees International Union, Local 73 CLC/CTW",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","",50,"","","Included: hourly full-time and part-time employees that work at 40% of full-time in a calendar year
 
 Excluded: managerial employees, supervisory employees",NA,42.178175,-87.866818,"Deerfield, IL 60015",1,"place","TIGER/Line® dataset from the US Census Bureau","Deerfield","Lake County","IL","60015","US",1,42.0763870240107,-88.2342370724269,NA,NA
@@ -1888,6 +1867,10 @@ Excluded: Store managers, assistant managers, office clericals, guards, professi
 
 Excluded: Managers & supervisors as defined by the National Labor Relations Act.",NA,37.113343,-94.502663,"Joplin, MO 64801",1,"place","TIGER/Line® from the US Census Bureau","Joplin","Jasper County","MO","64801","US",1,37.0966773506325,-94.1197791036473,NA,NA
 "14-RC-392781","Ryder Truck Rental","Region 14, Saint Louis, Missouri","Open","08/13/2026","","","Wood River","IL","","","","",NA,NA,"International Brotherhood of Teamsters Local 525",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","",3,"","","Included: Diesel Technicians Excluded: management per the act",NA,38.861597,-90.085657,"Wood River, IL 62095",1,"place","TIGER/Line® from the US Census Bureau","Wood River","Madison County","IL","62095","US",1,39.2305739899938,-90.2098723744679,NA,NA
+"14-RC-392987","Echo Electric","Region 14, Saint Louis, Missouri","Open","08/17/2026","","","Edwardsville","IL","","","","",NA,NA,"International Brotherhood of Teamsters Local Union 525",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","",5,"","","Included: all full and part time warehouse and delivery employees.
+
+Excluded: management per the act.
+",NA,38.841819,-89.877841,"Edwardsville, IL 62025",1,"place","TIGER/Line® from the US Census Bureau","Edwardsville","Madison County","IL","62025","US",1,38.686891761178,-90.0820568984114,NA,NA
 "14-RD-347354","SSM Health Saint Louis University Hospital","Region 14, Saint Louis, Missouri","Open","07/31/2024","","","Saint Louis","MO","","","","",NA,NA,"National Nurses Organizing Committee-National Nurses United, AFL-CIO",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","",563,"","","INCLUDED: 
 Registered nurses employed at 1201 S. Grand, St. Louis, MO 63104 and 1755 S. Grand, St. Louis, MO 63104, including full time, part time, and PRNs, including those that serve as relief charge nurses. 
 EXCLUDED: 
@@ -1957,6 +1940,12 @@ Excluded:  Store Mgrs, Asst Store Mgrs/Ofc Clericals, Guards, Prof'l Employees a
 All Full-time, Part-time, and On-call Table Games Dealers and Dual Rates.
 Excluded:
 Poker room employees, slot attendants/slot techs, supervisors, managers, guards and all other employees as defined in the Act.",NA,29.958304,-90.077,"New Orleans, LA 70112",1,"place","TIGER/Line® from the US Census Bureau","New Orleans","Orleans Parish","LA","70112","US",1,30.1443467046195,-90.0268214321211,NA,NA
+"15-RC-392967","Transit Management of Montgomery","Region 15, New Orleans, Louisiana","Open","08/17/2026","","","Montgomery","AL","","","","",NA,NA,"AMALGAMATED TRANSIT UNION LOCAL 765",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","",25,"","","Included::
+ 
+All full-time and regular part-time employees employed at or out of 23 l 8 West Fairview Ave., Montgomery, AL 36108, 495 Molton Street, Montgomery, AL 36104, and 2346 West Fairview Ave., Montgomery, AL 36 I 08. ATU Local 765 seeks an Armour-Globe self-determination election to add these employees to the existing unit at the facility.
+
+Exlcluded:All employees currently represented by a labor union, and guards and supervisors as defined in the Act.
+",NA,32.356988,-86.257817,"Montgomery, AL 36101",1,"place","TIGER/Line® from the US Census Bureau","Montgomery","Montgomery County","AL","36101","US",1,31.91979262211,-86.1583638152463,NA,NA
 "15-RD-341682","ADT LLC","Region 15, New Orleans, Louisiana","Open","05/07/2024","","","Lafayette","LA","A","Single Labor Organization","Initial","06/13/2024",55,NA,"Communications Workers of America",17,"",NA,"",NA,30,47,"",NA,"","","Included:  All HV Service Technicians and HV Install Technicians employed by the employer at its facilities in Baton Rouge, Lafayette, Shreveport, and St. Rose, Louisiana.
 Excluded: All other employees, including office clerical employees, guards, and supervisors as defined by the Act.
 ","","","",53,"","","Included:
@@ -2016,6 +2005,9 @@ Excluded: All other employees, including office, clerical employees, professiona
 "16-RC-391718","Iron Oak Energy Management LLC","Region 16, Fort Worth, Texas","Open","07/28/2026","","","Crane","TX","","","","",NA,NA,"United Steel, Paper and Forestry, Rubber, Manufacturing, Energy, Allied Industrial and Service Workers International Union, AFL-CIO/CLC",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","",50,"","","Included: All Full Time and Hourly Operators, Maintenance, and Quality Techs employed by the Employer at 10750 FM 1233 Crane, TX 79731. 
 
 Excluded: All other employees, confidential employees, office clerical employees, managerial employees, guards and supervisors as defined by the National Labor Relations Act.",NA,31.39736,-102.35014,"Crane, TX 79731",1,"place","TIGER/Line® from the US Census Bureau","Crane","Crane County","TX","79731","US",1,31.0759981974816,-102.590507224906,NA,NA
+"16-RC-392366","Panola-Harrison Electric Cooperative, Inc.","Region 16, Fort Worth, Texas","Open","08/06/2026","","","Marshall","TX","","","","",NA,NA,"INTERNATIONAL BROTHERHOOD OF ELECTRICAL WORKERS, LOCAL 738",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","",14,"","","Included:  All apprentices, journeyman linemen (all classes), servicemen, and Crew Foremen.
+
+Excluded:  All other employees, including office clerical employees, professional employees, guards, and supervisors within the meaning of the Act.",NA,32.538112,-94.406228,"Marshall, TX 75670",1,"place","TIGER/Line® from the US Census Bureau","Marshall","Harrison County","TX","75670","US",1,32.9748845951597,-94.8193053122888,NA,NA
 "16-RD-327720","Republic National Distributing Company","Region 16, Fort Worth, Texas","Open","10/12/2023","","","Houston","TX","","","","",NA,NA,"TEAMSTERS LOCAL UNION NO. 988",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","",62,"","","Included: Full and Part time CDL Drivers and drivers-helpers.
 
 Excluded: All other employees including and supervisors.",NA,29.813142,-95.309789,"Houston, TX 77001",1,"place","TIGER/Line® dataset from the US Census Bureau","Houston","Harris County","TX","77001","US",1,30.0769472857947,-95.2872409535713,NA,NA
@@ -2103,8 +2095,11 @@ EXCLUDED: All other professional employees, non-professional employees, confiden
 ","","","",44,"","SEIU Healthcare Minnesota & Iowa","Included:  All full-time and regular part-time Registered Nurses (RN's), Nurse Practioners, Medical Social Workers, Massage Therapists, Music Therapists, and Spiritual Counselors employed by the Employer in the Hospice Department at 5803 Neal Ave N.
 
 Excluded:  All other professional employees, non-professional employees, confidential employees, business office employees, guards, managerial employees, and supervisors as defined by the Act.",38,45.702225,-93.816445,"Oak Park, MN 56357",1,"place","TIGER/Line® from the US Census Bureau","Oak Park","Benton County","MN","56357","US",1,45.8994876587376,-93.5659943944734,NA,NA
-"18-RC-390476","Painters USA, Inc.","Region 18, Minneapolis, Minnesota","Open","07/09/2026","","","Eagle","WI","","","","",NA,NA,"International Union of Painters and Allied Trades, District Council No. 7, AFL-CIO",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","",16,"","","Included: All field painters and foreman painters out of the Eagle Wisconsin office at w335s8940 Eagle, Wisconsin 53119
-Excluded: Office staff, general superintendents, team/managers, sales reps and warehouse workers",NA,42.929074,-88.47489,"Eagle, WI 53119",1,"place","TIGER/Line® from the US Census Bureau","Eagle","Waukesha County","WI","53119","US",1,42.4760632120454,-88.5984409433318,NA,NA
+"18-RC-390476","Painters USA, Inc.","Region 18, Minneapolis, Minnesota","Open","07/09/2026","","","Eagle","WI","A","Single Labor Organization","Initial","08/14/2026",9,NA,"International Union of Painters and Allied Trades, District Council No. 7, AFL-CIO",3,"",NA,"",NA,5,8,"",1,"","","Included: All full-time and regular part-time apprentices, technicians, craftsmen, and master craftsmen employed by the Employer and working out of the Employer’s facility located at W355S8940 Godfrey Lane, Eagle, Wisconsin,
+
+Excluded: All other employees, office staff, sales representatives, warehouse workers, foremen, foremen in training, general superintendents, general managers, managers, field supervisors, and guards, and supervisors as defined by the Act.  
+","","","",16,"","","Included: All field painters and foreman painters out of the Eagle Wisconsin office at w335s8940 Eagle, Wisconsin 53119
+Excluded: Office staff, general superintendents, team/managers, sales reps and warehouse workers",9,42.929074,-88.47489,"Eagle, WI 53119",1,"place","TIGER/Line® from the US Census Bureau","Eagle","Waukesha County","WI","53119","US",1,42.4760632120454,-88.5984409433318,NA,NA
 "18-RC-390486","Sysco Baraboo, LLC","Region 18, Minneapolis, Minnesota","Open","07/08/2026","","","Baraboo","WI","","","","",NA,NA,"Teamsters Local Union Number 120",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","",90,"","","Included:  All full-time and regular part-time CDL Drivers and Van Drivers (special delivery drivers).
 
 Excluded:  All other employees, managerial employees, guards and supervisors as defined in the act.",NA,43.47109,-89.74429,"Baraboo, WI 53913",1,"place","TIGER/Line® from the US Census Bureau","Baraboo","Sauk County","WI","53913","US",1,42.9846594330092,-89.513092333856,NA,NA
@@ -2137,10 +2132,6 @@ and 225 Church St., Stoughton, WI 53589).
 
 Excluded: All other employees, including all fully remote employees, guards, managers, and
 supervisors as defined in the Act.",NA,43.060926,-88.230636,"Madison, WI 53702",1,"place","TIGER/Line® from the US Census Bureau","Madison","Waukesha County","WI","53702","US",1,42.637896256865,-88.4923235844542,NA,NA
-"18-RC-392632","Three Bears Resort","Region 18, Minneapolis, Minnesota","Open","08/10/2026","","","Warrens","WI","","","","",NA,NA,"Communication Workers of America, District IV",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","",38,"","","Included: All regular full time and part time lifeguards and attendants.
-
-Excluded: All other employees, including those otherwise excluded by the Act. 
-",NA,44.13107,-90.49985,"Warrens, WI 54666",1,"place","TIGER/Line® from the US Census Bureau","Warrens","Monroe County","WI","54666","US",1,44.3933961902481,-90.7065905714188,NA,NA
 "18-RC-392855","WDC Acquisition LLC D/B/A Wellman","Region 18, Minneapolis, Minnesota","Open","08/12/2026","","","Creston","IA","","","","",NA,NA,"District 6, International Association of Machinists and Aerospace Workers, AFL-CIO",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","",70,"","","Included:  All Full-time and Part-time workers in Quality Control positions in the following Departments-Fixture, X-ray and Layout.
 
 Excluded:  Employees in other bargaining units and office clerical, professional employees, guards and supervisors as defined by the Act.",NA,41.049896,-94.347137,"Creston, IA 50801",1,"place","TIGER/Line® from the US Census Bureau","Creston","Union County","IA","50801","US",1,40.6660677518698,-94.6928365247398,NA,NA
@@ -2230,12 +2221,6 @@ Excluded: Managers, Supervisors and Guards excluded as defined by the act",NA,47
 "19-RC-389220","Clear Choice Cannabis","Region 19, Seattle, Washington","Open","06/22/2026","","","Tacoma","WA","","","","",NA,NA,"United Food and Commercial Workers Local 367",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","",32,"","","Included: All full-time and regular part-time employees employed bt the employer at its facility at 8001 S Hosmer St. 
 
 Excluded: Supervisors and confidential employees as defined by the act.",NA,47.250158,-122.43903,"Tacoma, WA 98402",1,"place","TIGER/Line® from the US Census Bureau","Tacoma","Pierce County","WA","98402","US",1,47.3649299367873,-122.025688555083,NA,NA
-"19-RC-389324","Meritus Solutions Group, LLC","Region 19, Seattle, Washington","Open","06/23/2026","","","Bayview","ID","A","Single Labor Organization","Initial","08/10/2026",5,NA,"International Union, Security, Police and Fire Professionals of America (SPFPA)",3,"",NA,"",NA,NA,3,"",NA,"","International Union, Security, Police and Fire Professionals of America (SPFPA)","Included: All full-time and regular part-time security officers performing guard duties as defined in section 9(b)(3) of the National Labor Relations Act employed by the Employer at the US Naval Warfare Center located at 33964 N Main Ave, Bayview, ID 83803. 
-
-Excluded: All office clerical employees, professional employees, and supervisors as defined in the Act.","","","",5,"","International Union, Security, Police and Fire Professionals of America (SPFPA)","Included: All employees performing guard duties as defined in section 9(b)(3) of the National Labor Relations Act, employed by Meritus Solution Group@ 33964 N Main ave, Bayview, ID 83803.
-
-Excluded: All office clerical employees, professional employees and supervisors as defined in the Act.
-",5,47.982174,-116.549408,"Bayview, ID 83803",1,"place","TIGER/Line® from the US Census Bureau","Bayview","Kootenai County","ID","83803","US",1,48.2838112481361,-116.380750655234,NA,NA
 "19-RC-389407","KRO LLC","Region 19, Seattle, Washington","Open","06/24/2026","","","Portland","OR","","","","",NA,NA,"Sliders Union Williams",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","",22,"","","Included: All Part-time + Full-time hourly workers.
 
 Excluded: Management + Guards.",NA,45.507856,-122.690794,"Portland, OR 97201",1,"place","TIGER/Line® from the US Census Bureau","Portland","Multnomah County","OR","97201","US",1,45.5732568397832,-122.507665779039,NA,NA
@@ -2328,8 +2313,11 @@ Excluded:  Managerial employees, confidential employees, guards, supervisors and
 "19-RM-386179","Winter Sports, Inc. d/b/a Whitefish Mountain Resort","Region 19, Seattle, Washington","Open","05/01/2026","","","Whitefish","MT","","","","",NA,NA,"Communications Workers of America, AFL-CIO",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","",2,"","","Included: All full and part time patrol dispatchers.
 
 Excluded:",NA,48.41358,-114.33569,"Whitefish, MT 59937",1,"place","TIGER/Line® dataset from the US Census Bureau","Whitefish","Flathead County","MT","59937","US",1,48.7094732830952,-114.287737999017,NA,NA
-"19-RM-389274","The Vancouver Symphony Orchestra","Region 19, Seattle, Washington","Open","06/22/2026","","","Vancouver","WA","","","","",NA,NA,"American Federation of Musicians Local 99",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","",110,"","","Included: All probationary and non-probationary core musicians as well as substitute musicians eligible via application of the Juilliard formula: substitute musicians who performed during at least two performance periods in the 2025-2026 season or who performed during at least three performance periods in the two combined 2024-2026 seasons. 
-Excluded: All other administrative employees including, but not limited to, the Chief Executive O?cer, Marketing Director, Development Director, VSO Board Members, clerical employees, con?dential employees, managers, guards, and supervisors as de?ned by the Act. Anyone in any of the aforementioned excluded categories who also ?lls a performance role will be excluded from membership in their performance role as well. Also excluded are substitute musicians who do not meet the eligibility criteria after application of the Juilliard formula, i.e. substitute musicians who performed during fewer than two periods in the 2025-2026 season or fewer than three performance periods during the two combined 2024-2026 seasons.",NA,45.678996,-122.720499,"Vancouver, WA 98660",1,"place","TIGER/Line® from the US Census Bureau","Vancouver","Clark County","WA","98660","US",1,45.8903310953441,-122.750138272485,NA,NA
+"19-RM-389274","The Vancouver Symphony Orchestra","Region 19, Seattle, Washington","Open","06/22/2026","","","Vancouver","WA","A","Single Labor Organization","Initial","08/17/2026",125,NA,"American Federation of Musicians Local 99",82,"",NA,"",NA,13,95,"",2,"","American Federation of Musicians Local 99","Included: All probationary and non-probationary core musicians, as well as substitute musicians  employed by the Employer.
+
+Excluded:  All other administrative employees including, but not limited to, the Chief Executive Officer, Personnel Manager, Marketing Director, Development Director, Vancouver Symphony Orchestra (“VSO”) Board Members, clerical employees, confidential employees, managers, guards and supervisors as defined by the Act
+","","","",110,"","American Federation of Musicians Local 99","Included: All probationary and non-probationary core musicians as well as substitute musicians eligible via application of the Juilliard formula: substitute musicians who performed during at least two performance periods in the 2025-2026 season or who performed during at least three performance periods in the two combined 2024-2026 seasons. 
+Excluded: All other administrative employees including, but not limited to, the Chief Executive O?cer, Marketing Director, Development Director, VSO Board Members, clerical employees, con?dential employees, managers, guards, and supervisors as de?ned by the Act. Anyone in any of the aforementioned excluded categories who also ?lls a performance role will be excluded from membership in their performance role as well. Also excluded are substitute musicians who do not meet the eligibility criteria after application of the Juilliard formula, i.e. substitute musicians who performed during fewer than two periods in the 2025-2026 season or fewer than three performance periods during the two combined 2024-2026 seasons.",125,45.678996,-122.720499,"Vancouver, WA 98660",1,"place","TIGER/Line® from the US Census Bureau","Vancouver","Clark County","WA","98660","US",1,45.8903310953441,-122.750138272485,NA,NA
 "19-RM-391530","American Rock Products","Region 19, Seattle, Washington","Open","07/24/2026","","","Hermiston","OR","","","","",NA,NA,"Teamster Food Processors, Chauffeurs, Warehousemen and Helpers, Local Union 670, affiliated with the International Brotherhood of Teamsters",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","",12,"","","Included: All full time and part time drivers working at or out of 813830 North Hwy Hermiston OR 97838. 
 
 Excluded: All other employees, managers, confidential employees, clerical employees, professionals, guards and supervisors as defined by the Act.",NA,45.84041,-119.28946,"Hermiston, OR 97838",1,"place","TIGER/Line® from the US Census Bureau","Hermiston","Umatilla County","OR","97838","US",1,46.2093271830192,-119.191623829189,NA,NA
@@ -2375,12 +2363,6 @@ Excluded: All other employees, managers, confidential employees, office clerical
 
 Excluded: LRDR Operations Manager, Civil Engineer Manager, Communications Electronics Manager. station manager, computer technicians, radar
 technicians, power plant technician, HVAC technicians. Plumbers, Custodian, logistics specialists, supervisors and guards as defined by NLRA.",12,39.111453,-121.360957,"Beale AFB, CA 95903",1,"place","TIGER/Line® from the US Census Bureau","Beale AFB","Yuba County","CA","95903","US",1,39.138040742148,-121.826860418371,NA,NA
-"20-RC-390238","Delaware Resource Group of Oklahoma LLC","Region 20, San Francisco, California","Open","07/08/2026","","","Travis Afb","CA","A","Single Labor Organization","Initial","07/22/2026",3,NA,"International Association of Machinists and Aerospace Workers, District 725",3,"",NA,"",NA,NA,3,"",NA,"","International Association of Machinists & Aerospace Workers, District 725","Included: All full-time and regular part-time Lead System Administrators, System Administrators, and Training Subject Matter Experts (SME) employed by the Employer out of 690 Airmen Drive, Travis AFB, California.
-Excluded: All guards and supervisors as defined by the Act.
-","","","",3,"","International Association of Machinists & Aerospace Workers, District 725","Included:
-All full-time and regular part-time Maintenance Technicians / Network Administrators
-Excluded:
-Excluding all Supervisors and Guards as defined by the Act.",3,38.271218,-121.94123,"Travis AFB, CA 94535",1,"place","TIGER/Line® from the US Census Bureau","Travis AFB","Solano County","CA","94535","US",1,37.8595530032382,-122.071874081859,NA,NA
 "20-RC-390672","Dignity Health d/b/a Mercy Hospital of Folsom","Region 20, San Francisco, California","Open","07/14/2026","","","Folsom","CA","A","Single Labor Organization","Initial","07/30/2026",12,NA,"Service Employees International Union - United Healthcare Workers - West",3,"",NA,"",NA,8,11,"",1,"","","","","","",13,"","","Included: All full-time, regular part-time and per diem pharmacists to be added to the existing unit in an Armour-Globe election.
 
 Excluded: All other employees, supervisors, confidential employees, and guards as defined by the Act.",12,38.666597,-121.141636,"Folsom, CA 95630",1,"place","TIGER/Line® from the US Census Bureau","Folsom","Sacramento County","CA","95630","US",1,38.3728766454411,-121.020140137974,NA,NA
@@ -2398,6 +2380,9 @@ Excluded: All other employees, managers, confidential employees, office clerical
 ",NA,38.377411,-121.444429,"Sacramento, CA 94240",1,"place","TIGER/Line® from the US Census Bureau","Sacramento","Sacramento County","CA","94240","US",1,38.2065731904355,-121.937289272294,NA,NA
 "20-RC-392379","USA Waste of California, Inc.","Region 20, San Francisco, California","Open","08/06/2026","","","Sacramento","CA","","","","",NA,NA,"Teamsters Local 150",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","",72,"","","Included:  All Full Time and Part Time Drivers, Class A and B Front Load, Roll Off, and Bin/Container Delivery Drivers. All Full Time and Part Time Welders, Container Tech, Utility, Painters (Bin Repair Shop), Bin Washers, Mechanics, Mechanic helpers, and Maintenance employees.
 Excluded:  Managers, Guards, Clerical Employees, Dispatchers, and Supervisors as defined by the Act.",NA,38.377411,-121.444429,"Sacramento, CA 94240",1,"place","TIGER/Line® from the US Census Bureau","Sacramento","Sacramento County","CA","94240","US",1,38.0215737847962,-121.691525027713,NA,NA
+"20-RC-392439","Costco Wholesale Corporation","Region 20, San Francisco, California","Open","08/07/2026","","","Kailua Kona","HI","","","","",NA,NA,"Hawaii Teamsters and Allied  Workers, Local 996",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","",250,"","","Included: All non supervisory employees (full-time, part-time, seasonal, leads)
+
+Excluded: All other employees, managers, supervisors, and guards as defined in the Act.",NA,19.75682,-155.919968,"Kailua Kona, HI 96740",1,"place","TIGER/Line® from the US Census Bureau","Kailua Kona","Hawaii County","HI","96740","US",1,20.1074219306369,-155.944912726378,NA,NA
 "20-RC-392723","MarinHealth Medical Center","Region 20, San Francisco, California","Open","08/11/2026","","","Greenbrae","CA","","","","",NA,NA,"National Union of Healthcare Workers (NUHW)",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","",86,"","","NUHW petitions for the following employees to join the existing NUHW bargaining unit. 
 Non-professionals: Physical Therapist Assistant (PTA), Senior Physical Therapist Assistant (Senior PTA) 
 Professional employees: Petitioner requests a Sonotone ballot for the following employee classifications. Associate Clinical Social Worker, Au.D (Audiologist), Chaplain, Child Life Specialist (CLS), Clinical Social Worker, LCSW (excluding those employed by MarinHealth Medical Group in Psychiatry), LCSW I, LCSW II, Medical Social Worker, Occupational Therapist/Certified Hand Therapist, Occupational Therapist (OT) - Rehab, Physical Therapist (PT) - Rehab, Speech Language Pathologist, Substance Use Navigator (SUN)
@@ -3192,10 +3177,7 @@ Client Partner (x3)
 Excluded:
 All other employees, temporary employees, independent contractors, supervisors, and
 guards.",14,36.17372,-115.10647,"Las Vegas, NV 89101",1,"place","TIGER/Line® dataset from the US Census Bureau","Las Vegas","Clark County","NV","89101","US",1,36.3507637664818,-115.329891712173,NA,NA
-"28-RC-387106","Lockheed Martin Corporation","Region 28, Phoenix, Arizona","Open","05/15/2026","","","Kirtland AFB","NM","A","Single Labor Organization","Initial","07/02/2026",60,NA,"International Association of Machinists & Aerospace Workers, Local Lodge 794, AFL-CIO",51,"",NA,"",NA,NA,52,"",1,"","International Association of Machinists & Aerospace Workers, Local Lodge 794, AFL-CIO","INCLUDED:	All full-time and regular part-time employees assigned to the HH-60W Combat Rescue Helicopter (CRH) Training Program Interim Contract Support (ICS) in the following locations:  Davis-Monthan Air Force Base in Arizona, Kirtland Air Force Base in New Mexico, Moody Air Force Base in Georgia, Nellis Air Force Base in Nevada, and Patrick Space Force Base in Florida, who work in the following job classifications:  Classified Cyber Security, Classified Cyber Security Senior, Configuration Analyst Senior, Database Administrator Senior, Database Administrator Staff, Delivery & Sustainment Quality Representative Senior, Delivery & Sustainment Quality Representative Staff, Field Engineer, Field Engineer Associate, Field Engineer Senior, Field Engineer Staff, Flight Operations Aircrew Senior Staff, Flight Operations Aircrew Staff, Flight Simulation Trainer Senior Staff, Project Management & Planning Operations Representative Staff, Security Representative Senior, Security Representative Staff, Staff Property Analyst, Systems Administrator Staff, and Systems Engineer Staff.
-
-EXCLUDED:	All other employees including managers, confidential employees, office clerical employees, guards, and supervisors as defined by the Act.
-","","","",58,"","International Association of Machinists & Aerospace Workers, Local Lodge 794, AFL-CIO","Included:
+"28-RC-387106","Lockheed Martin Corporation","Region 28, Phoenix, Arizona","Open","05/15/2026","","","Kirtland AFB","NM","","","","",NA,NA,"International Association of Machinists & Aerospace Workers, Local Lodge 794, AFL-CIO",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","",58,"","International Association of Machinists & Aerospace Workers, Local Lodge 794, AFL-CIO","Included:
 All full-time and regular part-time CI/Lead Pilot, CI/Pilot, CI/SMA, Field Engineers,
 Cyber Security, Configuration. Analyst, Data Management, Student
 Services/Registrar/Scheduler, Flightline Schedulers, Mission Planners, Property
@@ -3314,6 +3296,15 @@ All other employees, office clerical employees, managerial employees, guards and
 "28-RC-392639","Starbucks Corporation","Region 28, Phoenix, Arizona","Open","08/07/2026","","","Bernalillo","NM","","","","",NA,NA,"Workers United a/w Service Employees International Union AFL-CIO",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","",19,"","","Included: All full-time and regular part-time Baristas and Shift Supervisors
 
 Excluded: Store managers, assistant managers, office clericals, guards, professionals, supervisors",NA,35.30004,-106.55114,"Bernalillo, NM 87004",1,"place","TIGER/Line® from the US Census Bureau","Bernalillo","Sandoval County","NM","87004","US",1,35.7114328638399,-106.615742978993,NA,NA
+"28-RC-392916","Aria Resort & Casino Holdings, LLC d/b/a Aria Resort & Casino","Region 28, Phoenix, Arizona","Open","08/13/2026","","","Las Vegas","NV","","","","",NA,NA,"International Alliance of Theatrical Stage Employees Local 720",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","",16,"","","Included:
+
+All full-time and regular part-time stagehands and technicians 
+(Audio Visual (A/V)/Sound/Video Technicians and Electronic/Lighting/In Room Technicians)  employed by the Employer in Las Vegas,Nevada.
+
+Excuded:
+
+All other employees, office clerical employees, sales employees, professional employees, guards, and
+supervisors as defined in the Act.",NA,36.17372,-115.10647,"Las Vegas, NV 89101",1,"place","TIGER/Line® from the US Census Bureau","Las Vegas","Clark County","NV","89101","US",1,36.6692832172059,-115.128841066269,NA,NA
 "28-RD-382726","A Caring Hand Home Health Care","Region 28, Phoenix, Arizona","Open","03/09/2026","","","Las Vegas","NV","","","","",NA,NA,"Service Employees International Union, Local 1107",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","",115,"","","Included: All full-time and regular part-time personal care attendants.
 
 Excluded: 
@@ -3436,6 +3427,8 @@ Excluded:  Site Director and any other position excluded from the Act's definiti
 All regular and part time employees performing asphalt paving, including: foremen; rakers; shovelers; screed men; micro pavers; AC painters; tar men; seal coaters; small equipment operators; and safety surface installers.
 Excluded:
 All other employees, guards, and supervisors, as defined by the Act.",NA,40.694481,-73.989319,"Brooklyn, NY 11201",1,"place","TIGER/Line® dataset from the US Census Bureau","Brooklyn","Kings County","NY","11201","US",1,40.389394421059,-73.8340441704056,NA,NA
+"29-RC-390524","Contello Towers 2 Corporation","Region 29, Brooklyn, New York","Open","07/10/2026","","","Brooklyn","NY","","","","",NA,NA,"Local 2, Building Service Employees & Factory Workers, United Service Workers Union, International Union of Journeymen Allied Trades",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","",6,"","","Included: Building superintendents, handymen, doormen, porters, all full and part-time workers
+Excluded: All other employees",NA,40.694481,-73.989319,"Brooklyn, NY 11201",1,"place","TIGER/Line® from the US Census Bureau","Brooklyn","Kings County","NY","11201","US",1,40.4076699250595,-73.9541384112815,NA,NA
 "29-RC-391174","NewYork-Presbyterian Queens Hospital","Region 29, Brooklyn, New York","Open","07/21/2026","","","Flushing","NY","A","Single Labor Organization","Initial","08/13/2026",163,NA,"1199 SEIU Healthcare Workers East",92,"",NA,"",NA,5,118,"",21,"","1199 SEIU Healthcare Workers East","Included: All full-time and regular part-time employees in the titles of Administrative Clerk,
 Cafe Cashier, Clerk Receptionist, Clerk Typist, Clerk Typist/Inventory Clerk, Client Services Representative, Distribution Clerk, Laboratory Aide, Patient Access Representative—Rehabilitation, Patient Access Representative—Orthopedics, Patient Navigator, Patient Navigator—GI, Patient Navigator—Cardiac Catheter, Patient Registrar and Senior Patient Registrar, at New York-Presbyterian Queens Hospital located at 56-45 Main Street, Flushing, NY 11355, as residual to the existing service unit represented by 1199 SEIU United Healthcare Workers East.
 
@@ -3460,6 +3453,9 @@ and supervisors as defined by the Act.",NA,40.751146,-73.882508,"Jackson Heights
 "29-RC-392268","Starbucks Corporation","Region 29, Brooklyn, New York","Open","08/05/2026","","","Queens","NY","","","","",NA,NA,"Workers United, affiliated with Service Employees International Union (SEIU)",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","",23,"","","Included: All full time and regular part time Baristas and Shift Supervisors.
 
 Excluded: Store Managers, Asst. Store Managers, office clericals, guards and supervisors as defined by the Act.",NA,40.745263,-73.711159,"Queens, NY 11004",1,"place","TIGER/Line® from the US Census Bureau","Queens","Queens County","NY","11004","US",1,40.27069912523,-73.5943766157739,NA,NA
+"29-RC-392921","Flushing Medical Center","Region 29, Brooklyn, New York","Open","08/14/2026","","","Flushing","NY","","","","",NA,NA,"1199SEIU United Healthcare Workers East",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","",2,"","","Included: All full time, part time and per diem Lactation Consultants as residual to the existing technical unit.
+
+Excluded: All guards, managers, confidential employees and supervisors as defined by the Act.",NA,40.766382,-73.82619,"Flushing, NY 11354",1,"place","TIGER/Line® from the US Census Bureau","Flushing","Queens County","NY","11354","US",1,40.6070388013597,-74.1435861145803,NA,NA
 "29-RD-351215","Phoenix Energy Management / PEM Manufacturing","Region 29, Brooklyn, New York","Open","09/24/2024","","","Brooklyn","NY","","","","",NA,NA,"Iron Workers Regional Shop Local Union 852",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","",17,"","","Included:
 Production & Maintenance Workers.
 
@@ -3711,6 +3707,9 @@ Excluded: All other employees, managers, confidential and clerical employees, pr
 "31-RD-379537","La Scala Beverly Hills","Region 31, Los Angeles, California","Open","01/23/2026","","","Beverly Hills","CA","","","","",NA,NA,"UNITE HERE Local 11",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","",55,"","","Included: All hourly employees (dishwashers, cooks, bartenders, servers, hosts, togo, runners, prep, cashiers, pantry)
 
 Excluded:",NA,34.10263,-118.415972,"Beverly Hills, CA 90210",1,"place","TIGER/Line® dataset from the US Census Bureau","Beverly Hills","Los Angeles County","CA","90210","US",1,34.3939534983571,-118.117421443586,NA,NA
+"31-RD-392203","Safe Harbor Patients Collective, Inc. DBA Sweet Flower Westwood; Perennial Holistic Wellness Center, Inc. DBA Sweet Flower Studio City; Sweet Flower Culver, LLC DBA Sweet Flower Culver City; and Sweetflower Pasadena, LLC DBA Sweet Flower Pasadena, collectively doing business as Sweet Flower","Region 31, Los Angeles, California","Open","08/04/2026","","","Pasadena","CA","","","","",NA,NA,"United Food & Commercial Workers Union Local 770",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","",53,"","","Included: All full-time and regular part-time employees, including florists, delivery drivers, inventory associates, and senior leads employed by the Employer at its facilities currently located at 827 East Colorado Boulevard, Pasadena, California, 1413 Westwood Boulevard, Los Angeles, California, 10000 Culver Boulevard, Culver City, California, and 11705 Ventura Boulevard, Studio City, California.
+
+Excluded: All other employees, office clerical employees, professional employees, managerial employees, owners, store managers, assistant managers, store operations supervisors, customer service supervisors, employees of vendors, guards, and supervisors as defined in the Act.",NA,33.786594,-118.298662,"Pasadena, CA 91050",1,"place","TIGER/Line® from the US Census Bureau","Pasadena","Los Angeles County","CA","91050","US",1,34.0298413169174,-118.278661768082,NA,NA
 "31-RM-325710","Grindr LLC","Region 31, Los Angeles, California","Open","09/13/2023","","","West Hollywood","CA","","","","",NA,NA,"Communications Workers of America, District 9, AFL-CIO",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","",70,"","","Included: 
 Account Manager, AdOps Specialist/AdOps Trafficker,
 Ads Outreach Representative, Advisor,
@@ -4147,57 +4146,79 @@ Bilingual QA specialist/PA, lead mental health counselor, lead QA specialist/pro
 lead therapist – school, manager of operations, nurse, program operations associate, quality
 assurance specialist/program assistant, therapist, and all other employees, guards, office clerical
 employees, managers, and supervisors as defined in the Act.",95,37.786027,-122.223779,"Oakland, CA 94601",1,"place","TIGER/Line® from the US Census Bureau","Oakland","Alameda County","CA","94601","US",1,37.42718064803,-122.530856280246,NA,NA
-"01-RC-392929","First Student","Region 01, Boston, Massachusetts","Open","08/17/2026","","","Bloomfield","CT","","","","",NA,NA,"INTERNATIONAL BROTHERHOOD OF TEAMSTERS, LOCAL 671",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","",10,"","","Included: All full-time CREC dispatchers
+"01-RC-392776","American Craft Brewery LLC","Region 01, Boston, Massachusetts","Open","08/13/2026","","","Boston","MA","","","","",NA,NA,"United Food and Commercial Workers Union Local 328",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","",30,"","","Included: Senior Brewery Ambassadors, Brewery Ambassadors, Bartenders, Tour Center Coordinators, Kitchen Cooks/ Help 
 
-Excluded: All other employees, professional employees, guards, and supervisors, as defined by the act.",NA,41.851961,-72.738939,"Bloomfield, CT 06002",1,"place","TIGER/Line® from the US Census Bureau","Bloomfield","Capitol Planning Region","CT","06002","US",1,41.7809890698333,-72.6847760783832,NA,NA
-"02-RC-392985","Auto Zone, Inc.","Region 02, New York, New York","Open","08/17/2026","","","White Plains","NY","","","","",NA,NA,"UAW Local 259",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","",11,"","","Included: All full-time and regular part-time drivers, counter employees, and stock employees.
+Excluded: All clerical employees, confidential employees, managers, and guards, professional employees and supervisors as defined in the Act.",NA,42.354318,-71.073449,"Boston, MA 02106",1,"place","TIGER/Line® from the US Census Bureau","Boston","Suffolk County","MA","02106","US",1,42.6729729567617,-70.9867958095679,NA,NA
+"02-RC-392612","Universal Protection Service LLC d/b/a Allied Universal Security Services","Region 02, New York, New York","Open","08/10/2026","","","New York","NY","","","","",NA,NA,"Local One Security Officers Union",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","",73,"","","Included: Tactical Response Officers (Armed); Security Officers, Fire Life Safety Director Officers, F-01 Freight Operators and Security/BES at the following locations:
 
+1.  1 Manhattan West
+    395 9th Avenue /401 9th Avenue
+    New York, NY 10001
+
+2.   2 Manhattan West
+      375 9th Avenue
+      New York, NY 10001
+
+3. 4 Manhattan West
+    424 West 33rd Street
+    New York, NY 10001
+
+4. Manhattan West
+    450 West 33rd Street
+    New York, NY 10001
+
+5. Manhattan West Shared Services
+    424 West 33rd Street
+    New York, NY 10001
+
+6. Brookfield Development
+    434 West 33rd Street
+     New York, NY 10001
+
+Excluded: All other employees.",NA,40.750422,-73.996328,"New York, NY 10001",1,"place","TIGER/Line® from the US Census Bureau","New York","New York County","NY","10001","US",1,41.2224469793027,-74.4279364308084,NA,NA
+"05-RC-393004","Eurovision News Americas","Region 05, Baltimore, Maryland","Open","08/17/2026","","","Washington","DC","","","","",NA,NA,"Washington-Baltimore News Guild, Local 32035",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","",8,"","","Included: All employees including News Producers, Senior News Producers, Video Journalists.
+
+Excluded: Managerial, confidential, and supervisory employees as defined by the Act",NA,38.911936,-77.016719,"Washington, DC 20001",1,"place","TIGER/Line® from the US Census Bureau","Washington","District of Columbia","DC","20001","US",1,38.9837503554404,-77.3638824385642,NA,NA
+"05-RD-393003","Penske Truck Leasing Co., L.P.","Region 05, Baltimore, Maryland","Open","08/17/2026","","","Sandston","VA","","","","",NA,NA,"International Brotherhood of Teamsters Local 592",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","",12,"","","Included: Technicians
+
+Excluded: Office clerical employees, guards, supervisors and other employees excluded.",NA,37.501495,-77.271789,"Sandston, VA 23150",1,"place","TIGER/Line® from the US Census Bureau","Sandston","Henrico County","VA","23150","US",1,37.7352098531806,-77.2466587406612,NA,NA
+"10-RC-392483","Ascent Chemicals Cleveland, LLC","Region 10, Atlanta, Georgia","Open","08/07/2026","","","Cleveland","TN","","","","",NA,NA,"United Steel, Paper and Forestry, Rubber, Manufacturing, Energy, Allied Industrial and Service Workers International Union, AFL-CIO, CLC or United Steelworkers",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","",28,"","","Included: All full-time and regular part-time production, maintenance, and lab employees employed by the Employer at its facility in Cleveland, TN.
+
+Excluded: All temporary employees, agency and joint employees, office clerical employees, professional employees, managerial employees, guards, and supervisors as defined by the Act.",NA,35.149223,-84.874031,"Cleveland, TN 37311",1,"place","TIGER/Line® from the US Census Bureau","Cleveland","Bradley County","TN","37311","US",1,35.5307503398068,-85.2303225737275,NA,NA
+"10-RC-393052","Vestis","Region 10, Atlanta, Georgia","Open","08/17/2026","","","Canton","NC","","","","",NA,NA,"General Teamsters Local Union 61",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","",12,"","","Included: Route Sales Representative Drivers and Route Sales Support drivers
+Excluded: Transport drivers, supervisors, clerical and guards as defined by the act.",NA,35.53288,-82.83736,"Canton, NC 28716",1,"place","TIGER/Line® from the US Census Bureau","Canton","Haywood County","NC","28716","US",1,35.9334870713513,-82.4447168717111,NA,NA
+"13-RC-392561","CBRE, Inc.","Region 13, Chicago, Illinois","Open","08/11/2026","","","Chicago","IL","","","","",NA,NA,"International Union of Operating Engineers, Local 399",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","",2,"","","Included:  All full-time and regular part-time skilled maintenance employees and building engineers in the engineering department working for CBRE at 2100 W. Harrison Street, Chicago, IL 60612.
+
+Excluded:  Office clerical, professional employees, managers, guards and supervisors as defined by the Act.",NA,41.88531,-87.62213,"Chicago, IL 60601",1,"place","TIGER/Line® from the US Census Bureau","Chicago","Cook County","IL","60601","US",1,42.253580349456,-87.2159246687918,NA,NA
+"16-RD-393022","Wells Fargo","Region 16, Fort Worth, Texas","Open","08/17/2026","","","Fort Worth","TX","","","","",NA,NA,"Communication Workers of America",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","",5,"","","Included: Tellers, Bankers, Branch Operations Coordinator.
+
+Excluded: Branch Manager.",NA,32.771419,-97.291484,"Fort Worth, TX 76101",1,"place","TIGER/Line® from the US Census Bureau","Fort Worth","Tarrant County","TX","76101","US",1,32.407764935287,-97.5785726726305,NA,NA
+"16-RD-393059","Starbucks Coffee Company","Region 16, Fort Worth, Texas","Open","08/18/2026","","","San Antonio","TX","","","","",NA,NA,"Workers United",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","",14,"","","Included: All full-time and regular part-time Baristas and shift Supervisors Employed by the Employer at its 200 E. Houston Street, San Antonio, TX 78205 Facility.
+
+Excluded: Official Clerical Employees, Store managers, Professional Employees, Guards, and Supervisors as Defined in the Act.",NA,29.468413,-98.528889,"San Antonio, TX 78201",1,"place","TIGER/Line® from the US Census Bureau","San Antonio","Bexar County","TX","78201","US",1,29.22639034363,-98.8826331811059,NA,NA
+"19-RD-393065","Darigold","Region 19, Seattle, Washington","Open","08/17/2026","","","Spokane","WA","","","","",NA,NA,"International Union of Operating Engineers Local Union 280",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","",12,"","","Included: Maintenance Employees
+Excluded: Managers and Supervisors",NA,47.66264,-117.435997,"Spokane, WA 99201",1,"place","TIGER/Line® from the US Census Bureau","Spokane","Spokane County","WA","99201","US",1,47.4941715051004,-117.542303612724,NA,NA
+"21-RM-393080","Zoological Society of San Diego dba San Diego Zoo Wildlife Alliance","Region 21, Los Angeles, California","Open","08/18/2026","","","San Diego","CA","","","","",NA,NA,"Automotive & Allied Industries Employees of San Diego County Teamsters Local Union No. 481",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","",10,"","","Included: All full-time Registrars employed at the San Diego Zoo, San Diego Zoo Safari Park & Beckman Center for Conservation Research 
+
+Excluded: All other Employees, guards and supervisors as defined in the Act, as amended.",NA,32.724103,-117.170912,"San Diego, CA 92101",1,"place","TIGER/Line® from the US Census Bureau","San Diego","San Diego County","CA","92101","US",1,33.0073586872163,-116.724471039021,NA,NA
+"27-RC-393025","Allen Corporation of America","Region 27, Denver, Colorado","Open","08/14/2026","","","Hill Afb","UT","","","","",NA,NA,"International Association of Machinists and Aerospace Workers, Local 568, AFL-CIO",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","",23,"","","Included:
+MaterialSupportTechniciansforFI6,F22,F35andC130
 Excluded:
-All other employees or statutory supervisors.",NA,41.031397,-73.769626,"White Plains, NY 10601",1,"place","TIGER/Line® from the US Census Bureau","White Plains","Westchester County","NY","10601","US",1,40.6494005017896,-73.8237609335108,NA,NA
-"04-RD-392905","Fairmount Foundry Inc","Region 04, Philadelphia, Pennsylvania","Open","08/14/2026","","","Hamburg","PA","","","","",NA,NA,"United Steel, Paper and Forestry, Rubber, Manufacturing, Energy, Allied Industrial and Service Workers, AFL-CIO-CLC",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","",48,"","","Involved: All non-office or non-management full-time employees.
+All other employees as defined in the Act.",NA,41.120219,-111.989813,"Hill AFB, UT 84056",1,"place","TIGER/Line® from the US Census Bureau","Hill AFB","Davis County","UT","84056","US",1,40.7331703757769,-112.135603694514,NA,NA
+"27-RC-393062","Filius Corporation","Region 27, Denver, Colorado","Open","08/14/2026","","","Hill Afb","UT","","","","",NA,NA,"International Association of Machinists and Aerospace Workers, Local 568, AFL-CIO",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","",23,"","","Included :Material Support Technicians for Fl6, F22, F35 and C130.
 
-Excluded: All office and management employees and part-time employees.",NA,40.55565,-75.98188,"Hamburg, PA 19526",1,"place","TIGER/Line® from the US Census Bureau","Hamburg","Berks County","PA","19526","US",1,40.8704338201839,-75.7420781519256,NA,NA
-"07-RC-392974","DTE ENERGY, FERMI 2","Region 07, Detroit, Michigan","Open","08/13/2026","","","Newport","MI","","","","",NA,NA,"Local 223, Utility Workers Union of America (UWUA), AFL-CIO",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","",3,"","","Included: 
+Excluded: All other employees as defined in the Act.",NA,41.120219,-111.989813,"Hill AFB, UT 84056",1,"place","TIGER/Line® from the US Census Bureau","Hill AFB","Davis County","UT","84056","US",1,41.2511141617684,-111.668644947269,NA,NA
+"31-RC-393040","Kindred Ontario","Region 31, Los Angeles, California","Open","08/17/2026","","","Ontario","CA","","","","",NA,NA,"Service Employees International Union, United Healthcare Workers - West",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","",24,"","","Included: All full-time, regular part-time and per diem Pharmacist, Social Worker, Pharmacy Tech, Pharmacy Tech Lead, LVN Case Manager to be added to the existing bargaining unit through an Armour-Globe
+election.
 
-1. Senior Technical Specialist-RPO-Nuclear Production-Radiation Protection
-2. Associate Technical Specialist-RPO-Nuclear Production-Radiation Protection
+Excluded: All other employees, confidential employees, guards, and supervisors as defined by the Act.",NA,34.05936,-117.6203,"Ontario, CA 91758",1,"place","TIGER/Line® from the US Census Bureau","Ontario","San Bernardino County","CA","91758","US",1,34.3829083509488,-117.296264805996,NA,NA
+"31-RC-393064","Community Hospital of San Bernardino","Region 31, Los Angeles, California","Open","08/17/2026","","","San Bernardino","CA","","","","",NA,NA,"Service Employees International Union, United Healthcare Workers - West",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","",6,"","","Included: All full-time, regular part-time and per diem Dietitians to be added to the existing unit through an Armour-Globe election.
 
-Excluded: all supervisors, managers, guards, and all other employees not listed above.",NA,42.00227,-83.30854,"Newport, MI 48166",1,"place","TIGER/Line® from the US Census Bureau","Newport","Monroe County","MI","48166","US",1,41.6146242594723,-83.0120300377039,NA,NA
-"10-RC-392839","RATP-Dev USA, Inc.","Region 10, Atlanta, Georgia","Open","08/14/2026","","","Asheville","NC","","","","",NA,NA,"Amalgamated Transit Union, Local Union 128",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","",85,"","","Included: Road Supervisors and Customer Service Supervisors. ATU seeks an Armour-Globe self-determination election to add these employees to the existing unit at the facility. 
+Excluded: All other employee, supervisors, confidential employees, and guards as defined by the Act.
 
-Excluded:    
-All other employees, and all managers, and guards and supervisors as defined in 
-the Act.",NA,35.602711,-82.567281,"Asheville, NC 28801",1,"place","TIGER/Line® from the US Census Bureau","Asheville","Buncombe County","NC","28801","US",1,35.3221366696384,-82.4173403504868,NA,NA
-"14-RC-392987","Echo Electric","Region 14, Saint Louis, Missouri","Open","08/17/2026","","","Edwardsville","IL","","","","",NA,NA,"International Brotherhood of Teamsters Local Union 525",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","",5,"","","Included: all full and part time warehouse and delivery employees.
 
-Excluded: management per the act.
-",NA,38.841819,-89.877841,"Edwardsville, IL 62025",1,"place","TIGER/Line® from the US Census Bureau","Edwardsville","Madison County","IL","62025","US",1,38.686891761178,-90.0820568984114,NA,NA
-"15-RC-392967","Transit Management of Montgomery","Region 15, New Orleans, Louisiana","Open","08/17/2026","","","Montgomery","AL","","","","",NA,NA,"AMALGAMATED TRANSIT UNION LOCAL 765",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","",25,"","","Included::
- 
-All full-time and regular part-time employees employed at or out of 23 l 8 West Fairview Ave., Montgomery, AL 36108, 495 Molton Street, Montgomery, AL 36104, and 2346 West Fairview Ave., Montgomery, AL 36 I 08. ATU Local 765 seeks an Armour-Globe self-determination election to add these employees to the existing unit at the facility.
 
-Exlcluded:All employees currently represented by a labor union, and guards and supervisors as defined in the Act.
-",NA,32.356988,-86.257817,"Montgomery, AL 36101",1,"place","TIGER/Line® from the US Census Bureau","Montgomery","Montgomery County","AL","36101","US",1,31.91979262211,-86.1583638152463,NA,NA
-"16-RC-392366","Panola-Harrison Electric Cooperative, Inc.","Region 16, Fort Worth, Texas","Open","08/06/2026","","","Marshall","TX","","","","",NA,NA,"INTERNATIONAL BROTHERHOOD OF ELECTRICAL WORKERS, LOCAL 738",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","",14,"","","Included:  All apprentices, journeyman linemen (all classes), servicemen, and Crew Foremen.
+",NA,34.104794,-117.29215,"San Bernardino, CA 92401",1,"place","TIGER/Line® from the US Census Bureau","San Bernardino","San Bernardino County","CA","92401","US",1,33.8212043419054,-116.989719241049,NA,NA
+"32-RC-393063","CBRE, Inc.","Region 32, Oakland, California","Open","08/18/2026","","","Sunnyvale","CA","","","","",NA,NA,"International Union of Operating Engineers, Stationary Engineers, Local 39, AFL-CIO",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","",8,"","","Included: Chief Engineer, Assistant Chief Engineer, Stationary Engineer, Utility Engineer.
 
-Excluded:  All other employees, including office clerical employees, professional employees, guards, and supervisors within the meaning of the Act.",NA,32.538112,-94.406228,"Marshall, TX 75670",1,"place","TIGER/Line® from the US Census Bureau","Marshall","Harrison County","TX","75670","US",1,32.9748845951597,-94.8193053122888,NA,NA
-"20-RC-392439","Costco Wholesale Corporation","Region 20, San Francisco, California","Open","08/07/2026","","","Kailua Kona","HI","","","","",NA,NA,"Hawaii Teamsters and Allied  Workers, Local 996",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","",250,"","","Included: All non supervisory employees (full-time, part-time, seasonal, leads)
-
-Excluded: All other employees, managers, supervisors, and guards as defined in the Act.",NA,19.75682,-155.919968,"Kailua Kona, HI 96740",1,"place","TIGER/Line® from the US Census Bureau","Kailua Kona","Hawaii County","HI","96740","US",1,20.1074219306369,-155.944912726378,NA,NA
-"28-RC-392916","Aria Resort & Casino Holdings, LLC d/b/a Aria Resort & Casino","Region 28, Phoenix, Arizona","Open","08/13/2026","","","Las Vegas","NV","","","","",NA,NA,"International Alliance of Theatrical Stage Employees Local 720",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","",16,"","","Included:
-
-All full-time and regular part-time stagehands and technicians 
-(Audio Visual (A/V)/Sound/Video Technicians and Electronic/Lighting/In Room Technicians)  employed by the Employer in Las Vegas,Nevada.
-
-Excuded:
-
-All other employees, office clerical employees, sales employees, professional employees, guards, and
-supervisors as defined in the Act.",NA,36.17372,-115.10647,"Las Vegas, NV 89101",1,"place","TIGER/Line® from the US Census Bureau","Las Vegas","Clark County","NV","89101","US",1,36.6692832172059,-115.128841066269,NA,NA
-"29-RC-390524","Contello Towers 2 Corporation","Region 29, Brooklyn, New York","Open","07/10/2026","","","Brooklyn","NY","","","","",NA,NA,"Local 2, Building Service Employees & Factory Workers, United Service Workers Union, International Union of Journeymen Allied Trades",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","",6,"","","Included: Building superintendents, handymen, doormen, porters, all full and part-time workers
-Excluded: All other employees",NA,40.694481,-73.989319,"Brooklyn, NY 11201",1,"place","TIGER/Line® from the US Census Bureau","Brooklyn","Kings County","NY","11201","US",1,40.4076699250595,-73.9541384112815,NA,NA
-"29-RC-392921","Flushing Medical Center","Region 29, Brooklyn, New York","Open","08/14/2026","","","Flushing","NY","","","","",NA,NA,"1199SEIU United Healthcare Workers East",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","",2,"","","Included: All full time, part time and per diem Lactation Consultants as residual to the existing technical unit.
-
-Excluded: All guards, managers, confidential employees and supervisors as defined by the Act.",NA,40.766382,-73.82619,"Flushing, NY 11354",1,"place","TIGER/Line® from the US Census Bureau","Flushing","Queens County","NY","11354","US",1,40.6070388013597,-74.1435861145803,NA,NA
-"31-RD-392203","Safe Harbor Patients Collective, Inc. DBA Sweet Flower Westwood; Perennial Holistic Wellness Center, Inc. DBA Sweet Flower Studio City; Sweet Flower Culver, LLC DBA Sweet Flower Culver City; and Sweetflower Pasadena, LLC DBA Sweet Flower Pasadena, collectively doing business as Sweet Flower","Region 31, Los Angeles, California","Open","08/04/2026","","","Pasadena","CA","","","","",NA,NA,"United Food & Commercial Workers Union Local 770",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","",53,"","","Included: All full-time and regular part-time employees, including florists, delivery drivers, inventory associates, and senior leads employed by the Employer at its facilities currently located at 827 East Colorado Boulevard, Pasadena, California, 1413 Westwood Boulevard, Los Angeles, California, 10000 Culver Boulevard, Culver City, California, and 11705 Ventura Boulevard, Studio City, California.
-
-Excluded: All other employees, office clerical employees, professional employees, managerial employees, owners, store managers, assistant managers, store operations supervisors, customer service supervisors, employees of vendors, guards, and supervisors as defined in the Act.",NA,33.786594,-118.298662,"Pasadena, CA 91050",1,"place","TIGER/Line® from the US Census Bureau","Pasadena","Los Angeles County","CA","91050","US",1,34.0298413169174,-118.278661768082,NA,NA
+Excluded: All other employees, managers, confidential employees, office clerical employees, guards, and supervisors as defined by the Act.",NA,37.371647,-122.023153,"Sunnyvale, CA 94086",1,"place","TIGER/Line® from the US Census Bureau","Sunnyvale","Santa Clara County","CA","94086","US",1,37.4579494713472,-122.270351875993,NA,NA
