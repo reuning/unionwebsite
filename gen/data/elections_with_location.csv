@@ -174,6 +174,9 @@ Excluded:  All other employees, guards, supervisors.",NA,44.086323,-70.169297,"L
 "01-RC-395273","Bradley Hospital","Region 01, Boston, Massachusetts","Open","09/21/2026","","","East Providence","RI","","","","",NA,NA,"International Brotherhood of Teamsters Local 251",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","",13,"","","Included: All full time and part time, Master Plumbers, Painters, Carpenters, General Maintenances, Couriers and Electricians.
 Excluded: All clerical employees, confidential employees, and managers, guards and professional employees and supervisors as defined in the Act.
 ",NA,41.813429,-71.363348,"East Providence, RI 02914",1,"place","TIGER/Line® from the US Census Bureau","East Providence","Providence County","RI","2914","US",1,41.9244106092066,-71.2420501583412,NA,NA
+"01-RC-395656","Theory Wellness Inc.","Region 01, Boston, Massachusetts","Open","09/24/2026","","","Medford","MA","","","","",NA,NA,"UNITED FOOD AND COMMERCIAL WORKERS INTERNATIONAL UNION, LOCAL 1445",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","",26,"","","Included: All full-time and regular part-time employees, including keyholders and inventory employees 
+Excluded: Managerial employees, and guards, professional employees, and supervisors within the 
+meaning of the Act.",NA,42.422095,-71.109297,"Medford, MA 02155",1,"place","TIGER/Line® from the US Census Bureau","Medford","Middlesex County","MA","2155","US",1,42.4362736723398,-71.1902446885479,NA,NA
 "01-RD-379428","Everon, LLC","Region 01, Boston, Massachusetts","Open","01/21/2026","","","Wallingford","CT","","","","",NA,NA,"Road Sprinkler Fitters UA Local 669, a/w the United Association of Journeymen and Apprentices of the Plumbing and Pipe Fitting Industry of the United States and Canada",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","",5,"","","Included: Sprinkler Fitters All & Service & Installation.",NA,41.456205,-72.811047,"Wallingford, CT 06492",1,"place","TIGER/Line® dataset from the US Census Bureau","Wallingford","South Central Connecticut Planning Region","CT","6492","US",1,41.5336530334949,-72.5074912827739,NA,NA
 "01-RD-386749","Spectrum Health Systems, Inc.","Region 01, Boston, Massachusetts","Open","05/11/2026","","","Westborough","MA","","","","",NA,NA,"AFSCME, Council 93, Local 1877, AFL-CIO",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","",50,"","","All full-time, regular part-time and pre diem Registered Nurses and Licensed Practical Nurses employed by the Employer at the Westborough, MA inpatient facility; but excluding all directors of nursing, Charge Nurses, out-patient Registered Nurses and out-patient Licensed Practical Nurses, office clerical employees, managers, staff and supervisors.",NA,42.364807,-71.896868,"Westborough, MA 01580",1,"place","TIGER/Line® dataset from the US Census Bureau","Westborough","Worcester County","MA","1580","US",1,42.5150794387683,-71.4533575721618,NA,NA
 "01-RD-389594","Rhode Island CVS Pharmacy, LLC","Region 01, Boston, Massachusetts","Open","06/26/2026","","","Middletown","RI","","","","",NA,NA,"International Association of Machinists and Aerospace Workers, AFL-CIO",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","",12,"","","Included: All full-time and regular part-time Pharmacy Technicians, Lead Technicians, and
@@ -496,6 +499,7 @@ All building service workers
 
 Excluded:
 Statutory guards and supervisor",NA,40.750422,-73.996328,"New York, NY 10001",1,"place","TIGER/Line® from the US Census Bureau","New York","New York County","NY","10001","US",1,40.7621607534119,-74.2206568743775,NA,NA
+"02-RC-394972","Royal Coach Lines, LLC","Region 02, New York, New York","Open","09/15/2026","","","Putnam Valley","NY","","","","",NA,NA,"Transit Workers Union Local 100",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","",29,"","","Included: All Full time and part time school bus drivers, van drivers and monitors Excluded: All managers and supervisors as defined in the Act.",NA,41.33593,-73.87403,"Putnam Valley, NY 10579",1,"place","TIGER/Line® from the US Census Bureau","Putnam Valley","Putnam County","NY","10579","US",1,40.9115450938105,-73.5426777358453,NA,NA
 "02-RC-395228","First Student, Inc.","Region 02, New York, New York","Open","09/17/2026","","","Haverstraw","NY","","","","",NA,NA,"Transport Workers Union Local 100",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","",9,"","","Included: All full time and part time mechanics, fuelers, cleaners and maintenance employees 
 Excluded: All managers and supervisors defined by the Act",NA,41.191694,-73.964933,"Haverstraw, NY 10927",1,"place","TIGER/Line® from the US Census Bureau","Haverstraw","Rockland County","NY","10927","US",1,41.326123854108,-73.7004936413912,NA,NA
 "02-RC-395587","111 Central Park North c/o Allied Partners","Region 02, New York, New York","Open","09/23/2026","","","New York","NY","","","","",NA,NA,"SEIU Local 32BJ",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","",5,"","","Included: All building service workers
@@ -691,11 +695,6 @@ EXCLUDED: Guards, clerical workers, statutory supervisors, professional employee
 "04-RC-394654","Enliven, LLC d/b/a Enliven Planters","Region 04, Philadelphia, Pennsylvania","Open","09/11/2026","","","Philadelphia","PA","","","","",NA,NA,"United Scenic Artists, Local USA 829",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","",34,"","","INCLUDED: Full-time, part-time and temporary Gardeners, Nursery Laborers & Horticultural Designers
 
 EXCLUDED: All other employees",NA,40.001811,-75.11787,"Philadelphia, PA 19101",1,"place","TIGER/Line® from the US Census Bureau","Philadelphia","Philadelphia County","PA","19101","US",1,40.0465737389803,-75.1525216517457,NA,NA
-"04-RC-395173","Allied Universal","Region 04, Philadelphia, Pennsylvania","Open","09/18/2026","","","Fairless Hills","PA","","","","",NA,NA,"International Union, Security, Police and Fire Professionals of America (SPFPA)",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","",17,"","","INCLUDED: All employees performing guard duties as defined in section 9(b)(3) of the
-national labor relations act, employed Allied Universal@ 400 Middle Dr, Fairless Hills, PA 19030.
-
-EXCLUDED: All office clerical employees, professional employees and supervisors as defined in the
-act.",NA,40.17837,-74.85248,"Fairless Hills, PA 19030",1,"place","TIGER/Line® from the US Census Bureau","Fairless Hills","Bucks County","PA","19030","US",1,40.6068345013977,-74.9603632407948,NA,NA
 "04-RC-395591","Logan Operator, LLC d/b/a Fountainview at Logan Square","Region 04, Philadelphia, Pennsylvania","Open","09/23/2026","","","Philadelphia","PA","","","","",NA,NA,"District 1199C, National Union of Hospital and Health Care Employees, AFSCME, AFL-CIO",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","",7,"","","Included: All full-time and regular part-time receptionists employed by the Employer at its 2 Franklin Town Boulevard, Philadelphia, Pennsylvania facility. 
 
 Excluded: All professional employees, office clerical employees, management employees, guards, and supervisors as defined in the Act.",NA,40.001811,-75.11787,"Philadelphia, PA 19101",1,"place","TIGER/Line® from the US Census Bureau","Philadelphia","Philadelphia County","PA","19101","US",1,39.8316185452913,-75.2443757346318,NA,NA
@@ -703,6 +702,9 @@ Excluded: All professional employees, office clerical employees, management empl
 
 EXCLUDED: All other employees, guards and supervisors as defined by the Act.",NA,39.377297,-74.451082,"Atlantic City, NJ 08401",1,"place","TIGER/Line® from the US Census Bureau","Atlantic City","Atlantic County","NJ","8401","US",1,39.469927174011,-74.5310037792228,NA,NA
 "04-RC-395600","Eagleville Hospital","Region 04, Philadelphia, Pennsylvania","Open","09/24/2026","","","Eagleville","PA","","","","",NA,NA,"Philadelphia Security Officers Union",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","",15,"","","Included: All full-time and regular part-time security guards employed by the Employer at its 100 Eagleville Road, Eagleville, Pennsylvania facility. Excluded: All other employees, office clericals, and supervisors as defined in the Act.",NA,40.156555,-75.413127,"Eagleville, PA 19408",1,"place","TIGER/Line® from the US Census Bureau","Eagleville","Montgomery County","PA","19408","US",1,40.5571546575579,-75.6685142875869,NA,NA
+"04-RC-395717","Canteen/Compass Group","Region 04, Philadelphia, Pennsylvania","Open","09/25/2026","","","Allentown","PA","","","","",NA,NA,"",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","",25,"","","Included: All Full-Time And Part-Time Drivers (Vending, Avenue C and Utility)
+
+Excluded: Alll non-drivers and supervision as defined in Section 2(11) of the NLRA",NA,40.602658,-75.469236,"Allentown, PA 18101",1,"place","TIGER/Line® from the US Census Bureau","Allentown","Lehigh County","PA","18101","US",1,40.1249628317712,-75.5648910959963,NA,NA
 "04-RD-371228","Meritus Solutions Group","Region 04, Philadelphia, Pennsylvania","Open","08/13/2025","","","Plains","PA","","","","",NA,NA,"UGSOA Local #267 a/w United Government Security Officers of America",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","",48,"","","Included: All uniformed Security Officers.
 
 Excluded: Project Manager, Assistant Site Manager, and All other Persons.",NA,41.275359,-75.850196,"Plains, PA 18705",1,"place","TIGER/Line® dataset from the US Census Bureau","Plains","Luzerne County","PA","18705","US",1,41.4940255134504,-75.8657901215344,NA,NA
@@ -1116,6 +1118,14 @@ All full-time and regular part-time drivers, guest ambassadors
 Excluded: 
 
 Managers and supervisors",NA,40.5184,-80.16672,"Coraopolis, PA 15108",1,"place","TIGER/Line® from the US Census Bureau","Coraopolis","Allegheny County","PA","15108","US",1,40.7975366288438,-80.4968195472819,NA,NA
+"06-RC-395555","FirmaPak LLC","Region 06, Pittsburgh, Pennsylvania","Open","09/23/2026","","","Shenango","PA","","","","",NA,NA,"David Alters Teamsters Local 261",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","",18,"","","
+Included: 
+
+Production and maintenance 
+
+Excluded:
+
+ All Managerial",NA,41.379777,-80.398957,"Shenango, PA 16125",1,"place","TIGER/Line® from the US Census Bureau","Shenango","Mercer County","PA","16125","US",1,41.0922440001212,-80.5353743784386,NA,NA
 "06-RD-389344","Braeburn Alloy Steel LLC, a Wholly Owned Subsidiary of G.O. Carlson, Inc.","Region 06, Pittsburgh, Pennsylvania","Open","06/24/2026","","","Lower Burrell","PA","A","Single Labor Organization","Initial","09/24/2026",11,NA,"USW Local 1324-03",7,"",NA,"",NA,3,NA,"",1,"","United Steel, Paper and Forestry, Rubber, Manufacturing, Energy, Allied Industrial and Service Workers International Union, AFL-CIO, CLC","Included: All hourly production (including rollers) and maintenance employees at the Employer's Lower Burrell, Pennsylvania facility.
 Excluded: All other employees, foremen, office clerical, confidential employees, guards, professional employees and supervisors as defined in the Act.
 
@@ -1384,6 +1394,10 @@ Excluded: All other employees, including Drivers in positions not requiring a CD
 "08-RD-386773","Cleveland Rape Crisis Center","Region 08, Cleveland, Ohio","Open","05/08/2026","","","Cleveland","OH","","","","",NA,NA,"SEIU District 1199",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","",43,"","","Included:  All full-time and regular part-time non-supervisory employees employed by the Employer.
 
 Excluded:  All supervisors, managers, confidential employees, and guards as defined by the Act.",NA,41.489381,-81.667486,"Cleveland, OH 44101",1,"place","TIGER/Line® dataset from the US Census Bureau","Cleveland","Cuyahoga County","OH","44101","US",1,41.8963771332716,-81.5725742004667,NA,NA
+"08-RM-395709","Falcon Fire Protection LLC","Region 08, Cleveland, Ohio","Open","09/24/2026","","","Croton","OH","","","","",NA,NA,"",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","",15,"","","Included: All full-time and regular part-time sprinkler fitters and sprinkler fitter apprentices performing the installation, assembly, fitting, maintenance, servicing, 
+repair, testing, and inspection of sprinkler systems, working out of the Employer’s facility located at 159 Delaware St. Croton, OH 43013. 
+
+Excluded: All other employees, including professional employees, office clerical employees, guards, and supervisors, as defined in the Act.",NA,40.23867,-82.69239,"Croton, OH 43013",1,"place","TIGER/Line® from the US Census Bureau","Croton","Licking County","OH","43013","US",1,40.4152209187244,-83.1194705129781,NA,NA
 "09-RC-305269","BROWN-FORMAN CORPORATION D/B/A WOODFORD RESERVE DISTILLERY","Region 09, Cincinnati, Ohio","Open","10/14/2022","","","Versailles","KY","A","Single Labor Organization","Initial","11/17/2022",60,NA,"International Brotherhood of Teamsters (IBT), Local 651",14,"",NA,"",NA,45,59,"",7,"","","All full-time and regular part-time regauge and processing, distillery, warehousing and bottling employees employed by the Employer at its 7855 McCracken Pike, Versailles, Kentucky facility; excluding all professional employees, office clerical employees, guards and supervisors as defined in the Act.","","","",63,"","","Included:  All hourly employees to include:  bottling, distillery, processing/regauge/wh, logistics.
 
 Excluded:  All maintenance, clerical, adm and salaried employees as defined by the Act.",60,37.998762,-84.737666,"Versailles, KY 40383",1,"place","TIGER/Line® dataset from the US Census Bureau","Versailles","Woodford County","KY","40383","US",1,37.6638789478428,-84.8744701126989,NA,NA
@@ -1483,6 +1497,9 @@ Excluded:  All other employees as defined by the Act.",NA,38.016674,-84.486043,"
 "09-RC-394929","BRENNTAG MID-SOUTH, LLC","Region 09, Cincinnati, Ohio","Open","09/14/2026","","","Nitro","WV","","","","",NA,NA,"International Brotherhood of Teamsters (IBT), Local 175",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","",11,"","","Included:  All full-time drivers employed at the Employers facility.
 
 Excluded: Operators, mechanics, and all other employees.",NA,38.41481,-81.84402,"Nitro, WV 25143",1,"place","TIGER/Line® from the US Census Bureau","Nitro","Kanawha County","WV","25143","US",1,38.7375755666415,-81.6081900464301,NA,NA
+"09-RC-395375","INDUSTRIAL AIR CENTERS LLC","Region 09, Cincinnati, Ohio","Open","09/21/2026","","","Jeffersonville","IN","","","","",NA,NA,"UA Local 392, Plumbers, Pipefitters, and Mechanical Equipment Service Technicians, United Association of Journeymen and Apprentices of the Plumbing and Pipe Fitting Industry of the United States and Canada, AFL-CIO",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","",8,"","","Included:  All full-time and regular part-time Installation Technicians and Lead Installation Technicians employed in the Install Division by the Employer out of its facilities located at 6428 Castle Drive, Mason, OH 45040; 731 E. Market Street, Jeffersonville, IN 47130; 2444 Production Drive, Indianapolis, IN 46241; and 1715 Temple Street, Tampa, FL 33619.
+
+Excluded:  All other employees, office clerical employees, guards, managerial employees, and supervisors as defined by the Act.",NA,38.333402,-85.697211,"Jeffersonville, IN 47130",1,"place","TIGER/Line® from the US Census Bureau","Jeffersonville","Clark County","IN","47130","US",1,38.7369820250713,-85.5864183067836,NA,NA
 "09-RD-343950","MCDOWELL COUNTY COMMISSION ON AGING, INC.","Region 09, Cincinnati, Ohio","Open","06/07/2024","","","Welch","WV","A","Single Labor Organization","Initial","07/09/2024",NA,NA,"Service Employees International Union (SEIU) District 1199",NA,"",NA,"",NA,NA,NA,"",NA,"","","All full-time and regular part-time and PRN (as needed) service and maintenance employees, including all Personal Care Providers, Certified Nursing Assistants, Nursing Assistants, Homemakers, Home Health Aids, Housekeepers, Respite Workers, Cooks, Cook Helpers and Van Drivers employed by the Employer working in McDowell County, West Virginia; excluding all Registered Nurses, Licensed Practical Nurses, temporary maintenance employees, and all office clerical employees, guards, professional employees and supervisors as defined in the Act.","","","",73,"","","Included:  All full time, part time, and PRN, (as needed), service and maintenance employees including all Personal Care Providers, Certified Nursing Assistants, Nursing Assistants, Homemakers, Home Health Aids, Housekeepers, Respite Workers, Cooks, Cook Helpers and Van Drivers employed by the Employer working in McDowell County, West Virginia.
 
 Excluded:  All Registered Nurses, Licensed Practical Nurses, Office Clerical employees, guards, temporary maintenance, professional employees and supervisors as defined in the Act.",NA,37.43289,-81.58455,"Welch, WV 24801",1,"place","TIGER/Line® dataset from the US Census Bureau","Welch","McDowell County","WV","24801","US",1,37.1153209981894,-81.8822520265534,NA,NA
@@ -1815,6 +1832,9 @@ Excluded: Clerical, supervisory, and confidential employees and guards as define
 "13-RC-395371","Ford Motor Company","Region 13, Chicago, Illinois","Open","09/21/2026","","","Chicago Heights","IL","","","","",NA,NA,"International Union (UAW)",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","",3,"","","Included:  All full-time and regular part-time employees in the classifications of Associate, Nursing and Specialist, Nursing employed by the Employer at its facility currently located at 1000 E. Lincoln Hwy, Chicago Heights, IL.
 
 Excluded:  All other employees, office clerical employees, confidential employees, managerial employees, guards and supervisors as defined by the Act.",NA,41.508774,-87.590314,"Chicago Heights, IL 60411",1,"place","TIGER/Line® from the US Census Bureau","Chicago Heights","Cook County","IL","60411","US",1,41.9954209099652,-87.1176385896678,NA,NA
+"13-RC-395714","VenuWorks of Skokie LLC, d/b/a North Shore Center for the Performing Arts","Region 13, Chicago, Illinois","Open","09/25/2026","","","Skokie","IL","","","","",NA,NA,"Theatrical Stage Employees Union, Local No. 2, I.A.T.S.E.",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","",13,"","","Included:  All full-time and regular part-time stagehands
+
+Excluded:  Office clerical employees and guards, professional employees and supervisors",NA,42.035259,-87.729928,"Skokie, IL 60076",1,"place","TIGER/Line® from the US Census Bureau","Skokie","Cook County","IL","60076","US",1,41.5353929851879,-87.7922706504899,NA,NA
 "13-RD-295037","Metal Improvement Company, LLC","Region 13, Chicago, Illinois","Open","05/03/2022","","","Addison","IL","","","","",NA,NA,"UFCW 200T",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","",10,"","","Included: Machine Operators, Shipping & Receiving employees, Maintenance employees and Quality Control employees
 
 Excluded: Supervisors, Managers and Professionals",NA,41.93106,-88.01305,"Addison, IL 60101",1,"place","TIGER/Line® dataset from the US Census Bureau","Addison","Dupage County","IL","60101","US",1,42.0618920588432,-88.4201249299135,NA,NA
@@ -2464,6 +2484,26 @@ All full-time and regular part-time OSP Construction and Implementation Technici
 Excluded: 
 
 All other employees, office clerical employees, and guards and supervisors as defined in the Act.",NA,61.220018,-149.855702,"Anchorage, AK 99501",1,"place","TIGER/Line® from the US Census Bureau","Anchorage","Anchorage Municipality","AK","99501","US",1,60.8300856120259,-149.87928770043,NA,NA
+"19-RC-395297","Albany General Hospital d/b/a Samaritan Albany General Hospital","Region 19, Seattle, Washington","Open","09/18/2026","","","Albany","OR","","","","",NA,NA,"SEIU Local 49",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","",16,"","","Included: Armor Globe petition to accrete in patient phlebotomists into the existing service unit.
+
+Excluded: All supervisory and managerial staff.",NA,44.65345,-123.139526,"Albany, OR 97321",1,"place","TIGER/Line® from the US Census Bureau","Albany","Benton County","OR","97321","US",1,44.1922860591605,-123.226448248825,NA,NA
+"19-RC-395342","Corvallis Disposal Co. d/b/a Allied Waste Services of Corvallis / Republic Services of Corvallis","Region 19, Seattle, Washington","Open","09/21/2026","","","Corvallis","OR","","","","",NA,NA,"Teamster Union Local 324",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","",56,"","","Included: All full time and regular part time Drivers,Mechanics, Yard Laborers and Cart Delivery.
+
+Excluded: All sales, office clerical, professional employees, guards and supervisors as defined by the Act.",NA,44.639931,-123.275969,"Corvallis, OR 97330",1,"place","TIGER/Line® from the US Census Bureau","Corvallis","Benton County","OR","97330","US",1,44.5762123124899,-123.483029602726,NA,NA
+"19-RC-395696","Mud Bay","Region 19, Seattle, Washington","Open","09/24/2026","","","Bellingham","WA","","","","",NA,NA,"United Food and Commercial Workers Local 3000",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","",16,"","","Included: All full time and part-time regular employees and all other eligible employees defined by the act (including store staff and store leader).
+
+Excluded: Store manager and all guards and supervisors as defined by the act.",NA,48.754401,-122.478836,"Bellingham, WA 98225",1,"place","TIGER/Line® from the US Census Bureau","Bellingham","Whatcom County","WA","98225","US",1,48.6692413862491,-122.75764002864,NA,NA
+"19-RC-395703","Mud Bay","Region 19, Seattle, Washington","Open","09/25/2026","","","Lake Forest Park","WA","","","","",NA,NA,"United Food and Commercial Workers Local 3000",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","",5,"","","Employees included: 
+
+All full time and part-time regular employees and all other eligible employees defined by the act (including store staff and store leader).
+
+Excluded: 
+
+Store manager and all guards and supervisors as defined by the act.",NA,48.426575,-117.317725,"Locke, WA 99119",1,"place","TIGER/Line® from the US Census Bureau","Locke","Pend Oreille County","WA","99119","US",1,48.7615661398254,-116.927369671204,NA,NA
+"19-RC-395743","Providence Sacred Heart Medical Center","Region 19, Seattle, Washington","Open","09/25/2026","","","Spokane","WA","","","","",NA,NA,"United Food and Commercial Workers Local 3000",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","",72,"","","Included: All full-time, part-time, supplementary and per diem Laboratory Professionals (including Clinical Laboratory Educators, Medical Laboratory Scientists, Point of Care Coordinators, Senior Medical Laboratory Scientists, Senior Point of Care Coordinators) working in the Laboratory Department of Providence Sacred Heart Medical Center located at 101 W 8th Ave, Spokane, WA 99204.
+
+Excluded: All supervisors, guards, and confidential employees as defined by the Act.
+",NA,47.66264,-117.435997,"Spokane, WA 99201",1,"place","TIGER/Line® from the US Census Bureau","Spokane","Spokane County","WA","99201","US",1,47.3789703734269,-117.366730813206,NA,NA
 "19-RD-391788","Seattle Roots Community Health","Region 19, Seattle, Washington","Open","07/29/2026","","","Seattle","WA","","","","",NA,NA,"SEIU Healthcare 1199NW",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","",139,"","","Included:  All regular full, part time, and per diem employees employed by SRCH and its covered locations.
 
 Excluded:  Managerial employees, confidential employees, guards, supervisors and employees in separate bargaining units.",NA,47.610902,-122.336422,"Seattle, WA 98101",1,"place","TIGER/Line® from the US Census Bureau","Seattle","King County","WA","98101","US",1,47.2857911037423,-122.07261027574,NA,NA
@@ -3407,6 +3447,15 @@ All regular full-time and regular part-time employees working at the covered pro
 
 Excluded :
 Excluding all secretarial office, clerical, sales and all managers, supervisors and guards as defined in the National Labor Relations Act.",NA,36.17372,-115.10647,"Las Vegas, NV 89101",1,"place","TIGER/Line® from the US Census Bureau","Las Vegas","Clark County","NV","89101","US",1,36.2745776259483,-115.082553518239,NA,NA
+"28-RC-395155","US Foods, Inc. d/b/a Stock Yards Collective","Region 28, Phoenix, Arizona","Open","09/16/2026","","","Phoenix","AZ","","","","",NA,NA,"General Teamsters, State of Arizona, Local Union No 104, an affiliate of the International Brotherhood of Teamsters",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","",36,"","","Included:
+
+All regular part-time and fulltime non cdl drivers, warehouse workers specialty, meat cutter masters, meal cutter
+trainees. meat cutter customs, group leads, process machine operators, customer service workers, food safety and
+quality workers (FSQC), production associates, operations coordinator, and maintenance technicians
+
+Excluded:
+
+All other employees, guards, and other supervisors as defined in the National Labor Relations Act.",NA,33.703967,-112.351835,"Phoenix, AZ 85001",1,"place","TIGER/Line® from the US Census Bureau","Phoenix","Maricopa County","AZ","85001","US",1,34.0738587878792,-112.072524086709,NA,NA
 "28-RC-395157","US Foods, Inc.","Region 28, Phoenix, Arizona","Open","09/11/2026","","","North Las Vegas","NV","","","","",NA,NA,"International Brotherhood of Teamsters, Local 14",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","",4,"","","Included:
 Building Maintenance and Lead Building Maintenance workers employed by US Foods in Clark County, Nevada.
 
@@ -4088,6 +4137,9 @@ Excluded: All other employees, managers, guards, and supervisors as defined by t
 "32-RC-395144","Allied Waste Services of North America, LLC d/b/a BFI Waste Services of Salinas / Republic Services of Salinas, and N Leasing Company, LLC d/b/a Republic Services of Salinas","Region 32, Oakland, California","Open","09/16/2026","","","Salinas","CA","","","","",NA,NA,"Teamsters Local 350",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","",40,"","","Included: all full-time and regular part-time drivers, driver helpers, mechanics, technicians, heavy equipment operators, maintenance personnel, and driver trainers.
 
 Excluded: all others, including transfer drivers, clericals, and managers, supervisors, and guards as defined under the Act.",NA,36.64152,-121.622188,"Salinas, CA 93901",1,"place","TIGER/Line® from the US Census Bureau","Salinas","Monterey County","CA","93901","US",1,36.1763403813192,-121.380900175069,NA,NA
+"32-RC-395380","RJMS Corporation, dba Total Industries","Region 32, Oakland, California","Open","09/21/2026","","","Salinas","CA","","","","",NA,NA,"Teamsters Local 856",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","",8,"","","Included: All full time and regular part-time logistics, parts, rental department employees, service employees.
+
+Excluded: All other employees including sales, guards, managers and supervisors as defined by the Act.",NA,36.64152,-121.622188,"Salinas, CA 93901",1,"place","TIGER/Line® from the US Census Bureau","Salinas","Monterey County","CA","93901","US",1,37.1023349351552,-121.197936620089,NA,NA
 "32-RC-395439","BFS Operations LLC","Region 32, Oakland, California","Open","09/21/2026","","","Fresno","CA","","","","",NA,NA,"Teamsters Local 431",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","",2,"","","Included: All full-time and regular part-time inventory control specialists and materials handler-hardware.
 
 Excluded: All other employees including represented employees, guards, managers and supervisors as defined by the Act.",NA,36.8411,-119.801015,"Fresno, CA 93650",1,"place","TIGER/Line® from the US Census Bureau","Fresno","Fresno County","CA","93650","US",1,37.1672275149416,-120.129856735376,NA,NA
@@ -4101,6 +4153,9 @@ as defined by the Act.",NA,37.345785,-120.42415,"Merced, CA 95340",1,"place","TI
 "32-RC-395573","Starbucks Corporation","Region 32, Oakland, California","Open","09/23/2026","","","Modesto","CA","","","","",NA,NA,"Workers United",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","",19,"","","Included: All full time and regular part time Baristas and Shift Supervisors employed by the Employer at: 19 3421 McHenry Ave Modesto CA 95350-1445.
 
 Excluded: All Store Managers, Assistant Store Managers, office clericals, supervisors and guards as defined in the Act.",NA,37.669463,-121.016796,"Modesto, CA 95350",1,"place","TIGER/Line® from the US Census Bureau","Modesto","Stanislaus County","CA","95350","US",1,37.6494608954252,-121.423615920987,NA,NA
+"32-RC-395671","Simplot Grower Solutions","Region 32, Oakland, California","Open","09/24/2026","","","Traver","CA","","","","",NA,NA,"Teamsters Local 431",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","",15,"","","Included: All full-time and regular part-time drivers and warehouse workers.
+
+Excluded: All other employees including office employees, inventory specialists, guards and supervisors as defined by the Act.",NA,36.45267,-119.48238,"Traver, CA 93673",1,"place","TIGER/Line® from the US Census Bureau","Traver","Tulare County","CA","93673","US",1,36.796418427229,-119.814252284878,NA,NA
 "32-RD-318423","Manteca District Volunteer Ambulance Service","Region 32, Oakland, California","Open","05/19/2023","","","Sonora","CA","A","Single Labor Organization","Initial","08/24/2023",43,NA,"",11,"",NA,"",NA,13,24,"",NA,"","","Included: All full and regular part-time Paramedics and EMT’s employed by the Employer in its Tuolumne Division working at its Stations 10 & 12 located at 2 South Forest Rd., Sonora, CA 95730, Stations 11&13 located at 18440 Stricker Court, Sonora, CA, 95370, Station 20 located at 20591 N. Sunshine Rd., Sonora, CA 95730, and Station 41 located at 11850 Powder House Rd., Groveland, CA 95321. 
 
 Excluded: Managerial employees, RN’s, professional employees, Safety/Cage Car Drivers, confidential employees, office clericals, guards, and supervisors as defined by the Act.
@@ -4181,63 +4236,8 @@ Bilingual QA specialist/PA, lead mental health counselor, lead QA specialist/pro
 lead therapist – school, manager of operations, nurse, program operations associate, quality
 assurance specialist/program assistant, therapist, and all other employees, guards, office clerical
 employees, managers, and supervisors as defined in the Act.",95,37.786027,-122.223779,"Oakland, CA 94601",1,"place","TIGER/Line® from the US Census Bureau","Oakland","Alameda County","CA","94601","US",1,37.42718064803,-122.530856280246,NA,NA
-"01-RC-395656","Theory Wellness Inc.","Region 01, Boston, Massachusetts","Open","09/24/2026","","","Medford","MA","","","","",NA,NA,"UNITED FOOD AND COMMERCIAL WORKERS INTERNATIONAL UNION, LOCAL 1445",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","",26,"","","Included: All full-time and regular part-time employees, including keyholders and inventory employees 
-Excluded: Managerial employees, and guards, professional employees, and supervisors within the 
-meaning of the Act.",NA,42.422095,-71.109297,"Medford, MA 02155",1,"place","TIGER/Line® from the US Census Bureau","Medford","Middlesex County","MA","02155","US",1,42.4362736723398,-71.1902446885479,NA,NA
-"02-RC-394972","Royal Coach Lines, LLC","Region 02, New York, New York","Open","09/15/2026","","","Putnam Valley","NY","","","","",NA,NA,"Transit Workers Union Local 100",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","",29,"","","Included: All Full time and part time school bus drivers, van drivers and monitors Excluded: All managers and supervisors as defined in the Act.",NA,41.33593,-73.87403,"Putnam Valley, NY 10579",1,"place","TIGER/Line® from the US Census Bureau","Putnam Valley","Putnam County","NY","10579","US",1,40.9115450938105,-73.5426777358453,NA,NA
-"04-RC-395717","Canteen/Compass Group","Region 04, Philadelphia, Pennsylvania","Open","09/25/2026","","","Allentown","PA","","","","",NA,NA,"",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","",25,"","","Included: All Full-Time And Part-Time Drivers (Vending, Avenue C and Utility)
+"04-RC-395173","Universal Protection Service, LLC d/b/a Allied Universal Security Services","Region 04, Philadelphia, Pennsylvania","Open","09/18/2026","","","Fairless Hills","PA","","","","",NA,NA,"International Union, Security, Police and Fire Professionals of America (SPFPA)",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","",17,"","","INCLUDED: All employees performing guard duties as defined in section 9(b)(3) of the
+national labor relations act, employed Allied Universal@ 400 Middle Dr, Fairless Hills, PA 19030.
 
-Excluded: Alll non-drivers and supervision as defined in Section 2(11) of the NLRA",NA,40.602658,-75.469236,"Allentown, PA 18101",1,"place","TIGER/Line® from the US Census Bureau","Allentown","Lehigh County","PA","18101","US",1,40.1249628317712,-75.5648910959963,NA,NA
-"06-RC-395555","FirmaPak LLC","Region 06, Pittsburgh, Pennsylvania","Open","09/23/2026","","","Shenango","PA","","","","",NA,NA,"David Alters Teamsters Local 261",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","",18,"","","
-Included: 
-
-Production and maintenance 
-
-Excluded:
-
- All Managerial",NA,41.379777,-80.398957,"Shenango, PA 16125",1,"place","TIGER/Line® from the US Census Bureau","Shenango","Mercer County","PA","16125","US",1,41.0922440001212,-80.5353743784386,NA,NA
-"08-RM-395709","Falcon Fire Protection LLC","Region 08, Cleveland, Ohio","Open","09/24/2026","","","Croton","OH","","","","",NA,NA,"",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","",15,"","","Included: All full-time and regular part-time sprinkler fitters and sprinkler fitter apprentices performing the installation, assembly, fitting, maintenance, servicing, 
-repair, testing, and inspection of sprinkler systems, working out of the Employer’s facility located at 159 Delaware St. Croton, OH 43013. 
-
-Excluded: All other employees, including professional employees, office clerical employees, guards, and supervisors, as defined in the Act.",NA,40.23867,-82.69239,"Croton, OH 43013",1,"place","TIGER/Line® from the US Census Bureau","Croton","Licking County","OH","43013","US",1,40.4152209187244,-83.1194705129781,NA,NA
-"09-RC-395375","INDUSTRIAL AIR CENTERS LLC","Region 09, Cincinnati, Ohio","Open","09/21/2026","","","Jeffersonville","IN","","","","",NA,NA,"UA Local 392, Plumbers, Pipefitters, and Mechanical Equipment Service Technicians, United Association of Journeymen and Apprentices of the Plumbing and Pipe Fitting Industry of the United States and Canada, AFL-CIO",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","",8,"","","Included:  All full-time and regular part-time Installation Technicians and Lead Installation Technicians employed in the Install Division by the Employer out of its facilities located at 6428 Castle Drive, Mason, OH 45040; 731 E. Market Street, Jeffersonville, IN 47130; 2444 Production Drive, Indianapolis, IN 46241; and 1715 Temple Street, Tampa, FL 33619.
-
-Excluded:  All other employees, office clerical employees, guards, managerial employees, and supervisors as defined by the Act.",NA,38.333402,-85.697211,"Jeffersonville, IN 47130",1,"place","TIGER/Line® from the US Census Bureau","Jeffersonville","Clark County","IN","47130","US",1,38.7369820250713,-85.5864183067836,NA,NA
-"13-RC-395714","VenuWorks of Skokie LLC, d/b/a North Shore Center for the Performing Arts","Region 13, Chicago, Illinois","Open","09/25/2026","","","Skokie","IL","","","","",NA,NA,"Theatrical Stage Employees Union, Local No. 2, I.A.T.S.E.",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","",13,"","","Included:  All full-time and regular part-time stagehands
-
-Excluded:  Office clerical employees and guards, professional employees and supervisors",NA,42.035259,-87.729928,"Skokie, IL 60076",1,"place","TIGER/Line® from the US Census Bureau","Skokie","Cook County","IL","60076","US",1,41.5353929851879,-87.7922706504899,NA,NA
-"19-RC-395297","Albany General Hospital d/b/a Samaritan Albany General Hospital","Region 19, Seattle, Washington","Open","09/18/2026","","","Albany","OR","","","","",NA,NA,"SEIU Local 49",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","",16,"","","Included: Armor Globe petition to accrete in patient phlebotomists into the existing service unit.
-
-Excluded: All supervisory and managerial staff.",NA,44.65345,-123.139526,"Albany, OR 97321",1,"place","TIGER/Line® from the US Census Bureau","Albany","Benton County","OR","97321","US",1,44.1922860591605,-123.226448248825,NA,NA
-"19-RC-395342","Corvallis Disposal Co. d/b/a Allied Waste Services of Corvallis / Republic Services of Corvallis","Region 19, Seattle, Washington","Open","09/21/2026","","","Corvallis","OR","","","","",NA,NA,"Teamster Union Local 324",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","",56,"","","Included: All full time and regular part time Drivers,Mechanics, Yard Laborers and Cart Delivery.
-
-Excluded: All sales, office clerical, professional employees, guards and supervisors as defined by the Act.",NA,44.639931,-123.275969,"Corvallis, OR 97330",1,"place","TIGER/Line® from the US Census Bureau","Corvallis","Benton County","OR","97330","US",1,44.5762123124899,-123.483029602726,NA,NA
-"19-RC-395696","Mud Bay","Region 19, Seattle, Washington","Open","09/24/2026","","","Bellingham","WA","","","","",NA,NA,"United Food and Commercial Workers Local 3000",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","",16,"","","Included: All full time and part-time regular employees and all other eligible employees defined by the act (including store staff and store leader).
-
-Excluded: Store manager and all guards and supervisors as defined by the act.",NA,48.754401,-122.478836,"Bellingham, WA 98225",1,"place","TIGER/Line® from the US Census Bureau","Bellingham","Whatcom County","WA","98225","US",1,48.6692413862491,-122.75764002864,NA,NA
-"19-RC-395703","Mud Bay","Region 19, Seattle, Washington","Open","09/25/2026","","","Lake Forest Park","WA","","","","",NA,NA,"United Food and Commercial Workers Local 3000",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","",5,"","","Employees included: 
-
-All full time and part-time regular employees and all other eligible employees defined by the act (including store staff and store leader).
-
-Excluded: 
-
-Store manager and all guards and supervisors as defined by the act.",NA,48.426575,-117.317725,"Locke, WA 99119",1,"place","TIGER/Line® from the US Census Bureau","Locke","Pend Oreille County","WA","99119","US",1,48.7615661398254,-116.927369671204,NA,NA
-"19-RC-395743","Providence Sacred Heart Medical Center","Region 19, Seattle, Washington","Open","09/25/2026","","","Spokane","WA","","","","",NA,NA,"United Food and Commercial Workers Local 3000",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","",72,"","","Included: All full-time, part-time, supplementary and per diem Laboratory Professionals (including Clinical Laboratory Educators, Medical Laboratory Scientists, Point of Care Coordinators, Senior Medical Laboratory Scientists, Senior Point of Care Coordinators) working in the Laboratory Department of Providence Sacred Heart Medical Center located at 101 W 8th Ave, Spokane, WA 99204.
-
-Excluded: All supervisors, guards, and confidential employees as defined by the Act.
-",NA,47.66264,-117.435997,"Spokane, WA 99201",1,"place","TIGER/Line® from the US Census Bureau","Spokane","Spokane County","WA","99201","US",1,47.3789703734269,-117.366730813206,NA,NA
-"28-RC-395155","US Foods, Inc. d/b/a Stock Yards Collective","Region 28, Phoenix, Arizona","Open","09/16/2026","","","Phoenix","AZ","","","","",NA,NA,"General Teamsters, State of Arizona, Local Union No 104, an affiliate of the International Brotherhood of Teamsters",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","",36,"","","Included:
-
-All regular part-time and fulltime non cdl drivers, warehouse workers specialty, meat cutter masters, meal cutter
-trainees. meat cutter customs, group leads, process machine operators, customer service workers, food safety and
-quality workers (FSQC), production associates, operations coordinator, and maintenance technicians
-
-Excluded:
-
-All other employees, guards, and other supervisors as defined in the National Labor Relations Act.",NA,33.703967,-112.351835,"Phoenix, AZ 85001",1,"place","TIGER/Line® from the US Census Bureau","Phoenix","Maricopa County","AZ","85001","US",1,34.0738587878792,-112.072524086709,NA,NA
-"32-RC-395380","RJMS Corporation, dba Total Industries","Region 32, Oakland, California","Open","09/21/2026","","","Salinas","CA","","","","",NA,NA,"Teamsters Local 856",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","",8,"","","Included: All full time and regular part-time logistics, parts, rental department employees, service employees.
-
-Excluded: All other employees including sales, guards, managers and supervisors as defined by the Act.",NA,36.64152,-121.622188,"Salinas, CA 93901",1,"place","TIGER/Line® from the US Census Bureau","Salinas","Monterey County","CA","93901","US",1,37.1023349351552,-121.197936620089,NA,NA
-"32-RC-395671","Simplot Grower Solutions","Region 32, Oakland, California","Open","09/24/2026","","","Traver","CA","","","","",NA,NA,"Teamsters Local 431",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","",15,"","","Included: All full-time and regular part-time drivers and warehouse workers.
-
-Excluded: All other employees including office employees, inventory specialists, guards and supervisors as defined by the Act.",NA,36.45267,-119.48238,"Traver, CA 93673",1,"place","TIGER/Line® from the US Census Bureau","Traver","Tulare County","CA","93673","US",1,36.796418427229,-119.814252284878,NA,NA
+EXCLUDED: All office clerical employees, professional employees and supervisors as defined in the
+act.",NA,40.17837,-74.85248,"Fairless Hills, PA 19030",1,"place","TIGER/Line® from the US Census Bureau","Fairless Hills","Bucks County","PA","19030","US",1,40.6713081594993,-74.7292010613005,NA,NA
