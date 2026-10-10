@@ -2695,6 +2695,9 @@ Excluded: Store Manager, Assistant Store Manager/ Office Clericals, Guards, Prof
 Excluded: All other employees, store managers, assistant store managers, office clericals, professional employees, guards, and supervisors as defined by the Act.","","","","","Workers United","Included: All full-time  & regular part-time Baristas & Shift Supervisors.
 
 Excluded: Store Manager, Assistant Store Managers/ Office Clericals, Guards, Professional Employees and supervisors.",17,41,2026-07-01,2026-07-01,"11-25",TRUE,"RC","Yes","Workers United",1,"WU",0.875,"Yes",1,35.20603,-101.839602,"Amarillo, TX 79101",1,"place","TIGER/Line® from the US Census Bureau","Amarillo","Potter County","TX","79101","US",1,35.1546267850778,-102.197662895232,NA,NA
+"16-RC-396649","Starbucks Corporation","Region 16, Fort Worth, Texas","Open",2026-10-07,NA,"","Forest Hill","TX","","","",NA,23,NA,"",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","","","","Included: All full-time & regular part-time Baristas & Shift Supervisors.
+
+Excluded: Store Manager, Assistant Manager/Office Clericals, Guard Professional Employees and Supervisors.",NA,NA,NA,2026-10-01,"11-25",TRUE,"RC","No","",0,"",NA,"Still Open",NA,30.14632,-94.64242,"Hull, TX 77564",1,"place","TIGER/Line® from the US Census Bureau","Hull","Liberty County","TX","77564","US",1,30.4535151735765,-94.7471405219511,NA,NA
 "16-RD-329890","STARBUCKS CORPORATION","Region 16, Fort Worth, Texas","Closed",2023-11-13,2023-11-16,"Withdrawal Non-adjusted","Shavano Park","TX","","","",NA,22,NA,"",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","","","","Included: Barista and Shift Supervisors.
 
 Excluded: Store Manager, Assistant Store Manager, and higher positions.",NA,NA,NA,2023-10-01,"11-25",TRUE,"RD","No","",0,"",NA,"Other",NA,29.58495,-98.552519,"Shavano Park, TX 78231",0.8,"place","TIGER/Line® dataset from the US Census Bureau","Shavano Park","Bexar County","TX","78231","US",1,29.1743733901054,-98.5262318093839,NA,NA
@@ -4608,6 +4611,9 @@ facility located at 6890 S. McCarran Blvd., Reno, NV 89509.
 
 Excluded: All store managers, assistant store managers, office clericals, confidential employees, managerial
 employees, and all other employees, professional employees, and guards and supervisors as defined in the Act.",NA,NA,NA,2024-01-01,"11-25",TRUE,"RM","No","",0,"",NA,"Other",NA,39.525749,-119.813051,"Reno, NV 89501",1,"place","TIGER/Line® dataset from the US Census Bureau","Reno","Washoe County","NV","89501","US",1,39.8822838098055,-120.069474357874,NA,NA
-"16-RC-396649","Starbucks Corporation","Region 16, Fort Worth, Texas","Open",2026-10-07,NA,"","Forest Hill","TX","","","",NA,23,NA,"",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","","","","Included: All full-time & regular part-time Baristas & Shift Supervisors.
+"16-RD-396778","Starbucks","Region 16, Fort Worth, Texas","Open",2026-10-08,NA,"","San Antonio","TX","","","",NA,12,NA,"Workers United",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","","","","Included: All fulltime
+and regular parttime
+baristas and shift supervisors employed by the Employer at its facility.
 
-Excluded: Store Manager, Assistant Manager/Office Clericals, Guard Professional Employees and Supervisors.",NA,NA,NA,2026-10-01,"11-25",TRUE,"RC","No","",0,"",NA,"Still Open",NA,30.14632,-94.64242,"Hull, TX 77564",1,"place","TIGER/Line® from the US Census Bureau","Hull","Liberty County","TX","77564","US",1,30.4535151735765,-94.7471405219511,NA,NA
+Excluded:
+All other employees, store managers, assistant store managers.",NA,NA,NA,2026-10-01,"11-25",TRUE,"RD","No","Workers United",1,"WU",NA,"Still Open",NA,29.468413,-98.528889,"San Antonio, TX 78201",1,"place","TIGER/Line® from the US Census Bureau","San Antonio","Bexar County","TX","78201","US",1,29.6045166072485,-98.2438847632646,NA,NA
