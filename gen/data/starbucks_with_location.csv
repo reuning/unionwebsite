@@ -639,9 +639,11 @@ Excluded: All other employees, store managers, assistant store managers, office 
 
 EXCLUDED:
 Store Managers, Assistant Store Managers, office clericals, guards and supervisors as defined by the Act.",19,35,2026-01-01,2025-10-01,"11-25",TRUE,"RC","Yes","Workers United a/w Service Employees International Union (SEIU)",1,"WU",0.555555555555556,"Yes",1,40.001811,-75.11787,"Philadelphia, PA 19101",1,"place","TIGER/Line® dataset from the US Census Bureau","Philadelphia","Philadelphia County","PA","19101","US",1,40.2260797090766,-74.9253644894761,NA,NA
-"04-RC-393858","Starbucks Corporation","Region 04, Philadelphia, Pennsylvania","Open",2026-08-31,NA,"","Flourtown","PA","","","",NA,12,NA,"Workers United a/w Service Employees International Union (SEIU)",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","","","","INCLUDED: All full-time and regular part-time Baristas and Shift Supervisors
+"04-RC-393858","Starbucks Corporation","Region 04, Philadelphia, Pennsylvania","Closed",2026-08-31,2026-10-15,"Certification of Results","Flourtown","PA","A","Single Labor Organization","Initial",2026-10-06,14,NA,"Workers United",4,"",NA,"",NA,4,8,"",NA,"","","Included: All full-time and regular part-time baristas and shift supervisors employed by the Employer at its 1851 Bethlehem Pike, #7750, Flourtown, Pennsylvania facility.
 
-EXCLUDED: Store Managers, office clerical, guards and statutory supervisors",NA,NA,NA,2026-07-01,"11-25",TRUE,"RC","No","Workers United a/w Service Employees International Union (SEIU)",1,"WU",NA,"Still Open",NA,40.106805,-75.215071,"Flourtown, PA 19031",1,"place","TIGER/Line® from the US Census Bureau","Flourtown","Montgomery County","PA","19031","US",1,39.8726519560556,-75.5585973796709,NA,NA
+Excluded: All other employees, store managers, assistant store managers, office clerical employees, professional employees, guards, and supervisors as defined in the Act.","","","","","","INCLUDED: All full-time and regular part-time Baristas and Shift Supervisors
+
+EXCLUDED: Store Managers, office clerical, guards and statutory supervisors",14,36,2026-10-01,2026-07-01,"11-25",TRUE,"RC","Yes","Workers United",1,"WU",0.5,"No",6,40.106805,-75.215071,"Flourtown, PA 19031",1,"place","TIGER/Line® from the US Census Bureau","Flourtown","Montgomery County","PA","19031","US",1,39.8726519560556,-75.5585973796709,NA,NA
 "04-RD-328166","Starbucks Corporation","Region 04, Philadelphia, Pennsylvania","Closed",2023-10-18,2024-10-18,"Dismissal Non-adjusted","Philadelphia","PA","","","",NA,17,NA,"",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","","","","Included:  All full-time and regular part-time baristas and shift supervisors employed by the Employer at store #9536.
 Excluded:  All store managers, office clericals, professional employees, guards and supervisors as defined in the Act.",NA,NA,NA,2023-10-01,"11-25",TRUE,"RD","No","",0,"",NA,"Other",NA,40.001811,-75.11787,"Philadelphia, PA 19101",1,"place","TIGER/Line® dataset from the US Census Bureau","Philadelphia","Philadelphia County","PA","19101","US",1,39.978531970124,-75.2514367141248,NA,NA
 "04-RM-331511","Starbucks Corporation","Region 04, Philadelphia, Pennsylvania","Closed",2023-12-08,2024-07-31,"Dismissal Non-adjusted","Lancaster","PA","","","",NA,13,NA,"",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","","","","Included: All full-time and regular part time baristas and shift supervisors employed by the Employer at its facility located at 142 Park City
@@ -2698,6 +2700,10 @@ Excluded: Store Manager, Assistant Store Managers/ Office Clericals, Guards, Pro
 "16-RC-396649","Starbucks Corporation","Region 16, Fort Worth, Texas","Open",2026-10-07,NA,"","Forest Hill","TX","","","",NA,23,NA,"",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","","","","Included: All full-time & regular part-time Baristas & Shift Supervisors.
 
 Excluded: Store Manager, Assistant Manager/Office Clericals, Guard Professional Employees and Supervisors.",NA,NA,NA,2026-10-01,"11-25",TRUE,"RC","No","",0,"",NA,"Still Open",NA,30.14632,-94.64242,"Hull, TX 77564",1,"place","TIGER/Line® from the US Census Bureau","Hull","Liberty County","TX","77564","US",1,30.4535151735765,-94.7471405219511,NA,NA
+"16-RC-396858","Starbucks Corporation","Region 16, Fort Worth, Texas","Open",2026-10-13,NA,"","Austin","TX","","","",NA,15,NA,"Workers United",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","","","","Included: All full-time & regular part-time Baristas & Shift Supervisors.
+
+Excluded:
+Store Managers, Assistance Store Manager/ Office Clericals, Guards, Professional  Employees and Supervisors.",NA,NA,NA,2026-10-01,"11-25",TRUE,"RC","No","Workers United",1,"WU",NA,"Still Open",NA,30.268335,-97.741382,"Austin, TX 78701",1,"place","TIGER/Line® from the US Census Bureau","Austin","Travis County","TX","78701","US",1,29.8626685103802,-97.4375833402954,NA,NA
 "16-RD-329890","STARBUCKS CORPORATION","Region 16, Fort Worth, Texas","Closed",2023-11-13,2023-11-16,"Withdrawal Non-adjusted","Shavano Park","TX","","","",NA,22,NA,"",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","","","","Included: Barista and Shift Supervisors.
 
 Excluded: Store Manager, Assistant Store Manager, and higher positions.",NA,NA,NA,2023-10-01,"11-25",TRUE,"RD","No","",0,"",NA,"Other",NA,29.58495,-98.552519,"Shavano Park, TX 78231",0.8,"place","TIGER/Line® dataset from the US Census Bureau","Shavano Park","Bexar County","TX","78231","US",1,29.1743733901054,-98.5262318093839,NA,NA
@@ -2707,6 +2713,12 @@ Excluded: Store Manager, Assistant Store Manager, and higher positions.",NA,NA,N
 "16-RD-393059","Starbucks Coffee Company","Region 16, Fort Worth, Texas","Open",2026-08-18,NA,"","San Antonio","TX","","","",NA,14,NA,"Workers United",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","","","","Included: All full-time and regular part-time Baristas and shift Supervisors Employed by the Employer at its 200 E. Houston Street, San Antonio, TX 78205 Facility.
 
 Excluded: Official Clerical Employees, Store managers, Professional Employees, Guards, and Supervisors as Defined in the Act.",NA,NA,NA,2026-07-01,"11-25",TRUE,"RD","No","Workers United",1,"WU",NA,"Still Open",NA,29.468413,-98.528889,"San Antonio, TX 78201",1,"place","TIGER/Line® from the US Census Bureau","San Antonio","Bexar County","TX","78201","US",1,29.5816262473867,-98.642067292755,NA,NA
+"16-RD-396778","Starbucks Corporation","Region 16, Fort Worth, Texas","Open",2026-10-08,NA,"","San Antonio","TX","","","",NA,12,NA,"Workers United",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","","","","Included: All fulltime
+and regular parttime
+baristas and shift supervisors employed by the Employer at its facility.
+
+Excluded:
+All other employees, store managers, assistant store managers.",NA,NA,NA,2026-10-01,"11-25",TRUE,"RD","No","Workers United",1,"WU",NA,"Still Open",NA,29.468413,-98.528889,"San Antonio, TX 78201",1,"place","TIGER/Line® from the US Census Bureau","San Antonio","Bexar County","TX","78201","US",1,29.540565857203,-98.326804333882,NA,NA
 "16-RM-326843","STARBUCKS CORPORATION","Region 16, Fort Worth, Texas","Closed",2023-09-28,2023-11-01,"Certific. of Representative","Farmers Branch","TX","A","Single Labor Organization","Initial",2023-10-24,20,NA,"Workers United",14,"",NA,"",NA,2,16,"",NA,"","Workers United","","","","","","Workers United","Included:
 All full-time  and regular part time baristas and shift supervisors employed by the Employer at its facility located at its facility at 2425 Valley View Ln., Farmers Branch TX 75234.
 
@@ -3591,9 +3603,6 @@ EXCLUDED:  Store Managers, Asst. Store Managers, office clericals, guards and su
 EXCLUDED:  All office clericals, store managers, assistant store managers, guards, professionals, and supervisors as defined in the Act, and all other employees.","","","","","","INCLUDED:  All full time and regular part time Baristas and Shift Supervisors.
 
 EXCLUDED:  Store Managers, Asst. Store Managers, office clericals, guards and supervisors as defined by the Act.",18,41,2026-04-01,2026-04-01,"11-25",TRUE,"RC","Yes","Workers United",1,"WU",0.470588235294118,"No",1,40.948689,-74.241168,"Wayne, NJ 07470",1,"place","TIGER/Line® dataset from the US Census Bureau","Wayne","Passaic County","NJ","7470","US",1,41.2987411362294,-74.0531033768416,NA,NA
-"22-RC-396345","Starbucks Corporation","Region 22, Newark, New Jersey","Open",2026-10-05,NA,"","Wayne","NJ","","","",NA,22,NA,"Workers United",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","","","","INCLUDED:  All full time and regular part time Baristas and Shift Supervisors.
-
-EXCLUDED:  Store Managers, Asst. Store Managers, office clericals, guards and supervisors as defined by the Act.",NA,NA,NA,2026-10-01,"11-25",TRUE,"RC","No","Workers United",1,"WU",NA,"Still Open",NA,40.948689,-74.241168,"Wayne, NJ 07470",1,"place","TIGER/Line® from the US Census Bureau","Wayne","Passaic County","NJ","7470","US",1,40.7712646702013,-74.6468685546056,NA,NA
 "22-RD-333451","Starbucks Corporation","Region 22, Newark, New Jersey","Closed",2024-01-11,2024-08-09,"Dismissal Non-adjusted","Montclair","NJ","","","",NA,15,NA,"",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","","","","INCLUDED:  All full-time and regular part-time Baristas and Shift Supervisors employed by the Employer at its Store #13856 located at 40 South Park Street, Montclair, New Jersey.
 
 ECLUDED:  All Store managers, confidential employees, office clerical employees, managerial employees, professional employees, guards and supervisors as defined by the Act, and all other employees.",NA,NA,NA,2024-01-01,"11-25",TRUE,"RD","No","",0,"",NA,"Other",NA,40.811908,-74.216389,"Montclair, NJ 07042",1,"place","TIGER/Line® dataset from the US Census Bureau","Montclair","Essex County","NJ","7042","US",1,40.9264927050939,-74.0720352447159,NA,NA
@@ -4612,13 +4621,9 @@ facility located at 6890 S. McCarran Blvd., Reno, NV 89509.
 
 Excluded: All store managers, assistant store managers, office clericals, confidential employees, managerial
 employees, and all other employees, professional employees, and guards and supervisors as defined in the Act.",NA,NA,NA,2024-01-01,"11-25",TRUE,"RM","No","",0,"",NA,"Other",NA,39.525749,-119.813051,"Reno, NV 89501",1,"place","TIGER/Line® dataset from the US Census Bureau","Reno","Washoe County","NV","89501","US",1,39.8822838098055,-120.069474357874,NA,NA
-"16-RC-396858","Starbucks Corporation","Region 16, Fort Worth, Texas","Open",2026-10-13,NA,"","Austin","TX","","","",NA,15,NA,"Workers United",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","","","","Included: All full-time & regular part-time Baristas & Shift Supervisors.
+"01-RC-397186","Starbucks Corp.","Region 01, Boston, Massachusetts","Open",2026-10-16,NA,"","Marblehead","MA","","","",NA,8,NA,"WORKERS UNITED A/W/ SERVICE  EMPLOYEES INTERNATIONAL UNION",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","","","","Included: All full-time and regular part-time baristas.
+Included: 
+Excluded: Store managers, assistant store managers, guards; supervisor; others.",NA,NA,NA,2026-10-01,"6-10",TRUE,"RC","No","WORKERS UNITED A/W/ SERVICE  EMPLOYEES INTERNATIONAL UNION",1,"WU",NA,"Still Open",NA,42.49284,-70.83484,"Marblehead, MA 01945",1,"place","TIGER/Line® from the US Census Bureau","Marblehead","Essex County","MA","01945","US",1,42.2183397235723,-70.8314132640121,NA,NA
+"22-RC-396345","STARBUCKS CORPORATION","Region 22, Newark, New Jersey","Open",2026-10-05,NA,"","Wayne","NJ","","","",NA,22,NA,"Workers United",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","","","","INCLUDED:  All full time and regular part time Baristas and Shift Supervisors.
 
-Excluded:
-Store Managers, Assistance Store Manager/ Office Clericals, Guards, Professional  Employees and Supervisors.",NA,NA,NA,2026-10-01,"11-25",TRUE,"RC","No","Workers United",1,"WU",NA,"Still Open",NA,30.268335,-97.741382,"Austin, TX 78701",1,"place","TIGER/Line® from the US Census Bureau","Austin","Travis County","TX","78701","US",1,29.8626685103802,-97.4375833402954,NA,NA
-"16-RD-396778","Starbucks Corporation","Region 16, Fort Worth, Texas","Open",2026-10-08,NA,"","San Antonio","TX","","","",NA,12,NA,"Workers United",NA,"",NA,"",NA,NA,NA,"",NA,"","","","","","","","","Included: All fulltime
-and regular parttime
-baristas and shift supervisors employed by the Employer at its facility.
-
-Excluded:
-All other employees, store managers, assistant store managers.",NA,NA,NA,2026-10-01,"11-25",TRUE,"RD","No","Workers United",1,"WU",NA,"Still Open",NA,29.468413,-98.528889,"San Antonio, TX 78201",1,"place","TIGER/Line® from the US Census Bureau","San Antonio","Bexar County","TX","78201","US",1,29.540565857203,-98.326804333882,NA,NA
+EXCLUDED:  Store Managers, Asst. Store Managers, office clericals, guards and supervisors as defined by the Act.",NA,NA,NA,2026-10-01,"11-25",TRUE,"RC","No","Workers United",1,"WU",NA,"Still Open",NA,40.948689,-74.241168,"Wayne, NJ 07470",1,"place","TIGER/Line® from the US Census Bureau","Wayne","Passaic County","NJ","07470","US",1,40.7341956207703,-74.1445755203817,NA,NA
